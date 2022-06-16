@@ -22,6 +22,15 @@ services:
         USE_HTTPS: true
     ports:
       - 8080:8080
+  
+  lodview:
+    container_name: lodview
+    build:
+      context: lodview/
+    env_file:
+      - .env
+    ports:
+      - 9090:8080
 
 volumes:
   virtuosodb:
