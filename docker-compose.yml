@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  virtuoso:
+    container_name: virtuoso
+    image: "openlink/virtuoso-closedsource-8"
+    volumes:
+      - virtuosodb:/database
+    env_file:
+      - .env
+    ports:
+      - 8890:8890
+      - 1111:1111
+  
+  lode:
+    container_name: lode
+    image: "secoresearch/lode"
+    environment:
+      - LODE_EXTERNAL_URL=http://localhost:8080/lode
+      - WEBVOWL_EXTERNAL_URL=http://visualdataweb.de/webvowl/#iri=
+      - useHTTPs=false
+    ports:
+      - 8080:8080
+
+volumes:
+  virtuosodb:
