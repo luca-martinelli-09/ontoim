@@ -5,7 +5,6 @@
      xmlns:l0="https://w3id.org/italia/onto/l0/"
      xmlns:ns="http://www.w3.org/2006/vcard/ns#"
      xmlns:CLV="https://w3id.org/italia/onto/CLV/"
-     xmlns:dct="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -16,10 +15,12 @@
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:sona="https://w3id.org/sona/onto/OntoSona#"
-     xmlns:italia="https://w3id.org/italia/onto/FULL/">
+     xmlns:italia="https://w3id.org/italia/onto/FULL/"
+     xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/sona/onto/OntoSona">
         <owl:imports rdf:resource="https://w3id.org/italia/onto/FULL/"/>
         <dc:creator rdf:resource="https://w3id.org/people/lucamartinelli"/>
+        <dcterms:title>Ontology for Sona</dcterms:title>
         <rdfs:comment xml:lang="it">Ontologia che descrive il Comune di Sona</rdfs:comment>
         <rdfs:comment xml:lang="en">Ontology that describe Sona</rdfs:comment>
         <owl:versionInfo xml:lang="en">Version 0.1</owl:versionInfo>

@@ -14,11 +14,12 @@ services:
   
   lode:
     container_name: lode
-    image: "secoresearch/lode"
-    environment:
-      - LODE_EXTERNAL_URL=http://localhost:8080/lode
-      - WEBVOWL_EXTERNAL_URL=http://visualdataweb.de/webvowl/#iri=
-      - useHTTPs="true"
+    build:
+      context: lode/
+      args:
+        LODE_EXTERNAL_URL: https://lod.lucamartinelli.eu.org/lode
+        WEBVOWL_EXTERNAL_URL: https://service.tib.eu/webvowl/#iri=
+        USE_HTTPS: true
     ports:
       - 8080:8080
 
