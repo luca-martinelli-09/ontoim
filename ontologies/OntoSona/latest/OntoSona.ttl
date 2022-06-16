@@ -4,13 +4,13 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix acco: <https://w3id.org/italia/onto/ACCO/> .
+@prefix italia: <https://w3id.org/italia/onto/FULL/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sona: <https://w3id.org/sona/onto/OntoSona#> .
 @base <https://w3id.org/sona/onto/OntoSona> .
 
 <https://w3id.org/sona/onto/OntoSona> rdf:type owl:Ontology ;
-                                       owl:imports acco: ;
+                                       owl:imports italia: ;
                                        rdfs:comment "Ontologia che descrive il Comune di Sona"@it ,
                                                     "Ontology that describe Sona"@en ;
                                        owl:versionInfo "Version 0.1"@en ,
