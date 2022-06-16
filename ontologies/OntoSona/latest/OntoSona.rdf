@@ -19,6 +19,7 @@
      xmlns:italia="https://w3id.org/italia/onto/FULL/">
     <owl:Ontology rdf:about="https://w3id.org/sona/onto/OntoSona">
         <owl:imports rdf:resource="https://w3id.org/italia/onto/FULL/"/>
+        <dc:creator rdf:resource="https://w3id.org/people/lucamartinelli"/>
         <rdfs:comment xml:lang="it">Ontologia che descrive il Comune di Sona</rdfs:comment>
         <rdfs:comment xml:lang="en">Ontology that describe Sona</rdfs:comment>
         <owl:versionInfo xml:lang="en">Version 0.1</owl:versionInfo>
