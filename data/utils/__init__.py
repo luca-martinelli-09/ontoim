@@ -78,6 +78,18 @@ CUL_PLACES = Namespace(
     "https://w3id.org/italia/controlled-vocabulary/classifications-for-culture/cultural-interest-places/")
 ROUTE_TYPES = Namespace(
     "https://w3id.org/italia/controlled-vocabulary/classifications-for-routes/route-types/")
+AUTH_TYPES = Namespace(
+    "https://w3id.org/italia/controlled-vocabulary/classifications-for-public-services/authentication-type/")
+EROGATION_CHANNELS = Namespace(
+    "https://w3id.org/italia/controlled-vocabulary/classifications-for-public-services/channel/")
+INTERACT_LEVEL = Namespace(
+    "https://w3id.org/italia/controlled-vocabulary/classifications-for-public-services/interactivity-level/")
+IO_SERVICE = Namespace(
+    "https://w3id.org/italia/controlled-vocabulary/classifications-for-public-services/service-input-output/")
+LIFE_EVENTS = Namespace(
+    "https://w3id.org/italia/controlled-vocabulary/classifications-for-public-services/life-business-event/life-event/")
+BUSINESS_EVENTS = Namespace(
+    "https://w3id.org/italia/controlled-vocabulary/classifications-for-public-services/life-business-event/business-event/")
 
 # OntoSona Namespaces
 
@@ -86,6 +98,7 @@ ASSO = Namespace("https://w3id.org/sona/onto/ASSO/")
 # OntoSona Data
 
 ANNCSU = Namespace("https://w3id.org/sona/data/ANNCSU/")
+TOURISM_STRUCT = Namespace("https://w3id.org/sona/data/tourism/structures/")
 
 # Get configurations from file
 
@@ -99,7 +112,7 @@ def getConfig(fileName):
 # Get data from CKAN OpenData portal
 
 
-def getOpenData(baseURL, datasetID, resID, rawData=False):
+def getOpenData(baseURL, datasetID, resID, rawData=False, dtype=None):
     dataURI = "{}/dataset/{}/resource/{}/download".format(
         baseURL, datasetID, resID)
 
@@ -112,7 +125,7 @@ def getOpenData(baseURL, datasetID, resID, rawData=False):
             return None
 
     try:
-        return pd.read_csv(dataURI)
+        return pd.read_csv(dataURI, dtype=dtype)
     except:
         return None
 
@@ -122,6 +135,9 @@ def getOpenData(baseURL, datasetID, resID, rawData=False):
 
 def standardizeName(name):
     name = name.lower().title()
+
+    if name.endswith("a'"):
+        name = name.removesuffix("a'") + "à"
 
     return name
 
