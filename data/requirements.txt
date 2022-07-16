@@ -1,3 +1,4 @@
 rdflib
 requests
 pykml
+ontopia-py
