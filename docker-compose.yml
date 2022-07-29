@@ -12,17 +12,6 @@ services:
       - 8890:8890
       - 1111:1111
   
-  lode:
-    container_name: lode
-    build:
-      context: lode/
-      args:
-        LODE_EXTERNAL_URL: https://lod.lucamartinelli.eu.org/lode
-        WEBVOWL_EXTERNAL_URL: https://service.tib.eu/webvowl/#iri=
-        USE_HTTPS: true
-    ports:
-      - 8080:8080
-  
   lodview:
     container_name: lodview
     build:
