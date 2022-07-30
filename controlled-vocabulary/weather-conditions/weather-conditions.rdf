@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:label xml:lang="it">Condizione Meteorologica</rdfs:label>
+    <rdfs:label xml:lang="en">Weather Condition</rdfs:label>
+    <dct:title xml:lang="it">Condizione Meteorologica</dct:title>
+    <dct:title xml:lang="en">Weather Condition</dct:title>
+    <rdfs:comment xml:lang="it">Classificatione delle condizioni meteorologiche</rdfs:comment>
+    <rdfs:comment xml:lang="en">Classification of weather conditions</rdfs:comment>
+    <dct:description xml:lang="it">Classificatione delle condizioni meteorologiche</dct:description>
+    <dct:description xml:lang="en">Classification of weather conditions</dct:description>
+    <dct:creator rdf:resource="https://w3id.org/people/lucamartinelli"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/1"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/2"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/3"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/4"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/5"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/6"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/ontoim/WeatherCondition"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</dct:identifier>
+    <rdfs:label xml:lang="it">Grandine</rdfs:label>
+    <rdfs:label xml:lang="en">Hail</rdfs:label>
+    <skos:prefLabel xml:lang="it">Grandine</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Hail</skos:prefLabel>
+    <skos:definition xml:lang="it">Grandine</skos:definition>
+    <skos:definition xml:lang="en">Hail</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/6">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/ontoim/WeatherCondition"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</dct:identifier>
+    <rdfs:label xml:lang="it">Vento forte</rdfs:label>
+    <rdfs:label xml:lang="en">Strong wind</rdfs:label>
+    <skos:prefLabel xml:lang="it">Vento forte</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Strong wind</skos:prefLabel>
+    <skos:definition xml:lang="it">Vento forte</skos:definition>
+    <skos:definition xml:lang="en">Strong wind</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/2">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/ontoim/WeatherCondition"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dct:identifier>
+    <rdfs:label xml:lang="it">Nebbia</rdfs:label>
+    <rdfs:label xml:lang="en">Fog</rdfs:label>
+    <skos:prefLabel xml:lang="it">Nebbia</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Fog</skos:prefLabel>
+    <skos:definition xml:lang="it">Nebbia</skos:definition>
+    <skos:definition xml:lang="en">Fog</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/3">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/ontoim/WeatherCondition"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dct:identifier>
+    <rdfs:label xml:lang="it">Pioggia</rdfs:label>
+    <rdfs:label xml:lang="en">Rain</rdfs:label>
+    <skos:prefLabel xml:lang="it">Pioggia</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Rain</skos:prefLabel>
+    <skos:definition xml:lang="it">Pioggia</skos:definition>
+    <skos:definition xml:lang="en">Rain</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/7">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/ontoim/WeatherCondition"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</dct:identifier>
+    <rdfs:label xml:lang="it">Non definito</rdfs:label>
+    <rdfs:label xml:lang="en">Undefined</rdfs:label>
+    <skos:prefLabel xml:lang="it">Non definito</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Undefined</skos:prefLabel>
+    <skos:definition xml:lang="it">Non definito</skos:definition>
+    <skos:definition xml:lang="en">Undefined</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/5">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/ontoim/WeatherCondition"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</dct:identifier>
+    <rdfs:label xml:lang="it">Neve</rdfs:label>
+    <rdfs:label xml:lang="en">Snow</rdfs:label>
+    <skos:prefLabel xml:lang="it">Neve</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Snow</skos:prefLabel>
+    <skos:definition xml:lang="it">Neve</skos:definition>
+    <skos:definition xml:lang="en">Snow</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/1">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/ontoim/WeatherCondition"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</dct:identifier>
+    <rdfs:label xml:lang="it">Sereno</rdfs:label>
+    <rdfs:label xml:lang="en">Clear</rdfs:label>
+    <skos:prefLabel xml:lang="it">Sereno</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Clear</skos:prefLabel>
+    <skos:definition xml:lang="it">Sereno</skos:definition>
+    <skos:definition xml:lang="en">Clear</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/"/>
+  </rdf:Description>
+</rdf:RDF>
