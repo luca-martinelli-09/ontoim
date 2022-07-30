@@ -107,7 +107,8 @@ code {
   margin-right: 0.75em;
   padding: 3px 0;
 }
-.entity .rel li, .info .rel li {
+.entity .rel li,
+.info .rel li {
   display: inline;
   margin-right: 0.3em;
   padding: 3px 0;
@@ -148,5 +149,5 @@ footer {
 }
 
 .res.lang {
-  margin-right: 1.5em;
+  margin-right: 0.5em;
 }

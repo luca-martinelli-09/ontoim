@@ -23,7 +23,7 @@ DESCRIPTIONS = [
 
 ELEMENT_TYPE = URIRef(ONTOIM["WeatherCondition"])
 
-CREATOR = URIRef("https://w3id.org/people/lucamartinelli")
+CREATORS = [URIRef("https://w3id.org/people/lucamartinelli")]
 
 g = Graph()
 
@@ -51,7 +51,8 @@ for d in DESCRIPTIONS:
   g.add((SCHEME, DCTERMS.description, d))
 
 # Add creator
-g.add((SCHEME, DCTERMS.creator, CREATOR))
+for c in CREATORS:
+  g.add((SCHEME, DCTERMS.creator, c))
 
 # Add data
 dataset = pd.read_csv(VOCABULARY_NAME + ".csv", index_col=["code"])
@@ -76,5 +77,5 @@ for code, el in dataset.iterrows():
   g.add((SCHEME, SKOS.hasTopConcept, element))
 
 g.serialize(VOCABULARY_NAME + ".ttl", "turtle")
-g.serialize(VOCABULARY_NAME + ".rdf", "xml")
+g.serialize(VOCABULARY_NAME + ".rdf", "pretty-xml")
 # %%
