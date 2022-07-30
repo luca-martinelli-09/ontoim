@@ -1,5 +1,6 @@
 .env
-ontologies/**/catalog-*.xml
-ontologies/**/*.properties
+*.jar
+ontology/**/catalog-*.xml
+ontology/**/*.properties
 query.ipynb
 __pycache__
