@@ -133,10 +133,15 @@ with doc:
                     with ul(cls="rel super"):
                         for tit in g.objects(conc, SKOS.prefLabel):
                             li(span(tit, cls="res lang", data_lang="@" + tit.language))
-
-                with ul(cls="vers"):
-                    for desc in g.objects(conc, SKOS.definition):
-                        li(span(desc, cls="res lang", data_lang="@" + desc.language))
+                
+                try:
+                    next(g.objects(conc, SKOS.definition))
+                    
+                    with ul(cls="vers"):
+                        for desc in g.objects(conc, SKOS.definition):
+                            li(span(desc, cls="res lang", data_lang="@" + desc.language))
+                except:
+                    pass
 
                 with dl():
                     dt("has super-classes")
