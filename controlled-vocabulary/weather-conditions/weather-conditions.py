@@ -70,8 +70,8 @@ for code, el in dataset.iterrows():
   g.add((element, SKOS.prefLabel, Literal(el["en"], lang="en")))
   g.add((element, SKOS.prefLabel, Literal(el["it"], lang="it")))
 
-  g.add((element, SKOS.definition, Literal(el["en"], lang="en")))
-  g.add((element, SKOS.definition, Literal(el["it"], lang="it")))
+  # g.add((element, SKOS.definition, Literal(el["en"], lang="en")))
+  # g.add((element, SKOS.definition, Literal(el["it"], lang="it")))
 
   g.add((element, SKOS.inScheme, SCHEME))
   g.add((SCHEME, SKOS.hasTopConcept, element))

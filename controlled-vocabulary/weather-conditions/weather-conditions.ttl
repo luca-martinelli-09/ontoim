@@ -10,8 +10,6 @@ weathercondition:1 a skos:Concept,
     rdfs:label "Clear"@en,
         "Sereno"@it ;
     dct:identifier 1 ;
-    skos:definition "Clear"@en,
-        "Sereno"@it ;
     skos:inScheme weathercondition: ;
     skos:prefLabel "Clear"@en,
         "Sereno"@it .
@@ -21,8 +19,6 @@ weathercondition:2 a skos:Concept,
     rdfs:label "Fog"@en,
         "Nebbia"@it ;
     dct:identifier 2 ;
-    skos:definition "Fog"@en,
-        "Nebbia"@it ;
     skos:inScheme weathercondition: ;
     skos:prefLabel "Fog"@en,
         "Nebbia"@it .
@@ -32,8 +28,6 @@ weathercondition:3 a skos:Concept,
     rdfs:label "Rain"@en,
         "Pioggia"@it ;
     dct:identifier 3 ;
-    skos:definition "Rain"@en,
-        "Pioggia"@it ;
     skos:inScheme weathercondition: ;
     skos:prefLabel "Rain"@en,
         "Pioggia"@it .
@@ -43,8 +37,6 @@ weathercondition:4 a skos:Concept,
     rdfs:label "Hail"@en,
         "Grandine"@it ;
     dct:identifier 4 ;
-    skos:definition "Hail"@en,
-        "Grandine"@it ;
     skos:inScheme weathercondition: ;
     skos:prefLabel "Hail"@en,
         "Grandine"@it .
@@ -54,8 +46,6 @@ weathercondition:5 a skos:Concept,
     rdfs:label "Snow"@en,
         "Neve"@it ;
     dct:identifier 5 ;
-    skos:definition "Snow"@en,
-        "Neve"@it ;
     skos:inScheme weathercondition: ;
     skos:prefLabel "Snow"@en,
         "Neve"@it .
@@ -65,8 +55,6 @@ weathercondition:6 a skos:Concept,
     rdfs:label "Strong wind"@en,
         "Vento forte"@it ;
     dct:identifier 6 ;
-    skos:definition "Strong wind"@en,
-        "Vento forte"@it ;
     skos:inScheme weathercondition: ;
     skos:prefLabel "Strong wind"@en,
         "Vento forte"@it .
@@ -76,8 +64,6 @@ weathercondition:7 a skos:Concept,
     rdfs:label "Undefined"@en,
         "Non definito"@it ;
     dct:identifier 7 ;
-    skos:definition "Undefined"@en,
-        "Non definito"@it ;
     skos:inScheme weathercondition: ;
     skos:prefLabel "Undefined"@en,
         "Non definito"@it .
