@@ -12,13 +12,13 @@ NAMESPACE = Namespace(
     f"https://w3id.org/ontoim/controlled-vocabulary/{VOCABULARY_NAME}/")
 
 LABELS = [
-    Literal("Condizione Meteorologica", lang="it"),
-    Literal("Weather Condition", lang="en")
+    Literal("Weather Condition", lang="en"),
+    Literal("Condizione Meteorologica", lang="it")
 ]
 
 DESCRIPTIONS = [
-    Literal("Classificatione delle condizioni meteorologiche", lang="it"),
-    Literal("Classification of weather conditions", lang="en")
+    Literal("Classification of weather conditions", lang="en"),
+    Literal("Classificatione delle condizioni meteorologiche", lang="it")
 ]
 
 ELEMENT_TYPE = URIRef(ONTOIM["WeatherCondition"])
@@ -64,13 +64,13 @@ for code, el in dataset.iterrows():
 
   g.add((element, DCTERMS.identifier, Literal(code)))
 
-  g.add((element, RDFS.label, Literal(el["it"], lang="it")))
   g.add((element, RDFS.label, Literal(el["en"], lang="en")))
-  g.add((element, SKOS.prefLabel, Literal(el["it"], lang="it")))
+  g.add((element, RDFS.label, Literal(el["it"], lang="it")))
   g.add((element, SKOS.prefLabel, Literal(el["en"], lang="en")))
+  g.add((element, SKOS.prefLabel, Literal(el["it"], lang="it")))
 
-  g.add((element, SKOS.definition, Literal(el["it"], lang="it")))
   g.add((element, SKOS.definition, Literal(el["en"], lang="en")))
+  g.add((element, SKOS.definition, Literal(el["it"], lang="it")))
 
   g.add((element, SKOS.inScheme, SCHEME))
   g.add((SCHEME, SKOS.hasTopConcept, element))
