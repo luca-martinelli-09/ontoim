@@ -1,0 +1,1130 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ontoim: <https://w3id.org/ontoim/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.1> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva regolarmente senza svoltare" ;
+    dct:identifier "1.A.1.1" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva regolarmente senza svoltare" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.10> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva senza rispettare i segnali di divieto di transito o di accesso" ;
+    dct:identifier "1.A.1.10" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva senza rispettare i segnali di divieto di transito o di accesso" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.11> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva con eccesso di velocità (art. 141)" ;
+    dct:identifier "1.A.1.11" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva con eccesso di velocità (art. 141)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.12> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva senza rispettare i limiti di velocità (art. 142)" ;
+    dct:identifier "1.A.1.12" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva senza rispettare i limiti di velocità (art. 142)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.13> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva con le luci abbaglianti incrociando altri veicoli (art. 153)" ;
+    dct:identifier "1.A.1.13" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva con le luci abbaglianti incrociando altri veicoli (art. 153)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.14> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Svoltava a destra regolarmente" ;
+    dct:identifier "1.A.1.14" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Svoltava a destra regolarmente" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.15> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Svoltava a destra irregolarmente" ;
+    dct:identifier "1.A.1.15" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Svoltava a destra irregolarmente" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.16> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Svoltava a sinistra regolarmente" ;
+    dct:identifier "1.A.1.16" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Svoltava a sinistra regolarmente" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.17> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Svoltava a sinistra irregolarmente" ;
+    dct:identifier "1.A.1.17" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Svoltava a sinistra irregolarmente" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.18> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Sorpassava (all'incrocio) - (art. 148)" ;
+    dct:identifier "1.A.1.18" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Sorpassava (all'incrocio) - (art. 148)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.2> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva con guida distratta e andamento indeciso" ;
+    dct:identifier "1.A.1.2" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva con guida distratta e andamento indeciso" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.3> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva senza mantenere la distanza di sicurezza (art. 149)" ;
+    dct:identifier "1.A.1.3" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva senza mantenere la distanza di sicurezza (art. 149)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.4> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva senza dare la precedenza al veicolo proveniente da destra (art. 145)" ;
+    dct:identifier "1.A.1.4" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva senza dare la precedenza al veicolo proveniente da destra (art. 145)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.5> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva senza rispettare lo stop (art. 145)" ;
+    dct:identifier "1.A.1.5" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva senza rispettare lo stop (art. 145)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.6> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva senza rispettare il segnale di dare precedenza (art.145)" ;
+    dct:identifier "1.A.1.6" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva senza rispettare il segnale di dare precedenza (art.145)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.7> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva contromano (art 143)" ;
+    dct:identifier "1.A.1.7" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva contromano (art 143)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.8> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva senza rispettare le segnalazioni semaforiche o dell’agente (artt.41-43)" ;
+    dct:identifier "1.A.1.8" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva senza rispettare le segnalazioni semaforiche o dell’agente (artt.41-43)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.20> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva regolarmente" ;
+    dct:identifier "1.A.2.20" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva regolarmente" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.21> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva con guida distratta e andamento indeciso" ;
+    dct:identifier "1.A.2.21" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva con guida distratta e andamento indeciso" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.22> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva senza mantenere la distanza di sicurezza (art. 149)" ;
+    dct:identifier "1.A.2.22" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva senza mantenere la distanza di sicurezza (art. 149)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.23> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva con eccesso di velocità (art. 141)" ;
+    dct:identifier "1.A.2.23" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva con eccesso di velocità (art. 141)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.24> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva senza rispettare i limiti di velocità (art. 142)" ;
+    dct:identifier "1.A.2.24" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva senza rispettare i limiti di velocità (art. 142)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.25> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva non in prossimità del margine destro della carreggiata (art. 143)" ;
+    dct:identifier "1.A.2.25" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva non in prossimità del margine destro della carreggiata (art. 143)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.26> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva contromano (art 143)" ;
+    dct:identifier "1.A.2.26" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva contromano (art 143)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.27> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva senza rispettare i segnali di divieto di transito o di accesso" ;
+    dct:identifier "1.A.2.27" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva senza rispettare i segnali di divieto di transito o di accesso" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.28> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva con le luci abbaglianti incrociando altri veicoli (art. 153)" ;
+    dct:identifier "1.A.2.28" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva con le luci abbaglianti incrociando altri veicoli (art. 153)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.29> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Sorpassava regolarmente" ;
+    dct:identifier "1.A.2.29" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Sorpassava regolarmente" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.30> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Sorpassava irregolarmente a destra (art.148)" ;
+    dct:identifier "1.A.2.30" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Sorpassava irregolarmente a destra (art.148)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.31> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Sorpassava in curva, su dosso o in condizione di insuff. visibilità (art.148)" ;
+    dct:identifier "1.A.2.31" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Sorpassava in curva, su dosso o in condizione di insuff. visibilità (art.148)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.32> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Sorpassava un veicolo che ne stava sorpassando un altro (art.148)" ;
+    dct:identifier "1.A.2.32" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Sorpassava un veicolo che ne stava sorpassando un altro (art.148)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.33> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Sorpassava senza osservare l'apposito segnale di divieto" ;
+    dct:identifier "1.A.2.33" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Sorpassava senza osservare l'apposito segnale di divieto" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.34> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Manovrava in retrocessione o conversione" ;
+    dct:identifier "1.A.2.34" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Manovrava in retrocessione o conversione" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.35> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Manovrava per immettersi nel flusso della circolazione" ;
+    dct:identifier "1.A.2.35" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Manovrava per immettersi nel flusso della circolazione" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.36> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Manovrava per voltare a sinistra (pasaggio privato,distributore, ecc.)" ;
+    dct:identifier "1.A.2.36" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Manovrava per voltare a sinistra (pasaggio privato,distributore, ecc.)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.37> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Manovrava regolarmente per fermarsi o sostare" ;
+    dct:identifier "1.A.2.37" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Manovrava regolarmente per fermarsi o sostare" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.38> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Manovrava irregolarmente per fermarsi o sostare" ;
+    dct:identifier "1.A.2.38" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Manovrava irregolarmente per fermarsi o sostare" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.39> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Si affianca ad altri veicoli a due ruote irregolarmente" ;
+    dct:identifier "1.A.2.39" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Si affianca ad altri veicoli a due ruote irregolarmente" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.40> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva regolarmente" ;
+    dct:identifier "1.B.1.40" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva regolarmente" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.41> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva con eccesso di velocità (art. 141)" ;
+    dct:identifier "1.B.1.41" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva con eccesso di velocità (art. 141)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.42> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva senza rispettare i limiti di velocità (art. 142)" ;
+    dct:identifier "1.B.1.42" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva senza rispettare i limiti di velocità (art. 142)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.43> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva contromano (art. 143)" ;
+    dct:identifier "1.B.1.43" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva contromano (art. 143)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.44> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Sorpassava veicolo in marcia" ;
+    dct:identifier "1.B.1.44" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Sorpassava veicolo in marcia" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.45> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Manovrava" ;
+    dct:identifier "1.B.1.45" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Manovrava" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.46> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Non rispettava le segnalazioni semaforiche o dell'agente (art. 41-43)" ;
+    dct:identifier "1.B.1.46" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Non rispettava le segnalazioni semaforiche o dell'agente (art. 41-43)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.47> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Usciva senza precauzioni da passo carrabile" ;
+    dct:identifier "1.B.1.47" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Usciva senza precauzioni da passo carrabile" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.48> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Fuorusciva dalla carreggiata" ;
+    dct:identifier "1.B.1.48" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Fuorusciva dalla carreggiata" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.49> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Non dava la precedenza al pedone sugli appositi attraversamenti (art. 191)" ;
+    dct:identifier "1.B.1.49" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Non dava la precedenza al pedone sugli appositi attraversamenti (art. 191)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.50> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Sorpassava un veicolo fermatosi per consentire l'attraversamento dei pedoni" ;
+    dct:identifier "1.B.1.50" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Sorpassava un veicolo fermatosi per consentire l'attraversamento dei pedoni" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.51> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Urtava con il carico il pedone" ;
+    dct:identifier "1.B.1.51" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Urtava con il carico il pedone" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.52> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Superava irregolarmente un tram fermo per la salita e discesa dei passeggeri" ;
+    dct:identifier "1.B.1.52" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Superava irregolarmente un tram fermo per la salita e discesa dei passeggeri" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.40> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Camminava o sostava mantenendosi su marciapiede, banchina,ecc." ;
+    dct:identifier "1.B.2.40" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Camminava o sostava mantenendosi su marciapiede, banchina,ecc." .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.41> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Camminava regolarmente sul margine della carreggiata" ;
+    dct:identifier "1.B.2.41" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Camminava regolarmente sul margine della carreggiata" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.42> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Camminava contromano (art. 190)" ;
+    dct:identifier "1.B.2.42" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Camminava contromano (art. 190)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.43> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Camminava in mezzo alla carreggiata" ;
+    dct:identifier "1.B.2.43" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Camminava in mezzo alla carreggiata" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.44> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Sostava, indugiava, o giocava sulla carreggiata (art. 190)" ;
+    dct:identifier "1.B.2.44" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Sostava, indugiava, o giocava sulla carreggiata (art. 190)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.45> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Lavorava sulla carreggiata protetto da apposito segnale" ;
+    dct:identifier "1.B.2.45" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Lavorava sulla carreggiata protetto da apposito segnale" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.46> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Lavorava sulla carreggiata non protetto da apposito segnale" ;
+    dct:identifier "1.B.2.46" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Lavorava sulla carreggiata non protetto da apposito segnale" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.47> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Saliva su veicolo in marcia" ;
+    dct:identifier "1.B.2.47" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Saliva su veicolo in marcia" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.48> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Discendeva da veicolo con prudenza" ;
+    dct:identifier "1.B.2.48" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Discendeva da veicolo con prudenza" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.49> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Discendeva da veicolo con imprudenza" ;
+    dct:identifier "1.B.2.49" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Discendeva da veicolo con imprudenza" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.50> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Veniva fuori improvvisamente da dietro o davanti un veicolo in sosta o fermata" ;
+    dct:identifier "1.B.2.50" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Veniva fuori improvvisamente da dietro o davanti un veicolo in sosta o fermata" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.51> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Attraversava la strada ad un passaggio pedonale protetto da semaforo, o da agente rispettando le segnalazioni" ;
+    dct:identifier "1.B.2.51" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Attraversava la strada ad un passaggio pedonale protetto da semaforo, o da agente rispettando le segnalazioni" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.52> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Attraversava la strada ad un passaggio pedonale protetto da semaforo, o da agente non rispettando le segnalazioni (art. 41-43)" ;
+    dct:identifier "1.B.2.52" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Attraversava la strada ad un passaggio pedonale protetto da semaforo, o da agente non rispettando le segnalazioni (art. 41-43)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.53> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Attraversava la strada ad un passaggio pedonale non protetto da semaforo o da agente" ;
+    dct:identifier "1.B.2.53" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Attraversava la strada ad un passaggio pedonale non protetto da semaforo o da agente" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.54> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Attraversava la strada regolarmente, non ad un passaggio pedonale" ;
+    dct:identifier "1.B.2.54" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Attraversava la strada regolarmente, non ad un passaggio pedonale" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.55> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Attraversava la strada irregolarmente (art. 190)" ;
+    dct:identifier "1.B.2.55" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Attraversava la strada irregolarmente (art. 190)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.1.60> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva regolarmente" ;
+    dct:identifier "1.C.1.60" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva regolarmente" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.1.61> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva con guida distratta e andamento indeciso" ;
+    dct:identifier "1.C.1.61" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva con guida distratta e andamento indeciso" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.1.62> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva senza mantenere la distanza di sicurezza (art. 149)" ;
+    dct:identifier "1.C.1.62" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva senza mantenere la distanza di sicurezza (art. 149)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.1.63> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva contromano (art. 143)" ;
+    dct:identifier "1.C.1.63" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva contromano (art. 143)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.1.64> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva con eccesso di velocità (art. 141)" ;
+    dct:identifier "1.C.1.64" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva con eccesso di velocità (art. 141)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.1.65> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva senza rispettare i limiti di velocità (art.142)" ;
+    dct:identifier "1.C.1.65" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva senza rispettare i limiti di velocità (art.142)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.1.66> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Procedeva senza rispettare i segnali di divieto di transito o di accesso" ;
+    dct:identifier "1.C.1.66" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Procedeva senza rispettare i segnali di divieto di transito o di accesso" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.1.67> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Sorpassava un altro veicolo in marcia" ;
+    dct:identifier "1.C.1.67" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Sorpassava un altro veicolo in marcia" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.1.68> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Attraversava imprudentemente il passaggio a livello (art. 147)" ;
+    dct:identifier "1.C.1.68" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Attraversava imprudentemente il passaggio a livello (art. 147)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.2.60> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Ostacolo accidentale" ;
+    dct:identifier "1.C.2.60" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Ostacolo accidentale" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.2.61> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Veicolo fermo in posizione regolare" ;
+    dct:identifier "1.C.2.61" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Veicolo fermo in posizione regolare" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.2.62> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Veicolo in posizione irregolare (art. 158)" ;
+    dct:identifier "1.C.2.62" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Veicolo in posizione irregolare (art. 158)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.2.63> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Veicolo senza che sia stato collocato il prescritto segnale (art. 162)" ;
+    dct:identifier "1.C.2.63" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Veicolo senza che sia stato collocato il prescritto segnale (art. 162)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.2.64> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Veicolo regolarmente segnalato" ;
+    dct:identifier "1.C.2.64" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Veicolo regolarmente segnalato" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.2.65> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Ostacolo fisso nella carreggiata (isole, colonnine, transenne, ecc.)" ;
+    dct:identifier "1.C.2.65" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Ostacolo fisso nella carreggiata (isole, colonnine, transenne, ecc.)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.2.66> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Treno in passaggio a livello" ;
+    dct:identifier "1.C.2.66" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Treno in passaggio a livello" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.1.70> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Sbandamento con fuoruscita per evitare l'urto" ;
+    dct:identifier "1.D.1.70" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Sbandamento con fuoruscita per evitare l'urto" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.1.71> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Sbandamento con fuoruscita per guida distratta e andamento indeciso" ;
+    dct:identifier "1.D.1.71" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Sbandamento con fuoruscita per guida distratta e andamento indeciso" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.1.72> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Sbandamento con fuoruscita per eccesso di velocità" ;
+    dct:identifier "1.D.1.72" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Sbandamento con fuoruscita per eccesso di velocità" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.1.73> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Frenata improvvisa con conseguenza ai trasportati" ;
+    dct:identifier "1.D.1.73" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Frenata improvvisa con conseguenza ai trasportati" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.1.74> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Caduta di persona da veicolo per apertura di portiera" ;
+    dct:identifier "1.D.1.74" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Caduta di persona da veicolo per apertura di portiera" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.1.75> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Caduta di persona da veicolo per discesa da veicolo in moto" ;
+    dct:identifier "1.D.1.75" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Caduta di persona da veicolo per discesa da veicolo in moto" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.1.76> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Caduta di persona da veicolo per essersi aggrappata o sistemata inadeguatamente" ;
+    dct:identifier "1.D.1.76" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Caduta di persona da veicolo per essersi aggrappata o sistemata inadeguatamente" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2.70> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Ostacolo accidentale non urtato" ;
+    dct:identifier "1.D.2.70" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Ostacolo accidentale non urtato" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2.71> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Pedone non urtato" ;
+    dct:identifier "1.D.2.71" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Pedone non urtato" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2.72> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Animale non urtato" ;
+    dct:identifier "1.D.2.72" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Animale non urtato" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2.73> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Veicolo non urtato" ;
+    dct:identifier "1.D.2.73" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Veicolo non urtato" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2.74> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Buche, ecc. non urtate" ;
+    dct:identifier "1.D.2.74" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Buche, ecc. non urtate" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2.75> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Senza ostacolo né pedone né altro veicolo" ;
+    dct:identifier "1.D.2.75" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Senza ostacolo né pedone né altro veicolo" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2.76> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Ostacolo fisso non urtato" ;
+    dct:identifier "1.D.2.76" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Ostacolo fisso non urtato" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2.80> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Rottura o insufficienza dei freni" ;
+    dct:identifier "2.80" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Rottura o insufficienza dei freni" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2.81> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Rottura o guasto allo sterzo" ;
+    dct:identifier "2.81" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Rottura o guasto allo sterzo" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2.82> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Scoppio o eccessiva usura dei pneumatici" ;
+    dct:identifier "2.82" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Scoppio o eccessiva usura dei pneumatici" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2.83> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Mancanza o insufficienza dei fari o delle luci di posizione" ;
+    dct:identifier "2.83" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Mancanza o insufficienza dei fari o delle luci di posizione" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2.84> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Mancanza o insufficienza dei lampeggiatori o delle segnalazioni luminose di arresto" ;
+    dct:identifier "2.84" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Mancanza o insufficienza dei lampeggiatori o delle segnalazioni luminose di arresto" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2.85> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Rottura degli organi di agganciamento dei rimorchi" ;
+    dct:identifier "2.85" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Rottura degli organi di agganciamento dei rimorchi" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2.86> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Deficienza delle attrezzature per trasporto di merci pericolose (carburante,esplosivi, gas compressi, ecc.)" ;
+    dct:identifier "2.86" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Deficienza delle attrezzature per trasporto di merci pericolose (carburante,esplosivi, gas compressi, ecc.)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2.87> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Mancanza o insufficienza degli adattamenti prescritti per i veicoli condotti da mutilati o minorati fisici" ;
+    dct:identifier "2.87" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Mancanza o insufficienza degli adattamenti prescritti per i veicoli condotti da mutilati o minorati fisici" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2.88> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Distacco di ruota" ;
+    dct:identifier "2.88" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Distacco di ruota" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2.89> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Mancanza o insufficienza dei dispositivi visivi dei velocipedi" ;
+    dct:identifier "2.89" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Mancanza o insufficienza dei dispositivi visivi dei velocipedi" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3.90> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Anormale per ebbrezza da alcool (art. 186)" ;
+    dct:identifier "3.90" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Anormale per ebbrezza da alcool (art. 186)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3.91> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Anormale per condizioni morbose in atto" ;
+    dct:identifier "3.91" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Anormale per condizioni morbose in atto" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3.92> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Anormale per improvviso malore" ;
+    dct:identifier "3.92" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Anormale per improvviso malore" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3.93> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Anormale per sonno" ;
+    dct:identifier "3.93" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Anormale per sonno" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3.94> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Anormale per ingestione di sostanze stupefacenti o psicotrope (art. 187)" ;
+    dct:identifier "3.94" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Anormale per ingestione di sostanze stupefacenti o psicotrope (art. 187)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3.95> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Mancato uso di lenti correttive o apparecchi di protesi (art. 173)" ;
+    dct:identifier "3.95" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Mancato uso di lenti correttive o apparecchi di protesi (art. 173)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3.96> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Abbagliato" ;
+    dct:identifier "3.96" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Abbagliato" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3.97> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Per aver superato i periodi di guida prescritti (art.174)" ;
+    dct:identifier "3.97" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:prefLabel "Per aver superato i periodi di guida prescritti (art.174)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Incidenti tra veicoli in marcia" ;
+    dct:identifier "1.A" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> ;
+    skos:prefLabel "Incidenti tra veicoli in marcia" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Circostanze presunte dell'incidente per inconvenienti di circolazione" ;
+    dct:identifier 1 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D> ;
+    skos:prefLabel "Circostanze presunte dell'incidente per inconvenienti di circolazione" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Veicolo, pedone o ostacolo non urtato" ;
+    dct:identifier "1.D.2" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2.70>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2.71>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2.72>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2.73>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2.74>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2.75>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2.76> ;
+    skos:prefLabel "Veicolo, pedone o ostacolo non urtato" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Incidente a veicolo in marcia senza urto con veicolo o ostacolo sulla carreggiata" ;
+    dct:identifier "1.D" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.1.70>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.1.71>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.1.72>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.1.73>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.1.74>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.1.75>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.1.76>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.D.2> ;
+    skos:prefLabel "Incidente a veicolo in marcia senza urto con veicolo o ostacolo sulla carreggiata" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Circostanze presunte dell'incidente per stato psico-fisico" ;
+    dct:identifier 3 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3.90>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3.91>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3.92>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3.93>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3.94>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3.95>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3.96>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3.97> ;
+    skos:prefLabel "Circostanze presunte dell'incidente per stato psico-fisico" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Circostanze presunte dell'incidente per difetti o avarie del veicolo" ;
+    dct:identifier 2 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2.80>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2.81>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2.82>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2.83>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2.84>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2.85>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2.86>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2.87>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2.88>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2.89> ;
+    skos:prefLabel "Circostanze presunte dell'incidente per difetti o avarie del veicolo" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Incidente a veicolo in marcia che urta veicolo fermo o altro ostacolo" ;
+    dct:identifier "1.C" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.1.60>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.1.61>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.1.62>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.1.63>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.1.64>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.1.65>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.1.66>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.1.67>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.1.68>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.2.60>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.2.61>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.2.62>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.2.63>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.2.64>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.2.65>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.C.2.66> ;
+    skos:prefLabel "Incidente a veicolo in marcia che urta veicolo fermo o altro ostacolo" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Incidente sull'intersezione stradale (incrocio)" ;
+    dct:identifier "1.A.1" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.10>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.11>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.12>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.13>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.14>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.15>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.16>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.17>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.18>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.3>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.4>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.5>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.6>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.7>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.1.8> ;
+    skos:prefLabel "Incidente sull'intersezione stradale (incrocio)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Incidente non all'intersezione stradale" ;
+    dct:identifier "1.A.2" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.20>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.21>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.22>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.23>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.24>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.25>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.26>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.27>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.28>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.29>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.30>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.31>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.32>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.33>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.34>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.35>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.36>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.37>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.38>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.A.2.39> ;
+    skos:prefLabel "Incidente non all'intersezione stradale" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B> a skos:Concept,
+        ontoim:AccidentCircumstance ;
+    rdfs:label "Investimento di pedone" ;
+    dct:identifier "1.B" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.40>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.41>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.42>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.43>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.44>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.45>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.46>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.47>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.48>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.49>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.50>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.51>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.1.52>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.40>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.41>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.42>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.43>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.44>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.45>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.46>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.47>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.48>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.49>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.50>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.51>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.52>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.53>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.54>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1.B.2.55> ;
+    skos:prefLabel "Investimento di pedone" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/> a skos:ConceptScheme ;
+    rdfs:label "Accident circumstance"@en,
+        "Circostanze presunte dell'incidente"@it ;
+    dct:creator <https://w3id.org/people/lucamartinelli> ;
+    dct:description "ISTAT codes of the accident circumstances"@en,
+        "Codici ISTAT delle circostanze presunte dell'incidente"@it ;
+    dct:title "Accident circumstance"@en,
+        "Circostanze presunte dell'incidente"@it ;
+    rdfs:comment "ISTAT codes of the accident circumstances"@en,
+        "Codici ISTAT delle circostanze presunte dell'incidente"@it ;
+    skos:hasTopConcept <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances/3> .
+
