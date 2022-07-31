@@ -1,8 +1,8 @@
-code,it,en
-1,Sereno,Clear
-2,Nebbia,Fog
-3,Pioggia,Rain
-4,Grandine,Hail
-5,Neve,Snow
-6,Vento forte,Strong wind
-7,Non definito,Undefined
+l1_identifier,l1_label_en,l1_label_it
+1,Clear,Sereno
+2,Fog,Nebbia
+3,Rain,Pioggia
+4,Hail,Grandine
+5,Snow,Neve
+6,Strong wind,Vento forte
+7,Undefined,Non definito

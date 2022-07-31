@@ -2,73 +2,72 @@
 @prefix ontoim: <https://w3id.org/ontoim/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix weathercondition: <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-weathercondition:1 a skos:Concept,
+<https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/1> a skos:Concept,
         ontoim:WeatherCondition ;
     rdfs:label "Clear"@en,
         "Sereno"@it ;
     dct:identifier 1 ;
-    skos:inScheme weathercondition: ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/> ;
     skos:prefLabel "Clear"@en,
         "Sereno"@it .
 
-weathercondition:2 a skos:Concept,
+<https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/2> a skos:Concept,
         ontoim:WeatherCondition ;
     rdfs:label "Fog"@en,
         "Nebbia"@it ;
     dct:identifier 2 ;
-    skos:inScheme weathercondition: ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/> ;
     skos:prefLabel "Fog"@en,
         "Nebbia"@it .
 
-weathercondition:3 a skos:Concept,
+<https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/3> a skos:Concept,
         ontoim:WeatherCondition ;
     rdfs:label "Rain"@en,
         "Pioggia"@it ;
     dct:identifier 3 ;
-    skos:inScheme weathercondition: ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/> ;
     skos:prefLabel "Rain"@en,
         "Pioggia"@it .
 
-weathercondition:4 a skos:Concept,
+<https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/4> a skos:Concept,
         ontoim:WeatherCondition ;
     rdfs:label "Hail"@en,
         "Grandine"@it ;
     dct:identifier 4 ;
-    skos:inScheme weathercondition: ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/> ;
     skos:prefLabel "Hail"@en,
         "Grandine"@it .
 
-weathercondition:5 a skos:Concept,
+<https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/5> a skos:Concept,
         ontoim:WeatherCondition ;
     rdfs:label "Snow"@en,
         "Neve"@it ;
     dct:identifier 5 ;
-    skos:inScheme weathercondition: ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/> ;
     skos:prefLabel "Snow"@en,
         "Neve"@it .
 
-weathercondition:6 a skos:Concept,
+<https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/6> a skos:Concept,
         ontoim:WeatherCondition ;
     rdfs:label "Strong wind"@en,
         "Vento forte"@it ;
     dct:identifier 6 ;
-    skos:inScheme weathercondition: ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/> ;
     skos:prefLabel "Strong wind"@en,
         "Vento forte"@it .
 
-weathercondition:7 a skos:Concept,
+<https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/7> a skos:Concept,
         ontoim:WeatherCondition ;
     rdfs:label "Undefined"@en,
         "Non definito"@it ;
     dct:identifier 7 ;
-    skos:inScheme weathercondition: ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/> ;
     skos:prefLabel "Undefined"@en,
         "Non definito"@it .
 
-weathercondition: a skos:ConceptScheme ;
+<https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/> a skos:ConceptScheme ;
     rdfs:label "Weather Condition"@en,
         "Condizione Meteorologica"@it ;
     dct:creator <https://w3id.org/people/lucamartinelli> ;
@@ -78,11 +77,11 @@ weathercondition: a skos:ConceptScheme ;
         "Condizione Meteorologica"@it ;
     rdfs:comment "Classification of weather conditions"@en,
         "Classificatione delle condizioni meteorologiche"@it ;
-    skos:hasTopConcept weathercondition:1,
-        weathercondition:2,
-        weathercondition:3,
-        weathercondition:4,
-        weathercondition:5,
-        weathercondition:6,
-        weathercondition:7 .
+    skos:hasTopConcept <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/3>,
+        <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/4>,
+        <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/5>,
+        <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/6>,
+        <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/7> .
 
