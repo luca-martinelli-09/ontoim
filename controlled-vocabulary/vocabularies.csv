@@ -1,0 +1,3 @@
+name,element,label_en,label_it,description_en,description_it,creator
+weather-conditions,WeatherCondition,Weather Condition,Condizione Meteorologica,Classification of weather conditions,Classificatione delle condizioni meteorologiche,https://w3id.org/people/lucamartinelli
+waste-categories,WasteCategory,Waste Category,Categoria di rifiuto,Classification of waste categories,Classificatione delle categorie di rifiuti,https://w3id.org/people/lucamartinelli
