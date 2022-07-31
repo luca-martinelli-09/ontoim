@@ -3,25 +3,14 @@ import dominate
 from dominate.tags import *
 from rdflib import OWL, Graph, SKOS, RDFS, RDF
 from rdflib.namespace import DCTERMS, NamespaceManager
-
-VOCABULARY_NAME = "weather-conditions"
-
-g = Graph()
-
-g.parse(f"https://w3id.org/ontoim/controlled-vocabulary/{VOCABULARY_NAME}/", format='xml')
-
-nm = NamespaceManager(g)
+import pandas as pd
 
 
-def getTitle(element):
-    global g
-
+def getTitle(element, g):
     return g.value(element, RDFS.label) or g.value(element, SKOS.prefLabel)
 
 
 def hasElements(generator):
-    global g
-
     try:
         next(generator)
         return True
@@ -29,154 +18,179 @@ def hasElements(generator):
         return False
 
 
-conceptScheme = next(g.subjects(RDF.type, SKOS.ConceptScheme))
+def getLanguageLabel(el):
+    return "@" + el.language if el.language else ""
 
-abstract = g.objects(conceptScheme, DCTERMS.description) if hasElements(
-    g.objects(conceptScheme, DCTERMS.description)) else None
 
-authors = g.objects(conceptScheme, DCTERMS.creator) if hasElements(
-    g.objects(conceptScheme, DCTERMS.creator)) else None
+def generateDoc(vocabularyIRI, vocabularyName):
+    g = Graph()
 
-titles = g.objects(conceptScheme, DCTERMS.title) if hasElements(
-    g.objects(conceptScheme, DCTERMS.title)) else None
-mainTitle = getTitle(conceptScheme) if titles else None
+    g.parse(vocabularyIRI, format='xml')
 
-version = g.objects(conceptScheme, OWL.versionInfo) if hasElements(
-    g.objects(conceptScheme, OWL.versionInfo)) else None
+    nm = NamespaceManager(g)
 
-topConcepts = g.objects(conceptScheme, SKOS.hasTopConcept) if hasElements(
-    g.objects(conceptScheme, SKOS.hasTopConcept)) else None
-allConcepts = g.subjects(SKOS.inScheme, conceptScheme) if hasElements(
-    g.subjects(SKOS.inScheme, conceptScheme)) else None
+    conceptScheme = next(g.subjects(RDF.type, SKOS.ConceptScheme))
 
-doc = dominate.document(title=mainTitle)
+    abstract = g.objects(conceptScheme, DCTERMS.description) if hasElements(
+        g.objects(conceptScheme, DCTERMS.description)) else None
 
-with doc.head:
-    link(rel='stylesheet', href='style.css')
+    authors = g.objects(conceptScheme, DCTERMS.creator) if hasElements(
+        g.objects(conceptScheme, DCTERMS.creator)) else None
 
-with doc:
-    with header():
-        h1(mainTitle)
+    titles = g.objects(conceptScheme, DCTERMS.title) if hasElements(
+        g.objects(conceptScheme, DCTERMS.title)) else None
+    mainTitle = getTitle(conceptScheme, g) if titles else None
 
-        with ul(cls="vers"):
-            for tit in titles:
-                li(span(tit, cls="res lang", data_lang="@" + tit.language))
+    version = g.objects(conceptScheme, OWL.versionInfo) if hasElements(
+        g.objects(conceptScheme, OWL.versionInfo)) else None
 
-    with section(id="metadata", cls="info"):
-        with dl():
-            dt("IRI")
-            dd(code(conceptScheme), cls="iri")
+    topConcepts = g.objects(conceptScheme, SKOS.hasTopConcept) if hasElements(
+        g.objects(conceptScheme, SKOS.hasTopConcept)) else None
+    allConcepts = g.subjects(SKOS.inScheme, conceptScheme) if hasElements(
+        g.subjects(SKOS.inScheme, conceptScheme)) else None
 
-            if version:
-                dt("Version")
-                with dd().add(ul(cls="vers")):
-                    for v in version:
-                        li(span(v, cls="res lang", data_lang="@" + v.language))
+    doc = dominate.document(title=mainTitle)
 
-            if authors:
-                dt("Authors")
-                for auth in authors:
-                    dd(a(auth, href=auth))
+    with doc.head:
+        link(rel='stylesheet', href='style.css')
 
-            dt("has super-classes")
-            with dd().add(ul(cls="vers rel super")):
-                for type in g.objects(conceptScheme, RDF.type):
-                    li(span(nm.normalizeUri(type), cls="res other", title=type))
-
-    if abstract:
-        with section(id="abstract"):
-            h2("Abstract")
+    with doc:
+        with header():
+            h1(mainTitle)
 
             with ul(cls="vers"):
-                for abs in abstract:
-                    li(span(abs, cls="res lang", data_lang="@" + abs.language))
+                for tit in titles:
+                    li(span(tit, cls="res lang", data_lang=getLanguageLabel(tit)))
 
-    with section(id="toc"):
-        h2("Table of Contents")
+        with section(id="metadata", cls="info"):
+            with dl():
+                dt("IRI")
+                dd(code(conceptScheme), cls="iri")
 
-        with ol():
-            if abstract:
-                li(a("Abstract", href="#abstract"))
+                if version:
+                    dt("Version")
+                    with dd().add(ul(cls="vers")):
+                        for v in version:
+                            li(span(v, cls="res lang",
+                               data_lang=getLanguageLabel(v)))
 
-            if topConcepts:
-                li(a("Top Concepts", href="#topConcepts"))
+                if authors:
+                    dt("Authors")
+                    for auth in authors:
+                        dd(a(auth, href=auth))
 
-            if allConcepts:
-                li(a("All Concepts", href="#allConcepts"))
+                dt("has super-classes")
+                with dd().add(ul(cls="vers rel super")):
+                    for type in g.objects(conceptScheme, RDF.type):
+                        li(span(nm.normalizeUri(type), cls="res other", title=type))
 
-    with section(id="topConcepts"):
-        h2("Top Concepts")
+        if abstract:
+            with section(id="abstract"):
+                h2("Abstract")
 
-        with ul(cls="subtoc"):
-            for tc in topConcepts:
-                conceptID = g.value(tc, DCTERMS.identifier)
+                with ul(cls="vers"):
+                    for abs in abstract:
+                        li(span(abs, cls="res lang", data_lang=getLanguageLabel(abs)))
 
-                li(a(getTitle(tc), href="#" + conceptID, title=tc))
+        with section(id="toc"):
+            h2("Table of Contents")
 
-    with section(id="allConcepts"):
-        h2("All Concepts")
+            with ol():
+                if abstract:
+                    li(a("Abstract", href="#abstract"))
 
-        with ul(cls="subtoc"):
+                if topConcepts:
+                    li(a("Top Concepts", href="#topConcepts"))
+
+                if allConcepts:
+                    li(a("All Concepts", href="#allConcepts"))
+
+        with section(id="topConcepts"):
+            h2("Top Concepts")
+
+            with ul(cls="subtoc"):
+                for tc in topConcepts:
+                    conceptID = g.value(tc, DCTERMS.identifier)
+
+                    li(a(getTitle(tc, g), href="#" + conceptID, title=tc))
+
+        with section(id="allConcepts"):
+            h2("All Concepts")
+
+            with ul(cls="subtoc"):
+                for conc in allConcepts:
+                    conceptID = g.value(conc, DCTERMS.identifier)
+                    li(a(getTitle(conc, g), href="#" + conceptID))
+
+            allConcepts = g.subjects(SKOS.inScheme, conceptScheme)
             for conc in allConcepts:
                 conceptID = g.value(conc, DCTERMS.identifier)
-                li(a(getTitle(conc), href="#" + conceptID))
 
-        allConcepts = g.subjects(SKOS.inScheme, conceptScheme)
-        for conc in allConcepts:
-            conceptID = g.value(conc, DCTERMS.identifier)
+                with div(id=conceptID, cls="entity"):
+                    with header():
+                        h3(getTitle(conc, g))
+                        p(code(conc, title=conc), cls="IRI")
 
-            with div(id=conceptID, cls="entity"):
-                with header():
-                    h3(getTitle(conc))
-                    p(code(conc, title=conc), cls="IRI")
-
-                    with ul(cls="rel super"):
-                        for tit in g.objects(conc, SKOS.prefLabel):
-                            li(span(tit, cls="res lang", data_lang="@" + tit.language))
-                
-                try:
-                    next(g.objects(conc, SKOS.definition))
-                    
-                    with ul(cls="vers"):
-                        for desc in g.objects(conc, SKOS.definition):
-                            li(span(desc, cls="res lang", data_lang="@" + desc.language))
-                except:
-                    pass
-
-                with dl():
-                    dt("has super-classes")
-                    with dd().add(ul(cls="rel super")):
-                        for type in g.objects(conc, RDF.type):
-                            li(span(nm.normalizeUri(type),
-                               cls="res other", title=type))
+                        with ul(cls="rel super"):
+                            for tit in g.objects(conc, SKOS.prefLabel):
+                                li(span(tit, cls="res lang",
+                                   data_lang=getLanguageLabel(tit)))
 
                     try:
-                        next(g.objects(conc, SKOS.narrower))
+                        next(g.objects(conc, SKOS.definition))
 
-                        dt("narrower")
-                        with dd().add(ul(cls="rel super")):
-                            for nar in g.objects(conc, SKOS.narrower):
-                                conceptID = g.value(nar, DCTERMS.identifier)
-
-                                li(a(getTitle(nar), href="#" +
-                                   conceptID, cls="res", title=nar))
+                        with ul(cls="vers"):
+                            for desc in g.objects(conc, SKOS.definition):
+                                li(span(desc, cls="res lang",
+                                   data_lang=getLanguageLabel(desc)))
                     except:
                         pass
 
-                    try:
-                        next(g.objects(conc, SKOS.broader))
-
-                        dt("broader")
+                    with dl():
+                        dt("has super-classes")
                         with dd().add(ul(cls="rel super")):
-                            for bro in g.objects(conc, SKOS.broader):
-                                conceptID = g.value(bro, DCTERMS.identifier)
+                            for type in g.objects(conc, RDF.type):
+                                li(span(nm.normalizeUri(type),
+                                        cls="res other", title=type))
 
-                                li(a(getTitle(bro), href="#" +
-                                   conceptID, cls="res", title=bro))
-                    except:
-                        pass
+                        try:
+                            next(g.objects(conc, SKOS.narrower))
+
+                            dt("narrower")
+                            with dd().add(ul(cls="rel super")):
+                                for nar in g.objects(conc, SKOS.narrower):
+                                    conceptID = g.value(
+                                        nar, DCTERMS.identifier)
+
+                                    li(a(getTitle(nar, g), href="#" +
+                                         conceptID, cls="res", title=nar))
+                        except:
+                            pass
+
+                        try:
+                            next(g.objects(conc, SKOS.broader))
+
+                            dt("broader")
+                            with dd().add(ul(cls="rel super")):
+                                for bro in g.objects(conc, SKOS.broader):
+                                    conceptID = g.value(
+                                        bro, DCTERMS.identifier)
+
+                                    li(a(getTitle(bro, g), href="#" +
+                                         conceptID, cls="res", title=bro))
+                        except:
+                            pass
+
+    with open(f"controlled-vocabulary/{vocabularyName}.html", "w") as fp:
+        fp.write(doc.render(pretty=False))
 
 
-with open(f"controlled-vocabulary/{VOCABULARY_NAME}.html", "w") as fp:
-    fp.write(doc.render(pretty=False))
+vocabularies = pd.read_csv(
+    "../controlled-vocabulary/vocabularies.csv", index_col="name")
+
+for vocabularyName, _ in vocabularies.iterrows():
+    generateDoc(
+        f"../controlled-vocabulary/{vocabularyName}/{vocabularyName}.rdf",
+        vocabularyName
+    )
 # %%
