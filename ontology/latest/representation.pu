@@ -499,7 +499,7 @@ package "Road and Traffic" {
     Road -[#RoadAccidentProperty]-> RoadCategory : hasRoadCategory
     Road -[#RoadAccidentProperty]-> RoadType : hasRoadType
     Road -[#RoadAccidentProperty]-> PavementType : hasPavementType
-    Road -[#RoadAccidentProperty]-> Context : hasContext
+    Road -[#RoadAccidentProperty]-> RoadContext : hasRoadContext
     Road -[#RoadAccidentProperty]-> RoadbedStatus : hasRoadbedStatus
     Road -[#RoadAccidentProperty]-> RoadSignalPresence : hasRoadSignalPresence
 
@@ -512,8 +512,8 @@ package "Road and Traffic" {
     class PavementType #RoadAccidentNode
     PavementType -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
 
-    class Context #RoadAccidentNode
-    Context -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
+    class RoadContext #RoadAccidentNode
+    RoadContext -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
 
     class RoadbedStatus #RoadAccidentNode
     RoadbedStatus -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
