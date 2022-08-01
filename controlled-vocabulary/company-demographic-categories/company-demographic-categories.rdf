@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:ontoim="https://w3id.org/ontoim/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/A.1">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CompanyDemographicCategory"/>
+    <dct:identifier>A.1</dct:identifier>
+    <rdfs:label xml:lang="en">EU foreign enterprise</rdfs:label>
+    <rdfs:label xml:lang="it">Impresa straniera comunitaria</rdfs:label>
+    <skos:prefLabel xml:lang="en">EU foreign enterprise</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Impresa straniera comunitaria</skos:prefLabel>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/">
+        <rdfs:label xml:lang="en">Demographic category for a company</rdfs:label>
+        <rdfs:label xml:lang="it">Categoria della demografia di un'impresa</rdfs:label>
+        <dct:title xml:lang="en">Demographic category for a company</dct:title>
+        <dct:title xml:lang="it">Categoria della demografia di un'impresa</dct:title>
+        <rdfs:comment xml:lang="en">Classification of demographic categories for companies (e.g. youth enterprise, etc...)</rdfs:comment>
+        <rdfs:comment xml:lang="it">Classificazione demografica delle aziende (es: impresa giovanile, ecc...)</rdfs:comment>
+        <dct:description xml:lang="en">Classification of demographic categories for companies (e.g. youth enterprise, etc...)</dct:description>
+        <dct:description xml:lang="it">Classificazione demografica delle aziende (es: impresa giovanile, ecc...)</dct:description>
+        <dct:creator rdf:resource="https://w3id.org/people/lucamartinelli"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/A"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/B"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/C"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+    <skos:broader>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/C">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/CompanyDemographicCategory"/>
+        <dct:identifier>C</dct:identifier>
+        <rdfs:label xml:lang="en">Foreign enterprise</rdfs:label>
+        <rdfs:label xml:lang="it">Impresa straniera</rdfs:label>
+        <skos:prefLabel xml:lang="en">Foreign enterprise</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Impresa straniera</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/A.1"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/A.2"/>
+      </skos:Concept>
+    </skos:broader>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/A">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CompanyDemographicCategory"/>
+    <dct:identifier>A</dct:identifier>
+    <rdfs:label xml:lang="en">Female enterprise</rdfs:label>
+    <rdfs:label xml:lang="it">Impresa femminile</rdfs:label>
+    <skos:prefLabel xml:lang="en">Female enterprise</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Impresa femminile</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/B">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CompanyDemographicCategory"/>
+    <dct:identifier>B</dct:identifier>
+    <rdfs:label xml:lang="en">Youth enterprise</rdfs:label>
+    <rdfs:label xml:lang="it">Impresa giovanile</rdfs:label>
+    <skos:prefLabel xml:lang="en">Youth enterprise</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Impresa giovanile</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/A.2">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CompanyDemographicCategory"/>
+    <dct:identifier>A.2</dct:identifier>
+    <rdfs:label xml:lang="en">Non-EU foreign enterprise</rdfs:label>
+    <rdfs:label xml:lang="it">Impresa straniera extracomunitaria</rdfs:label>
+    <skos:prefLabel xml:lang="en">Non-EU foreign enterprise</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Impresa straniera extracomunitaria</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/C"/>
+  </skos:Concept>
+</rdf:RDF>

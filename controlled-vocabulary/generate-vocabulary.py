@@ -184,14 +184,19 @@ def createVocabulary(vocabularyInfo):
         pass
 
     # Populate scheme
-    df = pd.read_csv(f"{vocabularyName}/{vocabularyName}.csv")
+    df = None
+    try:
+        df = pd.read_csv(f"{vocabularyName}/{vocabularyName}.csv")
+    except:
+        pass
 
-    conceptsData = getJSONData(df)
+    if not df is None:
+        conceptsData = getJSONData(df)
 
-    for cID in conceptsData:
-        concept = conceptsData[cID]
-        addConceptToScheme(g, NAMESPACE, SCHEME, concept,
-                           ONTOIM[vocabularyInfo["element"]])
+        for cID in conceptsData:
+            concept = conceptsData[cID]
+            addConceptToScheme(g, NAMESPACE, SCHEME, concept,
+                            ONTOIM[vocabularyInfo["element"]])
 
     # Save graph
     g.serialize(f"{vocabularyName}/{vocabularyName}.ttl", "turtle")

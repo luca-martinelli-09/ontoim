@@ -105,81 +105,83 @@ def generateDoc(vocabularyIRI, vocabularyName):
                 if allConcepts:
                     li(a("All Concepts", href="#allConcepts"))
 
-        with section(id="topConcepts"):
-            h2("Top Concepts")
+        if topConcepts:
+            with section(id="topConcepts"):
+                h2("Top Concepts")
 
-            with ul(cls="subtoc"):
-                for tc in topConcepts:
-                    conceptID = g.value(tc, DCTERMS.identifier)
+                with ul(cls="subtoc"):
+                    for tc in topConcepts:
+                        conceptID = g.value(tc, DCTERMS.identifier)
 
-                    li(a(getTitle(tc, g), href="#" + conceptID, title=tc))
+                        li(a(getTitle(tc, g), href="#" + conceptID, title=tc))
 
-        with section(id="allConcepts"):
-            h2("All Concepts")
+        if allConcepts:
+            with section(id="allConcepts"):
+                h2("All Concepts")
 
-            with ul(cls="subtoc"):
+                with ul(cls="subtoc"):
+                    for conc in allConcepts:
+                        conceptID = g.value(conc, DCTERMS.identifier)
+                        li(a(getTitle(conc, g), href="#" + conceptID))
+
+                allConcepts = g.subjects(SKOS.inScheme, conceptScheme)
                 for conc in allConcepts:
                     conceptID = g.value(conc, DCTERMS.identifier)
-                    li(a(getTitle(conc, g), href="#" + conceptID))
 
-            allConcepts = g.subjects(SKOS.inScheme, conceptScheme)
-            for conc in allConcepts:
-                conceptID = g.value(conc, DCTERMS.identifier)
+                    with div(id=conceptID, cls="entity"):
+                        with header():
+                            h3(getTitle(conc, g))
+                            p(code(conc, title=conc), cls="IRI")
 
-                with div(id=conceptID, cls="entity"):
-                    with header():
-                        h3(getTitle(conc, g))
-                        p(code(conc, title=conc), cls="IRI")
-
-                        with ul(cls="rel super"):
-                            for tit in g.objects(conc, SKOS.prefLabel):
-                                li(span(tit, cls="res lang",
-                                   data_lang=getLanguageLabel(tit)))
-
-                    try:
-                        next(g.objects(conc, SKOS.definition))
-
-                        with ul(cls="vers"):
-                            for desc in g.objects(conc, SKOS.definition):
-                                li(span(desc, cls="res lang",
-                                   data_lang=getLanguageLabel(desc)))
-                    except:
-                        pass
-
-                    with dl():
-                        dt("has super-classes")
-                        with dd().add(ul(cls="rel super")):
-                            for type in g.objects(conc, RDF.type):
-                                li(span(nm.normalizeUri(type),
-                                        cls="res other", title=type))
+                            with ul(cls="rel super"):
+                                for tit in g.objects(conc, SKOS.prefLabel):
+                                    li(span(tit, cls="res lang",
+                                    data_lang=getLanguageLabel(tit)))
 
                         try:
-                            next(g.objects(conc, SKOS.narrower))
+                            next(g.objects(conc, SKOS.definition))
 
-                            dt("narrower")
-                            with dd().add(ul(cls="rel super")):
-                                for nar in g.objects(conc, SKOS.narrower):
-                                    conceptID = g.value(
-                                        nar, DCTERMS.identifier)
-
-                                    li(a(getTitle(nar, g), href="#" +
-                                         conceptID, cls="res", title=nar))
+                            with ul(cls="vers"):
+                                for desc in g.objects(conc, SKOS.definition):
+                                    li(span(desc, cls="res lang",
+                                    data_lang=getLanguageLabel(desc)))
                         except:
                             pass
 
-                        try:
-                            next(g.objects(conc, SKOS.broader))
-
-                            dt("broader")
+                        with dl():
+                            dt("has super-classes")
                             with dd().add(ul(cls="rel super")):
-                                for bro in g.objects(conc, SKOS.broader):
-                                    conceptID = g.value(
-                                        bro, DCTERMS.identifier)
+                                for type in g.objects(conc, RDF.type):
+                                    li(span(nm.normalizeUri(type),
+                                            cls="res other", title=type))
 
-                                    li(a(getTitle(bro, g), href="#" +
-                                         conceptID, cls="res", title=bro))
-                        except:
-                            pass
+                            try:
+                                next(g.objects(conc, SKOS.narrower))
+
+                                dt("narrower")
+                                with dd().add(ul(cls="rel super")):
+                                    for nar in g.objects(conc, SKOS.narrower):
+                                        conceptID = g.value(
+                                            nar, DCTERMS.identifier)
+
+                                        li(a(getTitle(nar, g), href="#" +
+                                            conceptID, cls="res", title=nar))
+                            except:
+                                pass
+
+                            try:
+                                next(g.objects(conc, SKOS.broader))
+
+                                dt("broader")
+                                with dd().add(ul(cls="rel super")):
+                                    for bro in g.objects(conc, SKOS.broader):
+                                        conceptID = g.value(
+                                            bro, DCTERMS.identifier)
+
+                                        li(a(getTitle(bro, g), href="#" +
+                                            conceptID, cls="res", title=bro))
+                            except:
+                                pass
 
     with open(f"controlled-vocabulary/{vocabularyName}.html", "w") as fp:
         fp.write(doc.render(pretty=False))

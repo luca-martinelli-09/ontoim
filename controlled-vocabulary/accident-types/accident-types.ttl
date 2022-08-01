@@ -1,0 +1,156 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ontoim: <https://w3id.org/ontoim/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.1> a skos:Concept,
+        ontoim:AccidentType ;
+    rdfs:label "Scontro frontale" ;
+    dct:identifier "A.1" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-types/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-types/> ;
+    skos:prefLabel "Scontro frontale" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.2> a skos:Concept,
+        ontoim:AccidentType ;
+    rdfs:label "Scontro frontale-laterale" ;
+    dct:identifier "A.2" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-types/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-types/> ;
+    skos:prefLabel "Scontro frontale-laterale" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.3> a skos:Concept,
+        ontoim:AccidentType ;
+    rdfs:label "Scontro laterale" ;
+    dct:identifier "A.3" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-types/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-types/> ;
+    skos:prefLabel "Scontro laterale" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.4> a skos:Concept,
+        ontoim:AccidentType ;
+    rdfs:label "Tamponamento" ;
+    dct:identifier "A.4" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-types/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-types/> ;
+    skos:prefLabel "Tamponamento" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-types/B.5> a skos:Concept,
+        ontoim:AccidentType ;
+    rdfs:label "Investimento di pedoni" ;
+    dct:identifier "B.5" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-types/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-types/> ;
+    skos:prefLabel "Investimento di pedoni" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-types/C.6> a skos:Concept,
+        ontoim:AccidentType ;
+    rdfs:label "Urto con veicolo in fermata o in arresto" ;
+    dct:identifier "C.6" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-types/C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-types/> ;
+    skos:prefLabel "Urto con veicolo in fermata o in arresto" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-types/C.7> a skos:Concept,
+        ontoim:AccidentType ;
+    rdfs:label "Urto con veicolo in sosta" ;
+    dct:identifier "C.7" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-types/C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-types/> ;
+    skos:prefLabel "Urto con veicolo in sosta" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-types/C.8> a skos:Concept,
+        ontoim:AccidentType ;
+    rdfs:label "Urto con ostacolo" ;
+    dct:identifier "C.8" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-types/C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-types/> ;
+    skos:prefLabel "Urto con ostacolo" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-types/C.9> a skos:Concept,
+        ontoim:AccidentType ;
+    rdfs:label "Urto con treno" ;
+    dct:identifier "C.9" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-types/C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-types/> ;
+    skos:prefLabel "Urto con treno" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-types/D.10> a skos:Concept,
+        ontoim:AccidentType ;
+    rdfs:label "Fuoriuscita (sbandamento,...)" ;
+    dct:identifier "D.10" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-types/D> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-types/> ;
+    skos:prefLabel "Fuoriuscita (sbandamento,...)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-types/D.11> a skos:Concept,
+        ontoim:AccidentType ;
+    rdfs:label "Infortunio per frenata improvvisa" ;
+    dct:identifier "D.11" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-types/D> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-types/> ;
+    skos:prefLabel "Infortunio per frenata improvvisa" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-types/D.12> a skos:Concept,
+        ontoim:AccidentType ;
+    rdfs:label "Infortunio per caduta da veicolo" ;
+    dct:identifier "D.12" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/accident-types/D> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-types/> ;
+    skos:prefLabel "Infortunio per caduta da veicolo" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-types/B> a skos:Concept,
+        ontoim:AccidentType ;
+    rdfs:label "Tra veicolo e pedoni" ;
+    dct:identifier "B" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-types/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/accident-types/B.5> ;
+    skos:prefLabel "Tra veicolo e pedoni" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-types/D> a skos:Concept,
+        ontoim:AccidentType ;
+    rdfs:label "Veicolo in marcia senza urto" ;
+    dct:identifier "D" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-types/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/accident-types/D.10>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-types/D.11>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-types/D.12> ;
+    skos:prefLabel "Veicolo in marcia senza urto" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-types/A> a skos:Concept,
+        ontoim:AccidentType ;
+    rdfs:label "Tra veicoli in marcia" ;
+    dct:identifier "A" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-types/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.3>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.4> ;
+    skos:prefLabel "Tra veicoli in marcia" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-types/C> a skos:Concept,
+        ontoim:AccidentType ;
+    rdfs:label "Veicolo in marcia che urta veicolo fermo o altro" ;
+    dct:identifier "C" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/accident-types/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/accident-types/C.6>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-types/C.7>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-types/C.8>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-types/C.9> ;
+    skos:prefLabel "Veicolo in marcia che urta veicolo fermo o altro" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/accident-types/> a skos:ConceptScheme ;
+    rdfs:label "Accident type"@en,
+        "Tipologia dell'incidente"@it ;
+    dct:creator <https://w3id.org/people/lucamartinelli> ;
+    dct:description "Classification of accident types (e.g. head-on collision, etc...)"@en,
+        "Classificazione delle tipologie di incidente stradale (es: scontro frontale, ecc...)"@it ;
+    dct:title "Accident type"@en,
+        "Tipologia dell'incidente"@it ;
+    rdfs:comment "Classification of accident types (e.g. head-on collision, etc...)"@en,
+        "Classificazione delle tipologie di incidente stradale (es: scontro frontale, ecc...)"@it ;
+    skos:hasTopConcept <https://w3id.org/ontoim/controlled-vocabulary/accident-types/A>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-types/B>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-types/C>,
+        <https://w3id.org/ontoim/controlled-vocabulary/accident-types/D> .
+

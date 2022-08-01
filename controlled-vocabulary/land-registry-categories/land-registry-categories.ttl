@@ -1,0 +1,621 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ontoim: <https://w3id.org/ontoim/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.1> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Abitazioni di tipo signorile" ;
+    dct:identifier "A.1" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.A> ;
+    skos:definition "Abitazioni di tipo signorile. Unità immobiliari appartenenti a fabbricati ubicati in zone di pregio con caratteristiche costruttive, tecnologiche e di rifiniture di livello superiore a quello dei fabbricati di tipo residenziale." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Abitazioni di tipo signorile" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.10> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Uffici e studi privati" ;
+    dct:identifier "A.10" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.A> ;
+    skos:definition "Uffici e studi privati. Rientrano in questa categoria quelle unità immobiliari che per tipologia, dotazione di impianti e finiture sono destinate all’attività professionale." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Uffici e studi privati" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.11> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Abitazioni ed alloggi tipici dei luoghi" ;
+    dct:identifier "A.11" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.A> ;
+    skos:definition "Abitazioni ed alloggi tipici dei luoghi Rifugi di montagna, baite, trulli, sassi, ecc…" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Abitazioni ed alloggi tipici dei luoghi" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.2> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Abitazioni di tipo civile" ;
+    dct:identifier "A.2" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.A> ;
+    skos:definition "Abitazioni di tipo civile. Unità immobiliari appartenenti a fabbricati con caratteristiche costruttive, tecnologiche e di rifiniture di livello rispondente alle locali richieste di mercato per fabbricati di tipo residenziale." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Abitazioni di tipo civile" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.3> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Abitazioni di tipo economico" ;
+    dct:identifier "A.3" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.A> ;
+    skos:definition "Abitazioni di tipo economico. Unità immobiliari appartenenti a fabbricati con caratteristiche di economia sia per i materiali impiegati che per la rifinitura, e con impianti tecnologici limitati ai soli indispensabili." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Abitazioni di tipo economico" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.4> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Abitazioni di tipo popolare" ;
+    dct:identifier "A.4" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.A> ;
+    skos:definition "Abitazioni di tipo popolare. Unità immobiliari appartenenti a fabbricati con caratteristiche costruttive e di rifiniture di modesto livello. Dotazione limitata di impianti quantunque indispensabili." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Abitazioni di tipo popolare" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.5> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Abitazioni di tipo ultrapopolare" ;
+    dct:identifier "A.5" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.A> ;
+    skos:definition "Abitazioni di tipo ultrapopolare. Unità immobiliari appartenenti a fabbricati con caratteristiche costruttive e di rifiniture di bassissimo livello. Di norma non dotate di servizi igienico-sanitari esclusivi." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Abitazioni di tipo ultrapopolare" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.6> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Abitazioni di tipo rurale" ;
+    dct:identifier "A.6" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.A> ;
+    skos:definition "Abitazioni di tipo rurale." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Abitazioni di tipo rurale" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.7> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Abitazioni in villini" ;
+    dct:identifier "A.7" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.A> ;
+    skos:definition "Abitazioni in villini. Per villino deve intendersi un fabbricato, anche se suddiviso in unità immobiliari, avente caratteristiche costruttive, tecnologiche e di rifiniture proprie di un fabbricato di tipo civile o economico ed essere dotato, per tutte o parte delle unità immobiliari, di aree esterne ad uso esclusivo." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Abitazioni in villini" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.8> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Abitazioni in ville" ;
+    dct:identifier "A.8" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.A> ;
+    skos:definition "Abitazioni in ville. Per ville devono intendersi quegli immobili caratterizzati essenzialmente dalla presenza di parco e/o giardino, edificate in zone urbanistiche destinate a tali costruzioni o in zone di pregio con caratteristiche costruttive e di rifiniture, di livello superiore all'ordinario." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Abitazioni in ville" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.9> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Castelli, palazzi di eminenti pregi artistici o storici" ;
+    dct:identifier "A.9" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.A> ;
+    skos:definition "Castelli, palazzi eminenti. Rientrano in questa categoria i castelli ed i palazzi eminenti che per la loro struttura, la ripartizione degli spazi interni e dei volumi edificati non sono comparabili con le Unità tipo delle altre categorie; costituiscono ordinariamente una sola unità immobiliare. E' compatibile con l'attribuzione della categoria presenza di altre unità, funzionalmente indipendenti, censibili nelle altre categorie." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Castelli, palazzi di eminenti pregi artistici o storici" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/B.1> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Collegi e convitti, educandati; ricoveri; orfanotrofi; ospizi; conventi; seminari; caserme" ;
+    dct:identifier "B.1" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.B> ;
+    skos:definition "Strutture destinate all'assistenza dei disagiati, dei religiosi o caserme dello Stato." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Collegi e convitti, educandati; ricoveri; orfanotrofi; ospizi; conventi; seminari; caserme" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/B.2> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Case di cura ed ospedali (senza fine di lucro)" ;
+    dct:identifier "B.2" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.B> ;
+    skos:definition "Strutture per l'assistenza agli ammalati che non hanno fini economici." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Case di cura ed ospedali (senza fine di lucro)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/B.3> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Prigioni e riformatori" ;
+    dct:identifier "B.3" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.B> ;
+    skos:definition "Strutture costruiti e destinate alla reclusione degli evasori della Legge." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Prigioni e riformatori" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/B.4> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Uffici pubblici" ;
+    dct:identifier "B.4" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.B> ;
+    skos:definition "Strutture costruiti o adattati per sedi di Uffici Pubblici." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Uffici pubblici" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/B.5> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Scuole e laboratori scientifici" ;
+    dct:identifier "B.5" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.B> ;
+    skos:definition "Strutture costruiti e destinati all'istruzione e alla ricerca scientifica." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Scuole e laboratori scientifici" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/B.6> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Biblioteche, pinacoteche, musei, gallerie, accademie che non hanno sede in edifici della categoria A.9" ;
+    dct:identifier "B.6" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.B> ;
+    skos:definition "Sedi culturali che non hanno scopi economici e non sono già in palazzi storici." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Biblioteche, pinacoteche, musei, gallerie, accademie che non hanno sede in edifici della categoria A.9" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/B.7> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Cappelle ed oratori non destinati all’esercizio pubblico del culto" ;
+    dct:identifier "B.7" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.B> ;
+    skos:definition "Strutture destinate all'esercizio della religione." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Cappelle ed oratori non destinati all’esercizio pubblico del culto" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/B.8> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Magazzini sotterranei per depositi di derrate" ;
+    dct:identifier "B.8" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.B> ;
+    skos:definition "Magazzini che hanno lo scopo di deposito di scorte." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Magazzini sotterranei per depositi di derrate" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/C.1> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Negozi e botteghe" ;
+    dct:identifier "C.1" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.C> ;
+    skos:definition "Locali per attività commerciale per vendita o rivendita di prodotti." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Negozi e botteghe" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/C.2> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Magazzini e locali di deposito" ;
+    dct:identifier "C.2" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.C> ;
+    skos:definition "Locali utilizzati per il deposito di merci, locali di sgombero, sottotetti." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Magazzini e locali di deposito" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/C.3> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Laboratori per arti e mestieri" ;
+    dct:identifier "C.3" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.C> ;
+    skos:definition "Locali destinati all'esercizio della professione di artigiano per servizi, realizzazione o trasformazioni dei prodotti." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Laboratori per arti e mestieri" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/C.4> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Fabbricati e locali per esercizi sportivi (senza fine di lucro)" ;
+    dct:identifier "C.4" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.C> ;
+    skos:definition "Strutture destinate all'esercizio delle attività sportive private." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Fabbricati e locali per esercizi sportivi (senza fine di lucro)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/C.5> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Stabilimenti balneari e di acque curative (senza fine di lucro)" ;
+    dct:identifier "C.5" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.C> ;
+    skos:definition "Stabilimenti e strutture balneari privati." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Stabilimenti balneari e di acque curative (senza fine di lucro)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/C.6> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Stalle, scuderie, rimesse, autorimesse (senza fine di lucro)" ;
+    dct:identifier "C.6" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.C> ;
+    skos:definition "Garage, box auto o posti macchina, stalle e scuderie." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Stalle, scuderie, rimesse, autorimesse (senza fine di lucro)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/C.7> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Tettoie chiuse od aperte" ;
+    dct:identifier "C.7" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.C> ;
+    skos:definition "Strutture destinate a tettoia o gazebo." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Tettoie chiuse od aperte" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/D.1> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Opifici" ;
+    dct:identifier "D.1" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/II.D> ;
+    skos:definition "Capannone, fabbrica, struttura dove viene lavorata e trasformata la materia prima." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Opifici" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/D.10> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Fabbricati per funzioni produttive connesse alle attività agricole." ;
+    dct:identifier "D.10" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/II.D> ;
+    skos:definition "Sarebbero la categoria a cui devono accatastarsi i vecchi fabbricati rurali." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Fabbricati per funzioni produttive connesse alle attività agricole." .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/D.2> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Alberghi e pensioni (con fine di lucro)" ;
+    dct:identifier "D.2" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/II.D> ;
+    skos:definition "Strutture ricettive a pagamento." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Alberghi e pensioni (con fine di lucro)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/D.3> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Teatri, cinematografi, sale per concerti e spettacoli e simili (con fine di lucro)" ;
+    dct:identifier "D.3" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/II.D> ;
+    skos:definition "Lodali destinati all'esibizione artistica aventi ingresso a pagamento." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Teatri, cinematografi, sale per concerti e spettacoli e simili (con fine di lucro)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/D.4> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Case di cura ed ospedali (con fine di lucro)" ;
+    dct:identifier "D.4" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/II.D> ;
+    skos:definition "Ospedali, cliniche e case di cura private." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Case di cura ed ospedali (con fine di lucro)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/D.5> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Istituto di credito, cambio e assicurazione (con fine di lucro)" ;
+    dct:identifier "D.5" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/II.D> ;
+    skos:definition "Banche, assicurazioni e istituti di credito privati." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Istituto di credito, cambio e assicurazione (con fine di lucro)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/D.6> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Fabbricati e locali per esercizi sportivi (con fine di lucro)" ;
+    dct:identifier "D.6" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/II.D> ;
+    skos:definition "Unità destinate ad attività sportive privati a pagamento, club sportivi, campetti, piscine ecc." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Fabbricati e locali per esercizi sportivi (con fine di lucro)" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/D.7> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Fabbricati costruiti o adattati per le speciali esigenze di un’attività industriale e non suscettibili di destinazione diversa senza radicali trasformazioni." ;
+    dct:identifier "D.7" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/II.D> ;
+    skos:definition "Sono quelle strutture costruiti specificatamente per quel tipo di attività a cui sono destinati. Esempi sono i gli impianti per i rifornimenti di carburante o gli impianti industriali." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Fabbricati costruiti o adattati per le speciali esigenze di un’attività industriale e non suscettibili di destinazione diversa senza radicali trasformazioni." .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/D.8> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Fabbricati costruiti o adattati per le speciali esigenze di un’attività commerciale e non suscettibili di destinazione diversa senza radicali trasformazioni." ;
+    dct:identifier "D.8" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/II.D> ;
+    skos:definition "Grandi negozi, centri commerciali." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Fabbricati costruiti o adattati per le speciali esigenze di un’attività commerciale e non suscettibili di destinazione diversa senza radicali trasformazioni." .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/D.9> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Edifici galleggianti o sospesi assicurati a punti fissi del suolo, ponti privati soggetti a pedaggio." ;
+    dct:identifier "D.9" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/II.D> ;
+    skos:definition "Edifici che non hanno un suolo proprio." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Edifici galleggianti o sospesi assicurati a punti fissi del suolo, ponti privati soggetti a pedaggio." .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/E.1> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Stazioni per servizi di trasporto, terrestri, marittimi ed aerei." ;
+    dct:identifier "E.1" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/III.E> ;
+    skos:definition "Stazioni ferroviarie, porti, aeroporti. " ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Stazioni per servizi di trasporto, terrestri, marittimi ed aerei." .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/E.2> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Ponti comunali e provinciali soggetti a pedaggio." ;
+    dct:identifier "E.2" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/III.E> ;
+    skos:definition "Ponti pubblici con passaggio a pagamento. " ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Ponti comunali e provinciali soggetti a pedaggio." .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/E.3> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Costruzioni e fabbricati per speciali esigenze pubbliche" ;
+    dct:identifier "E.3" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/III.E> ;
+    skos:definition "Costruzioni e fabbricati per speciali esigenze pubbliche. Un esempio sono le Caserme dei Carabinieri.  " ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Costruzioni e fabbricati per speciali esigenze pubbliche" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/E.4> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Recinti chiusi per speciali esigenze pubbliche." ;
+    dct:identifier "E.4" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/III.E> ;
+    skos:definition "Recinti chiusi per speciali esigenze pubbliche - Per mercati, per posteggio bestiame, ecc." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Recinti chiusi per speciali esigenze pubbliche." .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/E.5> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Fabbricati costituenti fortificazioni e loro dipendenze." ;
+    dct:identifier "E.5" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/III.E> ;
+    skos:definition "Fabbricati costituenti fortificazioni e loro dipendenze." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Fabbricati costituenti fortificazioni e loro dipendenze." .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/E.6> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Fari, semafori, torri per rendere d’uso pubblico l’orologio comunale" ;
+    dct:identifier "E.6" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/III.E> ;
+    skos:definition "Fari, semafori, torri per rendere d' uso pubblico l'orologio comunale." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Fari, semafori, torri per rendere d’uso pubblico l’orologio comunale" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/E.7> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Fabbricati destinati all’esercizio pubblico dei culti." ;
+    dct:identifier "E.7" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/III.E> ;
+    skos:definition "Chiese, cattedrali ecc." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Fabbricati destinati all’esercizio pubblico dei culti." .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/E.8> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Fabbricati e costruzioni nei cimiteri, esclusi i colombari, i sepolcri e le tombe di famiglia." ;
+    dct:identifier "E.8" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/III.E> ;
+    skos:definition "Fabbricati e costruzioni nei cimiteri, esclusi i colombari, i sepolcri e le tombe di famiglia." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Fabbricati e costruzioni nei cimiteri, esclusi i colombari, i sepolcri e le tombe di famiglia." .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/E.9> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Edifici a destinazione particolare non compresi nelle categorie precedenti del gruppo E." ;
+    dct:identifier "E.9" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/III.E> ;
+    skos:definition "Tutto quello di categoria E che non è stato possibile inserire nelle categorie precedenti, può essere inserito in questa. " ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Edifici a destinazione particolare non compresi nelle categorie precedenti del gruppo E." .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/F.1> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Area urbana" ;
+    dct:identifier "F.1" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/IV.F> ;
+    skos:definition "Aree o corti a piano terra di fabbricati già accatastati all'urbano." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Area urbana" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/F.2> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Unità collabenti" ;
+    dct:identifier "F.2" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/IV.F> ;
+    skos:definition "Unità collabenti - fabbricati fatiscenti, ruderi, unità con tetto crollato e inutilizzabili." ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Unità collabenti" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/F.3> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Unità in corso di costruzione" ;
+    dct:identifier "F.3" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/IV.F> ;
+    skos:definition "Unità che non sono state ancora ultimate. " ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Unità in corso di costruzione" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/F.4> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Unità in corso di definizione" ;
+    dct:identifier "F.4" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/IV.F> ;
+    skos:definition "Unità incomplete non definite nella consistenza e nella destinazione d'uso. " ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Unità in corso di definizione" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/F.5> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Lastrico solare" ;
+    dct:identifier "F.5" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/IV.F> ;
+    skos:definition "Terrazze e aree libere sopra unità immobiliari preesistenti. " ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Lastrico solare" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/F.6> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Fabbricato in attesa di dichiarazione" ;
+    dct:identifier "F.6" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/IV.F> ;
+    skos:definition "Si tratta di fabbricati in corso di accatastamento, già introdotti nelle mappe del catasto terreni ed in via di completamento della presentazione con la pratica DOCFA al catasto fabbricati. " ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Fabbricato in attesa di dichiarazione" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/F.7> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Infrastrutture di reti pubbliche di comunicazione" ;
+    dct:identifier "F.7" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/IV.F> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:prefLabel "Infrastrutture di reti pubbliche di comunicazione" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/II> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Immobili a destinazione speciale" ;
+    dct:identifier "II" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/II.D> ;
+    skos:prefLabel "Immobili a destinazione speciale" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/III> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Immobili a destinazione particolare" ;
+    dct:identifier "III" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/III.E> ;
+    skos:prefLabel "Immobili a destinazione particolare" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/IV> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Entità urbane" ;
+    dct:identifier "IV" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/IV.F> ;
+    skos:prefLabel "Entità urbane" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Immobili a destinazione ordinaria" ;
+    dct:identifier "I" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.A>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.B>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.C> ;
+    skos:prefLabel "Immobili a destinazione ordinaria" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.C> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Gruppo C" ;
+    dct:identifier "I.C" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/C.1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/C.2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/C.3>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/C.4>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/C.5>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/C.6>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/C.7> ;
+    skos:prefLabel "Gruppo C" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/IV.F> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Gruppo F" ;
+    dct:identifier "IV.F" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/IV> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/F.1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/F.2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/F.3>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/F.4>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/F.5>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/F.6>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/F.7> ;
+    skos:prefLabel "Gruppo F" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.B> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Gruppo B" ;
+    dct:identifier "I.B" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/B.1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/B.2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/B.3>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/B.4>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/B.5>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/B.6>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/B.7>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/B.8> ;
+    skos:prefLabel "Gruppo B" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/III.E> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Gruppo E" ;
+    dct:identifier "III.E" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/III> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/E.1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/E.2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/E.3>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/E.4>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/E.5>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/E.6>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/E.7>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/E.8>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/E.9> ;
+    skos:prefLabel "Gruppo E" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/II.D> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Gruppo D" ;
+    dct:identifier "II.D" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/II> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/D.1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/D.10>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/D.2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/D.3>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/D.4>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/D.5>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/D.6>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/D.7>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/D.8>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/D.9> ;
+    skos:prefLabel "Gruppo D" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I.A> a skos:Concept,
+        ontoim:LandRegistryCategory ;
+    rdfs:label "Gruppo A" ;
+    dct:identifier "I.A" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.10>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.11>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.3>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.4>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.5>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.6>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.7>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.8>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/A.9> ;
+    skos:prefLabel "Gruppo A" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/> a skos:ConceptScheme ;
+    rdfs:label "Land registry category"@en,
+        "Categoria catastale"@it ;
+    dct:creator <https://w3id.org/people/lucamartinelli> ;
+    dct:description "Classification of land registry categories"@en,
+        "Classificazione delle categorie catastali"@it ;
+    dct:title "Land registry category"@en,
+        "Categoria catastale"@it ;
+    rdfs:comment "Classification of land registry categories"@en,
+        "Classificazione delle categorie catastali"@it ;
+    skos:hasTopConcept <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/I>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/II>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/III>,
+        <https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/IV> .
+

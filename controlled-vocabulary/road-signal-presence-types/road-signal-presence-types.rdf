@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:ontoim="https://w3id.org/ontoim/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/3">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/RoadSignalPresenceType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dct:identifier>
+    <rdfs:label xml:lang="en">Horizontal Signage</rdfs:label>
+    <rdfs:label xml:lang="it">Segnaletica orizzontale</rdfs:label>
+    <skos:prefLabel xml:lang="en">Horizontal Signage</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Segnaletica orizzontale</skos:prefLabel>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/">
+        <rdfs:label xml:lang="en">Road signal presence type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipologia di presenza di segnaletica stradale</rdfs:label>
+        <dct:title xml:lang="en">Road signal presence type</dct:title>
+        <dct:title xml:lang="it">Tipologia di presenza di segnaletica stradale</dct:title>
+        <rdfs:comment xml:lang="en">Classification of road signal presence typology</rdfs:comment>
+        <rdfs:comment xml:lang="it">Classificazione della tipologia di presenza di segnaletica stradale</rdfs:comment>
+        <dct:description xml:lang="en">Classification of road signal presence typology</dct:description>
+        <dct:description xml:lang="it">Classificazione della tipologia di presenza di segnaletica stradale</dct:description>
+        <dct:creator rdf:resource="https://w3id.org/people/lucamartinelli"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/1"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/2"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/3"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/4"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/5"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/2">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/RoadSignalPresenceType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dct:identifier>
+    <rdfs:label xml:lang="en">Vertical signage</rdfs:label>
+    <rdfs:label xml:lang="it">Segnaletica verticale</rdfs:label>
+    <skos:prefLabel xml:lang="en">Vertical signage</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Segnaletica verticale</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/1">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/RoadSignalPresenceType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</dct:identifier>
+    <rdfs:label xml:lang="en">Absent signage</rdfs:label>
+    <rdfs:label xml:lang="it">Segnaletica assente</rdfs:label>
+    <skos:prefLabel xml:lang="en">Absent signage</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Segnaletica assente</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/4">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/RoadSignalPresenceType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</dct:identifier>
+    <rdfs:label xml:lang="en">Vertical and Horizontal Signage</rdfs:label>
+    <rdfs:label xml:lang="it">Segnaletica verticale e orizzontale</rdfs:label>
+    <skos:prefLabel xml:lang="en">Vertical and Horizontal Signage</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Segnaletica verticale e orizzontale</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/5">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/RoadSignalPresenceType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</dct:identifier>
+    <rdfs:label xml:lang="en">Temporary construction site signage</rdfs:label>
+    <rdfs:label xml:lang="it">Segnaletica temporanea di cantiere</rdfs:label>
+    <skos:prefLabel xml:lang="en">Temporary construction site signage</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Segnaletica temporanea di cantiere</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/"/>
+  </skos:Concept>
+</rdf:RDF>

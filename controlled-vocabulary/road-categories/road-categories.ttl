@@ -1,0 +1,122 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ontoim: <https://w3id.org/ontoim/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-categories/A.0> a skos:Concept,
+        ontoim:RoadCategory ;
+    rdfs:label "Regionale entro l'abitato" ;
+    dct:identifier "A.0" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-categories/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:prefLabel "Regionale entro l'abitato" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-categories/A.1> a skos:Concept,
+        ontoim:RoadCategory ;
+    rdfs:label "Strada urbana" ;
+    dct:identifier "A.1" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-categories/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:prefLabel "Strada urbana" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-categories/A.2> a skos:Concept,
+        ontoim:RoadCategory ;
+    rdfs:label "Provinciale entro l'abitato" ;
+    dct:identifier "A.2" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-categories/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:prefLabel "Provinciale entro l'abitato" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-categories/A.3> a skos:Concept,
+        ontoim:RoadCategory ;
+    rdfs:label "Statale entro l'abitato" ;
+    dct:identifier "A.3" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-categories/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:prefLabel "Statale entro l'abitato" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.4> a skos:Concept,
+        ontoim:RoadCategory ;
+    rdfs:label "Comunale extraurbana" ;
+    dct:identifier "B.4" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:prefLabel "Comunale extraurbana" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.5> a skos:Concept,
+        ontoim:RoadCategory ;
+    rdfs:label "Provinciale" ;
+    dct:identifier "B.5" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:prefLabel "Provinciale" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.6> a skos:Concept,
+        ontoim:RoadCategory ;
+    rdfs:label "Statale" ;
+    dct:identifier "B.6" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:prefLabel "Statale" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.7> a skos:Concept,
+        ontoim:RoadCategory ;
+    rdfs:label "Autostrada" ;
+    dct:identifier "B.7" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:prefLabel "Autostrada" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.8> a skos:Concept,
+        ontoim:RoadCategory ;
+    rdfs:label "Altra strada" ;
+    dct:identifier "B.8" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:prefLabel "Altra strada" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.9> a skos:Concept,
+        ontoim:RoadCategory ;
+    rdfs:label "Regionale" ;
+    dct:identifier "B.9" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:prefLabel "Regionale" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-categories/A> a skos:Concept,
+        ontoim:RoadCategory ;
+    rdfs:label "Nell'abitato" ;
+    dct:identifier "A" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/road-categories/A.0>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-categories/A.1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-categories/A.2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-categories/A.3> ;
+    skos:prefLabel "Nell'abitato" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-categories/B> a skos:Concept,
+        ontoim:RoadCategory ;
+    rdfs:label "Fuori abitato" ;
+    dct:identifier "B" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.4>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.5>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.6>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.7>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.8>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.9> ;
+    skos:prefLabel "Fuori abitato" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-categories/> a skos:ConceptScheme ;
+    rdfs:label "Road category"@en,
+        "Categoria della strada"@it ;
+    dct:creator <https://w3id.org/people/lucamartinelli> ;
+    dct:description "Classification of road categories"@en,
+        "Classificazione delle categorie di strade"@it ;
+    dct:title "Road category"@en,
+        "Categoria della strada"@it ;
+    rdfs:comment "Classification of road categories"@en,
+        "Classificazione delle categorie di strade"@it ;
+    skos:hasTopConcept <https://w3id.org/ontoim/controlled-vocabulary/road-categories/A>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B> .
+

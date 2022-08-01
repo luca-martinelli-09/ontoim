@@ -1,0 +1,27 @@
+l1_identifier,l1_label_en,l1_label_it,l2_identifier,l2_label_en,l2_label_it
+A,Birth,Nascita,A.1,Birth in municipality,Nascita nel comune
+A,Birth,Nascita,A.2,Birth in other municipality,Nascita in altro comune
+A,Birth,Nascita,A.3,Birth statement transmitted,Dichiarazione di nascita trasmessa
+A,Birth,Nascita,A.4,Birth from foreigner,Nascita da genitore straniero
+A,Birth,Nascita,A.5,Birth in marriage,Nascita nel matrimonio
+A,Birth,Nascita,A.6,Birth out of marriage,Fuori matrimonio
+A,Birth,Nascita,A.7,Multiple birth,Parto plurimo
+B,Death,Morte,B.1,Death in municipality,Morto nel comune
+B,Death,Morte,B.2,Death in other municipality,Morto in altro comune
+B,Death,Morte,B.3,Death in other country,Morto all'estero
+C,Immigration,Immigrazione,C.1,Immigration from other municipality,Immigrazione da un altro comune
+C,Immigration,Immigrazione,C.2,Immigration from other country,Immigrazione dall'estero
+C,Immigration,Immigrazione,C.3,Other type of immigration,Altra tipologia di immigrazione
+D,Emigration,Emigrazione,D.1,Emigration to other municipality,Emigrazione in altro comune
+D,Emigration,Emigrazione,D.2,Emigration to other country,Emigrazione all'estero
+D,Emigration,Emigrazione,D.3,Other type of emigration,Altra tipologia di emigrazione
+E,Marriage,Matrimonio,E.1,Religious marriage,Matrimonio religioso
+E,Marriage,Matrimonio,E.2,Civil marriage,Matrimonio civile
+E,Marriage,Matrimonio,E.3,Marriage with a foreigner,Matrimonio con uno straniero
+F,Out-of-court settlement,Accordi extragiudiziali,F.1,Separations,Separazioni
+F,Out-of-court settlement,Accordi extragiudiziali,F.2,Divorces,Divorzi
+F,Out-of-court settlement,Accordi extragiudiziali,F.3,Other out-of-court settlement,Altri accordi extragiudiziali
+G,Civil union,Unioni civili,G.1,Civili union between mens,Unioni civili tra maschi
+G,Civil union,Unioni civili,G.2,Civili union between womens,Unioni civili tra femmine
+H,Dissolution of civil union,Scioglimento unioni civili,H.1,Dissolution of civil union between mens,Scioglimento di unioni civili tra maschi
+H,Dissolution of civil union,Scioglimento unioni civili,H.2,Dissolution of civil union between womens,Scioglimento di unioni civili tra femmine

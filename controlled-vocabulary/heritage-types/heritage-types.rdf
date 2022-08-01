@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:ontoim="https://w3id.org/ontoim/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/heritage-types/">
+    <rdfs:label xml:lang="en">Heritage type</rdfs:label>
+    <rdfs:label xml:lang="it">Tipo di patrimonio</rdfs:label>
+    <dct:title xml:lang="en">Heritage type</dct:title>
+    <dct:title xml:lang="it">Tipo di patrimonio</dct:title>
+    <rdfs:comment xml:lang="en">Classification of heritage types</rdfs:comment>
+    <rdfs:comment xml:lang="it">Classificazione delle tipologie di patrimonio</rdfs:comment>
+    <dct:description xml:lang="en">Classification of heritage types</dct:description>
+    <dct:description xml:lang="it">Classificazione delle tipologie di patrimonio</dct:description>
+    <dct:creator rdf:resource="https://w3id.org/people/lucamartinelli"/>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/heritage-types/A">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/HeritageType"/>
+        <dct:identifier>A</dct:identifier>
+        <rdfs:label xml:lang="en">Public property</rdfs:label>
+        <rdfs:label xml:lang="it">Beni demaniali</rdfs:label>
+        <skos:prefLabel xml:lang="en">Public property</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Beni demaniali</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/heritage-types/"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/heritage-types/B">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/HeritageType"/>
+        <dct:identifier>B</dct:identifier>
+        <rdfs:label xml:lang="en">Available assets</rdfs:label>
+        <rdfs:label xml:lang="it">Patrimonio disponibile</rdfs:label>
+        <skos:prefLabel xml:lang="en">Available assets</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Patrimonio disponibile</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/heritage-types/"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/heritage-types/C">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/HeritageType"/>
+        <dct:identifier>C</dct:identifier>
+        <rdfs:label xml:lang="en">Non-disposable assets</rdfs:label>
+        <rdfs:label xml:lang="it">Patrimonio indisponibile</rdfs:label>
+        <skos:prefLabel xml:lang="en">Non-disposable assets</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Patrimonio indisponibile</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/heritage-types/"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/heritage-types/D">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/HeritageType"/>
+        <dct:identifier>D</dct:identifier>
+        <rdfs:label xml:lang="en">Other type of assets</rdfs:label>
+        <rdfs:label xml:lang="it">Altro tipo di patrimonio</rdfs:label>
+        <skos:prefLabel xml:lang="en">Other type of assets</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Altro tipo di patrimonio</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/heritage-types/"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+</rdf:RDF>

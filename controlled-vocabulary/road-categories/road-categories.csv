@@ -1,0 +1,11 @@
+l1_identifier,l1_label,l2_identifier,l2_label
+A,Nell'abitato,A.1,Strada urbana
+A,Nell'abitato,A.2,Provinciale entro l'abitato
+A,Nell'abitato,A.3,Statale entro l'abitato
+A,Nell'abitato,A.0,Regionale entro l'abitato
+B,Fuori abitato,B.4,Comunale extraurbana
+B,Fuori abitato,B.5,Provinciale
+B,Fuori abitato,B.6,Statale
+B,Fuori abitato,B.7,Autostrada
+B,Fuori abitato,B.8,Altra strada
+B,Fuori abitato,B.9,Regionale

@@ -1,0 +1,69 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ontoim: <https://w3id.org/ontoim/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/1> a skos:Concept,
+        ontoim:InvolvedPersonStatus ;
+    rdfs:label "Unhurt"@en,
+        "Incolume"@it ;
+    dct:identifier 1 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/> ;
+    skos:prefLabel "Unhurt"@en,
+        "Incolume"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/2> a skos:Concept,
+        ontoim:InvolvedPersonStatus ;
+    rdfs:label "Wounded"@en,
+        "Ferito"@it ;
+    dct:identifier 2 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/> ;
+    skos:prefLabel "Wounded"@en,
+        "Ferito"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/3.1> a skos:Concept,
+        ontoim:InvolvedPersonStatus ;
+    rdfs:label "Dead within 24 hours"@en,
+        "Morto entro 24 ore"@it ;
+    dct:identifier 3.1e+00 ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/3> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/> ;
+    skos:prefLabel "Dead within 24 hours"@en,
+        "Morto entro 24 ore"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/3.2> a skos:Concept,
+        ontoim:InvolvedPersonStatus ;
+    rdfs:label "Dead within 30 days"@en,
+        "Morto entro 30 giorni"@it ;
+    dct:identifier 3.2e+00 ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/3> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/> ;
+    skos:prefLabel "Dead within 30 days"@en,
+        "Morto entro 30 giorni"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/3> a skos:Concept,
+        ontoim:InvolvedPersonStatus ;
+    rdfs:label "Dead"@en,
+        "Morto"@it ;
+    dct:identifier 3 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/3.1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/3.2> ;
+    skos:prefLabel "Dead"@en,
+        "Morto"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/> a skos:ConceptScheme ;
+    rdfs:label "Involved person status"@en,
+        "Stato della persona coinvolta"@it ;
+    dct:creator <https://w3id.org/people/lucamartinelli> ;
+    dct:description "Possible statuses of persons involved in a road accident"@en,
+        "Possibili stati delle persone coinvolte in un incidente stradale"@it ;
+    dct:title "Involved person status"@en,
+        "Stato della persona coinvolta"@it ;
+    rdfs:comment "Possible statuses of persons involved in a road accident"@en,
+        "Possibili stati delle persone coinvolte in un incidente stradale"@it ;
+    skos:hasTopConcept <https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/3> .
+

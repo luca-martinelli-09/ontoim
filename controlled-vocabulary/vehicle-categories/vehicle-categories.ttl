@@ -1,0 +1,287 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ontoim: <https://w3id.org/ontoim/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.1> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Private passenger car"@en,
+        "Autovettura privata"@it ;
+    dct:identifier "A.1" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:prefLabel "Private passenger car"@en,
+        "Autovettura privata"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.2> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Private passenger car with trailer"@en,
+        "Autovettura privata con rimorchio"@it ;
+    dct:identifier "A.2" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:prefLabel "Private passenger car with trailer"@en,
+        "Autovettura privata con rimorchio"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.21> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Quadricycle"@en,
+        "Quadriciclo"@it ;
+    dct:identifier "A.21" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:prefLabel "Quadricycle"@en,
+        "Quadriciclo"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.3> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Public passenger car"@en,
+        "Autovettura pubblica"@it ;
+    dct:identifier "A.3" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:prefLabel "Public passenger car"@en,
+        "Autovettura pubblica"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.4> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Rescue or police car"@en,
+        "Autovettura di soccorso o di polizia"@it ;
+    dct:identifier "A.4" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:prefLabel "Rescue or police car"@en,
+        "Autovettura di soccorso o di polizia"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.10> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Articulated truck"@en,
+        "Autoarticolato"@it ;
+    dct:identifier "B.10" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:prefLabel "Articulated truck"@en,
+        "Autoarticolato"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.5> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Bus or trolleybus in urban service"@en,
+        "Autobus o fil bus in servizio urbano"@it ;
+    dct:identifier "B.5" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:prefLabel "Bus or trolleybus in urban service"@en,
+        "Autobus o fil bus in servizio urbano"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.6> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Bus or fil bus in suburban service"@en,
+        "Autobus di linea o non di linea in extraurbana"@it ;
+    dct:identifier "B.6" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:prefLabel "Bus or fil bus in suburban service"@en,
+        "Autobus di linea o non di linea in extraurbana"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.7> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Streetcar"@en,
+        "Tram"@it ;
+    dct:identifier "B.7" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:prefLabel "Streetcar"@en,
+        "Tram"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.8> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Truck"@en,
+        "Autocarro"@it ;
+    dct:identifier "B.8" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:prefLabel "Truck"@en,
+        "Autocarro"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.9> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Truck with trailer"@en,
+        "Autotreno con rimorchio"@it ;
+    dct:identifier "B.9" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:prefLabel "Truck with trailer"@en,
+        "Autotreno con rimorchio"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.15> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Moped"@en,
+        "Ciclomotore"@it ;
+    dct:identifier "C.15" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:prefLabel "Moped"@en,
+        "Ciclomotore"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.16> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Motorcycle with only"@en,
+        "Motociclo a solo"@it ;
+    dct:identifier "C.16" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:prefLabel "Motorcycle with only"@en,
+        "Motociclo a solo"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.17> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Motorcycle with passenger"@en,
+        "Motociclo con passeggero"@it ;
+    dct:identifier "C.17" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:prefLabel "Motorcycle with passenger"@en,
+        "Motociclo con passeggero"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.18> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Motorcycle truck or motor van"@en,
+        "Motocarro o motofurgone"@it ;
+    dct:identifier "C.18" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:prefLabel "Motorcycle truck or motor van"@en,
+        "Motocarro o motofurgone"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.11> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Special vehicles"@en,
+        "Veicoli speciali"@it ;
+    dct:identifier "D.11" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:prefLabel "Special vehicles"@en,
+        "Veicoli speciali"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.12> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Road tractor or tractor unit"@en,
+        "Trattore stradale o motrice"@it ;
+    dct:identifier "D.12" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:prefLabel "Road tractor or tractor unit"@en,
+        "Trattore stradale o motrice"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.13> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Agricultural machine"@en,
+        "Macchina agricola"@it ;
+    dct:identifier "D.13" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:prefLabel "Agricultural machine"@en,
+        "Macchina agricola"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.14> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Velocipede"@en,
+        "Velocipede"@it ;
+    dct:identifier "D.14" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:prefLabel "Velocipede"@en,
+        "Velocipede"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.19> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Animal-drawn or arm-drawn vehicle"@en,
+        "Veicolo a trazione animale o a braccia"@it ;
+    dct:identifier "D.19" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:prefLabel "Animal-drawn or arm-drawn vehicle"@en,
+        "Veicolo a trazione animale o a braccia"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.20> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Unknown vehicle because it is on the run"@en,
+        "Veicolo ignoto perchè datosi alla fuga"@it ;
+    dct:identifier "D.20" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:prefLabel "Unknown vehicle because it is on the run"@en,
+        "Veicolo ignoto perchè datosi alla fuga"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Motorcycle"@en,
+        "Motocicletta"@it ;
+    dct:identifier "C" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.15>,
+        <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.16>,
+        <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.17>,
+        <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.18> ;
+    skos:prefLabel "Motorcycle"@en,
+        "Motocicletta"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Car"@en,
+        "Auto"@it ;
+    dct:identifier "A" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.21>,
+        <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.3>,
+        <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.4> ;
+    skos:prefLabel "Car"@en,
+        "Auto"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Tractor-Trailer or Bus"@en,
+        "Autoarticolato o autobus"@it ;
+    dct:identifier "B" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.10>,
+        <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.5>,
+        <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.6>,
+        <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.7>,
+        <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.8>,
+        <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.9> ;
+    skos:prefLabel "Tractor-Trailer or Bus"@en,
+        "Autoarticolato o autobus"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D> a skos:Concept,
+        ontoim:VehicleCategory ;
+    rdfs:label "Vehicle without category"@en,
+        "Veicolo senza categoria"@it ;
+    dct:identifier "D" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.11>,
+        <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.12>,
+        <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.13>,
+        <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.14>,
+        <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.19>,
+        <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.20> ;
+    skos:prefLabel "Vehicle without category"@en,
+        "Veicolo senza categoria"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/> a skos:ConceptScheme ;
+    rdfs:label "Vehicle category"@en,
+        "Categoria di veicolo"@it ;
+    dct:creator <https://w3id.org/people/lucamartinelli> ;
+    dct:description "Classification of vehicle categories"@en,
+        "Classificazione delle categorie di veicoli"@it ;
+    dct:title "Vehicle category"@en,
+        "Categoria di veicolo"@it ;
+    rdfs:comment "Classification of vehicle categories"@en,
+        "Classificazione delle categorie di veicoli"@it ;
+    skos:hasTopConcept <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A>,
+        <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B>,
+        <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C>,
+        <https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D> .
+

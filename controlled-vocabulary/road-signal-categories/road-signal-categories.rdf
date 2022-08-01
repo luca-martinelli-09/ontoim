@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-signal-categories/">
+    <rdfs:label xml:lang="en">Road signal category</rdfs:label>
+    <rdfs:label xml:lang="it">Categoria di segnaletica stradale</rdfs:label>
+    <dct:title xml:lang="en">Road signal category</dct:title>
+    <dct:title xml:lang="it">Categoria di segnaletica stradale</dct:title>
+    <rdfs:comment xml:lang="en">Classification of road signals</rdfs:comment>
+    <rdfs:comment xml:lang="it">Classificazione dei cartelli stradali</rdfs:comment>
+    <dct:description xml:lang="en">Classification of road signals</dct:description>
+    <dct:description xml:lang="it">Classificazione dei cartelli stradali</dct:description>
+    <dct:creator rdf:resource="https://w3id.org/people/lucamartinelli"/>
+  </skos:ConceptScheme>
+</rdf:RDF>

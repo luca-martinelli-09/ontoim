@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:ontoim="https://w3id.org/ontoim/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/revelation-units/5">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/RevelationUnit"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</dct:identifier>
+    <rdfs:label>Altri</rdfs:label>
+    <skos:prefLabel>Altri</skos:prefLabel>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/revelation-units/">
+        <rdfs:label xml:lang="en">Revelation unit</rdfs:label>
+        <rdfs:label xml:lang="it">Unità di rilevazione</rdfs:label>
+        <dct:title xml:lang="en">Revelation unit</dct:title>
+        <dct:title xml:lang="it">Unità di rilevazione</dct:title>
+        <rdfs:comment xml:lang="en">Revelation units for road accidents</rdfs:comment>
+        <rdfs:comment xml:lang="it">Unità di rilevazione degli incidenti stradali</rdfs:comment>
+        <dct:description xml:lang="en">Revelation units for road accidents</dct:description>
+        <dct:description xml:lang="it">Unità di rilevazione degli incidenti stradali</dct:description>
+        <dct:creator rdf:resource="https://w3id.org/people/lucamartinelli"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/revelation-units/1"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/revelation-units/2"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/revelation-units/3"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/revelation-units/4"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/revelation-units/5"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/revelation-units/6"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/revelation-units/2">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/RevelationUnit"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dct:identifier>
+    <rdfs:label>Carabinieri</rdfs:label>
+    <skos:prefLabel>Carabinieri</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/revelation-units/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/revelation-units/4">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/RevelationUnit"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</dct:identifier>
+    <rdfs:label>Polizia Municipale o Locale</rdfs:label>
+    <skos:prefLabel>Polizia Municipale o Locale</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/revelation-units/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/revelation-units/1">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/RevelationUnit"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</dct:identifier>
+    <rdfs:label>Polizia Stradale</rdfs:label>
+    <skos:prefLabel>Polizia Stradale</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/revelation-units/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/revelation-units/3">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/RevelationUnit"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dct:identifier>
+    <rdfs:label>Pubblica Sicurezza</rdfs:label>
+    <skos:prefLabel>Pubblica Sicurezza</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/revelation-units/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/revelation-units/6">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/RevelationUnit"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</dct:identifier>
+    <rdfs:label>Polizia Provinciale</rdfs:label>
+    <skos:prefLabel>Polizia Provinciale</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/revelation-units/"/>
+  </skos:Concept>
+</rdf:RDF>

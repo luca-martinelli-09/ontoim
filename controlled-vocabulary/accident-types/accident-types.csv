@@ -1,0 +1,13 @@
+l1_identifier,l1_label,l2_identifier,l2_label
+A,Tra veicoli in marcia,A.1,Scontro frontale
+A,Tra veicoli in marcia,A.2,Scontro frontale-laterale
+A,Tra veicoli in marcia,A.3,Scontro laterale
+A,Tra veicoli in marcia,A.4,Tamponamento
+B,Tra veicolo e pedoni,B.5,Investimento di pedoni
+C,Veicolo in marcia che urta veicolo fermo o altro,C.6,Urto con veicolo in fermata o in arresto
+C,Veicolo in marcia che urta veicolo fermo o altro,C.7,Urto con veicolo in sosta
+C,Veicolo in marcia che urta veicolo fermo o altro,C.8,Urto con ostacolo
+C,Veicolo in marcia che urta veicolo fermo o altro,C.9,Urto con treno
+D,Veicolo in marcia senza urto,D.10,"Fuoriuscita (sbandamento,...)"
+D,Veicolo in marcia senza urto,D.11,Infortunio per frenata improvvisa
+D,Veicolo in marcia senza urto,D.12,Infortunio per caduta da veicolo

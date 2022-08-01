@@ -49,21 +49,13 @@ skinparam nodesep 50
 !define HospitalProperty 000
 
 ' Imported objects from OntoPiA
-package "OntoPiA" {
+
     class Thing <<owl>> #OntoPiANode
 
-    class Entity <<l0>> #OntoPiANode
-    class Activity <<l0>> #OntoPiANode
-    class Location <<l0>> #OntoPiANode
-    class EventOrSituation <<l0>> #OntoPiANode
-    class Topic <<l0>> #OntoPiANode
-    class Object <<l0>> #OntoPiANode
-    class Characteristic <<l0>> #OntoPiANode
-    class Collection <<l0>> #OntoPiANode
-    class Agent <<l0>> #OntoPiANode
+
 
     class Address <<clv>> #OntoPiANode
-    class City <<clv>> #OntoPiANode
+    'class City <<clv>> #OntoPiANode
     class StreetToponym <<clv>> #OntoPiANode
     class SpatialObject <<clv>> #OntoPiANode
     class Country <<clv>> #OntoPiANode
@@ -93,7 +85,7 @@ package "OntoPiA" {
     class Procedure <<publiccontract>> #OntoPiANode
 
     class OfferedServiceDescription <<acco>> #OntoPiANode
-}
+
 
 /'
 Serve? bo
@@ -141,7 +133,7 @@ package "Demographic Observation" {
     class DemographicObservation #DemographicObservationNode {
         value^^xsd:int
     }
-    DemographicObservation -[#OntoPiAProperty]-> Activity : rdfs:subclassOf
+    'DemographicObservation -[#OntoPiAProperty]-> Activity : rdfs:subclassOf
 
     DemographicObservation -[#OntoPiAProperty]-> TemporalEntity : ti:hasTemporalEntity
     DemographicObservation -[#OntoPiAProperty]-> SpatialObject : hasSpatialDelimitation
@@ -158,7 +150,7 @@ package "Demographic Observation" {
     CivilStatus -[#DemographicObservationProperty]-> CivilStatusCategory : hasCivilStatusCategory
 
     class CivilStatusCategory #DemographicObservationNode
-    CivilStatusCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+    'CivilStatusCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
 
     class Tourists #DemographicObservationNode
     Tourists -[#DemographicObservationProperty]-> DemographicObservation : rdfs:subclassOf
@@ -260,7 +252,7 @@ package "Demographic Event" {
     class DemographicEvent #DemographicEventNode {
         ti:atTime
     }
-    DemographicEvent -[#OntoPiAProperty]-> EventOrSituation : rdfs:subclassOf
+    'DemographicEvent -[#OntoPiAProperty]-> EventOrSituation : rdfs:subclassOf
 
     DemographicEvent -[#OntoPiAProperty]-> Person : hasPerson
     DemographicEvent -[#OntoPiAProperty]-> SpatialObject : hasSpatialDelimitation
@@ -333,13 +325,13 @@ package "Organizations" {
     PrivateOrganization -[#OrganizationProperty]-> Organization : rdfs:subclassOf
 
     PrivateOrganization -[#OrganizationProperty]-> OrganizationSection : hasOrganizationSection
-    PrivateOrganization -[#OrganizationProperty]-> CompanyDemographicClassification : hasDemographicClassification
+    PrivateOrganization -[#OrganizationProperty]-> CompanyDemographicCategory : hasDemographicCategory
 
     class OrganizationSection #OrganizationNode
-    OrganizationSection -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+    'OrganizationSection -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
 
-    class CompanyDemographicClassification #OrganizationNode
-    CompanyDemographicClassification -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+    class CompanyDemographicCategory #OrganizationNode
+    'CompanyDemographicCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
 
     /'
     <<enumerated>> {
@@ -359,7 +351,7 @@ package "Organizations" {
         REASubjectOnly
     }
 
-    class CompanyDemographicClassification <<enumerated>> {
+    class CompanyDemographicCategory <<enumerated>> {
         Ordinary
         Women
         Youth
@@ -402,7 +394,7 @@ package "Organizations" {
     Association -[#DemographicObservationProperty]-> Members : hasMembers
 
     class AssociationCategory #OrganizationNode
-    AssociationCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+    'AssociationCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
 
     /'
     better with a controlled vocabulary (?)
@@ -420,13 +412,13 @@ package "Organizations" {
     '/
     ' The heritage of an organization, a collection of buildings owned by the organization. There are different types of heritage, like state owned assets, unavailable ecc...
     class Heritage #HeritageNode
-    Heritage -[#OntoPiAProperty]-> Collection : rdfs:subclassOf
+    'Heritage -[#OntoPiAProperty]-> Collection : rdfs:subclassOf
 
     Heritage -[#HeritageProperty]-> HeritageType : hasHeritageType
     Heritage -[#HeritageProperty]-> Building : hasBuilding
 
     class HeritageType #HeritageNode
-    HeritageType -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+    'HeritageType -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
 
     ' A building is an accessible point of interest associated with information about the land registry. A building can be concessed to an other organization. The information about the concession are stored in a Procedure Document.
     class Building #HeritageNode {
@@ -442,12 +434,12 @@ package "Organizations" {
         map^^xsd:literal
         subordinate^^xsd:literal
     }
-    LandRegistry -[#OntoPiAProperty]-> Object : rdfs:subclassOf
+    'LandRegistry -[#OntoPiAProperty]-> Object : rdfs:subclassOf
 
     LandRegistry -[#HeritageProperty]-> LandRegistryCategory : hasLandRegistryCategory
 
     class LandRegistryCategory #HeritageNode
-    LandRegistryCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+    'LandRegistryCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
 
     ' Events, added the organizer of the event and the subscribers
     class Event <<cpev>> #OntoPiANodeEdited
@@ -461,7 +453,7 @@ Event -[#DemographicEventProperty]-> Subscriber : hasSubscription
 package "Waste Production" {
     ' Waste production
     class WasteProduction #WasteNode
-    WasteProduction -[#OntoPiAProperty]-> Activity : rdfs:subclassOf
+    'WasteProduction -[#OntoPiAProperty]-> Activity : rdfs:subclassOf
 
     WasteProduction -[#OntoPiAProperty]-> Value : hasValue
     WasteProduction -[#OntoPiAProperty]-> TemporalEntity : ti:hasTemporalEntity
@@ -470,7 +462,7 @@ package "Waste Production" {
     WasteProduction -[#WasteProperty]-> WasteCategory : hasWasteCategory
 
     class WasteCategory #WasteNode
-    WasteCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+    'WasteCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
 }
 
 package "Road and Traffic" {
@@ -478,7 +470,7 @@ package "Road and Traffic" {
     class RoadAccident #RoadAccidentNode {
         ti:atTime
     }
-    RoadAccident -[#OntoPiAProperty]-> EventOrSituation : rdfs:subclassOf
+    'RoadAccident -[#OntoPiAProperty]-> EventOrSituation : rdfs:subclassOf
 
     RoadAccident -[#RoadAccidentProperty]-> RevelationUnit : detectedBy
     RoadAccident -[#OntoPiAProperty]-> Geometry : clv:hasGeometry
@@ -488,12 +480,12 @@ package "Road and Traffic" {
     RoadAccident -[#RoadAccidentProperty]-> InvolvedEntity : hasInvolvedEntity
 
     class RevelationUnit #RoadAccidentNode
-    RevelationUnit -[#OntoPiAProperty]-> Agent : rdfs:subclassOf
+    'RevelationUnit -[#OntoPiAProperty]-> Agent : rdfs:subclassOf
 
     class Road #RoadAccidentNode {
         roadName^^l0:name
     }
-    Road -[#OntoPiAProperty]-> Location : rdfs:subclassOf
+    'Road -[#OntoPiAProperty]-> Location : rdfs:subclassOf
 
     Road -[#OntoPiAProperty]-> Address : clv:hasAddress
     Road -[#RoadAccidentProperty]-> RoadCategory : hasRoadCategory
@@ -504,36 +496,36 @@ package "Road and Traffic" {
     Road -[#RoadAccidentProperty]-> RoadSignalPresence : hasRoadSignalPresence
 
     class RoadCategory #RoadAccidentNode
-    RoadCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+    'RoadCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
 
     class RoadType #RoadAccidentNode
-    RoadType -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
+    'RoadType -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
 
     class PavementType #RoadAccidentNode
-    PavementType -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
+    'PavementType -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
 
     class RoadContext #RoadAccidentNode
-    RoadContext -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
+    'RoadContext -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
 
     class RoadbedStatus #RoadAccidentNode
-    RoadbedStatus -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
+    'RoadbedStatus -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
 
     class RoadSignalPresence #RoadAccidentNode
-    RoadSignalPresence -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
+    'RoadSignalPresence -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
 
     class WeatherCondition #RoadAccidentNode
-    WeatherCondition -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
+    'WeatherCondition -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
 
     class AccidentType #RoadAccidentNode
-    AccidentType -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
+    'AccidentType -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
 
     class InvolvedEntity #RoadAccidentNode
-    InvolvedEntity -[#OntoPiAProperty]-> Entity : rdfs:subclassOf
+    'InvolvedEntity -[#OntoPiAProperty]-> Entity : rdfs:subclassOf
 
     InvolvedEntity -[#RoadAccidentProperty]-> AccidentCircumstance : hasAccidentCircumstance
 
     class AccidentCircumstance #RoadAccidentNode
-    AccidentCircumstance -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
+    'AccidentCircumstance -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
 
     class InvolvedVehicle #RoadAccidentNode
     InvolvedVehicle -[#RoadAccidentProperty]-> InvolvedEntity : rdfs:subclassOf
@@ -550,7 +542,7 @@ package "Road and Traffic" {
     InvolvedPerson -[#RoadAccidentProperty]-> InvolvedPersonStatus : hasInvolvedPersonStatus
 
     class InvolvedPersonStatus #RoadAccidentNode
-    InvolvedPersonStatus -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
+    'InvolvedPersonStatus -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
 
     class InvolvedObstacle #RoadAccidentNode
     InvolvedObstacle -[#RoadAccidentProperty]-> InvolvedEntity : rdfs:subclassOf
@@ -562,14 +554,14 @@ package "Road and Traffic" {
         model^^xsd:literal
         color^^xsd:literal
     }
-    Vehicle -[#OntoPiAProperty]-> Object : rdfs:subclassOf
+    'Vehicle -[#OntoPiAProperty]-> Object : rdfs:subclassOf
 
     Vehicle -[#VehicleProperty]-> VehicleCategory : hasVehicleCategory
     Vehicle -[#OntoPiAProperty]-> Value : hasMeasurement
     Vehicle -[#OntoPiAProperty]-> Country : registrationCountry
 
     class VehicleCategory #VehicleNode
-    VehicleCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+    'VehicleCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
 
     ' The road signals are point of interests with a signal value (e.g. 50 for a speed limit or the name of the destination indicated)
     class RoadSignal #RoadSignalNode {
@@ -584,13 +576,13 @@ package "Road and Traffic" {
     class RoadSignalType #RoadSignalNode {
         signalValue^^xsd:literal
     }
-    RoadSignalType -[#OntoPiAProperty]-> Object : rdfs:subclassOf
+    'RoadSignalType -[#OntoPiAProperty]-> Object : rdfs:subclassOf
 
     RoadSignalType -[#RoadSignalProperty]-> RoadSignalCategory : hasRoadSignalCategory
     RoadSignalType -[#OntoPiAProperty]-> Image : sm:hasImage
 
     class RoadSignalCategory #RoadSignalNode
-    RoadSignalCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+    'RoadSignalCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
 
     ' Traffic Flow observation. Added street toponym to road segment and vehicle category (controlled vocabulary)
     class TrafficFlow <<iot>> #TrafficFlowNode
@@ -618,7 +610,7 @@ package "School" {
 
     ' controlled vocabulary
     class SchoolCategory #SchoolNode
-    SchoolCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+    'SchoolCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
 
     class PublicSchool #SchoolNode {
         mechanographicCode^^l0:identifier
@@ -635,7 +627,7 @@ package "School" {
         l0:description
         durationHours^^xsd:int
     }
-    Course -[#OntoPiAProperty]-> Activity : rdfs:subclassOf
+    'Course -[#OntoPiAProperty]-> Activity : rdfs:subclassOf
 
     Course -[#SchoolProperty]-> School : offeredBy
     Course -[#OntoPiAProperty]-> TimeInterval : ti:hasTimeInterval
@@ -648,7 +640,7 @@ package "School" {
     class ClassRoom #SchoolNode {
         l0:name
     }
-    ClassRoom -[#OntoPiAProperty]-> Location : rdfs:subclassOf
+    'ClassRoom -[#OntoPiAProperty]-> Location : rdfs:subclassOf
 
     ClassRoom -[#SchoolProperty]-> Course : locationForCourse
 
@@ -666,7 +658,7 @@ package "School" {
         l0:name
         serviceURL^^xsd:anyuri
     }
-    VideoCommunicationService -[#OntoPiAProperty]-> Object : rdfs:subclassOf
+    'VideoCommunicationService -[#OntoPiAProperty]-> Object : rdfs:subclassOf
 }
 
 package "Green Zone" {
@@ -684,7 +676,7 @@ package "Green Zone" {
     Plant -[#GreenZoneProperty]-> GreenZone : isSituatedIn
 
     class PlantStatusInTime #GreenZoneNode
-    PlantStatusInTime -[#OntoPiAProperty]-> EventOrSituation : rdfs:subclassOf
+    'PlantStatusInTime -[#OntoPiAProperty]-> EventOrSituation : rdfs:subclassOf
 
     PlantStatusInTime -[#OntoPiAProperty]-> Value : hasMeasurement
     PlantStatusInTime -[#GreenZoneProperty]-> PlantHealth : hasHealthStatus

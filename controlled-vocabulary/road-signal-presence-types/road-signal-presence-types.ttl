@@ -1,0 +1,67 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ontoim: <https://w3id.org/ontoim/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/1> a skos:Concept,
+        ontoim:RoadSignalPresenceType ;
+    rdfs:label "Absent signage"@en,
+        "Segnaletica assente"@it ;
+    dct:identifier 1 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/> ;
+    skos:prefLabel "Absent signage"@en,
+        "Segnaletica assente"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/2> a skos:Concept,
+        ontoim:RoadSignalPresenceType ;
+    rdfs:label "Vertical signage"@en,
+        "Segnaletica verticale"@it ;
+    dct:identifier 2 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/> ;
+    skos:prefLabel "Vertical signage"@en,
+        "Segnaletica verticale"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/3> a skos:Concept,
+        ontoim:RoadSignalPresenceType ;
+    rdfs:label "Horizontal Signage"@en,
+        "Segnaletica orizzontale"@it ;
+    dct:identifier 3 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/> ;
+    skos:prefLabel "Horizontal Signage"@en,
+        "Segnaletica orizzontale"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/4> a skos:Concept,
+        ontoim:RoadSignalPresenceType ;
+    rdfs:label "Vertical and Horizontal Signage"@en,
+        "Segnaletica verticale e orizzontale"@it ;
+    dct:identifier 4 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/> ;
+    skos:prefLabel "Vertical and Horizontal Signage"@en,
+        "Segnaletica verticale e orizzontale"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/5> a skos:Concept,
+        ontoim:RoadSignalPresenceType ;
+    rdfs:label "Temporary construction site signage"@en,
+        "Segnaletica temporanea di cantiere"@it ;
+    dct:identifier 5 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/> ;
+    skos:prefLabel "Temporary construction site signage"@en,
+        "Segnaletica temporanea di cantiere"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/> a skos:ConceptScheme ;
+    rdfs:label "Road signal presence type"@en,
+        "Tipologia di presenza di segnaletica stradale"@it ;
+    dct:creator <https://w3id.org/people/lucamartinelli> ;
+    dct:description "Classification of road signal presence typology"@en,
+        "Classificazione della tipologia di presenza di segnaletica stradale"@it ;
+    dct:title "Road signal presence type"@en,
+        "Tipologia di presenza di segnaletica stradale"@it ;
+    rdfs:comment "Classification of road signal presence typology"@en,
+        "Classificazione della tipologia di presenza di segnaletica stradale"@it ;
+    skos:hasTopConcept <https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/3>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/4>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-signal-presence-types/5> .
+

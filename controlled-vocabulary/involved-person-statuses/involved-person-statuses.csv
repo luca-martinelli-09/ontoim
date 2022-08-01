@@ -1,0 +1,5 @@
+l1_identifier,l1_label_en,l1_label_it,l2_identifier,l2_label_en,l2_label_it
+1,Unhurt,Incolume,,,
+2,Wounded,Ferito,,,
+3,Dead,Morto,3.1,Dead within 24 hours,Morto entro 24 ore
+3,Dead,Morto,3.2,Dead within 30 days,Morto entro 30 giorni

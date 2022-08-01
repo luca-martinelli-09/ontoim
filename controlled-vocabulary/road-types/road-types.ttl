@@ -1,0 +1,57 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ontoim: <https://w3id.org/ontoim/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-types/1> a skos:Concept,
+        ontoim:RoadType ;
+    rdfs:label "One-way roadway"@en,
+        "Una carreggiata senso unico"@it ;
+    dct:identifier 1 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-types/> ;
+    skos:prefLabel "One-way roadway"@en,
+        "Una carreggiata senso unico"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-types/2> a skos:Concept,
+        ontoim:RoadType ;
+    rdfs:label "One two-way roadway"@en,
+        "Una carreggiata doppio senso"@it ;
+    dct:identifier 2 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-types/> ;
+    skos:prefLabel "One two-way roadway"@en,
+        "Una carreggiata doppio senso"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-types/3> a skos:Concept,
+        ontoim:RoadType ;
+    rdfs:label "Two roadways"@en,
+        "Due carreggiate"@it ;
+    dct:identifier 3 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-types/> ;
+    skos:prefLabel "Two roadways"@en,
+        "Due carreggiate"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-types/4> a skos:Concept,
+        ontoim:RoadType ;
+    rdfs:label "More than two roadways"@en,
+        "Più di due carreggiate"@it ;
+    dct:identifier 4 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-types/> ;
+    skos:prefLabel "More than two roadways"@en,
+        "Più di due carreggiate"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-types/> a skos:ConceptScheme ;
+    rdfs:label "Road type"@en,
+        "Tipo di strada"@it ;
+    dct:creator <https://w3id.org/people/lucamartinelli> ;
+    dct:description "Classification of road types"@en,
+        "Classificazione della tipologia di strada"@it ;
+    dct:title "Road type"@en,
+        "Tipo di strada"@it ;
+    rdfs:comment "Classification of road types"@en,
+        "Classificazione della tipologia di strada"@it ;
+    skos:hasTopConcept <https://w3id.org/ontoim/controlled-vocabulary/road-types/1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-types/2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-types/3>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-types/4> .
+

@@ -1,0 +1,67 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ontoim: <https://w3id.org/ontoim/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/1> a skos:Concept,
+        ontoim:RoadbedType ;
+    rdfs:label "Dry"@en,
+        "Asciutto"@it ;
+    dct:identifier 1 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/> ;
+    skos:prefLabel "Dry"@en,
+        "Asciutto"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/2> a skos:Concept,
+        ontoim:RoadbedType ;
+    rdfs:label "Wet"@en,
+        "Bagnato"@it ;
+    dct:identifier 2 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/> ;
+    skos:prefLabel "Wet"@en,
+        "Bagnato"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/3> a skos:Concept,
+        ontoim:RoadbedType ;
+    rdfs:label "Slippery"@en,
+        "Sdrucciolevole"@it ;
+    dct:identifier 3 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/> ;
+    skos:prefLabel "Slippery"@en,
+        "Sdrucciolevole"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/4> a skos:Concept,
+        ontoim:RoadbedType ;
+    rdfs:label "Frozen"@en,
+        "Ghiacciato"@it ;
+    dct:identifier 4 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/> ;
+    skos:prefLabel "Frozen"@en,
+        "Ghiacciato"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/5> a skos:Concept,
+        ontoim:RoadbedType ;
+    rdfs:label "Snowy"@en,
+        "Innevato"@it ;
+    dct:identifier 5 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/> ;
+    skos:prefLabel "Snowy"@en,
+        "Innevato"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/> a skos:ConceptScheme ;
+    rdfs:label "Roadbed type"@en,
+        "Tipo di fondo stradale"@it ;
+    dct:creator <https://w3id.org/people/lucamartinelli> ;
+    dct:description "Classification of roadbed types"@en,
+        "Classificazione della tipologia di fondo stradale"@it ;
+    dct:title "Roadbed type"@en,
+        "Tipo di fondo stradale"@it ;
+    rdfs:comment "Classification of roadbed types"@en,
+        "Classificazione della tipologia di fondo stradale"@it ;
+    skos:hasTopConcept <https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/3>,
+        <https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/4>,
+        <https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/5> .
+

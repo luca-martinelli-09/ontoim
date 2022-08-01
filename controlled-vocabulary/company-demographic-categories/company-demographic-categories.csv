@@ -1,0 +1,5 @@
+l1_identifier,l1_label_en,l1_label_it,l2_identifier,l2_label_en,l2_label_it
+A,Female enterprise,Impresa femminile,,,
+B,Youth enterprise,Impresa giovanile,,,
+C,Foreign enterprise,Impresa straniera,A.1,EU foreign enterprise,Impresa straniera comunitaria
+C,Foreign enterprise,Impresa straniera,A.2,Non-EU foreign enterprise,Impresa straniera extracomunitaria

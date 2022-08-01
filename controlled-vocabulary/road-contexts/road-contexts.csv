@@ -1,0 +1,13 @@
+l1_identifier,l1_label_en,l1_label_it,l2_identifier,l2_label_en,l2_label_it
+A,Intersection,Intersezione,A.1,Crossroads,Incrocio
+A,Intersection,Intersezione,A.2,Traffic circle,Rotatoria
+A,Intersection,Intersezione,A.3,Signalized intersection,Intersezione segnalata
+A,Intersection,Intersezione,A.4,Intersection with traffic lights or traffic warden,Intersezione con semaforo o vigile
+A,Intersection,Intersezione,A.5,Unsignalized intersection,Intersezione non segnalata
+A,Intersection,Intersezione,A.6,Level crossing,Passaggio a livello
+B,Not intersection,Non intersezione,B.7,Straight,Rettilineo
+B,Not intersection,Non intersezione,B.8,Curve,Curva
+B,Not intersection,Non intersezione,B.9,"Hump, bottleneck","Dosso, strettoia"
+B,Not intersection,Non intersezione,B.10,Slope,Pendenza
+B,Not intersection,Non intersezione,B.11,Illuminated tunnel,Galleria illuminata
+B,Not intersection,Non intersezione,B.12,Unlit tunnel,Galleria non illuminata

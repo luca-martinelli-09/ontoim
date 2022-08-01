@@ -1,0 +1,22 @@
+l1_identifier,l1_label_en,l1_label_it,l2_identifier,l2_label_en,l2_label_it
+A,Car,Auto,A.1,Private passenger car,Autovettura privata
+A,Car,Auto,A.2,Private passenger car with trailer,Autovettura privata con rimorchio
+A,Car,Auto,A.3,Public passenger car,Autovettura pubblica
+A,Car,Auto,A.4,Rescue or police car,Autovettura di soccorso o di polizia
+B,Tractor-Trailer or Bus,Autoarticolato o autobus,B.5,Bus or trolleybus in urban service,Autobus o fil bus in servizio urbano
+B,Tractor-Trailer or Bus,Autoarticolato o autobus,B.6,Bus or fil bus in suburban service,Autobus di linea o non di linea in extraurbana
+B,Tractor-Trailer or Bus,Autoarticolato o autobus,B.7,Streetcar,Tram
+B,Tractor-Trailer or Bus,Autoarticolato o autobus,B.8,Truck,Autocarro
+B,Tractor-Trailer or Bus,Autoarticolato o autobus,B.9,Truck with trailer,Autotreno con rimorchio
+B,Tractor-Trailer or Bus,Autoarticolato o autobus,B.10,Articulated truck,Autoarticolato
+D,Vehicle without category,Veicolo senza categoria,D.11,Special vehicles,Veicoli speciali
+D,Vehicle without category,Veicolo senza categoria,D.12,Road tractor or tractor unit,Trattore stradale o motrice
+D,Vehicle without category,Veicolo senza categoria,D.13,Agricultural machine,Macchina agricola
+D,Vehicle without category,Veicolo senza categoria,D.14,Velocipede,Velocipede
+C,Motorcycle,Motocicletta,C.15,Moped,Ciclomotore
+C,Motorcycle,Motocicletta,C.16,Motorcycle with only,Motociclo a solo
+C,Motorcycle,Motocicletta,C.17,Motorcycle with passenger,Motociclo con passeggero
+C,Motorcycle,Motocicletta,C.18,Motorcycle truck or motor van,Motocarro o motofurgone
+D,Vehicle without category,Veicolo senza categoria,D.19,Animal-drawn or arm-drawn vehicle,Veicolo a trazione animale o a braccia
+D,Vehicle without category,Veicolo senza categoria,D.20,Unknown vehicle because it is on the run,Veicolo ignoto perchè datosi alla fuga
+A,Car,Auto,A.21,Quadricycle,Quadriciclo

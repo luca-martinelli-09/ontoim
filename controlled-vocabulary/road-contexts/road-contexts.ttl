@@ -1,0 +1,168 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ontoim: <https://w3id.org/ontoim/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.1> a skos:Concept,
+        ontoim:RoadContext ;
+    rdfs:label "Crossroads"@en,
+        "Incrocio"@it ;
+    dct:identifier "A.1" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/> ;
+    skos:prefLabel "Crossroads"@en,
+        "Incrocio"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.2> a skos:Concept,
+        ontoim:RoadContext ;
+    rdfs:label "Traffic circle"@en,
+        "Rotatoria"@it ;
+    dct:identifier "A.2" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/> ;
+    skos:prefLabel "Traffic circle"@en,
+        "Rotatoria"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.3> a skos:Concept,
+        ontoim:RoadContext ;
+    rdfs:label "Signalized intersection"@en,
+        "Intersezione segnalata"@it ;
+    dct:identifier "A.3" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/> ;
+    skos:prefLabel "Signalized intersection"@en,
+        "Intersezione segnalata"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.4> a skos:Concept,
+        ontoim:RoadContext ;
+    rdfs:label "Intersection with traffic lights or traffic warden"@en,
+        "Intersezione con semaforo o vigile"@it ;
+    dct:identifier "A.4" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/> ;
+    skos:prefLabel "Intersection with traffic lights or traffic warden"@en,
+        "Intersezione con semaforo o vigile"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.5> a skos:Concept,
+        ontoim:RoadContext ;
+    rdfs:label "Unsignalized intersection"@en,
+        "Intersezione non segnalata"@it ;
+    dct:identifier "A.5" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/> ;
+    skos:prefLabel "Unsignalized intersection"@en,
+        "Intersezione non segnalata"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.6> a skos:Concept,
+        ontoim:RoadContext ;
+    rdfs:label "Level crossing"@en,
+        "Passaggio a livello"@it ;
+    dct:identifier "A.6" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/> ;
+    skos:prefLabel "Level crossing"@en,
+        "Passaggio a livello"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B.10> a skos:Concept,
+        ontoim:RoadContext ;
+    rdfs:label "Slope"@en,
+        "Pendenza"@it ;
+    dct:identifier "B.10" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/> ;
+    skos:prefLabel "Slope"@en,
+        "Pendenza"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B.11> a skos:Concept,
+        ontoim:RoadContext ;
+    rdfs:label "Illuminated tunnel"@en,
+        "Galleria illuminata"@it ;
+    dct:identifier "B.11" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/> ;
+    skos:prefLabel "Illuminated tunnel"@en,
+        "Galleria illuminata"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B.12> a skos:Concept,
+        ontoim:RoadContext ;
+    rdfs:label "Unlit tunnel"@en,
+        "Galleria non illuminata"@it ;
+    dct:identifier "B.12" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/> ;
+    skos:prefLabel "Unlit tunnel"@en,
+        "Galleria non illuminata"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B.7> a skos:Concept,
+        ontoim:RoadContext ;
+    rdfs:label "Straight"@en,
+        "Rettilineo"@it ;
+    dct:identifier "B.7" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/> ;
+    skos:prefLabel "Straight"@en,
+        "Rettilineo"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B.8> a skos:Concept,
+        ontoim:RoadContext ;
+    rdfs:label "Curve"@en,
+        "Curva"@it ;
+    dct:identifier "B.8" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/> ;
+    skos:prefLabel "Curve"@en,
+        "Curva"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B.9> a skos:Concept,
+        ontoim:RoadContext ;
+    rdfs:label "Hump, bottleneck"@en,
+        "Dosso, strettoia"@it ;
+    dct:identifier "B.9" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/> ;
+    skos:prefLabel "Hump, bottleneck"@en,
+        "Dosso, strettoia"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A> a skos:Concept,
+        ontoim:RoadContext ;
+    rdfs:label "Intersection"@en,
+        "Intersezione"@it ;
+    dct:identifier "A" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.3>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.4>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.5>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.6> ;
+    skos:prefLabel "Intersection"@en,
+        "Intersezione"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B> a skos:Concept,
+        ontoim:RoadContext ;
+    rdfs:label "Not intersection"@en,
+        "Non intersezione"@it ;
+    dct:identifier "B" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B.10>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B.11>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B.12>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B.7>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B.8>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B.9> ;
+    skos:prefLabel "Not intersection"@en,
+        "Non intersezione"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/road-contexts/> a skos:ConceptScheme ;
+    rdfs:label "Road context"@en,
+        "Contesto stradale dell'incidente"@it ;
+    dct:creator <https://w3id.org/people/lucamartinelli> ;
+    dct:description "The context where the accident happened (e.g. at an intersection, near a crossroad, etc...)"@en,
+        "Il contesto stradale in cui è avvenuto l'incidente (es: in un incrocio, vicino a un attraversamento, ecc...)"@it ;
+    dct:title "Road context"@en,
+        "Contesto stradale dell'incidente"@it ;
+    rdfs:comment "The context where the accident happened (e.g. at an intersection, near a crossroad, etc...)"@en,
+        "Il contesto stradale in cui è avvenuto l'incidente (es: in un incrocio, vicino a un attraversamento, ecc...)"@it ;
+    skos:hasTopConcept <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A>,
+        <https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B> .
+

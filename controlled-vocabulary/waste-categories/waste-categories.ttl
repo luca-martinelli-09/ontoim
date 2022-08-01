@@ -121,12 +121,12 @@
         "Wood"@it .
 
 <https://w3id.org/ontoim/controlled-vocabulary/waste-categories/> a skos:ConceptScheme ;
-    rdfs:label "Waste Category"@en,
+    rdfs:label "Waste category"@en,
         "Categoria di rifiuto"@it ;
     dct:creator <https://w3id.org/people/lucamartinelli> ;
     dct:description "Classification of waste categories"@en,
         "Classificatione delle categorie di rifiuti"@it ;
-    dct:title "Waste Category"@en,
+    dct:title "Waste category"@en,
         "Categoria di rifiuto"@it ;
     rdfs:comment "Classification of waste categories"@en,
         "Classificatione delle categorie di rifiuti"@it ;

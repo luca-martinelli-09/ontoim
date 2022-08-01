@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-categories/">
+    <rdfs:label xml:lang="en">School category</rdfs:label>
+    <rdfs:label xml:lang="it">Categoria di scuola</rdfs:label>
+    <dct:title xml:lang="en">School category</dct:title>
+    <dct:title xml:lang="it">Categoria di scuola</dct:title>
+    <rdfs:comment xml:lang="en">Classification of school categories</rdfs:comment>
+    <rdfs:comment xml:lang="it">Classificazione delle categorie di scuole</rdfs:comment>
+    <dct:description xml:lang="en">Classification of school categories</dct:description>
+    <dct:description xml:lang="it">Classificazione delle categorie di scuole</dct:description>
+    <dct:creator rdf:resource="https://w3id.org/people/lucamartinelli"/>
+  </skos:ConceptScheme>
+</rdf:RDF>

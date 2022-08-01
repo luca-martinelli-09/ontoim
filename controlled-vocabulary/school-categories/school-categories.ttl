@@ -1,0 +1,15 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/ontoim/controlled-vocabulary/school-categories/> a skos:ConceptScheme ;
+    rdfs:label "School category"@en,
+        "Categoria di scuola"@it ;
+    dct:creator <https://w3id.org/people/lucamartinelli> ;
+    dct:description "Classification of school categories"@en,
+        "Classificazione delle categorie di scuole"@it ;
+    dct:title "School category"@en,
+        "Categoria di scuola"@it ;
+    rdfs:comment "Classification of school categories"@en,
+        "Classificazione delle categorie di scuole"@it .
+

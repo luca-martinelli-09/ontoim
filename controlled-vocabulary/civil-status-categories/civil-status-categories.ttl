@@ -1,0 +1,382 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ontoim: <https://w3id.org/ontoim/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.1> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Birth in municipality"@en,
+        "Nascita nel comune"@it ;
+    dct:identifier "A.1" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Birth in municipality"@en,
+        "Nascita nel comune"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.2> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Birth in other municipality"@en,
+        "Nascita in altro comune"@it ;
+    dct:identifier "A.2" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Birth in other municipality"@en,
+        "Nascita in altro comune"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.3> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Birth statement transmitted"@en,
+        "Dichiarazione di nascita trasmessa"@it ;
+    dct:identifier "A.3" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Birth statement transmitted"@en,
+        "Dichiarazione di nascita trasmessa"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.4> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Birth from foreigner"@en,
+        "Nascita da genitore straniero"@it ;
+    dct:identifier "A.4" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Birth from foreigner"@en,
+        "Nascita da genitore straniero"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.5> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Birth in marriage"@en,
+        "Nascita nel matrimonio"@it ;
+    dct:identifier "A.5" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Birth in marriage"@en,
+        "Nascita nel matrimonio"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.6> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Birth out of marriage"@en,
+        "Fuori matrimonio"@it ;
+    dct:identifier "A.6" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Birth out of marriage"@en,
+        "Fuori matrimonio"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.7> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Multiple birth"@en,
+        "Parto plurimo"@it ;
+    dct:identifier "A.7" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Multiple birth"@en,
+        "Parto plurimo"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B.1> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Death in municipality"@en,
+        "Morto nel comune"@it ;
+    dct:identifier "B.1" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Death in municipality"@en,
+        "Morto nel comune"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B.2> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Death in other municipality"@en,
+        "Morto in altro comune"@it ;
+    dct:identifier "B.2" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Death in other municipality"@en,
+        "Morto in altro comune"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B.3> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Death in other country"@en,
+        "Morto all'estero"@it ;
+    dct:identifier "B.3" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Death in other country"@en,
+        "Morto all'estero"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C.1> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Immigration from other municipality"@en,
+        "Immigrazione da un altro comune"@it ;
+    dct:identifier "C.1" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Immigration from other municipality"@en,
+        "Immigrazione da un altro comune"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C.2> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Immigration from other country"@en,
+        "Immigrazione dall'estero"@it ;
+    dct:identifier "C.2" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Immigration from other country"@en,
+        "Immigrazione dall'estero"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C.3> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Other type of immigration"@en,
+        "Altra tipologia di immigrazione"@it ;
+    dct:identifier "C.3" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Other type of immigration"@en,
+        "Altra tipologia di immigrazione"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D.1> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Emigration to other municipality"@en,
+        "Emigrazione in altro comune"@it ;
+    dct:identifier "D.1" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Emigration to other municipality"@en,
+        "Emigrazione in altro comune"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D.2> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Emigration to other country"@en,
+        "Emigrazione all'estero"@it ;
+    dct:identifier "D.2" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Emigration to other country"@en,
+        "Emigrazione all'estero"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D.3> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Other type of emigration"@en,
+        "Altra tipologia di emigrazione"@it ;
+    dct:identifier "D.3" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Other type of emigration"@en,
+        "Altra tipologia di emigrazione"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E.1> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Religious marriage"@en,
+        "Matrimonio religioso"@it ;
+    dct:identifier "E.1" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Religious marriage"@en,
+        "Matrimonio religioso"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E.2> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Civil marriage"@en,
+        "Matrimonio civile"@it ;
+    dct:identifier "E.2" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Civil marriage"@en,
+        "Matrimonio civile"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E.3> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Marriage with a foreigner"@en,
+        "Matrimonio con uno straniero"@it ;
+    dct:identifier "E.3" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Marriage with a foreigner"@en,
+        "Matrimonio con uno straniero"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F.1> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Separations"@en,
+        "Separazioni"@it ;
+    dct:identifier "F.1" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Separations"@en,
+        "Separazioni"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F.2> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Divorces"@en,
+        "Divorzi"@it ;
+    dct:identifier "F.2" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Divorces"@en,
+        "Divorzi"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F.3> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Other out-of-court settlement"@en,
+        "Altri accordi extragiudiziali"@it ;
+    dct:identifier "F.3" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Other out-of-court settlement"@en,
+        "Altri accordi extragiudiziali"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/G.1> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Civili union between mens"@en,
+        "Unioni civili tra maschi"@it ;
+    dct:identifier "G.1" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/G> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Civili union between mens"@en,
+        "Unioni civili tra maschi"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/G.2> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Civili union between womens"@en,
+        "Unioni civili tra femmine"@it ;
+    dct:identifier "G.2" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/G> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Civili union between womens"@en,
+        "Unioni civili tra femmine"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H.1> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Dissolution of civil union between mens"@en,
+        "Scioglimento di unioni civili tra maschi"@it ;
+    dct:identifier "H.1" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Dissolution of civil union between mens"@en,
+        "Scioglimento di unioni civili tra maschi"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H.2> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Dissolution of civil union between womens"@en,
+        "Scioglimento di unioni civili tra femmine"@it ;
+    dct:identifier "H.2" ;
+    skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:prefLabel "Dissolution of civil union between womens"@en,
+        "Scioglimento di unioni civili tra femmine"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/G> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Civil union"@en,
+        "Unioni civili"@it ;
+    dct:identifier "G" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/G.1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/G.2> ;
+    skos:prefLabel "Civil union"@en,
+        "Unioni civili"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Dissolution of civil union"@en,
+        "Scioglimento unioni civili"@it ;
+    dct:identifier "H" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H.1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H.2> ;
+    skos:prefLabel "Dissolution of civil union"@en,
+        "Scioglimento unioni civili"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Death"@en,
+        "Morte"@it ;
+    dct:identifier "B" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B.1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B.2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B.3> ;
+    skos:prefLabel "Death"@en,
+        "Morte"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Immigration"@en,
+        "Immigrazione"@it ;
+    dct:identifier "C" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C.1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C.2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C.3> ;
+    skos:prefLabel "Immigration"@en,
+        "Immigrazione"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Emigration"@en,
+        "Emigrazione"@it ;
+    dct:identifier "D" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D.1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D.2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D.3> ;
+    skos:prefLabel "Emigration"@en,
+        "Emigrazione"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Marriage"@en,
+        "Matrimonio"@it ;
+    dct:identifier "E" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E.1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E.2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E.3> ;
+    skos:prefLabel "Marriage"@en,
+        "Matrimonio"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Out-of-court settlement"@en,
+        "Accordi extragiudiziali"@it ;
+    dct:identifier "F" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F.1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F.2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F.3> ;
+    skos:prefLabel "Out-of-court settlement"@en,
+        "Accordi extragiudiziali"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A> a skos:Concept,
+        ontoim:CivilStatusCategory ;
+    rdfs:label "Birth"@en,
+        "Nascita"@it ;
+    dct:identifier "A" ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.3>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.4>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.5>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.6>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.7> ;
+    skos:prefLabel "Birth"@en,
+        "Nascita"@it .
+
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> a skos:ConceptScheme ;
+    rdfs:label "Civil statis category"@en,
+        "Categoria dello stato civile"@it ;
+    dct:creator <https://w3id.org/people/lucamartinelli> ;
+    dct:description "Classification of civil status categories for demographic events and observations"@en,
+        "Classificazione delle categorie di stato civile per eventi ed osservazioni demografiche"@it ;
+    dct:title "Civil statis category"@en,
+        "Categoria dello stato civile"@it ;
+    rdfs:comment "Classification of civil status categories for demographic events and observations"@en,
+        "Classificazione delle categorie di stato civile per eventi ed osservazioni demografiche"@it ;
+    skos:hasTopConcept <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/G>,
+        <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H> .
+

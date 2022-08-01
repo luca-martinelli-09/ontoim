@@ -68,12 +68,12 @@
         "Non definito"@it .
 
 <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/> a skos:ConceptScheme ;
-    rdfs:label "Weather Condition"@en,
+    rdfs:label "Weather condition"@en,
         "Condizione Meteorologica"@it ;
     dct:creator <https://w3id.org/people/lucamartinelli> ;
     dct:description "Classification of weather conditions"@en,
         "Classificatione delle condizioni meteorologiche"@it ;
-    dct:title "Weather Condition"@en,
+    dct:title "Weather condition"@en,
         "Condizione Meteorologica"@it ;
     rdfs:comment "Classification of weather conditions"@en,
         "Classificatione delle condizioni meteorologiche"@it ;
