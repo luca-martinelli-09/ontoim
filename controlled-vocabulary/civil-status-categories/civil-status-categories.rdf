@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:ontoim="https://w3id.org/ontoim/"
   xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:ontoim="https://w3id.org/ontoim/"
 >
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B.2">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/G">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-    <dct:identifier>B.2</dct:identifier>
-    <rdfs:label xml:lang="en">Death in other municipality</rdfs:label>
-    <rdfs:label xml:lang="it">Morto in altro comune</rdfs:label>
-    <skos:prefLabel xml:lang="en">Death in other municipality</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Morto in altro comune</skos:prefLabel>
+    <dct:identifier>G</dct:identifier>
+    <rdfs:label xml:lang="en">Civil union</rdfs:label>
+    <rdfs:label xml:lang="it">Unioni civili</rdfs:label>
+    <skos:prefLabel xml:lang="en">Civil union</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Unioni civili</skos:prefLabel>
     <skos:inScheme>
       <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/">
         <rdfs:label xml:lang="en">Civil statis category</rdfs:label>
@@ -34,29 +34,6 @@
         <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H"/>
       </skos:ConceptScheme>
     </skos:inScheme>
-    <skos:broader>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-        <dct:identifier>B</dct:identifier>
-        <rdfs:label xml:lang="en">Death</rdfs:label>
-        <rdfs:label xml:lang="it">Morte</rdfs:label>
-        <skos:prefLabel xml:lang="en">Death</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Morte</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B.1"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B.2"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B.3"/>
-      </skos:Concept>
-    </skos:broader>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/G">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-    <dct:identifier>G</dct:identifier>
-    <rdfs:label xml:lang="en">Civil union</rdfs:label>
-    <rdfs:label xml:lang="it">Unioni civili</rdfs:label>
-    <skos:prefLabel xml:lang="en">Civil union</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Unioni civili</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
     <skos:narrower>
       <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/G.1">
         <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
@@ -82,69 +59,13 @@
       </skos:Concept>
     </skos:narrower>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F.2">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.1">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-    <dct:identifier>F.2</dct:identifier>
-    <rdfs:label xml:lang="en">Divorces</rdfs:label>
-    <rdfs:label xml:lang="it">Divorzi</rdfs:label>
-    <skos:prefLabel xml:lang="en">Divorces</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Divorzi</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
-    <skos:broader>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-        <dct:identifier>F</dct:identifier>
-        <rdfs:label xml:lang="en">Out-of-court settlement</rdfs:label>
-        <rdfs:label xml:lang="it">Accordi extragiudiziali</rdfs:label>
-        <skos:prefLabel xml:lang="en">Out-of-court settlement</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Accordi extragiudiziali</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F.1"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F.2"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F.3"/>
-      </skos:Concept>
-    </skos:broader>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-    <dct:identifier>H</dct:identifier>
-    <rdfs:label xml:lang="en">Dissolution of civil union</rdfs:label>
-    <rdfs:label xml:lang="it">Scioglimento unioni civili</rdfs:label>
-    <skos:prefLabel xml:lang="en">Dissolution of civil union</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Scioglimento unioni civili</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
-    <skos:narrower>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-        <dct:identifier>H.1</dct:identifier>
-        <rdfs:label xml:lang="en">Dissolution of civil union between mens</rdfs:label>
-        <rdfs:label xml:lang="it">Scioglimento di unioni civili tra maschi</rdfs:label>
-        <skos:prefLabel xml:lang="en">Dissolution of civil union between mens</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Scioglimento di unioni civili tra maschi</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
-        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H"/>
-      </skos:Concept>
-    </skos:narrower>
-    <skos:narrower>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H.2">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-        <dct:identifier>H.2</dct:identifier>
-        <rdfs:label xml:lang="en">Dissolution of civil union between womens</rdfs:label>
-        <rdfs:label xml:lang="it">Scioglimento di unioni civili tra femmine</rdfs:label>
-        <skos:prefLabel xml:lang="en">Dissolution of civil union between womens</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Scioglimento di unioni civili tra femmine</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
-        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H"/>
-      </skos:Concept>
-    </skos:narrower>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.3">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-    <dct:identifier>A.3</dct:identifier>
-    <rdfs:label xml:lang="en">Birth statement transmitted</rdfs:label>
-    <rdfs:label xml:lang="it">Dichiarazione di nascita trasmessa</rdfs:label>
-    <skos:prefLabel xml:lang="en">Birth statement transmitted</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Dichiarazione di nascita trasmessa</skos:prefLabel>
+    <dct:identifier>A.1</dct:identifier>
+    <rdfs:label xml:lang="en">Birth in municipality</rdfs:label>
+    <rdfs:label xml:lang="it">Nascita nel comune</rdfs:label>
+    <skos:prefLabel xml:lang="en">Birth in municipality</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Nascita nel comune</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
     <skos:broader>
       <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A">
@@ -165,141 +86,36 @@
       </skos:Concept>
     </skos:broader>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E.3">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C.3">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-    <dct:identifier>E.3</dct:identifier>
-    <rdfs:label xml:lang="en">Marriage with a foreigner</rdfs:label>
-    <rdfs:label xml:lang="it">Matrimonio con uno straniero</rdfs:label>
-    <skos:prefLabel xml:lang="en">Marriage with a foreigner</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Matrimonio con uno straniero</skos:prefLabel>
+    <dct:identifier>C.3</dct:identifier>
+    <rdfs:label xml:lang="en">Other type of immigration</rdfs:label>
+    <rdfs:label xml:lang="it">Altra tipologia di immigrazione</rdfs:label>
+    <skos:prefLabel xml:lang="en">Other type of immigration</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Altra tipologia di immigrazione</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
     <skos:broader>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E">
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C">
         <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-        <dct:identifier>E</dct:identifier>
-        <rdfs:label xml:lang="en">Marriage</rdfs:label>
-        <rdfs:label xml:lang="it">Matrimonio</rdfs:label>
-        <skos:prefLabel xml:lang="en">Marriage</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Matrimonio</skos:prefLabel>
+        <dct:identifier>C</dct:identifier>
+        <rdfs:label xml:lang="en">Immigration</rdfs:label>
+        <rdfs:label xml:lang="it">Immigrazione</rdfs:label>
+        <skos:prefLabel xml:lang="en">Immigration</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Immigrazione</skos:prefLabel>
         <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E.1"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E.2"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E.3"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C.1"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C.2"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C.3"/>
       </skos:Concept>
     </skos:broader>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.1">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D.3">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-    <dct:identifier>A.1</dct:identifier>
-    <rdfs:label xml:lang="en">Birth in municipality</rdfs:label>
-    <rdfs:label xml:lang="it">Nascita nel comune</rdfs:label>
-    <skos:prefLabel xml:lang="en">Birth in municipality</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Nascita nel comune</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E.2">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-    <dct:identifier>E.2</dct:identifier>
-    <rdfs:label xml:lang="en">Civil marriage</rdfs:label>
-    <rdfs:label xml:lang="it">Matrimonio civile</rdfs:label>
-    <skos:prefLabel xml:lang="en">Civil marriage</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Matrimonio civile</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.7">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-    <dct:identifier>A.7</dct:identifier>
-    <rdfs:label xml:lang="en">Multiple birth</rdfs:label>
-    <rdfs:label xml:lang="it">Parto plurimo</rdfs:label>
-    <skos:prefLabel xml:lang="en">Multiple birth</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Parto plurimo</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-    <dct:identifier>C</dct:identifier>
-    <rdfs:label xml:lang="en">Immigration</rdfs:label>
-    <rdfs:label xml:lang="it">Immigrazione</rdfs:label>
-    <skos:prefLabel xml:lang="en">Immigration</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Immigrazione</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
-    <skos:narrower>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-        <dct:identifier>C.1</dct:identifier>
-        <rdfs:label xml:lang="en">Immigration from other municipality</rdfs:label>
-        <rdfs:label xml:lang="it">Immigrazione da un altro comune</rdfs:label>
-        <skos:prefLabel xml:lang="en">Immigration from other municipality</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Immigrazione da un altro comune</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
-        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C"/>
-      </skos:Concept>
-    </skos:narrower>
-    <skos:narrower>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C.2">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-        <dct:identifier>C.2</dct:identifier>
-        <rdfs:label xml:lang="en">Immigration from other country</rdfs:label>
-        <rdfs:label xml:lang="it">Immigrazione dall'estero</rdfs:label>
-        <skos:prefLabel xml:lang="en">Immigration from other country</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Immigrazione dall'estero</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
-        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C"/>
-      </skos:Concept>
-    </skos:narrower>
-    <skos:narrower>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C.3">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-        <dct:identifier>C.3</dct:identifier>
-        <rdfs:label xml:lang="en">Other type of immigration</rdfs:label>
-        <rdfs:label xml:lang="it">Altra tipologia di immigrazione</rdfs:label>
-        <skos:prefLabel xml:lang="en">Other type of immigration</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Altra tipologia di immigrazione</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
-        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C"/>
-      </skos:Concept>
-    </skos:narrower>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E.1">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-    <dct:identifier>E.1</dct:identifier>
-    <rdfs:label xml:lang="en">Religious marriage</rdfs:label>
-    <rdfs:label xml:lang="it">Matrimonio religioso</rdfs:label>
-    <skos:prefLabel xml:lang="en">Religious marriage</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Matrimonio religioso</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F.3">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-    <dct:identifier>F.3</dct:identifier>
-    <rdfs:label xml:lang="en">Other out-of-court settlement</rdfs:label>
-    <rdfs:label xml:lang="it">Altri accordi extragiudiziali</rdfs:label>
-    <skos:prefLabel xml:lang="en">Other out-of-court settlement</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Altri accordi extragiudiziali</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.5">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-    <dct:identifier>A.5</dct:identifier>
-    <rdfs:label xml:lang="en">Birth in marriage</rdfs:label>
-    <rdfs:label xml:lang="it">Nascita nel matrimonio</rdfs:label>
-    <skos:prefLabel xml:lang="en">Birth in marriage</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Nascita nel matrimonio</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D.2">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-    <dct:identifier>D.2</dct:identifier>
-    <rdfs:label xml:lang="en">Emigration to other country</rdfs:label>
-    <rdfs:label xml:lang="it">Emigrazione all'estero</rdfs:label>
-    <skos:prefLabel xml:lang="en">Emigration to other country</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Emigrazione all'estero</skos:prefLabel>
+    <dct:identifier>D.3</dct:identifier>
+    <rdfs:label xml:lang="en">Other type of emigration</rdfs:label>
+    <rdfs:label xml:lang="it">Altra tipologia di emigrazione</rdfs:label>
+    <skos:prefLabel xml:lang="en">Other type of emigration</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Altra tipologia di emigrazione</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
     <skos:broader>
       <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D">
@@ -315,6 +131,159 @@
         <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D.3"/>
       </skos:Concept>
     </skos:broader>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.4">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
+    <dct:identifier>A.4</dct:identifier>
+    <rdfs:label xml:lang="en">Birth from foreigner</rdfs:label>
+    <rdfs:label xml:lang="it">Nascita da genitore straniero</rdfs:label>
+    <skos:prefLabel xml:lang="en">Birth from foreigner</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Nascita da genitore straniero</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F.3">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
+    <dct:identifier>F.3</dct:identifier>
+    <rdfs:label xml:lang="en">Other out-of-court settlement</rdfs:label>
+    <rdfs:label xml:lang="it">Altri accordi extragiudiziali</rdfs:label>
+    <skos:prefLabel xml:lang="en">Other out-of-court settlement</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Altri accordi extragiudiziali</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
+    <skos:broader>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
+        <dct:identifier>F</dct:identifier>
+        <rdfs:label xml:lang="en">Out-of-court settlement</rdfs:label>
+        <rdfs:label xml:lang="it">Accordi extragiudiziali</rdfs:label>
+        <skos:prefLabel xml:lang="en">Out-of-court settlement</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Accordi extragiudiziali</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F.1"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F.2"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F.3"/>
+      </skos:Concept>
+    </skos:broader>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B.1">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
+    <dct:identifier>B.1</dct:identifier>
+    <rdfs:label xml:lang="en">Death in municipality</rdfs:label>
+    <rdfs:label xml:lang="it">Morto nel comune</rdfs:label>
+    <skos:prefLabel xml:lang="en">Death in municipality</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Morto nel comune</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
+    <skos:broader>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
+        <dct:identifier>B</dct:identifier>
+        <rdfs:label xml:lang="en">Death</rdfs:label>
+        <rdfs:label xml:lang="it">Morte</rdfs:label>
+        <skos:prefLabel xml:lang="en">Death</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Morte</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B.1"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B.2"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B.3"/>
+      </skos:Concept>
+    </skos:broader>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H.2">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
+    <dct:identifier>H.2</dct:identifier>
+    <rdfs:label xml:lang="en">Dissolution of civil union between womens</rdfs:label>
+    <rdfs:label xml:lang="it">Scioglimento di unioni civili tra femmine</rdfs:label>
+    <skos:prefLabel xml:lang="en">Dissolution of civil union between womens</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Scioglimento di unioni civili tra femmine</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
+    <skos:broader>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
+        <dct:identifier>H</dct:identifier>
+        <rdfs:label xml:lang="en">Dissolution of civil union</rdfs:label>
+        <rdfs:label xml:lang="it">Scioglimento unioni civili</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dissolution of civil union</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Scioglimento unioni civili</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H.1"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H.2"/>
+      </skos:Concept>
+    </skos:broader>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B.2">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
+    <dct:identifier>B.2</dct:identifier>
+    <rdfs:label xml:lang="en">Death in other municipality</rdfs:label>
+    <rdfs:label xml:lang="it">Morto in altro comune</rdfs:label>
+    <skos:prefLabel xml:lang="en">Death in other municipality</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Morto in altro comune</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C.1">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
+    <dct:identifier>C.1</dct:identifier>
+    <rdfs:label xml:lang="en">Immigration from other municipality</rdfs:label>
+    <rdfs:label xml:lang="it">Immigrazione da un altro comune</rdfs:label>
+    <skos:prefLabel xml:lang="en">Immigration from other municipality</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Immigrazione da un altro comune</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F.2">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
+    <dct:identifier>F.2</dct:identifier>
+    <rdfs:label xml:lang="en">Divorces</rdfs:label>
+    <rdfs:label xml:lang="it">Divorzi</rdfs:label>
+    <skos:prefLabel xml:lang="en">Divorces</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Divorzi</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
+    <dct:identifier>E</dct:identifier>
+    <rdfs:label xml:lang="en">Marriage</rdfs:label>
+    <rdfs:label xml:lang="it">Matrimonio</rdfs:label>
+    <skos:prefLabel xml:lang="en">Marriage</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Matrimonio</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E.1">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
+        <dct:identifier>E.1</dct:identifier>
+        <rdfs:label xml:lang="en">Religious marriage</rdfs:label>
+        <rdfs:label xml:lang="it">Matrimonio religioso</rdfs:label>
+        <skos:prefLabel xml:lang="en">Religious marriage</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Matrimonio religioso</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E.2">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
+        <dct:identifier>E.2</dct:identifier>
+        <rdfs:label xml:lang="en">Civil marriage</rdfs:label>
+        <rdfs:label xml:lang="it">Matrimonio civile</rdfs:label>
+        <skos:prefLabel xml:lang="en">Civil marriage</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Matrimonio civile</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E.3">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
+        <dct:identifier>E.3</dct:identifier>
+        <rdfs:label xml:lang="en">Marriage with a foreigner</rdfs:label>
+        <rdfs:label xml:lang="it">Matrimonio con uno straniero</rdfs:label>
+        <skos:prefLabel xml:lang="en">Marriage with a foreigner</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Matrimonio con uno straniero</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E"/>
+      </skos:Concept>
+    </skos:narrower>
   </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B.3">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
@@ -336,45 +305,25 @@
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F.1">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.7">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-    <dct:identifier>F.1</dct:identifier>
-    <rdfs:label xml:lang="en">Separations</rdfs:label>
-    <rdfs:label xml:lang="it">Separazioni</rdfs:label>
-    <skos:prefLabel xml:lang="en">Separations</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Separazioni</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D.3">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-    <dct:identifier>D.3</dct:identifier>
-    <rdfs:label xml:lang="en">Other type of emigration</rdfs:label>
-    <rdfs:label xml:lang="it">Altra tipologia di emigrazione</rdfs:label>
-    <skos:prefLabel xml:lang="en">Other type of emigration</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Altra tipologia di emigrazione</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.2">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-    <dct:identifier>A.2</dct:identifier>
-    <rdfs:label xml:lang="en">Birth in other municipality</rdfs:label>
-    <rdfs:label xml:lang="it">Nascita in altro comune</rdfs:label>
-    <skos:prefLabel xml:lang="en">Birth in other municipality</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Nascita in altro comune</skos:prefLabel>
+    <dct:identifier>A.7</dct:identifier>
+    <rdfs:label xml:lang="en">Multiple birth</rdfs:label>
+    <rdfs:label xml:lang="it">Parto plurimo</rdfs:label>
+    <skos:prefLabel xml:lang="en">Multiple birth</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Parto plurimo</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B.1">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.3">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-    <dct:identifier>B.1</dct:identifier>
-    <rdfs:label xml:lang="en">Death in municipality</rdfs:label>
-    <rdfs:label xml:lang="it">Morto nel comune</rdfs:label>
-    <skos:prefLabel xml:lang="en">Death in municipality</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Morto nel comune</skos:prefLabel>
+    <dct:identifier>A.3</dct:identifier>
+    <rdfs:label xml:lang="en">Birth statement transmitted</rdfs:label>
+    <rdfs:label xml:lang="it">Dichiarazione di nascita trasmessa</rdfs:label>
+    <skos:prefLabel xml:lang="en">Birth statement transmitted</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Dichiarazione di nascita trasmessa</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A"/>
   </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D.1">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
@@ -386,14 +335,64 @@
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.4">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C.2">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
-    <dct:identifier>A.4</dct:identifier>
-    <rdfs:label xml:lang="en">Birth from foreigner</rdfs:label>
-    <rdfs:label xml:lang="it">Nascita da genitore straniero</rdfs:label>
-    <skos:prefLabel xml:lang="en">Birth from foreigner</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Nascita da genitore straniero</skos:prefLabel>
+    <dct:identifier>C.2</dct:identifier>
+    <rdfs:label xml:lang="en">Immigration from other country</rdfs:label>
+    <rdfs:label xml:lang="it">Immigrazione dall'estero</rdfs:label>
+    <skos:prefLabel xml:lang="en">Immigration from other country</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Immigrazione dall'estero</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F.1">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
+    <dct:identifier>F.1</dct:identifier>
+    <rdfs:label xml:lang="en">Separations</rdfs:label>
+    <rdfs:label xml:lang="it">Separazioni</rdfs:label>
+    <skos:prefLabel xml:lang="en">Separations</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Separazioni</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H.1">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
+    <dct:identifier>H.1</dct:identifier>
+    <rdfs:label xml:lang="en">Dissolution of civil union between mens</rdfs:label>
+    <rdfs:label xml:lang="it">Scioglimento di unioni civili tra maschi</rdfs:label>
+    <skos:prefLabel xml:lang="en">Dissolution of civil union between mens</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Scioglimento di unioni civili tra maschi</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.5">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
+    <dct:identifier>A.5</dct:identifier>
+    <rdfs:label xml:lang="en">Birth in marriage</rdfs:label>
+    <rdfs:label xml:lang="it">Nascita nel matrimonio</rdfs:label>
+    <skos:prefLabel xml:lang="en">Birth in marriage</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Nascita nel matrimonio</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.2">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
+    <dct:identifier>A.2</dct:identifier>
+    <rdfs:label xml:lang="en">Birth in other municipality</rdfs:label>
+    <rdfs:label xml:lang="it">Nascita in altro comune</rdfs:label>
+    <skos:prefLabel xml:lang="en">Birth in other municipality</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Nascita in altro comune</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D.2">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
+    <dct:identifier>D.2</dct:identifier>
+    <rdfs:label xml:lang="en">Emigration to other country</rdfs:label>
+    <rdfs:label xml:lang="it">Emigrazione all'estero</rdfs:label>
+    <skos:prefLabel xml:lang="en">Emigration to other country</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Emigrazione all'estero</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D"/>
   </skos:Concept>
 </rdf:RDF>

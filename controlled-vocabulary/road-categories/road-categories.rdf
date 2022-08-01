@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:ontoim="https://w3id.org/ontoim/"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-categories/">
     <rdfs:label xml:lang="en">Road category</rdfs:label>
@@ -45,22 +45,6 @@
       </skos:Concept>
     </skos:hasTopConcept>
   </skos:ConceptScheme>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.5">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/RoadCategory"/>
-    <dct:identifier>B.5</dct:identifier>
-    <rdfs:label>Provinciale</rdfs:label>
-    <skos:prefLabel>Provinciale</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/B"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.8">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/RoadCategory"/>
-    <dct:identifier>B.8</dct:identifier>
-    <rdfs:label>Altra strada</rdfs:label>
-    <skos:prefLabel>Altra strada</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/B"/>
-  </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-categories/A.0">
     <rdf:type rdf:resource="https://w3id.org/ontoim/RoadCategory"/>
     <dct:identifier>A.0</dct:identifier>
@@ -69,13 +53,13 @@
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/A"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-categories/A.3">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.8">
     <rdf:type rdf:resource="https://w3id.org/ontoim/RoadCategory"/>
-    <dct:identifier>A.3</dct:identifier>
-    <rdfs:label>Statale entro l'abitato</rdfs:label>
-    <skos:prefLabel>Statale entro l'abitato</skos:prefLabel>
+    <dct:identifier>B.8</dct:identifier>
+    <rdfs:label>Altra strada</rdfs:label>
+    <skos:prefLabel>Altra strada</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/A"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/B"/>
   </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.4">
     <rdf:type rdf:resource="https://w3id.org/ontoim/RoadCategory"/>
@@ -93,19 +77,27 @@
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/A"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.9">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-categories/A.3">
     <rdf:type rdf:resource="https://w3id.org/ontoim/RoadCategory"/>
-    <dct:identifier>B.9</dct:identifier>
-    <rdfs:label>Regionale</rdfs:label>
-    <skos:prefLabel>Regionale</skos:prefLabel>
+    <dct:identifier>A.3</dct:identifier>
+    <rdfs:label>Statale entro l'abitato</rdfs:label>
+    <skos:prefLabel>Statale entro l'abitato</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/B"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/A"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.7">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-categories/A.2">
     <rdf:type rdf:resource="https://w3id.org/ontoim/RoadCategory"/>
-    <dct:identifier>B.7</dct:identifier>
-    <rdfs:label>Autostrada</rdfs:label>
-    <skos:prefLabel>Autostrada</skos:prefLabel>
+    <dct:identifier>A.2</dct:identifier>
+    <rdfs:label>Provinciale entro l'abitato</rdfs:label>
+    <skos:prefLabel>Provinciale entro l'abitato</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/A"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.5">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/RoadCategory"/>
+    <dct:identifier>B.5</dct:identifier>
+    <rdfs:label>Provinciale</rdfs:label>
+    <skos:prefLabel>Provinciale</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/B"/>
   </skos:Concept>
@@ -117,12 +109,20 @@
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/B"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-categories/A.2">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.7">
     <rdf:type rdf:resource="https://w3id.org/ontoim/RoadCategory"/>
-    <dct:identifier>A.2</dct:identifier>
-    <rdfs:label>Provinciale entro l'abitato</rdfs:label>
-    <skos:prefLabel>Provinciale entro l'abitato</skos:prefLabel>
+    <dct:identifier>B.7</dct:identifier>
+    <rdfs:label>Autostrada</rdfs:label>
+    <skos:prefLabel>Autostrada</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/A"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/B"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.9">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/RoadCategory"/>
+    <dct:identifier>B.9</dct:identifier>
+    <rdfs:label>Regionale</rdfs:label>
+    <skos:prefLabel>Regionale</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-categories/B"/>
   </skos:Concept>
 </rdf:RDF>

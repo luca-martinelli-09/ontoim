@@ -197,6 +197,8 @@ def createVocabulary(vocabularyInfo):
             concept = conceptsData[cID]
             addConceptToScheme(g, NAMESPACE, SCHEME, concept,
                             ONTOIM[vocabularyInfo["element"]])
+    else:
+        print(vocabularyName, "is empty")
 
     # Save graph
     g.serialize(f"{vocabularyName}/{vocabularyName}.ttl", "turtle")

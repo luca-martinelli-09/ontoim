@@ -1,0 +1,24 @@
+l1_identifier,l1_label_en,l1_label_it,l2_identifier,l2_label_en,l2_label_it,l3_identifier,l3_label_en,l3_label_it
+1,Nursery,Asilo Nido
+2,Kindergarten,Scuola dell'Infanzia
+3,Elementary School,Scuola Primaria
+4,Secondary School,Scuola Secondaria di Primo Grado
+5,High School,Liceo,5.1,Art High School,Liceo Artistico
+5,High School,Liceo,5.2,Classical High School,Liceo Classico
+5,High School,Liceo,5.3,Linguistic High School,Liceo Linguistico
+5,High School,Liceo,5.4,High School of Music and Dance,Liceo Musicale e Coreutico
+5,High School,Liceo,5.5,Scientific High School,Liceo Scientifico,5.5.1,Scientific High School - applied science option,Liceo - opzione Scienze Applicate
+5,High School,Liceo,5.5,Scientific High School,Liceo Scientifico,5.5.2,Scientific High School - sports-oriented section,Liceo Scientifico - sezione a Indirizzo Sportivo
+5,High School,Liceo,5.8,Humanities High School,Liceo Scienze Umane,5.9.1,Humanities High School - economic and social option,Liceo Scienze Umane - opzione Economico Sociale
+6,Technical Institute,Istituto Tecnico
+7,Vocational institute,Istituto Professionale,7.1,Vocational institute pre reorganization,Istituto Professionale pre riordino
+8,Vocational education and training,Istruzione e Formazione Professionale
+9,Institute of Higher Technical Education,Istituto di Formazione Tecnica Superiore
+10,University,Università
+11,Higher Education in Art/Music/Choreography,Alta Formazione Artistica/Musicale/Coreutica
+12,High School for Language Mediators,Scuola Superiore per Mediatori Linguistici
+13,Higher Technical Institute,Istituto Tecnico Superiore
+14,Training Institution,Ente di Formazione,14.1,Accredited Training Institution,Ente di Formazione Accreditato
+15,Popular University,Università Popolare
+16,Cultural Association's School,Scuola di un'associazione culturale
+17,Sport School,Scuola Sportiva

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:ontoim="https://w3id.org/ontoim/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:ontoim="https://w3id.org/ontoim/"
 >
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/C.9">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/B">
     <rdf:type rdf:resource="https://w3id.org/ontoim/AccidentType"/>
-    <dct:identifier>C.9</dct:identifier>
-    <rdfs:label>Urto con treno</rdfs:label>
-    <skos:prefLabel>Urto con treno</skos:prefLabel>
+    <dct:identifier>B</dct:identifier>
+    <rdfs:label>Tra veicolo e pedoni</rdfs:label>
+    <skos:prefLabel>Tra veicolo e pedoni</skos:prefLabel>
     <skos:inScheme>
       <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/">
         <rdfs:label xml:lang="en">Accident type</rdfs:label>
@@ -28,19 +28,44 @@
         <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/D"/>
       </skos:ConceptScheme>
     </skos:inScheme>
-    <skos:broader>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/C">
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/B.5">
         <rdf:type rdf:resource="https://w3id.org/ontoim/AccidentType"/>
-        <dct:identifier>C</dct:identifier>
-        <rdfs:label>Veicolo in marcia che urta veicolo fermo o altro</rdfs:label>
-        <skos:prefLabel>Veicolo in marcia che urta veicolo fermo o altro</skos:prefLabel>
+        <dct:identifier>B.5</dct:identifier>
+        <rdfs:label>Investimento di pedoni</rdfs:label>
+        <skos:prefLabel>Investimento di pedoni</skos:prefLabel>
         <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/C.6"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/C.7"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/C.8"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/C.9"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/B"/>
+      </skos:Concept>
+    </skos:narrower>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.3">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/AccidentType"/>
+    <dct:identifier>A.3</dct:identifier>
+    <rdfs:label>Scontro laterale</rdfs:label>
+    <skos:prefLabel>Scontro laterale</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/"/>
+    <skos:broader>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/A">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/AccidentType"/>
+        <dct:identifier>A</dct:identifier>
+        <rdfs:label>Tra veicoli in marcia</rdfs:label>
+        <skos:prefLabel>Tra veicoli in marcia</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.1"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.2"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.3"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.4"/>
       </skos:Concept>
     </skos:broader>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.1">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/AccidentType"/>
+    <dct:identifier>A.1</dct:identifier>
+    <rdfs:label>Scontro frontale</rdfs:label>
+    <skos:prefLabel>Scontro frontale</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/A"/>
   </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/D">
     <rdf:type rdf:resource="https://w3id.org/ontoim/AccidentType"/>
@@ -79,50 +104,6 @@
       </skos:Concept>
     </skos:narrower>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/C.6">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/AccidentType"/>
-    <dct:identifier>C.6</dct:identifier>
-    <rdfs:label>Urto con veicolo in fermata o in arresto</rdfs:label>
-    <skos:prefLabel>Urto con veicolo in fermata o in arresto</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/C"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/C.8">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/AccidentType"/>
-    <dct:identifier>C.8</dct:identifier>
-    <rdfs:label>Urto con ostacolo</rdfs:label>
-    <skos:prefLabel>Urto con ostacolo</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/C"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.3">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/AccidentType"/>
-    <dct:identifier>A.3</dct:identifier>
-    <rdfs:label>Scontro laterale</rdfs:label>
-    <skos:prefLabel>Scontro laterale</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/"/>
-    <skos:broader>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/A">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/AccidentType"/>
-        <dct:identifier>A</dct:identifier>
-        <rdfs:label>Tra veicoli in marcia</rdfs:label>
-        <skos:prefLabel>Tra veicoli in marcia</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.1"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.2"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.3"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.4"/>
-      </skos:Concept>
-    </skos:broader>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/C.7">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/AccidentType"/>
-    <dct:identifier>C.7</dct:identifier>
-    <rdfs:label>Urto con veicolo in sosta</rdfs:label>
-    <skos:prefLabel>Urto con veicolo in sosta</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/C"/>
-  </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.2">
     <rdf:type rdf:resource="https://w3id.org/ontoim/AccidentType"/>
     <dct:identifier>A.2</dct:identifier>
@@ -131,6 +112,53 @@
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/A"/>
   </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/C">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/AccidentType"/>
+    <dct:identifier>C</dct:identifier>
+    <rdfs:label>Veicolo in marcia che urta veicolo fermo o altro</rdfs:label>
+    <skos:prefLabel>Veicolo in marcia che urta veicolo fermo o altro</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/C.6">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/AccidentType"/>
+        <dct:identifier>C.6</dct:identifier>
+        <rdfs:label>Urto con veicolo in fermata o in arresto</rdfs:label>
+        <skos:prefLabel>Urto con veicolo in fermata o in arresto</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/C"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/C.7">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/AccidentType"/>
+        <dct:identifier>C.7</dct:identifier>
+        <rdfs:label>Urto con veicolo in sosta</rdfs:label>
+        <skos:prefLabel>Urto con veicolo in sosta</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/C"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/C.8">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/AccidentType"/>
+        <dct:identifier>C.8</dct:identifier>
+        <rdfs:label>Urto con ostacolo</rdfs:label>
+        <skos:prefLabel>Urto con ostacolo</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/C"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/C.9">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/AccidentType"/>
+        <dct:identifier>C.9</dct:identifier>
+        <rdfs:label>Urto con treno</rdfs:label>
+        <skos:prefLabel>Urto con treno</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/C"/>
+      </skos:Concept>
+    </skos:narrower>
+  </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.4">
     <rdf:type rdf:resource="https://w3id.org/ontoim/AccidentType"/>
     <dct:identifier>A.4</dct:identifier>
@@ -138,30 +166,5 @@
     <skos:prefLabel>Tamponamento</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/A"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/A.1">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/AccidentType"/>
-    <dct:identifier>A.1</dct:identifier>
-    <rdfs:label>Scontro frontale</rdfs:label>
-    <skos:prefLabel>Scontro frontale</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/A"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/B">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/AccidentType"/>
-    <dct:identifier>B</dct:identifier>
-    <rdfs:label>Tra veicolo e pedoni</rdfs:label>
-    <skos:prefLabel>Tra veicolo e pedoni</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/"/>
-    <skos:narrower>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/accident-types/B.5">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/AccidentType"/>
-        <dct:identifier>B.5</dct:identifier>
-        <rdfs:label>Investimento di pedoni</rdfs:label>
-        <skos:prefLabel>Investimento di pedoni</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/"/>
-        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/accident-types/B"/>
-      </skos:Concept>
-    </skos:narrower>
   </skos:Concept>
 </rdf:RDF>

@@ -1,64 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:ontoim="https://w3id.org/ontoim/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:ontoim="https://w3id.org/ontoim/"
 >
-  <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-types/">
-    <rdfs:label xml:lang="en">Road type</rdfs:label>
-    <rdfs:label xml:lang="it">Tipo di strada</rdfs:label>
-    <dct:title xml:lang="en">Road type</dct:title>
-    <dct:title xml:lang="it">Tipo di strada</dct:title>
-    <rdfs:comment xml:lang="en">Classification of road types</rdfs:comment>
-    <rdfs:comment xml:lang="it">Classificazione della tipologia di strada</rdfs:comment>
-    <dct:description xml:lang="en">Classification of road types</dct:description>
-    <dct:description xml:lang="it">Classificazione della tipologia di strada</dct:description>
-    <dct:creator rdf:resource="https://w3id.org/people/lucamartinelli"/>
-    <skos:hasTopConcept>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-types/1">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/RoadType"/>
-        <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</dct:identifier>
-        <rdfs:label xml:lang="en">One-way roadway</rdfs:label>
-        <rdfs:label xml:lang="it">Una carreggiata senso unico</rdfs:label>
-        <skos:prefLabel xml:lang="en">One-way roadway</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Una carreggiata senso unico</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-types/"/>
-      </skos:Concept>
-    </skos:hasTopConcept>
-    <skos:hasTopConcept>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-types/2">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/RoadType"/>
-        <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dct:identifier>
-        <rdfs:label xml:lang="en">One two-way roadway</rdfs:label>
-        <rdfs:label xml:lang="it">Una carreggiata doppio senso</rdfs:label>
-        <skos:prefLabel xml:lang="en">One two-way roadway</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Una carreggiata doppio senso</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-types/"/>
-      </skos:Concept>
-    </skos:hasTopConcept>
-    <skos:hasTopConcept>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-types/3">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/RoadType"/>
-        <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dct:identifier>
-        <rdfs:label xml:lang="en">Two roadways</rdfs:label>
-        <rdfs:label xml:lang="it">Due carreggiate</rdfs:label>
-        <skos:prefLabel xml:lang="en">Two roadways</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Due carreggiate</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-types/"/>
-      </skos:Concept>
-    </skos:hasTopConcept>
-    <skos:hasTopConcept>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-types/4">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/RoadType"/>
-        <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</dct:identifier>
-        <rdfs:label xml:lang="en">More than two roadways</rdfs:label>
-        <rdfs:label xml:lang="it">Più di due carreggiate</rdfs:label>
-        <skos:prefLabel xml:lang="en">More than two roadways</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Più di due carreggiate</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-types/"/>
-      </skos:Concept>
-    </skos:hasTopConcept>
-  </skos:ConceptScheme>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-types/2">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/RoadType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dct:identifier>
+    <rdfs:label xml:lang="en">One two-way roadway</rdfs:label>
+    <rdfs:label xml:lang="it">Una carreggiata doppio senso</rdfs:label>
+    <skos:prefLabel xml:lang="en">One two-way roadway</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Una carreggiata doppio senso</skos:prefLabel>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-types/">
+        <rdfs:label xml:lang="en">Road type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo di strada</rdfs:label>
+        <dct:title xml:lang="en">Road type</dct:title>
+        <dct:title xml:lang="it">Tipo di strada</dct:title>
+        <rdfs:comment xml:lang="en">Classification of road types</rdfs:comment>
+        <rdfs:comment xml:lang="it">Classificazione della tipologia di strada</rdfs:comment>
+        <dct:description xml:lang="en">Classification of road types</dct:description>
+        <dct:description xml:lang="it">Classificazione della tipologia di strada</dct:description>
+        <dct:creator rdf:resource="https://w3id.org/people/lucamartinelli"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-types/1"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-types/2"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-types/3"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-types/4"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-types/3">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/RoadType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dct:identifier>
+    <rdfs:label xml:lang="en">Two roadways</rdfs:label>
+    <rdfs:label xml:lang="it">Due carreggiate</rdfs:label>
+    <skos:prefLabel xml:lang="en">Two roadways</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Due carreggiate</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-types/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-types/1">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/RoadType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</dct:identifier>
+    <rdfs:label xml:lang="en">One-way roadway</rdfs:label>
+    <rdfs:label xml:lang="it">Una carreggiata senso unico</rdfs:label>
+    <skos:prefLabel xml:lang="en">One-way roadway</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Una carreggiata senso unico</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-types/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-types/4">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/RoadType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</dct:identifier>
+    <rdfs:label xml:lang="en">More than two roadways</rdfs:label>
+    <rdfs:label xml:lang="it">Più di due carreggiate</rdfs:label>
+    <skos:prefLabel xml:lang="en">More than two roadways</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Più di due carreggiate</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-types/"/>
+  </skos:Concept>
 </rdf:RDF>

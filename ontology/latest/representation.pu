@@ -395,16 +395,8 @@ package "Road and Traffic" {
     RoadSignal -[#RoadSignalProperty]-> RoadSignalType : hasSignalType
 
     ' The road signal type is a controlled vocabulary of all road signals, with a value, an image and a category
-    class RoadSignalType #RoadSignalNode {
-        signalValue^^xsd:literal
-    }
+    class RoadSignalType #RoadSignalNode
     RoadSignalType -[#OntoPiAProperty]-> Object : rdfs:subclassOf
-
-    RoadSignalType -[#RoadSignalProperty]-> RoadSignalCategory : hasRoadSignalCategory
-    RoadSignalType -[#OntoPiAProperty]-> Image : sm:hasImage
-
-    class RoadSignalCategory #RoadSignalNode
-    RoadSignalCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
 
     ' Traffic Flow observation. Added street toponym to road segment and vehicle category (controlled vocabulary)
     class TrafficFlow <<iot>> #TrafficFlowNode
