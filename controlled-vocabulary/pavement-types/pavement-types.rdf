@@ -6,13 +6,13 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:ontoim="https://w3id.org/ontoim/"
 >
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/pavement-types/3">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/pavement-types/1">
     <rdf:type rdf:resource="https://w3id.org/ontoim/PavementType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dct:identifier>
-    <rdfs:label xml:lang="en">Unpaved road</rdfs:label>
-    <rdfs:label xml:lang="it">Strada non pavimentata</rdfs:label>
-    <skos:prefLabel xml:lang="en">Unpaved road</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Strada non pavimentata</skos:prefLabel>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</dct:identifier>
+    <rdfs:label xml:lang="en">Paved road</rdfs:label>
+    <rdfs:label xml:lang="it">Strada pavimentata</rdfs:label>
+    <skos:prefLabel xml:lang="en">Paved road</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Strada pavimentata</skos:prefLabel>
     <skos:inScheme>
       <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/pavement-types/">
         <rdfs:label xml:lang="en">Pavement type</rdfs:label>
@@ -39,13 +39,13 @@
     <skos:prefLabel xml:lang="it">Strada pavimentata dissestata</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/pavement-types/"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/pavement-types/1">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/pavement-types/3">
     <rdf:type rdf:resource="https://w3id.org/ontoim/PavementType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</dct:identifier>
-    <rdfs:label xml:lang="en">Paved road</rdfs:label>
-    <rdfs:label xml:lang="it">Strada pavimentata</rdfs:label>
-    <skos:prefLabel xml:lang="en">Paved road</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Strada pavimentata</skos:prefLabel>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dct:identifier>
+    <rdfs:label xml:lang="en">Unpaved road</rdfs:label>
+    <rdfs:label xml:lang="it">Strada non pavimentata</rdfs:label>
+    <skos:prefLabel xml:lang="en">Unpaved road</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Strada non pavimentata</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/pavement-types/"/>
   </skos:Concept>
 </rdf:RDF>

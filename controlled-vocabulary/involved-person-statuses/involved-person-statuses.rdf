@@ -1,75 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
+  xmlns:ontoim="https://w3id.org/ontoim/"
+  xmlns:dct="http://purl.org/dc/terms/"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:dct="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:ontoim="https://w3id.org/ontoim/"
 >
-  <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/">
-    <rdfs:label xml:lang="en">Involved person status</rdfs:label>
-    <rdfs:label xml:lang="it">Stato della persona coinvolta</rdfs:label>
-    <dct:title xml:lang="en">Involved person status</dct:title>
-    <dct:title xml:lang="it">Stato della persona coinvolta</dct:title>
-    <rdfs:comment xml:lang="en">Possible statuses of persons involved in a road accident</rdfs:comment>
-    <rdfs:comment xml:lang="it">Possibili stati delle persone coinvolte in un incidente stradale</rdfs:comment>
-    <dct:description xml:lang="en">Possible statuses of persons involved in a road accident</dct:description>
-    <dct:description xml:lang="it">Possibili stati delle persone coinvolte in un incidente stradale</dct:description>
-    <dct:creator rdf:resource="https://w3id.org/people/lucamartinelli"/>
-    <skos:hasTopConcept>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/1">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/InvolvedPersonStatus"/>
-        <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</dct:identifier>
-        <rdfs:label xml:lang="en">Unhurt</rdfs:label>
-        <rdfs:label xml:lang="it">Incolume</rdfs:label>
-        <skos:prefLabel xml:lang="en">Unhurt</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Incolume</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/"/>
-      </skos:Concept>
-    </skos:hasTopConcept>
-    <skos:hasTopConcept>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/2">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/InvolvedPersonStatus"/>
-        <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dct:identifier>
-        <rdfs:label xml:lang="en">Wounded</rdfs:label>
-        <rdfs:label xml:lang="it">Ferito</rdfs:label>
-        <skos:prefLabel xml:lang="en">Wounded</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Ferito</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/"/>
-      </skos:Concept>
-    </skos:hasTopConcept>
-    <skos:hasTopConcept>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/3">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/InvolvedPersonStatus"/>
-        <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dct:identifier>
-        <rdfs:label xml:lang="en">Dead</rdfs:label>
-        <rdfs:label xml:lang="it">Morto</rdfs:label>
-        <skos:prefLabel xml:lang="en">Dead</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Morto</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/3.1"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/3.2"/>
-      </skos:Concept>
-    </skos:hasTopConcept>
-  </skos:ConceptScheme>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/3.2">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/3">
     <rdf:type rdf:resource="https://w3id.org/ontoim/InvolvedPersonStatus"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.2</dct:identifier>
-    <rdfs:label xml:lang="en">Dead within 30 days</rdfs:label>
-    <rdfs:label xml:lang="it">Morto entro 30 giorni</rdfs:label>
-    <skos:prefLabel xml:lang="en">Dead within 30 days</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Morto entro 30 giorni</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/3"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dct:identifier>
+    <rdfs:label xml:lang="en">Dead</rdfs:label>
+    <rdfs:label xml:lang="it">Morto</rdfs:label>
+    <skos:prefLabel xml:lang="en">Dead</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Morto</skos:prefLabel>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/">
+        <rdfs:label xml:lang="en">Involved person status</rdfs:label>
+        <rdfs:label xml:lang="it">Stato della persona coinvolta</rdfs:label>
+        <dct:title xml:lang="en">Involved person status</dct:title>
+        <dct:title xml:lang="it">Stato della persona coinvolta</dct:title>
+        <rdfs:comment xml:lang="en">Possible statuses of persons involved in a road accident</rdfs:comment>
+        <rdfs:comment xml:lang="it">Possibili stati delle persone coinvolte in un incidente stradale</rdfs:comment>
+        <dct:description xml:lang="en">Possible statuses of persons involved in a road accident</dct:description>
+        <dct:description xml:lang="it">Possibili stati delle persone coinvolte in un incidente stradale</dct:description>
+        <dct:creator rdf:resource="https://w3id.org/people/lucamartinelli"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/1"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/2"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/3"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/3.1">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/InvolvedPersonStatus"/>
+        <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.1</dct:identifier>
+        <rdfs:label xml:lang="en">Dead within 24 hours</rdfs:label>
+        <rdfs:label xml:lang="it">Morto entro 24 ore</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dead within 24 hours</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Morto entro 24 ore</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/3"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/3.2">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/InvolvedPersonStatus"/>
+        <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.2</dct:identifier>
+        <rdfs:label xml:lang="en">Dead within 30 days</rdfs:label>
+        <rdfs:label xml:lang="it">Morto entro 30 giorni</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dead within 30 days</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Morto entro 30 giorni</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/3"/>
+      </skos:Concept>
+    </skos:narrower>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/3.1">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/2">
     <rdf:type rdf:resource="https://w3id.org/ontoim/InvolvedPersonStatus"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.1</dct:identifier>
-    <rdfs:label xml:lang="en">Dead within 24 hours</rdfs:label>
-    <rdfs:label xml:lang="it">Morto entro 24 ore</rdfs:label>
-    <skos:prefLabel xml:lang="en">Dead within 24 hours</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Morto entro 24 ore</skos:prefLabel>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dct:identifier>
+    <rdfs:label xml:lang="en">Wounded</rdfs:label>
+    <rdfs:label xml:lang="it">Ferito</rdfs:label>
+    <skos:prefLabel xml:lang="en">Wounded</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Ferito</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/1">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/InvolvedPersonStatus"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</dct:identifier>
+    <rdfs:label xml:lang="en">Unhurt</rdfs:label>
+    <rdfs:label xml:lang="it">Incolume</rdfs:label>
+    <skos:prefLabel xml:lang="en">Unhurt</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Incolume</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses/"/>
   </skos:Concept>
 </rdf:RDF>

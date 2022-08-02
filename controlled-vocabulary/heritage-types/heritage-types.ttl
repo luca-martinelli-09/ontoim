@@ -2,39 +2,40 @@
 @prefix ontoim: <https://w3id.org/ontoim/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/ontoim/controlled-vocabulary/heritage-types/A> a skos:Concept,
+<https://w3id.org/ontoim/controlled-vocabulary/heritage-types/1> a skos:Concept,
         ontoim:HeritageType ;
     rdfs:label "Public property"@en,
         "Beni demaniali"@it ;
-    dct:identifier "A" ;
+    dct:identifier 1 ;
     skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/heritage-types/> ;
     skos:prefLabel "Public property"@en,
         "Beni demaniali"@it .
 
-<https://w3id.org/ontoim/controlled-vocabulary/heritage-types/B> a skos:Concept,
+<https://w3id.org/ontoim/controlled-vocabulary/heritage-types/2> a skos:Concept,
         ontoim:HeritageType ;
     rdfs:label "Available assets"@en,
         "Patrimonio disponibile"@it ;
-    dct:identifier "B" ;
+    dct:identifier 2 ;
     skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/heritage-types/> ;
     skos:prefLabel "Available assets"@en,
         "Patrimonio disponibile"@it .
 
-<https://w3id.org/ontoim/controlled-vocabulary/heritage-types/C> a skos:Concept,
+<https://w3id.org/ontoim/controlled-vocabulary/heritage-types/3> a skos:Concept,
         ontoim:HeritageType ;
     rdfs:label "Non-disposable assets"@en,
         "Patrimonio indisponibile"@it ;
-    dct:identifier "C" ;
+    dct:identifier 3 ;
     skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/heritage-types/> ;
     skos:prefLabel "Non-disposable assets"@en,
         "Patrimonio indisponibile"@it .
 
-<https://w3id.org/ontoim/controlled-vocabulary/heritage-types/D> a skos:Concept,
+<https://w3id.org/ontoim/controlled-vocabulary/heritage-types/4> a skos:Concept,
         ontoim:HeritageType ;
     rdfs:label "Other type of assets"@en,
         "Altro tipo di patrimonio"@it ;
-    dct:identifier "D" ;
+    dct:identifier 4 ;
     skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/heritage-types/> ;
     skos:prefLabel "Other type of assets"@en,
         "Altro tipo di patrimonio"@it .
@@ -49,8 +50,8 @@
         "Tipo di patrimonio"@it ;
     rdfs:comment "Classification of heritage types"@en,
         "Classificazione delle tipologie di patrimonio"@it ;
-    skos:hasTopConcept <https://w3id.org/ontoim/controlled-vocabulary/heritage-types/A>,
-        <https://w3id.org/ontoim/controlled-vocabulary/heritage-types/B>,
-        <https://w3id.org/ontoim/controlled-vocabulary/heritage-types/C>,
-        <https://w3id.org/ontoim/controlled-vocabulary/heritage-types/D> .
+    skos:hasTopConcept <https://w3id.org/ontoim/controlled-vocabulary/heritage-types/1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/heritage-types/2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/heritage-types/3>,
+        <https://w3id.org/ontoim/controlled-vocabulary/heritage-types/4> .
 

@@ -1,10 +1,17 @@
-# %%
+#%%
+import hashlib
 import dominate
 from dominate.tags import *
 from rdflib import OWL, Graph, SKOS, RDFS, RDF
 from rdflib.namespace import DCTERMS, NamespaceManager
 import pandas as pd
 
+
+def getFileURL(filename):
+    digest = hashlib.md5(filename.encode()).hexdigest()
+
+    folder = digest[0] + '/' + digest[0] + digest[1] + '/' + filename
+    return 'http://upload.wikimedia.org/wikipedia/commons/' + folder
 
 def getTitle(element, g):
     return g.value(element, RDFS.label) or g.value(element, SKOS.prefLabel)
@@ -129,8 +136,17 @@ def generateDoc(vocabularyIRI, vocabularyName):
                     conceptID = g.value(conc, DCTERMS.identifier)
 
                     with div(id=conceptID, cls="entity"):
+                        conceptTitle = getTitle(conc, g)
                         with header():
-                            h3(getTitle(conc, g))
+                            try:
+                                next(g.objects(conc, SKOS.example))
+
+                                for urlImg in g.objects(conc, SKOS.example):
+                                    img(src=urlImg, alt=conceptTitle, width="200px")
+                            except:
+                                pass
+
+                            h3(conceptTitle)
                             p(code(conc, title=conc), cls="IRI")
 
                             with ul(cls="rel super"):

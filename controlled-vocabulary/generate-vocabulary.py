@@ -104,6 +104,18 @@ def addConceptToScheme(g, ns, scheme, conceptInfo, conceptType, broader=None, to
     except:
         pass
 
+    try:
+        examples = conceptInfo["example"]
+        if type(examples) == dict:
+            for i in examples.keys():
+                example = Literal(examples[i])
+                g.add((concept, SKOS.example, example))
+        else:
+            example = Literal(examples)
+            g.add((concept, SKOS.example, example))
+    except:
+        pass
+
     g.add((concept, SKOS.inScheme, scheme))
 
     if topConcept:
@@ -151,7 +163,7 @@ def createVocabulary(vocabularyInfo):
                 g.add((SCHEME, RDFS.label, label))
                 g.add((SCHEME, DCTERMS.title, label))
         else:
-            label = Literal(label)
+            label = Literal(labels)
             g.add((SCHEME, RDFS.label, label))
             g.add((SCHEME, DCTERMS.title, label))
     except:
@@ -165,7 +177,7 @@ def createVocabulary(vocabularyInfo):
                 g.add((SCHEME, RDFS.comment, description))
                 g.add((SCHEME, DCTERMS.description, description))
         else:
-            description = Literal(descriptions[lang])
+            description = Literal(descriptions)
             g.add((SCHEME, RDFS.comment, description))
             g.add((SCHEME, DCTERMS.description, description))
     except:

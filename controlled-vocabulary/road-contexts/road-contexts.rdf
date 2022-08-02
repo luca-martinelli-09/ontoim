@@ -6,13 +6,13 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:ontoim="https://w3id.org/ontoim/"
 >
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B.9">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B.11">
     <rdf:type rdf:resource="https://w3id.org/ontoim/RoadContext"/>
-    <dct:identifier>B.9</dct:identifier>
-    <rdfs:label xml:lang="en">Hump, bottleneck</rdfs:label>
-    <rdfs:label xml:lang="it">Dosso, strettoia</rdfs:label>
-    <skos:prefLabel xml:lang="en">Hump, bottleneck</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Dosso, strettoia</skos:prefLabel>
+    <dct:identifier>B.11</dct:identifier>
+    <rdfs:label xml:lang="en">Illuminated tunnel</rdfs:label>
+    <rdfs:label xml:lang="it">Galleria illuminata</rdfs:label>
+    <skos:prefLabel xml:lang="en">Illuminated tunnel</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Galleria illuminata</skos:prefLabel>
     <skos:inScheme>
       <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/">
         <rdfs:label xml:lang="en">Road context</rdfs:label>
@@ -56,51 +56,86 @@
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.3">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A">
     <rdf:type rdf:resource="https://w3id.org/ontoim/RoadContext"/>
-    <dct:identifier>A.3</dct:identifier>
-    <rdfs:label xml:lang="en">Signalized intersection</rdfs:label>
-    <rdfs:label xml:lang="it">Intersezione segnalata</rdfs:label>
-    <skos:prefLabel xml:lang="en">Signalized intersection</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Intersezione segnalata</skos:prefLabel>
+    <dct:identifier>A</dct:identifier>
+    <rdfs:label xml:lang="en">Intersection</rdfs:label>
+    <rdfs:label xml:lang="it">Intersezione</rdfs:label>
+    <skos:prefLabel xml:lang="en">Intersection</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Intersezione</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/"/>
-    <skos:broader>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A">
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.1">
         <rdf:type rdf:resource="https://w3id.org/ontoim/RoadContext"/>
-        <dct:identifier>A</dct:identifier>
-        <rdfs:label xml:lang="en">Intersection</rdfs:label>
-        <rdfs:label xml:lang="it">Intersezione</rdfs:label>
-        <skos:prefLabel xml:lang="en">Intersection</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Intersezione</skos:prefLabel>
+        <dct:identifier>A.1</dct:identifier>
+        <rdfs:label xml:lang="en">Crossroads</rdfs:label>
+        <rdfs:label xml:lang="it">Incrocio</rdfs:label>
+        <skos:prefLabel xml:lang="en">Crossroads</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Incrocio</skos:prefLabel>
         <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.1"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.2"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.3"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.4"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.5"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.6"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A"/>
       </skos:Concept>
-    </skos:broader>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B.10">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/RoadContext"/>
-    <dct:identifier>B.10</dct:identifier>
-    <rdfs:label xml:lang="en">Slope</rdfs:label>
-    <rdfs:label xml:lang="it">Pendenza</rdfs:label>
-    <skos:prefLabel xml:lang="en">Slope</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Pendenza</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.4">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/RoadContext"/>
-    <dct:identifier>A.4</dct:identifier>
-    <rdfs:label xml:lang="en">Intersection with traffic lights or traffic warden</rdfs:label>
-    <rdfs:label xml:lang="it">Intersezione con semaforo o vigile</rdfs:label>
-    <skos:prefLabel xml:lang="en">Intersection with traffic lights or traffic warden</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Intersezione con semaforo o vigile</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A"/>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.2">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/RoadContext"/>
+        <dct:identifier>A.2</dct:identifier>
+        <rdfs:label xml:lang="en">Traffic circle</rdfs:label>
+        <rdfs:label xml:lang="it">Rotatoria</rdfs:label>
+        <skos:prefLabel xml:lang="en">Traffic circle</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Rotatoria</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.3">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/RoadContext"/>
+        <dct:identifier>A.3</dct:identifier>
+        <rdfs:label xml:lang="en">Signalized intersection</rdfs:label>
+        <rdfs:label xml:lang="it">Intersezione segnalata</rdfs:label>
+        <skos:prefLabel xml:lang="en">Signalized intersection</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Intersezione segnalata</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.4">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/RoadContext"/>
+        <dct:identifier>A.4</dct:identifier>
+        <rdfs:label xml:lang="en">Intersection with traffic lights or traffic warden</rdfs:label>
+        <rdfs:label xml:lang="it">Intersezione con semaforo o vigile</rdfs:label>
+        <skos:prefLabel xml:lang="en">Intersection with traffic lights or traffic warden</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Intersezione con semaforo o vigile</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.5">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/RoadContext"/>
+        <dct:identifier>A.5</dct:identifier>
+        <rdfs:label xml:lang="en">Unsignalized intersection</rdfs:label>
+        <rdfs:label xml:lang="it">Intersezione non segnalata</rdfs:label>
+        <skos:prefLabel xml:lang="en">Unsignalized intersection</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Intersezione non segnalata</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.6">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/RoadContext"/>
+        <dct:identifier>A.6</dct:identifier>
+        <rdfs:label xml:lang="en">Level crossing</rdfs:label>
+        <rdfs:label xml:lang="it">Passaggio a livello</rdfs:label>
+        <skos:prefLabel xml:lang="en">Level crossing</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Passaggio a livello</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A"/>
+      </skos:Concept>
+    </skos:narrower>
   </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B.8">
     <rdf:type rdf:resource="https://w3id.org/ontoim/RoadContext"/>
@@ -109,16 +144,6 @@
     <rdfs:label xml:lang="it">Curva</rdfs:label>
     <skos:prefLabel xml:lang="en">Curve</skos:prefLabel>
     <skos:prefLabel xml:lang="it">Curva</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B.11">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/RoadContext"/>
-    <dct:identifier>B.11</dct:identifier>
-    <rdfs:label xml:lang="en">Illuminated tunnel</rdfs:label>
-    <rdfs:label xml:lang="it">Galleria illuminata</rdfs:label>
-    <skos:prefLabel xml:lang="en">Illuminated tunnel</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Galleria illuminata</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B"/>
   </skos:Concept>
@@ -132,44 +157,24 @@
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.5">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B.9">
     <rdf:type rdf:resource="https://w3id.org/ontoim/RoadContext"/>
-    <dct:identifier>A.5</dct:identifier>
-    <rdfs:label xml:lang="en">Unsignalized intersection</rdfs:label>
-    <rdfs:label xml:lang="it">Intersezione non segnalata</rdfs:label>
-    <skos:prefLabel xml:lang="en">Unsignalized intersection</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Intersezione non segnalata</skos:prefLabel>
+    <dct:identifier>B.9</dct:identifier>
+    <rdfs:label xml:lang="en">Hump, bottleneck</rdfs:label>
+    <rdfs:label xml:lang="it">Dosso, strettoia</rdfs:label>
+    <skos:prefLabel xml:lang="en">Hump, bottleneck</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Dosso, strettoia</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.1">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B.10">
     <rdf:type rdf:resource="https://w3id.org/ontoim/RoadContext"/>
-    <dct:identifier>A.1</dct:identifier>
-    <rdfs:label xml:lang="en">Crossroads</rdfs:label>
-    <rdfs:label xml:lang="it">Incrocio</rdfs:label>
-    <skos:prefLabel xml:lang="en">Crossroads</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Incrocio</skos:prefLabel>
+    <dct:identifier>B.10</dct:identifier>
+    <rdfs:label xml:lang="en">Slope</rdfs:label>
+    <rdfs:label xml:lang="it">Pendenza</rdfs:label>
+    <skos:prefLabel xml:lang="en">Slope</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Pendenza</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.2">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/RoadContext"/>
-    <dct:identifier>A.2</dct:identifier>
-    <rdfs:label xml:lang="en">Traffic circle</rdfs:label>
-    <rdfs:label xml:lang="it">Rotatoria</rdfs:label>
-    <skos:prefLabel xml:lang="en">Traffic circle</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Rotatoria</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A.6">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/RoadContext"/>
-    <dct:identifier>A.6</dct:identifier>
-    <rdfs:label xml:lang="en">Level crossing</rdfs:label>
-    <rdfs:label xml:lang="it">Passaggio a livello</rdfs:label>
-    <skos:prefLabel xml:lang="en">Level crossing</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Passaggio a livello</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/A"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-contexts/B"/>
   </skos:Concept>
 </rdf:RDF>

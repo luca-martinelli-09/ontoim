@@ -1,5 +1,5 @@
 l1_identifier,l1_label_en,l1_label_it
-A,Public property,Beni demaniali
-B,Available assets,Patrimonio disponibile
-C,Non-disposable assets,Patrimonio indisponibile
-D,Other type of assets,Altro tipo di patrimonio
+1,Public property,Beni demaniali
+2,Available assets,Patrimonio disponibile
+3,Non-disposable assets,Patrimonio indisponibile
+4,Other type of assets,Altro tipo di patrimonio

@@ -40,15 +40,6 @@
     <skos:prefLabel xml:lang="it">Due carreggiate</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-types/"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-types/1">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/RoadType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</dct:identifier>
-    <rdfs:label xml:lang="en">One-way roadway</rdfs:label>
-    <rdfs:label xml:lang="it">Una carreggiata senso unico</rdfs:label>
-    <skos:prefLabel xml:lang="en">One-way roadway</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Una carreggiata senso unico</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-types/"/>
-  </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-types/4">
     <rdf:type rdf:resource="https://w3id.org/ontoim/RoadType"/>
     <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</dct:identifier>
@@ -56,6 +47,15 @@
     <rdfs:label xml:lang="it">Più di due carreggiate</rdfs:label>
     <skos:prefLabel xml:lang="en">More than two roadways</skos:prefLabel>
     <skos:prefLabel xml:lang="it">Più di due carreggiate</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-types/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-types/1">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/RoadType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</dct:identifier>
+    <rdfs:label xml:lang="en">One-way roadway</rdfs:label>
+    <rdfs:label xml:lang="it">Una carreggiata senso unico</rdfs:label>
+    <skos:prefLabel xml:lang="en">One-way roadway</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Una carreggiata senso unico</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-types/"/>
   </skos:Concept>
 </rdf:RDF>
