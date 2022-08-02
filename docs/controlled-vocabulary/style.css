@@ -151,3 +151,11 @@ footer {
 .res.lang {
   margin-right: 0.5em;
 }
+
+.img-td {
+  width: 0px;
+}
+
+.img-td img {
+  width: 50px;
+}

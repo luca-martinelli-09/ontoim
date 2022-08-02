@@ -139,20 +139,24 @@ def generateDoc(vocabularyIRI, vocabularyName):
 
                     with div(id=conceptID, cls="entity"):
                         conceptTitle = getTitle(conc, g)
-                        with header():
-                            try:
-                                next(g.objects(conc, SKOS.example))
+                        with header().add(table()):
+                            with tr():
+                                try:
+                                    next(g.objects(conc, SKOS.example))
 
-                                for urlImg in g.objects(conc, SKOS.example):
-                                    img(src=getFileURL(urlImg),
-                                        alt=conceptTitle, width="200px")
-                            except:
-                                pass
+                                    with td(cls="img-td"):
+                                        for urlImg in g.objects(conc, SKOS.example):
+                                            img(src=getFileURL(urlImg),
+                                                alt=conceptTitle)
+                                except:
+                                    pass
 
-                            h3(conceptTitle)
-                            p(code(conc, title=conc), cls="IRI")
+                                td(
+                                    h3(conceptTitle),
+                                    p(code(conc, title=conc), cls="IRI")
+                                )
 
-                            with ul(cls="rel super"):
+                            with tr().add(ul(cls="rel super")):
                                 for tit in g.objects(conc, SKOS.prefLabel):
                                     li(span(tit, cls="res lang",
                                             data_lang=getLanguageLabel(tit)))
