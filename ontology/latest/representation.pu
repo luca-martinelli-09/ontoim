@@ -401,7 +401,14 @@ package "Road and Traffic" {
     ' Traffic Flow observation. Added street toponym to road segment and vehicle category (controlled vocabulary)
     class TrafficFlow <<iot>> #TrafficFlowNode
     TrafficFlow -[#OntoPiAProperty]-> RoadSegment : iot:hasFeatureOfInterest
-    TrafficFlow -[#VehicleProperty]-> VehicleCategory : hasVehicleCategory
+    TrafficFlow -[#TrafficFlowProperty]-> VehicleCategory : hasVehicleCategory
+    TrafficFlow -[#TrafficFlowProperty]-> TrafficFlowDirection : hasTrafficFlowDirection
+
+    class TrafficFlowDirection <<enumerated>> #TrafficFlowNode {
+        In
+        Out
+        Both
+    }
 
     class RoadSegment <<iot>> #TrafficFlowNode
     RoadSegment -[#OntoPiAProperty]-> StreetToponym : clv:hasStreetToponym
