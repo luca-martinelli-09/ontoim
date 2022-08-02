@@ -1,4 +1,4 @@
-#%%
+# %%
 import hashlib
 import dominate
 from dominate.tags import *
@@ -7,11 +7,13 @@ from rdflib.namespace import DCTERMS, NamespaceManager
 import pandas as pd
 
 
-def getFileURL(filename):
+def getFileURL(wikiURL: str):
+    filename = wikiURL.removeprefix("https://it.wikipedia.org/wiki/File:")
     digest = hashlib.md5(filename.encode()).hexdigest()
 
     folder = digest[0] + '/' + digest[0] + digest[1] + '/' + filename
     return 'http://upload.wikimedia.org/wikipedia/commons/' + folder
+
 
 def getTitle(element, g):
     return g.value(element, RDFS.label) or g.value(element, SKOS.prefLabel)
@@ -142,7 +144,8 @@ def generateDoc(vocabularyIRI, vocabularyName):
                                 next(g.objects(conc, SKOS.example))
 
                                 for urlImg in g.objects(conc, SKOS.example):
-                                    img(src=urlImg, alt=conceptTitle, width="200px")
+                                    img(src=getFileURL(urlImg),
+                                        alt=conceptTitle, width="200px")
                             except:
                                 pass
 
@@ -152,7 +155,7 @@ def generateDoc(vocabularyIRI, vocabularyName):
                             with ul(cls="rel super"):
                                 for tit in g.objects(conc, SKOS.prefLabel):
                                     li(span(tit, cls="res lang",
-                                    data_lang=getLanguageLabel(tit)))
+                                            data_lang=getLanguageLabel(tit)))
 
                         try:
                             next(g.objects(conc, SKOS.definition))
@@ -160,7 +163,7 @@ def generateDoc(vocabularyIRI, vocabularyName):
                             with ul(cls="vers"):
                                 for desc in g.objects(conc, SKOS.definition):
                                     li(span(desc, cls="res lang",
-                                    data_lang=getLanguageLabel(desc)))
+                                            data_lang=getLanguageLabel(desc)))
                         except:
                             pass
 
@@ -181,7 +184,7 @@ def generateDoc(vocabularyIRI, vocabularyName):
                                             nar, DCTERMS.identifier)
 
                                         li(a(getTitle(nar, g), href="#" +
-                                            conceptID, cls="res", title=nar))
+                                             conceptID, cls="res", title=nar))
                             except:
                                 pass
 
@@ -195,7 +198,7 @@ def generateDoc(vocabularyIRI, vocabularyName):
                                             bro, DCTERMS.identifier)
 
                                         li(a(getTitle(bro, g), href="#" +
-                                            conceptID, cls="res", title=bro))
+                                             conceptID, cls="res", title=bro))
                             except:
                                 pass
 
