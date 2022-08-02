@@ -188,7 +188,7 @@ def generateDoc(vocabularyIRI, vocabularyName):
                                             nar, DCTERMS.identifier)
 
                                         li(a(getTitle(nar, g), href="#" +
-                                             conceptID, cls="res", title=nar))
+                                             conceptID, cls="res Class", title=nar))
                             except:
                                 pass
 
@@ -202,7 +202,7 @@ def generateDoc(vocabularyIRI, vocabularyName):
                                             bro, DCTERMS.identifier)
 
                                         li(a(getTitle(bro, g), href="#" +
-                                             conceptID, cls="res", title=bro))
+                                             conceptID, cls="res Class", title=bro))
                             except:
                                 pass
 
