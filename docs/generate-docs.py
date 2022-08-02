@@ -156,7 +156,7 @@ def generateDoc(vocabularyIRI, vocabularyName):
                                     p(code(conc, title=conc), cls="IRI")
                                 )
 
-                            with tr().add(ul(cls="rel super")):
+                            with tr().add(td(colspan="3")).add(ul(cls="rel super")):
                                 for tit in g.objects(conc, SKOS.prefLabel):
                                     li(span(tit, cls="res lang",
                                             data_lang=getLanguageLabel(tit)))
