@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>OntoIM</title>
+	<style type="text/css">
+		html {
+			font-family: sans-serif;
+		}
+		body {
+			padding: 1em 2em;
+		}
+		:link { color: #00c; }
+		:visited { color: #00c; }
+		a:active { color: #c00; }
+		a.known { color: #07c; }
+		a.known:visited { color: #07c; }
+		h1, h2, h3 { 
+			color: #005A9C;
+			font-weight: normal;
+			text-align: left;
+		}
+		h1 { font-size: 170%; }
+		h2 { font-size: 140%; margin-top: 2em; }
+		h3 { font-size: 120%  }
+		p { margin: 1em 0 }
+		dt { 
+			font-weight: bold;
+			margin-top: 5px; 
+		}
+		dd {
+			padding: 3px 0;
+		}
+		code { color: darkred; }
+		.logic {
+			font-weight: bold;
+			color: purple;
+		}
+		.res {
+			position: relative;
+			display: inline-block;
+			margin-right: 0;
+		}
+		.res::after {
+			font-size: smaller;
+			margin-left: 3px;
+			text-decoration: none !important;
+			position: absolute;
+			top: -0.5em;
+			right: -2em;
+			text-align: left;
+			width: 2em;
+		}
+		.res::after:hover {
+			background-color: lightblue;
+		}
+		.res.Class {
+			margin-right: 0.5em;
+		}
+		.res.ObjectProperty, .res.DatatypeProperty {
+			margin-right: 1em;
+		}
+		.res.Class::after {
+			content: "c";
+			color: orange;
+		}
+		.res.ObjectProperty::after {
+			content: "op";
+			color: navy;
+		}
+		.res.DatatypeProperty::after {
+			content: "dp";
+			color: green;
+		}
+		.res.other {
+			border-bottom: 1px dotted black;
+		}
+		.subtoc, .entity {
+			border: 1px solid navy;
+			padding: 0.5em;
+			margin: 0.5em 0;
+		}
+		.subtoc {
+			background: #f4ffff;
+		}
+		.subtoc li {
+			display: inline;
+			margin-right: 0.75em;
+			padding: 3px 0;
+		}
+		.entity .rel li {
+			display: inline;
+			margin-right: 0.3em;
+			padding: 3px 0;
+		}
+		.entity header {
+			border-bottom: 1px solid navy;
+			padding-bottom: 5px;
+		}
+		.entity h3 {
+			display: inline-block;
+			margin: 3px 1em 0 0;
+			padding: 0;
+		}
+		.entity .IRI {
+			display: inline-block;
+			margin: 0;
+		}
+		footer {
+			text-align: center;
+			font-size: small;
+			font-style: italic;
+			margin-top: 2em;
+		}
+	</style>
+</head>
+<body>
+
+<header>
+	<h1>OntoIM</h1>
+</header>
+
+<section class="metadata">
+	<dl>
+		<dt>IRI</dt>
+		<dd class="iri"><code>https://w3id.org/ontoim/</code></dd>
+		<dt>Version</dt>
+		<dd>0.1</dd>
+	</dl>
+</section>
+
+
+<section id="toc">
+	<h2>Table of Contents</h2>
+	<ol>
+		<li><a href="#namespaces">Namespaces</a></li>
+	</ol>
+</section>
+
+
+
+
+
+<section id="namespaces">
+	<h2>Namespaces</h2>
+	<dl>
+		<dt>acapit</dt>
+		<dd><code>https://w3id.org/italia/onto/AccessCondition/</code></dd>
+		<dt>accoapit</dt>
+		<dd><code>https://w3id.org/italia/onto/ACCO/</code></dd>
+		<dt>admsapit</dt>
+		<dd><code>https://w3id.org/italia/onto/ADMS/</code></dd>
+		<dt>aopapit</dt>
+		<dd><code>https://w3id.org/italia/onto/AtlasOfPaths/</code></dd>
+		<dt>chapit</dt>
+		<dd><code>https://w3id.org/italia/onto/CulturalHeritage/</code></dd>
+		<dt>cis</dt>
+		<dd><code>http://dati.beniculturali.it/cis/</code></dd>
+		<dt>clvapit</dt>
+		<dd><code>https://w3id.org/italia/onto/CLV/</code></dd>
+		<dt>covapit</dt>
+		<dd><code>https://w3id.org/italia/onto/COV/</code></dd>
+		<dt>cpevapit</dt>
+		<dd><code>https://w3id.org/italia/onto/CPEV/</code></dd>
+		<dt>cpsvapit</dt>
+		<dd><code>https://w3id.org/italia/onto/CPSV/</code></dd>
+		<dt>cpvapit</dt>
+		<dd><code>https://w3id.org/italia/onto/CPV/</code></dd>
+		<dt>dc</dt>
+		<dd><code>http://purl.org/dc/elements/1.1/</code></dd>
+		<dt>dcat</dt>
+		<dd><code>http://www.w3.org/ns/dcat#</code></dd>
+		<dt>dct</dt>
+		<dd><code>http://purl.org/dc/terms/</code></dd>
+		<dt>foaf</dt>
+		<dd><code>http://xmlns.com/foaf/0.1/</code></dd>
+		<dt>herapit</dt>
+		<dd><code>https://w3id.org/italia/onto/HER/</code></dd>
+		<dt>indicator</dt>
+		<dd><code>https://w3id.org/italia/onto/Indicator/</code></dd>
+		<dt>iotapit</dt>
+		<dd><code>https://w3id.org/italia/onto/IoT/</code></dd>
+		<dt>l0</dt>
+		<dd><code>https://w3id.org/italia/onto/l0/</code></dd>
+		<dt>langapit</dt>
+		<dd><code>https://w3id.org/italia/onto/Language/</code></dd>
+		<dt>muapit</dt>
+		<dd><code>https://w3id.org/italia/onto/MU/</code></dd>
+		<dt>ns</dt>
+		<dd><code>http://www.w3.org/2006/vcard/ns#</code></dd>
+		<dt>owl</dt>
+		<dd><code>http://www.w3.org/2002/07/owl#</code></dd>
+		<dt>parkapit</dt>
+		<dd><code>https://w3id.org/italia/onto/PARK/</code></dd>
+		<dt>pcapit</dt>
+		<dd><code>https://w3id.org/italia/onto/PublicContract/</code></dd>
+		<dt>poiapit</dt>
+		<dd><code>https://w3id.org/italia/onto/POI/</code></dd>
+		<dt>potapit</dt>
+		<dd><code>https://w3id.org/italia/onto/POT/</code></dd>
+		<dt>prjapit</dt>
+		<dd><code>https://w3id.org/italia/onto/Project/</code></dd>
+		<dt>prov</dt>
+		<dd><code>http://www.w3.org/ns/prov#</code></dd>
+		<dt>rdf</dt>
+		<dd><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></dd>
+		<dt>rdfs</dt>
+		<dd><code>http://www.w3.org/2000/01/rdf-schema#</code></dd>
+		<dt>roapit</dt>
+		<dd><code>https://w3id.org/italia/onto/RO/</code></dd>
+		<dt>rtapit</dt>
+		<dd><code>https://w3id.org/italia/onto/Route/</code></dd>
+		<dt>smapit</dt>
+		<dd><code>https://w3id.org/italia/onto/SM/</code></dd>
+		<dt>tiapit</dt>
+		<dd><code>https://w3id.org/italia/onto/TI/</code></dd>
+		<dt>trapit</dt>
+		<dd><code>https://w3id.org/italia/onto/Transparency/</code></dd>
+		<dt>xsd</dt>
+		<dd><code>http://www.w3.org/2001/XMLSchema#</code></dd>
+	</dl>
+</section>
+
+<footer>
+	<p>Generated by <a href="https://github.com/radkovo/OwlDocGen">OwlDocGen</a>.</p>
+</footer>
+
+</body>
+</html>

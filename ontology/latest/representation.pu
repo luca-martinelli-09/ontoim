@@ -1,4 +1,4 @@
-@startuml OntoMunicipality
+@startuml OntoIM
 hide circle
 skinparam linetype ortho
 skinparam ranksep 300
