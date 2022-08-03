@@ -1,80 +1,55 @@
-@prefix : <https://w3id.org/ontoim/> .
-@prefix l0: <https://w3id.org/italia/onto/l0/> .
-@prefix cis: <http://dati.beniculturali.it/cis/> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix acapit: <https://w3id.org/italia/onto/AccessCondition/> .
-@prefix chapit: <https://w3id.org/italia/onto/CulturalHeritage/> .
-@prefix muapit: <https://w3id.org/italia/onto/MU/> .
-@prefix pcapit: <https://w3id.org/italia/onto/PublicContract/> .
-@prefix roapit: <https://w3id.org/italia/onto/RO/> .
-@prefix rtapit: <https://w3id.org/italia/onto/Route/> .
-@prefix smapit: <https://w3id.org/italia/onto/SM/> .
-@prefix tiapit: <https://w3id.org/italia/onto/TI/> .
-@prefix trapit: <https://w3id.org/italia/onto/Transparency/> .
-@prefix aopapit: <https://w3id.org/italia/onto/AtlasOfPaths/> .
-@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
-@prefix covapit: <https://w3id.org/italia/onto/COV/> .
-@prefix cpvapit: <https://w3id.org/italia/onto/CPV/> .
-@prefix herapit: <https://w3id.org/italia/onto/HER/> .
-@prefix iotapit: <https://w3id.org/italia/onto/IoT/> .
-@prefix poiapit: <https://w3id.org/italia/onto/POI/> .
-@prefix potapit: <https://w3id.org/italia/onto/POT/> .
-@prefix prjapit: <https://w3id.org/italia/onto/Project/> .
-@prefix accoapit: <https://w3id.org/italia/onto/ACCO/> .
-@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
-@prefix cpevapit: <https://w3id.org/italia/onto/CPEV/> .
-@prefix cpsvapit: <https://w3id.org/italia/onto/CPSV/> .
-@prefix langapit: <https://w3id.org/italia/onto/Language/> .
-@prefix parkapit: <https://w3id.org/italia/onto/PARK/> .
-@prefix indicator: <https://w3id.org/italia/onto/Indicator/> .
-@base <https://w3id.org/ontoim/> .
+Prefix(:=<https://w3id.org/ontoim/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
-<https://w3id.org/ontoim/> rdf:type owl:Ontology ;
-                                     owl:imports <https://w3id.org/italia/onto/ACCO> ,
-                                                 <https://w3id.org/italia/onto/ADMS> ,
-                                                 <https://w3id.org/italia/onto/AccessCondition> ,
-                                                 <https://w3id.org/italia/onto/CLV> ,
-                                                 <https://w3id.org/italia/onto/COV> ,
-                                                 <https://w3id.org/italia/onto/CPEV> ,
-                                                 <https://w3id.org/italia/onto/CPSV> ,
-                                                 <https://w3id.org/italia/onto/CPV> ,
-                                                 <https://w3id.org/italia/onto/IoT> ,
-                                                 <https://w3id.org/italia/onto/MU> ,
-                                                 <https://w3id.org/italia/onto/POI> ,
-                                                 <https://w3id.org/italia/onto/POT> ,
-                                                 <https://w3id.org/italia/onto/PublicContract> ,
-                                                 <https://w3id.org/italia/onto/SM> ,
-                                                 <https://w3id.org/italia/onto/TI> ,
-                                                 <https://w3id.org/italia/onto/l0> ;
-                                     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-                                     dct:creator <https://w3id.org/people/lucamartinelli> ;
-                                     dct:description """Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.
 
-![OntoIM](https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg)"""@it ;
-                                     dct:issued "2022-09-24"@it ;
-                                     dct:language <http://publications.europa.eu/resource/authority/language/ENG> ,
-                                                  <http://publications.europa.eu/resource/authority/language/ITA> ;
-                                     dct:publisher <https://w3id.org/people/lucamartinelli> ;
-                                     dct:rightsHolder <https://w3id.org/people/lucamartinelli> ;
-                                     dct:title "Ontologia dei Comuni Italiani"@it ,
-                                               "Ontology for Italian Municipalities"@en ;
-                                     rdfs:label "OntoIM" ;
-                                     owl:versionInfo 0.1 ;
-                                     dcat:contactPoint <https://w3id.org/people/lucamartinelli> ;
-                                     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TECH> ;
-                                     admsapit:acronym "OntoIM" ;
-                                     admsapit:prefix <https://w3id.org/ontoim> ;
-                                     admsapit:target "Citizens"@en ,
-                                                     "Cittadini"@it ,
-                                                     "Companies"@en ,
-                                                     "Imprese"@it ,
-                                                     "Pubbliche Amministrazioni"@it ,
-                                                     "Public Organizations"@en .
+Ontology(<https://w3id.org/ontoim/>
+Import(<https://w3id.org/italia/onto/ACCO>)
+Import(<https://w3id.org/italia/onto/ADMS>)
+Import(<https://w3id.org/italia/onto/AccessCondition>)
+Import(<https://w3id.org/italia/onto/CLV>)
+Import(<https://w3id.org/italia/onto/COV>)
+Import(<https://w3id.org/italia/onto/CPEV>)
+Import(<https://w3id.org/italia/onto/CPSV>)
+Import(<https://w3id.org/italia/onto/CPV>)
+Import(<https://w3id.org/italia/onto/IoT>)
+Import(<https://w3id.org/italia/onto/MU>)
+Import(<https://w3id.org/italia/onto/POI>)
+Import(<https://w3id.org/italia/onto/POT>)
+Import(<https://w3id.org/italia/onto/PublicContract>)
+Import(<https://w3id.org/italia/onto/SM>)
+Import(<https://w3id.org/italia/onto/TI>)
+Import(<https://w3id.org/italia/onto/l0>)
+Annotation(<http://purl.org/dc/terms/accrualPeriodicity> <http://publications.europa.eu/resource/authority/frequency/IRREG>)
+Annotation(<http://purl.org/dc/terms/creator> <https://w3id.org/people/lucamartinelli>)
+Annotation(<http://purl.org/dc/terms/description> "Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+![OntoIM](https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg)"@it)
+Annotation(<http://purl.org/dc/terms/issued> "2022-09-24"@it)
+Annotation(<http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG>)
+Annotation(<http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ITA>)
+Annotation(<http://purl.org/dc/terms/publisher> <https://w3id.org/people/lucamartinelli>)
+Annotation(<http://purl.org/dc/terms/rightsHolder> <https://w3id.org/people/lucamartinelli>)
+Annotation(<http://purl.org/dc/terms/title> "Ontologia dei Comuni Italiani"@it)
+Annotation(<http://purl.org/dc/terms/title> "Ontology for Italian Municipalities"@en)
+Annotation(rdfs:comment "Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.
+
+![OntoIM](https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg)"@it)
+Annotation(rdfs:label "OntoIM")
+Annotation(owl:versionInfo "0.1"^^xsd:decimal)
+Annotation(<http://www.w3.org/ns/dcat#contactPoint> <https://w3id.org/people/lucamartinelli>)
+Annotation(<http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/TECH>)
+Annotation(<https://w3id.org/italia/onto/ADMS/acronym> "OntoIM")
+Annotation(<https://w3id.org/italia/onto/ADMS/prefix> <https://w3id.org/ontoim>)
+Annotation(<https://w3id.org/italia/onto/ADMS/target> "Citizens"@en)
+Annotation(<https://w3id.org/italia/onto/ADMS/target> "Cittadini"@it)
+Annotation(<https://w3id.org/italia/onto/ADMS/target> "Companies"@en)
+Annotation(<https://w3id.org/italia/onto/ADMS/target> "Imprese"@it)
+Annotation(<https://w3id.org/italia/onto/ADMS/target> "Pubbliche Amministrazioni"@it)
+Annotation(<https://w3id.org/italia/onto/ADMS/target> "Public Organizations"@en)
+
+
+)
