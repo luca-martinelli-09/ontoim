@@ -1,76 +1,78 @@
 @prefix : <https://w3id.org/ontoim/> .
-@prefix acapit: <https://w3id.org/italia/onto/AccessCondition/> .
-@prefix tiapit: <https://w3id.org/italia/onto/TI/> .
 @prefix l0: <https://w3id.org/italia/onto/l0/> .
-@prefix accoapit: <https://w3id.org/italia/onto/ACCO/> .
-@prefix covapit: <https://w3id.org/italia/onto/COV/> .
-@prefix poiapit: <https://w3id.org/italia/onto/POI/> .
-@prefix potapit: <https://w3id.org/italia/onto/POT/> .
-@prefix smapit: <https://w3id.org/italia/onto/SM/> .
-@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
-@prefix aopapit: <https://w3id.org/italia/onto/AtlasOfPaths/> .
-@prefix rtapit: <https://w3id.org/italia/onto/Route/> .
-@prefix chapit: <https://w3id.org/italia/onto/CulturalHeritage/> .
-@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
-@prefix muapit: <https://w3id.org/italia/onto/MU/> .
-@prefix roapit: <https://w3id.org/italia/onto/RO/> .
-@prefix cpevapit: <https://w3id.org/italia/onto/CPEV/> .
-@prefix cpsvapit: <https://w3id.org/italia/onto/CPSV/> .
-@prefix langapit: <https://w3id.org/italia/onto/Language/> .
-@prefix cpvapit: <https://w3id.org/italia/onto/CPV/> .
 @prefix cis: <http://dati.beniculturali.it/cis/> .
-@prefix herapit: <https://w3id.org/italia/onto/HER/> .
-@prefix indicator: <https://w3id.org/italia/onto/Indicator/> .
-@prefix iotapit: <https://w3id.org/italia/onto/IoT/> .
-@prefix parkapit: <https://w3id.org/italia/onto/PARK/> .
-@prefix prjapit: <https://w3id.org/italia/onto/Project/> .
-@prefix pcapit: <https://w3id.org/italia/onto/PublicContract/> .
-@prefix trapit: <https://w3id.org/italia/onto/Transparency/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc: <http://purl.org/dc/elements/> .
-@prefix dc: <http://purl.org/dc/elements/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@base <https://w3id.org/ontoim> .
+@prefix acapit: <https://w3id.org/italia/onto/AccessCondition/> .
+@prefix chapit: <https://w3id.org/italia/onto/CulturalHeritage/> .
+@prefix muapit: <https://w3id.org/italia/onto/MU/> .
+@prefix pcapit: <https://w3id.org/italia/onto/PublicContract/> .
+@prefix roapit: <https://w3id.org/italia/onto/RO/> .
+@prefix rtapit: <https://w3id.org/italia/onto/Route/> .
+@prefix smapit: <https://w3id.org/italia/onto/SM/> .
+@prefix tiapit: <https://w3id.org/italia/onto/TI/> .
+@prefix trapit: <https://w3id.org/italia/onto/Transparency/> .
+@prefix aopapit: <https://w3id.org/italia/onto/AtlasOfPaths/> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix covapit: <https://w3id.org/italia/onto/COV/> .
+@prefix cpvapit: <https://w3id.org/italia/onto/CPV/> .
+@prefix herapit: <https://w3id.org/italia/onto/HER/> .
+@prefix iotapit: <https://w3id.org/italia/onto/IoT/> .
+@prefix poiapit: <https://w3id.org/italia/onto/POI/> .
+@prefix potapit: <https://w3id.org/italia/onto/POT/> .
+@prefix prjapit: <https://w3id.org/italia/onto/Project/> .
+@prefix accoapit: <https://w3id.org/italia/onto/ACCO/> .
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix cpevapit: <https://w3id.org/italia/onto/CPEV/> .
+@prefix cpsvapit: <https://w3id.org/italia/onto/CPSV/> .
+@prefix langapit: <https://w3id.org/italia/onto/Language/> .
+@prefix parkapit: <https://w3id.org/italia/onto/PARK/> .
+@prefix indicator: <https://w3id.org/italia/onto/Indicator/> .
+@base <https://w3id.org/italia/onto/ACCO> .
 
-<https://w3id.org/ontoim> rdf:type owl:Ontology ;
-                           owl:imports <https://w3id.org/italia/onto/l0> ,
-                                       <https://w3id.org/italia/onto/CLV> ,
-                                       <https://w3id.org/italia/onto/TI> ,
-                                       <https://w3id.org/italia/onto/MU> ,
-                                       <https://w3id.org/italia/onto/SM> ,
-                                       <https://w3id.org/italia/onto/AccessCondition> ,
-                                       <https://w3id.org/italia/onto/CPV> ,
-                                       <https://w3id.org/italia/onto/CPSV> ,
-                                       <https://w3id.org/italia/onto/POT> ,
-                                       <https://w3id.org/italia/onto/POI> ,
-                                       <https://w3id.org/italia/onto/PublicContract> ,
-                                       <https://w3id.org/italia/onto/ACCO> ,
-                                       <https://w3id.org/italia/onto/COV> ,
-                                       <https://w3id.org/italia/onto/CPEV> ,
-                                       <https://w3id.org/italia/onto/IoT> ,
-                                       <https://w3id.org/italia/onto/l0> ,
-                                       <https://w3id.org/italia/onto/ADMS> ,
-                                       <http://dati.gov.it/onto/dcatapit> ;
-                           <http://purl.org/dc/terms/creator> <https://w3id.org/people/lucamartinelli> ;
-                           <http://purl.org/dc/terms/description> """Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.
+<https://w3id.org/italia/onto/ACCO> rdf:type owl:Ontology ;
+                                     owl:imports <https://w3id.org/italia/onto/ACCO> ,
+                                                 <https://w3id.org/italia/onto/AccessCondition> ,
+                                                 <https://w3id.org/italia/onto/CLV> ,
+                                                 <https://w3id.org/italia/onto/COV> ,
+                                                 <https://w3id.org/italia/onto/CPEV> ,
+                                                 <https://w3id.org/italia/onto/CPSV> ,
+                                                 <https://w3id.org/italia/onto/CPV> ,
+                                                 <https://w3id.org/italia/onto/IoT> ,
+                                                 <https://w3id.org/italia/onto/MU> ,
+                                                 <https://w3id.org/italia/onto/POI> ,
+                                                 <https://w3id.org/italia/onto/POT> ,
+                                                 <https://w3id.org/italia/onto/PublicContract> ,
+                                                 <https://w3id.org/italia/onto/SM> ,
+                                                 <https://w3id.org/italia/onto/TI> ,
+                                                 <https://w3id.org/italia/onto/l0> ,
+                                                 <https://w3id.org/italia/onto/ADMS> ;
+                                     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+                                     dct:creator <https://w3id.org/people/lucamartinelli> ;
+                                     dct:description """Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.
 
 ![OntoIM](https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg)"""@it ;
-                           <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> ,
-                                                               <http://publications.europa.eu/resource/authority/language/ITA> ;
-                           <http://purl.org/dc/terms/rightsHolder> <https://w3id.org/people/lucamartinelli> ;
-                           rdfs:label "OntoIM" ;
-                           owl:versionInfo 0.1 ;
-                           <https://w3id.org/italia/onto/ADMS/prefix> <ontoim> ;
-                           <https://w3id.org/italia/onto/ADMS/target> "Citizens"@en ,
-                                                                      "Cittadini"@it ,
-                                                                      "Companies"@en ,
-                                                                      "Imprese"@it ,
-                                                                      "Pubbliche Amministrazioni"@it ,
-                                                                      "Public Organizations"@en .
-
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+                                     dct:issued "2022-09-24"@it ;
+                                     dct:language <http://publications.europa.eu/resource/authority/language/ENG> ,
+                                                                         <http://publications.europa.eu/resource/authority/language/ITA> ;
+                                     dct:publisher <https://w3id.org/people/lucamartinelli> ;
+                                     dct:rightsHolder <https://w3id.org/people/lucamartinelli> ;
+                                     dct:title "Ontologia dei Comuni Italiani"@it ,
+                                                                      "Ontology for Italian Municipalities"@en ;
+                                     rdfs:label "OntoIM" ;
+                                     owl:versionInfo 0.1 ;
+                                     dcat:contactPoint <https://w3id.org/people/lucamartinelli> ;
+                                     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TECH> ;
+                                     admsapit:acronym "OntoIM" ;
+                                     admsapit:prefix <https://w3id.org/ontoim> ;
+                                     admsapit:target "Citizens"@en ,
+                                                     "Cittadini"@it ,
+                                                     "Companies"@en ,
+                                                     "Imprese"@it ,
+                                                     "Pubbliche Amministrazioni"@it ,
+                                                     "Public Organizations"@en .
