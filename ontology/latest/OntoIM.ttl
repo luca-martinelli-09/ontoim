@@ -1,8 +1,8 @@
 @prefix : <https://w3id.org/ontoim/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix l0: <https://w3id.org/italia/onto/l0/> .
 @prefix cis: <http://dati.beniculturali.it/cis/> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -34,50 +34,75 @@
 @prefix langapit: <https://w3id.org/italia/onto/Language/> .
 @prefix parkapit: <https://w3id.org/italia/onto/PARK/> .
 @prefix indicator: <https://w3id.org/italia/onto/Indicator/> .
-@base <https://w3id.org/ontoim/> .
+@prefix sdo: <https://schema.org/> .
+@base <https://w3id.org/ontoim> .
 
-<https://w3id.org/ontoim/> rdf:type owl:Ontology ;
-                            owl:imports <https://w3id.org/italia/onto/ACCO> ,
-                                        <https://w3id.org/italia/onto/ADMS> ,
-                                        <https://w3id.org/italia/onto/AccessCondition> ,
-                                        <https://w3id.org/italia/onto/CLV> ,
-                                        <https://w3id.org/italia/onto/COV> ,
-                                        <https://w3id.org/italia/onto/CPEV> ,
-                                        <https://w3id.org/italia/onto/CPSV> ,
-                                        <https://w3id.org/italia/onto/CPV> ,
-                                        <https://w3id.org/italia/onto/IoT> ,
-                                        <https://w3id.org/italia/onto/MU> ,
-                                        <https://w3id.org/italia/onto/POI> ,
-                                        <https://w3id.org/italia/onto/POT> ,
-                                        <https://w3id.org/italia/onto/PublicContract> ,
-                                        <https://w3id.org/italia/onto/SM> ,
-                                        <https://w3id.org/italia/onto/TI> ,
-                                        <https://w3id.org/italia/onto/l0> ;
-                            dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-                            dc:creator <https://w3id.org/people/lucamartinelli> ;
-                            dct:creator <https://w3id.org/people/lucamartinelli> ;
-                            dct:description """Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.
-![OntoIM](https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg)"""@it ;
-                            dct:issued "2022-09-24"@it ;
-                            dct:language <http://publications.europa.eu/resource/authority/language/ENG> ,
-                                         <http://publications.europa.eu/resource/authority/language/ITA> ;
-                            dct:publisher <https://w3id.org/people/lucamartinelli> ;
-                            dct:rightsHolder <https://w3id.org/people/lucamartinelli> ;
-                            dct:title "Ontologia dei Comuni Italiani"@it ,
-                                      "Ontology for Italian Municipalities"@en ;
-                            rdfs:comment """Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.
-![OntoIM](https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg)"""@it ;
-                            rdfs:label "OntoIM" ;
-                            owl:versionInfo 0.1 ;
-                            dcat:contactPoint <https://w3id.org/people/lucamartinelli> ;
-                            dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TECH> ;
-                            admsapit:acronym "OntoIM" ;
-                            admsapit:prefix <https://w3id.org/ontoim> ;
-                            admsapit:target "Citizens"@en ,
-                                            "Cittadini"@it ,
-                                            "Companies"@en ,
-                                            "Imprese"@it ,
-                                            "Pubbliche Amministrazioni"@it ,
-                                            "Public Organizations"@en .
+<https://w3id.org/ontoim> rdf:type owl:Ontology ;
+  owl:imports <https://w3id.org/italia/onto/ACCO> ,
+              <https://w3id.org/italia/onto/ADMS> ,
+              <https://w3id.org/italia/onto/AccessCondition> ,
+              <https://w3id.org/italia/onto/CLV> ,
+              <https://w3id.org/italia/onto/COV> ,
+              <https://w3id.org/italia/onto/CPEV> ,
+              <https://w3id.org/italia/onto/CPSV> ,
+              <https://w3id.org/italia/onto/CPV> ,
+              <https://w3id.org/italia/onto/IoT> ,
+              <https://w3id.org/italia/onto/MU> ,
+              <https://w3id.org/italia/onto/POI> ,
+              <https://w3id.org/italia/onto/POT> ,
+              <https://w3id.org/italia/onto/PublicContract> ,
+              <https://w3id.org/italia/onto/SM> ,
+              <https://w3id.org/italia/onto/TI> ,
+              <https://w3id.org/italia/onto/l0> ,
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns> ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+  dct:created "2022-09-24"^^xsd:date ;
+  dct:creator [ 
+    a sdo:Person ;
+    sdo:affiliation <https://www.dei.unipd.it>  ;
+    sdo:email <mailto:luca.martinelli.1@studenti.unipd.it> ;
+    sdo:identifier <https://orcid.org/0000-0002-6249-0899> ;
+    sdo:name "Luca Martinelli"
+  ] ;
+  dct:description """<p>Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.</p>
+<img width=\"100%\" src=\"https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg\" alt=\"Ontology Representation\" />"""^^rdf:HTML ;
+  dct:issued "2022-09-24"^^xsd:date ;
+  dct:language <http://publications.europa.eu/resource/authority/language/ENG> ,
+                <http://publications.europa.eu/resource/authority/language/ITA> ;
+  dct:publisher [ 
+    a sdo:Person ;
+    sdo:affiliation <https://www.dei.unipd.it>  ;
+    sdo:email <mailto:luca.martinelli.1@studenti.unipd.it> ;
+    sdo:identifier <https://orcid.org/0000-0002-6249-0899> ;
+    sdo:name "Luca Martinelli"
+  ] ;
+  dct:rightsHolder [ 
+    a sdo:Person ;
+    sdo:affiliation <https://www.dei.unipd.it>  ;
+    sdo:email <mailto:luca.martinelli.1@studenti.unipd.it> ;
+    sdo:identifier <https://orcid.org/0000-0002-6249-0899> ;
+    sdo:name "Luca Martinelli"
+  ] ;
+  dct:title "Ontology for Italian Municipalities"@en ;
+  owl:versionInfo 0.1 ;
+  dcat:contactPoint [ 
+    a sdo:Person ;
+    sdo:affiliation <https://www.dei.unipd.it>  ;
+    sdo:email <mailto:luca.martinelli.1@studenti.unipd.it> ;
+    sdo:identifier <https://orcid.org/0000-0002-6249-0899> ;
+    sdo:name "Luca Martinelli"
+  ] ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TECH> ;
+  admsapit:acronym "OntoIM" ;
+  admsapit:prefix <https://w3id.org/ontoim> ;
+  admsapit:target "Citizens"@en ,
+                  "Cittadini"@it ,
+                  "Companies"@en ,
+                  "Imprese"@it ,
+                  "Pubbliche Amministrazioni"@it ,
+                  "Public Organizations"@en .
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+<https://www.dei.unipd.it> a sdo:Organization ;
+  sdo:name "University of Padova, Department of Information Engineering"@en ,
+           "Università degli Studi di Padova, Dipartimento di Ingegneria dell'Informazione"@it ;
+  sdo:url <https://www.dei.unipd.it> .
