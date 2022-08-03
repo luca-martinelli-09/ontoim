@@ -56,10 +56,10 @@
         <owl:imports rdf:resource="https://w3id.org/italia/onto/SM"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/TI"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/l0"/>
+        <dc:creator rdf:resource="https://w3id.org/people/lucamartinelli"/>
         <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <dct:creator rdf:resource="https://w3id.org/people/lucamartinelli"/>
         <dct:description xml:lang="it">Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.
-
 ![OntoIM](https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg)</dct:description>
         <dct:issued xml:lang="it">2022-09-24</dct:issued>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
@@ -69,7 +69,6 @@
         <dct:title xml:lang="it">Ontologia dei Comuni Italiani</dct:title>
         <dct:title xml:lang="en">Ontology for Italian Municipalities</dct:title>
         <rdfs:comment xml:lang="it">Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.
-
 ![OntoIM](https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg)</rdfs:comment>
         <rdfs:label>OntoIM</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
