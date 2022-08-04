@@ -98,42 +98,6 @@
     
 
 
-    <!-- http://purl.org/dc/terms/created -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
-    
-
-
-    <!-- https://schema.org/affiliation -->
-
-    <owl:AnnotationProperty rdf:about="https://schema.org/affiliation"/>
-    
-
-
-    <!-- https://schema.org/email -->
-
-    <owl:AnnotationProperty rdf:about="https://schema.org/email"/>
-    
-
-
-    <!-- https://schema.org/identifier -->
-
-    <owl:AnnotationProperty rdf:about="https://schema.org/identifier"/>
-    
-
-
-    <!-- https://schema.org/name -->
-
-    <owl:AnnotationProperty rdf:about="https://schema.org/name"/>
-    
-
-
-    <!-- https://schema.org/url -->
-
-    <owl:AnnotationProperty rdf:about="https://schema.org/url"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -230,28 +194,6 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
-    
-
-
-    <!-- https://www.dei.unipd.it -->
-
-    <owl:NamedIndividual rdf:about="https://www.dei.unipd.it">
-        <sdo:name xml:lang="en">University of Padova, Department of Information Engineering</sdo:name>
-        <sdo:name xml:lang="it">Università degli Studi di Padova, Dipartimento di Ingegneria dell&apos;Informazione</sdo:name>
-        <sdo:url rdf:resource="https://www.dei.unipd.it"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://orcid.org/0000-0002-6249-0899 -->
-
-    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-6249-0899">
-        <sdo:affiliation rdf:resource="https://www.dei.unipd.it"/>
-        <sdo:email rdf:resource="mailto:luca.martinelli.1@studenti.unipd.it"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-6249-0899"/>
-        <sdo:name>Luca Martinelli</sdo:name>
-    </owl:NamedIndividual>
 </rdf:RDF>
 
 
