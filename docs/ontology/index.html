@@ -1,267 +1,973 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
- <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>Ontology for Italian Municipalities</title>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+   <link rel="stylesheet" href="resources/primer.css" media="screen" />
+   <link rel="stylesheet" href="resources/rec.css" media="screen" />
+   <link rel="stylesheet" href="resources/extra.css" media="screen" />
+   <link rel="stylesheet" href="resources/owl.css" media="screen" />
+   <title>Ontology for Italian Municipalities</title>
 
 
-<!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/ontoim","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/ontoim","name":"Ontology for Italian Municipalities", "headline":"Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.", "datePublished":"2022-09-24", "version":"0.1", "license":"http://purl.org/NET/rdflicense/cc-by4.0", "author":[{"@type":"Person","name":"Luca Martinelli","url":"https://orcid.org/0000-0002-6249-0899"}]}</script>
+   <!-- SCHEMA.ORG METADATA -->
+   <script
+      type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/ontoim","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/ontoim","name":"Ontology for Italian Municipalities", "headline":"Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.", "datePublished":"2022-09-24", "version":"0.1", "license":"http://purl.org/NET/rdflicense/cc-by4.0", "author":[{"@type":"Person","name":"Luca Martinelli","url":"https://orcid.org/0000-0002-6249-0899"}]}</script>
 
-<script src="resources/jquery.js"></script> 
-<script src="resources/marked.min.js"></script> 
-    <script> 
-function loadHash() {
-  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
-	var hash = location.hash;
-	if($(hash).offset()!=null){
-	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
-}
-	loadTOC();
-}
-function loadTOC(){
-	//process toc dynamically
-	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
-	  jQuery(".list").each(function(){
-		if(jQuery(this).is('h2')){
-			if(j>0){
-				t+='</ul>';
-				j=0;
-			}
-			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
-			i++;
-		}
-		if(jQuery(this).is('h3')){
-			if(j==0){
-				t+='<ul>';
-			}
-			j++;
-			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
-		}
-	  });
-	  t+='</ul>';
-	  $("#toc").html(t); 
-}
-$(function(){
-    loadHash();
-}); $.fn.ignore = function(sel){
-        return this.clone().find(sel||">*").remove().end();
- }; 
-   </script> 
-  </head> 
+   <script src="resources/jquery.js"></script>
+   <script src="resources/marked.min.js"></script>
+   <script>
+      function loadHash() {
+         jQuery(".markdown").each(function (el) { jQuery(this).after(marked(jQuery(this).text())).remove() });
+         var hash = location.hash;
+         if ($(hash).offset() != null) {
+            $('html, body').animate({ scrollTop: $(hash).offset().top }, 0);
+         }
+         loadTOC();
+      }
+      function loadTOC() {
+         //process toc dynamically
+         var t = '<h2>Table of contents</h2><ul>'; i = 1; j = 0;
+         jQuery(".list").each(function () {
+            if (jQuery(this).is('h2')) {
+               if (j > 0) {
+                  t += '</ul>';
+                  j = 0;
+               }
+               t += '<li>' + i + '. <a href=#' + jQuery(this).attr('id') + '>' + jQuery(this).ignore("span").text() + '</a></li>';
+               i++;
+            }
+            if (jQuery(this).is('h3')) {
+               if (j == 0) {
+                  t += '<ul>';
+               }
+               j++;
+               t += '<li>' + (i - 1) + '.' + j + '. ' + '<a href=#' + jQuery(this).attr('id') + '>' + jQuery(this).ignore("span").text() + '</a></li>';
+            }
+         });
+         t += '</ul>';
+         $("#toc").html(t);
+      }
+      $(function () {
+         loadHash();
+      }); $.fn.ignore = function (sel) {
+         return this.clone().find(sel || ">*").remove().end();
+      }; 
+   </script>
+</head>
 
 <body>
-<div class="container">
-<div class="head">
-<h1>Ontology for Italian Municipalities</h1>
-<h2>Release 2022-09-24</h2>
+   <div class="container">
+      <div class="head">
+         <h1>Ontology for Italian Municipalities</h1>
+         <h2>Release 2022-09-24</h2>
 
 
-<dl>
-<dt>Revision:</dt>
-<dd>0.1</dd>
-<dt>Issued on: </dt>
-<dd>2022-09-24</dd>
-<dt>Authors:</dt>
-<dd><a href="https://orcid.org/0000-0002-6249-0899">Luca Martinelli</a>, (<a href="https://www.dei.unipd.it">University of Padova, Department of Information Engineering</a>)<a href="mailto:luca.martinelli.1@studenti.unipd.it">&#9993;</a></dd>
-
-<dt>Imported Ontologies:</dt>
-<dd><a href="https://w3id.org/italia/onto/ADMS">ADMS</a></dd><dd><a href="https://w3id.org/italia/onto/AccessCondition">AccessCondition</a></dd><dd><a href="https://w3id.org/italia/onto/CLV">CLV</a></dd><dd><a href="https://w3id.org/italia/onto/SM">SM</a></dd><dd><a href="https://w3id.org/italia/onto/l0">l0</a></dd><dd><a href="https://w3id.org/italia/onto/l0">l0</a></dd>
-
-<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://purl.org/NET/rdflicense/cc-by4.0" target="_blank"><img src="https://img.shields.io/badge/License-Creative%20Commons%20CC_BY-blue.svg" alt="http://purl.org/NET/rdflicense/cc-by4.0" /></a>
-</dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Luca Martinelli. Ontology for Italian Municipalities. Revision: 0.1.</dd>
-</dl>
-
-<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
-</div>
-<div class="status">
-<div>
-<span>Ontology Specification</span>
-</div>
-</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.</span>
-</div>
-<div id="toc"></div>  
-
-<!--OVERVIEW SECTION-->
-    <div id="overview"><h2 id="overv" class="list">Ontology for Italian Municipalities: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-This ontology has the following classes and properties.</span>
-<h4>Classes</h4>
-<ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
-   <li>
-      <a href="#/AccessiblePointOfInterest"
-         title="https://w3id.org/ontoim/AccessiblePointOfInterest">Accessible Point of Interest</a>
-   </li>
-</ul><h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
-   <li>
-      <a href="#/ownedBy" title="https://w3id.org/ontoim/ownedBy">owned by</a>
-   </li>
-   <li>
-      <a href="#/ownsAccessiblePoI" title="https://w3id.org/ontoim/ownsAccessiblePoI">owns Accessible Point of Interest</a>
-   </li>
-</ul><h4>Named Individuals</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
-   <li>
-      <a href="#https://orcid.org/0000-0002-6249-0899" title="https://orcid.org/0000-0002-6249-0899">Luca Martinelli</a>
-   </li>
-   <li>
-      <a href="#https://www.dei.unipd.it" title="https://www.dei.unipd.it">Università di Padova</a>
-   </li>
-</ul>
-</div>
-  
-
-<!--DESCRIPTION SECTION-->
-    <div id="description"><h2 id="desc" class="list">Ontology for Italian Municipalities: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<img src="https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg" width="100%"></div>
-   
-
-<!--CROSSREF SECTION-->
-   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Ontology for Italian Municipalities classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by Ontology for Italian Municipalities.
-<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
-   <h3 id="classes-headline" class="list">Classes</h3>
-   <ul class="hlist">
-      <li>
-         <a href="#/AccessiblePointOfInterest"
-            title="https://w3id.org/ontoim/AccessiblePointOfInterest">Accessible Point of Interest</a>
-      </li>
-   </ul>
-   <div class="entity" id="/AccessiblePointOfInterest">
-      <h3>Accessible Point of Interest<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/ontoim/AccessiblePointOfInterest</p>
-      <div class="comment">
-         <span class="markdown">An Accessible Point of Interest is a Point of Interest, usually a building, a shopping center, a pharmacy, etc.... It inherits the properties of OntoPiA's Point of Interest, but it also has an online or physical contact point, access conditions, offered services descriptions and an owner (Organization).</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="https://w3id.org/italia/onto/POI/PointOfInterest"
-               target="_blank"
-               title="https://w3id.org/italia/onto/POI/PointOfInterest">point of interest</a>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#/ownedBy" title="https://w3id.org/ontoim/ownedBy">owned by</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#/ownsAccessiblePoI" title="https://w3id.org/ontoim/ownsAccessiblePoI">owns Accessible Point of Interest</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
-   <h3 id="properties" class="list">Object Properties</h3>
-   <ul class="hlist">
-      <li>
-         <a href="#/ownedBy" title="https://w3id.org/ontoim/ownedBy">owned by</a>
-      </li>
-      <li>
-         <a href="#/ownsAccessiblePoI" title="https://w3id.org/ontoim/ownsAccessiblePoI">owns Accessible Point of Interest</a>
-      </li>
-   </ul>
-   <div class="entity" id="/ownedBy">
-      <h3>owned by<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/ontoim/ownedBy</p>
-      <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#/AccessiblePointOfInterest"
-                  title="https://w3id.org/ontoim/AccessiblePointOfInterest">Accessible Point of Interest</a>
-               <sup class="type-c" title="class">c</sup>
+            <dt>Revision:</dt>
+            <dd>0.1</dd>
+            <dt>Issued on: </dt>
+            <dd>2022-09-24</dd>
+            <dt>Authors:</dt>
+            <dd><a href="https://orcid.org/0000-0002-6249-0899">Luca Martinelli</a>, (<a
+                  href="https://www.dei.unipd.it">Università di Padova</a>)<a
+                  href="mailto:luca.martinelli.1@studenti.unipd.it">&#9993;</a></dd>
+
+            <dt>Imported Ontologies:</dt>
+            <dd><a href="https://w3id.org/italia/onto/ADMS">ADMS</a></dd>
+            <dd><a href="https://w3id.org/italia/onto/AccessCondition">AccessCondition</a></dd>
+            <dd><a href="https://w3id.org/italia/onto/CLV">CLV</a></dd>
+            <dd><a href="https://w3id.org/italia/onto/SM">SM</a></dd>
+            <dd><a href="https://w3id.org/italia/onto/l0">l0</a></dd>
+            <dd><a href="https://w3id.org/italia/onto/l0">l0</a></dd>
+
+            <dt>Download serialization:</dt>
+            <dd><span><a href="ontology.jsonld" target="_blank"><img
+                        src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a
+                     href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg"
+                        alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img
+                        src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a>
+               </span><span><a href="ontology.ttl" target="_blank"><img
+                        src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd>
+            <dt>License:</dt>
+            <dd><a href="http://purl.org/NET/rdflicense/cc-by4.0" target="_blank"><img
+                     src="https://img.shields.io/badge/License-Creative%20Commons%20CC_BY-blue.svg"
+                     alt="http://purl.org/NET/rdflicense/cc-by4.0" /></a>
             </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="https://w3id.org/italia/onto/COV/Organization"
-                  target="_blank"
-                  title="https://w3id.org/italia/onto/COV/Organization">organization</a>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#/ownsAccessiblePoI" title="https://w3id.org/ontoim/ownsAccessiblePoI">owns Accessible Point of Interest</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
+            <!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> -->
+            <dt>Cite as:</dt>
+            <dd>Luca Martinelli. Ontology for Italian Municipalities. Revision: 0.1.</dd>
          </dl>
+
+         <a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a>
+         <hr />
       </div>
-   </div>
-   <div class="entity" id="/ownsAccessiblePoI">
-      <h3>owns Accessible Point of Interest<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/ontoim/ownsAccessiblePoI</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="https://w3id.org/italia/onto/COV/Organization"
-                  target="_blank"
-                  title="https://w3id.org/italia/onto/COV/Organization">organization</a>
-            </dd>
-            <dt>has range</dt>
-            <dd>
+      <div class="status">
+         <div>
+            <span>Ontology Specification</span>
+         </div>
+      </div>
+      <div id="abstract">
+         <h2>Abstract</h2><span class="markdown">
+            Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un
+            Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale,
+            osservazioni sul traffico, incidenti stradali e statistiche demografiche.</span>
+      </div>
+      <div id="toc"></div>
+
+      <!--OVERVIEW SECTION-->
+      <div id="overview">
+         <h2 id="overv" class="list">Ontology for Italian Municipalities: Overview <span class="backlink"> back to <a
+                  href="#toc">ToC</a></span></h2>
+         <span class="markdown">
+            This ontology has the following classes and properties.</span>
+         <h4>Classes</h4>
+         <ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+            <li>
                <a href="#/AccessiblePointOfInterest"
                   title="https://w3id.org/ontoim/AccessiblePointOfInterest">Accessible Point of Interest</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
+            </li>
+            <li>
+               <a href="#/Bookings" title="https://w3id.org/ontoim/Bookings">Bookings</a>
+            </li>
+            <li>
+               <a href="#/Citizens" title="https://w3id.org/ontoim/Citizens">Citizens</a>
+            </li>
+            <li>
+               <a href="#/CivilStatus" title="https://w3id.org/ontoim/CivilStatus">Civil Status</a>
+            </li>
+            <li>
+               <a href="#/CivilStatusCategory" title="https://w3id.org/ontoim/CivilStatusCategory">Civil Status
+                  Category</a>
+            </li>
+            <li>
+               <a href="#/DemographicObservation" title="https://w3id.org/ontoim/DemographicObservation">Demographic
+                  Observation</a>
+            </li>
+            <li>
+               <a href="#/Employees" title="https://w3id.org/ontoim/Employees">Employees</a>
+            </li>
+            <li>
+               <a href="#/Members" title="https://w3id.org/ontoim/Members">Members</a>
+            </li>
+            <li>
+               <a href="#/Subscribers" title="https://w3id.org/ontoim/Subscribers">Subscribers</a>
+            </li>
+            <li>
+               <a href="#/TouristType" title="https://w3id.org/ontoim/TouristType">Tourist Type</a>
+            </li>
+            <li>
+               <a href="#/Tourists" title="https://w3id.org/ontoim/Tourists">Tourists</a>
+            </li>
+         </ul>
+         <h4>Object Properties</h4>
+         <ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+            <li>
+               <a href="#/hasCivilStatusCategory" title="https://w3id.org/ontoim/hasCivilStatusCategory">has civil
+                  status category</a>
+            </li>
+            <li>
+               <a href="#/hasDemographicObservation" title="https://w3id.org/ontoim/hasDemographicObservation">has
+                  demographic observation</a>
+            </li>
+            <li>
+               <a href="#/hasDemographicReference" title="https://w3id.org/ontoim/hasDemographicReference">has
+                  demographic reference</a>
+            </li>
+            <li>
+               <a href="#/hasSpatialDelimitation" title="https://w3id.org/ontoim/hasSpatialDelimitation">has spatial
+                  delimitation</a>
+            </li>
+            <li>
+               <a href="#/hasTouristType" title="https://w3id.org/ontoim/hasTouristType">has tourist type</a>
+            </li>
+            <li>
+               <a href="#/isDemographicObservationFor" title="https://w3id.org/ontoim/isDemographicObservationFor">is
+                  demographic observation for</a>
+            </li>
+            <li>
                <a href="#/ownedBy" title="https://w3id.org/ontoim/ownedBy">owned by</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
+            </li>
+            <li>
+               <a href="#/ownsAccessiblePoI" title="https://w3id.org/ontoim/ownsAccessiblePoI">owns accessible point of
+                  interest</a>
+            </li>
+         </ul>
+         <h4>Data Properties</h4>
+         <ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+            <li>
+               <a href="#/value" title="https://w3id.org/ontoim/value">value</a>
+            </li>
+         </ul>
+         <h4>Named Individuals</h4>
+         <ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+            <li>
+               <a href="#/Arrival" title="https://w3id.org/ontoim/Arrival">Arrival</a>
+            </li>
+            <li>
+               <a href="#https://orcid.org/0000-0002-6249-0899" title="https://orcid.org/0000-0002-6249-0899">Luca
+                  Martinelli</a>
+            </li>
+            <li>
+               <a href="#/Presence" title="https://w3id.org/ontoim/Presence">Presence</a>
+            </li>
+            <li>
+               <a href="#https://www.dei.unipd.it" title="https://www.dei.unipd.it">Università di Padova</a>
+            </li>
+         </ul>
       </div>
-   </div>
-</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
-   <h3 id="namedindividuals" class="list">Named Individuals</h3>
-   <ul class="hlist">
-      <li>
-         <a href="#https://orcid.org/0000-0002-6249-0899" title="https://orcid.org/0000-0002-6249-0899">Luca Martinelli</a>
-      </li>
-      <li>
-         <a href="#https://www.dei.unipd.it" title="https://www.dei.unipd.it">Università di Padova</a>
-      </li>
-   </ul>
-   <div class="entity" id="https://orcid.org/0000-0002-6249-0899">
-      <h3>Luca Martinelli<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://orcid.org/0000-0002-6249-0899</p>
-   </div>
-   <div class="entity" id="https://www.dei.unipd.it">
-      <h3>Università di Padova<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://www.dei.unipd.it</p>
-   </div>
-</div><div id="legend">
-<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<div   class="entity">
-<sup class="type-c" title="Classes">c</sup>: Classes <br/>
-<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
-<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
-</div>
-</div>
-</div>
 
 
-</div>
+      <!--DESCRIPTION SECTION-->
+      <div id="description">
+         <h2 id="desc" class="list">Ontology for Italian Municipalities: Description <span class="backlink"> back to <a
+                  href="#toc">ToC</a></span></h2>
+         <img
+            src="https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg"
+            width="100%">
+      </div>
+
+
+      <!--CROSSREF SECTION-->
+      <div id="crossref">
+         <h2 id="crossreference" class="list">Cross-reference for Ontology for Italian Municipalities classes, object
+            properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+         This section provides details for each class and property defined by Ontology for Italian Municipalities.
+         <div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+            <h3 id="classes-headline" class="list">Classes</h3>
+            <ul class="hlist">
+               <li>
+                  <a href="#/AccessiblePointOfInterest"
+                     title="https://w3id.org/ontoim/AccessiblePointOfInterest">Accessible Point of Interest</a>
+               </li>
+               <li>
+                  <a href="#/Bookings" title="https://w3id.org/ontoim/Bookings">Bookings</a>
+               </li>
+               <li>
+                  <a href="#/Citizens" title="https://w3id.org/ontoim/Citizens">Citizens</a>
+               </li>
+               <li>
+                  <a href="#/CivilStatus" title="https://w3id.org/ontoim/CivilStatus">Civil Status</a>
+               </li>
+               <li>
+                  <a href="#/CivilStatusCategory" title="https://w3id.org/ontoim/CivilStatusCategory">Civil Status
+                     Category</a>
+               </li>
+               <li>
+                  <a href="#/DemographicObservation" title="https://w3id.org/ontoim/DemographicObservation">Demographic
+                     Observation</a>
+               </li>
+               <li>
+                  <a href="#/Employees" title="https://w3id.org/ontoim/Employees">Employees</a>
+               </li>
+               <li>
+                  <a href="#/Members" title="https://w3id.org/ontoim/Members">Members</a>
+               </li>
+               <li>
+                  <a href="#/Subscribers" title="https://w3id.org/ontoim/Subscribers">Subscribers</a>
+               </li>
+               <li>
+                  <a href="#/TouristType" title="https://w3id.org/ontoim/TouristType">Tourist Type</a>
+               </li>
+               <li>
+                  <a href="#/Tourists" title="https://w3id.org/ontoim/Tourists">Tourists</a>
+               </li>
+            </ul>
+            <div class="entity" id="/AccessiblePointOfInterest">
+               <h3>Accessible Point of Interest<sup class="type-c" title="class">c</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/AccessiblePointOfInterest
+               </p>
+               <div class="comment">
+                  <span class="markdown">An Accessible Point of Interest is a Point of Interest, usually a building, a
+                     shopping center, a pharmacy, etc.... It inherits the properties of OntoPiA's Point of Interest, but
+                     it also has an online or physical contact point, access conditions, offered services descriptions
+                     and an owner (Organization).</span>
+               </div>
+               <dl class="description">
+                  <dt>has super-classes</dt>
+                  <dd>
+                     <a href="https://w3id.org/italia/onto/POI/PointOfInterest" target="_blank"
+                        title="https://w3id.org/italia/onto/POI/PointOfInterest">point of interest</a>
+                  </dd>
+                  <dt>is in domain of</dt>
+                  <dd>
+                     <a href="#/ownedBy" title="https://w3id.org/ontoim/ownedBy">owned by</a>
+                     <sup class="type-op" title="object property">op</sup>
+                  </dd>
+                  <dt>is in range of</dt>
+                  <dd>
+                     <a href="#/ownsAccessiblePoI" title="https://w3id.org/ontoim/ownsAccessiblePoI">owns accessible
+                        point of interest</a>
+                     <sup class="type-op" title="object property">op</sup>
+                  </dd>
+               </dl>
+            </div>
+            <div class="entity" id="/Bookings">
+               <h3>Bookings<sup class="type-c" title="class">c</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/Bookings
+               </p>
+               <div class="comment">
+                  <span class="markdown">This class represents a demographic observation on the tourists booked in an
+                     accommodation facility.</span>
+               </div>
+               <dl class="description">
+                  <dt>has super-classes</dt>
+                  <dd>
+                     <a href="#/DemographicObservation"
+                        title="https://w3id.org/ontoim/DemographicObservation">Demographic Observation</a>
+                     <sup class="type-c" title="class">c</sup>
+                  </dd>
+               </dl>
+            </div>
+            <div class="entity" id="/Citizens">
+               <h3>Citizens<sup class="type-c" title="class">c</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/Citizens
+               </p>
+               <div class="comment">
+                  <span class="markdown">This class represents a demographic observation made on the citizens. E.g. the
+                     number of citizens in the municipality.</span>
+               </div>
+               <dl class="description">
+                  <dt>has super-classes</dt>
+                  <dd>
+                     <a href="#/DemographicObservation"
+                        title="https://w3id.org/ontoim/DemographicObservation">Demographic Observation</a>
+                     <sup class="type-c" title="class">c</sup>
+                  </dd>
+               </dl>
+            </div>
+            <div class="entity" id="/CivilStatus">
+               <h3>Civil Status<sup class="type-c" title="class">c</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/CivilStatus
+               </p>
+               <div class="comment">
+                  <span class="markdown">This class represents the number of civil status events and their types
+                     (marriages, births, deaths, etc...)</span>
+               </div>
+               <dl class="description">
+                  <dt>has super-classes</dt>
+                  <dd>
+                     <a href="#/DemographicObservation"
+                        title="https://w3id.org/ontoim/DemographicObservation">Demographic Observation</a>
+                     <sup class="type-c" title="class">c</sup>
+                  </dd>
+                  <dt>is in domain of</dt>
+                  <dd>
+                     <a href="#/hasCivilStatusCategory" title="https://w3id.org/ontoim/hasCivilStatusCategory">has civil
+                        status category</a>
+                     <sup class="type-op" title="object property">op</sup>
+                  </dd>
+               </dl>
+            </div>
+            <div class="entity" id="/CivilStatusCategory">
+               <h3>Civil Status Category<sup class="type-c" title="class">c</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/CivilStatusCategory
+               </p>
+               <div class="comment">
+                  <span class="markdown">This class represents the category of the civil status event. The elements of
+                     this class are skos:Concept and must be defined according to the controlled vocabulary available at
+                     https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories</span>
+               </div>
+               <dl class="description">
+                  <dt>has super-classes</dt>
+                  <dd>
+                     <a href="https://w3id.org/italia/onto/l0/Topic" target="_blank"
+                        title="https://w3id.org/italia/onto/l0/Topic">topic</a>
+                  </dd>
+                  <dt>is in range of</dt>
+                  <dd>
+                     <a href="#/hasCivilStatusCategory" title="https://w3id.org/ontoim/hasCivilStatusCategory">has civil
+                        status category</a>
+                     <sup class="type-op" title="object property">op</sup>
+                  </dd>
+               </dl>
+            </div>
+            <div class="entity" id="/DemographicObservation">
+               <h3>Demographic Observation<sup class="type-c" title="class">c</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/DemographicObservation
+               </p>
+               <div class="comment">
+                  <span class="markdown">A demographic observation is an observation made on the population of an
+                     entity, which can be the municipality, an organization, an event... The value defines the quantity
+                     of people or families observed, while the demographic reference represents the characteristics of
+                     the people observed. The demographic observation has also time and space delimitation. An example
+                     can be the number of female population of the municipality in 2021, or the number of italian
+                     citizens for a specific geographical area in 2020.</span>
+               </div>
+               <dl class="description">
+                  <dt>has super-classes</dt>
+                  <dd>
+                     <a href="https://w3id.org/italia/onto/l0/Activity" target="_blank"
+                        title="https://w3id.org/italia/onto/l0/Activity">activity</a>, <a
+                        href="http://org.semanticweb.owlapi/error#Error2" target="_blank"
+                        title="http://org.semanticweb.owlapi/error#Error2">error2</a>
+                     <sup class="type-c" title="class">c</sup>
+                  </dd>
+                  <dt>has sub-classes</dt>
+                  <dd>
+                     <a href="#/Bookings" title="https://w3id.org/ontoim/Bookings">Bookings</a>
+                     <sup class="type-c" title="class">c</sup>, <a href="#/Citizens"
+                        title="https://w3id.org/ontoim/Citizens">Citizens</a>
+                     <sup class="type-c" title="class">c</sup>, <a href="#/CivilStatus"
+                        title="https://w3id.org/ontoim/CivilStatus">Civil Status</a>
+                     <sup class="type-c" title="class">c</sup>, <a href="#/Employees"
+                        title="https://w3id.org/ontoim/Employees">Employees</a>
+                     <sup class="type-c" title="class">c</sup>, <a href="#/Members"
+                        title="https://w3id.org/ontoim/Members">Members</a>
+                     <sup class="type-c" title="class">c</sup>, <a href="#/Subscribers"
+                        title="https://w3id.org/ontoim/Subscribers">Subscribers</a>
+                     <sup class="type-c" title="class">c</sup>, <a href="#/Tourists"
+                        title="https://w3id.org/ontoim/Tourists">Tourists</a>
+                     <sup class="type-c" title="class">c</sup>
+                  </dd>
+                  <dt>is in domain of</dt>
+                  <dd>
+                     <a href="#/hasDemographicObservation" title="https://w3id.org/ontoim/hasDemographicObservation">has
+                        demographic observation</a>
+                     <sup class="type-op" title="object property">op</sup>, <a href="#/hasDemographicReference"
+                        title="https://w3id.org/ontoim/hasDemographicReference">has demographic reference</a>
+                     <sup class="type-op" title="object property">op</sup>
+                  </dd>
+                  <dt>is in range of</dt>
+                  <dd>
+                     <a href="#/isDemographicObservationFor"
+                        title="https://w3id.org/ontoim/isDemographicObservationFor">is demographic observation for</a>
+                     <sup class="type-op" title="object property">op</sup>
+                  </dd>
+               </dl>
+            </div>
+            <div class="entity" id="/Employees">
+               <h3>Employees<sup class="type-c" title="class">c</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/Employees
+               </p>
+               <div class="comment">
+                  <span class="markdown">This class represents a demographic observation on the employees of an
+                     organization.</span>
+               </div>
+               <dl class="description">
+                  <dt>has super-classes</dt>
+                  <dd>
+                     <a href="#/DemographicObservation"
+                        title="https://w3id.org/ontoim/DemographicObservation">Demographic Observation</a>
+                     <sup class="type-c" title="class">c</sup>
+                  </dd>
+               </dl>
+            </div>
+            <div class="entity" id="/Members">
+               <h3>Members<sup class="type-c" title="class">c</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/Members
+               </p>
+               <div class="comment">
+                  <span class="markdown">This class represents a demographic observation on the members of an
+                     association.</span>
+               </div>
+               <dl class="description">
+                  <dt>has super-classes</dt>
+                  <dd>
+                     <a href="#/DemographicObservation"
+                        title="https://w3id.org/ontoim/DemographicObservation">Demographic Observation</a>
+                     <sup class="type-c" title="class">c</sup>
+                  </dd>
+               </dl>
+            </div>
+            <div class="entity" id="/Subscribers">
+               <h3>Subscribers<sup class="type-c" title="class">c</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/Subscribers
+               </p>
+               <div class="comment">
+                  <span class="markdown">This class represents a demographic observation on the subscrivers to an event,
+                     a school or a course.</span>
+               </div>
+               <dl class="description">
+                  <dt>has super-classes</dt>
+                  <dd>
+                     <a href="#/DemographicObservation"
+                        title="https://w3id.org/ontoim/DemographicObservation">Demographic Observation</a>
+                     <sup class="type-c" title="class">c</sup>
+                  </dd>
+               </dl>
+            </div>
+            <div class="entity" id="/TouristType">
+               <h3>Tourist Type<sup class="type-c" title="class">c</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/TouristType
+               </p>
+               <div class="comment">
+                  <span class="markdown">This class is an enumerated class representing the typology of tourist: arrival
+                     or presence.</span>
+               </div>
+               <dl class="description">
+                  <dt>is equivalent to</dt>
+                  <dd>{ <a href="#/Arrival" title="https://w3id.org/ontoim/Arrival">Arrival</a> , <a href="#/Presence"
+                        title="https://w3id.org/ontoim/Presence">Presence</a> }</dd>
+                  <dt>is in range of</dt>
+                  <dd>
+                     <a href="#/hasTouristType" title="https://w3id.org/ontoim/hasTouristType">has tourist type</a>
+                     <sup class="type-op" title="object property">op</sup>
+                  </dd>
+                  <dt>has members</dt>
+                  <dd>
+                     <a href="#/Arrival" title="https://w3id.org/ontoim/Arrival">Arrival</a>
+                     <sup class="type-ni" title="named individual">ni</sup>, <a href="#/Presence"
+                        title="https://w3id.org/ontoim/Presence">Presence</a>
+                     <sup class="type-ni" title="named individual">ni</sup>
+                  </dd>
+               </dl>
+            </div>
+            <div class="entity" id="/Tourists">
+               <h3>Tourists<sup class="type-c" title="class">c</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/Tourists
+               </p>
+               <div class="comment">
+                  <span class="markdown">This class represents the demographic observation for tourism. Tourism
+                     observation is divided in arrivals and presences.</span>
+               </div>
+               <dl class="description">
+                  <dt>has super-classes</dt>
+                  <dd>
+                     <a href="#/DemographicObservation"
+                        title="https://w3id.org/ontoim/DemographicObservation">Demographic Observation</a>
+                     <sup class="type-c" title="class">c</sup>
+                  </dd>
+                  <dt>is in domain of</dt>
+                  <dd>
+                     <a href="#/hasTouristType" title="https://w3id.org/ontoim/hasTouristType">has tourist type</a>
+                     <sup class="type-op" title="object property">op</sup>
+                  </dd>
+               </dl>
+            </div>
+         </div>
+         <div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+            <h3 id="properties" class="list">Object Properties</h3>
+            <ul class="hlist">
+               <li>
+                  <a href="#/hasCivilStatusCategory" title="https://w3id.org/ontoim/hasCivilStatusCategory">has civil
+                     status category</a>
+               </li>
+               <li>
+                  <a href="#/hasDemographicObservation" title="https://w3id.org/ontoim/hasDemographicObservation">has
+                     demographic observation</a>
+               </li>
+               <li>
+                  <a href="#/hasDemographicReference" title="https://w3id.org/ontoim/hasDemographicReference">has
+                     demographic reference</a>
+               </li>
+               <li>
+                  <a href="#/hasSpatialDelimitation" title="https://w3id.org/ontoim/hasSpatialDelimitation">has spatial
+                     delimitation</a>
+               </li>
+               <li>
+                  <a href="#/hasTouristType" title="https://w3id.org/ontoim/hasTouristType">has tourist type</a>
+               </li>
+               <li>
+                  <a href="#/isDemographicObservationFor" title="https://w3id.org/ontoim/isDemographicObservationFor">is
+                     demographic observation for</a>
+               </li>
+               <li>
+                  <a href="#/ownedBy" title="https://w3id.org/ontoim/ownedBy">owned by</a>
+               </li>
+               <li>
+                  <a href="#/ownsAccessiblePoI" title="https://w3id.org/ontoim/ownsAccessiblePoI">owns accessible point
+                     of interest</a>
+               </li>
+            </ul>
+            <div class="entity" id="/hasCivilStatusCategory">
+               <h3>has civil status category<sup class="type-op" title="object property">op</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property
+                        ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/hasCivilStatusCategory
+               </p>
+               <div class="description">
+                  <dl>
+                     <dt>has domain</dt>
+                     <dd>
+                        <a href="#/CivilStatus" title="https://w3id.org/ontoim/CivilStatus">Civil Status</a>
+                        <sup class="type-c" title="class">c</sup>
+                     </dd>
+                     <dt>has range</dt>
+                     <dd>
+                        <a href="#/CivilStatusCategory" title="https://w3id.org/ontoim/CivilStatusCategory">Civil Status
+                           Category</a>
+                        <sup class="type-c" title="class">c</sup>
+                     </dd>
+                  </dl>
+               </div>
+            </div>
+            <div class="entity" id="/hasDemographicObservation">
+               <h3>has demographic observation<sup class="type-op" title="object property">op</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property
+                        ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/hasDemographicObservation
+               </p>
+               <div class="description">
+                  <dl>
+                     <dt>has domain</dt>
+                     <dd>
+                        <a href="#/DemographicObservation"
+                           title="https://w3id.org/ontoim/DemographicObservation">Demographic Observation</a>
+                        <sup class="type-c" title="class">c</sup>
+                     </dd>
+                     <dt>has range</dt>
+                     <dd>
+                        <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank"
+                           title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+                        <sup class="type-c" title="class">c</sup>
+                     </dd>
+                     <dt>is inverse of</dt>
+                     <dd>
+                        <a href="#/isDemographicObservationFor"
+                           title="https://w3id.org/ontoim/isDemographicObservationFor">is demographic observation
+                           for</a>
+                        <sup class="type-op" title="object property">op</sup>
+                     </dd>
+                  </dl>
+               </div>
+            </div>
+            <div class="entity" id="/hasDemographicReference">
+               <h3>has demographic reference<sup class="type-op" title="object property">op</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property
+                        ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/hasDemographicReference
+               </p>
+               <div class="description">
+                  <dl>
+                     <dt>has domain</dt>
+                     <dd>
+                        <a href="#/DemographicObservation"
+                           title="https://w3id.org/ontoim/DemographicObservation">Demographic Observation</a>
+                        <sup class="type-c" title="class">c</sup>
+                     </dd>
+                     <dt>has range</dt>
+                     <dd>
+                        <a href="https://w3id.org/italia/onto/CPV/Family" target="_blank"
+                           title="https://w3id.org/italia/onto/CPV/Family">family</a>
+                        <sup class="type-c" title="class">c</sup>
+                        <span class="logic">or</span>
+                        <a href="https://w3id.org/italia/onto/CPV/Person" target="_blank"
+                           title="https://w3id.org/italia/onto/CPV/Person">person</a>
+                        <sup class="type-c" title="class">c</sup>
+                     </dd>
+                  </dl>
+               </div>
+            </div>
+            <div class="entity" id="/hasSpatialDelimitation">
+               <h3>has spatial delimitation<sup class="type-op" title="object property">op</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property
+                        ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/hasSpatialDelimitation
+               </p>
+               <div class="description">
+                  <dl>
+                     <dt>has domain</dt>
+                     <dd>
+                        <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank"
+                           title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+                        <sup class="type-c" title="class">c</sup>
+                     </dd>
+                     <dt>has range</dt>
+                     <dd>
+                        <a href="https://w3id.org/italia/onto/CLV/SpatialObject" target="_blank"
+                           title="https://w3id.org/italia/onto/CLV/SpatialObject">spatial object</a>
+                     </dd>
+                  </dl>
+               </div>
+            </div>
+            <div class="entity" id="/hasTouristType">
+               <h3>has tourist type<sup class="type-op" title="object property">op</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property
+                        ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/hasTouristType
+               </p>
+               <div class="description">
+                  <dl>
+                     <dt>has domain</dt>
+                     <dd>
+                        <a href="#/Tourists" title="https://w3id.org/ontoim/Tourists">Tourists</a>
+                        <sup class="type-c" title="class">c</sup>
+                     </dd>
+                     <dt>has range</dt>
+                     <dd>
+                        <a href="#/TouristType" title="https://w3id.org/ontoim/TouristType">Tourist Type</a>
+                        <sup class="type-c" title="class">c</sup>
+                     </dd>
+                  </dl>
+               </div>
+            </div>
+            <div class="entity" id="/isDemographicObservationFor">
+               <h3>is demographic observation for<sup class="type-op" title="object property">op</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property
+                        ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/isDemographicObservationFor
+               </p>
+               <div class="description">
+                  <dl>
+                     <dt>has domain</dt>
+                     <dd>
+                        <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank"
+                           title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+                        <sup class="type-c" title="class">c</sup>
+                     </dd>
+                     <dt>has range</dt>
+                     <dd>
+                        <a href="#/DemographicObservation"
+                           title="https://w3id.org/ontoim/DemographicObservation">Demographic Observation</a>
+                        <sup class="type-c" title="class">c</sup>
+                     </dd>
+                     <dt>is inverse of</dt>
+                     <dd>
+                        <a href="#/hasDemographicObservation"
+                           title="https://w3id.org/ontoim/hasDemographicObservation">has demographic observation</a>
+                        <sup class="type-op" title="object property">op</sup>
+                     </dd>
+                  </dl>
+               </div>
+            </div>
+            <div class="entity" id="/ownedBy">
+               <h3>owned by<sup class="type-op" title="object property">op</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property
+                        ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/ownedBy
+               </p>
+               <div class="description">
+                  <dl>
+                     <dt>has domain</dt>
+                     <dd>
+                        <a href="#/AccessiblePointOfInterest"
+                           title="https://w3id.org/ontoim/AccessiblePointOfInterest">Accessible Point of Interest</a>
+                        <sup class="type-c" title="class">c</sup>
+                     </dd>
+                     <dt>has range</dt>
+                     <dd>
+                        <a href="https://w3id.org/italia/onto/COV/Organization" target="_blank"
+                           title="https://w3id.org/italia/onto/COV/Organization">organization</a>
+                     </dd>
+                     <dt>is inverse of</dt>
+                     <dd>
+                        <a href="#/ownsAccessiblePoI" title="https://w3id.org/ontoim/ownsAccessiblePoI">owns accessible
+                           point of interest</a>
+                        <sup class="type-op" title="object property">op</sup>
+                     </dd>
+                  </dl>
+               </div>
+            </div>
+            <div class="entity" id="/ownsAccessiblePoI">
+               <h3>owns accessible point of interest<sup class="type-op" title="object property">op</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property
+                        ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/ownsAccessiblePoI
+               </p>
+               <div class="description">
+                  <dl>
+                     <dt>has domain</dt>
+                     <dd>
+                        <a href="https://w3id.org/italia/onto/COV/Organization" target="_blank"
+                           title="https://w3id.org/italia/onto/COV/Organization">organization</a>
+                     </dd>
+                     <dt>has range</dt>
+                     <dd>
+                        <a href="#/AccessiblePointOfInterest"
+                           title="https://w3id.org/ontoim/AccessiblePointOfInterest">Accessible Point of Interest</a>
+                        <sup class="type-c" title="class">c</sup>
+                     </dd>
+                     <dt>is inverse of</dt>
+                     <dd>
+                        <a href="#/ownedBy" title="https://w3id.org/ontoim/ownedBy">owned by</a>
+                        <sup class="type-op" title="object property">op</sup>
+                     </dd>
+                  </dl>
+               </div>
+            </div>
+         </div>
+         <div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+            <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+            <ul class="hlist">
+               <li>
+                  <a href="#/value" title="https://w3id.org/ontoim/value">value</a>
+               </li>
+            </ul>
+            <div class="entity" id="/value">
+               <h3>value<sup class="type-dp" title="data property">dp</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property
+                        ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/value
+               </p>
+               <div class="description">
+                  <dl>
+                     <dt>has super-properties</dt>
+                     <dd>
+                        <a href="https://w3id.org/italia/onto/MU/value" target="_blank"
+                           title="https://w3id.org/italia/onto/MU/value">value</a>
+                     </dd>
+                     <dt>has domain</dt>
+                     <dd>
+                        <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank"
+                           title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+                        <sup class="type-c" title="class">c</sup>
+                     </dd>
+                     <dt>has range</dt>
+                     <dd>
+                        <a href="http://www.w3.org/2001/XMLSchema#nonNegativeInteger" target="_blank"
+                           title="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">non negative integer</a>
+                     </dd>
+                  </dl>
+               </div>
+            </div>
+         </div>
+         <div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+            <h3 id="namedindividuals" class="list">Named Individuals</h3>
+            <ul class="hlist">
+               <li>
+                  <a href="#/Arrival" title="https://w3id.org/ontoim/Arrival">Arrival</a>
+               </li>
+               <li>
+                  <a href="#https://orcid.org/0000-0002-6249-0899" title="https://orcid.org/0000-0002-6249-0899">Luca
+                     Martinelli</a>
+               </li>
+               <li>
+                  <a href="#/Presence" title="https://w3id.org/ontoim/Presence">Presence</a>
+               </li>
+               <li>
+                  <a href="#https://www.dei.unipd.it" title="https://www.dei.unipd.it">Università di Padova</a>
+               </li>
+            </ul>
+            <div class="entity" id="/Arrival">
+               <h3>Arrival<sup class="type-ni" title="named individual">ni</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual
+                        ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/Arrival
+               </p>
+               <dl class="description">
+                  <dt>belongs to</dt>
+                  <dd>
+                     <a href="#/TouristType" title="https://w3id.org/ontoim/TouristType">Tourist Type</a>
+                     <sup class="type-c" title="class">c</sup>
+                  </dd>
+               </dl>
+            </div>
+            <div class="entity" id="https://orcid.org/0000-0002-6249-0899">
+               <h3>Luca Martinelli<sup class="type-ni" title="named individual">ni</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual
+                        ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://orcid.org/0000-0002-6249-0899
+               </p>
+            </div>
+            <div class="entity" id="/Presence">
+               <h3>Presence<sup class="type-ni" title="named individual">ni</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual
+                        ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://w3id.org/ontoim/Presence
+               </p>
+               <dl class="description">
+                  <dt>belongs to</dt>
+                  <dd>
+                     <a href="#/TouristType" title="https://w3id.org/ontoim/TouristType">Tourist Type</a>
+                     <sup class="type-c" title="class">c</sup>
+                  </dd>
+               </dl>
+            </div>
+            <div class="entity" id="https://www.dei.unipd.it">
+               <h3>Università di Padova<sup class="type-ni" title="named individual">ni</sup>
+                  <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual
+                        ToC</a>
+                  </span>
+               </h3>
+               <p>
+                  <strong>IRI:</strong> https://www.dei.unipd.it
+               </p>
+            </div>
+         </div>
+         <div id="legend">
+            <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+            <div class="entity">
+               <sup class="type-c" title="Classes">c</sup>: Classes <br />
+               <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br />
+               <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br />
+               <sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+            </div>
+         </div>
+      </div>
+
+
+   </div>
 </body>
+
 </html>

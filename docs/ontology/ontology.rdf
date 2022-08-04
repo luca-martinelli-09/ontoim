@@ -80,6 +80,13 @@
     
 
 
+    <!-- http://www.w3.org/2002/07/owl#maxQualifiedCardinality -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#maxQualifiedCardinality"/>
+    
+
+
     <!-- https://schema.org/affiliation -->
 
 
@@ -141,6 +148,86 @@
     
 
 
+    <!-- https://w3id.org/ontoim/hasCivilStatusCategory -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasCivilStatusCategory">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/CivilStatus"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
+        <rdfs:label xml:lang="it">ha categoria di stato civile</rdfs:label>
+        <rdfs:label xml:lang="en">has civil status category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasDemographicObservation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasDemographicObservation">
+        <owl:inverseOf rdf:resource="https://w3id.org/ontoim/isDemographicObservationFor"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/DemographicObservation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label xml:lang="it">ha osservazione demografica</rdfs:label>
+        <rdfs:label xml:lang="en">has demographic observation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasDemographicReference -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasDemographicReference">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/DemographicObservation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/italia/onto/CPV/Family"/>
+                    <rdf:Description rdf:about="https://w3id.org/italia/onto/CPV/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="it">ha riferimento demografico</rdfs:label>
+        <rdfs:label xml:lang="en">has demographic reference</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasSpatialDelimitation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasSpatialDelimitation">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/SpatialObject"/>
+        <rdfs:label xml:lang="it">ha delimitazione spaziale</rdfs:label>
+        <rdfs:label xml:lang="en">has spatial delimitation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasTouristType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasTouristType">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Tourists"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/TouristType"/>
+        <rdfs:label xml:lang="it">ha tipo di turista</rdfs:label>
+        <rdfs:label xml:lang="en">has tourist type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/isDemographicObservationFor -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/isDemographicObservationFor">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/DemographicObservation"/>
+        <rdfs:label xml:lang="en">is demographic observation for</rdfs:label>
+        <rdfs:label xml:lang="it">è osservazione demografica per</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ontoim/ownedBy -->
 
 
@@ -160,9 +247,34 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/ownsAccessiblePoI">
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
         <rdfs:range rdf:resource="https://w3id.org/ontoim/AccessiblePointOfInterest"/>
-        <rdfs:label xml:lang="en">owns Accessible Point of Interest</rdfs:label>
-        <rdfs:label xml:lang="it">possiede un Punto di Interesse Accesibile</rdfs:label>
+        <rdfs:label xml:lang="en">owns accessible point of interest</rdfs:label>
+        <rdfs:label xml:lang="it">possiede un punto di interesse accessibile</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ontoim/value -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/value">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/MU/value"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:label xml:lang="it">valore</rdfs:label>
+        <rdfs:label xml:lang="en">value</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -178,10 +290,31 @@
     
 
 
+    <!-- http://org.semanticweb.owlapi/error#Error2 -->
+
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error2"/>
+    
+
+
     <!-- https://w3id.org/italia/onto/ACCO/OfferedServiceDescription -->
 
 
     <owl:Class rdf:about="https://w3id.org/italia/onto/ACCO/OfferedServiceDescription"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CPV/Family -->
+
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CPV/Family"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CPV/Person -->
+
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CPV/Person"/>
     
 
 
@@ -230,6 +363,179 @@
     
 
 
+    <!-- https://w3id.org/ontoim/Bookings -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/Bookings">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/DemographicObservation"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta un&apos;osservazione demografica sui turisti prenotati in una struttura ricettiva.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a demographic observation on the tourists booked in an accommodation facility.</rdfs:comment>
+        <rdfs:label xml:lang="en">Bookings</rdfs:label>
+        <rdfs:label xml:lang="it">Prenotazioni</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/Citizens -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/Citizens">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/DemographicObservation"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta un&apos;osservazione demografica fatta sui cittadini. Ad esempio, il numero di cittadini presenti nel comune.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a demographic observation made on the citizens. E.g. the number of citizens in the municipality.</rdfs:comment>
+        <rdfs:label xml:lang="en">Citizens</rdfs:label>
+        <rdfs:label xml:lang="it">Cittadini</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/CivilStatus -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/CivilStatus">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/DemographicObservation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasCivilStatusCategory"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta il numero di eventi di stato civile (nascite, matrimoni, morti, ecc...)</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the number of civil status events and their types (marriages, births, deaths, etc...)</rdfs:comment>
+        <rdfs:label xml:lang="en">Civil Status</rdfs:label>
+        <rdfs:label xml:lang="it">Stato Civile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/CivilStatusCategory -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/CivilStatusCategory">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Topic"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta la categoria dell&apos;evento di stato civile. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the category of the civil status event. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories</rdfs:comment>
+        <rdfs:label xml:lang="it">Categoria di Stato Civile</rdfs:label>
+        <rdfs:label xml:lang="en">Civil Status Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/DemographicObservation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/DemographicObservation">
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error2"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasDemographicReference"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CPV/Family"/>
+                            <rdf:Description rdf:about="https://w3id.org/italia/onto/CPV/Person"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasSpatialDelimitation"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/CLV/SpatialObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/MU/value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A demographic observation is an observation made on the population of an entity, which can be the municipality, an organization, an event... The value defines the quantity of people or families observed, while the demographic reference represents the characteristics of the people observed. The demographic observation has also time and space delimitation. An example can be the number of female population of the municipality in 2021, or the number of italian citizens for a specific geographical area in 2020.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un&apos;osservazione demografica è un&apos;osservazione fatta sulla popolazione di un&apos;entità, che può essere il comune, un&apos;organizzazione o un evento. Il valore definisce la quantità di persone o famiglie osservate, mentre il riferimento demografico rappresenta le caratteristiche osservate. L&apos;osservazione demografica ha inoltre una un tempo e uno spazio limitato. Ad esempio, può essere il numero di donne nel comune nel 2021, o il numero di cittadini italiani in una specifica area geografica nel 2020.</rdfs:comment>
+        <rdfs:label xml:lang="en">Demographic Observation</rdfs:label>
+        <rdfs:label xml:lang="it">Osservazione Demografica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/Employees -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/Employees">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/DemographicObservation"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta un&apos;osservazione demografica sui dipendenti di un&apos;impresa.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a demographic observation on the employees of an organization.</rdfs:comment>
+        <rdfs:label xml:lang="it">Dipendenti</rdfs:label>
+        <rdfs:label xml:lang="en">Employees</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/Members -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/Members">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/DemographicObservation"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta un&apos;osservazione demografica sui membri di un&apos;associazione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a demographic observation on the members of an association.</rdfs:comment>
+        <rdfs:label xml:lang="en">Members</rdfs:label>
+        <rdfs:label xml:lang="it">Membri</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/Subscribers -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/Subscribers">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/DemographicObservation"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta un&apos;osservazione demografica sugli iscritti ad un evento, una scuola o un corso.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a demographic observation on the subscrivers to an event, a school or a course.</rdfs:comment>
+        <rdfs:label xml:lang="it">Iscritti</rdfs:label>
+        <rdfs:label xml:lang="en">Subscribers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/TouristType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/TouristType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ontoim/Arrival"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoim/Presence"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="it">Questa classe è una classe numerata che rappresenta la tipologia di turista: arrivo o presenza.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class is an enumerated class representing the typology of tourist: arrival or presence.</rdfs:comment>
+        <rdfs:label xml:lang="it">Tipo di Turista</rdfs:label>
+        <rdfs:label xml:lang="en">Tourist Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/Tourists -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/Tourists">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/DemographicObservation"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta un&apos;osservazione demografica sui turisti. Le osservazioni sui turisti è divisa in arrivi e presenze.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the demographic observation for tourism. Tourism observation is divided in arrivals and presences.</rdfs:comment>
+        <rdfs:label xml:lang="en">Tourists</rdfs:label>
+        <rdfs:label xml:lang="it">Turisti</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -264,6 +570,31 @@
         <schema:identifier rdf:resource="https://orcid.org/0000-0002-6249-0899"/>
         <schema:name>Luca Martinelli</schema:name>
     </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoim/Arrival -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoim/Arrival">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/TouristType"/>
+        <rdfs:label xml:lang="en">Arrival</rdfs:label>
+        <rdfs:label xml:lang="it">Arrivo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoim/Presence -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoim/Presence">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/TouristType"/>
+        <rdfs:label xml:lang="en">Presence</rdfs:label>
+        <rdfs:label xml:lang="it">Presenza</rdfs:label>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
 </rdf:RDF>
 
 

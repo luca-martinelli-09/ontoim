@@ -113,7 +113,7 @@ package "Demographic Observation" {
     ' A demo observation can also be releated to a spatial object, which describes the spatial delimitation of the observation
     ' For example, we can count the number of males in a specific area, that can be a city, a borough, a street, etc...
     class DemographicObservation #DemographicObservationNode {
-        value^^xsd:int
+        value^^xsd:nonNegativeInteger
     }
     DemographicObservation -[#OntoPiAProperty]-> Activity : rdfs:subclassOf
 
@@ -121,7 +121,7 @@ package "Demographic Observation" {
     DemographicObservation -[#OntoPiAProperty]-> SpatialObject : hasSpatialDelimitation
     DemographicObservation -[#OntoPiAProperty]-> Person : hasDemographicReference
     DemographicObservation -[#OntoPiAProperty]-> Family : hasDemographicReference
-    DemographicObservation -[#OntoPiAProperty]-> Thing : isDegraphicmoObservationFor
+    DemographicObservation -[#OntoPiAProperty]-> Thing : isDemographicObservationFor
 
     class Citizens #DemographicObservationNode
     Citizens -[#DemographicObservationProperty]-> DemographicObservation : rdfs:subclassOf
@@ -164,7 +164,7 @@ package "Demographic Event" {
     }
     DemographicEvent -[#OntoPiAProperty]-> EventOrSituation : rdfs:subclassOf
 
-    DemographicEvent -[#OntoPiAProperty]-> Person : hasPerson
+    DemographicEvent -[#OntoPiAProperty]-> Person : hasDemographicReference
     DemographicEvent -[#OntoPiAProperty]-> SpatialObject : hasSpatialDelimitation
     DemographicEvent -[#OntoPiAProperty]-> Thing : isDemographicEventFor
 

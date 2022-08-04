@@ -1,5 +1,80 @@
 [ {
   "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/onto/CPV/Family"
+    }, {
+      "@id" : "https://w3id.org/italia/onto/CPV/Person"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "_:genid11"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ontoim/hasDemographicReference"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/onto/CPV/Family"
+    }, {
+      "@id" : "https://w3id.org/italia/onto/CPV/Person"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/SpatialObject"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ontoim/hasSpatialDelimitation"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/onto/MU/value"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontoim/Arrival"
+    }, {
+      "@id" : "https://w3id.org/ontoim/Presence"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/onto/ACCO/OfferedServiceDescription"
@@ -8,7 +83,7 @@
     "@id" : "https://w3id.org/italia/onto/ACCO/hasOfferedServiceDescription"
   } ]
 }, {
-  "@id" : "_:genid2",
+  "@id" : "_:genid5",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/onto/AccessCondition/AccessCondition"
@@ -17,7 +92,7 @@
     "@id" : "https://w3id.org/italia/onto/AccessCondition/hasAccessCondition"
   } ]
 }, {
-  "@id" : "_:genid3",
+  "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/onto/COV/Organization"
@@ -26,7 +101,7 @@
     "@id" : "https://w3id.org/ontoim/ownedBy"
   } ]
 }, {
-  "@id" : "_:genid4",
+  "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -39,7 +114,7 @@
     "@id" : "https://w3id.org/italia/onto/SM/hasOnlineContactPoint"
   } ]
 }, {
-  "@id" : "_:genid5",
+  "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -52,7 +127,26 @@
     "@id" : "https://w3id.org/italia/onto/SM/hasPhysicalContactPoint"
   } ]
 }, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/ontoim/CivilStatusCategory"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ontoim/hasCivilStatusCategory"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#maxQualifiedCardinality",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://orcid.org/0000-0002-6249-0899",
@@ -96,6 +190,12 @@
 }, {
   "@id" : "https://w3id.org/italia/onto/ACCO/hasOfferedServiceDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/CPV/Family",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/CPV/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/ontoim",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
@@ -232,15 +332,350 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/onto/POI/PointOfInterest"
   }, {
-    "@id" : "_:genid1"
-  }, {
-    "@id" : "_:genid2"
-  }, {
-    "@id" : "_:genid3"
-  }, {
     "@id" : "_:genid4"
   }, {
     "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontoim/Arrival",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontoim/TouristType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Arrival"
+  }, {
+    "@language" : "it",
+    "@value" : "Arrivo"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontoim/Bookings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa classe rappresenta un'osservazione demografica sui turisti prenotati in una struttura ricettiva."
+  }, {
+    "@language" : "en",
+    "@value" : "This class represents a demographic observation on the tourists booked in an accommodation facility."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bookings"
+  }, {
+    "@language" : "it",
+    "@value" : "Prenotazioni"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontoim/DemographicObservation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontoim/Citizens",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa classe rappresenta un'osservazione demografica fatta sui cittadini. Ad esempio, il numero di cittadini presenti nel comune."
+  }, {
+    "@language" : "en",
+    "@value" : "This class represents a demographic observation made on the citizens. E.g. the number of citizens in the municipality."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Citizens"
+  }, {
+    "@language" : "it",
+    "@value" : "Cittadini"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontoim/DemographicObservation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontoim/CivilStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa classe rappresenta il numero di eventi di stato civile (nascite, matrimoni, morti, ecc...)"
+  }, {
+    "@language" : "en",
+    "@value" : "This class represents the number of civil status events and their types (marriages, births, deaths, etc...)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Civil Status"
+  }, {
+    "@language" : "it",
+    "@value" : "Stato Civile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontoim/DemographicObservation"
+  }, {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontoim/CivilStatusCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa classe rappresenta la categoria dell'evento di stato civile. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories"
+  }, {
+    "@language" : "en",
+    "@value" : "This class represents the category of the civil status event. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Categoria di Stato Civile"
+  }, {
+    "@language" : "en",
+    "@value" : "Civil Status Category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Topic"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontoim/DemographicObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A demographic observation is an observation made on the population of an entity, which can be the municipality, an organization, an event... The value defines the quantity of people or families observed, while the demographic reference represents the characteristics of the people observed. The demographic observation has also time and space delimitation. An example can be the number of female population of the municipality in 2021, or the number of italian citizens for a specific geographical area in 2020."
+  }, {
+    "@language" : "it",
+    "@value" : "Un'osservazione demografica è un'osservazione fatta sulla popolazione di un'entità, che può essere il comune, un'organizzazione o un evento. Il valore definisce la quantità di persone o famiglie osservate, mentre il riferimento demografico rappresenta le caratteristiche osservate. L'osservazione demografica ha inoltre una un tempo e uno spazio limitato. Ad esempio, può essere il numero di donne nel comune nel 2021, o il numero di cittadini italiani in una specifica area geografica nel 2020."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Demographic Observation"
+  }, {
+    "@language" : "it",
+    "@value" : "Osservazione Demografica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://org.semanticweb.owlapi/error#Error2"
+  }, {
+    "@id" : "https://w3id.org/italia/onto/l0/Activity"
+  }, {
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontoim/Employees",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa classe rappresenta un'osservazione demografica sui dipendenti di un'impresa."
+  }, {
+    "@language" : "en",
+    "@value" : "This class represents a demographic observation on the employees of an organization."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Dipendenti"
+  }, {
+    "@language" : "en",
+    "@value" : "Employees"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontoim/DemographicObservation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontoim/Members",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa classe rappresenta un'osservazione demografica sui membri di un'associazione."
+  }, {
+    "@language" : "en",
+    "@value" : "This class represents a demographic observation on the members of an association."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Members"
+  }, {
+    "@language" : "it",
+    "@value" : "Membri"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontoim/DemographicObservation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontoim/Presence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontoim/TouristType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Presence"
+  }, {
+    "@language" : "it",
+    "@value" : "Presenza"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontoim/Subscribers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa classe rappresenta un'osservazione demografica sugli iscritti ad un evento, una scuola o un corso."
+  }, {
+    "@language" : "en",
+    "@value" : "This class represents a demographic observation on the subscrivers to an event, a school or a course."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Iscritti"
+  }, {
+    "@language" : "en",
+    "@value" : "Subscribers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontoim/DemographicObservation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontoim/TouristType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa classe è una classe numerata che rappresenta la tipologia di turista: arrivo o presenza."
+  }, {
+    "@language" : "en",
+    "@value" : "This class is an enumerated class representing the typology of tourist: arrival or presence."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Tipo di Turista"
+  }, {
+    "@language" : "en",
+    "@value" : "Tourist Type"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontoim/Tourists",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Questa classe rappresenta un'osservazione demografica sui turisti. Le osservazioni sui turisti è divisa in arrivi e presenze."
+  }, {
+    "@language" : "en",
+    "@value" : "This class represents the demographic observation for tourism. Tourism observation is divided in arrivals and presences."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tourists"
+  }, {
+    "@language" : "it",
+    "@value" : "Turisti"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontoim/DemographicObservation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontoim/hasCivilStatusCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontoim/CivilStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha categoria di stato civile"
+  }, {
+    "@language" : "en",
+    "@value" : "has civil status category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontoim/CivilStatusCategory"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontoim/hasDemographicObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontoim/DemographicObservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha osservazione demografica"
+  }, {
+    "@language" : "en",
+    "@value" : "has demographic observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/ontoim/isDemographicObservationFor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontoim/hasDemographicReference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontoim/DemographicObservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha riferimento demografico"
+  }, {
+    "@language" : "en",
+    "@value" : "has demographic reference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontoim/hasSpatialDelimitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha delimitazione spaziale"
+  }, {
+    "@language" : "en",
+    "@value" : "has spatial delimitation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/SpatialObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontoim/hasTouristType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontoim/Tourists"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha tipo di turista"
+  }, {
+    "@language" : "en",
+    "@value" : "has tourist type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontoim/TouristType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontoim/isDemographicObservationFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is demographic observation for"
+  }, {
+    "@language" : "it",
+    "@value" : "è osservazione demografica per"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontoim/DemographicObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/ontoim/ownedBy",
@@ -269,13 +704,32 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "owns Accessible Point of Interest"
+    "@value" : "owns accessible point of interest"
   }, {
     "@language" : "it",
-    "@value" : "possiede un Punto di Interesse Accesibile"
+    "@value" : "possiede un punto di interesse accessibile"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ontoim/AccessiblePointOfInterest"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontoim/value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "valore"
+  }, {
+    "@language" : "en",
+    "@value" : "value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/MU/value"
   } ]
 }, {
   "@id" : "https://www.dei.unipd.it",
