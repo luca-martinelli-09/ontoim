@@ -60,7 +60,7 @@
         <owl:imports rdf:resource="https://w3id.org/italia/onto/TI"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/l0"/>
         <dc:description rdf:resource="https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg"/>
-        <dc:description xml:lang="it">Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.</dc:description>
+        <dc:description>Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.</dc:description>
         <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-09-24</dct:created>
         <dct:creator rdf:resource="https://orcid.org/0000-0002-6249-0899"/>
