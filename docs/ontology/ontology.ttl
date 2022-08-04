@@ -104,8 +104,9 @@ owl:maxQualifiedCardinality rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/ontoim/hasDemographicObservation
 <https://w3id.org/ontoim/hasDemographicObservation> rdf:type owl:ObjectProperty ;
                                                     owl:inverseOf <https://w3id.org/ontoim/isDemographicObservationFor> ;
-                                                    rdfs:domain <https://w3id.org/ontoim/DemographicObservation> ;
-                                                    rdfs:range owl:Thing ;
+                                                    rdfs:domain owl:Thing ;
+                                                    rdfs:range owl:Thing ,
+                                                               <https://w3id.org/ontoim/DemographicObservation> ;
                                                     rdfs:label "ha osservazione demografica"@it ,
                                                                "has demographic observation"@en .
 
@@ -140,8 +141,8 @@ owl:maxQualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/ontoim/isDemographicObservationFor
 <https://w3id.org/ontoim/isDemographicObservationFor> rdf:type owl:ObjectProperty ;
-                                                      rdfs:domain owl:Thing ;
-                                                      rdfs:range <https://w3id.org/ontoim/DemographicObservation> ;
+                                                      rdfs:domain <https://w3id.org/ontoim/DemographicObservation> ;
+                                                      rdfs:range owl:Thing ;
                                                       rdfs:label "is demographic observation for"@en ,
                                                                  "è osservazione demografica per"@it .
 
@@ -339,7 +340,12 @@ owl:maxQualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/ontoim/Tourists
 <https://w3id.org/ontoim/Tourists> rdf:type owl:Class ;
-                                   rdfs:subClassOf <https://w3id.org/ontoim/DemographicObservation> ;
+                                   rdfs:subClassOf <https://w3id.org/ontoim/DemographicObservation> ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://w3id.org/ontoim/hasTouristType> ;
+                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass <https://w3id.org/ontoim/TouristType>
+                                                   ] ;
                                    rdfs:comment "Questa classe rappresenta un'osservazione demografica sui turisti. Le osservazioni sui turisti è divisa in arrivi e presenze."@it ,
                                                 "This class represents the demographic observation for tourism. Tourism observation is divided in arrivals and presences."@en ;
                                    rdfs:label "Tourists"@en ,

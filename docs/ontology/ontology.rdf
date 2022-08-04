@@ -165,8 +165,9 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasDemographicObservation">
         <owl:inverseOf rdf:resource="https://w3id.org/ontoim/isDemographicObservationFor"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ontoim/DemographicObservation"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/DemographicObservation"/>
         <rdfs:label xml:lang="it">ha osservazione demografica</rdfs:label>
         <rdfs:label xml:lang="en">has demographic observation</rdfs:label>
     </owl:ObjectProperty>
@@ -220,8 +221,8 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/isDemographicObservationFor">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="https://w3id.org/ontoim/DemographicObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/DemographicObservation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label xml:lang="en">is demographic observation for</rdfs:label>
         <rdfs:label xml:lang="it">è osservazione demografica per</rdfs:label>
     </owl:ObjectProperty>
@@ -528,6 +529,13 @@
 
     <owl:Class rdf:about="https://w3id.org/ontoim/Tourists">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/DemographicObservation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasTouristType"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/TouristType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Questa classe rappresenta un&apos;osservazione demografica sui turisti. Le osservazioni sui turisti è divisa in arrivi e presenze.</rdfs:comment>
         <rdfs:comment xml:lang="en">This class represents the demographic observation for tourism. Tourism observation is divided in arrivals and presences.</rdfs:comment>
         <rdfs:label xml:lang="en">Tourists</rdfs:label>

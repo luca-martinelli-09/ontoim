@@ -63,7 +63,7 @@
                            dct:created "2022-09-24"^^xsd:date ;
                            dct:creator <https://orcid.org/0000-0002-6249-0899> ;
                            dct:description "Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche."@it ,
-                                           "This ontology, combined with ontologies from the Italian OntoPiA network, makes it possible to model the reality of a municipality. It includes events, associations, businesses, schools, hospitals, green areas, plants, street signs, traffic observations, traffic accidents and demographic statistics."@it ;
+                                           "This ontology, combined with ontologies from the Italian OntoPiA network, makes it possible to model the reality of a municipality. It includes events, associations, businesses, schools, hospitals, green areas, plants, street signs, traffic observations, traffic accidents and demographic statistics."@en ;
                            dct:issued "2022-09-24"^^xsd:date ;
                            dct:language <http://publications.europa.eu/resource/authority/language/ENG> ,
                                         <http://publications.europa.eu/resource/authority/language/ITA> ;
@@ -132,8 +132,9 @@ sdo:url rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/ontoim/hasDemographicObservation
 :hasDemographicObservation rdf:type owl:ObjectProperty ;
                            owl:inverseOf :isDemographicObservationFor ;
-                           rdfs:domain :DemographicObservation ;
-                           rdfs:range owl:Thing ;
+                           rdfs:domain owl:Thing ;
+                           rdfs:range owl:Thing ,
+                                      :DemographicObservation ;
                            rdfs:label "ha osservazione demografica"@it ,
                                       "has demographic observation"@en .
 
@@ -168,8 +169,8 @@ sdo:url rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/ontoim/isDemographicObservationFor
 :isDemographicObservationFor rdf:type owl:ObjectProperty ;
-                             rdfs:domain owl:Thing ;
-                             rdfs:range :DemographicObservation ;
+                             rdfs:domain :DemographicObservation ;
+                             rdfs:range owl:Thing ;
                              rdfs:label "is demographic observation for"@en ,
                                         "è osservazione demografica per"@it .
 
@@ -303,7 +304,7 @@ sdo:url rdf:type owl:AnnotationProperty .
                                           owl:onClass clvapit:SpatialObject
                                         ] ,
                                         [ rdf:type owl:Restriction ;
-                                          owl:onProperty muapit:value ;
+                                          owl:onProperty :value ;
                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                           owl:onDataRange xsd:nonNegativeInteger
                                         ] ;
@@ -355,7 +356,12 @@ sdo:url rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/ontoim/Tourists
 :Tourists rdf:type owl:Class ;
-          rdfs:subClassOf :DemographicObservation ;
+          rdfs:subClassOf :DemographicObservation ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasTouristType ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :TouristType
+                          ] ;
           rdfs:comment "Questa classe rappresenta un'osservazione demografica sui turisti. Le osservazioni sui turisti è divisa in arrivi e presenze."@it ,
                        "This class represents the demographic observation for tourism. Tourism observation is divided in arrivals and presences."@en ;
           rdfs:label "Tourists"@en ,

@@ -69,6 +69,19 @@
   } ]
 }, {
   "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/ontoim/TouristType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ontoim/hasTouristType"
+  } ]
+}, {
+  "@id" : "_:genid20",
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
@@ -577,6 +590,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ontoim/DemographicObservation"
+  }, {
+    "@id" : "_:genid19"
   } ]
 }, {
   "@id" : "https://w3id.org/ontoim/hasCivilStatusCategory",
@@ -598,7 +613,7 @@
   "@id" : "https://w3id.org/ontoim/hasDemographicObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ontoim/DemographicObservation"
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -609,6 +624,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  }, {
+    "@id" : "https://w3id.org/ontoim/DemographicObservation"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/ontoim/isDemographicObservationFor"
@@ -665,7 +682,7 @@
   "@id" : "https://w3id.org/ontoim/isDemographicObservationFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    "@id" : "https://w3id.org/ontoim/DemographicObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -675,7 +692,7 @@
     "@value" : "è osservazione demografica per"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/ontoim/DemographicObservation"
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
   "@id" : "https://w3id.org/ontoim/ownedBy",
