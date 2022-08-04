@@ -4,4 +4,5 @@ ontology/**/catalog-*.xml
 ontology/**/*.properties
 query.ipynb
 __pycache__
-cli.py
+*.sh
+tmp*/

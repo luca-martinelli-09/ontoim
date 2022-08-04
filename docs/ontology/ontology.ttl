@@ -1,0 +1,176 @@
+@prefix : <https://w3id.org/ontoim#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/ontoim#> .
+
+<https://w3id.org/ontoim> rdf:type owl:Ontology ;
+                           owl:imports <https://w3id.org/italia/onto/ACCO> ,
+                                       <https://w3id.org/italia/onto/ADMS> ,
+                                       <https://w3id.org/italia/onto/AccessCondition> ,
+                                       <https://w3id.org/italia/onto/CLV> ,
+                                       <https://w3id.org/italia/onto/COV> ,
+                                       <https://w3id.org/italia/onto/CPEV> ,
+                                       <https://w3id.org/italia/onto/CPSV> ,
+                                       <https://w3id.org/italia/onto/CPV> ,
+                                       <https://w3id.org/italia/onto/IoT> ,
+                                       <https://w3id.org/italia/onto/MU> ,
+                                       <https://w3id.org/italia/onto/POI> ,
+                                       <https://w3id.org/italia/onto/POT> ,
+                                       <https://w3id.org/italia/onto/PublicContract> ,
+                                       <https://w3id.org/italia/onto/SM> ,
+                                       <https://w3id.org/italia/onto/TI> ,
+                                       <https://w3id.org/italia/onto/l0> ;
+                           <http://purl.org/dc/terms/accrualPeriodicity> <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+                           <http://purl.org/dc/terms/created> "2022-09-24"^^xsd:date ;
+                           <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-6249-0899> ;
+                           <http://purl.org/dc/terms/description> "Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche."@en ;
+                           <http://purl.org/dc/terms/issued> "2022-09-24"^^xsd:date ;
+                           <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> ,
+                                                               <http://publications.europa.eu/resource/authority/language/ITA> ;
+                           <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0> ;
+                           <http://purl.org/dc/terms/rightsHolder> <https://orcid.org/0000-0002-6249-0899> ;
+                           <http://purl.org/dc/terms/title> "Ontology for Italian Municipalities"@en ;
+                           owl:versionInfo "0.1"^^rdfs:Literal ;
+                           <http://www.w3.org/ns/dcat#accessURL> <https://github.com/luca-martinelli-09/ontoim/> ;
+                           <http://www.w3.org/ns/dcat#contactPoint> <https://orcid.org/0000-0002-6249-0899> ;
+                           <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoIM.rdf> ;
+                           <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/TECH> ;
+                           <https://schema.org/image> <https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg> ;
+                           <https://w3id.org/italia/onto/ADMS/acronym> "OntoIM" ;
+                           <https://w3id.org/italia/onto/ADMS/prefix> "ontoim" ;
+                           <https://w3id.org/italia/onto/ADMS/target> "Citizens"@en ,
+                                                                      "Cittadini"@it ,
+                                                                      "Companies"@en ,
+                                                                      "Imprese"@it ,
+                                                                      "Pubbliche Amministrazioni"@it ,
+                                                                      "Public Organizations"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/affiliation
+<https://schema.org/affiliation> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/email
+<https://schema.org/email> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/identifier
+<https://schema.org/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/image
+<https://schema.org/image> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/name
+<https://schema.org/name> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/url
+<https://schema.org/url> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML
+rdf:HTML rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/italia/onto/ACCO/hasOfferedServiceDescription
+<https://w3id.org/italia/onto/ACCO/hasOfferedServiceDescription> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/ontoim/ownedBy
+<https://w3id.org/ontoim/ownedBy> rdf:type owl:ObjectProperty ;
+                                  owl:inverseOf <https://w3id.org/ontoim/ownsAccessiblePoI> ;
+                                  rdfs:domain <https://w3id.org/ontoim/AccessiblePointOfInterest> ;
+                                  rdfs:range <https://w3id.org/italia/onto/COV/Organization> ;
+                                  rdfs:label "owned by"@en ,
+                                             "posseduto da"@it .
+
+
+###  https://w3id.org/ontoim/ownsAccessiblePoI
+<https://w3id.org/ontoim/ownsAccessiblePoI> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <https://w3id.org/italia/onto/COV/Organization> ;
+                                            rdfs:range <https://w3id.org/ontoim/AccessiblePointOfInterest> ;
+                                            rdfs:label "owns Accessible Point of Interest"@en ,
+                                                       "possiede un Punto di Interesse Accesibile"@it .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/italia/onto/ACCO/OfferedServiceDescription
+<https://w3id.org/italia/onto/ACCO/OfferedServiceDescription> rdf:type owl:Class .
+
+
+###  https://w3id.org/ontoim/AccessiblePointOfInterest
+<https://w3id.org/ontoim/AccessiblePointOfInterest> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <https://w3id.org/italia/onto/POI/PointOfInterest> ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <https://w3id.org/italia/onto/ACCO/hasOfferedServiceDescription> ;
+                                                                      owl:allValuesFrom <https://w3id.org/italia/onto/ACCO/OfferedServiceDescription>
+                                                                    ] ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <https://w3id.org/italia/onto/AccessCondition/hasAccessCondition> ;
+                                                                      owl:allValuesFrom <https://w3id.org/italia/onto/AccessCondition/AccessCondition>
+                                                                    ] ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <https://w3id.org/ontoim/ownedBy> ;
+                                                                      owl:allValuesFrom <https://w3id.org/italia/onto/COV/Organization>
+                                                                    ] ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <https://w3id.org/italia/onto/SM/hasOnlineContactPoint> ;
+                                                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                      owl:onClass <https://w3id.org/italia/onto/SM/OnlineContactPoint>
+                                                                    ] ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <https://w3id.org/italia/onto/SM/hasPhysicalContactPoint> ;
+                                                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                      owl:onClass <https://w3id.org/italia/onto/SM/PhysicalContactPoint>
+                                                                    ] ;
+                                                    rdfs:comment "An Accessible Point of Interest is a Point of Interest, usually a building, a shopping center, a pharmacy, etc.... It inherits the properties of OntoPiA's Point of Interest, but it also has an online or physical contact point, access conditions, offered services descriptions and an owner (Organization)."@en ,
+                                                                 "Un Punto di Interesse Accessibile è un Punto di Interesse, solitamente un edificio, un centro commerciale, una farmacia ecc.... Eredita le proprietà del Punto di Interesse di OntoPiA, ma possiede anche un punto di contatto online o fisico, una o più condizioni di acceso, può avere dei servizi generici e ha un possessore (Organizzazione)."@it ;
+                                                    rdfs:label "Accessible Point of Interest"@en ,
+                                                               "Punto di Interesse Accessibile"@it .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://www.dei.unipd.it
+<https://www.dei.unipd.it> rdf:type owl:NamedIndividual ;
+                           rdfs:label "Università di Padova"^^rdfs:Literal ;
+                           <https://schema.org/name> "University of Padova, Department of Information Engineering"@en ,
+                                                     "Università degli Studi di Padova, Dipartimento di Ingegneria dell'Informazione"@it ;
+                           <https://schema.org/url> <https://www.dei.unipd.it> .
+
+
+###  https://orcid.org/0000-0002-6249-0899
+<https://orcid.org/0000-0002-6249-0899> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Luca Martinelli" ;
+                                        <https://schema.org/affiliation> <https://www.dei.unipd.it> ;
+                                        <https://schema.org/email> <mailto:luca.martinelli.1@studenti.unipd.it> ;
+                                        <https://schema.org/identifier> <https://orcid.org/0000-0002-6249-0899> ;
+                                        <https://schema.org/name> "Luca Martinelli" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

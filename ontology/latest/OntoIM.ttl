@@ -56,22 +56,22 @@
                                        <https://w3id.org/italia/onto/SM> ,
                                        <https://w3id.org/italia/onto/TI> ,
                                        <https://w3id.org/italia/onto/l0> ;
-                           dc:description <https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg> ,
-                                          "Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche." ;
                            dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
                            dct:created "2022-09-24"^^xsd:date ;
                            dct:creator <https://orcid.org/0000-0002-6249-0899> ;
+                           dct:description "Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche."@en ;
                            dct:issued "2022-09-24"^^xsd:date ;
                            dct:language <http://publications.europa.eu/resource/authority/language/ENG> ,
                                         <http://publications.europa.eu/resource/authority/language/ITA> ;
                            dct:license <http://creativecommons.org/licenses/by/4.0> ;
                            dct:rightsHolder <https://orcid.org/0000-0002-6249-0899> ;
                            dct:title "Ontology for Italian Municipalities"@en ;
-                           owl:versionInfo 0.1 ;
+                           owl:versionInfo "0.1"^^rdfs:Literal ;
                            dcat:accessURL <https://github.com/luca-martinelli-09/ontoim/> ;
                            dcat:contactPoint <https://orcid.org/0000-0002-6249-0899> ;
                            dcat:downloadURL <https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoIM.rdf> ;
                            dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TECH> ;
+                           sdo:image <https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg> ;
                            admsapit:acronym "OntoIM" ;
                            admsapit:prefix "ontoim" ;
                            admsapit:target "Citizens"@en ,
@@ -99,6 +99,10 @@ sdo:email rdf:type owl:AnnotationProperty .
 
 ###  https://schema.org/identifier
 sdo:identifier rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/image
+sdo:image rdf:type owl:AnnotationProperty .
 
 
 ###  https://schema.org/name
@@ -179,6 +183,7 @@ rdf:HTML rdf:type rdfs:Datatype .
 
 ###  https://www.dei.unipd.it
 <https://www.dei.unipd.it> rdf:type owl:NamedIndividual ;
+                           rdfs:label "Università di Padova"^^rdfs:Literal ;
                            sdo:name "University of Padova, Department of Information Engineering"@en ,
                                     "Università degli Studi di Padova, Dipartimento di Ingegneria dell'Informazione"@it ;
                            sdo:url <https://www.dei.unipd.it> .
@@ -186,6 +191,7 @@ rdf:HTML rdf:type rdfs:Datatype .
 
 ###  https://orcid.org/0000-0002-6249-0899
 <https://orcid.org/0000-0002-6249-0899> rdf:type owl:NamedIndividual ;
+                                        rdfs:label "Luca Martinelli" ;
                                         sdo:affiliation <https://www.dei.unipd.it> ;
                                         sdo:email <mailto:luca.martinelli.1@studenti.unipd.it> ;
                                         sdo:identifier <https://orcid.org/0000-0002-6249-0899> ;

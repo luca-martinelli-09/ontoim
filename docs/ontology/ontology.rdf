@@ -1,47 +1,20 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/ontoim/"
-     xml:base="https://w3id.org/ontoim/"
-     xmlns:cc="http://creativecommons.org/licenses/by/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+<rdf:RDF xmlns="https://w3id.org/ontoim#"
+     xml:base="https://w3id.org/ontoim"
      xmlns:l0="https://w3id.org/italia/onto/l0/"
      xmlns:ns="http://www.w3.org/2006/vcard/ns#"
-     xmlns:cis="http://dati.beniculturali.it/cis/"
-     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:CLV="https://w3id.org/italia/onto/CLV/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:sdo="https://schema.org/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:ADMS="https://w3id.org/italia/onto/ADMS/"
      xmlns:dcat="http://www.w3.org/ns/dcat#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:w3id="https://w3id.org/"
-     xmlns:acapit="https://w3id.org/italia/onto/AccessCondition/"
-     xmlns:chapit="https://w3id.org/italia/onto/CulturalHeritage/"
-     xmlns:muapit="https://w3id.org/italia/onto/MU/"
-     xmlns:pcapit="https://w3id.org/italia/onto/PublicContract/"
-     xmlns:roapit="https://w3id.org/italia/onto/RO/"
-     xmlns:rtapit="https://w3id.org/italia/onto/Route/"
-     xmlns:smapit="https://w3id.org/italia/onto/SM/"
-     xmlns:tiapit="https://w3id.org/italia/onto/TI/"
-     xmlns:trapit="https://w3id.org/italia/onto/Transparency/"
-     xmlns:aopapit="https://w3id.org/italia/onto/AtlasOfPaths/"
-     xmlns:clvapit="https://w3id.org/italia/onto/CLV/"
-     xmlns:covapit="https://w3id.org/italia/onto/COV/"
-     xmlns:cpvapit="https://w3id.org/italia/onto/CPV/"
-     xmlns:herapit="https://w3id.org/italia/onto/HER/"
-     xmlns:iotapit="https://w3id.org/italia/onto/IoT/"
-     xmlns:poiapit="https://w3id.org/italia/onto/POI/"
-     xmlns:potapit="https://w3id.org/italia/onto/POT/"
-     xmlns:prjapit="https://w3id.org/italia/onto/Project/"
-     xmlns:accoapit="https://w3id.org/italia/onto/ACCO/"
-     xmlns:admsapit="https://w3id.org/italia/onto/ADMS/"
-     xmlns:cpevapit="https://w3id.org/italia/onto/CPEV/"
-     xmlns:cpsvapit="https://w3id.org/italia/onto/CPSV/"
-     xmlns:langapit="https://w3id.org/italia/onto/Language/"
-     xmlns:parkapit="https://w3id.org/italia/onto/PARK/"
-     xmlns:indicator="https://w3id.org/italia/onto/Indicator/">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="https://schema.org/">
     <owl:Ontology rdf:about="https://w3id.org/ontoim">
         <owl:imports rdf:resource="https://w3id.org/italia/onto/ACCO"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/ADMS"/>
@@ -59,30 +32,30 @@
         <owl:imports rdf:resource="https://w3id.org/italia/onto/SM"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/TI"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/l0"/>
-        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-        <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-09-24</dct:created>
-        <dct:creator rdf:resource="https://orcid.org/0000-0002-6249-0899"/>
-        <dct:description xml:lang="en">Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.</dct:description>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-09-24</dct:issued>
-        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
-        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
-        <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0"/>
-        <dct:rightsHolder rdf:resource="https://orcid.org/0000-0002-6249-0899"/>
-        <dct:title xml:lang="en">Ontology for Italian Municipalities</dct:title>
+        <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-09-24</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-6249-0899"/>
+        <terms:description xml:lang="en">Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-09-24</terms:issued>
+        <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+        <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0"/>
+        <terms:rightsHolder rdf:resource="https://orcid.org/0000-0002-6249-0899"/>
+        <terms:title xml:lang="en">Ontology for Italian Municipalities</terms:title>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0.1</owl:versionInfo>
         <dcat:accessURL rdf:resource="https://github.com/luca-martinelli-09/ontoim/"/>
         <dcat:contactPoint rdf:resource="https://orcid.org/0000-0002-6249-0899"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoIM.rdf"/>
         <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TECH"/>
-        <sdo:image rdf:resource="https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg"/>
-        <admsapit:acronym>OntoIM</admsapit:acronym>
-        <admsapit:prefix>ontoim</admsapit:prefix>
-        <admsapit:target xml:lang="en">Citizens</admsapit:target>
-        <admsapit:target xml:lang="it">Cittadini</admsapit:target>
-        <admsapit:target xml:lang="en">Companies</admsapit:target>
-        <admsapit:target xml:lang="it">Imprese</admsapit:target>
-        <admsapit:target xml:lang="it">Pubbliche Amministrazioni</admsapit:target>
-        <admsapit:target xml:lang="en">Public Organizations</admsapit:target>
+        <schema:image rdf:resource="https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg"/>
+        <ADMS:acronym>OntoIM</ADMS:acronym>
+        <ADMS:prefix>ontoim</ADMS:prefix>
+        <ADMS:target xml:lang="en">Citizens</ADMS:target>
+        <ADMS:target xml:lang="it">Cittadini</ADMS:target>
+        <ADMS:target xml:lang="en">Companies</ADMS:target>
+        <ADMS:target xml:lang="it">Imprese</ADMS:target>
+        <ADMS:target xml:lang="it">Pubbliche Amministrazioni</ADMS:target>
+        <ADMS:target xml:lang="en">Public Organizations</ADMS:target>
     </owl:Ontology>
     
 
@@ -95,10 +68,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://purl.org/dc/terms/created -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
     
@@ -106,11 +81,13 @@
 
     <!-- https://schema.org/affiliation -->
 
+
     <owl:AnnotationProperty rdf:about="https://schema.org/affiliation"/>
     
 
 
     <!-- https://schema.org/email -->
+
 
     <owl:AnnotationProperty rdf:about="https://schema.org/email"/>
     
@@ -118,11 +95,13 @@
 
     <!-- https://schema.org/identifier -->
 
+
     <owl:AnnotationProperty rdf:about="https://schema.org/identifier"/>
     
 
 
     <!-- https://schema.org/image -->
+
 
     <owl:AnnotationProperty rdf:about="https://schema.org/image"/>
     
@@ -130,11 +109,13 @@
 
     <!-- https://schema.org/name -->
 
+
     <owl:AnnotationProperty rdf:about="https://schema.org/name"/>
     
 
 
     <!-- https://schema.org/url -->
+
 
     <owl:AnnotationProperty rdf:about="https://schema.org/url"/>
     
@@ -148,10 +129,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML -->
+
 
     <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"/>
     
@@ -165,10 +148,19 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
+    
+
+
+    <!-- https://w3id.org/italia/onto/ACCO/hasOfferedServiceDescription -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/ACCO/hasOfferedServiceDescription"/>
     
 
 
     <!-- https://w3id.org/ontoim/ownedBy -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/ownedBy">
         <owl:inverseOf rdf:resource="https://w3id.org/ontoim/ownsAccessiblePoI"/>
@@ -181,6 +173,7 @@
 
 
     <!-- https://w3id.org/ontoim/ownsAccessiblePoI -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/ownsAccessiblePoI">
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
@@ -199,10 +192,19 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
+    
+
+
+    <!-- https://w3id.org/italia/onto/ACCO/OfferedServiceDescription -->
+
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ACCO/OfferedServiceDescription"/>
     
 
 
     <!-- https://w3id.org/ontoim/AccessiblePointOfInterest -->
+
 
     <owl:Class rdf:about="https://w3id.org/ontoim/AccessiblePointOfInterest">
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/POI/PointOfInterest"/>
@@ -254,32 +256,36 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://www.dei.unipd.it -->
 
+
     <owl:NamedIndividual rdf:about="https://www.dei.unipd.it">
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Università di Padova</rdfs:label>
-        <sdo:name xml:lang="en">University of Padova, Department of Information Engineering</sdo:name>
-        <sdo:name xml:lang="it">Università degli Studi di Padova, Dipartimento di Ingegneria dell&apos;Informazione</sdo:name>
-        <sdo:url rdf:resource="https://www.dei.unipd.it"/>
+        <schema:name xml:lang="en">University of Padova, Department of Information Engineering</schema:name>
+        <schema:name xml:lang="it">Università degli Studi di Padova, Dipartimento di Ingegneria dell&apos;Informazione</schema:name>
+        <schema:url rdf:resource="https://www.dei.unipd.it"/>
     </owl:NamedIndividual>
     
 
 
     <!-- https://orcid.org/0000-0002-6249-0899 -->
 
+
     <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-6249-0899">
         <rdfs:label>Luca Martinelli</rdfs:label>
-        <sdo:affiliation rdf:resource="https://www.dei.unipd.it"/>
-        <sdo:email rdf:resource="mailto:luca.martinelli.1@studenti.unipd.it"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-6249-0899"/>
-        <sdo:name>Luca Martinelli</sdo:name>
+        <schema:affiliation rdf:resource="https://www.dei.unipd.it"/>
+        <schema:email rdf:resource="mailto:luca.martinelli.1@studenti.unipd.it"/>
+        <schema:identifier rdf:resource="https://orcid.org/0000-0002-6249-0899"/>
+        <schema:name>Luca Martinelli</schema:name>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
 
