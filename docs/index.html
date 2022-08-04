@@ -280,7 +280,7 @@ code{
     ],
     "https://schema.org/creator": [
       {
-        "@id": "_:nd0d69600617f4da9a46c1b07c1497ff4b1"
+        "@id": "_:nc0146011809e481cae790678bfd63f47b1"
       }
     ],
     "https://schema.org/dateCreated": [
@@ -308,7 +308,7 @@ code{
     ]
   },
   {
-    "@id": "_:nd0d69600617f4da9a46c1b07c1497ff4b1",
+    "@id": "_:nc0146011809e481cae790678bfd63f47b1",
     "https://schema.org/affiliation": [
       {
         "@id": "https://www.dei.unipd.it"
@@ -445,13 +445,153 @@ code{
             </tr>
             <tr>
               <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">Restriction</a>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <a href="https://w3id.org/italia/onto/POI/PointOfInterest">poiapit:PointOfInterest</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
               </th>
               <td>
                 <span>
-                  <span>
-                    <a href="https://w3id.org/italia/onto/SM/hasOnlineContactPoint">smapit:hasOnlineContactPoint</a>some<br>
-                  </span>
+                  <a href="#ownedBy">ownedBy</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#ownsAccessiblePoI">ownsAccessiblePoI</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">Restriction</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <span>
+                        <a href="https://w3id.org/italia/onto/ACCO/hasOfferedServiceDescription">accoapit:hasOfferedServiceDescription</a>only<br>
+                      </span>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <span>
+                        <a href="https://w3id.org/italia/onto/AccessCondition/hasAccessCondition">acapit:hasAccessCondition</a>only<br>
+                      </span>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <span>
+                        <span>
+                          <a href="#ownedBy">ownedBy</a>
+                          <sup class="sup-op" title="OWL Object Property">op</sup>
+                        </span>only<br>
+                      </span>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <span>
+                        <a href="https://w3id.org/italia/onto/SM/hasOnlineContactPoint">smapit:hasOnlineContactPoint</a>
+                        <span>
+                          <span class="cardinality">max</span>
+                          <span>1</span>
+                        </span><br>
+                      </span>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <span>
+                        <a href="https://w3id.org/italia/onto/SM/hasPhysicalContactPoint">smapit:hasPhysicalContactPoint</a>
+                        <span>
+                          <span class="cardinality">max</span>
+                          <span>1</span>
+                        </span><br>
+                      </span>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="section" id="objectproperties">
+        <h2>Object Properties</h2>
+        <div class="property entity" id="ownedBy">
+          <h3>owned byposseduto da
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://w3id.org/ontoim/ownedBy</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#AccessiblePointofInterest">AccessiblePointOfInterest</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <a href="https://w3id.org/italia/onto/COV/Organization">covapit:Organization</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="ownsAccessiblePoI">
+          <h3>owns Accessible Point of Interestpossiede un Punto di Interesse Accesibile
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://w3id.org/ontoim/ownsAccessiblePoI</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="https://w3id.org/italia/onto/COV/Organization">covapit:Organization</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#AccessiblePointofInterest">AccessiblePointOfInterest</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
             </tr>
@@ -546,6 +686,14 @@ code{
           <dd>
             <code>https://w3id.org/ontoim/</code>
           </dd>
+          <dt id="acapit">acapit</dt>
+          <dd>
+            <code>https://w3id.org/italia/onto/AccessCondition/</code>
+          </dd>
+          <dt id="accoapit">accoapit</dt>
+          <dd>
+            <code>https://w3id.org/italia/onto/ACCO/</code>
+          </dd>
           <dt id="admsapit">admsapit</dt>
           <dd>
             <code>https://w3id.org/italia/onto/ADMS/</code>
@@ -553,6 +701,10 @@ code{
           <dt id="cc">cc</dt>
           <dd>
             <code>http://creativecommons.org/licenses/by/</code>
+          </dd>
+          <dt id="covapit">covapit</dt>
+          <dd>
+            <code>https://w3id.org/italia/onto/COV/</code>
           </dd>
           <dt id="dcat">dcat</dt>
           <dd>
@@ -569,6 +721,10 @@ code{
           <dt id="owl">owl</dt>
           <dd>
             <code>http://www.w3.org/2002/07/owl#</code>
+          </dd>
+          <dt id="poiapit">poiapit</dt>
+          <dd>
+            <code>https://w3id.org/italia/onto/POI/</code>
           </dd>
           <dt id="prov">prov</dt>
           <dd>
@@ -611,6 +767,12 @@ code{
           </tr>
           <tr>
             <td>
+              <sup class="sup-op" title="OWL Object Property">op</sup>
+            </td>
+            <td>Object Properties</td>
+          </tr>
+          <tr>
+            <td>
               <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
             </td>
             <td>Annotation Properties</td>
@@ -648,6 +810,19 @@ code{
         </li>
         <li>
           <h4>
+            <a href="#objectproperties">Object Properties</a>
+          </h4>
+          <ul class="second">
+            <li>
+              <a href="#ownedBy">owned byposseduto da</a>
+            </li>
+            <li>
+              <a href="#ownsAccessiblePoI">owns Accessible Point of Interestpossiede un Punto di Interesse Accesibile</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4>
             <a href="#annotationproperties">Annotation Properties</a>
           </h4>
           <ul class="second">
@@ -680,10 +855,19 @@ code{
               <a href="#"></a>
             </li>
             <li>
+              <a href="#acapit">acapit</a>
+            </li>
+            <li>
+              <a href="#accoapit">accoapit</a>
+            </li>
+            <li>
               <a href="#admsapit">admsapit</a>
             </li>
             <li>
               <a href="#cc">cc</a>
+            </li>
+            <li>
+              <a href="#covapit">covapit</a>
             </li>
             <li>
               <a href="#dcat">dcat</a>
@@ -696,6 +880,9 @@ code{
             </li>
             <li>
               <a href="#owl">owl</a>
+            </li>
+            <li>
+              <a href="#poiapit">poiapit</a>
             </li>
             <li>
               <a href="#prov">prov</a>
