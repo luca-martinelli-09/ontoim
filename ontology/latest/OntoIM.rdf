@@ -62,7 +62,8 @@
         <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-09-24</dct:created>
         <dct:creator rdf:resource="https://orcid.org/0000-0002-6249-0899"/>
-        <dct:description xml:lang="en">Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.</dct:description>
+        <dct:description xml:lang="it">Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.</dct:description>
+        <dct:description xml:lang="it">This ontology, combined with ontologies from the Italian OntoPiA network, makes it possible to model the reality of a municipality. It includes events, associations, businesses, schools, hospitals, green areas, plants, street signs, traffic observations, traffic accidents and demographic statistics.</dct:description>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-09-24</dct:issued>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
@@ -137,23 +138,6 @@
     <!-- https://schema.org/url -->
 
     <owl:AnnotationProperty rdf:about="https://schema.org/url"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML -->
-
-    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"/>
     
 
 

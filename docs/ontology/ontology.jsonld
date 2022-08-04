@@ -55,9 +55,6 @@
   "@id" : "http://purl.org/dc/terms/created",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
-}, {
   "@id" : "https://orcid.org/0000-0002-6249-0899",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -113,8 +110,11 @@
     "@id" : "https://orcid.org/0000-0002-6249-0899"
   } ],
   "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
+    "@language" : "it",
     "@value" : "Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche."
+  }, {
+    "@language" : "it",
+    "@value" : "This ontology, combined with ontologies from the Italian OntoPiA network, makes it possible to model the reality of a municipality. It includes events, associations, businesses, schools, hospitals, green areas, plants, street signs, traffic observations, traffic accidents and demographic statistics."
   } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",

@@ -59,7 +59,8 @@
                            dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
                            dct:created "2022-09-24"^^xsd:date ;
                            dct:creator <https://orcid.org/0000-0002-6249-0899> ;
-                           dct:description "Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche."@en ;
+                           dct:description "Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche."@it ,
+                                           "This ontology, combined with ontologies from the Italian OntoPiA network, makes it possible to model the reality of a municipality. It includes events, associations, businesses, schools, hospitals, green areas, plants, street signs, traffic observations, traffic accidents and demographic statistics."@it ;
                            dct:issued "2022-09-24"^^xsd:date ;
                            dct:language <http://publications.europa.eu/resource/authority/language/ENG> ,
                                         <http://publications.europa.eu/resource/authority/language/ITA> ;
@@ -111,14 +112,6 @@ sdo:name rdf:type owl:AnnotationProperty .
 
 ###  https://schema.org/url
 sdo:url rdf:type owl:AnnotationProperty .
-
-
-#################################################################
-#    Datatypes
-#################################################################
-
-###  http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML
-rdf:HTML rdf:type rdfs:Datatype .
 
 
 #################################################################

@@ -26,7 +26,8 @@
                            <http://purl.org/dc/terms/accrualPeriodicity> <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
                            <http://purl.org/dc/terms/created> "2022-09-24"^^xsd:date ;
                            <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-6249-0899> ;
-                           <http://purl.org/dc/terms/description> "Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche."@en ;
+                           <http://purl.org/dc/terms/description> "Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche."@it ,
+                                                                  "This ontology, combined with ontologies from the Italian OntoPiA network, makes it possible to model the reality of a municipality. It includes events, associations, businesses, schools, hospitals, green areas, plants, street signs, traffic observations, traffic accidents and demographic statistics."@it ;
                            <http://purl.org/dc/terms/issued> "2022-09-24"^^xsd:date ;
                            <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> ,
                                                                <http://publications.europa.eu/resource/authority/language/ITA> ;
@@ -78,14 +79,6 @@
 
 ###  https://schema.org/url
 <https://schema.org/url> rdf:type owl:AnnotationProperty .
-
-
-#################################################################
-#    Datatypes
-#################################################################
-
-###  http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML
-rdf:HTML rdf:type rdfs:Datatype .
 
 
 #################################################################
