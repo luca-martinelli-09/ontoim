@@ -27,7 +27,7 @@
                            <http://purl.org/dc/terms/created> "2022-09-24"^^xsd:date ;
                            <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-6249-0899> ;
                            <http://purl.org/dc/terms/description> "Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche."@it ,
-                                                                  "This ontology, combined with ontologies from the Italian OntoPiA network, makes it possible to model the reality of a municipality. It includes events, associations, businesses, schools, hospitals, green areas, plants, street signs, traffic observations, traffic accidents and demographic statistics."@it ;
+                                                                  "This ontology, combined with ontologies from the Italian OntoPiA network, makes it possible to model the reality of a municipality. It includes events, associations, businesses, schools, hospitals, green areas, plants, street signs, traffic observations, traffic accidents and demographic statistics."@en ;
                            <http://purl.org/dc/terms/issued> "2022-09-24"^^xsd:date ;
                            <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> ,
                                                                <http://publications.europa.eu/resource/authority/language/ITA> ;
@@ -288,7 +288,7 @@ owl:maxQualifiedCardinality rdf:type owl:AnnotationProperty .
                                                                    owl:onClass <https://w3id.org/italia/onto/CLV/SpatialObject>
                                                                  ] ,
                                                                  [ rdf:type owl:Restriction ;
-                                                                   owl:onProperty <https://w3id.org/italia/onto/MU/value> ;
+                                                                   owl:onProperty <https://w3id.org/ontoim/value> ;
                                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                                    owl:onDataRange xsd:nonNegativeInteger
                                                                  ] ;

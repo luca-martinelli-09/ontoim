@@ -51,7 +51,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/onto/MU/value"
+    "@id" : "https://w3id.org/ontoim/value"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -226,7 +226,7 @@
     "@language" : "it",
     "@value" : "Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche."
   }, {
-    "@language" : "it",
+    "@language" : "en",
     "@value" : "This ontology, combined with ontologies from the Italian OntoPiA network, makes it possible to model the reality of a municipality. It includes events, associations, businesses, schools, hospitals, green areas, plants, street signs, traffic observations, traffic accidents and demographic statistics."
   } ],
   "http://purl.org/dc/terms/issued" : [ {
