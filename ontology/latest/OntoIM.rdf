@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/ontoim/"
-     xml:base="https://w3id.org/ontoim"
+     xml:base="https://w3id.org/ontoim/"
      xmlns:cc="http://creativecommons.org/licenses/by/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:l0="https://w3id.org/italia/onto/l0/"
