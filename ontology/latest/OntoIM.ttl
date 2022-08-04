@@ -57,7 +57,7 @@
                                        <https://w3id.org/italia/onto/TI> ,
                                        <https://w3id.org/italia/onto/l0> ;
                            dc:description <https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg> ,
-                                          "Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche."@it ;
+                                          "Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche." ;
                            dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
                            dct:created "2022-09-24"^^xsd:date ;
                            dct:creator <https://orcid.org/0000-0002-6249-0899> ;
