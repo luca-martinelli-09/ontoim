@@ -69,8 +69,6 @@
                 <sdo:name>Luca Martinelli</sdo:name>
             </rdf:Description>
         </dct:creator>
-        <dct:description rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">&lt;p&gt;Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.&lt;/p&gt;
-&lt;img width=&quot;100%&quot; src=&quot;https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg&quot; alt=&quot;Ontology Representation&quot; /&gt;</dct:description>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-09-24</dct:issued>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
@@ -161,6 +159,95 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ontoim/ownedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/ownedBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/ontoim/ownsAccessiblePoI"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/AccessiblePointOfInterest"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
+        <rdfs:label xml:lang="en">owned by</rdfs:label>
+        <rdfs:label xml:lang="it">posseduto da</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/ownsAccessiblePoI -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/ownsAccessiblePoI">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/AccessiblePointOfInterest"/>
+        <rdfs:label xml:lang="en">owns Accessible Point of Interest</rdfs:label>
+        <rdfs:label xml:lang="it">possiede un Punto di Interesse Accesibile</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ontoim/AccessiblePointOfInterest -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/AccessiblePointOfInterest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/POI/PointOfInterest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ACCO/hasOfferedServiceDescription"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/ACCO/OfferedServiceDescription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/AccessCondition/hasAccessCondition"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/AccessCondition/AccessCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/ownedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/SM/hasOnlineContactPoint"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/SM/OnlineContactPoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/SM/hasPhysicalContactPoint"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/SM/PhysicalContactPoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An Accessible Point of Interest is a Point of Interest, usually a building, a shopping center, a pharmacy, etc.... It inherits the properties of OntoPiA&apos;s Point of Interest, but it also has an online or physical contact point, access conditions, offered services descriptions and an owner (Organization).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un Punto di Interesse Accessibile è un Punto di Interesse, solitamente un edificio, un centro commerciale, una farmacia ecc.... Eredita le proprietà del Punto di Interesse di OntoPiA, ma possiede anche un punto di contatto online o fisico, una o più condizioni di acceso, può avere dei servizi generici e ha un possessore (Organizzazione).</rdfs:comment>
+        <rdfs:label xml:lang="en">Accessible Point of Interest</rdfs:label>
+        <rdfs:label xml:lang="it">Punto di Interesse Accessibile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Individuals
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -176,6 +263,12 @@
         <sdo:name xml:lang="it">Università degli Studi di Padova, Dipartimento di Ingegneria dell&apos;Informazione</sdo:name>
         <sdo:url rdf:resource="https://www.dei.unipd.it"/>
     </owl:NamedIndividual>
+    <rdf:Description>
+        <sdo:affiliation rdf:resource="https://www.dei.unipd.it"/>
+        <sdo:email rdf:resource="mailto:luca.martinelli.1@studenti.unipd.it"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-6249-0899"/>
+        <sdo:name>Luca Martinelli</sdo:name>
+    </rdf:Description>
     <rdf:Description>
         <sdo:affiliation rdf:resource="https://www.dei.unipd.it"/>
         <sdo:email rdf:resource="mailto:luca.martinelli.1@studenti.unipd.it"/>

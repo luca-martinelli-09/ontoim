@@ -63,8 +63,6 @@
                                          sdo:identifier <https://orcid.org/0000-0002-6249-0899> ;
                                          sdo:name "Luca Martinelli"
                                        ] ;
-                           dct:description """<p>Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.</p>
-<img width=\"100%\" src=\"https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg\" alt=\"Ontology Representation\" />"""^^rdf:HTML ;
                            dct:issued "2022-09-24"^^xsd:date ;
                            dct:language <http://publications.europa.eu/resource/authority/language/ENG> ,
                                         <http://publications.europa.eu/resource/authority/language/ITA> ;
@@ -122,6 +120,62 @@ rdf:HTML rdf:type rdfs:Datatype .
 
 
 #################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/ontoim/ownedBy
+:ownedBy rdf:type owl:ObjectProperty ;
+         owl:inverseOf :ownsAccessiblePoI ;
+         rdfs:domain :AccessiblePointOfInterest ;
+         rdfs:range covapit:Organization ;
+         rdfs:label "owned by"@en ,
+                    "posseduto da"@it .
+
+
+###  https://w3id.org/ontoim/ownsAccessiblePoI
+:ownsAccessiblePoI rdf:type owl:ObjectProperty ;
+                   rdfs:domain covapit:Organization ;
+                   rdfs:range :AccessiblePointOfInterest ;
+                   rdfs:label "owns Accessible Point of Interest"@en ,
+                              "possiede un Punto di Interesse Accesibile"@it .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/ontoim/AccessiblePointOfInterest
+:AccessiblePointOfInterest rdf:type owl:Class ;
+                           rdfs:subClassOf poiapit:PointOfInterest ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty accoapit:hasOfferedServiceDescription ;
+                                             owl:allValuesFrom accoapit:OfferedServiceDescription
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty acapit:hasAccessCondition ;
+                                             owl:allValuesFrom acapit:AccessCondition
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :ownedBy ;
+                                             owl:allValuesFrom covapit:Organization
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty smapit:hasOnlineContactPoint ;
+                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass smapit:OnlineContactPoint
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty smapit:hasPhysicalContactPoint ;
+                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass smapit:PhysicalContactPoint
+                                           ] ;
+                           rdfs:comment "An Accessible Point of Interest is a Point of Interest, usually a building, a shopping center, a pharmacy, etc.... It inherits the properties of OntoPiA's Point of Interest, but it also has an online or physical contact point, access conditions, offered services descriptions and an owner (Organization)."@en ,
+                                        "Un Punto di Interesse Accessibile è un Punto di Interesse, solitamente un edificio, un centro commerciale, una farmacia ecc.... Eredita le proprietà del Punto di Interesse di OntoPiA, ma possiede anche un punto di contatto online o fisico, una o più condizioni di acceso, può avere dei servizi generici e ha un possessore (Organizzazione)."@it ;
+                           rdfs:label "Accessible Point of Interest"@en ,
+                                      "Punto di Interesse Accessibile"@it .
+
+
+#################################################################
 #    Individuals
 #################################################################
 
@@ -137,5 +191,11 @@ rdf:HTML rdf:type rdfs:Datatype .
   sdo:identifier <https://orcid.org/0000-0002-6249-0899> ;
   sdo:name "Luca Martinelli"
 ] .
+
+[ sdo:affiliation <https://www.dei.unipd.it> ;
+   sdo:email <mailto:luca.martinelli.1@studenti.unipd.it> ;
+   sdo:identifier <https://orcid.org/0000-0002-6249-0899> ;
+   sdo:name "Luca Martinelli"
+ ] .
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

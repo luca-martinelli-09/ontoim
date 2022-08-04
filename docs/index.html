@@ -280,7 +280,7 @@ code{
     ],
     "https://schema.org/creator": [
       {
-        "@id": "_:n37f3eef359f14b8c8bbeab6db55d7c8db1"
+        "@id": "_:nd0d69600617f4da9a46c1b07c1497ff4b1"
       }
     ],
     "https://schema.org/dateCreated": [
@@ -293,12 +293,6 @@ code{
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
         "@value": "2022-09-24"
-      }
-    ],
-    "https://schema.org/description": [
-      {
-        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML",
-        "@value": "<p>Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.</p>\n<img width=\"100%\" src=\"https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg\" alt=\"Ontology Representation\"/>"
       }
     ],
     "https://schema.org/license": [
@@ -314,7 +308,7 @@ code{
     ]
   },
   {
-    "@id": "_:n37f3eef359f14b8c8bbeab6db55d7c8db1",
+    "@id": "_:nd0d69600617f4da9a46c1b07c1497ff4b1",
     "https://schema.org/affiliation": [
       {
         "@id": "https://www.dei.unipd.it"
@@ -423,14 +417,46 @@ code{
             </dt>
             <dd><p>0.1</p></dd>
           </div>
-          <div>
-            <dt>
-              <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
-            </dt>
-            <dd><p>Questa ontologia, unita alle ontologie della rete italiana OntoPiA, permette di modellare la realtà di un Comune. Include eventi, associazioni, imprese, scuole, ospedali, aree verdi, piante, segnaletica stradale, osservazioni sul traffico, incidenti stradali e statistiche demografiche.</p>
-<p><img width="100%" src="https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg" alt="Ontology Representation"/></p></dd>
-          </div>
         </dl>
+      </div>
+      <div class="section" id="classes">
+        <h2>Classes</h2>
+        <div class="property entity" id="AccessiblePointofInterest">
+          <h3>Accessible Point of InterestPunto di Interesse Accessibile
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://w3id.org/ontoim/AccessiblePointOfInterest</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>An Accessible Point of Interest is a Point of Interest, usually a building, a shopping center, a pharmacy, etc.... It inherits the properties of OntoPiA's Point of Interest, but it also has an online or physical contact point, access conditions, offered services descriptions and an owner (Organization).</p></li>
+                  <li><p>Un Punto di Interesse Accessibile è un Punto di Interesse, solitamente un edificio, un centro commerciale, una farmacia ecc.... Eredita le proprietà del Punto di Interesse di OntoPiA, ma possiede anche un punto di contatto online o fisico, una o più condizioni di acceso, può avere dei servizi generici e ha un possessore (Organizzazione).</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">Restriction</a>
+              </th>
+              <td>
+                <span>
+                  <span>
+                    <a href="https://w3id.org/italia/onto/SM/hasOnlineContactPoint">smapit:hasOnlineContactPoint</a>some<br>
+                  </span>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
       <div class="section" id="annotationproperties">
         <h2>Annotation Properties</h2>
@@ -516,6 +542,10 @@ code{
       <div id="namespaces">
         <h2>Namespaces</h2>
         <dl>
+          <dt id=":">:</dt>
+          <dd>
+            <code>https://w3id.org/ontoim/</code>
+          </dd>
           <dt id="admsapit">admsapit</dt>
           <dd>
             <code>https://w3id.org/italia/onto/ADMS/</code>
@@ -560,6 +590,10 @@ code{
           <dd>
             <code>https://schema.org/</code>
           </dd>
+          <dt id="smapit">smapit</dt>
+          <dd>
+            <code>https://w3id.org/italia/onto/SM/</code>
+          </dd>
           <dt id="w3id">w3id</dt>
           <dd>
             <code>https://w3id.org/</code>
@@ -569,6 +603,12 @@ code{
       <div id="legend">
         <h2>Legend</h2>
         <table class="entity">
+          <tr>
+            <td>
+              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+            </td>
+            <td>Classes</td>
+          </tr>
           <tr>
             <td>
               <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
@@ -595,6 +635,16 @@ code{
           <h4>
             <a href="#metadata">Metadata</a>
           </h4>
+        </li>
+        <li>
+          <h4>
+            <a href="#classes">Classes</a>
+          </h4>
+          <ul class="second">
+            <li>
+              <a href="#AccessiblePointofInterest">Accessible Point of InterestPunto di Interesse Accessibile</a>
+            </li>
+          </ul>
         </li>
         <li>
           <h4>
@@ -627,6 +677,9 @@ code{
           </h4>
           <ul class="second">
             <li>
+              <a href="#"></a>
+            </li>
+            <li>
               <a href="#admsapit">admsapit</a>
             </li>
             <li>
@@ -658,6 +711,9 @@ code{
             </li>
             <li>
               <a href="#sdo">sdo</a>
+            </li>
+            <li>
+              <a href="#smapit">smapit</a>
             </li>
             <li>
               <a href="#w3id">w3id</a>
