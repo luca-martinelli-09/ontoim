@@ -932,9 +932,9 @@ sdo:url rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/ontoim/WasteCategory
 :WasteCategory rdf:type owl:Class ;
                rdfs:subClassOf l0:Topic ;
+               rdfs:comment "Questa classe rappresenta la categoria di un rifiuto. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/waste-categories"@it ,
+                            "This class represents the category of waste. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/waste-categories"@en ;
                rdfs:label "Categoria di Rifiuto"@it ,
-                          "Questa classe rappresenta la categoria di un rifiuto. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/waste-categories"@it ,
-                          "This class represents the category of waste. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/waste-categories"@en ,
                           "Waste Category"@en .
 
 

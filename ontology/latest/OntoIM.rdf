@@ -1282,9 +1282,9 @@
 
     <owl:Class rdf:about="https://w3id.org/ontoim/WasteCategory">
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Topic"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta la categoria di un rifiuto. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/waste-categories</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the category of waste. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/waste-categories</rdfs:comment>
         <rdfs:label xml:lang="it">Categoria di Rifiuto</rdfs:label>
-        <rdfs:label xml:lang="it">Questa classe rappresenta la categoria di un rifiuto. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/waste-categories</rdfs:label>
-        <rdfs:label xml:lang="en">This class represents the category of waste. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/waste-categories</rdfs:label>
         <rdfs:label xml:lang="en">Waste Category</rdfs:label>
     </owl:Class>
     
