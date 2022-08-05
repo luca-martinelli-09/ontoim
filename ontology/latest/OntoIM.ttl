@@ -121,6 +121,12 @@ sdo:url rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
+###  https://w3id.org/ontoim/hasAssociationCategory
+:hasAssociationCategory rdf:type owl:ObjectProperty ;
+                        rdfs:label "ha categoria di associazione"@it ,
+                                   "has association category"@en .
+
+
 ###  https://w3id.org/ontoim/hasCivilStatusCategory
 :hasCivilStatusCategory rdf:type owl:ObjectProperty ;
                         rdfs:domain [ rdf:type owl:Class ;
@@ -131,6 +137,14 @@ sdo:url rdf:type owl:AnnotationProperty .
                         rdfs:range :CivilStatusCategory ;
                         rdfs:label "ha categoria di stato civile"@it ,
                                    "has civil status category"@en .
+
+
+###  https://w3id.org/ontoim/hasDemographicCategory
+:hasDemographicCategory rdf:type owl:ObjectProperty ;
+                        rdfs:domain :PrivateOrganization ;
+                        rdfs:range :CompanyDemographicCategory ;
+                        rdfs:label "ha categoria demografica"@it ,
+                                   "has demographic category"@en .
 
 
 ###  https://w3id.org/ontoim/hasDemographicEvent
@@ -187,12 +201,46 @@ sdo:url rdf:type owl:AnnotationProperty .
                                 "has local unit address"@en .
 
 
+###  https://w3id.org/ontoim/hasMembers
+:hasMembers rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasDemographicObservation ;
+            rdfs:domain :Association ;
+            rdfs:range :Members ;
+            rdfs:label "ha membri"@it ,
+                       "has members"@en .
+
+
+###  https://w3id.org/ontoim/hasOrganizationSection
+:hasOrganizationSection rdf:type owl:ObjectProperty ;
+                        rdfs:domain :PrivateOrganization ;
+                        rdfs:range :OrganizationSection ;
+                        rdfs:label "ha sezione registro imprese"@it ,
+                                   "has organization section"@en .
+
+
+###  https://w3id.org/ontoim/hasReferent
+:hasReferent rdf:type owl:ObjectProperty ;
+             rdfs:domain :Association ;
+             rdfs:range cpvapit:Person ;
+             rdfs:label "ha referente"@it ,
+                        "has referent"@en .
+
+
 ###  https://w3id.org/ontoim/hasSpatialDelimitation
 :hasSpatialDelimitation rdf:type owl:ObjectProperty ;
                         rdfs:domain owl:Thing ;
                         rdfs:range clvapit:SpatialObject ;
                         rdfs:label "ha delimitazione spaziale"@it ,
                                    "has spatial delimitation"@en .
+
+
+###  https://w3id.org/ontoim/hasSubscription
+:hasSubscription rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :hasDemographicEvent ;
+                 rdfs:domain :Association ;
+                 rdfs:range :Subscriber ;
+                 rdfs:label "ha iscrizione"@it ,
+                            "has subscription"@en .
 
 
 ###  https://w3id.org/ontoim/hasTouristType
@@ -247,6 +295,56 @@ sdo:url rdf:type owl:AnnotationProperty .
 #################################################################
 #    Data properties
 #################################################################
+
+###  https://w3id.org/ontoim/artisanRegisterCode
+:artisanRegisterCode rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf l0:identifier ;
+                     rdfs:domain :ArtisanOrganization ;
+                     rdfs:range rdfs:Literal ;
+                     rdfs:comment "L'identificatore dell'albo degli artigiani."@it ,
+                                  "The artisan register code identifier."@en ;
+                     rdfs:label "artisan register code"@en ,
+                                "codice albo"@it .
+
+
+###  https://w3id.org/ontoim/artisanRegistrationDate
+:artisanRegistrationDate rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf tiapit:date ;
+                         rdfs:domain :ArtisanOrganization ;
+                         rdfs:range xsd:date ;
+                         rdfs:comment "Questa proprietà rappresenta la data in cui l'impresa artigiana è stata inserita nell'albo."@it ,
+                                      "This property represents the date when an artisan organization were registered in the artisan register."@en ;
+                         rdfs:label "artisan registration date"@it ,
+                                    "data di registrazione all'albo"@it .
+
+
+###  https://w3id.org/ontoim/associationRegisterCode
+:associationRegisterCode rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf l0:identifier ;
+                         rdfs:label "association register code"@en ,
+                                    "codice associazione"@it .
+
+
+###  https://w3id.org/ontoim/associationRegistrationDate
+:associationRegistrationDate rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf tiapit:date ;
+                             rdfs:domain :Association ;
+                             rdfs:range xsd:date ;
+                             rdfs:comment "Questa proprietà rappresenta la data in cui l'associazione è stata iscritta all'albo delle associazioni."@it ,
+                                          "This property represents the date when the association were registered to the associations register."@en ;
+                             rdfs:label "association registration date"@en ,
+                                        "data di registrazione all'albo delle associazioni"@it .
+
+
+###  https://w3id.org/ontoim/associationRemovalFromRegisterDate
+:associationRemovalFromRegisterDate rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf tiapit:date ;
+                                    rdfs:domain :Association ;
+                                    rdfs:range xsd:date ;
+                                    rdfs:comment "This property represents the date when the association were removed from the associations register."@en ;
+                                    rdfs:label "association removal from register date"@en ,
+                                               "data di rimozione dall'albo delle associazioni"@it .
+
 
 ###  https://w3id.org/ontoim/bankruptcyDate
 :bankruptcyDate rdf:type owl:DatatypeProperty ;
@@ -325,9 +423,66 @@ sdo:url rdf:type owl:AnnotationProperty .
                                       "Punto di Interesse Accessibile"@it .
 
 
+###  https://w3id.org/ontoim/ArtisanOrganization
+:ArtisanOrganization rdf:type owl:Class ;
+                     rdfs:subClassOf :PrivateOrganization ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :artisanRegisterCode ;
+                                       owl:cardinality "1"^^xsd:nonNegativeInteger
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :artisanRegistrationDate ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:date
+                                     ] ;
+                     rdfs:label "Artisan Organization"@en ,
+                                "Impresa Artigiana"@it .
+
+
+###  https://w3id.org/ontoim/Association
+:Association rdf:type owl:Class ;
+             rdfs:subClassOf :PrivateOrganization ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasAssociationCategory ;
+                               owl:allValuesFrom :AssociationCategory
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasMembers ;
+                               owl:allValuesFrom :Members
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasReferent ;
+                               owl:allValuesFrom cpvapit:Person
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasSubscription ;
+                               owl:allValuesFrom :Subscriber
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :associationRegisterCode ;
+                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :associationRegistrationDate ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:date
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :associationRemovalFromRegisterDate ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:date
+                             ] ;
+             rdfs:label "Association"@en ,
+                        "Associazione"@it .
+
+
 ###  https://w3id.org/ontoim/AssociationCategory
 :AssociationCategory rdf:type owl:Class ;
-                     rdfs:subClassOf l0:Topic .
+                     rdfs:subClassOf l0:Topic ;
+                     rdfs:comment "Questa classe rappresenta la categoria di un'associazione. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/association-categories/"@it ,
+                                  "This class represents the category of an association. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/association-categories/"@en ;
+                     rdfs:label "Association Category"@en ,
+                                "Categoria dell'Associazione"@it .
 
 
 ###  https://w3id.org/ontoim/Booking
@@ -374,8 +529,8 @@ sdo:url rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/ontoim/CivilStatusCategory
 :CivilStatusCategory rdf:type owl:Class ;
                      rdfs:subClassOf l0:Topic ;
-                     rdfs:comment "Questa classe rappresenta la categoria dell'evento di stato civile. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories"@it ,
-                                  "This class represents the category of the civil status event. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories"@en ;
+                     rdfs:comment "Questa classe rappresenta la categoria dell'evento di stato civile. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"@it ,
+                                  "This class represents the category of the civil status event. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"@en ;
                      rdfs:label "Categoria di Stato Civile"@it ,
                                 "Civil Status Category"@en .
 
@@ -396,7 +551,11 @@ sdo:url rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/ontoim/CompanyDemographicCategory
 :CompanyDemographicCategory rdf:type owl:Class ;
-                            rdfs:subClassOf l0:Topic .
+                            rdfs:subClassOf l0:Topic ;
+                            rdfs:comment "Questa classe rappresenta la categoria demografica di un'impresa. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/"@it ,
+                                         "This class represents the demographic category of the company. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/"@en ;
+                            rdfs:label "Categoria Demogragica dell'Impresa"@it ,
+                                       "Company Demographic Category"@en .
 
 
 ###  https://w3id.org/ontoim/DemographicEvent
@@ -498,18 +657,34 @@ sdo:url rdf:type owl:AnnotationProperty .
                                 owl:onProperty :liquidationDate ;
                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onDataRange xsd:date
-                              ] .
+                              ] ;
+              rdfs:label "Organization"@en ,
+                         "Organizzazione"@it .
 
 
 ###  https://w3id.org/ontoim/OrganizationSection
 :OrganizationSection rdf:type owl:Class ;
-                     rdfs:subClassOf l0:Topic .
+                     rdfs:subClassOf l0:Topic ;
+                     rdfs:comment "Questa classe rappresenta le sezione nel registro delle imprese dell'azienda. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/organization-sections/"@it ,
+                                  "This class represents the sections in the business register of the company. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/organization-sections/"@en ;
+                     rdfs:label "Organization Section"@en ,
+                                "Sezione Impresa"@it .
 
 
 ###  https://w3id.org/ontoim/PrivateOrganization
 :PrivateOrganization rdf:type owl:Class ;
                      rdfs:subClassOf covapit:PrivateOrganization ,
-                                     :Organization .
+                                     :Organization ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasDemographicCategory ;
+                                       owl:allValuesFrom :CompanyDemographicCategory
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasOrganizationSection ;
+                                       owl:allValuesFrom :OrganizationSection
+                                     ] ;
+                     rdfs:label "Impresa"@it ,
+                                "Private Organization"@en .
 
 
 ###  https://w3id.org/ontoim/Subscriber

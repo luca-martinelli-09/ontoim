@@ -213,21 +213,22 @@ package "Organizations" {
 
     class ArtisanOrganization #OrganizationNode {
         artisanRegisterCode^^l0:identifier
-        artisanRegisterDate^^xsd:date
+        artisanRegistrationDate^^xsd:date
     }
     ArtisanOrganization -[#OrganizationProperty]-> PrivateOrganization : rdfs:subclassOf
 
     ' Associations are sublclass of organizations, with referent, association category (controlled vocabulary) and members observation
     class Association #OrganizationNode {
-        registerID^^l0:identifier
-        registeredDate^^xsd:date
-        removedFromRegisterDate^^xsd:date
+        associationRegisterCode^^l0:identifier
+        associationRegistrationDate^^xsd:date
+        associationRemovalFromRegisterDate^^xsd:date
     }
     Association -[#OrganizationProperty]-> PrivateOrganization : rdfs:subclassOf
 
     Association -[#OntoPiAProperty]-> Person : hasReferent
     Association -[#OrganizationProperty]-> AssociationCategory : hasAssociationCategory
     Association -[#DemographicObservationProperty]-> Members : hasMembers
+    Association -[#DemographicEventProperty]-> Subscriber : hasSubscriber
 
     class AssociationCategory #OrganizationNode
     AssociationCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
