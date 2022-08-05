@@ -792,10 +792,10 @@ sdo:url rdf:type owl:AnnotationProperty .
                                 owl:onProperty :subordinate ;
                                 owl:cardinality "1"^^xsd:nonNegativeInteger
                               ] ;
-              rdfs:label "Land Registry"@en ,
-                         "Questa classe rappresenta un oggetto che descrive i dati catastali di un edificio."@it ,
-                         "Registro Catastale"@it ,
-                         "This class represents an object that describes the cadastral data of a building."@en .
+              rdfs:comment "Questa classe rappresenta un oggetto che descrive i dati catastali di un edificio."@it ,
+                           "This class represents an object that describes the cadastral data of a building."@en ;
+              rdfs:label "Catasto"@it ,
+                         "Land Registry"@en .
 
 
 ###  https://w3id.org/ontoim/LandRegistryCategory

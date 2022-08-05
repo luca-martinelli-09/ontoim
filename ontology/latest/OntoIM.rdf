@@ -1088,10 +1088,10 @@
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta un oggetto che descrive i dati catastali di un edificio.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents an object that describes the cadastral data of a building.</rdfs:comment>
+        <rdfs:label xml:lang="it">Catasto</rdfs:label>
         <rdfs:label xml:lang="en">Land Registry</rdfs:label>
-        <rdfs:label xml:lang="it">Questa classe rappresenta un oggetto che descrive i dati catastali di un edificio.</rdfs:label>
-        <rdfs:label xml:lang="it">Registro Catastale</rdfs:label>
-        <rdfs:label xml:lang="en">This class represents an object that describes the cadastral data of a building.</rdfs:label>
     </owl:Class>
     
 
