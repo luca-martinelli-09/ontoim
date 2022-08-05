@@ -121,10 +121,26 @@ sdo:url rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
+###  https://w3id.org/ontoim/concessedWithProperty
+:concessedWithProperty rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Building ;
+                       rdfs:range pcapit:Procedure ;
+                       rdfs:label "concessed with procedure"@en ,
+                                  "concesso con la procedura"@it .
+
+
 ###  https://w3id.org/ontoim/hasAssociationCategory
 :hasAssociationCategory rdf:type owl:ObjectProperty ;
                         rdfs:label "ha categoria di associazione"@it ,
                                    "has association category"@en .
+
+
+###  https://w3id.org/ontoim/hasBuilding
+:hasBuilding rdf:type owl:ObjectProperty ;
+             rdfs:domain :Heritage ;
+             rdfs:range :Building ;
+             rdfs:label "ha edificio"@it ,
+                        "has building"@en .
 
 
 ###  https://w3id.org/ontoim/hasCivilStatusCategory
@@ -149,7 +165,6 @@ sdo:url rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/ontoim/hasDemographicEvent
 :hasDemographicEvent rdf:type owl:ObjectProperty ;
-                     owl:inverseOf :isDemographicEventFor ;
                      rdfs:domain owl:Thing ;
                      rdfs:range :DemographicEvent ;
                      rdfs:label "ha evento demografico"@it ,
@@ -158,7 +173,6 @@ sdo:url rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/ontoim/hasDemographicObservation
 :hasDemographicObservation rdf:type owl:ObjectProperty ;
-                           owl:inverseOf :isDemographicObservationFor ;
                            rdfs:domain owl:Thing ;
                            rdfs:range :DemographicObservation ;
                            rdfs:label "ha osservazione demografica"@it ,
@@ -188,6 +202,39 @@ sdo:url rdf:type owl:AnnotationProperty .
               rdfs:range :Employees ;
               rdfs:label "ha dipendenti"@it ,
                          "has employees"@en .
+
+
+###  https://w3id.org/ontoim/hasHeritage
+:hasHeritage rdf:type owl:ObjectProperty ;
+             rdfs:domain l0:Agent ;
+             rdfs:range :Heritage ;
+             rdfs:label "ha patrimonio"@it ,
+                        "has heritage"@en .
+
+
+###  https://w3id.org/ontoim/hasHeritageType
+:hasHeritageType rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Heritage ;
+                 rdfs:range :HeritageType ;
+                 rdfs:label "ha tipologia di patrimonio"@it ,
+                            "has heritage type"@en .
+
+
+###  https://w3id.org/ontoim/hasLandRegistry
+:hasLandRegistry rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Building ;
+                 rdfs:range :LandRegistry ;
+                 rdfs:label "ha registro catastale"@it ,
+                            "has land registry"@en .
+
+
+###  https://w3id.org/ontoim/hasLandRegistryCategory
+:hasLandRegistryCategory rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain :LandRegistry ;
+                         rdfs:range :LandRegistryCategory ;
+                         rdfs:label "ha categoria catastale"@it ,
+                                    "has land registry category"@en .
 
 
 ###  https://w3id.org/ontoim/hasLocalUnitAddress
@@ -234,6 +281,15 @@ sdo:url rdf:type owl:AnnotationProperty .
                                    "has spatial delimitation"@en .
 
 
+###  https://w3id.org/ontoim/hasSubscribers
+:hasSubscribers rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :hasDemographicObservation ;
+                rdfs:domain cpevapit:Event ;
+                rdfs:range :Subscribers ;
+                rdfs:label "ha iscritti"@it ,
+                           "has subscribers"@en .
+
+
 ###  https://w3id.org/ontoim/hasSubscription
 :hasSubscription rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :hasDemographicEvent ;
@@ -251,37 +307,20 @@ sdo:url rdf:type owl:AnnotationProperty .
                            "has tourist type"@en .
 
 
-###  https://w3id.org/ontoim/isDemographicEventFor
-:isDemographicEventFor rdf:type owl:ObjectProperty ;
-                       rdfs:domain :DemographicEvent ;
-                       rdfs:range owl:Thing ;
-                       rdfs:label "is demographic event for"@en ,
-                                  "è evento demografico per"@it .
-
-
-###  https://w3id.org/ontoim/isDemographicObservationFor
-:isDemographicObservationFor rdf:type owl:ObjectProperty ;
-                             rdfs:domain :DemographicObservation ;
-                             rdfs:range owl:Thing ;
-                             rdfs:label "is demographic observation for"@en ,
-                                        "è osservazione demografica per"@it .
+###  https://w3id.org/ontoim/isOrganizedBy
+:isOrganizedBy rdf:type owl:ObjectProperty ;
+               rdfs:domain cpevapit:Event ;
+               rdfs:range l0:Agent ;
+               rdfs:label "is organized by"@en ,
+                          "è organizzato da"@en .
 
 
 ###  https://w3id.org/ontoim/ownedBy
 :ownedBy rdf:type owl:ObjectProperty ;
-         owl:inverseOf :ownsAccessiblePoI ;
          rdfs:domain :AccessiblePointOfInterest ;
          rdfs:range covapit:Organization ;
          rdfs:label "owned by"@en ,
                     "posseduto da"@it .
-
-
-###  https://w3id.org/ontoim/ownsAccessiblePoI
-:ownsAccessiblePoI rdf:type owl:ObjectProperty ;
-                   rdfs:domain covapit:Organization ;
-                   rdfs:range :AccessiblePointOfInterest ;
-                   rdfs:label "owns accessible point of interest"@en ,
-                              "possiede un punto di interesse accessibile"@it .
 
 
 ###  https://w3id.org/ontoim/providesService
@@ -357,6 +396,15 @@ sdo:url rdf:type owl:AnnotationProperty .
                            "data di bancarotta"@it .
 
 
+###  https://w3id.org/ontoim/buildingCode
+:buildingCode rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf l0:identifier ;
+              rdfs:domain :Building ;
+              rdfs:range rdfs:Literal ;
+              rdfs:label "building code"@en ,
+                         "codice dell'edificio"@it .
+
+
 ###  https://w3id.org/ontoim/endActivityDate
 :endActivityDate rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf tiapit:date ;
@@ -377,6 +425,30 @@ sdo:url rdf:type owl:AnnotationProperty .
                               "This property represents the date on which an organization is liquidated."@en ;
                  rdfs:label "data di liquidazione"@it ,
                             "liquidation date"@en .
+
+
+###  https://w3id.org/ontoim/map
+:map rdf:type owl:DatatypeProperty ;
+     rdfs:domain :LandRegistry ;
+     rdfs:range rdfs:Literal ;
+     rdfs:label "map"@en ,
+                "mappale"@it .
+
+
+###  https://w3id.org/ontoim/sheet
+:sheet rdf:type owl:DatatypeProperty ;
+       rdfs:domain :LandRegistry ;
+       rdfs:range rdfs:Literal ;
+       rdfs:label "foglio"@it ,
+                  "sheet"@en .
+
+
+###  https://w3id.org/ontoim/subordinate
+:subordinate rdf:type owl:DatatypeProperty ;
+             rdfs:domain :LandRegistry ;
+             rdfs:range rdfs:Literal ;
+             rdfs:label "subalterno"@it ,
+                        "subordinate"@en .
 
 
 ###  https://w3id.org/ontoim/value
@@ -503,6 +575,28 @@ sdo:url rdf:type owl:AnnotationProperty .
                      "Prenotazioni"@it .
 
 
+###  https://w3id.org/ontoim/Building
+:Building rdf:type owl:Class ;
+          rdfs:subClassOf :AccessiblePointOfInterest ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :concessedWithProperty ;
+                            owl:allValuesFrom pcapit:Procedure
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasLandRegistry ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :LandRegistry
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :buildingCode ;
+                            owl:cardinality "1"^^xsd:nonNegativeInteger
+                          ] ;
+          rdfs:comment "Questa classe rappresenta un punto di interesse accessibile, che è un edificio con i suoi dati catastali."@it ,
+                       "This class represents an accessible point of interest, which is a building with its cadastral data."@en ;
+          rdfs:label "Building"@en ,
+                     "Edificio"@it .
+
+
 ###  https://w3id.org/ontoim/Citizens
 :Citizens rdf:type owl:Class ;
           rdfs:subClassOf :DemographicObservation ;
@@ -624,6 +718,87 @@ sdo:url rdf:type owl:AnnotationProperty .
                       "Employees"@en .
 
 
+###  https://w3id.org/ontoim/Event
+:Event rdf:type owl:Class ;
+       rdfs:subClassOf cpevapit:Event ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasSubscribers ;
+                         owl:allValuesFrom :Subscribers
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasSubscription ;
+                         owl:allValuesFrom :Subscriber
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :isOrganizedBy ;
+                         owl:allValuesFrom covapit:Organization
+                       ] ;
+       rdfs:label "Event"@en ,
+                  "Evento"@it .
+
+
+###  https://w3id.org/ontoim/Heritage
+:Heritage rdf:type owl:Class ;
+          rdfs:subClassOf l0:Collection ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasBuilding ;
+                            owl:allValuesFrom :Building
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasHeritageType ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :HeritageType
+                          ] ;
+          rdfs:comment "Questa classe rappresenta il patrimonio immobiliare di un'organizzazione."@it ,
+                       "This class represents the real estate assets of an organization."@en ;
+          rdfs:label "Heritage"@en ,
+                     "Patrimonio"@it .
+
+
+###  https://w3id.org/ontoim/HeritageType
+:HeritageType rdf:type owl:Class ;
+              rdfs:subClassOf l0:Topic ;
+              rdfs:label "Heritage Type"@en ,
+                         "Questa classe rappresenta la tipologia di patrimonio. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/heritage-types/"@it ,
+                         "This class represents the type of an heritage. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/heritage-types/"@en ,
+                         "Tipologia di Patrimonio"@it .
+
+
+###  https://w3id.org/ontoim/LandRegistry
+:LandRegistry rdf:type owl:Class ;
+              rdfs:subClassOf l0:Object ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasLandRegistryCategory ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :LandRegistryCategory
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :map ;
+                                owl:cardinality "1"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :sheet ;
+                                owl:cardinality "1"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :subordinate ;
+                                owl:cardinality "1"^^xsd:nonNegativeInteger
+                              ] ;
+              rdfs:label "Land Registry"@en ,
+                         "Questa classe rappresenta un oggetto che descrive i dati catastali di un edificio."@it ,
+                         "Registro Catastale"@it ,
+                         "This class represents an object that describes the cadastral data of a building."@en .
+
+
+###  https://w3id.org/ontoim/LandRegistryCategory
+:LandRegistryCategory rdf:type owl:Class ;
+                      rdfs:subClassOf l0:Topic ;
+                      rdfs:comment "Questa classe rappresenta la categoria catastale di un edificio. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/"@it ,
+                                   "This class represents the category of a land registry. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/"@en ;
+                      rdfs:label "Categoria Catastale"@it ,
+                                 "Land Registry Category"@en .
+
+
 ###  https://w3id.org/ontoim/Members
 :Members rdf:type owl:Class ;
          rdfs:subClassOf :DemographicObservation ;
@@ -639,6 +814,10 @@ sdo:url rdf:type owl:AnnotationProperty .
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty :hasEmployees ;
                                 owl:allValuesFrom :Employees
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasHeritage ;
+                                owl:allValuesFrom :Heritage
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty :hasLocalUnitAddress ;
@@ -685,6 +864,16 @@ sdo:url rdf:type owl:AnnotationProperty .
                                      ] ;
                      rdfs:label "Impresa"@it ,
                                 "Private Organization"@en .
+
+
+###  https://w3id.org/ontoim/PublicEvent
+:PublicEvent rdf:type owl:Class ;
+             rdfs:subClassOf cpevapit:PublicEvent ,
+                             :Event ;
+             rdfs:comment "Questa classe rappresenta un evento pubblico (e.g., una partita di calcio, una mostra, la presentazione di un libro, una fiera, ecc.). Un evento che si tiene in un determinato luogo e che accade a un certo tempo, organizzato/gestito da uno o più agenti con uno specifico fine e nell’interesse di un pubblico generale. Esistono diversi tipi di eventi pubblici in base alla loro dimensione e in base al loro contenuto"@it ,
+                          "This class represents a public event (e.g., a football match, a  conference, a book presentation, etc.). A public event is defined as an event that takes places in a given place and that occurs at a certain time, organised/run/promoted by one or more agents with a specific purpose and in the interest of a general public. There exist different types of public events depending on their size and content."@en ;
+             rdfs:label "Evento Pubblico"@it ,
+                        "Public Event"@en .
 
 
 ###  https://w3id.org/ontoim/Subscriber

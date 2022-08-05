@@ -121,7 +121,6 @@ package "Demographic Observation" {
     DemographicObservation -[#OntoPiAProperty]-> SpatialObject : hasSpatialDelimitation
     DemographicObservation -[#OntoPiAProperty]-> Person : hasDemographicReference
     DemographicObservation -[#OntoPiAProperty]-> Family : hasDemographicReference
-    DemographicObservation -[#OntoPiAProperty]-> Thing : isDemographicObservationFor
 
     class Citizens #DemographicObservationNode
     Citizens -[#DemographicObservationProperty]-> DemographicObservation : rdfs:subclassOf
@@ -166,7 +165,6 @@ package "Demographic Event" {
 
     DemographicEvent -[#OntoPiAProperty]-> Person : hasDemographicReference
     DemographicEvent -[#OntoPiAProperty]-> SpatialObject : hasSpatialDelimitation
-    DemographicEvent -[#OntoPiAProperty]-> Thing : isDemographicEventFor
 
     class CivilStatusEvent #DemographicEventNode
     CivilStatusEvent -[#DemographicEventProperty]-> DemographicEvent : rdfs:subclassOf
@@ -197,7 +195,6 @@ package "Organizations" {
     Organization --> Heritage : hasHeritage
 
     AccessiblePointOfInterest -[#OrganizationProperty]-> Organization : ownedBy
-    Organization -[#OrganizationProperty]-> AccessiblePointOfInterest : ownsAccessiblePoI
 
     class PrivateOrganization <<cov>> #OrganizationNode
     PrivateOrganization -[#OrganizationProperty]-> Organization : rdfs:subclassOf
@@ -253,9 +250,9 @@ package "Organizations" {
     Building -[#HeritageProperty]-> LandRegistry : hasLandRegistry
 
     class LandRegistry #HeritageNode {
-        sheet^^xsd:literal
-        map^^xsd:literal
-        subordinate^^xsd:literal
+        sheet^^rdfs:literal
+        map^^rdfs:literal
+        subordinate^^rdfs:literal
     }
     LandRegistry -[#OntoPiAProperty]-> Object : rdfs:subclassOf
 
@@ -263,12 +260,10 @@ package "Organizations" {
 
     class LandRegistryCategory #HeritageNode
     LandRegistryCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
-
-    ' Events, added the organizer of the event and the subscribers
-    class Event <<cpev>> #OntoPiANodeEdited
-
 }
 
+' Events, added the organizer of the event and the subscribers
+class Event <<cpev>> #OntoPiANodeEdited
 Event -[#OrganizationProperty]-> Organization : isOrganizedBy
 Event -[#DemographicObservationProperty]-> Subscribers : hasSubscribers
 Event -[#DemographicEventProperty]-> Subscriber : hasSubscription
@@ -373,9 +368,9 @@ package "Road and Traffic" {
     class Vehicle #VehicleNode {
         licensePlate^^l0:identifier
         registrationYear^^xsd:gYear
-        brand^^xsd:literal
-        model^^xsd:literal
-        color^^xsd:literal
+        brand^^rdfs:literal
+        model^^rdfs:literal
+        color^^rdfs:literal
     }
     Vehicle -[#OntoPiAProperty]-> Object : rdfs:subclassOf
 
@@ -388,7 +383,7 @@ package "Road and Traffic" {
 
     ' The road signals are point of interests with a signal value (e.g. 50 for a speed limit or the name of the destination indicated)
     class RoadSignal #RoadSignalNode {
-        signalValue^^xsd:literal
+        signalValue^^rdfs:literal
         lastMaintenanceDate^^xsd:date
     }
     RoadSignal -[#OntoPiAProperty]-> PointOfInterest : rdfs:subclassOf
@@ -425,7 +420,7 @@ package "School" {
     class School #SchoolNode {
         schoolCode^^l0:identifier
     }
-    School -[#AccessiblePoIProperty]-> AccessiblePointOfInterest : rdfs:subclassOf
+    School -[#AccessiblePoIProperty]-> Building : rdfs:subclassOf
 
     School -[#SchoolProperty]-> SchoolCategory : hasSchoolCategory
     School -[#SchoolProperty]-> Course : offersCourse
@@ -490,18 +485,24 @@ package "School" {
 }
 
 package "Green Zone" {
+    ' A green zone is an accessible point of interest that can also contains plants and can has an area
+    class GreenZone #GreenZoneNode
+    GreenZone -[#AccessiblePoIProperty]-> AccessiblePointOfInterest : rdfs:subclassOf
+
+    GreenZone -[#OntoPiAProperty]-> Value : hasMeasurement
+    GreenZone -[#GreenZoneProperty]-> Plant : hasPlant
+
     ' A plant, with the species, the common name, the born year, planted date and its status in time. The status is described as the plant health, the height and the circumference
     class Plant #GreenZoneNode {
         plantCode^^l0:identifier
-        commonName^^xsd:literal
-        species^^xsd:literal
+        commonName^^rdfs:literal
+        species^^rdfs:literal
         plantingDate^^xsd:datetime
         bornYear^^xsd:gYear
     }
     Plant -[#OntoPiAProperty]-> PointOfInterest : rdfs:subclassOf
 
     Plant -[#GreenZoneProperty]-> PlantStatusInTime : hasStatusInTime
-    Plant -[#GreenZoneProperty]-> GreenZone : isSituatedIn
 
     class PlantStatusInTime #GreenZoneNode
     PlantStatusInTime -[#OntoPiAProperty]-> EventOrSituation : rdfs:subclassOf
@@ -517,13 +518,6 @@ package "Green Zone" {
         Stump
         Dead
     }
-
-    ' A green zone is an accessible point of interest that can also contains plants and can has an area
-    class GreenZone #GreenZoneNode
-    GreenZone -[#AccessiblePoIProperty]-> AccessiblePointOfInterest : rdfs:subclassOf
-
-    GreenZone -[#OntoPiAProperty]-> Value : hasMeasurement
-    GreenZone -[#GreenZoneProperty]-> Plant : hasPlant
 }
 
 package "Hospital" {
@@ -531,7 +525,7 @@ package "Hospital" {
     class Hospital #HospitalNode {
         totalNumberOfBeds^^xsd:int
     }
-    Hospital -[#AccessiblePoIProperty]-> AccessiblePointOfInterest : rdfs:subclassOf
+    Hospital -[#AccessiblePoIProperty]-> Building : rdfs:subclassOf
 
     Hospital -[#HospitalProperty]-> HospitalDepartment : hasHospitalDepartment
 
@@ -543,7 +537,5 @@ package "Hospital" {
 
     class HospitalDepartment #HospitalNode
     HospitalDepartment -[#HospitalProperty]-> Hospital : rdfs:subclassOf
-
-    HospitalDepartment -[#HospitalProperty]-> Hospital : isDepartmentOf
 }
 @enduml
