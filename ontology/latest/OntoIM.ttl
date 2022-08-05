@@ -123,25 +123,41 @@ sdo:url rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/ontoim/hasCivilStatusCategory
 :hasCivilStatusCategory rdf:type owl:ObjectProperty ;
-                        rdfs:domain :CivilStatus ;
+                        rdfs:domain [ rdf:type owl:Class ;
+                                      owl:unionOf ( :CivilStatus
+                                                    :CivilStatusEvent
+                                                  )
+                                    ] ;
                         rdfs:range :CivilStatusCategory ;
                         rdfs:label "ha categoria di stato civile"@it ,
                                    "has civil status category"@en .
+
+
+###  https://w3id.org/ontoim/hasDemographicEvent
+:hasDemographicEvent rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :isDemographicEventFor ;
+                     rdfs:domain owl:Thing ;
+                     rdfs:range :DemographicEvent ;
+                     rdfs:label "ha evento demografico"@it ,
+                                "has demographic event"@en .
 
 
 ###  https://w3id.org/ontoim/hasDemographicObservation
 :hasDemographicObservation rdf:type owl:ObjectProperty ;
                            owl:inverseOf :isDemographicObservationFor ;
                            rdfs:domain owl:Thing ;
-                           rdfs:range owl:Thing ,
-                                      :DemographicObservation ;
+                           rdfs:range :DemographicObservation ;
                            rdfs:label "ha osservazione demografica"@it ,
                                       "has demographic observation"@en .
 
 
 ###  https://w3id.org/ontoim/hasDemographicReference
 :hasDemographicReference rdf:type owl:ObjectProperty ;
-                         rdfs:domain :DemographicObservation ;
+                         rdfs:domain [ rdf:type owl:Class ;
+                                       owl:unionOf ( :DemographicEvent
+                                                     :DemographicObservation
+                                                   )
+                                     ] ;
                          rdfs:range [ rdf:type owl:Class ;
                                       owl:unionOf ( cpvapit:Family
                                                     cpvapit:Person
@@ -149,6 +165,26 @@ sdo:url rdf:type owl:AnnotationProperty .
                                     ] ;
                          rdfs:label "ha riferimento demografico"@it ,
                                     "has demographic reference"@en .
+
+
+###  https://w3id.org/ontoim/hasEmployees
+:hasEmployees rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasDemographicObservation ;
+              rdfs:domain covapit:Organization ;
+              rdfs:range :Employees ;
+              rdfs:label "ha dipendenti"@it ,
+                         "has employees"@en .
+
+
+###  https://w3id.org/ontoim/hasLocalUnitAddress
+:hasLocalUnitAddress rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf clvapit:hasAddress ;
+                     rdfs:domain covapit:Organization ;
+                     rdfs:range clvapit:Address ;
+                     rdfs:comment "Questa proprietà rappresenta l'indirizzo di un'unità locale o sede staccata di un'organizzazione."@it ,
+                                  "This property represents the address of a local unit or branch office of an organization."@en ;
+                     rdfs:label "ha indirizzo dell'unità locale"@it ,
+                                "has local unit address"@en .
 
 
 ###  https://w3id.org/ontoim/hasSpatialDelimitation
@@ -165,6 +201,14 @@ sdo:url rdf:type owl:AnnotationProperty .
                 rdfs:range :TouristType ;
                 rdfs:label "ha tipo di turista"@it ,
                            "has tourist type"@en .
+
+
+###  https://w3id.org/ontoim/isDemographicEventFor
+:isDemographicEventFor rdf:type owl:ObjectProperty ;
+                       rdfs:domain :DemographicEvent ;
+                       rdfs:range owl:Thing ;
+                       rdfs:label "is demographic event for"@en ,
+                                  "è evento demografico per"@it .
 
 
 ###  https://w3id.org/ontoim/isDemographicObservationFor
@@ -192,9 +236,48 @@ sdo:url rdf:type owl:AnnotationProperty .
                               "possiede un punto di interesse accessibile"@it .
 
 
+###  https://w3id.org/ontoim/providesService
+:providesService rdf:type owl:ObjectProperty ;
+                 rdfs:domain covapit:Organization ;
+                 rdfs:range cpsvapit:Service ;
+                 rdfs:label "offre un servizio"@it ,
+                            "provides service"@en .
+
+
 #################################################################
 #    Data properties
 #################################################################
+
+###  https://w3id.org/ontoim/bankruptcyDate
+:bankruptcyDate rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf tiapit:date ;
+                rdfs:domain covapit:Organization ;
+                rdfs:range xsd:date ;
+                rdfs:comment "Questa proprietà rappresenta la data in cui un'organizzazione va in bancarotta."@it ,
+                             "This property represents the date on which an organization goes bankrupt."@en ;
+                rdfs:label "bankruptcy date"@en ,
+                           "data di bancarotta"@it .
+
+
+###  https://w3id.org/ontoim/endActivityDate
+:endActivityDate rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf tiapit:date ;
+                 rdfs:domain covapit:Organization ;
+                 rdfs:range xsd:date ;
+                 rdfs:comment "Questa proprietà rappresenta la data in cui un'organizzazione chiude."@it ,
+                              "This property represents the date on which an organization closes."@en ;
+                 rdfs:label "data di fine attività"@it ,
+                            "end activity date"@en .
+
+
+###  https://w3id.org/ontoim/liquidationDate
+:liquidationDate rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf tiapit:date ;
+                 rdfs:comment "Questa proprietà rappresenta la data in cui un'organizzazione viene liquidata."@it ,
+                              "This property represents the date on which an organization is liquidated."@en ;
+                 rdfs:label "data di liquidazione"@it ,
+                            "liquidation date"@en .
+
 
 ###  https://w3id.org/ontoim/value
 :value rdf:type owl:DatatypeProperty ;
@@ -208,6 +291,36 @@ sdo:url rdf:type owl:AnnotationProperty .
 #################################################################
 #    Classes
 #################################################################
+
+###  https://w3id.org/italia/onto/COV/Organization
+covapit:Organization rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasEmployees ;
+                                       owl:allValuesFrom :Employees
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasLocalUnitAddress ;
+                                       owl:allValuesFrom clvapit:Address
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :providesService ;
+                                       owl:allValuesFrom cpsvapit:Service
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :bankruptcyDate ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:date
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :endActivityDate ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:date
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :liquidationDate ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:date
+                                     ] .
+
 
 ###  https://w3id.org/ontoim/AccessiblePointOfInterest
 :AccessiblePointOfInterest rdf:type owl:Class ;
@@ -238,6 +351,20 @@ sdo:url rdf:type owl:AnnotationProperty .
                                         "Un Punto di Interesse Accessibile è un Punto di Interesse, solitamente un edificio, un centro commerciale, una farmacia ecc.... Eredita le proprietà del Punto di Interesse di OntoPiA, ma possiede anche un punto di contatto online o fisico, una o più condizioni di acceso, può avere dei servizi generici e ha un possessore (Organizzazione)."@it ;
                            rdfs:label "Accessible Point of Interest"@en ,
                                       "Punto di Interesse Accessibile"@it .
+
+
+###  https://w3id.org/ontoim/AssociationCategory
+:AssociationCategory rdf:type owl:Class ;
+                     rdfs:subClassOf l0:Topic .
+
+
+###  https://w3id.org/ontoim/Booking
+:Booking rdf:type owl:Class ;
+         rdfs:subClassOf :DemographicEvent ;
+         rdfs:comment "Questa classe rappresenta un evento demografico di prenotazioni in una struttura ricettiva."@it ,
+                      "This class represents a demographic event of bookins to an accommodation facility."@en ;
+         rdfs:label "Booking"@en ,
+                    "Prenotazione"@it .
 
 
 ###  https://w3id.org/ontoim/Bookings
@@ -279,6 +406,49 @@ sdo:url rdf:type owl:AnnotationProperty .
                                   "This class represents the category of the civil status event. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories"@en ;
                      rdfs:label "Categoria di Stato Civile"@it ,
                                 "Civil Status Category"@en .
+
+
+###  https://w3id.org/ontoim/CivilStatusEvent
+:CivilStatusEvent rdf:type owl:Class ;
+                  rdfs:subClassOf :DemographicEvent ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasCivilStatusCategory ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :CivilStatusCategory
+                                  ] ;
+                  rdfs:comment "Questa classe rappresenta un evento di stato civile, come una nascita, un decesso, un matrimonio ecc..."@it ,
+                               "This class represents a civil status event, like a birth, a death, a marriage etc..."@en ;
+                  rdfs:label "Civil Status Event"@en ,
+                             "Evento di Stato Civile"@it .
+
+
+###  https://w3id.org/ontoim/CompanyDemographicCategory
+:CompanyDemographicCategory rdf:type owl:Class ;
+                            rdfs:subClassOf l0:Topic .
+
+
+###  https://w3id.org/ontoim/DemographicEvent
+:DemographicEvent rdf:type owl:Class ;
+                  rdfs:subClassOf l0:EventOrSituation ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasDemographicReference ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass cpvapit:Person
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasSpatialDelimitation ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass clvapit:SpatialObject
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty tiapit:date ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange xsd:dateTime
+                                  ] ;
+                  rdfs:comment "Questa classe rappresenta una versione non aggregata delle osservazioni demografiche, dove gli eventi di stato civile, le prenotazioni, le iscrizioni sono separate. Ogni evento demografico rappresenta un evento (es: nascita, matrimonio) in un certo istante e in una delimitazione spaziale."@it ,
+                               "This class represents a non-aggregated version of the demographic observations, where the civil status events, the bookings or subscriptions are separated. Each demographic event represents a single event (e.g. a birth, a marriage) at a certain time and in a spatial delimitation."@en ;
+                  rdfs:label "Demographic Event"@en ,
+                             "Evento Demografico"@it .
 
 
 ###  https://w3id.org/ontoim/DemographicObservation
@@ -330,6 +500,20 @@ sdo:url rdf:type owl:AnnotationProperty .
                       "This class represents a demographic observation on the members of an association."@en ;
          rdfs:label "Members"@en ,
                     "Membri"@it .
+
+
+###  https://w3id.org/ontoim/OrganizationSection
+:OrganizationSection rdf:type owl:Class ;
+                     rdfs:subClassOf l0:Topic .
+
+
+###  https://w3id.org/ontoim/Subscriber
+:Subscriber rdf:type owl:Class ;
+            rdfs:subClassOf :DemographicEvent ;
+            rdfs:comment "Questa classe rappresenta un evento demografico di iscritti a un evento, una scuola o un corso."@it ,
+                         "This class represents a demographic event of subscribers to an event, a school or a course."@en ;
+            rdfs:label "Iscritto"@it ,
+                       "Subscriber"@en .
 
 
 ###  https://w3id.org/ontoim/Subscribers

@@ -160,7 +160,7 @@ package "Demographic Observation" {
 package "Demographic Event" {
     ' A demo event represents a wedding, a death, a birth, offering a non aggregated view of a demo observation
     class DemographicEvent #DemographicEventNode {
-        ti:atTime
+        ti:date
     }
     DemographicEvent -[#OntoPiAProperty]-> EventOrSituation : rdfs:subclassOf
 
@@ -290,7 +290,7 @@ package "Waste Production" {
 package "Road and Traffic" {
     ' Road accidents
     class RoadAccident #RoadAccidentNode {
-        ti:atTime
+        ti:date
     }
     RoadAccident -[#OntoPiAProperty]-> EventOrSituation : rdfs:subclassOf
 
