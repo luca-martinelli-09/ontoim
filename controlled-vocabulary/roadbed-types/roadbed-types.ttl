@@ -9,7 +9,7 @@
     rdfs:label "Dry"@en,
         "Asciutto"@it ;
     dct:identifier 1 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/roadbed-types> ;
     skos:prefLabel "Dry"@en,
         "Asciutto"@it .
 
@@ -18,7 +18,7 @@
     rdfs:label "Wet"@en,
         "Bagnato"@it ;
     dct:identifier 2 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/roadbed-types> ;
     skos:prefLabel "Wet"@en,
         "Bagnato"@it .
 
@@ -27,7 +27,7 @@
     rdfs:label "Slippery"@en,
         "Sdrucciolevole"@it ;
     dct:identifier 3 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/roadbed-types> ;
     skos:prefLabel "Slippery"@en,
         "Sdrucciolevole"@it .
 
@@ -36,7 +36,7 @@
     rdfs:label "Frozen"@en,
         "Ghiacciato"@it ;
     dct:identifier 4 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/roadbed-types> ;
     skos:prefLabel "Frozen"@en,
         "Ghiacciato"@it .
 
@@ -45,11 +45,11 @@
     rdfs:label "Snowy"@en,
         "Innevato"@it ;
     dct:identifier 5 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/roadbed-types> ;
     skos:prefLabel "Snowy"@en,
         "Innevato"@it .
 
-<https://w3id.org/ontoim/controlled-vocabulary/roadbed-types/> a skos:ConceptScheme ;
+<https://w3id.org/ontoim/controlled-vocabulary/roadbed-types> a skos:ConceptScheme ;
     rdfs:label "Roadbed type"@en,
         "Tipo di fondo stradale"@it ;
     dct:creator <https://w3id.org/people/lucamartinelli> ;

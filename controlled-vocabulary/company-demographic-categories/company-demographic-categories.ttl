@@ -9,7 +9,7 @@
     rdfs:label "Female enterprise"@en,
         "Impresa femminile"@it ;
     dct:identifier 1 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories> ;
     skos:prefLabel "Female enterprise"@en,
         "Impresa femminile"@it .
 
@@ -18,7 +18,7 @@
     rdfs:label "Youth enterprise"@en,
         "Impresa giovanile"@it ;
     dct:identifier 2 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories> ;
     skos:prefLabel "Youth enterprise"@en,
         "Impresa giovanile"@it .
 
@@ -28,7 +28,7 @@
         "Impresa straniera comunitaria"@it ;
     dct:identifier 3.1e+00 ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/3> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories> ;
     skos:prefLabel "EU foreign enterprise"@en,
         "Impresa straniera comunitaria"@it .
 
@@ -38,7 +38,7 @@
         "Impresa straniera extracomunitaria"@it ;
     dct:identifier 3.2e+00 ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/3> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories> ;
     skos:prefLabel "Non-EU foreign enterprise"@en,
         "Impresa straniera extracomunitaria"@it .
 
@@ -47,13 +47,13 @@
     rdfs:label "Foreign enterprise"@en,
         "Impresa straniera"@it ;
     dct:identifier 3 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories> ;
     skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/3.1>,
         <https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/3.2> ;
     skos:prefLabel "Foreign enterprise"@en,
         "Impresa straniera"@it .
 
-<https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/> a skos:ConceptScheme ;
+<https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories> a skos:ConceptScheme ;
     rdfs:label "Demographic category for a company"@en,
         "Categoria della demografia di un'impresa"@it ;
     dct:creator <https://w3id.org/people/lucamartinelli> ;

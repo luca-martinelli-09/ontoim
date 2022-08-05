@@ -9,7 +9,7 @@
     rdfs:label "Ente Filantropico" ;
     dct:identifier 1.1e+00 ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/association-categories/1> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories> ;
     skos:prefLabel "Ente Filantropico" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/association-categories/2.1> a skos:Concept,
@@ -17,63 +17,63 @@
     rdfs:label "Associazione Ricreativa" ;
     dct:identifier 2.1e+00 ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/association-categories/2> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories> ;
     skos:prefLabel "Associazione Ricreativa" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/association-categories/3> a skos:Concept,
         ontoim:AssociationCategory ;
     rdfs:label "Associazione di Promozione Sociale" ;
     dct:identifier 3 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories> ;
     skos:prefLabel "Associazione di Promozione Sociale" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/association-categories/4> a skos:Concept,
         ontoim:AssociationCategory ;
     rdfs:label "Associazione di Volontariato" ;
     dct:identifier 4 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories> ;
     skos:prefLabel "Associazione di Volontariato" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/association-categories/5> a skos:Concept,
         ontoim:AssociationCategory ;
     rdfs:label "ONLUS" ;
     dct:identifier 5 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories> ;
     skos:prefLabel "ONLUS" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/association-categories/6> a skos:Concept,
         ontoim:AssociationCategory ;
     rdfs:label "Associazione Sportiva Dilettantistica" ;
     dct:identifier 6 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories> ;
     skos:prefLabel "Associazione Sportiva Dilettantistica" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/association-categories/7> a skos:Concept,
         ontoim:AssociationCategory ;
     rdfs:label "Associazione Musicale" ;
     dct:identifier 7 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories> ;
     skos:prefLabel "Associazione Musicale" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/association-categories/8> a skos:Concept,
         ontoim:AssociationCategory ;
     rdfs:label "Associazione d'Arma" ;
     dct:identifier 8 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories> ;
     skos:prefLabel "Associazione d'Arma" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/association-categories/9> a skos:Concept,
         ontoim:AssociationCategory ;
     rdfs:label "Cooperativa Sociale" ;
     dct:identifier 9 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories> ;
     skos:prefLabel "Cooperativa Sociale" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/association-categories/1> a skos:Concept,
         ontoim:AssociationCategory ;
     rdfs:label "Ente del Terzo Settore" ;
     dct:identifier 1 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories> ;
     skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/association-categories/1.1> ;
     skos:prefLabel "Ente del Terzo Settore" .
 
@@ -81,11 +81,11 @@
         ontoim:AssociationCategory ;
     rdfs:label "Associazione Culturale" ;
     dct:identifier 2 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/association-categories> ;
     skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/association-categories/2.1> ;
     skos:prefLabel "Associazione Culturale" .
 
-<https://w3id.org/ontoim/controlled-vocabulary/association-categories/> a skos:ConceptScheme ;
+<https://w3id.org/ontoim/controlled-vocabulary/association-categories> a skos:ConceptScheme ;
     rdfs:label "Association category"@en,
         "Categoria di associazione"@it ;
     dct:creator <https://w3id.org/people/lucamartinelli> ;

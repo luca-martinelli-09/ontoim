@@ -9,7 +9,7 @@
     rdfs:label "Clear"@en,
         "Sereno"@it ;
     dct:identifier 1 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions> ;
     skos:prefLabel "Clear"@en,
         "Sereno"@it .
 
@@ -18,7 +18,7 @@
     rdfs:label "Fog"@en,
         "Nebbia"@it ;
     dct:identifier 2 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions> ;
     skos:prefLabel "Fog"@en,
         "Nebbia"@it .
 
@@ -27,7 +27,7 @@
     rdfs:label "Rain"@en,
         "Pioggia"@it ;
     dct:identifier 3 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions> ;
     skos:prefLabel "Rain"@en,
         "Pioggia"@it .
 
@@ -36,7 +36,7 @@
     rdfs:label "Hail"@en,
         "Grandine"@it ;
     dct:identifier 4 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions> ;
     skos:prefLabel "Hail"@en,
         "Grandine"@it .
 
@@ -45,7 +45,7 @@
     rdfs:label "Snow"@en,
         "Neve"@it ;
     dct:identifier 5 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions> ;
     skos:prefLabel "Snow"@en,
         "Neve"@it .
 
@@ -54,7 +54,7 @@
     rdfs:label "Strong wind"@en,
         "Vento forte"@it ;
     dct:identifier 6 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions> ;
     skos:prefLabel "Strong wind"@en,
         "Vento forte"@it .
 
@@ -63,11 +63,11 @@
     rdfs:label "Undefined"@en,
         "Non definito"@it ;
     dct:identifier 7 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/weather-conditions> ;
     skos:prefLabel "Undefined"@en,
         "Non definito"@it .
 
-<https://w3id.org/ontoim/controlled-vocabulary/weather-conditions/> a skos:ConceptScheme ;
+<https://w3id.org/ontoim/controlled-vocabulary/weather-conditions> a skos:ConceptScheme ;
     rdfs:label "Weather condition"@en,
         "Condizione Meteorologica"@it ;
     dct:creator <https://w3id.org/people/lucamartinelli> ;

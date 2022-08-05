@@ -8,7 +8,7 @@
     rdfs:label "Ingombranti"@en,
         "Bulky Waste"@it ;
     dct:identifier "bulky" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories> ;
     skos:prefLabel "Ingombranti"@en,
         "Bulky Waste"@it .
 
@@ -17,7 +17,7 @@
     rdfs:label "Rifiuti da Costruzione e Demolizione"@en,
         "Construction and Demolition Waste"@it ;
     dct:identifier "candd" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories> ;
     skos:prefLabel "Rifiuti da Costruzione e Demolizione"@en,
         "Construction and Demolition Waste"@it .
 
@@ -26,7 +26,7 @@
     rdfs:label "Vetro"@en,
         "Glass"@it ;
     dct:identifier "glass" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories> ;
     skos:prefLabel "Vetro"@en,
         "Glass"@it .
 
@@ -35,7 +35,7 @@
     rdfs:label "Metallo"@en,
         "Metal"@it ;
     dct:identifier "metal" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories> ;
     skos:prefLabel "Metallo"@en,
         "Metal"@it .
 
@@ -44,7 +44,7 @@
     rdfs:label "Frazione Organica"@en,
         "Organic Fraction"@it ;
     dct:identifier "organic" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories> ;
     skos:prefLabel "Frazione Organica"@en,
         "Organic Fraction"@it .
 
@@ -53,7 +53,7 @@
     rdfs:label "Altro"@en,
         "Other"@it ;
     dct:identifier "other" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories> ;
     skos:prefLabel "Altro"@en,
         "Other"@it .
 
@@ -62,7 +62,7 @@
     rdfs:label "Carta e Cartone"@en,
         "Paper and Cardboard"@it ;
     dct:identifier "paper" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories> ;
     skos:prefLabel "Carta e Cartone"@en,
         "Paper and Cardboard"@it .
 
@@ -71,7 +71,7 @@
     rdfs:label "Plastica"@en,
         "Plastic"@it ;
     dct:identifier "plastic" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories> ;
     skos:prefLabel "Plastica"@en,
         "Plastic"@it .
 
@@ -80,7 +80,7 @@
     rdfs:label "Selettiva"@en,
         "Selective"@it ;
     dct:identifier "selective" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories> ;
     skos:prefLabel "Selettiva"@en,
         "Selective"@it .
 
@@ -89,7 +89,7 @@
     rdfs:label "Pulizia stradale a recupero"@en,
         "Street cleaning to recovery"@it ;
     dct:identifier "street" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories> ;
     skos:prefLabel "Pulizia stradale a recupero"@en,
         "Street cleaning to recovery"@it .
 
@@ -98,7 +98,7 @@
     rdfs:label "Tessili"@en,
         "Textiles"@it ;
     dct:identifier "textiles" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories> ;
     skos:prefLabel "Tessili"@en,
         "Textiles"@it .
 
@@ -107,7 +107,7 @@
     rdfs:label "RAEE"@en,
         "WEEE"@it ;
     dct:identifier "weee" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories> ;
     skos:prefLabel "RAEE"@en,
         "WEEE"@it .
 
@@ -116,11 +116,11 @@
     rdfs:label "Legno"@en,
         "Wood"@it ;
     dct:identifier "wood" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/waste-categories> ;
     skos:prefLabel "Legno"@en,
         "Wood"@it .
 
-<https://w3id.org/ontoim/controlled-vocabulary/waste-categories/> a skos:ConceptScheme ;
+<https://w3id.org/ontoim/controlled-vocabulary/waste-categories> a skos:ConceptScheme ;
     rdfs:label "Waste category"@en,
         "Categoria di rifiuto"@it ;
     dct:creator <https://w3id.org/people/lucamartinelli> ;

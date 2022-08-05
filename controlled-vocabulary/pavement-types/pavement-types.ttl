@@ -9,7 +9,7 @@
     rdfs:label "Paved road"@en,
         "Strada pavimentata"@it ;
     dct:identifier 1 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/pavement-types/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/pavement-types> ;
     skos:prefLabel "Paved road"@en,
         "Strada pavimentata"@it .
 
@@ -18,7 +18,7 @@
     rdfs:label "Paved road uneven"@en,
         "Strada pavimentata dissestata"@it ;
     dct:identifier 2 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/pavement-types/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/pavement-types> ;
     skos:prefLabel "Paved road uneven"@en,
         "Strada pavimentata dissestata"@it .
 
@@ -27,11 +27,11 @@
     rdfs:label "Unpaved road"@en,
         "Strada non pavimentata"@it ;
     dct:identifier 3 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/pavement-types/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/pavement-types> ;
     skos:prefLabel "Unpaved road"@en,
         "Strada non pavimentata"@it .
 
-<https://w3id.org/ontoim/controlled-vocabulary/pavement-types/> a skos:ConceptScheme ;
+<https://w3id.org/ontoim/controlled-vocabulary/pavement-types> a skos:ConceptScheme ;
     rdfs:label "Pavement type"@en,
         "Tipo di pavimentazione stradale"@it ;
     dct:creator <https://w3id.org/people/lucamartinelli> ;

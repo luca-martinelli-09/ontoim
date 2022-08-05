@@ -8,7 +8,7 @@
     rdfs:label "Artisan"@en,
         "Artigiana"@it ;
     dct:identifier "A" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections> ;
     skos:prefLabel "Artisan"@en,
         "Artigiana"@it .
 
@@ -17,7 +17,7 @@
     rdfs:label "Certified incubators"@en,
         "Incubatori certificati"@it ;
     dct:identifier "B" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections> ;
     skos:prefLabel "Certified incubators"@en,
         "Incubatori certificati"@it .
 
@@ -26,7 +26,7 @@
     rdfs:label "Direct growers"@en,
         "Coltivatori diretti"@it ;
     dct:identifier "C" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections> ;
     skos:prefLabel "Direct growers"@en,
         "Coltivatori diretti"@it .
 
@@ -35,7 +35,7 @@
     rdfs:label "Agricultural enterprises"@en,
         "Imprese agricole"@it ;
     dct:identifier "G" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections> ;
     skos:prefLabel "Agricultural enterprises"@en,
         "Imprese agricole"@it .
 
@@ -44,7 +44,7 @@
     rdfs:label "Social enterprises"@en,
         "Imprese sociali"@it ;
     dct:identifier "L" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections> ;
     skos:prefLabel "Social enterprises"@en,
         "Imprese sociali"@it .
 
@@ -53,7 +53,7 @@
     rdfs:label "Innovative SMEs"@en,
         "PMI innovative"@it ;
     dct:identifier "M" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections> ;
     skos:prefLabel "Innovative SMEs"@en,
         "PMI innovative"@it .
 
@@ -62,7 +62,7 @@
     rdfs:label "Ordinary"@en,
         "Ordinaria"@it ;
     dct:identifier "O" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections> ;
     skos:prefLabel "Ordinary"@en,
         "Ordinaria"@it .
 
@@ -71,7 +71,7 @@
     rdfs:label "Small Entrepreneurs"@en,
         "Piccoli Imprenditori"@it ;
     dct:identifier "P" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections> ;
     skos:prefLabel "Small Entrepreneurs"@en,
         "Piccoli Imprenditori"@it .
 
@@ -80,7 +80,7 @@
     rdfs:label "Alternate school work"@en,
         "Alternanza scuola lavoro"@it ;
     dct:identifier "Q" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections> ;
     skos:prefLabel "Alternate school work"@en,
         "Alternanza scuola lavoro"@it .
 
@@ -89,7 +89,7 @@
     rdfs:label "Register of Companies"@en,
         "Registro Ditte"@it ;
     dct:identifier "R" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections> ;
     skos:prefLabel "Register of Companies"@en,
         "Registro Ditte"@it .
 
@@ -98,7 +98,7 @@
     rdfs:label "Subjects only REA"@en,
         "Soggetti solo REA"@it ;
     dct:identifier "REA" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections> ;
     skos:prefLabel "Subjects only REA"@en,
         "Soggetti solo REA"@it .
 
@@ -107,7 +107,7 @@
     rdfs:label "Simple companies"@en,
         "Società semplici"@it ;
     dct:identifier "S" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections> ;
     skos:prefLabel "Simple companies"@en,
         "Società semplici"@it .
 
@@ -116,7 +116,7 @@
     rdfs:label "Innovative start-ups"@en,
         "Start up innovative"@it ;
     dct:identifier "U" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections> ;
     skos:prefLabel "Innovative start-ups"@en,
         "Start up innovative"@it .
 
@@ -125,11 +125,11 @@
     rdfs:label "Partnerships between professionals"@en,
         "Società tra professionisti"@it ;
     dct:identifier "V" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/organization-sections> ;
     skos:prefLabel "Partnerships between professionals"@en,
         "Società tra professionisti"@it .
 
-<https://w3id.org/ontoim/controlled-vocabulary/organization-sections/> a skos:ConceptScheme ;
+<https://w3id.org/ontoim/controlled-vocabulary/organization-sections> a skos:ConceptScheme ;
     rdfs:label "Organizations registry's section"@en,
         "Sezione del registro imprese"@it ;
     dct:creator <https://w3id.org/people/lucamartinelli> ;

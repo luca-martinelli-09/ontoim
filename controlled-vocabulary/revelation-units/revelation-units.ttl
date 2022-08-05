@@ -8,45 +8,45 @@
         ontoim:RevelationUnit ;
     rdfs:label "Polizia Stradale" ;
     dct:identifier 1 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/revelation-units/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/revelation-units> ;
     skos:prefLabel "Polizia Stradale" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/revelation-units/2> a skos:Concept,
         ontoim:RevelationUnit ;
     rdfs:label "Carabinieri" ;
     dct:identifier 2 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/revelation-units/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/revelation-units> ;
     skos:prefLabel "Carabinieri" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/revelation-units/3> a skos:Concept,
         ontoim:RevelationUnit ;
     rdfs:label "Pubblica Sicurezza" ;
     dct:identifier 3 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/revelation-units/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/revelation-units> ;
     skos:prefLabel "Pubblica Sicurezza" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/revelation-units/4> a skos:Concept,
         ontoim:RevelationUnit ;
     rdfs:label "Polizia Municipale o Locale" ;
     dct:identifier 4 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/revelation-units/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/revelation-units> ;
     skos:prefLabel "Polizia Municipale o Locale" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/revelation-units/5> a skos:Concept,
         ontoim:RevelationUnit ;
     rdfs:label "Altri" ;
     dct:identifier 5 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/revelation-units/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/revelation-units> ;
     skos:prefLabel "Altri" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/revelation-units/6> a skos:Concept,
         ontoim:RevelationUnit ;
     rdfs:label "Polizia Provinciale" ;
     dct:identifier 6 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/revelation-units/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/revelation-units> ;
     skos:prefLabel "Polizia Provinciale" .
 
-<https://w3id.org/ontoim/controlled-vocabulary/revelation-units/> a skos:ConceptScheme ;
+<https://w3id.org/ontoim/controlled-vocabulary/revelation-units> a skos:ConceptScheme ;
     rdfs:label "Revelation unit"@en,
         "Unità di rilevazione"@it ;
     dct:creator <https://w3id.org/people/lucamartinelli> ;

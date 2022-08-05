@@ -151,7 +151,7 @@ def createVocabulary(vocabularyInfo):
 
     # Create scheme
 
-    SCHEME = URIRef(NAMESPACE)
+    SCHEME = URIRef(f"https://w3id.org/ontoim/controlled-vocabulary/{vocabularyName}")
 
     g.add((SCHEME, RDF.type, SKOS.ConceptScheme))
 

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-  xmlns:ontoim="https://w3id.org/ontoim/"
-  xmlns:dct="http://purl.org/dc/terms/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:ontoim="https://w3id.org/ontoim/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.7">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.9">
     <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
-    <dct:identifier>B.7</dct:identifier>
-    <rdfs:label xml:lang="en">Streetcar</rdfs:label>
-    <rdfs:label xml:lang="it">Tram</rdfs:label>
-    <skos:prefLabel xml:lang="en">Streetcar</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Tram</skos:prefLabel>
+    <dct:identifier>B.9</dct:identifier>
+    <rdfs:label xml:lang="en">Truck with trailer</rdfs:label>
+    <rdfs:label xml:lang="it">Autotreno con rimorchio</rdfs:label>
+    <skos:prefLabel xml:lang="en">Truck with trailer</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Autotreno con rimorchio</skos:prefLabel>
     <skos:inScheme>
-      <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/">
+      <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories">
         <rdfs:label xml:lang="en">Vehicle category</rdfs:label>
         <rdfs:label xml:lang="it">Categoria di veicolo</rdfs:label>
         <dct:title xml:lang="en">Vehicle category</dct:title>
@@ -38,7 +38,7 @@
         <rdfs:label xml:lang="it">Autoarticolato o autobus</rdfs:label>
         <skos:prefLabel xml:lang="en">Tractor-Trailer or Bus</skos:prefLabel>
         <skos:prefLabel xml:lang="it">Autoarticolato o autobus</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
         <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.5"/>
         <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.6"/>
         <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.7"/>
@@ -48,14 +48,93 @@
       </skos:Concept>
     </skos:broader>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.11">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.17">
     <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
-    <dct:identifier>D.11</dct:identifier>
-    <rdfs:label xml:lang="en">Special vehicles</rdfs:label>
-    <rdfs:label xml:lang="it">Veicoli speciali</rdfs:label>
-    <skos:prefLabel xml:lang="en">Special vehicles</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Veicoli speciali</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
+    <dct:identifier>C.17</dct:identifier>
+    <rdfs:label xml:lang="en">Motorcycle with passenger</rdfs:label>
+    <rdfs:label xml:lang="it">Motociclo con passeggero</rdfs:label>
+    <skos:prefLabel xml:lang="en">Motorcycle with passenger</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Motociclo con passeggero</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
+    <skos:broader>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+        <dct:identifier>C</dct:identifier>
+        <rdfs:label xml:lang="en">Motorcycle</rdfs:label>
+        <rdfs:label xml:lang="it">Motocicletta</rdfs:label>
+        <skos:prefLabel xml:lang="en">Motorcycle</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Motocicletta</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.15"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.16"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.17"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.18"/>
+      </skos:Concept>
+    </skos:broader>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.6">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+    <dct:identifier>B.6</dct:identifier>
+    <rdfs:label xml:lang="en">Bus or fil bus in suburban service</rdfs:label>
+    <rdfs:label xml:lang="it">Autobus di linea o non di linea in extraurbana</rdfs:label>
+    <skos:prefLabel xml:lang="en">Bus or fil bus in suburban service</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Autobus di linea o non di linea in extraurbana</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.4">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+    <dct:identifier>A.4</dct:identifier>
+    <rdfs:label xml:lang="en">Rescue or police car</rdfs:label>
+    <rdfs:label xml:lang="it">Autovettura di soccorso o di polizia</rdfs:label>
+    <skos:prefLabel xml:lang="en">Rescue or police car</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Autovettura di soccorso o di polizia</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
+    <skos:broader>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+        <dct:identifier>A</dct:identifier>
+        <rdfs:label xml:lang="en">Car</rdfs:label>
+        <rdfs:label xml:lang="it">Auto</rdfs:label>
+        <skos:prefLabel xml:lang="en">Car</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Auto</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.1"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.2"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.3"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.4"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.21"/>
+      </skos:Concept>
+    </skos:broader>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.21">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+    <dct:identifier>A.21</dct:identifier>
+    <rdfs:label xml:lang="en">Quadricycle</rdfs:label>
+    <rdfs:label xml:lang="it">Quadriciclo</rdfs:label>
+    <skos:prefLabel xml:lang="en">Quadricycle</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Quadriciclo</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.2">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+    <dct:identifier>A.2</dct:identifier>
+    <rdfs:label xml:lang="en">Private passenger car with trailer</rdfs:label>
+    <rdfs:label xml:lang="it">Autovettura privata con rimorchio</rdfs:label>
+    <skos:prefLabel xml:lang="en">Private passenger car with trailer</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Autovettura privata con rimorchio</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.20">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+    <dct:identifier>D.20</dct:identifier>
+    <rdfs:label xml:lang="en">Unknown vehicle because it is on the run</rdfs:label>
+    <rdfs:label xml:lang="it">Veicolo ignoto perchè datosi alla fuga</rdfs:label>
+    <skos:prefLabel xml:lang="en">Unknown vehicle because it is on the run</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Veicolo ignoto perchè datosi alla fuga</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
     <skos:broader>
       <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D">
         <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
@@ -64,7 +143,7 @@
         <rdfs:label xml:lang="it">Veicolo senza categoria</rdfs:label>
         <skos:prefLabel xml:lang="en">Vehicle without category</skos:prefLabel>
         <skos:prefLabel xml:lang="it">Veicolo senza categoria</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
         <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.11"/>
         <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.12"/>
         <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.13"/>
@@ -74,199 +153,6 @@
       </skos:Concept>
     </skos:broader>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
-    <dct:identifier>A</dct:identifier>
-    <rdfs:label xml:lang="en">Car</rdfs:label>
-    <rdfs:label xml:lang="it">Auto</rdfs:label>
-    <skos:prefLabel xml:lang="en">Car</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Auto</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
-    <skos:narrower>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
-        <dct:identifier>A.1</dct:identifier>
-        <rdfs:label xml:lang="en">Private passenger car</rdfs:label>
-        <rdfs:label xml:lang="it">Autovettura privata</rdfs:label>
-        <skos:prefLabel xml:lang="en">Private passenger car</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Autovettura privata</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
-        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A"/>
-      </skos:Concept>
-    </skos:narrower>
-    <skos:narrower>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.2">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
-        <dct:identifier>A.2</dct:identifier>
-        <rdfs:label xml:lang="en">Private passenger car with trailer</rdfs:label>
-        <rdfs:label xml:lang="it">Autovettura privata con rimorchio</rdfs:label>
-        <skos:prefLabel xml:lang="en">Private passenger car with trailer</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Autovettura privata con rimorchio</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
-        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A"/>
-      </skos:Concept>
-    </skos:narrower>
-    <skos:narrower>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.3">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
-        <dct:identifier>A.3</dct:identifier>
-        <rdfs:label xml:lang="en">Public passenger car</rdfs:label>
-        <rdfs:label xml:lang="it">Autovettura pubblica</rdfs:label>
-        <skos:prefLabel xml:lang="en">Public passenger car</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Autovettura pubblica</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
-        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A"/>
-      </skos:Concept>
-    </skos:narrower>
-    <skos:narrower>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.4">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
-        <dct:identifier>A.4</dct:identifier>
-        <rdfs:label xml:lang="en">Rescue or police car</rdfs:label>
-        <rdfs:label xml:lang="it">Autovettura di soccorso o di polizia</rdfs:label>
-        <skos:prefLabel xml:lang="en">Rescue or police car</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Autovettura di soccorso o di polizia</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
-        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A"/>
-      </skos:Concept>
-    </skos:narrower>
-    <skos:narrower>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.21">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
-        <dct:identifier>A.21</dct:identifier>
-        <rdfs:label xml:lang="en">Quadricycle</rdfs:label>
-        <rdfs:label xml:lang="it">Quadriciclo</rdfs:label>
-        <skos:prefLabel xml:lang="en">Quadricycle</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Quadriciclo</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
-        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A"/>
-      </skos:Concept>
-    </skos:narrower>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.15">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
-    <dct:identifier>C.15</dct:identifier>
-    <rdfs:label xml:lang="en">Moped</rdfs:label>
-    <rdfs:label xml:lang="it">Ciclomotore</rdfs:label>
-    <skos:prefLabel xml:lang="en">Moped</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Ciclomotore</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
-    <skos:broader>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
-        <dct:identifier>C</dct:identifier>
-        <rdfs:label xml:lang="en">Motorcycle</rdfs:label>
-        <rdfs:label xml:lang="it">Motocicletta</rdfs:label>
-        <skos:prefLabel xml:lang="en">Motorcycle</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Motocicletta</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.15"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.16"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.17"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.18"/>
-      </skos:Concept>
-    </skos:broader>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.8">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
-    <dct:identifier>B.8</dct:identifier>
-    <rdfs:label xml:lang="en">Truck</rdfs:label>
-    <rdfs:label xml:lang="it">Autocarro</rdfs:label>
-    <skos:prefLabel xml:lang="en">Truck</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Autocarro</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.13">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
-    <dct:identifier>D.13</dct:identifier>
-    <rdfs:label xml:lang="en">Agricultural machine</rdfs:label>
-    <rdfs:label xml:lang="it">Macchina agricola</rdfs:label>
-    <skos:prefLabel xml:lang="en">Agricultural machine</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Macchina agricola</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.14">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
-    <dct:identifier>D.14</dct:identifier>
-    <rdfs:label xml:lang="en">Velocipede</rdfs:label>
-    <rdfs:label xml:lang="it">Velocipede</rdfs:label>
-    <skos:prefLabel xml:lang="en">Velocipede</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Velocipede</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.9">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
-    <dct:identifier>B.9</dct:identifier>
-    <rdfs:label xml:lang="en">Truck with trailer</rdfs:label>
-    <rdfs:label xml:lang="it">Autotreno con rimorchio</rdfs:label>
-    <skos:prefLabel xml:lang="en">Truck with trailer</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Autotreno con rimorchio</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.6">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
-    <dct:identifier>B.6</dct:identifier>
-    <rdfs:label xml:lang="en">Bus or fil bus in suburban service</rdfs:label>
-    <rdfs:label xml:lang="it">Autobus di linea o non di linea in extraurbana</rdfs:label>
-    <skos:prefLabel xml:lang="en">Bus or fil bus in suburban service</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Autobus di linea o non di linea in extraurbana</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.17">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
-    <dct:identifier>C.17</dct:identifier>
-    <rdfs:label xml:lang="en">Motorcycle with passenger</rdfs:label>
-    <rdfs:label xml:lang="it">Motociclo con passeggero</rdfs:label>
-    <skos:prefLabel xml:lang="en">Motorcycle with passenger</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Motociclo con passeggero</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.16">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
-    <dct:identifier>C.16</dct:identifier>
-    <rdfs:label xml:lang="en">Motorcycle with only</rdfs:label>
-    <rdfs:label xml:lang="it">Motociclo a solo</rdfs:label>
-    <skos:prefLabel xml:lang="en">Motorcycle with only</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Motociclo a solo</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.10">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
-    <dct:identifier>B.10</dct:identifier>
-    <rdfs:label xml:lang="en">Articulated truck</rdfs:label>
-    <rdfs:label xml:lang="it">Autoarticolato</rdfs:label>
-    <skos:prefLabel xml:lang="en">Articulated truck</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Autoarticolato</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.20">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
-    <dct:identifier>D.20</dct:identifier>
-    <rdfs:label xml:lang="en">Unknown vehicle because it is on the run</rdfs:label>
-    <rdfs:label xml:lang="it">Veicolo ignoto perchè datosi alla fuga</rdfs:label>
-    <skos:prefLabel xml:lang="en">Unknown vehicle because it is on the run</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Veicolo ignoto perchè datosi alla fuga</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.5">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
-    <dct:identifier>B.5</dct:identifier>
-    <rdfs:label xml:lang="en">Bus or trolleybus in urban service</rdfs:label>
-    <rdfs:label xml:lang="it">Autobus o fil bus in servizio urbano</rdfs:label>
-    <skos:prefLabel xml:lang="en">Bus or trolleybus in urban service</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Autobus o fil bus in servizio urbano</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B"/>
-  </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.19">
     <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
     <dct:identifier>D.19</dct:identifier>
@@ -274,7 +160,7 @@
     <rdfs:label xml:lang="it">Veicolo a trazione animale o a braccia</rdfs:label>
     <skos:prefLabel xml:lang="en">Animal-drawn or arm-drawn vehicle</skos:prefLabel>
     <skos:prefLabel xml:lang="it">Veicolo a trazione animale o a braccia</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D"/>
   </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.12">
@@ -284,8 +170,58 @@
     <rdfs:label xml:lang="it">Trattore stradale o motrice</rdfs:label>
     <skos:prefLabel xml:lang="en">Road tractor or tractor unit</skos:prefLabel>
     <skos:prefLabel xml:lang="it">Trattore stradale o motrice</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.10">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+    <dct:identifier>B.10</dct:identifier>
+    <rdfs:label xml:lang="en">Articulated truck</rdfs:label>
+    <rdfs:label xml:lang="it">Autoarticolato</rdfs:label>
+    <skos:prefLabel xml:lang="en">Articulated truck</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Autoarticolato</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.14">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+    <dct:identifier>D.14</dct:identifier>
+    <rdfs:label xml:lang="en">Velocipede</rdfs:label>
+    <rdfs:label xml:lang="it">Velocipede</rdfs:label>
+    <skos:prefLabel xml:lang="en">Velocipede</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Velocipede</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.11">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+    <dct:identifier>D.11</dct:identifier>
+    <rdfs:label xml:lang="en">Special vehicles</rdfs:label>
+    <rdfs:label xml:lang="it">Veicoli speciali</rdfs:label>
+    <skos:prefLabel xml:lang="en">Special vehicles</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Veicoli speciali</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.3">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+    <dct:identifier>A.3</dct:identifier>
+    <rdfs:label xml:lang="en">Public passenger car</rdfs:label>
+    <rdfs:label xml:lang="it">Autovettura pubblica</rdfs:label>
+    <skos:prefLabel xml:lang="en">Public passenger car</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Autovettura pubblica</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A.1">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+    <dct:identifier>A.1</dct:identifier>
+    <rdfs:label xml:lang="en">Private passenger car</rdfs:label>
+    <rdfs:label xml:lang="it">Autovettura privata</rdfs:label>
+    <skos:prefLabel xml:lang="en">Private passenger car</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Autovettura privata</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/A"/>
   </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.18">
     <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
@@ -294,7 +230,67 @@
     <rdfs:label xml:lang="it">Motocarro o motofurgone</rdfs:label>
     <skos:prefLabel xml:lang="en">Motorcycle truck or motor van</skos:prefLabel>
     <skos:prefLabel xml:lang="it">Motocarro o motofurgone</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/"/>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D.13">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+    <dct:identifier>D.13</dct:identifier>
+    <rdfs:label xml:lang="en">Agricultural machine</rdfs:label>
+    <rdfs:label xml:lang="it">Macchina agricola</rdfs:label>
+    <skos:prefLabel xml:lang="en">Agricultural machine</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Macchina agricola</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/D"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.8">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+    <dct:identifier>B.8</dct:identifier>
+    <rdfs:label xml:lang="en">Truck</rdfs:label>
+    <rdfs:label xml:lang="it">Autocarro</rdfs:label>
+    <skos:prefLabel xml:lang="en">Truck</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Autocarro</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.7">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+    <dct:identifier>B.7</dct:identifier>
+    <rdfs:label xml:lang="en">Streetcar</rdfs:label>
+    <rdfs:label xml:lang="it">Tram</rdfs:label>
+    <skos:prefLabel xml:lang="en">Streetcar</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Tram</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.16">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+    <dct:identifier>C.16</dct:identifier>
+    <rdfs:label xml:lang="en">Motorcycle with only</rdfs:label>
+    <rdfs:label xml:lang="it">Motociclo a solo</rdfs:label>
+    <skos:prefLabel xml:lang="en">Motorcycle with only</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Motociclo a solo</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C.15">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+    <dct:identifier>C.15</dct:identifier>
+    <rdfs:label xml:lang="en">Moped</rdfs:label>
+    <rdfs:label xml:lang="it">Ciclomotore</rdfs:label>
+    <skos:prefLabel xml:lang="en">Moped</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Ciclomotore</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/C"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B.5">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+    <dct:identifier>B.5</dct:identifier>
+    <rdfs:label xml:lang="en">Bus or trolleybus in urban service</rdfs:label>
+    <rdfs:label xml:lang="it">Autobus o fil bus in servizio urbano</rdfs:label>
+    <skos:prefLabel xml:lang="en">Bus or trolleybus in urban service</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Autobus o fil bus in servizio urbano</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories/B"/>
   </skos:Concept>
 </rdf:RDF>

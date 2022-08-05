@@ -307,6 +307,14 @@ sdo:url rdf:type owl:AnnotationProperty .
                            "has tourist type"@en .
 
 
+###  https://w3id.org/ontoim/hasWasteCategory
+:hasWasteCategory rdf:type owl:ObjectProperty ;
+                  rdfs:domain :WasteProduction ;
+                  rdfs:range :WasteCategory ;
+                  rdfs:label "ha categoria di rifiuto"@it ,
+                             "has waste category"@en .
+
+
 ###  https://w3id.org/ontoim/isOrganizedBy
 :isOrganizedBy rdf:type owl:ObjectProperty ;
                rdfs:domain cpevapit:Event ;
@@ -551,8 +559,8 @@ sdo:url rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/ontoim/AssociationCategory
 :AssociationCategory rdf:type owl:Class ;
                      rdfs:subClassOf l0:Topic ;
-                     rdfs:comment "Questa classe rappresenta la categoria di un'associazione. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/association-categories/"@it ,
-                                  "This class represents the category of an association. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/association-categories/"@en ;
+                     rdfs:comment "Questa classe rappresenta la categoria di un'associazione. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/association-categories"@it ,
+                                  "This class represents the category of an association. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/association-categories"@en ;
                      rdfs:label "Association Category"@en ,
                                 "Categoria dell'Associazione"@it .
 
@@ -623,8 +631,8 @@ sdo:url rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/ontoim/CivilStatusCategory
 :CivilStatusCategory rdf:type owl:Class ;
                      rdfs:subClassOf l0:Topic ;
-                     rdfs:comment "Questa classe rappresenta la categoria dell'evento di stato civile. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"@it ,
-                                  "This class represents the category of the civil status event. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/"@en ;
+                     rdfs:comment "Questa classe rappresenta la categoria dell'evento di stato civile. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories"@it ,
+                                  "This class represents the category of the civil status event. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories"@en ;
                      rdfs:label "Categoria di Stato Civile"@it ,
                                 "Civil Status Category"@en .
 
@@ -646,8 +654,8 @@ sdo:url rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/ontoim/CompanyDemographicCategory
 :CompanyDemographicCategory rdf:type owl:Class ;
                             rdfs:subClassOf l0:Topic ;
-                            rdfs:comment "Questa classe rappresenta la categoria demografica di un'impresa. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/"@it ,
-                                         "This class represents the demographic category of the company. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories/"@en ;
+                            rdfs:comment "Questa classe rappresenta la categoria demografica di un'impresa. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories"@it ,
+                                         "This class represents the demographic category of the company. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories"@en ;
                             rdfs:label "Categoria Demogragica dell'Impresa"@it ,
                                        "Company Demographic Category"@en .
 
@@ -758,9 +766,9 @@ sdo:url rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/ontoim/HeritageType
 :HeritageType rdf:type owl:Class ;
               rdfs:subClassOf l0:Topic ;
+              rdfs:comment "Questa classe rappresenta la tipologia di patrimonio. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/heritage-types"@it ,
+                           "This class represents the type of an heritage. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/heritage-types"@en ;
               rdfs:label "Heritage Type"@en ,
-                         "Questa classe rappresenta la tipologia di patrimonio. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/heritage-types/"@it ,
-                         "This class represents the type of an heritage. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/heritage-types/"@en ,
                          "Tipologia di Patrimonio"@it .
 
 
@@ -793,8 +801,8 @@ sdo:url rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/ontoim/LandRegistryCategory
 :LandRegistryCategory rdf:type owl:Class ;
                       rdfs:subClassOf l0:Topic ;
-                      rdfs:comment "Questa classe rappresenta la categoria catastale di un edificio. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/"@it ,
-                                   "This class represents the category of a land registry. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories/"@en ;
+                      rdfs:comment "Questa classe rappresenta la categoria catastale di un edificio. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories"@it ,
+                                   "This class represents the category of a land registry. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories"@en ;
                       rdfs:label "Categoria Catastale"@it ,
                                  "Land Registry Category"@en .
 
@@ -844,8 +852,8 @@ sdo:url rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/ontoim/OrganizationSection
 :OrganizationSection rdf:type owl:Class ;
                      rdfs:subClassOf l0:Topic ;
-                     rdfs:comment "Questa classe rappresenta le sezione nel registro delle imprese dell'azienda. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/organization-sections/"@it ,
-                                  "This class represents the sections in the business register of the company. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/organization-sections/"@en ;
+                     rdfs:comment "Questa classe rappresenta le sezione nel registro delle imprese dell'azienda. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/organization-sections"@it ,
+                                  "This class represents the sections in the business register of the company. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/organization-sections"@en ;
                      rdfs:label "Organization Section"@en ,
                                 "Sezione Impresa"@it .
 
@@ -919,6 +927,44 @@ sdo:url rdf:type owl:AnnotationProperty .
                        "This class represents the demographic observation for tourism. Tourism observation is divided in arrivals and presences."@en ;
           rdfs:label "Tourists"@en ,
                      "Turisti"@it .
+
+
+###  https://w3id.org/ontoim/WasteCategory
+:WasteCategory rdf:type owl:Class ;
+               rdfs:subClassOf l0:Topic ;
+               rdfs:label "Categoria di Rifiuto"@it ,
+                          "Questa classe rappresenta la categoria di un rifiuto. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/waste-categories"@it ,
+                          "This class represents the category of waste. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/waste-categories"@en ,
+                          "Waste Category"@en .
+
+
+###  https://w3id.org/ontoim/WasteProduction
+:WasteProduction rdf:type owl:Class ;
+                 rdfs:subClassOf l0:Activity ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty muapit:hasValue ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass muapit:Value
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty tiapit:hasTemporalEntity ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass tiapit:TemporalEntity
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasSpatialDelimitation ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass clvapit:SpatialObject
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasWasteCategory ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :WasteCategory
+                                 ] ;
+                 rdfs:comment "Questa classe rappresenta la produzione di rifiuti in un certo spazio e tempo."@it ,
+                              "This class represents waste generation in a certain space and time."@en ;
+                 rdfs:label "Produzione di Rifiuti"@it ,
+                            "Waste Production"@en .
 
 
 #################################################################

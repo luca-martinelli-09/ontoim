@@ -9,7 +9,7 @@
     rdfs:label "Public property"@en,
         "Beni demaniali"@it ;
     dct:identifier 1 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/heritage-types/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/heritage-types> ;
     skos:prefLabel "Public property"@en,
         "Beni demaniali"@it .
 
@@ -18,7 +18,7 @@
     rdfs:label "Available assets"@en,
         "Patrimonio disponibile"@it ;
     dct:identifier 2 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/heritage-types/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/heritage-types> ;
     skos:prefLabel "Available assets"@en,
         "Patrimonio disponibile"@it .
 
@@ -27,7 +27,7 @@
     rdfs:label "Non-disposable assets"@en,
         "Patrimonio indisponibile"@it ;
     dct:identifier 3 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/heritage-types/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/heritage-types> ;
     skos:prefLabel "Non-disposable assets"@en,
         "Patrimonio indisponibile"@it .
 
@@ -36,11 +36,11 @@
     rdfs:label "Other type of assets"@en,
         "Altro tipo di patrimonio"@it ;
     dct:identifier 4 ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/heritage-types/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/heritage-types> ;
     skos:prefLabel "Other type of assets"@en,
         "Altro tipo di patrimonio"@it .
 
-<https://w3id.org/ontoim/controlled-vocabulary/heritage-types/> a skos:ConceptScheme ;
+<https://w3id.org/ontoim/controlled-vocabulary/heritage-types> a skos:ConceptScheme ;
     rdfs:label "Heritage type"@en,
         "Tipo di patrimonio"@it ;
     dct:creator <https://w3id.org/people/lucamartinelli> ;

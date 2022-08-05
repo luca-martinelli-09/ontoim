@@ -9,7 +9,7 @@
         "Nascita nel comune"@it ;
     dct:identifier "A.1" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Birth in municipality"@en,
         "Nascita nel comune"@it .
 
@@ -19,7 +19,7 @@
         "Nascita in altro comune"@it ;
     dct:identifier "A.2" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Birth in other municipality"@en,
         "Nascita in altro comune"@it .
 
@@ -29,7 +29,7 @@
         "Dichiarazione di nascita trasmessa"@it ;
     dct:identifier "A.3" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Birth statement transmitted"@en,
         "Dichiarazione di nascita trasmessa"@it .
 
@@ -39,7 +39,7 @@
         "Nascita da genitore straniero"@it ;
     dct:identifier "A.4" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Birth from foreigner"@en,
         "Nascita da genitore straniero"@it .
 
@@ -49,7 +49,7 @@
         "Nascita nel matrimonio"@it ;
     dct:identifier "A.5" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Birth in marriage"@en,
         "Nascita nel matrimonio"@it .
 
@@ -59,7 +59,7 @@
         "Fuori matrimonio"@it ;
     dct:identifier "A.6" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Birth out of marriage"@en,
         "Fuori matrimonio"@it .
 
@@ -69,7 +69,7 @@
         "Parto plurimo"@it ;
     dct:identifier "A.7" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Multiple birth"@en,
         "Parto plurimo"@it .
 
@@ -79,7 +79,7 @@
         "Morto nel comune"@it ;
     dct:identifier "B.1" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Death in municipality"@en,
         "Morto nel comune"@it .
 
@@ -89,7 +89,7 @@
         "Morto in altro comune"@it ;
     dct:identifier "B.2" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Death in other municipality"@en,
         "Morto in altro comune"@it .
 
@@ -99,7 +99,7 @@
         "Morto all'estero"@it ;
     dct:identifier "B.3" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Death in other country"@en,
         "Morto all'estero"@it .
 
@@ -109,7 +109,7 @@
         "Immigrazione da un altro comune"@it ;
     dct:identifier "C.1" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Immigration from other municipality"@en,
         "Immigrazione da un altro comune"@it .
 
@@ -119,7 +119,7 @@
         "Immigrazione dall'estero"@it ;
     dct:identifier "C.2" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Immigration from other country"@en,
         "Immigrazione dall'estero"@it .
 
@@ -129,7 +129,7 @@
         "Altra tipologia di immigrazione"@it ;
     dct:identifier "C.3" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Other type of immigration"@en,
         "Altra tipologia di immigrazione"@it .
 
@@ -139,7 +139,7 @@
         "Emigrazione in altro comune"@it ;
     dct:identifier "D.1" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Emigration to other municipality"@en,
         "Emigrazione in altro comune"@it .
 
@@ -149,7 +149,7 @@
         "Emigrazione all'estero"@it ;
     dct:identifier "D.2" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Emigration to other country"@en,
         "Emigrazione all'estero"@it .
 
@@ -159,7 +159,7 @@
         "Altra tipologia di emigrazione"@it ;
     dct:identifier "D.3" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Other type of emigration"@en,
         "Altra tipologia di emigrazione"@it .
 
@@ -169,7 +169,7 @@
         "Matrimonio religioso"@it ;
     dct:identifier "E.1" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Religious marriage"@en,
         "Matrimonio religioso"@it .
 
@@ -179,7 +179,7 @@
         "Matrimonio civile"@it ;
     dct:identifier "E.2" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Civil marriage"@en,
         "Matrimonio civile"@it .
 
@@ -189,7 +189,7 @@
         "Matrimonio con uno straniero"@it ;
     dct:identifier "E.3" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Marriage with a foreigner"@en,
         "Matrimonio con uno straniero"@it .
 
@@ -199,7 +199,7 @@
         "Separazioni"@it ;
     dct:identifier "F.1" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Separations"@en,
         "Separazioni"@it .
 
@@ -209,7 +209,7 @@
         "Divorzi"@it ;
     dct:identifier "F.2" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Divorces"@en,
         "Divorzi"@it .
 
@@ -219,7 +219,7 @@
         "Altri accordi extragiudiziali"@it ;
     dct:identifier "F.3" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Other out-of-court settlement"@en,
         "Altri accordi extragiudiziali"@it .
 
@@ -229,7 +229,7 @@
         "Unioni civili tra maschi"@it ;
     dct:identifier "G.1" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/G> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Civili union between mens"@en,
         "Unioni civili tra maschi"@it .
 
@@ -239,7 +239,7 @@
         "Unioni civili tra femmine"@it ;
     dct:identifier "G.2" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/G> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Civili union between womens"@en,
         "Unioni civili tra femmine"@it .
 
@@ -249,7 +249,7 @@
         "Scioglimento di unioni civili tra maschi"@it ;
     dct:identifier "H.1" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Dissolution of civil union between mens"@en,
         "Scioglimento di unioni civili tra maschi"@it .
 
@@ -259,7 +259,7 @@
         "Scioglimento di unioni civili tra femmine"@it ;
     dct:identifier "H.2" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Dissolution of civil union between womens"@en,
         "Scioglimento di unioni civili tra femmine"@it .
 
@@ -268,7 +268,7 @@
     rdfs:label "Civil union"@en,
         "Unioni civili"@it ;
     dct:identifier "G" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/G.1>,
         <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/G.2> ;
     skos:prefLabel "Civil union"@en,
@@ -279,7 +279,7 @@
     rdfs:label "Dissolution of civil union"@en,
         "Scioglimento unioni civili"@it ;
     dct:identifier "H" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H.1>,
         <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/H.2> ;
     skos:prefLabel "Dissolution of civil union"@en,
@@ -290,7 +290,7 @@
     rdfs:label "Death"@en,
         "Morte"@it ;
     dct:identifier "B" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B.1>,
         <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B.2>,
         <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/B.3> ;
@@ -302,7 +302,7 @@
     rdfs:label "Immigration"@en,
         "Immigrazione"@it ;
     dct:identifier "C" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C.1>,
         <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C.2>,
         <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/C.3> ;
@@ -314,7 +314,7 @@
     rdfs:label "Emigration"@en,
         "Emigrazione"@it ;
     dct:identifier "D" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D.1>,
         <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D.2>,
         <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/D.3> ;
@@ -326,7 +326,7 @@
     rdfs:label "Marriage"@en,
         "Matrimonio"@it ;
     dct:identifier "E" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E.1>,
         <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E.2>,
         <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/E.3> ;
@@ -338,7 +338,7 @@
     rdfs:label "Out-of-court settlement"@en,
         "Accordi extragiudiziali"@it ;
     dct:identifier "F" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F.1>,
         <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F.2>,
         <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/F.3> ;
@@ -350,7 +350,7 @@
     rdfs:label "Birth"@en,
         "Nascita"@it ;
     dct:identifier "A" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.1>,
         <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.2>,
         <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.3>,
@@ -361,7 +361,7 @@
     skos:prefLabel "Birth"@en,
         "Nascita"@it .
 
-<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/> a skos:ConceptScheme ;
+<https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> a skos:ConceptScheme ;
     rdfs:label "Civil statis category"@en,
         "Categoria dello stato civile"@it ;
     dct:creator <https://w3id.org/people/lucamartinelli> ;

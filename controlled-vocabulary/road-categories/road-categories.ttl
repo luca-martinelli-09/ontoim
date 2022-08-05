@@ -8,7 +8,7 @@
     rdfs:label "Regionale entro l'abitato" ;
     dct:identifier "A.0" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-categories/A> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories> ;
     skos:prefLabel "Regionale entro l'abitato" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/road-categories/A.1> a skos:Concept,
@@ -16,7 +16,7 @@
     rdfs:label "Strada urbana" ;
     dct:identifier "A.1" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-categories/A> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories> ;
     skos:prefLabel "Strada urbana" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/road-categories/A.2> a skos:Concept,
@@ -24,7 +24,7 @@
     rdfs:label "Provinciale entro l'abitato" ;
     dct:identifier "A.2" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-categories/A> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories> ;
     skos:prefLabel "Provinciale entro l'abitato" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/road-categories/A.3> a skos:Concept,
@@ -32,7 +32,7 @@
     rdfs:label "Statale entro l'abitato" ;
     dct:identifier "A.3" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-categories/A> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories> ;
     skos:prefLabel "Statale entro l'abitato" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.4> a skos:Concept,
@@ -40,7 +40,7 @@
     rdfs:label "Comunale extraurbana" ;
     dct:identifier "B.4" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories> ;
     skos:prefLabel "Comunale extraurbana" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.5> a skos:Concept,
@@ -48,7 +48,7 @@
     rdfs:label "Provinciale" ;
     dct:identifier "B.5" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories> ;
     skos:prefLabel "Provinciale" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.6> a skos:Concept,
@@ -56,7 +56,7 @@
     rdfs:label "Statale" ;
     dct:identifier "B.6" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories> ;
     skos:prefLabel "Statale" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.7> a skos:Concept,
@@ -64,7 +64,7 @@
     rdfs:label "Autostrada" ;
     dct:identifier "B.7" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories> ;
     skos:prefLabel "Autostrada" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.8> a skos:Concept,
@@ -72,7 +72,7 @@
     rdfs:label "Altra strada" ;
     dct:identifier "B.8" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories> ;
     skos:prefLabel "Altra strada" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.9> a skos:Concept,
@@ -80,14 +80,14 @@
     rdfs:label "Regionale" ;
     dct:identifier "B.9" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B> ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories> ;
     skos:prefLabel "Regionale" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/road-categories/A> a skos:Concept,
         ontoim:RoadCategory ;
     rdfs:label "Nell'abitato" ;
     dct:identifier "A" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories> ;
     skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/road-categories/A.0>,
         <https://w3id.org/ontoim/controlled-vocabulary/road-categories/A.1>,
         <https://w3id.org/ontoim/controlled-vocabulary/road-categories/A.2>,
@@ -98,7 +98,7 @@
         ontoim:RoadCategory ;
     rdfs:label "Fuori abitato" ;
     dct:identifier "B" ;
-    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories/> ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/road-categories> ;
     skos:narrower <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.4>,
         <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.5>,
         <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.6>,
@@ -107,7 +107,7 @@
         <https://w3id.org/ontoim/controlled-vocabulary/road-categories/B.9> ;
     skos:prefLabel "Fuori abitato" .
 
-<https://w3id.org/ontoim/controlled-vocabulary/road-categories/> a skos:ConceptScheme ;
+<https://w3id.org/ontoim/controlled-vocabulary/road-categories> a skos:ConceptScheme ;
     rdfs:label "Road category"@en,
         "Categoria della strada"@it ;
     dct:creator <https://w3id.org/people/lucamartinelli> ;
