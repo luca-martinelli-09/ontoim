@@ -273,6 +273,8 @@ sdo:url rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/ontoim/liquidationDate
 :liquidationDate rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf tiapit:date ;
+                 rdfs:domain covapit:Organization ;
+                 rdfs:range xsd:date ;
                  rdfs:comment "Questa proprietà rappresenta la data in cui un'organizzazione viene liquidata."@it ,
                               "This property represents the date on which an organization is liquidated."@en ;
                  rdfs:label "data di liquidazione"@it ,
@@ -291,36 +293,6 @@ sdo:url rdf:type owl:AnnotationProperty .
 #################################################################
 #    Classes
 #################################################################
-
-###  https://w3id.org/italia/onto/COV/Organization
-covapit:Organization rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                       owl:onProperty :hasEmployees ;
-                                       owl:allValuesFrom :Employees
-                                     ] ,
-                                     [ rdf:type owl:Restriction ;
-                                       owl:onProperty :hasLocalUnitAddress ;
-                                       owl:allValuesFrom clvapit:Address
-                                     ] ,
-                                     [ rdf:type owl:Restriction ;
-                                       owl:onProperty :providesService ;
-                                       owl:allValuesFrom cpsvapit:Service
-                                     ] ,
-                                     [ rdf:type owl:Restriction ;
-                                       owl:onProperty :bankruptcyDate ;
-                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                       owl:onDataRange xsd:date
-                                     ] ,
-                                     [ rdf:type owl:Restriction ;
-                                       owl:onProperty :endActivityDate ;
-                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                       owl:onDataRange xsd:date
-                                     ] ,
-                                     [ rdf:type owl:Restriction ;
-                                       owl:onProperty :liquidationDate ;
-                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                       owl:onDataRange xsd:date
-                                     ] .
-
 
 ###  https://w3id.org/ontoim/AccessiblePointOfInterest
 :AccessiblePointOfInterest rdf:type owl:Class ;
@@ -502,9 +474,42 @@ covapit:Organization rdfs:subClassOf [ rdf:type owl:Restriction ;
                     "Membri"@it .
 
 
+###  https://w3id.org/ontoim/Organization
+:Organization rdf:type owl:Class ;
+              rdfs:subClassOf covapit:Organization ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasEmployees ;
+                                owl:allValuesFrom :Employees
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasLocalUnitAddress ;
+                                owl:allValuesFrom clvapit:Address
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :providesService ;
+                                owl:allValuesFrom cpsvapit:Service
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :endActivityDate ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:date
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :liquidationDate ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:date
+                              ] .
+
+
 ###  https://w3id.org/ontoim/OrganizationSection
 :OrganizationSection rdf:type owl:Class ;
                      rdfs:subClassOf l0:Topic .
+
+
+###  https://w3id.org/ontoim/PrivateOrganization
+:PrivateOrganization rdf:type owl:Class ;
+                     rdfs:subClassOf covapit:PrivateOrganization ,
+                                     :Organization .
 
 
 ###  https://w3id.org/ontoim/Subscriber
