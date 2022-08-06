@@ -129,10 +129,69 @@ sdo:url rdf:type owl:AnnotationProperty .
                                   "concesso con la procedura"@it .
 
 
+###  https://w3id.org/ontoim/detectedBy
+:detectedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :RoadAccident ;
+            rdfs:range :RevelationUnit ;
+            rdfs:label "detected by"@en ,
+                       "rilevato da"@it .
+
+
+###  https://w3id.org/ontoim/hasAccidentCircumstance
+:hasAccidentCircumstance rdf:type owl:ObjectProperty ;
+                         rdfs:domain :InvolvedEntity ;
+                         rdfs:range :AccidentCircumstance ;
+                         rdfs:label "ha circostanze dell'incidente"@it ,
+                                    "has accident circumstance"@en .
+
+
+###  https://w3id.org/ontoim/hasAccidentType
+:hasAccidentType rdf:type owl:ObjectProperty ;
+                 rdfs:domain :RoadAccident ;
+                 rdfs:range :AccidentType ;
+                 rdfs:label "ha tipo di incidente stradale"@it ,
+                            "has accident type"@en .
+
+
+###  https://w3id.org/ontoim/hasAddress
+:hasAddress rdf:type owl:ObjectProperty ;
+            rdfs:domain owl:Thing ;
+            rdfs:range clvapit:Address ;
+            rdfs:label "ha indirizzo"@it ,
+                       "has address"@en .
+
+
 ###  https://w3id.org/ontoim/hasAssociationCategory
 :hasAssociationCategory rdf:type owl:ObjectProperty ;
                         rdfs:label "ha categoria di associazione"@it ,
                                    "has association category"@en .
+
+
+###  https://w3id.org/ontoim/hasBackPassenger
+:hasBackPassenger rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :hasPassenger ;
+                  rdfs:domain :InvolvedVehicle ;
+                  rdfs:range :InvolvedPerson ;
+                  rdfs:label "ha passeggero posteriore"@it ,
+                             "has back passenger"@en .
+
+
+###  https://w3id.org/ontoim/hasBooking
+:hasBooking rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasDemographicEvent ;
+            rdfs:domain accoapit:Accommodation ;
+            rdfs:range acapit:Booking ;
+            rdfs:label "ha prenotazione"@it ,
+                       "has booking"@en .
+
+
+###  https://w3id.org/ontoim/hasBookings
+:hasBookings rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasDemographicObservation ;
+             rdfs:domain accoapit:Accommodation ;
+             rdfs:range :Bookings ;
+             rdfs:label "ha prenotazioni"@it ,
+                        "has bookings"@en .
 
 
 ###  https://w3id.org/ontoim/hasBuilding
@@ -153,6 +212,15 @@ sdo:url rdf:type owl:AnnotationProperty .
                         rdfs:range :CivilStatusCategory ;
                         rdfs:label "ha categoria di stato civile"@it ,
                                    "has civil status category"@en .
+
+
+###  https://w3id.org/ontoim/hasConducent
+:hasConducent rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasInvolvedPerson ;
+              rdfs:domain :InvolvedVehicle ;
+              rdfs:range :InvolvedPerson ;
+              rdfs:label "ha conducente"@it ,
+                         "has conducent"@en .
 
 
 ###  https://w3id.org/ontoim/hasDemographicCategory
@@ -195,6 +263,15 @@ sdo:url rdf:type owl:AnnotationProperty .
                                     "has demographic reference"@en .
 
 
+###  https://w3id.org/ontoim/hasDiameter
+:hasDiameter rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf muapit:hasValue ;
+             rdfs:domain owl:Thing ;
+             rdfs:range muapit:Value ;
+             rdfs:label "ha diametro"@it ,
+                        "has diameter"@en .
+
+
 ###  https://w3id.org/ontoim/hasEmployees
 :hasEmployees rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :hasDemographicObservation ;
@@ -202,6 +279,33 @@ sdo:url rdf:type owl:AnnotationProperty .
               rdfs:range :Employees ;
               rdfs:label "ha dipendenti"@it ,
                          "has employees"@en .
+
+
+###  https://w3id.org/ontoim/hasEngineDisplacement
+:hasEngineDisplacement rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf muapit:hasValue ;
+                       rdfs:domain :Vehicle ;
+                       rdfs:range muapit:Value ;
+                       rdfs:label "ha cilindrata"@it ,
+                                  "has engine displacement"@en .
+
+
+###  https://w3id.org/ontoim/hasFrontPassenger
+:hasFrontPassenger rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasPassenger ;
+                   rdfs:domain :InvolvedVehicle ;
+                   rdfs:range :InvolvedPerson ;
+                   rdfs:label "ha passeggero anteriore"@it ,
+                              "has front passenger"@en .
+
+
+###  https://w3id.org/ontoim/hasHeight
+:hasHeight rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf muapit:hasValue ;
+           rdfs:domain owl:Thing ;
+           rdfs:range muapit:Value ;
+           rdfs:label "ha altezza"@it ,
+                      "has height"@en .
 
 
 ###  https://w3id.org/ontoim/hasHeritage
@@ -220,6 +324,49 @@ sdo:url rdf:type owl:AnnotationProperty .
                             "has heritage type"@en .
 
 
+###  https://w3id.org/ontoim/hasInvolvedEntity
+:hasInvolvedEntity rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RoadAccident ;
+                   rdfs:range :InvolvedEntity ;
+                   rdfs:label "ha entità coinvolta nell'incidente"@it ,
+                              "has involved entity"@en .
+
+
+###  https://w3id.org/ontoim/hasInvolvedObstacle
+:hasInvolvedObstacle rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :hasInvolvedEntity ;
+                     rdfs:domain :RoadAccident ;
+                     rdfs:range :InvolvedObstacle ;
+                     rdfs:label "ha ostacolo coinvolto"@it ,
+                                "has involved obstacle"@en .
+
+
+###  https://w3id.org/ontoim/hasInvolvedPerson
+:hasInvolvedPerson rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasInvolvedEntity ;
+                   rdfs:domain :RoadAccident ;
+                   rdfs:range :InvolvedPerson ;
+                   rdfs:label "ha persona coinvolta"@it ,
+                              "has involved person"@en .
+
+
+###  https://w3id.org/ontoim/hasInvolvedPersonStatus
+:hasInvolvedPersonStatus rdf:type owl:ObjectProperty ;
+                         rdfs:domain :InvolvedPerson ;
+                         rdfs:range :InvolvedPersonStatus ;
+                         rdfs:label "ha stato della persona coinvolta"@it ,
+                                    "has involved person status"@en .
+
+
+###  https://w3id.org/ontoim/hasInvolvedVehicle
+:hasInvolvedVehicle rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasInvolvedEntity ;
+                    rdfs:domain :RoadAccident ;
+                    rdfs:range :InvolvedVehicle ;
+                    rdfs:label "ha veicolo coinvolto"@it ,
+                               "has involved vehicle"@en .
+
+
 ###  https://w3id.org/ontoim/hasLandRegistry
 :hasLandRegistry rdf:type owl:ObjectProperty ;
                  rdfs:domain :Building ;
@@ -235,6 +382,15 @@ sdo:url rdf:type owl:AnnotationProperty .
                          rdfs:range :LandRegistryCategory ;
                          rdfs:label "ha categoria catastale"@it ,
                                     "has land registry category"@en .
+
+
+###  https://w3id.org/ontoim/hasLength
+:hasLength rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf muapit:hasValue ;
+           rdfs:domain owl:Thing ;
+           rdfs:range muapit:Value ;
+           rdfs:label "ha lunghezza"@it ,
+                      "has length"@en .
 
 
 ###  https://w3id.org/ontoim/hasLocalUnitAddress
@@ -265,12 +421,99 @@ sdo:url rdf:type owl:AnnotationProperty .
                                    "has organization section"@en .
 
 
+###  https://w3id.org/ontoim/hasPassenger
+:hasPassenger rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasInvolvedPerson ;
+              rdfs:domain :InvolvedVehicle ;
+              rdfs:range :InvolvedPerson ;
+              rdfs:label "ha passeggero"@it ,
+                         "has passenger"@en .
+
+
+###  https://w3id.org/ontoim/hasPavementType
+:hasPavementType rdf:type owl:ObjectProperty ;
+                 rdfs:label "ha tipo di pavimentazione stradale"@it ,
+                            "has pavement type"@en .
+
+
+###  https://w3id.org/ontoim/hasPerson
+:hasPerson rdf:type owl:ObjectProperty ;
+           rdfs:domain :InvolvedPerson ;
+           rdfs:range cpvapit:Person ;
+           rdfs:label "ha persona"@it ,
+                      "has person"@en .
+
+
 ###  https://w3id.org/ontoim/hasReferent
 :hasReferent rdf:type owl:ObjectProperty ;
              rdfs:domain :Association ;
              rdfs:range cpvapit:Person ;
              rdfs:label "ha referente"@it ,
                         "has referent"@en .
+
+
+###  https://w3id.org/ontoim/hasRegistrationCountry
+:hasRegistrationCountry rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Vehicle ;
+                        rdfs:range clvapit:Country ;
+                        rdfs:label "ha stato di immatricolazione"@it ,
+                                   "has registration country"@en .
+
+
+###  https://w3id.org/ontoim/hasRoad
+:hasRoad rdf:type owl:ObjectProperty ;
+         rdfs:domain :RoadAccident ;
+         rdfs:range :Road ;
+         rdfs:label "ha strada"@it ,
+                    "has road"@en .
+
+
+###  https://w3id.org/ontoim/hasRoadCaetgory
+:hasRoadCaetgory rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Road ;
+                 rdfs:range :RoadCategory ;
+                 rdfs:label "ha categoria di strada"@it ,
+                            "has road category"@en .
+
+
+###  https://w3id.org/ontoim/hasRoadContext
+:hasRoadContext rdf:type owl:ObjectProperty ;
+                rdfs:domain :Road ;
+                rdfs:range :RoadContext ;
+                rdfs:label "ha contesto stradale dell'incidente"@it ,
+                           "has road context"@en .
+
+
+###  https://w3id.org/ontoim/hasRoadSignalPresence
+:hasRoadSignalPresence rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Road ;
+                       rdfs:range :RoadSignalPresence ;
+                       rdfs:label "ha presenza di segnaletica stradale"@it ,
+                                  "has road signal presence"@en .
+
+
+###  https://w3id.org/ontoim/hasRoadSignalType
+:hasRoadSignalType rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RoadSignal ;
+                   rdfs:range :RoadSignalType ;
+                   rdfs:label "ha tipologia di segnale stradale"@it ,
+                              "has road signal type"@en .
+
+
+###  https://w3id.org/ontoim/hasRoadType
+:hasRoadType rdf:type owl:ObjectProperty ;
+             rdfs:domain :Road ;
+             rdfs:range :RoadType ;
+             rdfs:label "ha tipo di strada"@it ,
+                        "has road type"@en .
+
+
+###  https://w3id.org/ontoim/hasRoadbedStatus
+:hasRoadbedStatus rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Road ;
+                  rdfs:range :RoadbedStatus ;
+                  rdfs:label "ha stato del fondo stradale"@it ,
+                             "has roadbed status"@en .
 
 
 ###  https://w3id.org/ontoim/hasSpatialDelimitation
@@ -299,6 +542,15 @@ sdo:url rdf:type owl:AnnotationProperty .
                             "has subscription"@en .
 
 
+###  https://w3id.org/ontoim/hasSurface
+:hasSurface rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf muapit:hasValue ;
+            rdfs:domain owl:Thing ;
+            rdfs:range muapit:Value ;
+            rdfs:label "ha area"@it ,
+                       "has surface"@en .
+
+
 ###  https://w3id.org/ontoim/hasTouristType
 :hasTouristType rdf:type owl:ObjectProperty ;
                 rdfs:domain :Tourists ;
@@ -307,12 +559,66 @@ sdo:url rdf:type owl:AnnotationProperty .
                            "has tourist type"@en .
 
 
+###  https://w3id.org/ontoim/hasTrafficFlowDirection
+:hasTrafficFlowDirection rdf:type owl:ObjectProperty ;
+                         rdfs:domain iotapit:TrafficFlow ;
+                         rdfs:range :TrafficFlowDirection ;
+                         rdfs:label "ha direzione del flusso stradale"@it ,
+                                    "has traffic flow direction"@en .
+
+
+###  https://w3id.org/ontoim/hasVehicle
+:hasVehicle rdf:type owl:ObjectProperty ;
+            rdfs:domain :InvolvedVehicle ;
+            rdfs:range :Vehicle ;
+            rdfs:label "ha veicolo"@it ,
+                       "has vehicle"@en .
+
+
+###  https://w3id.org/ontoim/hasVehicleCategory
+:hasVehicleCategory rdf:type owl:ObjectProperty ;
+                    rdfs:domain [ rdf:type owl:Class ;
+                                  owl:unionOf ( iotapit:TrafficFlow
+                                                :Vehicle
+                                              )
+                                ] ;
+                    rdfs:range :VehicleCategory ;
+                    rdfs:label "ha categoria di veicolo"@it ,
+                               "has vehicle category"@en .
+
+
 ###  https://w3id.org/ontoim/hasWasteCategory
 :hasWasteCategory rdf:type owl:ObjectProperty ;
                   rdfs:domain :WasteProduction ;
                   rdfs:range :WasteCategory ;
                   rdfs:label "ha categoria di rifiuto"@it ,
                              "has waste category"@en .
+
+
+###  https://w3id.org/ontoim/hasWeatherCondition
+:hasWeatherCondition rdf:type owl:ObjectProperty ;
+                     rdfs:domain :RoadAccident ;
+                     rdfs:range :WeatherCondition ;
+                     rdfs:label "ha condizione meteorologica"@it ,
+                                "has weather condition"@en .
+
+
+###  https://w3id.org/ontoim/hasWeight
+:hasWeight rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf muapit:hasValue ;
+           rdfs:domain owl:Thing ;
+           rdfs:range muapit:Value ;
+           rdfs:label "ha peso"@it ,
+                      "has weight"@en .
+
+
+###  https://w3id.org/ontoim/hasWidth
+:hasWidth rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf muapit:hasValue ;
+          rdfs:domain owl:Thing ;
+          rdfs:range muapit:Value ;
+          rdfs:label "ha larghezza"@it ,
+                     "has width"@en .
 
 
 ###  https://w3id.org/ontoim/isOrganizedBy
@@ -325,7 +631,7 @@ sdo:url rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/ontoim/ownedBy
 :ownedBy rdf:type owl:ObjectProperty ;
-         rdfs:domain :AccessiblePointOfInterest ;
+         rdfs:domain :Facility ;
          rdfs:range covapit:Organization ;
          rdfs:label "owned by"@en ,
                     "posseduto da"@it .
@@ -404,6 +710,14 @@ sdo:url rdf:type owl:AnnotationProperty .
                            "data di bancarotta"@it .
 
 
+###  https://w3id.org/ontoim/brand
+:brand rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Vehicle ;
+       rdfs:range rdfs:Literal ;
+       rdfs:label "brand"@en ,
+                  "marca"@en .
+
+
 ###  https://w3id.org/ontoim/buildingCode
 :buildingCode rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf l0:identifier ;
@@ -411,6 +725,12 @@ sdo:url rdf:type owl:AnnotationProperty .
               rdfs:range rdfs:Literal ;
               rdfs:label "building code"@en ,
                          "codice dell'edificio"@it .
+
+
+###  https://w3id.org/ontoim/color
+:color rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Vehicle ;
+       rdfs:range rdfs:Literal .
 
 
 ###  https://w3id.org/ontoim/endActivityDate
@@ -422,6 +742,24 @@ sdo:url rdf:type owl:AnnotationProperty .
                               "This property represents the date on which an organization closes."@en ;
                  rdfs:label "data di fine attività"@it ,
                             "end activity date"@en .
+
+
+###  https://w3id.org/ontoim/installationDate
+:installationDate rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf tiapit:date ;
+                  rdfs:domain :RoadSignal ;
+                  rdfs:range xsd:date ;
+                  rdfs:label "data di installazione"@it ,
+                             "installation date"@en .
+
+
+###  https://w3id.org/ontoim/licensePlate
+:licensePlate rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf l0:identifier ;
+              rdfs:domain :Vehicle ;
+              rdfs:range rdfs:Literal ;
+              rdfs:label "license plate"@en ,
+                         "numero targa"@it .
 
 
 ###  https://w3id.org/ontoim/liquidationDate
@@ -443,12 +781,65 @@ sdo:url rdf:type owl:AnnotationProperty .
                 "mappale"@it .
 
 
+###  https://w3id.org/ontoim/model
+:model rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Vehicle ;
+       rdfs:range rdfs:Literal ;
+       rdfs:label "model"@en ,
+                  "modello"@it .
+
+
+###  https://w3id.org/ontoim/observationValue
+:observationValue rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf muapit:value ;
+                  rdfs:domain owl:Thing ;
+                  rdfs:range xsd:nonNegativeInteger ;
+                  rdfs:label "observation valore"@it ,
+                             "observation value"@en .
+
+
+###  https://w3id.org/ontoim/registrationYear
+:registrationYear rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf tiapit:year ;
+                  rdfs:domain :Vehicle ;
+                  rdfs:range xsd:gYear ;
+                  rdfs:label "anno di immatricolazione"@it ,
+                             "registration year"@en .
+
+
+###  https://w3id.org/ontoim/removalDate
+:removalDate rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf tiapit:date ;
+             rdfs:domain :RoadSignal ;
+             rdfs:range xsd:date ;
+             rdfs:label "data di rimozione"@it ,
+                        "removal date"@en .
+
+
+###  https://w3id.org/ontoim/roadName
+:roadName rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf l0:name ;
+          rdfs:domain :Road ;
+          rdfs:range rdfs:Literal ;
+          rdfs:label "nome strada"@it ,
+                     "road name"@en .
+
+
 ###  https://w3id.org/ontoim/sheet
 :sheet rdf:type owl:DatatypeProperty ;
        rdfs:domain :LandRegistry ;
        rdfs:range rdfs:Literal ;
        rdfs:label "foglio"@it ,
                   "sheet"@en .
+
+
+###  https://w3id.org/ontoim/signalValue
+:signalValue rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf muapit:value ;
+             rdfs:domain :RoadSignal ;
+             rdfs:range rdfs:Literal ;
+             rdfs:label "signal value"@en ,
+                        "valore del segnale stradale"@it .
 
 
 ###  https://w3id.org/ontoim/subordinate
@@ -459,48 +850,41 @@ sdo:url rdf:type owl:AnnotationProperty .
                         "subordinate"@en .
 
 
-###  https://w3id.org/ontoim/value
-:value rdf:type owl:DatatypeProperty ;
-       rdfs:subPropertyOf muapit:value ;
-       rdfs:domain owl:Thing ;
-       rdfs:range xsd:nonNegativeInteger ;
-       rdfs:label "valore"@it ,
-                  "value"@en .
-
-
 #################################################################
 #    Classes
 #################################################################
 
-###  https://w3id.org/ontoim/AccessiblePointOfInterest
-:AccessiblePointOfInterest rdf:type owl:Class ;
-                           rdfs:subClassOf poiapit:PointOfInterest ,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty accoapit:hasOfferedServiceDescription ;
-                                             owl:allValuesFrom accoapit:OfferedServiceDescription
-                                           ] ,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty acapit:hasAccessCondition ;
-                                             owl:allValuesFrom acapit:AccessCondition
-                                           ] ,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty :ownedBy ;
-                                             owl:allValuesFrom covapit:Organization
-                                           ] ,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty smapit:hasOnlineContactPoint ;
-                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                             owl:onClass smapit:OnlineContactPoint
-                                           ] ,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty smapit:hasPhysicalContactPoint ;
-                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                             owl:onClass smapit:PhysicalContactPoint
-                                           ] ;
-                           rdfs:comment "An Accessible Point of Interest is a Point of Interest, usually a building, a shopping center, a pharmacy, etc.... It inherits the properties of OntoPiA's Point of Interest, but it also has an online or physical contact point, access conditions, offered services descriptions and an owner (Organization)."@en ,
-                                        "Un Punto di Interesse Accessibile è un Punto di Interesse, solitamente un edificio, un centro commerciale, una farmacia ecc.... Eredita le proprietà del Punto di Interesse di OntoPiA, ma possiede anche un punto di contatto online o fisico, una o più condizioni di acceso, può avere dei servizi generici e ha un possessore (Organizzazione)."@it ;
-                           rdfs:label "Accessible Point of Interest"@en ,
-                                      "Punto di Interesse Accessibile"@it .
+###  https://w3id.org/ontoim/AccidentCircumstance
+:AccidentCircumstance rdf:type owl:Class ;
+                      rdfs:subClassOf l0:Characteristic ;
+                      rdfs:comment "Questa classe rappresenta la circostanza in cui si trovava un'entità coinvolta in un incidente stradale. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances"@it ,
+                                   "This class represents the circumstance in which an entity was involved in a road accident. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances"@en ;
+                      rdfs:label "Accident Circumstance"@en ,
+                                 "Circostanza dell'Incidente"@it .
+
+
+###  https://w3id.org/ontoim/AccidentType
+:AccidentType rdf:type owl:Class ;
+              rdfs:subClassOf l0:Characteristic ;
+              rdfs:comment "Questa classe rappresenta la tipologia di un incidente stradale. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/accident-types"@it ,
+                           "This class represents the type of a road accident. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/accident-types"@en ;
+              rdfs:label "Accident Type"@en ,
+                         "Tipo di Incidente Stradale"@it .
+
+
+###  https://w3id.org/ontoim/AccommodationFacility
+:AccommodationFacility rdf:type owl:Class ;
+                       rdfs:subClassOf accoapit:Accommodation ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasBooking ;
+                                         owl:allValuesFrom :Booking
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasBookings ;
+                                         owl:allValuesFrom :Bookings
+                                       ] ;
+                       rdfs:label "Accommodation Facility"@en ,
+                                  "Struttura Ricettiva"@it .
 
 
 ###  https://w3id.org/ontoim/ArtisanOrganization
@@ -585,7 +969,7 @@ sdo:url rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/ontoim/Building
 :Building rdf:type owl:Class ;
-          rdfs:subClassOf :AccessiblePointOfInterest ,
+          rdfs:subClassOf :Facility ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :concessedWithProperty ;
                             owl:allValuesFrom pcapit:Procedure
@@ -599,8 +983,8 @@ sdo:url rdf:type owl:AnnotationProperty .
                             owl:onProperty :buildingCode ;
                             owl:cardinality "1"^^xsd:nonNegativeInteger
                           ] ;
-          rdfs:comment "Questa classe rappresenta un punto di interesse accessibile, che è un edificio con i suoi dati catastali."@it ,
-                       "This class represents an accessible point of interest, which is a building with its cadastral data."@en ;
+          rdfs:comment "Questa classe rappresenta una struttura, che è un edificio con i suoi dati catastali."@it ,
+                       "This class represents a facility, which is a building with its cadastral data."@en ;
           rdfs:label "Building"@en ,
                      "Edificio"@it .
 
@@ -707,7 +1091,7 @@ sdo:url rdf:type owl:AnnotationProperty .
                                           owl:onClass clvapit:SpatialObject
                                         ] ,
                                         [ rdf:type owl:Restriction ;
-                                          owl:onProperty :value ;
+                                          owl:onProperty :observationValue ;
                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                           owl:onDataRange xsd:nonNegativeInteger
                                         ] ;
@@ -745,6 +1129,33 @@ sdo:url rdf:type owl:AnnotationProperty .
                   "Evento"@it .
 
 
+###  https://w3id.org/ontoim/Facility
+:Facility rdf:type owl:Class ;
+          rdfs:subClassOf poiapit:PointOfInterest ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty accoapit:hasOfferedServiceDescription ;
+                            owl:allValuesFrom accoapit:OfferedServiceDescription
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :ownedBy ;
+                            owl:allValuesFrom covapit:Organization
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty smapit:hasOnlineContactPoint ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass smapit:OnlineContactPoint
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty smapit:hasPhysicalContactPoint ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass smapit:PhysicalContactPoint
+                          ] ;
+          rdfs:comment "A Facility is a Point of Interest, usually a building, a shopping center, a pharmacy, etc.... It inherits the properties of OntoPiA's Point of Interest, but it also has an online or physical contact point, offered services descriptions and an owner (Organization)."@en ,
+                       "Un Punto di Interesse Accessibile è un Punto di Interesse, solitamente un edificio, un centro commerciale, una farmacia ecc.... Eredita le proprietà del Punto di Interesse di OntoPiA, ma possiede anche un punto di contatto online o fisico e può avere dei servizi generici e ha un possessore (Organizzazione)."@it ;
+          rdfs:label "Facility"@en ,
+                     "Struttura"@it .
+
+
 ###  https://w3id.org/ontoim/Heritage
 :Heritage rdf:type owl:Class ;
           rdfs:subClassOf l0:Collection ,
@@ -770,6 +1181,88 @@ sdo:url rdf:type owl:AnnotationProperty .
                            "This class represents the type of an heritage. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/heritage-types"@en ;
               rdfs:label "Heritage Type"@en ,
                          "Tipologia di Patrimonio"@it .
+
+
+###  https://w3id.org/ontoim/InvolvedEntity
+:InvolvedEntity rdf:type owl:Class ;
+                rdfs:subClassOf l0:Entity ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasAccidentCircumstance ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :AccidentCircumstance
+                                ] ;
+                rdfs:comment "Questa classe rappresenta un'entità coinvolta in un incidente stradale."@it ,
+                             "This class represents an entity involved in a traffic accident."@en ;
+                rdfs:label "Entità Coinvolta"@it ,
+                           "Involved Entity"@en .
+
+
+###  https://w3id.org/ontoim/InvolvedObstacle
+:InvolvedObstacle rdf:type owl:Class ;
+                  rdfs:subClassOf :InvolvedEntity ;
+                  rdfs:comment "Questa classe rappresenta un ostacolo coinvolto in un incidente stradale."@it ,
+                               "This class represents an obstacle involved in a road accident."@en ;
+                  rdfs:label "Involved Obstacle"@en ,
+                             "Ostacolo Coinvolto"@it .
+
+
+###  https://w3id.org/ontoim/InvolvedPerson
+:InvolvedPerson rdf:type owl:Class ;
+                rdfs:subClassOf :InvolvedEntity ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasInvolvedPersonStatus ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :InvolvedPersonStatus
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasPerson ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass cpvapit:Person
+                                ] ;
+                rdfs:comment "Questa classe rappresenta una persona coinvolta in un incidente stradale. Può essere sia un passeggero di un veicolo, sia un pedone."@it ,
+                             "This class represents a person involved in a traffic accident. It can be either a passenger in a vehicle or a pedestrian."@en ;
+                rdfs:label "Involved Person"@en ,
+                           "Persona Coinvolta"@it .
+
+
+###  https://w3id.org/ontoim/InvolvedPersonStatus
+:InvolvedPersonStatus rdf:type owl:Class ;
+                      rdfs:subClassOf l0:Characteristic ;
+                      rdfs:comment "Questa classe rappresenta lo stato di una persona coinvolta in un incidente stradale. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses"@it ,
+                                   "This class represents the status of a person involved in a road accident. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses"@en ;
+                      rdfs:label "Involved Person Status"@en ,
+                                 "Stato della Persona Coinvolta"@it .
+
+
+###  https://w3id.org/ontoim/InvolvedVehicle
+:InvolvedVehicle rdf:type owl:Class ;
+                 rdfs:subClassOf :InvolvedEntity ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasBackPassenger ;
+                                   owl:allValuesFrom :InvolvedPerson
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasFrontPassenger ;
+                                   owl:allValuesFrom :InvolvedPerson
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasPassenger ;
+                                   owl:allValuesFrom :InvolvedPerson
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasConducent ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :InvolvedPerson
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasVehicle ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :Vehicle
+                                 ] ;
+                 rdfs:comment "Questa classe rappresenta il veicolo coinvolto in un incidente stradale."@it ,
+                              "This class represents a vehicle involved in a road accident."@en ;
+                 rdfs:label "Involved Vehicle"@en ,
+                            "Veicolo Coinvolto"@it .
 
 
 ###  https://w3id.org/ontoim/LandRegistry
@@ -858,6 +1351,15 @@ sdo:url rdf:type owl:AnnotationProperty .
                                 "Sezione Impresa"@it .
 
 
+###  https://w3id.org/ontoim/PavementType
+:PavementType rdf:type owl:Class ;
+              rdfs:subClassOf l0:Characteristic ;
+              rdfs:comment "Questa classe rappresenta il tipo di pavimentazione stradale. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/pavement-types"@it ,
+                           "This class represents the type of the road pavement. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/pavement-types"@en ;
+              rdfs:label "Pavement Type"@en ,
+                         "Tipo di Pavimentazione Stradale"@it .
+
+
 ###  https://w3id.org/ontoim/PrivateOrganization
 :PrivateOrganization rdf:type owl:Class ;
                      rdfs:subClassOf covapit:PrivateOrganization ,
@@ -882,6 +1384,210 @@ sdo:url rdf:type owl:AnnotationProperty .
                           "This class represents a public event (e.g., a football match, a  conference, a book presentation, etc.). A public event is defined as an event that takes places in a given place and that occurs at a certain time, organised/run/promoted by one or more agents with a specific purpose and in the interest of a general public. There exist different types of public events depending on their size and content."@en ;
              rdfs:label "Evento Pubblico"@it ,
                         "Public Event"@en .
+
+
+###  https://w3id.org/ontoim/RevelationUnit
+:RevelationUnit rdf:type owl:Class ;
+                rdfs:subClassOf l0:Agent ;
+                rdfs:comment "Questa classe rappresenta l'unità che ha rilevato l'incidente (polizia, carabinieri, ecc...). Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/revelation-units"@it ,
+                             "This class represents the unit that detected the incident (police, carabinieri, etc...). The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/revelation-units"@en ;
+                rdfs:label "Revelation Unit"@en ,
+                           "Unità di Rivelazione"@it .
+
+
+###  https://w3id.org/ontoim/Road
+:Road rdf:type owl:Class ;
+      rdfs:subClassOf l0:Location ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasAddress ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass clvapit:Address
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasPavementType ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :PavementType
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasRoadCaetgory ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :RoadCategory
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasRoadContext ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :RoadContext
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasRoadSignalPresence ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :RoadSignalPresence
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasRoadType ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :RoadType
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasRoadbedStatus ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :RoadbedStatus
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :roadName ;
+                        owl:allValuesFrom rdfs:Literal
+                      ] ;
+      rdfs:comment "Questa classe rappresenta la strada in cui avviene un incidente stradale."@it ,
+                   "This class represents a road where an accident happens."@en ;
+      rdfs:label "Road"@en ,
+                 "Strada"@it .
+
+
+###  https://w3id.org/ontoim/RoadAccident
+:RoadAccident rdf:type owl:Class ;
+              rdfs:subClassOf l0:EventOrSituation ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :detectedBy ;
+                                owl:allValuesFrom :RevelationUnit
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasInvolvedEntity ;
+                                owl:allValuesFrom :InvolvedEntity
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasInvolvedObstacle ;
+                                owl:allValuesFrom :InvolvedObstacle
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasInvolvedPerson ;
+                                owl:allValuesFrom :InvolvedPerson
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasInvolvedVehicle ;
+                                owl:allValuesFrom :InvolvedVehicle
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasWeatherCondition ;
+                                owl:allValuesFrom :WeatherCondition
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty clvapit:hasGeometry ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass clvapit:Geometry
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasAccidentType ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :AccidentType
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasRoad ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :Road
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty tiapit:date ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:dateTime
+                              ] ;
+              rdfs:comment "Questa classe rappresenta un incidente stradale. Gli incidenti stradali sono modellati utilizzando il questionario ISTAT CTT/INC del 2019."@it ,
+                           "This class represents a traffic accident. Road accidents are modeled using the 2019 ISTAT CTT/INC questionnaire."@en ;
+              rdfs:label "Incidente Stradale"@it ,
+                         "Road Accident"@en .
+
+
+###  https://w3id.org/ontoim/RoadCategory
+:RoadCategory rdf:type owl:Class ;
+              rdfs:subClassOf l0:Topic ;
+              rdfs:comment "Questa classe rappresenta la categoria/tipologia di strada. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/road-categories"@it ,
+                           "This class represents the category of the typology/category of a road. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/road-categories"@en ;
+              rdfs:label "Categoria di Strada"@it ,
+                         "Road Category"@en .
+
+
+###  https://w3id.org/ontoim/RoadContext
+:RoadContext rdf:type owl:Class ;
+             rdfs:subClassOf l0:Characteristic ;
+             rdfs:comment "Questa classe rappresenta il contesto dell'incidente stradale (interseazione o no). Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/road-contexts"@it ,
+                          "This class represents the context of a road accident. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/road-contexts"@en ;
+             rdfs:label "Contesto Stradale dell'Incidente"@it ,
+                        "Road Context"@en .
+
+
+###  https://w3id.org/ontoim/RoadSegment
+:RoadSegment rdf:type owl:Class ;
+             rdfs:subClassOf iotapit:RoadSegment ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty clvapit:hasStreetToponym ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass clvapit:StreetToponym
+                             ] ;
+             rdfs:label "Arco Stradale"@it ,
+                        "Road Segment"@en .
+
+
+###  https://w3id.org/ontoim/RoadSignal
+:RoadSignal rdf:type owl:Class ;
+            rdfs:subClassOf poiapit:PointOfInterest ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasRoadSignalType ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :RoadSignalType
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :signalValue ;
+                              owl:allValuesFrom rdfs:Literal
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :installationDate ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:date
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :removalDate ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:date
+                            ] ;
+            rdfs:comment "Questa classe rappresenta la segnaletica stradale. La tipologia di segnale stradale definisce di che segnale si tratta (semaforo, stop, limite di velocità), mentre il valore indica il valore del segnale. Nel caso di un limite di velocità, il limite, nel caso di un'indicazione per una città, il nome della città."@it ,
+                         "This class represents traffic signs. The type of road sign defines what sign it is (traffic light, stop sign, speed limit), while the value indicates the value of the sign. In the case of a speed limit, the limit; in the case of a sign for a city, the name of the city."@en ;
+            rdfs:label "Road Signal"@en ,
+                       "Segnale Stradale"@it .
+
+
+###  https://w3id.org/ontoim/RoadSignalPresence
+:RoadSignalPresence rdf:type owl:Class ;
+                    rdfs:subClassOf l0:Characteristic ;
+                    rdfs:comment "Questa classe rappresenta la presenza e la tipologia della segnaletica stradale. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/roadsignal-presences"@it ,
+                                 "This class represents the presence and the types of the signal roads. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/roadsignal-presences"@en ;
+                    rdfs:label "Presenza di Segnaletica Stradale"@it ,
+                               "Road Signal Presence"@en .
+
+
+###  https://w3id.org/ontoim/RoadSignalType
+:RoadSignalType rdf:type owl:Class ;
+                rdfs:subClassOf l0:Topic ;
+                rdfs:comment "Questa classe rappresenta la tipologia di segnaletica stradale. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/road-signal-types"@it ,
+                             "This class represents the typology of a road signal. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/road-signal-types"@en ;
+                rdfs:label "Road Signal Type"@en ,
+                           "Tipo di Segnale Stradale"@it .
+
+
+###  https://w3id.org/ontoim/RoadType
+:RoadType rdf:type owl:Class ;
+          rdfs:subClassOf l0:Characteristic ;
+          rdfs:comment "Questa classe rappresenta il tipo di strada. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/road-types"@it ,
+                       "This class represents the type of a road. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/road-types"@en ;
+          rdfs:label "Road Type"@en ,
+                     "Tipo di Strada"@it .
+
+
+###  https://w3id.org/ontoim/RoadbedStatus
+:RoadbedStatus rdf:type owl:Class ;
+               rdfs:subClassOf l0:Characteristic ;
+               rdfs:comment "Questa classe rappresenta lo stato del fondo stradale. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/roadbed-statuses"@it ,
+                            "This class represents the status of the roadbed. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/roadbed-statuses"@en ;
+               rdfs:label "Roadbed Status"@en ,
+                          "Stato del Fondo Stradale"@it .
 
 
 ###  https://w3id.org/ontoim/Subscriber
@@ -929,6 +1635,106 @@ sdo:url rdf:type owl:AnnotationProperty .
                      "Turisti"@it .
 
 
+###  https://w3id.org/ontoim/TrafficFlow
+:TrafficFlow rdf:type owl:Class ;
+             rdfs:subClassOf iotapit:TrafficFlow ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasTrafficFlowDirection ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :TrafficFlowDirection
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasVehicleCategory ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :VehicleCategory
+                             ] ;
+             rdfs:label "Flusso Traffico"@it ,
+                        "Traffic Flow"@en .
+
+
+###  https://w3id.org/ontoim/TrafficFlowDirection
+:TrafficFlowDirection rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Class ;
+                                            owl:oneOf ( :Both
+                                                        :In
+                                                        :Out
+                                                      )
+                                          ] ;
+                      rdfs:comment "Questa è una classe numerata che rappresenta la direzione del flusso del traffico."@it ,
+                                   "This class is an enumerated class that represents the direction of the traffic flow."@en ;
+                      rdfs:label "Direzione del Flusso del Traffico"@it ,
+                                 "Traffic Flow Direction"@en .
+
+
+###  https://w3id.org/ontoim/Vehicle
+:Vehicle rdf:type owl:Class ;
+         rdfs:subClassOf l0:Object ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasEngineDisplacement ;
+                           owl:allValuesFrom muapit:Value
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasHeight ;
+                           owl:allValuesFrom muapit:Value
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasLength ;
+                           owl:allValuesFrom muapit:Value
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasWeight ;
+                           owl:allValuesFrom muapit:Value
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasWidth ;
+                           owl:allValuesFrom muapit:Value
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasVehicleCategory ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :VehicleCategory
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasRegistrationCountry ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass clvapit:Country
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :brand ;
+                           owl:allValuesFrom rdfs:Literal
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :color ;
+                           owl:allValuesFrom rdfs:Literal
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :model ;
+                           owl:allValuesFrom rdfs:Literal
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :licensePlate ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :registrationYear ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:gYear
+                         ] ;
+         rdfs:comment "Questa classe rappresenta un veicolo."@it ,
+                      "This class represents a vehicle."@en ;
+         rdfs:label "Vehicle"@en ,
+                    "Veicolo"@it .
+
+
+###  https://w3id.org/ontoim/VehicleCategory
+:VehicleCategory rdf:type owl:Class ;
+                 rdfs:subClassOf l0:Topic ;
+                 rdfs:comment "Questa classe rappresenta la categoria di un veicolo. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"@it ,
+                              "This class represents the category of a vehicle. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories"@en ;
+                 rdfs:label "Categoria di Veicolo"@it ,
+                            "Vehicle Category"@en .
+
+
 ###  https://w3id.org/ontoim/WasteCategory
 :WasteCategory rdf:type owl:Class ;
                rdfs:subClassOf l0:Topic ;
@@ -967,13 +1773,23 @@ sdo:url rdf:type owl:AnnotationProperty .
                             "Waste Production"@en .
 
 
+###  https://w3id.org/ontoim/WeatherCondition
+:WeatherCondition rdf:type owl:Class ;
+                  rdfs:subClassOf l0:Characteristic ;
+                  rdfs:comment "Questa classe rappresenta la condizione meteorologica di un incidente stradale. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/weather-conditions"@it ,
+                               "This class represents the weather condition of a road accident. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/weather-conditions"@en ;
+                  rdfs:label "Condizione Meteorologica"@it ,
+                             "Weather Condition"@en .
+
+
 #################################################################
 #    Individuals
 #################################################################
 
 ###  https://www.dei.unipd.it
 <https://www.dei.unipd.it> rdf:type owl:NamedIndividual ;
-                           rdfs:label "Università di Padova"^^rdfs:Literal ;
+                           rdfs:label "University of Padova, Department of Information Engineering"@en ,
+                                      "Università di Padova, Dipartimento di Ingegneria dell'Informazione"@it ;
                            sdo:name "University of Padova, Department of Information Engineering"@en ,
                                     "Università degli Studi di Padova, Dipartimento di Ingegneria dell'Informazione"@it ;
                            sdo:url <https://www.dei.unipd.it> .
@@ -993,6 +1809,33 @@ sdo:url rdf:type owl:AnnotationProperty .
                   :TouristType ;
          rdfs:label "Arrival"@en ,
                     "Arrivo"@it .
+
+
+###  https://w3id.org/ontoim/Both
+:Both rdf:type owl:NamedIndividual ,
+               :TrafficFlowDirection ;
+      rdfs:comment "Il flusso totale del traffico nell'arco stradale."@it ,
+                   "The total traffic flow of the road segment."@en ;
+      rdfs:label "Both"@en ,
+                 "Da entrambi i versi"@it .
+
+
+###  https://w3id.org/ontoim/In
+:In rdf:type owl:NamedIndividual ,
+             :TrafficFlowDirection ;
+    rdfs:comment "Il flusso del traffico entra nell'arco stradale."@it ,
+                 "The traffic flow comes into the road segment."@en ;
+    rdfs:label "In"@en ,
+               "Verso l'interno"@it .
+
+
+###  https://w3id.org/ontoim/Out
+:Out rdf:type owl:NamedIndividual ,
+              :TrafficFlowDirection ;
+     rdfs:comment "Il flusso del traffico esce dall'arco stradale."@it ,
+                  "The traffic flow comes out of the road segment."@en ;
+     rdfs:label "Out"@en ,
+                "Verso l'esterno"@it .
 
 
 ###  https://w3id.org/ontoim/Presence

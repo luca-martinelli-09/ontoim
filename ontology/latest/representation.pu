@@ -36,8 +36,8 @@ skinparam nodesep 50
 !define RoadSignalNode f2f2f2
 !define RoadSignalProperty 413f42
 
-!define AccessiblePoINode c4ddff
-!define AccessiblePoIProperty 0096ff
+!define FacilityNode c4ddff
+!define FacilityProperty 0096ff
 
 !define SchoolNode fefecc
 !define SchoolProperty fdb827
@@ -95,13 +95,13 @@ package "OntoPiA" {
 }
 
 ' Added an Accessible Point of Interest, a POI with online contact point, physical contact point, an organization owner and an access condition.
-class AccessiblePointOfInterest #AccessiblePoINode
-AccessiblePointOfInterest -[#OntoPiAProperty]-> PointOfInterest : rdfs:subclassOf
+class Facility #FacilityNode
+Facility -[#OntoPiAProperty]-> PointOfInterest : rdfs:subclassOf
 
-AccessiblePointOfInterest -[#OntoPiAProperty]-> OnlineContactPoint : sm:hasOnlineContactPoint
-AccessiblePointOfInterest -[#OntoPiAProperty]-> PhysicalContactPoint : sm:hasPhysicalContactPoint
-AccessiblePointOfInterest -[#OntoPiAProperty]-> AccessCondition : accondition:hasAccessCondition
-AccessiblePointOfInterest -[#OntoPiAProperty]-> OfferedServiceDescription : hasOfferedServiceDescription
+Facility -[#OntoPiAProperty]-> OnlineContactPoint : sm:hasOnlineContactPoint
+Facility -[#OntoPiAProperty]-> PhysicalContactPoint : sm:hasPhysicalContactPoint
+Facility -[#OntoPiAProperty]-> AccessCondition : accondition:hasAccessCondition
+Facility -[#OntoPiAProperty]-> OfferedServiceDescription : hasOfferedServiceDescription
 
 
 package "Demographic Observation" {
@@ -113,7 +113,7 @@ package "Demographic Observation" {
     ' A demo observation can also be releated to a spatial object, which describes the spatial delimitation of the observation
     ' For example, we can count the number of males in a specific area, that can be a city, a borough, a street, etc...
     class DemographicObservation #DemographicObservationNode {
-        value^^xsd:nonNegativeInteger
+        observationValue^^xsd:nonNegativeInteger
     }
     DemographicObservation -[#OntoPiAProperty]-> Activity : rdfs:subclassOf
 
@@ -194,7 +194,7 @@ package "Organizations" {
     Organization -[#OntoPiAProperty]-> Service : providesService
     Organization --> Heritage : hasHeritage
 
-    AccessiblePointOfInterest -[#OrganizationProperty]-> Organization : ownedBy
+    Facility -[#OrganizationProperty]-> Organization : ownedBy
 
     class PrivateOrganization <<cov>> #OrganizationNode
     PrivateOrganization -[#OrganizationProperty]-> Organization : rdfs:subclassOf
@@ -244,7 +244,7 @@ package "Organizations" {
     class Building #HeritageNode {
         buildingCode^^l0:identifier
     }
-    Building -[#AccessiblePoIProperty]-> AccessiblePointOfInterest : rdfs:subclassOf
+    Building -[#FacilityProperty]-> Facility : rdfs:subclassOf
 
     Building -[#OntoPiAProperty]-> Procedure : concessedWithProcedure
     Building -[#HeritageProperty]-> LandRegistry : hasLandRegistry
@@ -295,7 +295,9 @@ package "Road and Traffic" {
     RoadAccident -[#RoadAccidentProperty]-> Road : hasRoad
     RoadAccident -[#RoadAccidentProperty]-> WeatherCondition : hasWeatherCondition
     RoadAccident -[#RoadAccidentProperty]-> AccidentType : hasAccidentType
-    RoadAccident -[#RoadAccidentProperty]-> InvolvedEntity : hasInvolvedEntity
+    RoadAccident -[#RoadAccidentProperty]-> InvolvedVehicle : hasInvolvedVehicle
+    RoadAccident -[#RoadAccidentProperty]-> InvolvedPerson : hasInvolvedPerson
+    RoadAccident -[#RoadAccidentProperty]-> InvolvedObstacle : hasInvolvedObstacle
 
     class RevelationUnit #RoadAccidentNode
     RevelationUnit -[#OntoPiAProperty]-> Agent : rdfs:subclassOf
@@ -305,7 +307,7 @@ package "Road and Traffic" {
     }
     Road -[#OntoPiAProperty]-> Location : rdfs:subclassOf
 
-    Road -[#OntoPiAProperty]-> Address : clv:hasAddress
+    Road -[#OntoPiAProperty]-> Address : hasAddress
     Road -[#RoadAccidentProperty]-> RoadCategory : hasRoadCategory
     Road -[#RoadAccidentProperty]-> RoadType : hasRoadType
     Road -[#RoadAccidentProperty]-> PavementType : hasPavementType
@@ -350,6 +352,7 @@ package "Road and Traffic" {
 
     InvolvedVehicle -[#VehicleProperty]-> Vehicle : hasVehicle
     InvolvedVehicle -[#RoadAccidentProperty]-> InvolvedPerson : hasConducent
+    InvolvedVehicle -[#RoadAccidentProperty]-> InvolvedPerson : hasPassenger
     InvolvedVehicle -[#RoadAccidentProperty]-> InvolvedPerson : hasFrontPassenger
     InvolvedVehicle -[#RoadAccidentProperty]-> InvolvedPerson : hasBackPassenger
 
@@ -375,8 +378,12 @@ package "Road and Traffic" {
     Vehicle -[#OntoPiAProperty]-> Object : rdfs:subclassOf
 
     Vehicle -[#VehicleProperty]-> VehicleCategory : hasVehicleCategory
-    Vehicle -[#OntoPiAProperty]-> Value : hasMeasurement
-    Vehicle -[#OntoPiAProperty]-> Country : registrationCountry
+    Vehicle -[#OntoPiAProperty]-> Value : hasLength
+    Vehicle -[#OntoPiAProperty]-> Value : hasWidth
+    Vehicle -[#OntoPiAProperty]-> Value : hasHeight
+    Vehicle -[#OntoPiAProperty]-> Value : hasWeight
+    Vehicle -[#OntoPiAProperty]-> Value : hasEngineDisplacement
+    Vehicle -[#OntoPiAProperty]-> Country : hasRegistrationCountry
 
     class VehicleCategory #VehicleNode
     VehicleCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
@@ -384,7 +391,8 @@ package "Road and Traffic" {
     ' The road signals are point of interests with a signal value (e.g. 50 for a speed limit or the name of the destination indicated)
     class RoadSignal #RoadSignalNode {
         signalValue^^rdfs:literal
-        lastMaintenanceDate^^xsd:date
+        installationDate^^xsd:date
+        removalDate^^xsd:date
     }
     RoadSignal -[#OntoPiAProperty]-> PointOfInterest : rdfs:subclassOf
 
@@ -392,7 +400,7 @@ package "Road and Traffic" {
 
     ' The road signal type is a controlled vocabulary of all road signals, with a value, an image and a category
     class RoadSignalType #RoadSignalNode
-    RoadSignalType -[#OntoPiAProperty]-> Object : rdfs:subclassOf
+    RoadSignalType -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
 
     ' Traffic Flow observation. Added street toponym to road segment and vehicle category (controlled vocabulary)
     class TrafficFlow <<iot>> #TrafficFlowNode
@@ -420,7 +428,7 @@ package "School" {
     class School #SchoolNode {
         schoolCode^^l0:identifier
     }
-    School -[#AccessiblePoIProperty]-> Building : rdfs:subclassOf
+    School -[#FacilityProperty]-> Building : rdfs:subclassOf
 
     School -[#SchoolProperty]-> SchoolCategory : hasSchoolCategory
     School -[#SchoolProperty]-> Course : offersCourse
@@ -487,7 +495,7 @@ package "School" {
 package "Green Zone" {
     ' A green zone is an accessible point of interest that can also contains plants and can has an area
     class GreenZone #GreenZoneNode
-    GreenZone -[#AccessiblePoIProperty]-> AccessiblePointOfInterest : rdfs:subclassOf
+    GreenZone -[#FacilityProperty]-> Facility : rdfs:subclassOf
 
     GreenZone -[#OntoPiAProperty]-> Value : hasMeasurement
     GreenZone -[#GreenZoneProperty]-> Plant : hasPlant
@@ -525,7 +533,7 @@ package "Hospital" {
     class Hospital #HospitalNode {
         totalNumberOfBeds^^xsd:int
     }
-    Hospital -[#AccessiblePoIProperty]-> Building : rdfs:subclassOf
+    Hospital -[#FacilityProperty]-> Building : rdfs:subclassOf
 
     Hospital -[#HospitalProperty]-> HospitalDepartment : hasHospitalDepartment
 

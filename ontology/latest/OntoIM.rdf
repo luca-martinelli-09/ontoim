@@ -163,11 +163,91 @@
     
 
 
+    <!-- https://w3id.org/ontoim/detectedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/detectedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/RoadAccident"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/RevelationUnit"/>
+        <rdfs:label xml:lang="en">detected by</rdfs:label>
+        <rdfs:label xml:lang="it">rilevato da</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasAccidentCircumstance -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasAccidentCircumstance">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/InvolvedEntity"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/AccidentCircumstance"/>
+        <rdfs:label xml:lang="it">ha circostanze dell&apos;incidente</rdfs:label>
+        <rdfs:label xml:lang="en">has accident circumstance</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasAccidentType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasAccidentType">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/RoadAccident"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/AccidentType"/>
+        <rdfs:label xml:lang="it">ha tipo di incidente stradale</rdfs:label>
+        <rdfs:label xml:lang="en">has accident type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasAddress -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasAddress">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
+        <rdfs:label xml:lang="it">ha indirizzo</rdfs:label>
+        <rdfs:label xml:lang="en">has address</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ontoim/hasAssociationCategory -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasAssociationCategory">
         <rdfs:label xml:lang="it">ha categoria di associazione</rdfs:label>
         <rdfs:label xml:lang="en">has association category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasBackPassenger -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasBackPassenger">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontoim/hasPassenger"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/InvolvedVehicle"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/InvolvedPerson"/>
+        <rdfs:label xml:lang="it">ha passeggero posteriore</rdfs:label>
+        <rdfs:label xml:lang="en">has back passenger</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasBooking -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasBooking">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontoim/hasDemographicEvent"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/ACCO/Accommodation"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/AccessCondition/Booking"/>
+        <rdfs:label xml:lang="it">ha prenotazione</rdfs:label>
+        <rdfs:label xml:lang="en">has booking</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasBookings -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasBookings">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontoim/hasDemographicObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/ACCO/Accommodation"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/Bookings"/>
+        <rdfs:label xml:lang="it">ha prenotazioni</rdfs:label>
+        <rdfs:label xml:lang="en">has bookings</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -197,6 +277,18 @@
         <rdfs:range rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
         <rdfs:label xml:lang="it">ha categoria di stato civile</rdfs:label>
         <rdfs:label xml:lang="en">has civil status category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasConducent -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasConducent">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontoim/hasInvolvedPerson"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/InvolvedVehicle"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/InvolvedPerson"/>
+        <rdfs:label xml:lang="it">ha conducente</rdfs:label>
+        <rdfs:label xml:lang="en">has conducent</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -259,6 +351,18 @@
     
 
 
+    <!-- https://w3id.org/ontoim/hasDiameter -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasDiameter">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/MU/hasValue"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+        <rdfs:label xml:lang="it">ha diametro</rdfs:label>
+        <rdfs:label xml:lang="en">has diameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ontoim/hasEmployees -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasEmployees">
@@ -267,6 +371,42 @@
         <rdfs:range rdf:resource="https://w3id.org/ontoim/Employees"/>
         <rdfs:label xml:lang="it">ha dipendenti</rdfs:label>
         <rdfs:label xml:lang="en">has employees</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasEngineDisplacement -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasEngineDisplacement">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/MU/hasValue"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Vehicle"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+        <rdfs:label xml:lang="it">ha cilindrata</rdfs:label>
+        <rdfs:label xml:lang="en">has engine displacement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasFrontPassenger -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasFrontPassenger">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontoim/hasPassenger"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/InvolvedVehicle"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/InvolvedPerson"/>
+        <rdfs:label xml:lang="it">ha passeggero anteriore</rdfs:label>
+        <rdfs:label xml:lang="en">has front passenger</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasHeight -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasHeight">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/MU/hasValue"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+        <rdfs:label xml:lang="it">ha altezza</rdfs:label>
+        <rdfs:label xml:lang="en">has height</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -293,6 +433,64 @@
     
 
 
+    <!-- https://w3id.org/ontoim/hasInvolvedEntity -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasInvolvedEntity">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/RoadAccident"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/InvolvedEntity"/>
+        <rdfs:label xml:lang="it">ha entità coinvolta nell&apos;incidente</rdfs:label>
+        <rdfs:label xml:lang="en">has involved entity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasInvolvedObstacle -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasInvolvedObstacle">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontoim/hasInvolvedEntity"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/RoadAccident"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/InvolvedObstacle"/>
+        <rdfs:label xml:lang="it">ha ostacolo coinvolto</rdfs:label>
+        <rdfs:label xml:lang="en">has involved obstacle</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasInvolvedPerson -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasInvolvedPerson">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontoim/hasInvolvedEntity"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/RoadAccident"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/InvolvedPerson"/>
+        <rdfs:label xml:lang="it">ha persona coinvolta</rdfs:label>
+        <rdfs:label xml:lang="en">has involved person</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasInvolvedPersonStatus -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasInvolvedPersonStatus">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/InvolvedPerson"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/InvolvedPersonStatus"/>
+        <rdfs:label xml:lang="it">ha stato della persona coinvolta</rdfs:label>
+        <rdfs:label xml:lang="en">has involved person status</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasInvolvedVehicle -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasInvolvedVehicle">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontoim/hasInvolvedEntity"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/RoadAccident"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/InvolvedVehicle"/>
+        <rdfs:label xml:lang="it">ha veicolo coinvolto</rdfs:label>
+        <rdfs:label xml:lang="en">has involved vehicle</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ontoim/hasLandRegistry -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasLandRegistry">
@@ -312,6 +510,18 @@
         <rdfs:range rdf:resource="https://w3id.org/ontoim/LandRegistryCategory"/>
         <rdfs:label xml:lang="it">ha categoria catastale</rdfs:label>
         <rdfs:label xml:lang="en">has land registry category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasLength -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasLength">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/MU/hasValue"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+        <rdfs:label xml:lang="it">ha lunghezza</rdfs:label>
+        <rdfs:label xml:lang="en">has length</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -353,6 +563,38 @@
     
 
 
+    <!-- https://w3id.org/ontoim/hasPassenger -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasPassenger">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontoim/hasInvolvedPerson"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/InvolvedVehicle"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/InvolvedPerson"/>
+        <rdfs:label xml:lang="it">ha passeggero</rdfs:label>
+        <rdfs:label xml:lang="en">has passenger</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasPavementType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasPavementType">
+        <rdfs:label xml:lang="it">ha tipo di pavimentazione stradale</rdfs:label>
+        <rdfs:label xml:lang="en">has pavement type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasPerson -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasPerson">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/InvolvedPerson"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CPV/Person"/>
+        <rdfs:label xml:lang="it">ha persona</rdfs:label>
+        <rdfs:label xml:lang="en">has person</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ontoim/hasReferent -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasReferent">
@@ -360,6 +602,94 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/CPV/Person"/>
         <rdfs:label xml:lang="it">ha referente</rdfs:label>
         <rdfs:label xml:lang="en">has referent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasRegistrationCountry -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasRegistrationCountry">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Vehicle"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Country"/>
+        <rdfs:label xml:lang="it">ha stato di immatricolazione</rdfs:label>
+        <rdfs:label xml:lang="en">has registration country</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasRoad -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasRoad">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/RoadAccident"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/Road"/>
+        <rdfs:label xml:lang="it">ha strada</rdfs:label>
+        <rdfs:label xml:lang="en">has road</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasRoadCaetgory -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasRoadCaetgory">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Road"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/RoadCategory"/>
+        <rdfs:label xml:lang="it">ha categoria di strada</rdfs:label>
+        <rdfs:label xml:lang="en">has road category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasRoadContext -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasRoadContext">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Road"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/RoadContext"/>
+        <rdfs:label xml:lang="it">ha contesto stradale dell&apos;incidente</rdfs:label>
+        <rdfs:label xml:lang="en">has road context</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasRoadSignalPresence -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasRoadSignalPresence">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Road"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/RoadSignalPresence"/>
+        <rdfs:label xml:lang="it">ha presenza di segnaletica stradale</rdfs:label>
+        <rdfs:label xml:lang="en">has road signal presence</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasRoadSignalType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasRoadSignalType">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/RoadSignal"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/RoadSignalType"/>
+        <rdfs:label xml:lang="it">ha tipologia di segnale stradale</rdfs:label>
+        <rdfs:label xml:lang="en">has road signal type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasRoadType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasRoadType">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Road"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/RoadType"/>
+        <rdfs:label xml:lang="it">ha tipo di strada</rdfs:label>
+        <rdfs:label xml:lang="en">has road type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasRoadbedStatus -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasRoadbedStatus">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Road"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/RoadbedStatus"/>
+        <rdfs:label xml:lang="it">ha stato del fondo stradale</rdfs:label>
+        <rdfs:label xml:lang="en">has roadbed status</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -399,6 +729,18 @@
     
 
 
+    <!-- https://w3id.org/ontoim/hasSurface -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasSurface">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/MU/hasValue"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+        <rdfs:label xml:lang="it">ha area</rdfs:label>
+        <rdfs:label xml:lang="en">has surface</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ontoim/hasTouristType -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasTouristType">
@@ -410,6 +752,46 @@
     
 
 
+    <!-- https://w3id.org/ontoim/hasTrafficFlowDirection -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasTrafficFlowDirection">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/IoT/TrafficFlow"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/TrafficFlowDirection"/>
+        <rdfs:label xml:lang="it">ha direzione del flusso stradale</rdfs:label>
+        <rdfs:label xml:lang="en">has traffic flow direction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasVehicle -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasVehicle">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/InvolvedVehicle"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/Vehicle"/>
+        <rdfs:label xml:lang="it">ha veicolo</rdfs:label>
+        <rdfs:label xml:lang="en">has vehicle</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasVehicleCategory -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasVehicleCategory">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/italia/onto/IoT/TrafficFlow"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoim/Vehicle"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+        <rdfs:label xml:lang="it">ha categoria di veicolo</rdfs:label>
+        <rdfs:label xml:lang="en">has vehicle category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ontoim/hasWasteCategory -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasWasteCategory">
@@ -417,6 +799,41 @@
         <rdfs:range rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
         <rdfs:label xml:lang="it">ha categoria di rifiuto</rdfs:label>
         <rdfs:label xml:lang="en">has waste category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasWeatherCondition -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasWeatherCondition">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/RoadAccident"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/WeatherCondition"/>
+        <rdfs:label xml:lang="it">ha condizione meteorologica</rdfs:label>
+        <rdfs:label xml:lang="en">has weather condition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasWeight -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasWeight">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/MU/hasValue"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+        <rdfs:label xml:lang="it">ha peso</rdfs:label>
+        <rdfs:label xml:lang="en">has weight</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasWidth -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasWidth">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/MU/hasValue"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+        <rdfs:label xml:lang="it">ha larghezza</rdfs:label>
+        <rdfs:label xml:lang="en">has width</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -435,7 +852,7 @@
     <!-- https://w3id.org/ontoim/ownedBy -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/ownedBy">
-        <rdfs:domain rdf:resource="https://w3id.org/ontoim/AccessiblePointOfInterest"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Facility"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
         <rdfs:label xml:lang="en">owned by</rdfs:label>
         <rdfs:label xml:lang="it">posseduto da</rdfs:label>
@@ -544,6 +961,17 @@
     
 
 
+    <!-- https://w3id.org/ontoim/brand -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/brand">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">brand</rdfs:label>
+        <rdfs:label xml:lang="en">marca</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/ontoim/buildingCode -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/buildingCode">
@@ -552,6 +980,15 @@
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="en">building code</rdfs:label>
         <rdfs:label xml:lang="it">codice dell&apos;edificio</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/color -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/color">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
@@ -566,6 +1003,30 @@
         <rdfs:comment xml:lang="en">This property represents the date on which an organization closes.</rdfs:comment>
         <rdfs:label xml:lang="it">data di fine attività</rdfs:label>
         <rdfs:label xml:lang="en">end activity date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/installationDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/installationDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/RoadSignal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label xml:lang="it">data di installazione</rdfs:label>
+        <rdfs:label xml:lang="en">installation date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/licensePlate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/licensePlate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/identifier"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">license plate</rdfs:label>
+        <rdfs:label xml:lang="it">numero targa</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -595,6 +1056,65 @@
     
 
 
+    <!-- https://w3id.org/ontoim/model -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/model">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">model</rdfs:label>
+        <rdfs:label xml:lang="it">modello</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/observationValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/observationValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/MU/value"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:label xml:lang="it">observation valore</rdfs:label>
+        <rdfs:label xml:lang="en">observation value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/registrationYear -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/registrationYear">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/year"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:label xml:lang="it">anno di immatricolazione</rdfs:label>
+        <rdfs:label xml:lang="en">registration year</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/removalDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/removalDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/RoadSignal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label xml:lang="it">data di rimozione</rdfs:label>
+        <rdfs:label xml:lang="en">removal date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/roadName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/roadName">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/name"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Road"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="it">nome strada</rdfs:label>
+        <rdfs:label xml:lang="en">road name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/ontoim/sheet -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/sheet">
@@ -602,6 +1122,18 @@
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="it">foglio</rdfs:label>
         <rdfs:label xml:lang="en">sheet</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/signalValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/signalValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/MU/value"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/RoadSignal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">signal value</rdfs:label>
+        <rdfs:label xml:lang="it">valore del segnale stradale</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -617,18 +1149,6 @@
     
 
 
-    <!-- https://w3id.org/ontoim/value -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/value">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/MU/value"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-        <rdfs:label xml:lang="it">valore</rdfs:label>
-        <rdfs:label xml:lang="en">value</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -640,46 +1160,48 @@
     
 
 
-    <!-- https://w3id.org/ontoim/AccessiblePointOfInterest -->
+    <!-- https://w3id.org/ontoim/AccidentCircumstance -->
 
-    <owl:Class rdf:about="https://w3id.org/ontoim/AccessiblePointOfInterest">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/POI/PointOfInterest"/>
+    <owl:Class rdf:about="https://w3id.org/ontoim/AccidentCircumstance">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta la circostanza in cui si trovava un&apos;entità coinvolta in un incidente stradale. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the circumstance in which an entity was involved in a road accident. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/accident-circumstances</rdfs:comment>
+        <rdfs:label xml:lang="en">Accident Circumstance</rdfs:label>
+        <rdfs:label xml:lang="it">Circostanza dell&apos;Incidente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/AccidentType -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/AccidentType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta la tipologia di un incidente stradale. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/accident-types</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the type of a road accident. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/accident-types</rdfs:comment>
+        <rdfs:label xml:lang="en">Accident Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo di Incidente Stradale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/AccommodationFacility -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/AccommodationFacility">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/ACCO/Accommodation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ACCO/hasOfferedServiceDescription"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/ACCO/OfferedServiceDescription"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasBooking"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/Booking"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/AccessCondition/hasAccessCondition"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/AccessCondition/AccessCondition"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasBookings"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/Bookings"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoim/ownedBy"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/SM/hasOnlineContactPoint"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/italia/onto/SM/OnlineContactPoint"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/SM/hasPhysicalContactPoint"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/italia/onto/SM/PhysicalContactPoint"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">An Accessible Point of Interest is a Point of Interest, usually a building, a shopping center, a pharmacy, etc.... It inherits the properties of OntoPiA&apos;s Point of Interest, but it also has an online or physical contact point, access conditions, offered services descriptions and an owner (Organization).</rdfs:comment>
-        <rdfs:comment xml:lang="it">Un Punto di Interesse Accessibile è un Punto di Interesse, solitamente un edificio, un centro commerciale, una farmacia ecc.... Eredita le proprietà del Punto di Interesse di OntoPiA, ma possiede anche un punto di contatto online o fisico, una o più condizioni di acceso, può avere dei servizi generici e ha un possessore (Organizzazione).</rdfs:comment>
-        <rdfs:label xml:lang="en">Accessible Point of Interest</rdfs:label>
-        <rdfs:label xml:lang="it">Punto di Interesse Accessibile</rdfs:label>
+        <rdfs:label xml:lang="en">Accommodation Facility</rdfs:label>
+        <rdfs:label xml:lang="it">Struttura Ricettiva</rdfs:label>
     </owl:Class>
     
 
@@ -800,7 +1322,7 @@
     <!-- https://w3id.org/ontoim/Building -->
 
     <owl:Class rdf:about="https://w3id.org/ontoim/Building">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/AccessiblePointOfInterest"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/Facility"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoim/concessedWithProperty"/>
@@ -820,8 +1342,8 @@
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">Questa classe rappresenta un punto di interesse accessibile, che è un edificio con i suoi dati catastali.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This class represents an accessible point of interest, which is a building with its cadastral data.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta una struttura, che è un edificio con i suoi dati catastali.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a facility, which is a building with its cadastral data.</rdfs:comment>
         <rdfs:label xml:lang="en">Building</rdfs:label>
         <rdfs:label xml:lang="it">Edificio</rdfs:label>
     </owl:Class>
@@ -969,7 +1491,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoim/value"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/observationValue"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
             </owl:Restriction>
@@ -1022,6 +1544,44 @@
     
 
 
+    <!-- https://w3id.org/ontoim/Facility -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/Facility">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/POI/PointOfInterest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ACCO/hasOfferedServiceDescription"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/ACCO/OfferedServiceDescription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/ownedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/SM/hasOnlineContactPoint"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/SM/OnlineContactPoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/SM/hasPhysicalContactPoint"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/SM/PhysicalContactPoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Facility is a Point of Interest, usually a building, a shopping center, a pharmacy, etc.... It inherits the properties of OntoPiA&apos;s Point of Interest, but it also has an online or physical contact point, offered services descriptions and an owner (Organization).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un Punto di Interesse Accessibile è un Punto di Interesse, solitamente un edificio, un centro commerciale, una farmacia ecc.... Eredita le proprietà del Punto di Interesse di OntoPiA, ma possiede anche un punto di contatto online o fisico e può avere dei servizi generici e ha un possessore (Organizzazione).</rdfs:comment>
+        <rdfs:label xml:lang="en">Facility</rdfs:label>
+        <rdfs:label xml:lang="it">Struttura</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoim/Heritage -->
 
     <owl:Class rdf:about="https://w3id.org/ontoim/Heritage">
@@ -1055,6 +1615,119 @@
         <rdfs:comment xml:lang="en">This class represents the type of an heritage. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/heritage-types</rdfs:comment>
         <rdfs:label xml:lang="en">Heritage Type</rdfs:label>
         <rdfs:label xml:lang="it">Tipologia di Patrimonio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/InvolvedEntity -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/InvolvedEntity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasAccidentCircumstance"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/AccidentCircumstance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta un&apos;entità coinvolta in un incidente stradale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents an entity involved in a traffic accident.</rdfs:comment>
+        <rdfs:label xml:lang="it">Entità Coinvolta</rdfs:label>
+        <rdfs:label xml:lang="en">Involved Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/InvolvedObstacle -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/InvolvedObstacle">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/InvolvedEntity"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta un ostacolo coinvolto in un incidente stradale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents an obstacle involved in a road accident.</rdfs:comment>
+        <rdfs:label xml:lang="en">Involved Obstacle</rdfs:label>
+        <rdfs:label xml:lang="it">Ostacolo Coinvolto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/InvolvedPerson -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/InvolvedPerson">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/InvolvedEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasInvolvedPersonStatus"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/InvolvedPersonStatus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasPerson"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/CPV/Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta una persona coinvolta in un incidente stradale. Può essere sia un passeggero di un veicolo, sia un pedone.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a person involved in a traffic accident. It can be either a passenger in a vehicle or a pedestrian.</rdfs:comment>
+        <rdfs:label xml:lang="en">Involved Person</rdfs:label>
+        <rdfs:label xml:lang="it">Persona Coinvolta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/InvolvedPersonStatus -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/InvolvedPersonStatus">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta lo stato di una persona coinvolta in un incidente stradale. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the status of a person involved in a road accident. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/involved-person-statuses</rdfs:comment>
+        <rdfs:label xml:lang="en">Involved Person Status</rdfs:label>
+        <rdfs:label xml:lang="it">Stato della Persona Coinvolta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/InvolvedVehicle -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/InvolvedVehicle">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/InvolvedEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasBackPassenger"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/InvolvedPerson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasFrontPassenger"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/InvolvedPerson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasPassenger"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/InvolvedPerson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasConducent"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/InvolvedPerson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasVehicle"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/Vehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta il veicolo coinvolto in un incidente stradale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a vehicle involved in a road accident.</rdfs:comment>
+        <rdfs:label xml:lang="en">Involved Vehicle</rdfs:label>
+        <rdfs:label xml:lang="it">Veicolo Coinvolto</rdfs:label>
     </owl:Class>
     
 
@@ -1180,6 +1853,18 @@
     
 
 
+    <!-- https://w3id.org/ontoim/PavementType -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/PavementType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta il tipo di pavimentazione stradale. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/pavement-types</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the type of the road pavement. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/pavement-types</rdfs:comment>
+        <rdfs:label xml:lang="en">Pavement Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo di Pavimentazione Stradale</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoim/PrivateOrganization -->
 
     <owl:Class rdf:about="https://w3id.org/ontoim/PrivateOrganization">
@@ -1212,6 +1897,289 @@
         <rdfs:comment xml:lang="en">This class represents a public event (e.g., a football match, a  conference, a book presentation, etc.). A public event is defined as an event that takes places in a given place and that occurs at a certain time, organised/run/promoted by one or more agents with a specific purpose and in the interest of a general public. There exist different types of public events depending on their size and content.</rdfs:comment>
         <rdfs:label xml:lang="it">Evento Pubblico</rdfs:label>
         <rdfs:label xml:lang="en">Public Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/RevelationUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/RevelationUnit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta l&apos;unità che ha rilevato l&apos;incidente (polizia, carabinieri, ecc...). Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/revelation-units</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the unit that detected the incident (police, carabinieri, etc...). The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/revelation-units</rdfs:comment>
+        <rdfs:label xml:lang="en">Revelation Unit</rdfs:label>
+        <rdfs:label xml:lang="it">Unità di Rivelazione</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/Road -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/Road">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasAddress"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasPavementType"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/PavementType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasRoadCaetgory"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/RoadCategory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasRoadContext"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/RoadContext"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasRoadSignalPresence"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/RoadSignalPresence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasRoadType"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/RoadType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasRoadbedStatus"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/RoadbedStatus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/roadName"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta la strada in cui avviene un incidente stradale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a road where an accident happens.</rdfs:comment>
+        <rdfs:label xml:lang="en">Road</rdfs:label>
+        <rdfs:label xml:lang="it">Strada</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/RoadAccident -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/RoadAccident">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/EventOrSituation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/detectedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/RevelationUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasInvolvedEntity"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/InvolvedEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasInvolvedObstacle"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/InvolvedObstacle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasInvolvedPerson"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/InvolvedPerson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasInvolvedVehicle"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/InvolvedVehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasWeatherCondition"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/WeatherCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasGeometry"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/CLV/Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasAccidentType"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/AccidentType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasRoad"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/Road"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta un incidente stradale. Gli incidenti stradali sono modellati utilizzando il questionario ISTAT CTT/INC del 2019.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a traffic accident. Road accidents are modeled using the 2019 ISTAT CTT/INC questionnaire.</rdfs:comment>
+        <rdfs:label xml:lang="it">Incidente Stradale</rdfs:label>
+        <rdfs:label xml:lang="en">Road Accident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/RoadCategory -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/RoadCategory">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Topic"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta la categoria/tipologia di strada. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/road-categories</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the category of the typology/category of a road. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/road-categories</rdfs:comment>
+        <rdfs:label xml:lang="it">Categoria di Strada</rdfs:label>
+        <rdfs:label xml:lang="en">Road Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/RoadContext -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/RoadContext">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta il contesto dell&apos;incidente stradale (interseazione o no). Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/road-contexts</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the context of a road accident. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/road-contexts</rdfs:comment>
+        <rdfs:label xml:lang="it">Contesto Stradale dell&apos;Incidente</rdfs:label>
+        <rdfs:label xml:lang="en">Road Context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/RoadSegment -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/RoadSegment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/IoT/RoadSegment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasStreetToponym"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/CLV/StreetToponym"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="it">Arco Stradale</rdfs:label>
+        <rdfs:label xml:lang="en">Road Segment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/RoadSignal -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/RoadSignal">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/POI/PointOfInterest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasRoadSignalType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/RoadSignalType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/signalValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/installationDate"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/removalDate"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta la segnaletica stradale. La tipologia di segnale stradale definisce di che segnale si tratta (semaforo, stop, limite di velocità), mentre il valore indica il valore del segnale. Nel caso di un limite di velocità, il limite, nel caso di un&apos;indicazione per una città, il nome della città.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents traffic signs. The type of road sign defines what sign it is (traffic light, stop sign, speed limit), while the value indicates the value of the sign. In the case of a speed limit, the limit; in the case of a sign for a city, the name of the city.</rdfs:comment>
+        <rdfs:label xml:lang="en">Road Signal</rdfs:label>
+        <rdfs:label xml:lang="it">Segnale Stradale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/RoadSignalPresence -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/RoadSignalPresence">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta la presenza e la tipologia della segnaletica stradale. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/roadsignal-presences</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the presence and the types of the signal roads. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/roadsignal-presences</rdfs:comment>
+        <rdfs:label xml:lang="it">Presenza di Segnaletica Stradale</rdfs:label>
+        <rdfs:label xml:lang="en">Road Signal Presence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/RoadSignalType -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/RoadSignalType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Topic"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta la tipologia di segnaletica stradale. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/road-signal-types</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the typology of a road signal. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/road-signal-types</rdfs:comment>
+        <rdfs:label xml:lang="en">Road Signal Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo di Segnale Stradale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/RoadType -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/RoadType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta il tipo di strada. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/road-types</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the type of a road. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/road-types</rdfs:comment>
+        <rdfs:label xml:lang="en">Road Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo di Strada</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/RoadbedStatus -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/RoadbedStatus">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta lo stato del fondo stradale. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/roadbed-statuses</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the status of the roadbed. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/roadbed-statuses</rdfs:comment>
+        <rdfs:label xml:lang="en">Roadbed Status</rdfs:label>
+        <rdfs:label xml:lang="it">Stato del Fondo Stradale</rdfs:label>
     </owl:Class>
     
 
@@ -1278,6 +2246,149 @@
     
 
 
+    <!-- https://w3id.org/ontoim/TrafficFlow -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/TrafficFlow">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/IoT/TrafficFlow"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasTrafficFlowDirection"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/TrafficFlowDirection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasVehicleCategory"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="it">Flusso Traffico</rdfs:label>
+        <rdfs:label xml:lang="en">Traffic Flow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/TrafficFlowDirection -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/TrafficFlowDirection">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ontoim/Both"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoim/In"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoim/Out"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="it">Questa è una classe numerata che rappresenta la direzione del flusso del traffico.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class is an enumerated class that represents the direction of the traffic flow.</rdfs:comment>
+        <rdfs:label xml:lang="it">Direzione del Flusso del Traffico</rdfs:label>
+        <rdfs:label xml:lang="en">Traffic Flow Direction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/Vehicle -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/Vehicle">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasEngineDisplacement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasHeight"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasLength"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasWeight"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasWidth"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasVehicleCategory"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasRegistrationCountry"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/CLV/Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/brand"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/color"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/model"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/licensePlate"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/registrationYear"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta un veicolo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a vehicle.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vehicle</rdfs:label>
+        <rdfs:label xml:lang="it">Veicolo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/VehicleCategory -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/VehicleCategory">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Topic"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta la categoria di un veicolo. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the category of a vehicle. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/vehicle-categories</rdfs:comment>
+        <rdfs:label xml:lang="it">Categoria di Veicolo</rdfs:label>
+        <rdfs:label xml:lang="en">Vehicle Category</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoim/WasteCategory -->
 
     <owl:Class rdf:about="https://w3id.org/ontoim/WasteCategory">
@@ -1330,6 +2441,18 @@
     
 
 
+    <!-- https://w3id.org/ontoim/WeatherCondition -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/WeatherCondition">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta la condizione meteorologica di un incidente stradale. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/weather-conditions</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the weather condition of a road accident. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/weather-conditions</rdfs:comment>
+        <rdfs:label xml:lang="it">Condizione Meteorologica</rdfs:label>
+        <rdfs:label xml:lang="en">Weather Condition</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1344,7 +2467,8 @@
     <!-- https://www.dei.unipd.it -->
 
     <owl:NamedIndividual rdf:about="https://www.dei.unipd.it">
-        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Università di Padova</rdfs:label>
+        <rdfs:label xml:lang="en">University of Padova, Department of Information Engineering</rdfs:label>
+        <rdfs:label xml:lang="it">Università di Padova, Dipartimento di Ingegneria dell&apos;Informazione</rdfs:label>
         <sdo:name xml:lang="en">University of Padova, Department of Information Engineering</sdo:name>
         <sdo:name xml:lang="it">Università degli Studi di Padova, Dipartimento di Ingegneria dell&apos;Informazione</sdo:name>
         <sdo:url rdf:resource="https://www.dei.unipd.it"/>
@@ -1370,6 +2494,42 @@
         <rdf:type rdf:resource="https://w3id.org/ontoim/TouristType"/>
         <rdfs:label xml:lang="en">Arrival</rdfs:label>
         <rdfs:label xml:lang="it">Arrivo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoim/Both -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoim/Both">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/TrafficFlowDirection"/>
+        <rdfs:comment xml:lang="it">Il flusso totale del traffico nell&apos;arco stradale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The total traffic flow of the road segment.</rdfs:comment>
+        <rdfs:label xml:lang="en">Both</rdfs:label>
+        <rdfs:label xml:lang="it">Da entrambi i versi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoim/In -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoim/In">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/TrafficFlowDirection"/>
+        <rdfs:comment xml:lang="it">Il flusso del traffico entra nell&apos;arco stradale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The traffic flow comes into the road segment.</rdfs:comment>
+        <rdfs:label xml:lang="en">In</rdfs:label>
+        <rdfs:label xml:lang="it">Verso l&apos;interno</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoim/Out -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoim/Out">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/TrafficFlowDirection"/>
+        <rdfs:comment xml:lang="it">Il flusso del traffico esce dall&apos;arco stradale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The traffic flow comes out of the road segment.</rdfs:comment>
+        <rdfs:label xml:lang="en">Out</rdfs:label>
+        <rdfs:label xml:lang="it">Verso l&apos;esterno</rdfs:label>
     </owl:NamedIndividual>
     
 
