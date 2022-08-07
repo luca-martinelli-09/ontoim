@@ -78,6 +78,8 @@
         <sdo:image rdf:resource="https://raw.githubusercontent.com/luca-martinelli-09/ontoim/master/ontology/latest/OntoMunicipality.svg"/>
         <admsapit:acronym>OntoIM</admsapit:acronym>
         <admsapit:prefix>ontoim</admsapit:prefix>
+        <admsapit:target xml:lang="en">Associations</admsapit:target>
+        <admsapit:target xml:lang="it">Associazioni</admsapit:target>
         <admsapit:target xml:lang="en">Citizens</admsapit:target>
         <admsapit:target xml:lang="it">Cittadini</admsapit:target>
         <admsapit:target xml:lang="en">Companies</admsapit:target>
@@ -155,7 +157,7 @@
     <!-- https://w3id.org/ontoim/concessedWithProperty -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/concessedWithProperty">
-        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Building"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Facility"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/PublicContract/Procedure"/>
         <rdfs:label xml:lang="en">concessed with procedure</rdfs:label>
         <rdfs:label xml:lang="it">concesso con la procedura</rdfs:label>
@@ -252,13 +254,25 @@
     
 
 
-    <!-- https://w3id.org/ontoim/hasBuilding -->
+    <!-- https://w3id.org/ontoim/hasCadastralCategory -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasBuilding">
-        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Heritage"/>
-        <rdfs:range rdf:resource="https://w3id.org/ontoim/Building"/>
-        <rdfs:label xml:lang="it">ha edificio</rdfs:label>
-        <rdfs:label xml:lang="en">has building</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasCadastralCategory">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/CadastralData"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+        <rdfs:label xml:lang="it">ha categoria catastale</rdfs:label>
+        <rdfs:label xml:lang="en">has cadastral category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasCadastralData -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasCadastralData">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Facility"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/CadastralData"/>
+        <rdfs:label xml:lang="it">ha dati catastali</rdfs:label>
+        <rdfs:label xml:lang="en">has cadastral data</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -387,6 +401,17 @@
     
 
 
+    <!-- https://w3id.org/ontoim/hasFacility -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasFacility">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Heritage"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/Facility"/>
+        <rdfs:label xml:lang="it">ha struttura</rdfs:label>
+        <rdfs:label xml:lang="en">has facility</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ontoim/hasFrontPassenger -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasFrontPassenger">
@@ -491,29 +516,6 @@
     
 
 
-    <!-- https://w3id.org/ontoim/hasLandRegistry -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasLandRegistry">
-        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Building"/>
-        <rdfs:range rdf:resource="https://w3id.org/ontoim/LandRegistry"/>
-        <rdfs:label xml:lang="it">ha registro catastale</rdfs:label>
-        <rdfs:label xml:lang="en">has land registry</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/ontoim/hasLandRegistryCategory -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasLandRegistryCategory">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ontoim/LandRegistry"/>
-        <rdfs:range rdf:resource="https://w3id.org/ontoim/LandRegistryCategory"/>
-        <rdfs:label xml:lang="it">ha categoria catastale</rdfs:label>
-        <rdfs:label xml:lang="en">has land registry category</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/ontoim/hasLength -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasLength">
@@ -591,6 +593,18 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/CPV/Person"/>
         <rdfs:label xml:lang="it">ha persona</rdfs:label>
         <rdfs:label xml:lang="en">has person</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasPriceSpecification -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasPriceSpecification">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/POT/hasPriceSpecification"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Course"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/POT/PriceSpecification"/>
+        <rdfs:label xml:lang="it">ha costo</rdfs:label>
+        <rdfs:label xml:lang="en">has price specification</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -694,6 +708,17 @@
     
 
 
+    <!-- https://w3id.org/ontoim/hasSchoolType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasSchoolType">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/School"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/SchoolType"/>
+        <rdfs:label xml:lang="it">ha tipo scuola</rdfs:label>
+        <rdfs:label xml:lang="en">has school type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ontoim/hasSpatialDelimitation -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasSpatialDelimitation">
@@ -709,7 +734,15 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasSubscribers">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontoim/hasDemographicObservation"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CPEV/Event"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/italia/onto/CPEV/Event"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoim/Course"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoim/School"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/ontoim/Subscribers"/>
         <rdfs:label xml:lang="it">ha iscritti</rdfs:label>
         <rdfs:label xml:lang="en">has subscribers</rdfs:label>
@@ -721,7 +754,16 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasSubscription">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontoim/hasDemographicEvent"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Association"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ontoim/Association"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoim/Course"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoim/Event"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoim/School"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/ontoim/Subscriber"/>
         <rdfs:label xml:lang="it">ha iscrizione</rdfs:label>
         <rdfs:label xml:lang="en">has subscription</rdfs:label>
@@ -838,6 +880,17 @@
     
 
 
+    <!-- https://w3id.org/ontoim/includesSchool -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/includesSchool">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/ComprehensiveInstitute"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/School"/>
+        <rdfs:label xml:lang="it">include scuola</rdfs:label>
+        <rdfs:label xml:lang="en">includes school</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ontoim/isOrganizedBy -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/isOrganizedBy">
@@ -860,6 +913,17 @@
     
 
 
+    <!-- https://w3id.org/ontoim/providesCourse -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/providesCourse">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/School"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/Course"/>
+        <rdfs:label xml:lang="it">eroga corso</rdfs:label>
+        <rdfs:label xml:lang="en">provides course</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ontoim/providesService -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/providesService">
@@ -867,6 +931,28 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/CPSV/Service"/>
         <rdfs:label xml:lang="it">offre un servizio</rdfs:label>
         <rdfs:label xml:lang="en">provides service</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/situatedInClassroom -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/situatedInClassroom">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Course"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/Classroom"/>
+        <rdfs:label xml:lang="en">situated in classroom</rdfs:label>
+        <rdfs:label xml:lang="it">situato nell&apos;aula</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/usesVideoCommunicationService -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/usesVideoCommunicationService">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/VirtualClassroom"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/VideoCommunicationService"/>
+        <rdfs:label xml:lang="it">usa servizio di videocomunicazione</rdfs:label>
+        <rdfs:label xml:lang="en">uses video communication service</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -972,23 +1058,34 @@
     
 
 
-    <!-- https://w3id.org/ontoim/buildingCode -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/buildingCode">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/identifier"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Building"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:label xml:lang="en">building code</rdfs:label>
-        <rdfs:label xml:lang="it">codice dell&apos;edificio</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://w3id.org/ontoim/color -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/color">
         <rdfs:domain rdf:resource="https://w3id.org/ontoim/Vehicle"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/courseCode -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/courseCode">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/identifier"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="it">codice corso</rdfs:label>
+        <rdfs:label xml:lang="en">course code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/durationHours -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/durationHours">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:label xml:lang="it">durata in ore</rdfs:label>
+        <rdfs:label xml:lang="en">duration in hours</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1048,7 +1145,7 @@
     <!-- https://w3id.org/ontoim/map -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/map">
-        <rdfs:domain rdf:resource="https://w3id.org/ontoim/LandRegistry"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/CadastralData"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="en">map</rdfs:label>
         <rdfs:label xml:lang="it">mappale</rdfs:label>
@@ -1115,10 +1212,33 @@
     
 
 
+    <!-- https://w3id.org/ontoim/schoolCode -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/schoolCode">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/identifier"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/School"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="it">codice scuola</rdfs:label>
+        <rdfs:label xml:lang="en">school code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/serviceURL -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/serviceURL">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/VideoCommunicationService"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label xml:lang="it">URL del servizio</rdfs:label>
+        <rdfs:label xml:lang="en">service URL</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/ontoim/sheet -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/sheet">
-        <rdfs:domain rdf:resource="https://w3id.org/ontoim/LandRegistry"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/CadastralData"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="it">foglio</rdfs:label>
         <rdfs:label xml:lang="en">sheet</rdfs:label>
@@ -1141,7 +1261,7 @@
     <!-- https://w3id.org/ontoim/subordinate -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/subordinate">
-        <rdfs:domain rdf:resource="https://w3id.org/ontoim/LandRegistry"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/CadastralData"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="it">subalterno</rdfs:label>
         <rdfs:label xml:lang="en">subordinate</rdfs:label>
@@ -1319,33 +1439,51 @@
     
 
 
-    <!-- https://w3id.org/ontoim/Building -->
+    <!-- https://w3id.org/ontoim/CadastralCategory -->
 
-    <owl:Class rdf:about="https://w3id.org/ontoim/Building">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/Facility"/>
+    <owl:Class rdf:about="https://w3id.org/ontoim/CadastralCategory">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Topic"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta la categoria catastale di un edificio. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the cadastral category of a facility. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories</rdfs:comment>
+        <rdfs:label xml:lang="en">Cadastral Category</rdfs:label>
+        <rdfs:label xml:lang="it">Categoria Catastale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/CadastralData -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/CadastralData">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Object"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoim/concessedWithProperty"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/PublicContract/Procedure"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasLandRegistry"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasCadastralCategory"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/ontoim/LandRegistry"/>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoim/buildingCode"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/map"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">Questa classe rappresenta una struttura, che è un edificio con i suoi dati catastali.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This class represents a facility, which is a building with its cadastral data.</rdfs:comment>
-        <rdfs:label xml:lang="en">Building</rdfs:label>
-        <rdfs:label xml:lang="it">Edificio</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/sheet"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/subordinate"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta un oggetto che descrive i dati catastali di una struttura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents an object that describes the cadastral data of a facility.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cadastral Data</rdfs:label>
+        <rdfs:label xml:lang="it">Dati Catastali</rdfs:label>
     </owl:Class>
     
 
@@ -1412,6 +1550,24 @@
     
 
 
+    <!-- https://w3id.org/ontoim/Classroom -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/Classroom">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/l0/name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta un&apos;aula fisica o virtuale dove viene ergoato un corso.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a physical or virtual classroom in which a course takes place.</rdfs:comment>
+        <rdfs:label xml:lang="it">Aula</rdfs:label>
+        <rdfs:label xml:lang="en">Classroom</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoim/CompanyDemographicCategory -->
 
     <owl:Class rdf:about="https://w3id.org/ontoim/CompanyDemographicCategory">
@@ -1420,6 +1576,90 @@
         <rdfs:comment xml:lang="en">This class represents the demographic category of the company. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/company-demographic-categories</rdfs:comment>
         <rdfs:label xml:lang="it">Categoria Demogragica dell&apos;Impresa</rdfs:label>
         <rdfs:label xml:lang="en">Company Demographic Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/ComprehensiveInstitute -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/ComprehensiveInstitute">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/POI/MultiplePointOfInterest"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/School"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/includesSchool"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/ontoim/School"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Comprehensive Institute</rdfs:label>
+        <rdfs:label xml:lang="it">Istituto Comprensivo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/Course -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/Course">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/TI/atTime"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasPriceSpecification"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/POT/PriceSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasSubscribers"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/Subscribers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasSubscription"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/Subscriber"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/situatedInClassroom"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/Classroom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/l0/name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/l0/description"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/courseCode"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/durationHours"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta un qualsiasi corso erogato da una scuola, ente di formazione o organizzazione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents any course delivered by a school, training institution or organization.</rdfs:comment>
+        <rdfs:label xml:lang="it">Corso</rdfs:label>
+        <rdfs:label xml:lang="en">Course</rdfs:label>
     </owl:Class>
     
 
@@ -1556,8 +1796,21 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/concessedWithProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/PublicContract/Procedure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoim/ownedBy"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasCadastralData"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/CadastralData"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1582,14 +1835,22 @@
     
 
 
+    <!-- https://w3id.org/ontoim/GreenZone -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/GreenZone">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/Facility"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoim/Heritage -->
 
     <owl:Class rdf:about="https://w3id.org/ontoim/Heritage">
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Collection"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasBuilding"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/Building"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasFacility"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/ontoim/Facility"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1615,6 +1876,14 @@
         <rdfs:comment xml:lang="en">This class represents the type of an heritage. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/heritage-types</rdfs:comment>
         <rdfs:label xml:lang="en">Heritage Type</rdfs:label>
         <rdfs:label xml:lang="it">Tipologia di Patrimonio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/Hospital -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/Hospital">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/Facility"/>
     </owl:Class>
     
 
@@ -1732,55 +2001,6 @@
     
 
 
-    <!-- https://w3id.org/ontoim/LandRegistry -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoim/LandRegistry">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Object"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasLandRegistryCategory"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/ontoim/LandRegistryCategory"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoim/map"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoim/sheet"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoim/subordinate"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">Questa classe rappresenta un oggetto che descrive i dati catastali di un edificio.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This class represents an object that describes the cadastral data of a building.</rdfs:comment>
-        <rdfs:label xml:lang="it">Catasto</rdfs:label>
-        <rdfs:label xml:lang="en">Land Registry</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoim/LandRegistryCategory -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoim/LandRegistryCategory">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Topic"/>
-        <rdfs:comment xml:lang="it">Questa classe rappresenta la categoria catastale di un edificio. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories</rdfs:comment>
-        <rdfs:comment xml:lang="en">This class represents the category of a land registry. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/land-registry-categories</rdfs:comment>
-        <rdfs:label xml:lang="it">Categoria Catastale</rdfs:label>
-        <rdfs:label xml:lang="en">Land Registry Category</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/ontoim/Members -->
 
     <owl:Class rdf:about="https://w3id.org/ontoim/Members">
@@ -1865,6 +2085,45 @@
     
 
 
+    <!-- https://w3id.org/ontoim/PhysicalClassroom -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/PhysicalClassroom">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/Classroom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasAddress"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="it">Aula Fisica</rdfs:label>
+        <rdfs:label xml:lang="en">Physical Classroom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/Plant -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/Plant">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/POI/PointOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/PlantHealth -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/PlantHealth"/>
+    
+
+
+    <!-- https://w3id.org/ontoim/PlantStatusInTime -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/PlantStatusInTime">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/EventOrSituation"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoim/PrivateOrganization -->
 
     <owl:Class rdf:about="https://w3id.org/ontoim/PrivateOrganization">
@@ -1888,6 +2147,16 @@
     
 
 
+    <!-- https://w3id.org/ontoim/PrivateSchool -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/PrivateSchool">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/School"/>
+        <rdfs:label xml:lang="en">Private School</rdfs:label>
+        <rdfs:label xml:lang="it">Scuola Paritaria</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoim/PublicEvent -->
 
     <owl:Class rdf:about="https://w3id.org/ontoim/PublicEvent">
@@ -1897,6 +2166,16 @@
         <rdfs:comment xml:lang="en">This class represents a public event (e.g., a football match, a  conference, a book presentation, etc.). A public event is defined as an event that takes places in a given place and that occurs at a certain time, organised/run/promoted by one or more agents with a specific purpose and in the interest of a general public. There exist different types of public events depending on their size and content.</rdfs:comment>
         <rdfs:label xml:lang="it">Evento Pubblico</rdfs:label>
         <rdfs:label xml:lang="en">Public Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/PublicSchool -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/PublicSchool">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/School"/>
+        <rdfs:label xml:lang="en">Public School</rdfs:label>
+        <rdfs:label xml:lang="it">Scuola Pubblica</rdfs:label>
     </owl:Class>
     
 
@@ -2184,6 +2463,60 @@
     
 
 
+    <!-- https://w3id.org/ontoim/School -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/School">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/Facility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasSchoolType"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/ontoim/SchoolType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasSubscribers"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/Subscribers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasSubscription"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/Subscriber"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/providesCourse"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/Course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/schoolCode"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta una scuola intesa sia come scuola pubblica sia come enti di formazione o associazioni che forniscono dei corsi.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a school understood either as a public school or as training institutions or associations that provide courses.</rdfs:comment>
+        <rdfs:label xml:lang="en">School</rdfs:label>
+        <rdfs:label xml:lang="it">Scuola</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/SchoolType -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/SchoolType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Topic"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta la tipologia di una scuola. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/school-types</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the typology of a school. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/school-types</rdfs:comment>
+        <rdfs:label xml:lang="en">School Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo di Suola</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoim/Subscriber -->
 
     <owl:Class rdf:about="https://w3id.org/ontoim/Subscriber">
@@ -2276,7 +2609,6 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ontoim/Both"/>
                     <rdf:Description rdf:about="https://w3id.org/ontoim/In"/>
                     <rdf:Description rdf:about="https://w3id.org/ontoim/Out"/>
                 </owl:oneOf>
@@ -2389,6 +2721,46 @@
     
 
 
+    <!-- https://w3id.org/ontoim/VideoCommunicationService -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/VideoCommunicationService">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/l0/name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/serviceURL"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta qualsiasi servizio di comunicazione video online.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents any online video communication service.</rdfs:comment>
+        <rdfs:label xml:lang="it">Servizio di Videocomunicazione</rdfs:label>
+        <rdfs:label xml:lang="en">Video Communication Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/VirtualClassroom -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/VirtualClassroom">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/Classroom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/usesVideoCommunicationService"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/VideoCommunicationService"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="it">Aula Virtuale</rdfs:label>
+        <rdfs:label xml:lang="en">Virtual Classroom</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoim/WasteCategory -->
 
     <owl:Class rdf:about="https://w3id.org/ontoim/WasteCategory">
@@ -2494,18 +2866,6 @@
         <rdf:type rdf:resource="https://w3id.org/ontoim/TouristType"/>
         <rdfs:label xml:lang="en">Arrival</rdfs:label>
         <rdfs:label xml:lang="it">Arrivo</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/ontoim/Both -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/ontoim/Both">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/TrafficFlowDirection"/>
-        <rdfs:comment xml:lang="it">Il flusso totale del traffico nell&apos;arco stradale.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The total traffic flow of the road segment.</rdfs:comment>
-        <rdfs:label xml:lang="en">Both</rdfs:label>
-        <rdfs:label xml:lang="it">Da entrambi i versi</rdfs:label>
     </owl:NamedIndividual>
     
 
