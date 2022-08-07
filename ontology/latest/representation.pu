@@ -430,7 +430,7 @@ package "School" {
     }
     School -[#FacilityProperty]-> Building : rdfs:subclassOf
 
-    School -[#SchoolProperty]-> SchoolCategory : hasSchoolCategory
+    School -[#SchoolProperty]-> SchoolType : hasSchoolType
     School -[#SchoolProperty]-> Course : offersCourse
     School -[#SchoolProperty]-> ComprehensiveSchool : isIncludedInComprehensiveSchool
     School -[#DemographicObservationProperty]-> Subscribers : hasSubscribers
@@ -442,8 +442,8 @@ package "School" {
     ComprehensiveSchool -[#SchoolProperty]-> School : includesSchool
 
     ' controlled vocabulary
-    class SchoolCategory #SchoolNode
-    SchoolCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+    class SchoolType #SchoolNode
+    SchoolType -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
 
     class PublicSchool #SchoolNode
     PublicSchool -[#SchoolProperty]-> School : rdfs:subclassOf
