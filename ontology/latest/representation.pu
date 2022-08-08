@@ -91,7 +91,7 @@ package "OntoPiA" {
 
     class Procedure <<pcapit>> #OntoPiANode
 
-    class OfferedServiceDescription <<accoapit>> #OntoPiANode
+    class OSDFeature <<accoapit>> #OntoPiANode
 }
 
 ' Added an Accessible Point of Interest, a POI with online contact point, physical contact point, an organization owner and an access condition.
@@ -101,7 +101,7 @@ Facility -[#OntoPiAProperty]-> PointOfInterest : rdfs:subclassOf
 Facility -[#OntoPiAProperty]-> OnlineContactPoint : smapit:hasOnlineContactPoint
 Facility -[#OntoPiAProperty]-> PhysicalContactPoint : smapit:hasPhysicalContactPoint
 Facility -[#OntoPiAProperty]-> AccessCondition : accondition:hasAccessCondition
-Facility -[#OntoPiAProperty]-> OfferedServiceDescription : hasOfferedServiceDescription
+Facility -[#OntoPiAProperty]-> OSDFeature : hasOfferedService
 Facility -[#OntoPiAProperty]-> Procedure : concessedWithProcedure
 Facility -[#HeritageProperty]-> CadastralData : hasCadastralData
 
@@ -411,9 +411,9 @@ package "Roads and Traffic" {
 }
 
 ' Booking statistical data for accommodation facilities
-class AccommodationFacility <<accoapit>> #OntoPiANodeEdited
-AccommodationFacility -[#DemographicObservationProperty]-> Bookings : hasBookings
-AccommodationFacility -[#DemographicEventProperty]-> Booking : hasBooking
+class Accommodation <<accoapit>> #OntoPiANodeEdited
+Accommodation -[#DemographicObservationProperty]-> Bookings : hasBookings
+Accommodation -[#DemographicEventProperty]-> Booking : hasBooking
 
 package "Schools" {
     ' A school can be public or private is an accessible point of interest, with services, subscribers and courses that can be offer

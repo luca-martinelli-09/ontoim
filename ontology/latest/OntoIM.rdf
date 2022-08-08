@@ -155,9 +155,9 @@
     
 
 
-    <!-- https://w3id.org/ontoim/concessedWithProperty -->
+    <!-- https://w3id.org/ontoim/concessedWithProcedure -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/concessedWithProperty">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/concessedWithProcedure">
         <rdfs:domain rdf:resource="https://w3id.org/ontoim/Facility"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/PublicContract/Procedure"/>
         <rdfs:label xml:lang="en">concessed with procedure</rdfs:label>
@@ -213,6 +213,8 @@
     <!-- https://w3id.org/ontoim/hasAssociationCategory -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasAssociationCategory">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Association"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/AssociationCategory"/>
         <rdfs:label xml:lang="it">ha categoria di associazione</rdfs:label>
         <rdfs:label xml:lang="en">has association category</rdfs:label>
     </owl:ObjectProperty>
@@ -236,7 +238,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasBooking">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontoim/hasDemographicEvent"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/ACCO/Accommodation"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/AccessCondition/Booking"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/Booking"/>
         <rdfs:label xml:lang="it">ha prenotazione</rdfs:label>
         <rdfs:label xml:lang="en">has booking</rdfs:label>
     </owl:ObjectProperty>
@@ -470,6 +472,17 @@
     
 
 
+    <!-- https://w3id.org/ontoim/hasHospitalDepartment -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasHospitalDepartment">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Hospital"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/HospitalDepartment"/>
+        <rdfs:label xml:lang="it">ha dipartimento ospedaliero</rdfs:label>
+        <rdfs:label xml:lang="en">has hospital department</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ontoim/hasInvolvedEntity -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasInvolvedEntity">
@@ -562,6 +575,17 @@
         <rdfs:range rdf:resource="https://w3id.org/ontoim/Members"/>
         <rdfs:label xml:lang="it">ha membri</rdfs:label>
         <rdfs:label xml:lang="en">has members</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasOfferedService -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasOfferedService">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Facility"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/ACCO/OSDFeature"/>
+        <rdfs:label xml:lang="it">ha servizio offerto</rdfs:label>
+        <rdfs:label xml:lang="en">has offered service</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -929,7 +953,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/isOrganizedBy">
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CPEV/Event"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
         <rdfs:label xml:lang="en">is organized by</rdfs:label>
         <rdfs:label xml:lang="en">è organizzato da</rdfs:label>
     </owl:ObjectProperty>
@@ -1411,9 +1435,9 @@
     
 
 
-    <!-- https://w3id.org/ontoim/AccommodationFacility -->
+    <!-- https://w3id.org/ontoim/Accommodation -->
 
-    <owl:Class rdf:about="https://w3id.org/ontoim/AccommodationFacility">
+    <owl:Class rdf:about="https://w3id.org/ontoim/Accommodation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/ACCO/Accommodation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1897,14 +1921,14 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/POI/PointOfInterest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ACCO/hasOfferedServiceDescription"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/ACCO/OfferedServiceDescription"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/concessedWithProcedure"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/PublicContract/Procedure"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoim/concessedWithProperty"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/PublicContract/Procedure"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasOfferedService"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/ACCO/OSDFeature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2009,7 +2033,13 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/Facility"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ACCO/totalBed"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasHospitalDepartment"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/HospitalDepartment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/totalNumberOfBeds"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
             </owl:Restriction>

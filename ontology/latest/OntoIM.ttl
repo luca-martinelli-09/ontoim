@@ -124,12 +124,12 @@ sdo:url rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/ontoim/concessedWithProperty
-:concessedWithProperty rdf:type owl:ObjectProperty ;
-                       rdfs:domain :Facility ;
-                       rdfs:range pcapit:Procedure ;
-                       rdfs:label "concessed with procedure"@en ,
-                                  "concesso con la procedura"@it .
+###  https://w3id.org/ontoim/concessedWithProcedure
+:concessedWithProcedure rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Facility ;
+                        rdfs:range pcapit:Procedure ;
+                        rdfs:label "concessed with procedure"@en ,
+                                   "concesso con la procedura"@it .
 
 
 ###  https://w3id.org/ontoim/detectedBy
@@ -166,6 +166,8 @@ sdo:url rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/ontoim/hasAssociationCategory
 :hasAssociationCategory rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Association ;
+                        rdfs:range :AssociationCategory ;
                         rdfs:label "ha categoria di associazione"@it ,
                                    "has association category"@en .
 
@@ -183,7 +185,7 @@ sdo:url rdf:type owl:AnnotationProperty .
 :hasBooking rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :hasDemographicEvent ;
             rdfs:domain accoapit:Accommodation ;
-            rdfs:range acapit:Booking ;
+            rdfs:range :Booking ;
             rdfs:label "ha prenotazione"@it ,
                        "has booking"@en .
 
@@ -352,6 +354,14 @@ sdo:url rdf:type owl:AnnotationProperty .
                             "has heritage type"@en .
 
 
+###  https://w3id.org/ontoim/hasHospitalDepartment
+:hasHospitalDepartment rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Hospital ;
+                       rdfs:range :HospitalDepartment ;
+                       rdfs:label "ha dipartimento ospedaliero"@it ,
+                                  "has hospital department"@en .
+
+
 ###  https://w3id.org/ontoim/hasInvolvedEntity
 :hasInvolvedEntity rdf:type owl:ObjectProperty ;
                    rdfs:domain :RoadAccident ;
@@ -422,6 +432,14 @@ sdo:url rdf:type owl:AnnotationProperty .
             rdfs:range :Members ;
             rdfs:label "ha membri"@it ,
                        "has members"@en .
+
+
+###  https://w3id.org/ontoim/hasOfferedService
+:hasOfferedService rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Facility ;
+                   rdfs:range accoapit:OSDFeature ;
+                   rdfs:label "ha servizio offerto"@it ,
+                              "has offered service"@en .
 
 
 ###  https://w3id.org/ontoim/hasOrganizationSection
@@ -687,7 +705,7 @@ sdo:url rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/ontoim/isOrganizedBy
 :isOrganizedBy rdf:type owl:ObjectProperty ;
                rdfs:domain cpevapit:Event ;
-               rdfs:range l0:Agent ;
+               rdfs:range covapit:Organization ;
                rdfs:label "is organized by"@en ,
                           "è organizzato da"@en .
 
@@ -1039,19 +1057,19 @@ sdo:url rdf:type owl:AnnotationProperty .
                          "Tipo di Incidente Stradale"@it .
 
 
-###  https://w3id.org/ontoim/AccommodationFacility
-:AccommodationFacility rdf:type owl:Class ;
-                       rdfs:subClassOf accoapit:Accommodation ,
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty :hasBooking ;
-                                         owl:allValuesFrom :Booking
-                                       ] ,
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty :hasBookings ;
-                                         owl:allValuesFrom :Bookings
-                                       ] ;
-                       rdfs:label "Accommodation Facility"@en ,
-                                  "Struttura Ricettiva"@it .
+###  https://w3id.org/ontoim/Accommodation
+:Accommodation rdf:type owl:Class ;
+               rdfs:subClassOf accoapit:Accommodation ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasBooking ;
+                                 owl:allValuesFrom :Booking
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasBookings ;
+                                 owl:allValuesFrom :Bookings
+                               ] ;
+               rdfs:label "Accommodation Facility"@en ,
+                          "Struttura Ricettiva"@it .
 
 
 ###  https://w3id.org/ontoim/ArtisanOrganization
@@ -1384,12 +1402,12 @@ sdo:url rdf:type owl:AnnotationProperty .
 :Facility rdf:type owl:Class ;
           rdfs:subClassOf poiapit:PointOfInterest ,
                           [ rdf:type owl:Restriction ;
-                            owl:onProperty accoapit:hasOfferedServiceDescription ;
-                            owl:allValuesFrom accoapit:OfferedServiceDescription
+                            owl:onProperty :concessedWithProcedure ;
+                            owl:allValuesFrom pcapit:Procedure
                           ] ,
                           [ rdf:type owl:Restriction ;
-                            owl:onProperty :concessedWithProperty ;
-                            owl:allValuesFrom pcapit:Procedure
+                            owl:onProperty :hasOfferedService ;
+                            owl:allValuesFrom accoapit:OSDFeature
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :ownedBy ;
@@ -1464,7 +1482,11 @@ sdo:url rdf:type owl:AnnotationProperty .
 :Hospital rdf:type owl:Class ;
           rdfs:subClassOf :Facility ,
                           [ rdf:type owl:Restriction ;
-                            owl:onProperty accoapit:totalBed ;
+                            owl:onProperty :hasHospitalDepartment ;
+                            owl:allValuesFrom :HospitalDepartment
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :totalNumberOfBeds ;
                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                             owl:onDataRange xsd:positiveInteger
                           ] ;
