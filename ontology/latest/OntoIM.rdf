@@ -69,6 +69,7 @@
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
         <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0"/>
         <dct:rightsHolder rdf:resource="https://orcid.org/0000-0002-6249-0899"/>
+        <dct:title xml:lang="it">Ontologia per i Comuni Italiani</dct:title>
         <dct:title xml:lang="en">Ontology for Italian Municipalities</dct:title>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0.1</owl:versionInfo>
         <dcat:accessURL rdf:resource="https://github.com/luca-martinelli-09/ontoim/"/>
@@ -1227,8 +1228,8 @@
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/MU/value"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-        <rdfs:label xml:lang="it">observation valore</rdfs:label>
         <rdfs:label xml:lang="en">observation value</rdfs:label>
+        <rdfs:label xml:lang="it">valore dell&apos;osservazione</rdfs:label>
     </owl:DatatypeProperty>
     
 

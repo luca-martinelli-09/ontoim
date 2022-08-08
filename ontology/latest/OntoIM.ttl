@@ -69,7 +69,8 @@
                                         <http://publications.europa.eu/resource/authority/language/ITA> ;
                            dct:license <http://creativecommons.org/licenses/by/4.0> ;
                            dct:rightsHolder <https://orcid.org/0000-0002-6249-0899> ;
-                           dct:title "Ontology for Italian Municipalities"@en ;
+                           dct:title "Ontologia per i Comuni Italiani"@it ,
+                                     "Ontology for Italian Municipalities"@en ;
                            owl:versionInfo "0.1"^^rdfs:Literal ;
                            dcat:accessURL <https://github.com/luca-martinelli-09/ontoim/> ;
                            dcat:contactPoint <https://orcid.org/0000-0002-6249-0899> ;
@@ -906,8 +907,8 @@ sdo:url rdf:type owl:AnnotationProperty .
                   rdfs:subPropertyOf muapit:value ;
                   rdfs:domain owl:Thing ;
                   rdfs:range xsd:nonNegativeInteger ;
-                  rdfs:label "observation valore"@it ,
-                             "observation value"@en .
+                  rdfs:label "observation value"@en ,
+                             "valore dell'osservazione"@it .
 
 
 ###  https://w3id.org/ontoim/plantCode
