@@ -486,16 +486,16 @@ package "Green Zones" {
     class GreenZone #GreenZoneNode
     GreenZone -[#FacilityProperty]-> Facility : rdfs:subclassOf
 
-    GreenZone -[#OntoPiAProperty]-> Value : hasMeasurement
+    GreenZone -[#OntoPiAProperty]-> Value : hasSurface
     GreenZone -[#GreenZoneProperty]-> Plant : hasPlant
 
     ' A plant, with the species, the common name, the born year, planted date and its status in time. The status is described as the plant health, the height and the circumference
     class Plant #GreenZoneNode {
         plantCode^^l0:identifier
-        commonName^^rdfs:literal
-        species^^rdfs:literal
+        commonName^^l0:name
+        species^^l0:name
         plantingDate^^xsd:datetime
-        bornYear^^xsd:gYear
+        birthYear^^xsd:gYear
     }
     Plant -[#OntoPiAProperty]-> PointOfInterest : rdfs:subclassOf
 
@@ -504,11 +504,12 @@ package "Green Zones" {
     class PlantStatusInTime #GreenZoneNode
     PlantStatusInTime -[#OntoPiAProperty]-> EventOrSituation : rdfs:subclassOf
 
-    PlantStatusInTime -[#OntoPiAProperty]-> Value : hasMeasurement
-    PlantStatusInTime -[#GreenZoneProperty]-> PlantHealth : hasHealthStatus
+    PlantStatusInTime -[#OntoPiAProperty]-> Value : hasHeight
+    PlantStatusInTime -[#OntoPiAProperty]-> Value : hasDiameter
+    PlantStatusInTime -[#GreenZoneProperty]-> PlantHealthStatus : hasHealthStatus
     PlantStatusInTime -[#OntoPiAProperty]-> TemporalEntity : ti:hasTemporalEntity
 
-    class PlantHealth <<enumerated>> #GreenZoneNode {
+    class PlantHealthStatus <<enumerated>> #GreenZoneNode {
         Good
         Fair
         Bad
@@ -520,7 +521,7 @@ package "Green Zones" {
 package "Hospitals" {
     ' An hospial is an accessible point of interest with hospital departments, services, total number of beds and departments which are also described as hospitals
     class Hospital #HospitalNode {
-        totalNumberOfBeds^^xsd:int
+        totalNumberOfBeds^^xsd:positiveInteger
     }
     Hospital -[#FacilityProperty]-> Facility : rdfs:subclassOf
 

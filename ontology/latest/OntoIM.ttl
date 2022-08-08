@@ -318,6 +318,14 @@ sdo:url rdf:type owl:AnnotationProperty .
                               "has front passenger"@en .
 
 
+###  https://w3id.org/ontoim/hasHealthStatus
+:hasHealthStatus rdf:type owl:ObjectProperty ;
+                 rdfs:domain :PlantStatusInTime ;
+                 rdfs:range :PlantHealthStatus ;
+                 rdfs:label "ha stato di salute"@it ,
+                            "has health status"@en .
+
+
 ###  https://w3id.org/ontoim/hasHeight
 :hasHeight rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf muapit:hasValue ;
@@ -446,6 +454,14 @@ sdo:url rdf:type owl:AnnotationProperty .
                       "has person"@en .
 
 
+###  https://w3id.org/ontoim/hasPlant
+:hasPlant rdf:type owl:ObjectProperty ;
+          rdfs:domain :GreenZone ;
+          rdfs:range :Plant ;
+          rdfs:label "ha pianta"@it ,
+                     "has plant"@en .
+
+
 ###  https://w3id.org/ontoim/hasPriceSpecification
 :hasPriceSpecification rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf potapit:hasPriceSpecification ;
@@ -541,6 +557,14 @@ sdo:url rdf:type owl:AnnotationProperty .
                         rdfs:range clvapit:SpatialObject ;
                         rdfs:label "ha delimitazione spaziale"@it ,
                                    "has spatial delimitation"@en .
+
+
+###  https://w3id.org/ontoim/hasStatusInTime
+:hasStatusInTime rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Plant ;
+                 rdfs:range :PlantStatusInTime ;
+                 rdfs:label "ha stato nel tempo"@it ,
+                            "has status in time"@en .
 
 
 ###  https://w3id.org/ontoim/hasSubscribers
@@ -772,6 +796,15 @@ sdo:url rdf:type owl:AnnotationProperty .
                            "data di bancarotta"@it .
 
 
+###  https://w3id.org/ontoim/birthYear
+:birthYear rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf tiapit:year ;
+           rdfs:domain :Plant ;
+           rdfs:range xsd:gYear ;
+           rdfs:label "anno di nascita"@it ,
+                      "birth year"@en .
+
+
 ###  https://w3id.org/ontoim/brand
 :brand rdf:type owl:DatatypeProperty ;
        rdfs:domain :Vehicle ;
@@ -784,6 +817,15 @@ sdo:url rdf:type owl:AnnotationProperty .
 :color rdf:type owl:DatatypeProperty ;
        rdfs:domain :Vehicle ;
        rdfs:range rdfs:Literal .
+
+
+###  https://w3id.org/ontoim/commonName
+:commonName rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf l0:name ;
+            rdfs:domain :Plant ;
+            rdfs:range rdfs:Literal ;
+            rdfs:label "common name"@en ,
+                       "nome comune"@it .
 
 
 ###  https://w3id.org/ontoim/courseCode
@@ -868,6 +910,24 @@ sdo:url rdf:type owl:AnnotationProperty .
                              "observation value"@en .
 
 
+###  https://w3id.org/ontoim/plantCode
+:plantCode rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf l0:identifier ;
+           rdfs:domain :Plant ;
+           rdfs:range rdfs:Literal ;
+           rdfs:label "codice pianta"@it ,
+                      "plant code"@en .
+
+
+###  https://w3id.org/ontoim/plantingDate
+:plantingDate rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf tiapit:date ;
+              rdfs:domain :Plant ;
+              rdfs:range xsd:date ;
+              rdfs:label "data di impianto"@it ,
+                         "planting date"@en .
+
+
 ###  https://w3id.org/ontoim/registrationYear
 :registrationYear rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf tiapit:year ;
@@ -929,12 +989,31 @@ sdo:url rdf:type owl:AnnotationProperty .
                         "valore del segnale stradale"@it .
 
 
+###  https://w3id.org/ontoim/species
+:species rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf l0:name ;
+         rdfs:domain :Plant ;
+         rdfs:range rdfs:Literal ;
+         rdfs:label "Questa proprietà indica il nome scientifico di una pianta."@it ,
+                    "This property indicates the scientific name of a plant."@en ,
+                    "specie"@it ,
+                    "species"@en .
+
+
 ###  https://w3id.org/ontoim/subordinate
 :subordinate rdf:type owl:DatatypeProperty ;
              rdfs:domain :CadastralData ;
              rdfs:range rdfs:Literal ;
              rdfs:label "subalterno"@it ,
                         "subordinate"@en .
+
+
+###  https://w3id.org/ontoim/totalNumberOfBeds
+:totalNumberOfBeds rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Hospital ;
+                   rdfs:range xsd:positiveInteger ;
+                   rdfs:label "numero totale di letti"@it ,
+                              "total number of beds"@en .
 
 
 #################################################################
@@ -1338,7 +1417,19 @@ sdo:url rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/ontoim/GreenZone
 :GreenZone rdf:type owl:Class ;
-           rdfs:subClassOf :Facility .
+           rdfs:subClassOf :Facility ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasPlant ;
+                             owl:allValuesFrom :Plant
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasSurface ;
+                             owl:allValuesFrom muapit:Value
+                           ] ;
+           rdfs:comment "Questa classe rappresenta un'area verde."@it ,
+                        "This class represents a green area."@en ;
+           rdfs:label "Area Verde"@it ,
+                      "Green Zone"@en .
 
 
 ###  https://w3id.org/ontoim/Heritage
@@ -1370,7 +1461,23 @@ sdo:url rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/ontoim/Hospital
 :Hospital rdf:type owl:Class ;
-          rdfs:subClassOf :Facility .
+          rdfs:subClassOf :Facility ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty accoapit:totalBed ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:positiveInteger
+                          ] ;
+          rdfs:comment "Questa classe rappresenta un ospedale o un dipartimento dell'ospedale."@it ,
+                       "This class represents a hospital or a department of the hospital."@en ;
+          rdfs:label "Hospital"@en ,
+                     "Ospedale"@it .
+
+
+###  https://w3id.org/ontoim/HospitalDepartment
+:HospitalDepartment rdf:type owl:Class ;
+                    rdfs:subClassOf :Hospital ;
+                    rdfs:label "Dipartimento Ospedaliero"@it ,
+                               "Hospital Department"@en .
 
 
 ###  https://w3id.org/ontoim/InvolvedEntity
@@ -1529,16 +1636,82 @@ sdo:url rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/ontoim/Plant
 :Plant rdf:type owl:Class ;
-       rdfs:subClassOf poiapit:PointOfInterest .
+       rdfs:subClassOf poiapit:PointOfInterest ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasStatusInTime ;
+                         owl:allValuesFrom :PlantStatusInTime
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :commonName ;
+                         owl:someValuesFrom rdfs:Literal
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :plantCode ;
+                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :species ;
+                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :birthYear ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:gYear
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :plantingDate ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:date
+                       ] ;
+       rdfs:comment "Questa classe rappresenta una pianta."@it ,
+                    "This class represents a plant."@en ;
+       rdfs:label "Pianta"@it ,
+                  "Plant"@en .
 
 
-###  https://w3id.org/ontoim/PlantHealth
-:PlantHealth rdf:type owl:Class .
+###  https://w3id.org/ontoim/PlantHealthStatus
+:PlantHealthStatus rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Class ;
+                                         owl:oneOf ( :Bad
+                                                     :Dead
+                                                     :Fair
+                                                     :Good
+                                                     :Stump
+                                                   )
+                                       ] ;
+                   rdfs:comment "Questa è una classe numerata che rappresenta lo stato di salute di una pianta."@it ,
+                                "This is an enumerated class that represents the health status of a plant."@en ;
+                   rdfs:label "Plant Health Status"@en ,
+                              "Stato di Salute della Pianta"@it .
 
 
 ###  https://w3id.org/ontoim/PlantStatusInTime
 :PlantStatusInTime rdf:type owl:Class ;
-                   rdfs:subClassOf l0:EventOrSituation .
+                   rdfs:subClassOf l0:EventOrSituation ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasDiameter ;
+                                     owl:allValuesFrom muapit:Value
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasHeight ;
+                                     owl:allValuesFrom muapit:Value
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty tiapit:hasTemporalEntity ;
+                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass tiapit:TemporalEntity
+                                   ] ;
+                   rdfs:comment "Questa classe rappresenta lo stato (altezza, salute) di una pianta nel tempo."@it ,
+                                "This class represents the state (height, health) of a plant over time."@en ;
+                   rdfs:label "Plant Status in Time"@en ,
+                              "Stato della Pianta nel Tempo"@it .
+
+
+###  https://w3id.org/ontoim/PrivateHospital
+:PrivateHospital rdf:type owl:Class ;
+                 rdfs:subClassOf :Hospital ;
+                 rdfs:label "Ospedale Privato"@it ,
+                            "Private Hospital"@en .
 
 
 ###  https://w3id.org/ontoim/PrivateOrganization
@@ -1572,6 +1745,13 @@ sdo:url rdf:type owl:AnnotationProperty .
                           "This class represents a public event (e.g., a football match, a  conference, a book presentation, etc.). A public event is defined as an event that takes places in a given place and that occurs at a certain time, organised/run/promoted by one or more agents with a specific purpose and in the interest of a general public. There exist different types of public events depending on their size and content."@en ;
              rdfs:label "Evento Pubblico"@it ,
                         "Public Event"@en .
+
+
+###  https://w3id.org/ontoim/PublicHospital
+:PublicHospital rdf:type owl:Class ;
+                rdfs:subClassOf :Hospital ;
+                rdfs:label "Ospedale Pubblico"@it ,
+                           "Public Hospital"@en .
 
 
 ###  https://w3id.org/ontoim/PublicSchool
@@ -2071,6 +2251,34 @@ sdo:url rdf:type owl:AnnotationProperty .
                     "Arrivo"@it .
 
 
+###  https://w3id.org/ontoim/Bad
+:Bad rdf:type owl:NamedIndividual ,
+              :PlantHealthStatus ;
+     rdfs:label "Bad"@en ,
+                "Grave"@it .
+
+
+###  https://w3id.org/ontoim/Dead
+:Dead rdf:type owl:NamedIndividual ,
+               :PlantHealthStatus ;
+      rdfs:label "Dead"@en ,
+                 "Morta"@it .
+
+
+###  https://w3id.org/ontoim/Fair
+:Fair rdf:type owl:NamedIndividual ,
+               :PlantHealthStatus ;
+      rdfs:label "Discreto"@it ,
+                 "Fair"@en .
+
+
+###  https://w3id.org/ontoim/Good
+:Good rdf:type owl:NamedIndividual ,
+               :PlantHealthStatus ;
+      rdfs:label "Buono"@it ,
+                 "Good"@en .
+
+
 ###  https://w3id.org/ontoim/In
 :In rdf:type owl:NamedIndividual ,
              :TrafficFlowDirection ;
@@ -2094,6 +2302,13 @@ sdo:url rdf:type owl:AnnotationProperty .
                    :TouristType ;
           rdfs:label "Presence"@en ,
                      "Presenza"@it .
+
+
+###  https://w3id.org/ontoim/Stump
+:Stump rdf:type owl:NamedIndividual ,
+                :PlantHealthStatus ;
+       rdfs:label "Ceppo"@it ,
+                  "Stump"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
