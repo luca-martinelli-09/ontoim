@@ -52,6 +52,7 @@
                                        <https://w3id.org/italia/onto/CPEV> ,
                                        <https://w3id.org/italia/onto/CPSV> ,
                                        <https://w3id.org/italia/onto/CPV> ,
+                                       <https://w3id.org/italia/onto/HER> ,
                                        <https://w3id.org/italia/onto/IoT> ,
                                        <https://w3id.org/italia/onto/MU> ,
                                        <https://w3id.org/italia/onto/POI> ,
@@ -1273,6 +1274,10 @@ sdo:url rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/ontoim/Course
 :Course rdf:type owl:Class ;
         rdfs:subClassOf l0:Activity ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty herapit:hasAcademicDiscipline ;
+                          owl:allValuesFrom herapit:AcademicDiscipline
+                        ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty tiapit:atTime ;
                           owl:allValuesFrom tiapit:TimeInterval

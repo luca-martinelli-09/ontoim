@@ -92,6 +92,8 @@ package "OntoPiA" {
     class Procedure <<pcapit>> #OntoPiANode
 
     class OSDFeature <<accoapit>> #OntoPiANode
+
+    class AcademicDiscipline <<herapit>> #OntoPiANode
 }
 
 ' Added an Accessible Point of Interest, a POI with online contact point, physical contact point, an organization owner and an access condition.
@@ -457,6 +459,7 @@ package "Schools" {
     Course -[#OntoPiAProperty]-> PriceSpecification : hasPriceSpecification
     Course -[#DemographicObservationProperty]-> Subscribers : hasSubscribers
     Course -[#DemographicEventProperty]-> Subscriber : hasSubscription
+    Course -[#OntoPiAProperty]-> AcademicDiscipline : herapit:hasAcademicDiscipline
 
     ' A classroom is a space where a course take place. A physical classroom has an address, a virtual classroom is associated with the service used.
     class Classroom #SchoolNode {

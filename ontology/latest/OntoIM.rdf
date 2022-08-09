@@ -52,6 +52,7 @@
         <owl:imports rdf:resource="https://w3id.org/italia/onto/CPEV"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/CPSV"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/CPV"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/HER"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/IoT"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/MU"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/POI"/>
@@ -1735,6 +1736,12 @@
 
     <owl:Class rdf:about="https://w3id.org/ontoim/Course">
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/HER/hasAcademicDiscipline"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/HER/AcademicDiscipline"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/onto/TI/atTime"/>
