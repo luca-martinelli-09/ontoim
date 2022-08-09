@@ -43,6 +43,7 @@
      xmlns:parkapit="https://w3id.org/italia/onto/PARK/"
      xmlns:indicator="https://w3id.org/italia/onto/Indicator/">
     <owl:Ontology rdf:about="https://w3id.org/ontoim">
+        <owl:imports rdf:resource="http://dati.beniculturali.it/cis"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/ACCO"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/ADMS"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/AccessCondition"/>
@@ -1793,6 +1794,17 @@
         <rdfs:comment xml:lang="en">This class represents any course delivered by a school, training institution or organization.</rdfs:comment>
         <rdfs:label xml:lang="it">Corso</rdfs:label>
         <rdfs:label xml:lang="en">Course</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/CulturalEvent -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/CulturalEvent">
+        <rdfs:subClassOf rdf:resource="http://dati.beniculturali.it/cis/CulturalEvent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/PublicEvent"/>
+        <rdfs:label xml:lang="en">Cultural Event</rdfs:label>
+        <rdfs:label xml:lang="it">Evento Culturale</rdfs:label>
     </owl:Class>
     
 

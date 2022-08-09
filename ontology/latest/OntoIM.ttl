@@ -43,7 +43,8 @@
 @base <https://w3id.org/ontoim> .
 
 <https://w3id.org/ontoim> rdf:type owl:Ontology ;
-                           owl:imports <https://w3id.org/italia/onto/ACCO> ,
+                           owl:imports <http://dati.beniculturali.it/cis> ,
+                                       <https://w3id.org/italia/onto/ACCO> ,
                                        <https://w3id.org/italia/onto/ADMS> ,
                                        <https://w3id.org/italia/onto/AccessCondition> ,
                                        <https://w3id.org/italia/onto/CLV> ,
@@ -1313,6 +1314,14 @@ sdo:url rdf:type owl:AnnotationProperty .
                      "This class represents any course delivered by a school, training institution or organization."@en ;
         rdfs:label "Corso"@it ,
                    "Course"@en .
+
+
+###  https://w3id.org/ontoim/CulturalEvent
+:CulturalEvent rdf:type owl:Class ;
+               rdfs:subClassOf cis:CulturalEvent ,
+                               :PublicEvent ;
+               rdfs:label "Cultural Event"@en ,
+                          "Evento Culturale"@it .
 
 
 ###  https://w3id.org/ontoim/DemographicEvent
