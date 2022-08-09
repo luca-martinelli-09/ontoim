@@ -461,6 +461,8 @@ sdo:url rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/ontoim/hasPavementType
 :hasPavementType rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Road ;
+                 rdfs:range :PavementType ;
                  rdfs:label "ha tipo di pavimentazione stradale"@it ,
                             "has pavement type"@en .
 
@@ -514,8 +516,8 @@ sdo:url rdf:type owl:AnnotationProperty .
                     "has road"@en .
 
 
-###  https://w3id.org/ontoim/hasRoadCaetgory
-:hasRoadCaetgory rdf:type owl:ObjectProperty ;
+###  https://w3id.org/ontoim/hasRoadCategory
+:hasRoadCategory rdf:type owl:ObjectProperty ;
                  rdfs:domain :Road ;
                  rdfs:range :RoadCategory ;
                  rdfs:label "ha categoria di strada"@it ,
@@ -1013,9 +1015,9 @@ sdo:url rdf:type owl:AnnotationProperty .
          rdfs:subPropertyOf l0:name ;
          rdfs:domain :Plant ;
          rdfs:range rdfs:Literal ;
-         rdfs:label "Questa proprietà indica il nome scientifico di una pianta."@it ,
-                    "This property indicates the scientific name of a plant."@en ,
-                    "specie"@it ,
+         rdfs:comment "Questa proprietà indica il nome scientifico di una pianta."@it ,
+                      "This property indicates the scientific name of a plant."@en ;
+         rdfs:label "specie"@it ,
                     "species"@en .
 
 
@@ -1614,6 +1616,11 @@ sdo:url rdf:type owl:AnnotationProperty .
                                 owl:allValuesFrom cpsvapit:Service
                               ] ,
                               [ rdf:type owl:Restriction ;
+                                owl:onProperty :bankruptcyDate ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:date
+                              ] ,
+                              [ rdf:type owl:Restriction ;
                                 owl:onProperty :endActivityDate ;
                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onDataRange xsd:date
@@ -1713,16 +1720,21 @@ sdo:url rdf:type owl:AnnotationProperty .
                    rdfs:subClassOf l0:EventOrSituation ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :hasDiameter ;
-                                     owl:allValuesFrom muapit:Value
+                                     owl:someValuesFrom muapit:Value
                                    ] ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :hasHeight ;
-                                     owl:allValuesFrom muapit:Value
+                                     owl:someValuesFrom muapit:Value
                                    ] ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty tiapit:hasTemporalEntity ;
-                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                      owl:onClass tiapit:TemporalEntity
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasHealthStatus ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :PlantHealthStatus
                                    ] ;
                    rdfs:comment "Questa classe rappresenta lo stato (altezza, salute) di una pianta nel tempo."@it ,
                                 "This class represents the state (height, health) of a plant over time."@en ;
@@ -1807,7 +1819,7 @@ sdo:url rdf:type owl:AnnotationProperty .
                         owl:onClass :PavementType
                       ] ,
                       [ rdf:type owl:Restriction ;
-                        owl:onProperty :hasRoadCaetgory ;
+                        owl:onProperty :hasRoadCategory ;
                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                         owl:onClass :RoadCategory
                       ] ,
@@ -2075,14 +2087,13 @@ sdo:url rdf:type owl:AnnotationProperty .
 :TrafficFlow rdf:type owl:Class ;
              rdfs:subClassOf iotapit:TrafficFlow ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty :hasTrafficFlowDirection ;
-                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass :TrafficFlowDirection
+                               owl:onProperty :hasVehicleCategory ;
+                               owl:allValuesFrom :VehicleCategory
                              ] ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty :hasVehicleCategory ;
+                               owl:onProperty :hasTrafficFlowDirection ;
                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass :VehicleCategory
+                               owl:onClass :TrafficFlowDirection
                              ] ;
              rdfs:label "Flusso Traffico"@it ,
                         "Traffic Flow"@en .
@@ -2212,8 +2223,7 @@ sdo:url rdf:type owl:AnnotationProperty .
                  rdfs:subClassOf l0:Activity ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty muapit:hasValue ;
-                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                   owl:onClass muapit:Value
+                                   owl:someValuesFrom muapit:Value
                                  ] ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty tiapit:hasTemporalEntity ;

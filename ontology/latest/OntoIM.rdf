@@ -616,6 +616,8 @@
     <!-- https://w3id.org/ontoim/hasPavementType -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasPavementType">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Road"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/PavementType"/>
         <rdfs:label xml:lang="it">ha tipo di pavimentazione stradale</rdfs:label>
         <rdfs:label xml:lang="en">has pavement type</rdfs:label>
     </owl:ObjectProperty>
@@ -689,9 +691,9 @@
     
 
 
-    <!-- https://w3id.org/ontoim/hasRoadCaetgory -->
+    <!-- https://w3id.org/ontoim/hasRoadCategory -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasRoadCaetgory">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasRoadCategory">
         <rdfs:domain rdf:resource="https://w3id.org/ontoim/Road"/>
         <rdfs:range rdf:resource="https://w3id.org/ontoim/RoadCategory"/>
         <rdfs:label xml:lang="it">ha categoria di strada</rdfs:label>
@@ -1370,8 +1372,8 @@
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/name"/>
         <rdfs:domain rdf:resource="https://w3id.org/ontoim/Plant"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:label xml:lang="it">Questa proprietà indica il nome scientifico di una pianta.</rdfs:label>
-        <rdfs:label xml:lang="en">This property indicates the scientific name of a plant.</rdfs:label>
+        <rdfs:comment xml:lang="it">Questa proprietà indica il nome scientifico di una pianta.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property indicates the scientific name of a plant.</rdfs:comment>
         <rdfs:label xml:lang="it">specie</rdfs:label>
         <rdfs:label xml:lang="en">species</rdfs:label>
     </owl:DatatypeProperty>
@@ -2217,6 +2219,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/bankruptcyDate"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoim/endActivityDate"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
@@ -2355,20 +2364,27 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasDiameter"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasHeight"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/onto/TI/hasTemporalEntity"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="https://w3id.org/italia/onto/TI/TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasHealthStatus"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/PlantHealthStatus"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Questa classe rappresenta lo stato (altezza, salute) di una pianta nel tempo.</rdfs:comment>
@@ -2487,7 +2503,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasRoadCaetgory"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasRoadCategory"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="https://w3id.org/ontoim/RoadCategory"/>
             </owl:Restriction>
@@ -2860,16 +2876,15 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/IoT/TrafficFlow"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasTrafficFlowDirection"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/ontoim/TrafficFlowDirection"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasVehicleCategory"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasVehicleCategory"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasTrafficFlowDirection"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/ontoim/VehicleCategory"/>
+                <owl:onClass rdf:resource="https://w3id.org/ontoim/TrafficFlowDirection"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="it">Flusso Traffico</rdfs:label>
@@ -3055,8 +3070,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/onto/MU/hasValue"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
