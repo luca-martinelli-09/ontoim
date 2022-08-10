@@ -82,8 +82,6 @@ package "OntoPiA" {
     class Person <<cpvapit>> #OntoPiANode
     class Family <<cpvapit>> #OntoPiANode
 
-    class Service <<cpsvapit>> #OntoPiANode
-
     class PriceSpecification <<potapit>> #OntoPiANode
 
     class PointOfInterest <<poiapit>> #OntoPiANode
@@ -195,7 +193,6 @@ package "Organizations and Associations" {
     ' Organization --> Payment : sentPayment (see later)
     Organization -[#DemographicObservationProperty]-> Employees : hasEmployees
     Organization -[#OntoPiAProperty]-> Address : hasLocalUnitAddress
-    Organization -[#OntoPiAProperty]-> Service : providesService
     Organization --> Heritage : hasHeritage
 
     Facility -[#OrganizationProperty]-> Organization : ownedBy

@@ -730,14 +730,6 @@ sdo:url rdf:type owl:AnnotationProperty .
                            "provides course"@en .
 
 
-###  https://w3id.org/ontoim/providesService
-:providesService rdf:type owl:ObjectProperty ;
-                 rdfs:domain covapit:Organization ;
-                 rdfs:range cpsvapit:Service ;
-                 rdfs:label "offre un servizio"@it ,
-                            "provides service"@en .
-
-
 ###  https://w3id.org/ontoim/situatedInClassroom
 :situatedInClassroom rdf:type owl:ObjectProperty ;
                      rdfs:domain :Course ;
@@ -1624,10 +1616,6 @@ sdo:url rdf:type owl:AnnotationProperty .
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty :hasLocalUnitAddress ;
                                 owl:allValuesFrom clvapit:Address
-                              ] ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty :providesService ;
-                                owl:allValuesFrom cpsvapit:Service
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty :bankruptcyDate ;

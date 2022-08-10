@@ -986,17 +986,6 @@
     
 
 
-    <!-- https://w3id.org/ontoim/providesService -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/providesService">
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CPSV/Service"/>
-        <rdfs:label xml:lang="it">offre un servizio</rdfs:label>
-        <rdfs:label xml:lang="en">provides service</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/ontoim/situatedInClassroom -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/situatedInClassroom">
@@ -2228,12 +2217,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasLocalUnitAddress"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoim/providesService"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/CPSV/Service"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
