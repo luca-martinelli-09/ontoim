@@ -22,7 +22,7 @@
 				});
 				var list =
 					$('a[name="https://w3id.org/ontoim"]');
-			if (list.size() != 0) {
+				if (list.size() != 0) {
 					var element = list.first();
 					$.scrollTo(element);
 				}
@@ -60,6 +60,10 @@
 			<dt>Imported Ontologies
 				:
 			</dt>
+			<dd><a href="http://dati.beniculturali.it/cis">http://dati.beniculturali.it/cis</a> (<a
+					href="http://150.146.207.114/extract?url=http://dati.beniculturali.it/cis">visualise it with
+					LODE
+				</a>)</dd>
 			<dd><a href="https://w3id.org/italia/onto/ACCO">https://w3id.org/italia/onto/ACCO</a> (<a
 					href="http://150.146.207.114/extract?url=https://w3id.org/italia/onto/ACCO">visualise it with
 					LODE
@@ -90,6 +94,10 @@
 				</a>)</dd>
 			<dd><a href="https://w3id.org/italia/onto/CPV">https://w3id.org/italia/onto/CPV</a> (<a
 					href="http://150.146.207.114/extract?url=https://w3id.org/italia/onto/CPV">visualise it with
+					LODE
+				</a>)</dd>
+			<dd><a href="https://w3id.org/italia/onto/HER">https://w3id.org/italia/onto/HER</a> (<a
+					href="http://150.146.207.114/extract?url=https://w3id.org/italia/onto/HER">visualise it with
 					LODE
 				</a>)</dd>
 			<dd><a href="https://w3id.org/italia/onto/IoT">https://w3id.org/italia/onto/IoT</a> (<a
@@ -152,7 +160,7 @@
 		<ul class="hlist">
 			<li><a href="#AccidentCircumstance" title="https://w3id.org/ontoim/AccidentCircumstance">Accident Circumstance</a></li>
 			<li><a href="#AccidentType" title="https://w3id.org/ontoim/AccidentType">Accident Type</a></li>
-			<li><a href="#AccommodationFacility" title="https://w3id.org/ontoim/AccommodationFacility">Accommodation Facility</a></li>
+			<li><a href="#Accommodation" title="https://w3id.org/ontoim/Accommodation">Accommodation Facility</a></li>
 			<li><a href="#ArtisanOrganization" title="https://w3id.org/ontoim/ArtisanOrganization">Artisan Organization</a></li>
 			<li><a href="#Association" title="https://w3id.org/ontoim/Association">Association</a></li>
 			<li><a href="#AssociationCategory" title="https://w3id.org/ontoim/AssociationCategory">Association Category</a></li>
@@ -169,6 +177,7 @@
 			</li>
 			<li><a href="#ComprehensiveInstitute" title="https://w3id.org/ontoim/ComprehensiveInstitute">Comprehensive Institute</a></li>
 			<li><a href="#Course" title="https://w3id.org/ontoim/Course">Course</a></li>
+			<li><a href="#CulturalEvent" title="https://w3id.org/ontoim/CulturalEvent">Cultural Event</a></li>
 			<li><a href="#DemographicEvent" title="https://w3id.org/ontoim/DemographicEvent">Demographic Event</a></li>
 			<li><a href="#DemographicObservation" title="https://w3id.org/ontoim/DemographicObservation">Demographic Observation</a></li>
 			<li><a href="#Employees" title="https://w3id.org/ontoim/Employees">Employees</a></li>
@@ -260,18 +269,18 @@
 						title="object property" class="type-op">op</sup></dd>
 			</dl>
 		</div>
-		<div id="AccommodationFacility" class="entity"><a name="https://w3id.org/ontoim/AccommodationFacility"></a>
+		<div id="Accommodation" class="entity"><a name="https://w3id.org/ontoim/Accommodation"></a>
 			<h3>Accommodation Facility<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
 						href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
-			<p><strong>IRI:</strong> https://w3id.org/ontoim/AccommodationFacility</p>
+			<p><strong>IRI:</strong> https://w3id.org/ontoim/Accommodation</p>
 			<dl class="description">
 				<dt>has super-classes</dt>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/ACCO/Accommodation">accommodation</span></dd>
 				<dd><a href="#hasBooking" title="https://w3id.org/ontoim/hasBooking">has booking</a><sup title="object property"
-						class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e2131"
+						class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e2143"
 						title="https://w3id.org/ontoim/Booking">Booking</a><sup title="class" class="type-c">c</sup></dd>
 				<dd><a href="#hasBookings" title="https://w3id.org/ontoim/hasBookings">has bookings</a><sup title="object property"
-						class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e2151"
+						class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e2163"
 						title="https://w3id.org/ontoim/Bookings">Bookings</a><sup title="class" class="type-c">c</sup></dd>
 			</dl>
 		</div>
@@ -289,7 +298,7 @@
 						title="data property" class="type-dp">dp</sup> <span class="logic">max</span> 1</dd>
 				<dt>is in domain of</dt>
 				<dd><a href="#artisanRegisterCode" title="https://w3id.org/ontoim/artisanRegisterCode">artisan register code</a><sup
-						title="data property" class="type-dp">dp</sup>, <a href="#d4e1371"
+						title="data property" class="type-dp">dp</sup>, <a href="#d4e1383"
 						title="https://w3id.org/ontoim/artisanRegistrationDate">artisan registration date</a><sup
 						title="data property" class="type-dp">dp</sup></dd>
 			</dl>
@@ -303,17 +312,17 @@
 				<dd><a href="#PrivateOrganization" title="https://w3id.org/ontoim/PrivateOrganization">Private Organization</a><sup
 						title="class" class="type-c">c</sup></dd>
 				<dd><a href="#hasAssociationCategory" title="https://w3id.org/ontoim/hasAssociationCategory">has association category</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e2112"
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e2124"
 						title="https://w3id.org/ontoim/AssociationCategory">Association Category</a><sup title="class"
 						class="type-c">c</sup></dd>
 				<dd><a href="#hasMembers" title="https://w3id.org/ontoim/hasMembers">has members</a><sup title="object property"
-						class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3191"
+						class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3239"
 						title="https://w3id.org/ontoim/Members">Members</a><sup title="class" class="type-c">c</sup></dd>
 				<dd><a href="#hasReferent" title="https://w3id.org/ontoim/hasReferent">has referent</a><sup title="object property"
 						class="type-op">op</sup> <span class="logic">only</span> <span class="dotted"
 						title="https://w3id.org/italia/onto/CPV/Person">person</span></dd>
 				<dd><a href="#hasSubscription" title="https://w3id.org/ontoim/hasSubscription">has subscription</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e4223"
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e4287"
 						title="https://w3id.org/ontoim/Subscriber">Subscriber</a><sup title="class" class="type-c">c</sup></dd>
 				<dd><a href="#associationRegisterCode" title="https://w3id.org/ontoim/associationRegisterCode">association register code</a><sup
 						title="data property" class="type-dp">dp</sup> <span class="logic">exactly</span> 1</dd>
@@ -324,9 +333,11 @@
 				</dd>
 				<dt>is in domain of</dt>
 				<dd><a href="#associationRegistrationDate" title="https://w3id.org/ontoim/associationRegistrationDate">association registration
-						date</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e1433"
+						date</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e1445"
 						title="https://w3id.org/ontoim/associationRemovalFromRegisterDate">association removal from register
-						date</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e727"
+						date</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e235"
+						title="https://w3id.org/ontoim/hasAssociationCategory">has association category</a><sup
+						title="object property" class="type-op">op</sup>, <a href="#d4e750"
 						title="https://w3id.org/ontoim/hasMembers">has members</a><sup title="object property"
 						class="type-op">op</sup>, <a href="#hasReferent" title="https://w3id.org/ontoim/hasReferent">has referent</a><sup
 						title="object property" class="type-op">op</sup></dd>
@@ -344,6 +355,9 @@
 			<dl class="description">
 				<dt>has super-classes</dt>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/l0/Topic">topic</span></dd>
+				<dt>is in range of</dt>
+				<dd><a href="#hasAssociationCategory" title="https://w3id.org/ontoim/hasAssociationCategory">has association category</a><sup
+						title="object property" class="type-op">op</sup></dd>
 			</dl>
 		</div>
 		<div id="Booking" class="entity"><a name="https://w3id.org/ontoim/Booking"></a>
@@ -356,6 +370,9 @@
 				<dt>has super-classes</dt>
 				<dd><a href="#DemographicEvent" title="https://w3id.org/ontoim/DemographicEvent">Demographic Event</a><sup title="class"
 						class="type-c">c</sup></dd>
+				<dt>is in range of</dt>
+				<dd><a href="#hasBooking" title="https://w3id.org/ontoim/hasBooking">has booking</a><sup title="object property"
+						class="type-op">op</sup></dd>
 			</dl>
 		</div>
 		<div id="Bookings" class="entity"><a name="https://w3id.org/ontoim/Bookings"></a>
@@ -400,7 +417,7 @@
 				<dt>has super-classes</dt>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/l0/Object">object</span></dd>
 				<dd><a href="#hasCadastralCategory" title="https://w3id.org/ontoim/hasCadastralCategory">has cadastral category</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#d4e2170"
+						title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#d4e2182"
 						title="https://w3id.org/ontoim/CadastralCategory">Cadastral Category</a><sup title="class"
 						class="type-c">c</sup></dd>
 				<dd><a href="#map" title="https://w3id.org/ontoim/map">map</a><sup title="data property"
@@ -411,9 +428,9 @@
 						class="type-dp">dp</sup> <span class="logic">exactly</span> 1</dd>
 				<dt>is in domain of</dt>
 				<dd><a href="#hasCadastralCategory" title="https://w3id.org/ontoim/hasCadastralCategory">has cadastral category</a><sup
-						title="object property" class="type-op">op</sup>, <a href="#d4e1654"
+						title="object property" class="type-op">op</sup>, <a href="#d4e1666"
 						title="https://w3id.org/ontoim/map">map</a><sup title="data property" class="type-dp">dp</sup>, <a
-						href="#sheet" title="https://w3id.org/ontoim/sheet">sheet</a><sup title="data property"
+						href="#d4e1834" title="https://w3id.org/ontoim/sheet">sheet</a><sup title="data property"
 						class="type-dp">dp</sup>, <a href="#subordinate" title="https://w3id.org/ontoim/subordinate">subordinate</a><sup
 						title="data property" class="type-dp">dp</sup></dd>
 				<dt>is in range of</dt>
@@ -444,7 +461,7 @@
 				<dd><a href="#DemographicObservation" title="https://w3id.org/ontoim/DemographicObservation">Demographic Observation</a><sup
 						title="class" class="type-c">c</sup></dd>
 				<dd><a href="#hasCivilStatusCategory" title="https://w3id.org/ontoim/hasCivilStatusCategory">has civil status category</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#d4e2308"
+						title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#d4e2320"
 						title="https://w3id.org/ontoim/CivilStatusCategory">Civil Status Category</a><sup title="class"
 						class="type-c">c</sup></dd>
 			</dl>
@@ -477,7 +494,7 @@
 				<dd><a href="#DemographicEvent" title="https://w3id.org/ontoim/DemographicEvent">Demographic Event</a><sup title="class"
 						class="type-c">c</sup></dd>
 				<dd><a href="#hasCivilStatusCategory" title="https://w3id.org/ontoim/hasCivilStatusCategory">has civil status category</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#d4e2308"
+						title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#d4e2320"
 						title="https://w3id.org/ontoim/CivilStatusCategory">Civil Status Category</a><sup title="class"
 						class="type-c">c</sup></dd>
 			</dl>
@@ -496,7 +513,7 @@
 						title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span></dd>
 				<dt>has sub-classes</dt>
 				<dd><a href="#PhysicalClassroom" title="https://w3id.org/ontoim/PhysicalClassroom">Physical Classroom</a><sup
-						title="class" class="type-c">c</sup>, <a href="#d4e4606"
+						title="class" class="type-c">c</sup>, <a href="#d4e4667"
 						title="https://w3id.org/ontoim/VirtualClassroom">Virtual Classroom</a><sup title="class"
 						class="type-c">c</sup></dd>
 				<dt>is in range of</dt>
@@ -532,7 +549,7 @@
 				<dd><a href="#School" title="https://w3id.org/ontoim/School">School</a><sup title="class"
 						class="type-c">c</sup></dd>
 				<dd><a href="#includesSchool" title="https://w3id.org/ontoim/includesSchool">includes school</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">some</span> <a href="#d4e4133"
+						title="object property" class="type-op">op</sup> <span class="logic">some</span> <a href="#d4e4196"
 						title="https://w3id.org/ontoim/School">School</a><sup title="class" class="type-c">c</sup></dd>
 				<dt>is in domain of</dt>
 				<dd><a href="#includesSchool" title="https://w3id.org/ontoim/includesSchool">includes school</a><sup
@@ -548,6 +565,9 @@
 			<dl class="description">
 				<dt>has super-classes</dt>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/l0/Activity">activity</span></dd>
+				<dd><span class="dotted" title="https://w3id.org/italia/onto/HER/hasAcademicDiscipline">has academic
+						discipline</span> <span class="logic">only</span> <span class="dotted"
+						title="https://w3id.org/italia/onto/HER/AcademicDiscipline">academic discipline</span></dd>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/TI/atTime">at time</span> <span
 						class="logic">only</span> <span class="dotted" title="https://w3id.org/italia/onto/TI/TimeInterval">time
 						interval</span></dd>
@@ -555,13 +575,13 @@
 						title="object property" class="type-op">op</sup> <span class="logic">only</span> <span class="dotted"
 						title="https://w3id.org/italia/onto/POT/PriceSpecification">price specification</span></dd>
 				<dd><a href="#hasSubscribers" title="https://w3id.org/ontoim/hasSubscribers">has subscribers</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e4243"
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e4306"
 						title="https://w3id.org/ontoim/Subscribers">Subscribers</a><sup title="class" class="type-c">c</sup></dd>
 				<dd><a href="#hasSubscription" title="https://w3id.org/ontoim/hasSubscription">has subscription</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e4223"
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e4287"
 						title="https://w3id.org/ontoim/Subscriber">Subscriber</a><sup title="class" class="type-c">c</sup></dd>
 				<dd><a href="#situatedInClassroom" title="https://w3id.org/ontoim/situatedInClassroom">situated in classroom</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e2361"
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e2373"
 						title="https://w3id.org/ontoim/Classroom">Classroom</a><sup title="class" class="type-c">c</sup></dd>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/l0/name">name</span> <span
 						class="logic">some</span> <span class="dotted"
@@ -576,14 +596,25 @@
 				<dt>is in domain of</dt>
 				<dd><a href="#courseCode" title="https://w3id.org/ontoim/courseCode">course code</a><sup title="data property"
 						class="type-dp">dp</sup>, <a href="#durationHours" title="https://w3id.org/ontoim/durationHours">duration in
-						hours</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e819"
+						hours</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e861"
 						title="https://w3id.org/ontoim/hasPriceSpecification">has price specification</a><sup
-						title="object property" class="type-op">op</sup>, <a href="#d4e1314"
+						title="object property" class="type-op">op</sup>, <a href="#d4e1326"
 						title="https://w3id.org/ontoim/situatedInClassroom">situated in classroom</a><sup title="object property"
 						class="type-op">op</sup></dd>
 				<dt>is in range of</dt>
 				<dd><a href="#providesCourse" title="https://w3id.org/ontoim/providesCourse">provides course</a><sup
 						title="object property" class="type-op">op</sup></dd>
+			</dl>
+		</div>
+		<div id="CulturalEvent" class="entity"><a name="https://w3id.org/ontoim/CulturalEvent"></a>
+			<h3>Cultural Event<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a>
+					or <a href="#classes">Class ToC</a></span></h3>
+			<p><strong>IRI:</strong> https://w3id.org/ontoim/CulturalEvent</p>
+			<dl class="description">
+				<dt>has super-classes</dt>
+				<dd><span class="dotted" title="http://dati.beniculturali.it/cis/CulturalEvent">cultural event</span></dd>
+				<dd><a href="#PublicEvent" title="https://w3id.org/ontoim/PublicEvent">Public Event</a><sup title="class"
+						class="type-c">c</sup></dd>
 			</dl>
 		</div>
 		<div id="DemographicEvent" class="entity"><a name="https://w3id.org/ontoim/DemographicEvent"></a>
@@ -599,18 +630,19 @@
 			<dl class="description">
 				<dt>has super-classes</dt>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/l0/EventOrSituation">event or situation</span></dd>
+				<dd><span class="dotted" title="https://w3id.org/italia/onto/CLV/hasSpatialCoverage">has spatial coverage</span>
+					<span class="logic">max</span> 1 <span class="dotted"
+						title="https://w3id.org/italia/onto/CLV/Feature">feature</span>
+				</dd>
 				<dd><a href="#hasDemographicReference" title="https://w3id.org/ontoim/hasDemographicReference">has demographic reference</a><sup
 						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <span class="dotted"
 						title="https://w3id.org/italia/onto/CPV/Person">person</span></dd>
-				<dd><a href="#hasSpatialDelimitation" title="https://w3id.org/ontoim/hasSpatialDelimitation">has spatial delimitation</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <span class="dotted"
-						title="https://w3id.org/italia/onto/CLV/SpatialObject">spatial object</span></dd>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/TI/date">date</span> <span
 						class="logic">exactly</span> 1</dd>
 				<dt>has sub-classes</dt>
 				<dd><a href="#Booking" title="https://w3id.org/ontoim/Booking">Booking</a><sup title="class"
 						class="type-c">c</sup>, <a href="#CivilStatusEvent" title="https://w3id.org/ontoim/CivilStatusEvent">Civil Status
-						Event</a><sup title="class" class="type-c">c</sup>, <a href="#d4e4223"
+						Event</a><sup title="class" class="type-c">c</sup>, <a href="#d4e4287"
 						title="https://w3id.org/ontoim/Subscriber">Subscriber</a><sup title="class" class="type-c">c</sup></dd>
 				<dt>is in range of</dt>
 				<dd><a href="#hasDemographicEvent" title="https://w3id.org/ontoim/hasDemographicEvent">has demographic event</a><sup
@@ -633,25 +665,27 @@
 			<dl class="description">
 				<dt>has super-classes</dt>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/l0/Activity">activity</span></dd>
+				<dd><span class="dotted" title="https://w3id.org/italia/onto/CLV/hasSpatialCoverage">has spatial coverage</span>
+					<span class="logic">max</span> 1 <span class="dotted"
+						title="https://w3id.org/italia/onto/CLV/Feature">feature</span>
+				</dd>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/TI/hasTemporalEntity">has temporal entity</span>
 					<span class="logic">max</span> 1 <span class="dotted"
-						title="https://w3id.org/italia/onto/TI/TemporalEntity">temporal entity</span></dd>
+						title="https://w3id.org/italia/onto/TI/TemporalEntity">temporal entity</span>
+				</dd>
 				<dd><a href="#hasDemographicReference" title="https://w3id.org/ontoim/hasDemographicReference">has demographic reference</a><sup
 						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 </dd>
-				<dd><a href="#hasSpatialDelimitation" title="https://w3id.org/ontoim/hasSpatialDelimitation">has spatial delimitation</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <span class="dotted"
-						title="https://w3id.org/italia/onto/CLV/SpatialObject">spatial object</span></dd>
 				<dd><a href="#observationValue" title="https://w3id.org/ontoim/observationValue">observation value</a><sup
 						title="data property" class="type-dp">dp</sup> <span class="logic">exactly</span> 1</dd>
 				<dt>has sub-classes</dt>
 				<dd><a href="#Bookings" title="https://w3id.org/ontoim/Bookings">Bookings</a><sup title="class"
 						class="type-c">c</sup>, <a href="#Citizens" title="https://w3id.org/ontoim/Citizens">Citizens</a><sup
 						title="class" class="type-c">c</sup>, <a href="#CivilStatus" title="https://w3id.org/ontoim/CivilStatus">Civil
-						Status</a><sup title="class" class="type-c">c</sup>, <a href="#d4e2694"
+						Status</a><sup title="class" class="type-c">c</sup>, <a href="#d4e2731"
 						title="https://w3id.org/ontoim/Employees">Employees</a><sup title="class" class="type-c">c</sup>, <a
-						href="#Members" title="https://w3id.org/ontoim/Members">Members</a><sup title="class"
+						href="#d4e3239" title="https://w3id.org/ontoim/Members">Members</a><sup title="class"
 						class="type-c">c</sup>, <a href="#Subscribers" title="https://w3id.org/ontoim/Subscribers">Subscribers</a><sup
-						title="class" class="type-c">c</sup>, <a href="#d4e4292"
+						title="class" class="type-c">c</sup>, <a href="#d4e4356"
 						title="https://w3id.org/ontoim/Tourists">Tourists</a><sup title="class" class="type-c">c</sup></dd>
 				<dt>is in range of</dt>
 				<dd><a href="#hasDemographicObservation" title="https://w3id.org/ontoim/hasDemographicObservation">has demographic
@@ -681,10 +715,10 @@
 				<dt>has super-classes</dt>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/CPEV/Event">event</span></dd>
 				<dd><a href="#hasSubscribers" title="https://w3id.org/ontoim/hasSubscribers">has subscribers</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e4243"
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e4306"
 						title="https://w3id.org/ontoim/Subscribers">Subscribers</a><sup title="class" class="type-c">c</sup></dd>
 				<dd><a href="#hasSubscription" title="https://w3id.org/ontoim/hasSubscription">has subscription</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e4223"
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e4287"
 						title="https://w3id.org/ontoim/Subscriber">Subscriber</a><sup title="class" class="type-c">c</sup></dd>
 				<dd><a href="#isOrganizedBy" title="https://w3id.org/ontoim/isOrganizedBy">is organized by</a><sup
 						title="object property" class="type-op">op</sup> <span class="logic">only</span> <span class="dotted"
@@ -706,17 +740,17 @@
 			<dl class="description">
 				<dt>has super-classes</dt>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/POI/PointOfInterest">point of interest</span></dd>
-				<dd><span class="dotted" title="https://w3id.org/italia/onto/ACCO/hasOfferedServiceDescription">has offered
-						service description</span> <span class="logic">only</span> <span class="dotted"
-						title="https://w3id.org/italia/onto/ACCO/OfferedServiceDescription">offered service description</span></dd>
-				<dd><a href="#concessedWithProperty" title="https://w3id.org/ontoim/concessedWithProperty">concessed with procedure</a><sup
+				<dd><a href="#concessedWithProcedure" title="https://w3id.org/ontoim/concessedWithProcedure">concessed with procedure</a><sup
 						title="object property" class="type-op">op</sup> <span class="logic">only</span> <span class="dotted"
 						title="https://w3id.org/italia/onto/PublicContract/Procedure">procedure</span></dd>
+				<dd><a href="#hasOfferedService" title="https://w3id.org/ontoim/hasOfferedService">has offered service</a><sup
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <span class="dotted"
+						title="https://w3id.org/italia/onto/ACCO/OSDFeature">o s d feature</span></dd>
 				<dd><a href="#ownedBy" title="https://w3id.org/ontoim/ownedBy">owned by</a><sup title="object property"
 						class="type-op">op</sup> <span class="logic">only</span> <span class="dotted"
 						title="https://w3id.org/italia/onto/COV/Organization">organization</span></dd>
 				<dd><a href="#hasCadastralData" title="https://w3id.org/ontoim/hasCadastralData">has cadastral data</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#d4e2189"
+						title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#d4e2201"
 						title="https://w3id.org/ontoim/CadastralData">Cadastral Data</a><sup title="class" class="type-c">c</sup>
 				</dd>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/SM/hasOnlineContactPoint">has online contact
@@ -728,14 +762,16 @@
 				<dt>has sub-classes</dt>
 				<dd><a href="#GreenZone" title="https://w3id.org/ontoim/GreenZone">Green Zone</a><sup title="class"
 						class="type-c">c</sup>, <a href="#Hospital" title="https://w3id.org/ontoim/Hospital">Hospital</a><sup
-						title="class" class="type-c">c</sup>, <a href="#d4e4133"
+						title="class" class="type-c">c</sup>, <a href="#d4e4196"
 						title="https://w3id.org/ontoim/School">School</a><sup title="class" class="type-c">c</sup></dd>
 				<dt>is in domain of</dt>
-				<dd><a href="#concessedWithProperty" title="https://w3id.org/ontoim/concessedWithProperty">concessed with procedure</a><sup
-						title="object property" class="type-op">op</sup>, <a href="#d4e312"
+				<dd><a href="#concessedWithProcedure" title="https://w3id.org/ontoim/concessedWithProcedure">concessed with procedure</a><sup
+						title="object property" class="type-op">op</sup>, <a href="#d4e320"
 						title="https://w3id.org/ontoim/hasCadastralData">has cadastral data</a><sup title="object property"
-						class="type-op">op</sup>, <a href="#ownedBy" title="https://w3id.org/ontoim/ownedBy">owned by</a><sup
-						title="object property" class="type-op">op</sup></dd>
+						class="type-op">op</sup>, <a href="#hasOfferedService" title="https://w3id.org/ontoim/hasOfferedService">has offered
+						service</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e1296"
+						title="https://w3id.org/ontoim/ownedBy">owned by</a><sup title="object property" class="type-op">op</sup>
+				</dd>
 				<dt>is in range of</dt>
 				<dd><a href="#hasFacility" title="https://w3id.org/ontoim/hasFacility">has facility</a><sup title="object property"
 						class="type-op">op</sup></dd>
@@ -751,7 +787,7 @@
 				<dd><a href="#Facility" title="https://w3id.org/ontoim/Facility">Facility</a><sup title="class"
 						class="type-c">c</sup></dd>
 				<dd><a href="#hasPlant" title="https://w3id.org/ontoim/hasPlant">has plant</a><sup title="object property"
-						class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3356"
+						class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3406"
 						title="https://w3id.org/ontoim/Plant">Plant</a><sup title="class" class="type-c">c</sup></dd>
 				<dd><a href="#hasSurface" title="https://w3id.org/ontoim/hasSurface">has surface</a><sup title="object property"
 						class="type-op">op</sup> <span class="logic">only</span> <span class="dotted"
@@ -771,10 +807,10 @@
 				<dt>has super-classes</dt>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/l0/Collection">collection</span></dd>
 				<dd><a href="#hasFacility" title="https://w3id.org/ontoim/hasFacility">has facility</a><sup title="object property"
-						class="type-op">op</sup> <span class="logic">some</span> <a href="#d4e2758"
+						class="type-op">op</sup> <span class="logic">some</span> <a href="#d4e2795"
 						title="https://w3id.org/ontoim/Facility">Facility</a><sup title="class" class="type-c">c</sup></dd>
 				<dd><a href="#hasHeritageType" title="https://w3id.org/ontoim/hasHeritageType">has heritage type</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#d4e2931"
+						title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#d4e2968"
 						title="https://w3id.org/ontoim/HeritageType">Heritage Type</a><sup title="class" class="type-c">c</sup></dd>
 				<dt>is in domain of</dt>
 				<dd><a href="#hasFacility" title="https://w3id.org/ontoim/hasFacility">has facility</a><sup title="object property"
@@ -812,17 +848,23 @@
 				<dt>has super-classes</dt>
 				<dd><a href="#Facility" title="https://w3id.org/ontoim/Facility">Facility</a><sup title="class"
 						class="type-c">c</sup></dd>
-				<dd><span class="dotted" title="https://w3id.org/italia/onto/ACCO/totalBed">total bed</span> <span
-						class="logic">max</span> 1</dd>
+				<dd><a href="#hasHospitalDepartment" title="https://w3id.org/ontoim/hasHospitalDepartment">has hospital department</a><sup
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3031"
+						title="https://w3id.org/ontoim/HospitalDepartment">Hospital Department</a><sup title="class"
+						class="type-c">c</sup></dd>
+				<dd><a href="#totalNumberOfBeds" title="https://w3id.org/ontoim/totalNumberOfBeds">total number of beds</a><sup
+						title="data property" class="type-dp">dp</sup> <span class="logic">max</span> 1</dd>
 				<dt>has sub-classes</dt>
 				<dd><a href="#HospitalDepartment" title="https://w3id.org/ontoim/HospitalDepartment">Hospital Department</a><sup
-						title="class" class="type-c">c</sup>, <a href="#d4e3534"
+						title="class" class="type-c">c</sup>, <a href="#d4e3597"
 						title="https://w3id.org/ontoim/PrivateHospital">Private Hospital</a><sup title="class"
 						class="type-c">c</sup>, <a href="#PublicHospital" title="https://w3id.org/ontoim/PublicHospital">Public
 						Hospital</a><sup title="class" class="type-c">c</sup></dd>
 				<dt>is in domain of</dt>
-				<dd><a href="#totalNumberOfBeds" title="https://w3id.org/ontoim/totalNumberOfBeds">total number of beds</a><sup
-						title="data property" class="type-dp">dp</sup></dd>
+				<dd><a href="#hasHospitalDepartment" title="https://w3id.org/ontoim/hasHospitalDepartment">has hospital department</a><sup
+						title="object property" class="type-op">op</sup>, <a href="#d4e1906"
+						title="https://w3id.org/ontoim/totalNumberOfBeds">total number of beds</a><sup title="data property"
+						class="type-dp">dp</sup></dd>
 			</dl>
 		</div>
 		<div id="HospitalDepartment" class="entity"><a name="https://w3id.org/ontoim/HospitalDepartment"></a>
@@ -833,6 +875,9 @@
 				<dt>has super-classes</dt>
 				<dd><a href="#Hospital" title="https://w3id.org/ontoim/Hospital">Hospital</a><sup title="class"
 						class="type-c">c</sup></dd>
+				<dt>is in range of</dt>
+				<dd><a href="#hasHospitalDepartment" title="https://w3id.org/ontoim/hasHospitalDepartment">has hospital department</a><sup
+						title="object property" class="type-op">op</sup></dd>
 			</dl>
 		</div>
 		<div id="InvolvedEntity" class="entity"><a name="https://w3id.org/ontoim/InvolvedEntity"></a>
@@ -845,13 +890,13 @@
 				<dt>has super-classes</dt>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/l0/Entity">entity</span></dd>
 				<dd><a href="#hasAccidentCircumstance" title="https://w3id.org/ontoim/hasAccidentCircumstance">has accident circumstance</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e1911"
+						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e1923"
 						title="https://w3id.org/ontoim/AccidentCircumstance">Accident Circumstance</a><sup title="class"
 						class="type-c">c</sup></dd>
 				<dt>has sub-classes</dt>
 				<dd><a href="#InvolvedObstacle" title="https://w3id.org/ontoim/InvolvedObstacle">Involved Obstacle</a><sup title="class"
 						class="type-c">c</sup>, <a href="#InvolvedPerson" title="https://w3id.org/ontoim/InvolvedPerson">Involved
-						Person</a><sup title="class" class="type-c">c</sup>, <a href="#d4e3115"
+						Person</a><sup title="class" class="type-c">c</sup>, <a href="#d4e3162"
 						title="https://w3id.org/ontoim/InvolvedVehicle">Involved Vehicle</a><sup title="class"
 						class="type-c">c</sup></dd>
 				<dt>is in domain of</dt>
@@ -888,7 +933,7 @@
 				<dd><a href="#InvolvedEntity" title="https://w3id.org/ontoim/InvolvedEntity">Involved Entity</a><sup title="class"
 						class="type-c">c</sup></dd>
 				<dd><a href="#hasInvolvedPersonStatus" title="https://w3id.org/ontoim/hasInvolvedPersonStatus">has involved person status</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e3096"
+						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e3143"
 						title="https://w3id.org/ontoim/InvolvedPersonStatus">Involved Person Status</a><sup title="class"
 						class="type-c">c</sup></dd>
 				<dd><a href="#hasPerson" title="https://w3id.org/ontoim/hasPerson">has person</a><sup title="object property"
@@ -896,15 +941,15 @@
 						title="https://w3id.org/italia/onto/CPV/Person">person</span></dd>
 				<dt>is in domain of</dt>
 				<dd><a href="#hasInvolvedPersonStatus" title="https://w3id.org/ontoim/hasInvolvedPersonStatus">has involved person status</a><sup
-						title="object property" class="type-op">op</sup>, <a href="#d4e788"
+						title="object property" class="type-op">op</sup>, <a href="#d4e831"
 						title="https://w3id.org/ontoim/hasPerson">has person</a><sup title="object property"
 						class="type-op">op</sup></dd>
 				<dt>is in range of</dt>
 				<dd><a href="#hasBackPassenger" title="https://w3id.org/ontoim/hasBackPassenger">has back passenger</a><sup
-						title="object property" class="type-op">op</sup>, <a href="#d4e354"
+						title="object property" class="type-op">op</sup>, <a href="#d4e362"
 						title="https://w3id.org/ontoim/hasConducent">has conducent</a><sup title="object property"
 						class="type-op">op</sup>, <a href="#hasFrontPassenger" title="https://w3id.org/ontoim/hasFrontPassenger">has front
-						passenger</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e635"
+						passenger</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e658"
 						title="https://w3id.org/ontoim/hasInvolvedPerson">has involved person</a><sup title="object property"
 						class="type-op">op</sup>, <a href="#hasPassenger" title="https://w3id.org/ontoim/hasPassenger">has
 						passenger</a><sup title="object property" class="type-op">op</sup></dd>
@@ -938,30 +983,30 @@
 				<dd><a href="#InvolvedEntity" title="https://w3id.org/ontoim/InvolvedEntity">Involved Entity</a><sup title="class"
 						class="type-c">c</sup></dd>
 				<dd><a href="#hasBackPassenger" title="https://w3id.org/ontoim/hasBackPassenger">has back passenger</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3049"
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3097"
 						title="https://w3id.org/ontoim/InvolvedPerson">Involved Person</a><sup title="class" class="type-c">c</sup>
 				</dd>
 				<dd><a href="#hasFrontPassenger" title="https://w3id.org/ontoim/hasFrontPassenger">has front passenger</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3049"
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3097"
 						title="https://w3id.org/ontoim/InvolvedPerson">Involved Person</a><sup title="class" class="type-c">c</sup>
 				</dd>
 				<dd><a href="#hasPassenger" title="https://w3id.org/ontoim/hasPassenger">has passenger</a><sup title="object property"
-						class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3049"
+						class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3097"
 						title="https://w3id.org/ontoim/InvolvedPerson">Involved Person</a><sup title="class" class="type-c">c</sup>
 				</dd>
 				<dd><a href="#hasConducent" title="https://w3id.org/ontoim/hasConducent">has conducent</a><sup title="object property"
-						class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e3049"
+						class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e3097"
 						title="https://w3id.org/ontoim/InvolvedPerson">Involved Person</a><sup title="class" class="type-c">c</sup>
 				</dd>
 				<dd><a href="#hasVehicle" title="https://w3id.org/ontoim/hasVehicle">has vehicle</a><sup title="object property"
-						class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e4395"
+						class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e4456"
 						title="https://w3id.org/ontoim/Vehicle">Vehicle</a><sup title="class" class="type-c">c</sup></dd>
 				<dt>is in domain of</dt>
 				<dd><a href="#hasBackPassenger" title="https://w3id.org/ontoim/hasBackPassenger">has back passenger</a><sup
-						title="object property" class="type-op">op</sup>, <a href="#d4e354"
+						title="object property" class="type-op">op</sup>, <a href="#d4e362"
 						title="https://w3id.org/ontoim/hasConducent">has conducent</a><sup title="object property"
 						class="type-op">op</sup>, <a href="#hasFrontPassenger" title="https://w3id.org/ontoim/hasFrontPassenger">has front
-						passenger</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e759"
+						passenger</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e798"
 						title="https://w3id.org/ontoim/hasPassenger">has passenger</a><sup title="object property"
 						class="type-op">op</sup>, <a href="#hasVehicle" title="https://w3id.org/ontoim/hasVehicle">has vehicle</a><sup
 						title="object property" class="type-op">op</sup></dd>
@@ -993,17 +1038,16 @@
 				<dt>has super-classes</dt>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/COV/Organization">organization</span></dd>
 				<dd><a href="#hasEmployees" title="https://w3id.org/ontoim/hasEmployees">has employees</a><sup title="object property"
-						class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e2694"
+						class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e2731"
 						title="https://w3id.org/ontoim/Employees">Employees</a><sup title="class" class="type-c">c</sup></dd>
 				<dd><a href="#hasHeritage" title="https://w3id.org/ontoim/hasHeritage">has heritage</a><sup title="object property"
-						class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e2887"
+						class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e2925"
 						title="https://w3id.org/ontoim/Heritage">Heritage</a><sup title="class" class="type-c">c</sup></dd>
 				<dd><a href="#hasLocalUnitAddress" title="https://w3id.org/ontoim/hasLocalUnitAddress">has local unit address</a><sup
 						title="object property" class="type-op">op</sup> <span class="logic">only</span> <span class="dotted"
 						title="https://w3id.org/italia/onto/CLV/Address">address</span></dd>
-				<dd><a href="#providesService" title="https://w3id.org/ontoim/providesService">provides service</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">only</span> <span class="dotted"
-						title="https://w3id.org/italia/onto/CPSV/Service">service</span></dd>
+				<dd><a href="#bankruptcyDate" title="https://w3id.org/ontoim/bankruptcyDate">bankruptcy date</a><sup
+						title="data property" class="type-dp">dp</sup> <span class="logic">max</span> 1</dd>
 				<dd><a href="#endActivityDate" title="https://w3id.org/ontoim/endActivityDate">end activity date</a><sup
 						title="data property" class="type-dp">dp</sup> <span class="logic">max</span> 1</dd>
 				<dd><a href="#liquidationDate" title="https://w3id.org/ontoim/liquidationDate">liquidation date</a><sup
@@ -1042,6 +1086,9 @@
 			<dl class="description">
 				<dt>has super-classes</dt>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/l0/Characteristic">characteristic</span></dd>
+				<dt>is in range of</dt>
+				<dd><a href="#hasPavementType" title="https://w3id.org/ontoim/hasPavementType">has pavement type</a><sup
+						title="object property" class="type-op">op</sup></dd>
 			</dl>
 		</div>
 		<div id="PhysicalClassroom" class="entity"><a name="https://w3id.org/ontoim/PhysicalClassroom"></a>
@@ -1066,7 +1113,7 @@
 				<dt>has super-classes</dt>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/POI/PointOfInterest">point of interest</span></dd>
 				<dd><a href="#hasStatusInTime" title="https://w3id.org/ontoim/hasStatusInTime">has status in time</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3481"
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3531"
 						title="https://w3id.org/ontoim/PlantStatusInTime">Plant Status in Time</a><sup title="class"
 						class="type-c">c</sup></dd>
 				<dd><a href="#commonName" title="https://w3id.org/ontoim/commonName">common name</a><sup title="data property"
@@ -1074,22 +1121,22 @@
 						title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span></dd>
 				<dd><a href="#plantCode" title="https://w3id.org/ontoim/plantCode">plant code</a><sup title="data property"
 						class="type-dp">dp</sup> <span class="logic">exactly</span> 1</dd>
-				<dd><a href="#species" title="https://w3id.org/ontoim/species">This property indicates the scientific name of a
-						plant.</a><sup title="data property" class="type-dp">dp</sup> <span class="logic">exactly</span> 1</dd>
+				<dd><a href="#species" title="https://w3id.org/ontoim/species">species</a><sup title="data property"
+						class="type-dp">dp</sup> <span class="logic">exactly</span> 1</dd>
 				<dd><a href="#birthYear" title="https://w3id.org/ontoim/birthYear">birth year</a><sup title="data property"
 						class="type-dp">dp</sup> <span class="logic">max</span> 1</dd>
 				<dd><a href="#plantingDate" title="https://w3id.org/ontoim/plantingDate">planting date</a><sup title="data property"
 						class="type-dp">dp</sup> <span class="logic">max</span> 1</dd>
 				<dt>is in domain of</dt>
-				<dd><a href="#species" title="https://w3id.org/ontoim/species">This property indicates the scientific name of a
-						plant.</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e1479"
-						title="https://w3id.org/ontoim/birthYear">birth year</a><sup title="data property" class="type-dp">dp</sup>,
-					<a href="#commonName" title="https://w3id.org/ontoim/commonName">common name</a><sup title="data property"
-						class="type-dp">dp</sup>, <a href="#hasStatusInTime" title="https://w3id.org/ontoim/hasStatusInTime">has status in
-						time</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e1702"
-						title="https://w3id.org/ontoim/plantCode">plant code</a><sup title="data property" class="type-dp">dp</sup>,
-					<a href="#plantingDate" title="https://w3id.org/ontoim/plantingDate">planting date</a><sup title="data property"
-						class="type-dp">dp</sup></dd>
+				<dd><a href="#birthYear" title="https://w3id.org/ontoim/birthYear">birth year</a><sup title="data property"
+						class="type-dp">dp</sup>, <a href="#commonName" title="https://w3id.org/ontoim/commonName">common name</a><sup
+						title="data property" class="type-dp">dp</sup>, <a href="#d4e1032"
+						title="https://w3id.org/ontoim/hasStatusInTime">has status in time</a><sup title="object property"
+						class="type-op">op</sup>, <a href="#plantCode" title="https://w3id.org/ontoim/plantCode">plant code</a><sup
+						title="data property" class="type-dp">dp</sup>, <a href="#d4e1732"
+						title="https://w3id.org/ontoim/plantingDate">planting date</a><sup title="data property"
+						class="type-dp">dp</sup>, <a href="#species" title="https://w3id.org/ontoim/species">species</a><sup
+						title="data property" class="type-dp">dp</sup></dd>
 				<dt>is in range of</dt>
 				<dd><a href="#hasPlant" title="https://w3id.org/ontoim/hasPlant">has plant</a><sup title="object property"
 						class="type-op">op</sup></dd>
@@ -1103,10 +1150,10 @@
 					plant.</span></div>
 			<dl class="description">
 				<dt>is equivalent to</dt>
-				<dd>{ <a href="#Bad" title="https://w3id.org/ontoim/Bad">Bad</a> , <a href="#d4e4806"
-						title="https://w3id.org/ontoim/Dead">Dead</a> , <a href="#d4e4819"
-						title="https://w3id.org/ontoim/Fair">Fair</a> , <a href="#d4e4833"
-						title="https://w3id.org/ontoim/Good">Good</a> , <a href="#d4e4898"
+				<dd>{ <a href="#Bad" title="https://w3id.org/ontoim/Bad">Bad</a> , <a href="#d4e4863"
+						title="https://w3id.org/ontoim/Dead">Dead</a> , <a href="#d4e4877"
+						title="https://w3id.org/ontoim/Fair">Fair</a> , <a href="#d4e4890"
+						title="https://w3id.org/ontoim/Good">Good</a> , <a href="#d4e4955"
 						title="https://w3id.org/ontoim/Stump">Stump</a> }</dd>
 				<dt>is in range of</dt>
 				<dd><a href="#hasHealthStatus" title="https://w3id.org/ontoim/hasHealthStatus">has health status</a><sup
@@ -1114,9 +1161,9 @@
 				<dt>has members</dt>
 				<dd><a href="#Bad" title="https://w3id.org/ontoim/Bad">Bad</a><sup title="named individual"
 						class="type-ni">ni</sup>, <a href="#Dead" title="https://w3id.org/ontoim/Dead">Dead</a><sup
-						title="named individual" class="type-ni">ni</sup>, <a href="#d4e4819"
+						title="named individual" class="type-ni">ni</sup>, <a href="#d4e4877"
 						title="https://w3id.org/ontoim/Fair">Fair</a><sup title="named individual" class="type-ni">ni</sup>, <a
-						href="#Good" title="https://w3id.org/ontoim/Good">Good</a><sup title="named individual"
+						href="#d4e4890" title="https://w3id.org/ontoim/Good">Good</a><sup title="named individual"
 						class="type-ni">ni</sup>, <a href="#Stump" title="https://w3id.org/ontoim/Stump">Stump</a><sup
 						title="named individual" class="type-ni">ni</sup></dd>
 			</dl>
@@ -1131,14 +1178,19 @@
 				<dt>has super-classes</dt>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/l0/EventOrSituation">event or situation</span></dd>
 				<dd><a href="#hasDiameter" title="https://w3id.org/ontoim/hasDiameter">has diameter</a><sup title="object property"
-						class="type-op">op</sup> <span class="logic">only</span> <span class="dotted"
+						class="type-op">op</sup> <span class="logic">some</span> <span class="dotted"
 						title="https://w3id.org/italia/onto/MU/Value">value</span></dd>
 				<dd><a href="#hasHeight" title="https://w3id.org/ontoim/hasHeight">has height</a><sup title="object property"
-						class="type-op">op</sup> <span class="logic">only</span> <span class="dotted"
+						class="type-op">op</sup> <span class="logic">some</span> <span class="dotted"
 						title="https://w3id.org/italia/onto/MU/Value">value</span></dd>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/TI/hasTemporalEntity">has temporal entity</span>
-					<span class="logic">max</span> 1 <span class="dotted"
-						title="https://w3id.org/italia/onto/TI/TemporalEntity">temporal entity</span></dd>
+					<span class="logic">exactly</span> 1 <span class="dotted"
+						title="https://w3id.org/italia/onto/TI/TemporalEntity">temporal entity</span>
+				</dd>
+				<dd><a href="#hasHealthStatus" title="https://w3id.org/ontoim/hasHealthStatus">has health status</a><sup
+						title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#d4e3495"
+						title="https://w3id.org/ontoim/PlantHealthStatus">Plant Health Status</a><sup title="class"
+						class="type-c">c</sup></dd>
 				<dt>is in domain of</dt>
 				<dd><a href="#hasHealthStatus" title="https://w3id.org/ontoim/hasHealthStatus">has health status</a><sup
 						title="object property" class="type-op">op</sup></dd>
@@ -1168,20 +1220,20 @@
 				<dd><a href="#Organization" title="https://w3id.org/ontoim/Organization">Organization</a><sup title="class"
 						class="type-c">c</sup></dd>
 				<dd><a href="#hasDemographicCategory" title="https://w3id.org/ontoim/hasDemographicCategory">has demographic category</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e2391"
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e2403"
 						title="https://w3id.org/ontoim/CompanyDemographicCategory">Company Demographic Category</a><sup
 						title="class" class="type-c">c</sup></dd>
 				<dd><a href="#hasOrganizationSection" title="https://w3id.org/ontoim/hasOrganizationSection">has organization section</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3291"
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3341"
 						title="https://w3id.org/ontoim/OrganizationSection">Organization Section</a><sup title="class"
 						class="type-c">c</sup></dd>
 				<dt>has sub-classes</dt>
 				<dd><a href="#ArtisanOrganization" title="https://w3id.org/ontoim/ArtisanOrganization">Artisan Organization</a><sup
-						title="class" class="type-c">c</sup>, <a href="#d4e2021"
+						title="class" class="type-c">c</sup>, <a href="#d4e2033"
 						title="https://w3id.org/ontoim/Association">Association</a><sup title="class" class="type-c">c</sup></dd>
 				<dt>is in domain of</dt>
 				<dd><a href="#hasDemographicCategory" title="https://w3id.org/ontoim/hasDemographicCategory">has demographic category</a><sup
-						title="object property" class="type-op">op</sup>, <a href="#d4e744"
+						title="object property" class="type-op">op</sup>, <a href="#d4e783"
 						title="https://w3id.org/ontoim/hasOrganizationSection">has organization section</a><sup
 						title="object property" class="type-op">op</sup></dd>
 			</dl>
@@ -1212,6 +1264,9 @@
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/CPEV/PublicEvent">public event</span></dd>
 				<dd><a href="#Event" title="https://w3id.org/ontoim/Event">Event</a><sup title="class" class="type-c">c</sup>
 				</dd>
+				<dt>has sub-classes</dt>
+				<dd><a href="#CulturalEvent" title="https://w3id.org/ontoim/CulturalEvent">Cultural Event</a><sup title="class"
+						class="type-c">c</sup></dd>
 			</dl>
 		</div>
 		<div id="PublicHospital" class="entity"><a name="https://w3id.org/ontoim/PublicHospital"></a>
@@ -1263,37 +1318,39 @@
 						class="type-op">op</sup> <span class="logic">max</span> 1 <span class="dotted"
 						title="https://w3id.org/italia/onto/CLV/Address">address</span></dd>
 				<dd><a href="#hasPavementType" title="https://w3id.org/ontoim/hasPavementType">has pavement type</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e3310"
+						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e3361"
 						title="https://w3id.org/ontoim/PavementType">Pavement Type</a><sup title="class" class="type-c">c</sup></dd>
-				<dd><a href="#hasRoadCaetgory" title="https://w3id.org/ontoim/hasRoadCaetgory">has road category</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e3921"
+				<dd><a href="#hasRoadCategory" title="https://w3id.org/ontoim/hasRoadCategory">has road category</a><sup
+						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e3984"
 						title="https://w3id.org/ontoim/RoadCategory">Road Category</a><sup title="class" class="type-c">c</sup></dd>
 				<dd><a href="#hasRoadContext" title="https://w3id.org/ontoim/hasRoadContext">has road context</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e3940"
+						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e4004"
 						title="https://w3id.org/ontoim/RoadContext">Road Context</a><sup title="class" class="type-c">c</sup></dd>
 				<dd><a href="#hasRoadSignalPresence" title="https://w3id.org/ontoim/hasRoadSignalPresence">has road signal presence</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e4055"
+						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e4119"
 						title="https://w3id.org/ontoim/RoadSignalPresence">Road Signal Presence</a><sup title="class"
 						class="type-c">c</sup></dd>
 				<dd><a href="#hasRoadType" title="https://w3id.org/ontoim/hasRoadType">has road type</a><sup title="object property"
-						class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e4094"
+						class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e4157"
 						title="https://w3id.org/ontoim/RoadType">Road Type</a><sup title="class" class="type-c">c</sup></dd>
 				<dd><a href="#hasRoadbedStatus" title="https://w3id.org/ontoim/hasRoadbedStatus">has roadbed status</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e4113"
+						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e4177"
 						title="https://w3id.org/ontoim/RoadbedStatus">Roadbed Status</a><sup title="class" class="type-c">c</sup>
 				</dd>
 				<dd><a href="#roadName" title="https://w3id.org/ontoim/roadName">road name</a><sup title="data property"
 						class="type-dp">dp</sup> <span class="logic">only</span> <span class="dotted"
 						title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span></dd>
 				<dt>is in domain of</dt>
-				<dd><a href="#hasRoadCaetgory" title="https://w3id.org/ontoim/hasRoadCaetgory">has road category</a><sup
-						title="object property" class="type-op">op</sup>, <a href="#d4e897"
-						title="https://w3id.org/ontoim/hasRoadContext">has road context</a><sup title="object property"
-						class="type-op">op</sup>, <a href="#hasRoadSignalPresence" title="https://w3id.org/ontoim/hasRoadSignalPresence">has road
-						signal presence</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e943"
+				<dd><a href="#hasPavementType" title="https://w3id.org/ontoim/hasPavementType">has pavement type</a><sup
+						title="object property" class="type-op">op</sup>, <a href="#d4e925"
+						title="https://w3id.org/ontoim/hasRoadCategory">has road category</a><sup title="object property"
+						class="type-op">op</sup>, <a href="#hasRoadContext" title="https://w3id.org/ontoim/hasRoadContext">has road
+						context</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e955"
+						title="https://w3id.org/ontoim/hasRoadSignalPresence">has road signal presence</a><sup
+						title="object property" class="type-op">op</sup>, <a href="#d4e986"
 						title="https://w3id.org/ontoim/hasRoadType">has road type</a><sup title="object property"
 						class="type-op">op</sup>, <a href="#hasRoadbedStatus" title="https://w3id.org/ontoim/hasRoadbedStatus">has roadbed
-						status</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e1772"
+						status</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e1784"
 						title="https://w3id.org/ontoim/roadName">road name</a><sup title="data property" class="type-dp">dp</sup>
 				</dd>
 				<dt>is in range of</dt>
@@ -1311,53 +1368,54 @@
 				<dt>has super-classes</dt>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/l0/EventOrSituation">event or situation</span></dd>
 				<dd><a href="#detectedBy" title="https://w3id.org/ontoim/detectedBy">detected by</a><sup title="object property"
-						class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3646"
+						class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3709"
 						title="https://w3id.org/ontoim/RevelationUnit">Revelation Unit</a><sup title="class" class="type-c">c</sup>
 				</dd>
 				<dd><a href="#hasInvolvedEntity" title="https://w3id.org/ontoim/hasInvolvedEntity">has involved entity</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e2997"
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3044"
 						title="https://w3id.org/ontoim/InvolvedEntity">Involved Entity</a><sup title="class" class="type-c">c</sup>
 				</dd>
 				<dd><a href="#hasInvolvedObstacle" title="https://w3id.org/ontoim/hasInvolvedObstacle">has involved obstacle</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3030"
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3077"
 						title="https://w3id.org/ontoim/InvolvedObstacle">Involved Obstacle</a><sup title="class"
 						class="type-c">c</sup></dd>
 				<dd><a href="#hasInvolvedPerson" title="https://w3id.org/ontoim/hasInvolvedPerson">has involved person</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3049"
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3097"
 						title="https://w3id.org/ontoim/InvolvedPerson">Involved Person</a><sup title="class" class="type-c">c</sup>
 				</dd>
 				<dd><a href="#hasInvolvedVehicle" title="https://w3id.org/ontoim/hasInvolvedVehicle">has involved vehicle</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3115"
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e3162"
 						title="https://w3id.org/ontoim/InvolvedVehicle">Involved Vehicle</a><sup title="class"
 						class="type-c">c</sup></dd>
 				<dd><a href="#hasWeatherCondition" title="https://w3id.org/ontoim/hasWeatherCondition">has weather condition</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e4721"
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e4779"
 						title="https://w3id.org/ontoim/WeatherCondition">Weather Condition</a><sup title="class"
 						class="type-c">c</sup></dd>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/CLV/hasGeometry">has geometry</span> <span
 						class="logic">max</span> 1 <span class="dotted"
 						title="https://w3id.org/italia/onto/CLV/Geometry">geometry</span></dd>
 				<dd><a href="#hasAccidentType" title="https://w3id.org/ontoim/hasAccidentType">has accident type</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e1931"
+						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e1943"
 						title="https://w3id.org/ontoim/AccidentType">Accident Type</a><sup title="class" class="type-c">c</sup></dd>
 				<dd><a href="#hasRoad" title="https://w3id.org/ontoim/hasRoad">has road</a><sup title="object property"
-						class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e3665"
+						class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e3729"
 						title="https://w3id.org/ontoim/Road">Road</a><sup title="class" class="type-c">c</sup></dd>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/TI/date">date</span> <span class="logic">max</span>
 					1</dd>
 				<dt>is in domain of</dt>
 				<dd><a href="#detectedBy" title="https://w3id.org/ontoim/detectedBy">detected by</a><sup title="object property"
 						class="type-op">op</sup>, <a href="#hasAccidentType" title="https://w3id.org/ontoim/hasAccidentType">has accident
-						type</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e602"
+						type</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e626"
 						title="https://w3id.org/ontoim/hasInvolvedEntity">has involved entity</a><sup title="object property"
 						class="type-op">op</sup>, <a href="#hasInvolvedObstacle" title="https://w3id.org/ontoim/hasInvolvedObstacle">has involved
-						obstacle</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e635"
+						obstacle</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e658"
 						title="https://w3id.org/ontoim/hasInvolvedPerson">has involved person</a><sup title="object property"
 						class="type-op">op</sup>, <a href="#hasInvolvedVehicle" title="https://w3id.org/ontoim/hasInvolvedVehicle">has involved
-						vehicle</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e867"
+						vehicle</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e909"
 						title="https://w3id.org/ontoim/hasRoad">has road</a><sup title="object property" class="type-op">op</sup>,
 					<a href="#hasWeatherCondition" title="https://w3id.org/ontoim/hasWeatherCondition">has weather condition</a><sup
-						title="object property" class="type-op">op</sup></dd>
+						title="object property" class="type-op">op</sup>
+				</dd>
 			</dl>
 		</div>
 		<div id="RoadCategory" class="entity"><a name="https://w3id.org/ontoim/RoadCategory"></a>
@@ -1373,7 +1431,7 @@
 				<dt>has super-classes</dt>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/l0/Topic">topic</span></dd>
 				<dt>is in range of</dt>
-				<dd><a href="#hasRoadCaetgory" title="https://w3id.org/ontoim/hasRoadCaetgory">has road category</a><sup
+				<dd><a href="#hasRoadCategory" title="https://w3id.org/ontoim/hasRoadCategory">has road category</a><sup
 						title="object property" class="type-op">op</sup></dd>
 			</dl>
 		</div>
@@ -1403,7 +1461,8 @@
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/IoT/RoadSegment">road segment</span></dd>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/CLV/hasStreetToponym">has street toponym</span>
 					<span class="logic">exactly</span> 1 <span class="dotted"
-						title="https://w3id.org/italia/onto/CLV/StreetToponym">street toponym</span></dd>
+						title="https://w3id.org/italia/onto/CLV/StreetToponym">street toponym</span>
+				</dd>
 			</dl>
 		</div>
 		<div id="RoadSignal" class="entity"><a name="https://w3id.org/ontoim/RoadSignal"></a>
@@ -1419,7 +1478,7 @@
 				<dt>has super-classes</dt>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/POI/PointOfInterest">point of interest</span></dd>
 				<dd><a href="#hasRoadSignalType" title="https://w3id.org/ontoim/hasRoadSignalType">has road signal type</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#d4e4075"
+						title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#d4e4138"
 						title="https://w3id.org/ontoim/RoadSignalType">Road Signal Type</a><sup title="class" class="type-c">c</sup>
 				</dd>
 				<dd><a href="#signalValue" title="https://w3id.org/ontoim/signalValue">signal value</a><sup title="data property"
@@ -1431,10 +1490,10 @@
 						class="type-dp">dp</sup> <span class="logic">max</span> 1</dd>
 				<dt>is in domain of</dt>
 				<dd><a href="#hasRoadSignalType" title="https://w3id.org/ontoim/hasRoadSignalType">has road signal type</a><sup
-						title="object property" class="type-op">op</sup>, <a href="#d4e1595"
+						title="object property" class="type-op">op</sup>, <a href="#d4e1607"
 						title="https://w3id.org/ontoim/installationDate">installation date</a><sup title="data property"
 						class="type-dp">dp</sup>, <a href="#removalDate" title="https://w3id.org/ontoim/removalDate">removal
-						date</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e1837"
+						date</a><sup title="data property" class="type-dp">dp</sup>, <a href="#d4e1849"
 						title="https://w3id.org/ontoim/signalValue">signal value</a><sup title="data property"
 						class="type-dp">dp</sup></dd>
 			</dl>
@@ -1518,28 +1577,29 @@
 				<dd><a href="#Facility" title="https://w3id.org/ontoim/Facility">Facility</a><sup title="class"
 						class="type-c">c</sup></dd>
 				<dd><a href="#hasSchoolType" title="https://w3id.org/ontoim/hasSchoolType">has school type</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">some</span> <a href="#d4e4204"
+						title="object property" class="type-op">op</sup> <span class="logic">some</span> <a href="#d4e4267"
 						title="https://w3id.org/ontoim/SchoolType">School Type</a><sup title="class" class="type-c">c</sup></dd>
 				<dd><a href="#hasSubscribers" title="https://w3id.org/ontoim/hasSubscribers">has subscribers</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e4243"
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e4306"
 						title="https://w3id.org/ontoim/Subscribers">Subscribers</a><sup title="class" class="type-c">c</sup></dd>
 				<dd><a href="#hasSubscription" title="https://w3id.org/ontoim/hasSubscription">has subscription</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e4223"
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e4287"
 						title="https://w3id.org/ontoim/Subscriber">Subscriber</a><sup title="class" class="type-c">c</sup></dd>
 				<dd><a href="#providesCourse" title="https://w3id.org/ontoim/providesCourse">provides course</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e2436"
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e2448"
 						title="https://w3id.org/ontoim/Course">Course</a><sup title="class" class="type-c">c</sup></dd>
 				<dd><a href="#schoolCode" title="https://w3id.org/ontoim/schoolCode">school code</a><sup title="data property"
 						class="type-dp">dp</sup> <span class="logic">exactly</span> 1</dd>
 				<dt>has sub-classes</dt>
 				<dd><a href="#ComprehensiveInstitute" title="https://w3id.org/ontoim/ComprehensiveInstitute">Comprehensive Institute</a><sup
-						title="class" class="type-c">c</sup>, <a href="#d4e3584"
+						title="class" class="type-c">c</sup>, <a href="#d4e3647"
 						title="https://w3id.org/ontoim/PrivateSchool">Private School</a><sup title="class" class="type-c">c</sup>,
 					<a href="#PublicSchool" title="https://w3id.org/ontoim/PublicSchool">Public School</a><sup title="class"
-						class="type-c">c</sup></dd>
+						class="type-c">c</sup>
+				</dd>
 				<dt>is in domain of</dt>
 				<dd><a href="#hasSchoolType" title="https://w3id.org/ontoim/hasSchoolType">has school type</a><sup
-						title="object property" class="type-op">op</sup>, <a href="#d4e1284"
+						title="object property" class="type-op">op</sup>, <a href="#d4e1311"
 						title="https://w3id.org/ontoim/providesCourse">provides course</a><sup title="object property"
 						class="type-op">op</sup>, <a href="#schoolCode" title="https://w3id.org/ontoim/schoolCode">school code</a><sup
 						title="data property" class="type-dp">dp</sup></dd>
@@ -1603,7 +1663,7 @@
 					tourist: arrival or presence.</span></div>
 			<dl class="description">
 				<dt>is equivalent to</dt>
-				<dd>{ <a href="#Arrival" title="https://w3id.org/ontoim/Arrival">Arrival</a> , <a href="#d4e4885"
+				<dd>{ <a href="#Arrival" title="https://w3id.org/ontoim/Arrival">Arrival</a> , <a href="#d4e4942"
 						title="https://w3id.org/ontoim/Presence">Presence</a> }</dd>
 				<dt>is in range of</dt>
 				<dd><a href="#hasTouristType" title="https://w3id.org/ontoim/hasTouristType">has tourist type</a><sup
@@ -1625,7 +1685,7 @@
 				<dd><a href="#DemographicObservation" title="https://w3id.org/ontoim/DemographicObservation">Demographic Observation</a><sup
 						title="class" class="type-c">c</sup></dd>
 				<dd><a href="#hasTouristType" title="https://w3id.org/ontoim/hasTouristType">has tourist type</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e4262"
+						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e4325"
 						title="https://w3id.org/ontoim/TouristType">Tourist Type</a><sup title="class" class="type-c">c</sup></dd>
 				<dt>is in domain of</dt>
 				<dd><a href="#hasTouristType" title="https://w3id.org/ontoim/hasTouristType">has tourist type</a><sup
@@ -1639,14 +1699,14 @@
 			<dl class="description">
 				<dt>has super-classes</dt>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/IoT/TrafficFlow">traffic flow</span></dd>
-				<dd><a href="#hasTrafficFlowDirection" title="https://w3id.org/ontoim/hasTrafficFlowDirection">has traffic flow
-						direction</a><sup title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a
-						href="#TrafficFlowDirection" title="https://w3id.org/ontoim/TrafficFlowDirection">Traffic Flow Direction</a><sup
-						title="class" class="type-c">c</sup></dd>
 				<dd><a href="#hasVehicleCategory" title="https://w3id.org/ontoim/hasVehicleCategory">has vehicle category</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e4547"
+						title="object property" class="type-op">op</sup> <span class="logic">only</span> <a href="#d4e4607"
 						title="https://w3id.org/ontoim/VehicleCategory">Vehicle Category</a><sup title="class"
 						class="type-c">c</sup></dd>
+				<dd><a href="#hasTrafficFlowDirection" title="https://w3id.org/ontoim/hasTrafficFlowDirection">has traffic flow
+						direction</a><sup title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a
+						href="#d4e4425" title="https://w3id.org/ontoim/TrafficFlowDirection">Traffic Flow Direction</a><sup
+						title="class" class="type-c">c</sup></dd>
 			</dl>
 		</div>
 		<div id="TrafficFlowDirection" class="entity"><a name="https://w3id.org/ontoim/TrafficFlowDirection"></a>
@@ -1657,7 +1717,7 @@
 					traffic flow.</span></div>
 			<dl class="description">
 				<dt>is equivalent to</dt>
-				<dd>{ <a href="#In" title="https://w3id.org/ontoim/In">In</a> , <a href="#d4e4865"
+				<dd>{ <a href="#In" title="https://w3id.org/ontoim/In">In</a> , <a href="#d4e4923"
 						title="https://w3id.org/ontoim/Out">Out</a> }</dd>
 				<dt>is in range of</dt>
 				<dd><a href="#hasTrafficFlowDirection" title="https://w3id.org/ontoim/hasTrafficFlowDirection">has traffic flow
@@ -1692,7 +1752,7 @@
 						class="type-op">op</sup> <span class="logic">only</span> <span class="dotted"
 						title="https://w3id.org/italia/onto/MU/Value">value</span></dd>
 				<dd><a href="#hasVehicleCategory" title="https://w3id.org/ontoim/hasVehicleCategory">has vehicle category</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#d4e4547"
+						title="object property" class="type-op">op</sup> <span class="logic">exactly</span> 1 <a href="#d4e4607"
 						title="https://w3id.org/ontoim/VehicleCategory">Vehicle Category</a><sup title="class"
 						class="type-c">c</sup></dd>
 				<dd><a href="#hasRegistrationCountry" title="https://w3id.org/ontoim/hasRegistrationCountry">has registration country</a><sup
@@ -1714,14 +1774,14 @@
 				<dt>is in domain of</dt>
 				<dd><a href="#brand" title="https://w3id.org/ontoim/brand">brand</a><sup title="data property"
 						class="type-dp">dp</sup>, <a href="#color" title="https://w3id.org/ontoim/color">color</a><sup
-						title="data property" class="type-dp">dp</sup>, <a href="#d4e489"
+						title="data property" class="type-dp">dp</sup>, <a href="#d4e497"
 						title="https://w3id.org/ontoim/hasEngineDisplacement">has engine displacement</a><sup
-						title="object property" class="type-op">op</sup>, <a href="#d4e851"
+						title="object property" class="type-op">op</sup>, <a href="#d4e894"
 						title="https://w3id.org/ontoim/hasRegistrationCountry">has registration country</a><sup
-						title="object property" class="type-op">op</sup>, <a href="#d4e1613"
+						title="object property" class="type-op">op</sup>, <a href="#d4e1625"
 						title="https://w3id.org/ontoim/licensePlate">license plate</a><sup title="data property"
 						class="type-dp">dp</sup>, <a href="#model" title="https://w3id.org/ontoim/model">model</a><sup
-						title="data property" class="type-dp">dp</sup>, <a href="#d4e1737"
+						title="data property" class="type-dp">dp</sup>, <a href="#d4e1749"
 						title="https://w3id.org/ontoim/registrationYear">registration year</a><sup title="data property"
 						class="type-dp">dp</sup></dd>
 				<dt>is in range of</dt>
@@ -1779,7 +1839,7 @@
 						class="type-c">c</sup></dd>
 				<dd><a href="#usesVideoCommunicationService" title="https://w3id.org/ontoim/usesVideoCommunicationService">uses video communication
 						service</a><sup title="object property" class="type-op">op</sup> <span class="logic">only</span> <a
-						href="#VideoCommunicationService" title="https://w3id.org/ontoim/VideoCommunicationService">Video Communication
+						href="#d4e4626" title="https://w3id.org/ontoim/VideoCommunicationService">Video Communication
 						Service</a><sup title="class" class="type-c">c</sup></dd>
 				<dt>is in domain of</dt>
 				<dd><a href="#usesVideoCommunicationService" title="https://w3id.org/ontoim/usesVideoCommunicationService">uses video communication
@@ -1813,16 +1873,18 @@
 				<dt>has super-classes</dt>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/l0/Activity">activity</span></dd>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/MU/hasValue">has value</span> <span
-						class="logic">exactly</span> 1 <span class="dotted"
-						title="https://w3id.org/italia/onto/MU/Value">value</span></dd>
+						class="logic">some</span> <span class="dotted" title="https://w3id.org/italia/onto/MU/Value">value</span>
+				</dd>
 				<dd><span class="dotted" title="https://w3id.org/italia/onto/TI/hasTemporalEntity">has temporal entity</span>
 					<span class="logic">exactly</span> 1 <span class="dotted"
-						title="https://w3id.org/italia/onto/TI/TemporalEntity">temporal entity</span></dd>
-				<dd><a href="#hasSpatialDelimitation" title="https://w3id.org/ontoim/hasSpatialDelimitation">has spatial delimitation</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <span class="dotted"
-						title="https://w3id.org/italia/onto/CLV/SpatialObject">spatial object</span></dd>
+						title="https://w3id.org/italia/onto/TI/TemporalEntity">temporal entity</span>
+				</dd>
+				<dd><span class="dotted" title="https://w3id.org/italia/onto/CLV/hasSpatialCoverage">has spatial coverage</span>
+					<span class="logic">max</span> 1 <span class="dotted"
+						title="https://w3id.org/italia/onto/CLV/Feature">feature</span>
+				</dd>
 				<dd><a href="#hasWasteCategory" title="https://w3id.org/ontoim/hasWasteCategory">has waste category</a><sup
-						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e4630"
+						title="object property" class="type-op">op</sup> <span class="logic">max</span> 1 <a href="#d4e4690"
 						title="https://w3id.org/ontoim/WasteCategory">Waste Category</a><sup title="class" class="type-c">c</sup>
 				</dd>
 				<dt>is in domain of</dt>
@@ -1851,7 +1913,7 @@
 	<div id="objectproperties">
 		<h2>Object Properties</h2>
 		<ul class="hlist">
-			<li><a href="#concessedWithProperty" title="https://w3id.org/ontoim/concessedWithProperty">concessed with procedure</a></li>
+			<li><a href="#concessedWithProcedure" title="https://w3id.org/ontoim/concessedWithProcedure">concessed with procedure</a></li>
 			<li><a href="#detectedBy" title="https://w3id.org/ontoim/detectedBy">detected by</a></li>
 			<li><a href="#hasAccidentCircumstance" title="https://w3id.org/ontoim/hasAccidentCircumstance">has accident circumstance</a></li>
 			<li><a href="#hasAccidentType" title="https://w3id.org/ontoim/hasAccidentType">has accident type</a></li>
@@ -1878,6 +1940,7 @@
 			<li><a href="#hasHeight" title="https://w3id.org/ontoim/hasHeight">has height</a></li>
 			<li><a href="#hasHeritage" title="https://w3id.org/ontoim/hasHeritage">has heritage</a></li>
 			<li><a href="#hasHeritageType" title="https://w3id.org/ontoim/hasHeritageType">has heritage type</a></li>
+			<li><a href="#hasHospitalDepartment" title="https://w3id.org/ontoim/hasHospitalDepartment">has hospital department</a></li>
 			<li><a href="#hasInvolvedEntity" title="https://w3id.org/ontoim/hasInvolvedEntity">has involved entity</a></li>
 			<li><a href="#hasInvolvedObstacle" title="https://w3id.org/ontoim/hasInvolvedObstacle">has involved obstacle</a></li>
 			<li><a href="#hasInvolvedPerson" title="https://w3id.org/ontoim/hasInvolvedPerson">has involved person</a></li>
@@ -1886,6 +1949,7 @@
 			<li><a href="#hasLength" title="https://w3id.org/ontoim/hasLength">has length</a></li>
 			<li><a href="#hasLocalUnitAddress" title="https://w3id.org/ontoim/hasLocalUnitAddress">has local unit address</a></li>
 			<li><a href="#hasMembers" title="https://w3id.org/ontoim/hasMembers">has members</a></li>
+			<li><a href="#hasOfferedService" title="https://w3id.org/ontoim/hasOfferedService">has offered service</a></li>
 			<li><a href="#hasOrganizationSection" title="https://w3id.org/ontoim/hasOrganizationSection">has organization section</a></li>
 			<li><a href="#hasPassenger" title="https://w3id.org/ontoim/hasPassenger">has passenger</a></li>
 			<li><a href="#hasPavementType" title="https://w3id.org/ontoim/hasPavementType">has pavement type</a></li>
@@ -1895,14 +1959,13 @@
 			<li><a href="#hasReferent" title="https://w3id.org/ontoim/hasReferent">has referent</a></li>
 			<li><a href="#hasRegistrationCountry" title="https://w3id.org/ontoim/hasRegistrationCountry">has registration country</a></li>
 			<li><a href="#hasRoad" title="https://w3id.org/ontoim/hasRoad">has road</a></li>
-			<li><a href="#hasRoadCaetgory" title="https://w3id.org/ontoim/hasRoadCaetgory">has road category</a></li>
+			<li><a href="#hasRoadCategory" title="https://w3id.org/ontoim/hasRoadCategory">has road category</a></li>
 			<li><a href="#hasRoadContext" title="https://w3id.org/ontoim/hasRoadContext">has road context</a></li>
 			<li><a href="#hasRoadSignalPresence" title="https://w3id.org/ontoim/hasRoadSignalPresence">has road signal presence</a></li>
 			<li><a href="#hasRoadSignalType" title="https://w3id.org/ontoim/hasRoadSignalType">has road signal type</a></li>
 			<li><a href="#hasRoadType" title="https://w3id.org/ontoim/hasRoadType">has road type</a></li>
 			<li><a href="#hasRoadbedStatus" title="https://w3id.org/ontoim/hasRoadbedStatus">has roadbed status</a></li>
 			<li><a href="#hasSchoolType" title="https://w3id.org/ontoim/hasSchoolType">has school type</a></li>
-			<li><a href="#hasSpatialDelimitation" title="https://w3id.org/ontoim/hasSpatialDelimitation">has spatial delimitation</a></li>
 			<li><a href="#hasStatusInTime" title="https://w3id.org/ontoim/hasStatusInTime">has status in time</a></li>
 			<li><a href="#hasSubscribers" title="https://w3id.org/ontoim/hasSubscribers">has subscribers</a></li>
 			<li><a href="#hasSubscription" title="https://w3id.org/ontoim/hasSubscription">has subscription</a></li>
@@ -1919,15 +1982,14 @@
 			<li><a href="#isOrganizedBy" title="https://w3id.org/ontoim/isOrganizedBy">is organized by</a></li>
 			<li><a href="#ownedBy" title="https://w3id.org/ontoim/ownedBy">owned by</a></li>
 			<li><a href="#providesCourse" title="https://w3id.org/ontoim/providesCourse">provides course</a></li>
-			<li><a href="#providesService" title="https://w3id.org/ontoim/providesService">provides service</a></li>
 			<li><a href="#situatedInClassroom" title="https://w3id.org/ontoim/situatedInClassroom">situated in classroom</a></li>
 			<li><a href="#usesVideoCommunicationService" title="https://w3id.org/ontoim/usesVideoCommunicationService">uses video communication
 					service</a></li>
 		</ul>
-		<div id="concessedWithProperty" class="entity"><a name="https://w3id.org/ontoim/concessedWithProperty"></a>
+		<div id="concessedWithProcedure" class="entity"><a name="https://w3id.org/ontoim/concessedWithProcedure"></a>
 			<h3>concessed with procedure<sup title="object property" class="type-op">op</sup><span class="backlink"> back to
 					<a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
-			<p><strong>IRI:</strong> https://w3id.org/ontoim/concessedWithProperty</p>
+			<p><strong>IRI:</strong> https://w3id.org/ontoim/concessedWithProcedure</p>
 			<div class="description">
 				<dl>
 					<dt>has domain</dt>
@@ -2001,6 +2063,16 @@
 			<h3>has association category<sup title="object property" class="type-op">op</sup><span class="backlink"> back to
 					<a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
 			<p><strong>IRI:</strong> https://w3id.org/ontoim/hasAssociationCategory</p>
+			<div class="description">
+				<dl>
+					<dt>has domain</dt>
+					<dd><a href="#Association" title="https://w3id.org/ontoim/Association">Association</a><sup title="class"
+							class="type-c">c</sup></dd>
+					<dt>has range</dt>
+					<dd><a href="#AssociationCategory" title="https://w3id.org/ontoim/AssociationCategory">Association Category</a><sup
+							title="class" class="type-c">c</sup></dd>
+				</dl>
+			</div>
 		</div>
 		<div id="hasBackPassenger" class="entity"><a name="https://w3id.org/ontoim/hasBackPassenger"></a>
 			<h3>has back passenger<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
@@ -2032,7 +2104,8 @@
 					<dt>has domain</dt>
 					<dd><span class="dotted" title="https://w3id.org/italia/onto/ACCO/Accommodation">accommodation</span></dd>
 					<dt>has range</dt>
-					<dd><span class="dotted" title="https://w3id.org/italia/onto/AccessCondition/Booking">booking</span></dd>
+					<dd><a href="#Booking" title="https://w3id.org/ontoim/Booking">Booking</a><sup title="class"
+							class="type-c">c</sup></dd>
 				</dl>
 			</div>
 		</div>
@@ -2094,7 +2167,7 @@
 				<dl>
 					<dt>has domain</dt>
 					<dd><a href="#CivilStatus" title="https://w3id.org/ontoim/CivilStatus">Civil Status</a><sup title="class"
-							class="type-c">c</sup> <span class="logic">or</span> <a href="#d4e2328"
+							class="type-c">c</sup> <span class="logic">or</span> <a href="#d4e2340"
 							title="https://w3id.org/ontoim/CivilStatusEvent">Civil Status Event</a><sup title="class"
 							class="type-c">c</sup></dd>
 					<dt>has range</dt>
@@ -2164,7 +2237,7 @@
 					<dt>has sub-properties</dt>
 					<dd><a href="#hasBookings" title="https://w3id.org/ontoim/hasBookings">has bookings</a><sup title="object property"
 							class="type-op">op</sup>, <a href="#hasEmployees" title="https://w3id.org/ontoim/hasEmployees">has
-							employees</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e727"
+							employees</a><sup title="object property" class="type-op">op</sup>, <a href="#d4e750"
 							title="https://w3id.org/ontoim/hasMembers">has members</a><sup title="object property"
 							class="type-op">op</sup>, <a href="#hasSubscribers" title="https://w3id.org/ontoim/hasSubscribers">has
 							subscribers</a><sup title="object property" class="type-op">op</sup></dd>
@@ -2185,7 +2258,7 @@
 				<dl>
 					<dt>has domain</dt>
 					<dd><a href="#DemographicEvent" title="https://w3id.org/ontoim/DemographicEvent">Demographic Event</a><sup
-							title="class" class="type-c">c</sup> <span class="logic">or</span> <a href="#d4e2611"
+							title="class" class="type-c">c</sup> <span class="logic">or</span> <a href="#d4e2648"
 							title="https://w3id.org/ontoim/DemographicObservation">Demographic Observation</a><sup title="class"
 							class="type-c">c</sup></dd>
 					<dt>has range</dt>
@@ -2337,6 +2410,21 @@
 				</dl>
 			</div>
 		</div>
+		<div id="hasHospitalDepartment" class="entity"><a name="https://w3id.org/ontoim/hasHospitalDepartment"></a>
+			<h3>has hospital department<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+						href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+			<p><strong>IRI:</strong> https://w3id.org/ontoim/hasHospitalDepartment</p>
+			<div class="description">
+				<dl>
+					<dt>has domain</dt>
+					<dd><a href="#Hospital" title="https://w3id.org/ontoim/Hospital">Hospital</a><sup title="class"
+							class="type-c">c</sup></dd>
+					<dt>has range</dt>
+					<dd><a href="#HospitalDepartment" title="https://w3id.org/ontoim/HospitalDepartment">Hospital Department</a><sup
+							title="class" class="type-c">c</sup></dd>
+				</dl>
+			</div>
+		</div>
 		<div id="hasInvolvedEntity" class="entity"><a name="https://w3id.org/ontoim/hasInvolvedEntity"></a>
 			<h3>has involved entity<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
 						href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
@@ -2345,7 +2433,7 @@
 				<dl>
 					<dt>has sub-properties</dt>
 					<dd><a href="#hasInvolvedObstacle" title="https://w3id.org/ontoim/hasInvolvedObstacle">has involved obstacle</a><sup
-							title="object property" class="type-op">op</sup>, <a href="#d4e635"
+							title="object property" class="type-op">op</sup>, <a href="#d4e658"
 							title="https://w3id.org/ontoim/hasInvolvedPerson">has involved person</a><sup title="object property"
 							class="type-op">op</sup>, <a href="#hasInvolvedVehicle" title="https://w3id.org/ontoim/hasInvolvedVehicle">has
 							involved vehicle</a><sup title="object property" class="type-op">op</sup></dd>
@@ -2387,7 +2475,7 @@
 							title="object property" class="type-op">op</sup></dd>
 					<dt>has sub-properties</dt>
 					<dd><a href="#hasConducent" title="https://w3id.org/ontoim/hasConducent">has conducent</a><sup
-							title="object property" class="type-op">op</sup>, <a href="#d4e759"
+							title="object property" class="type-op">op</sup>, <a href="#d4e798"
 							title="https://w3id.org/ontoim/hasPassenger">has passenger</a><sup title="object property"
 							class="type-op">op</sup></dd>
 					<dt>has domain</dt>
@@ -2483,6 +2571,20 @@
 				</dl>
 			</div>
 		</div>
+		<div id="hasOfferedService" class="entity"><a name="https://w3id.org/ontoim/hasOfferedService"></a>
+			<h3>has offered service<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+						href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+			<p><strong>IRI:</strong> https://w3id.org/ontoim/hasOfferedService</p>
+			<div class="description">
+				<dl>
+					<dt>has domain</dt>
+					<dd><a href="#Facility" title="https://w3id.org/ontoim/Facility">Facility</a><sup title="class"
+							class="type-c">c</sup></dd>
+					<dt>has range</dt>
+					<dd><span class="dotted" title="https://w3id.org/italia/onto/ACCO/OSDFeature">o s d feature</span></dd>
+				</dl>
+			</div>
+		</div>
 		<div id="hasOrganizationSection" class="entity"><a name="https://w3id.org/ontoim/hasOrganizationSection"></a>
 			<h3>has organization section<sup title="object property" class="type-op">op</sup><span class="backlink"> back to
 					<a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
@@ -2509,7 +2611,7 @@
 							title="object property" class="type-op">op</sup></dd>
 					<dt>has sub-properties</dt>
 					<dd><a href="#hasBackPassenger" title="https://w3id.org/ontoim/hasBackPassenger">has back passenger</a><sup
-							title="object property" class="type-op">op</sup>, <a href="#d4e522"
+							title="object property" class="type-op">op</sup>, <a href="#d4e530"
 							title="https://w3id.org/ontoim/hasFrontPassenger">has front passenger</a><sup title="object property"
 							class="type-op">op</sup></dd>
 					<dt>has domain</dt>
@@ -2525,6 +2627,16 @@
 			<h3>has pavement type<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
 						href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
 			<p><strong>IRI:</strong> https://w3id.org/ontoim/hasPavementType</p>
+			<div class="description">
+				<dl>
+					<dt>has domain</dt>
+					<dd><a href="#Road" title="https://w3id.org/ontoim/Road">Road</a><sup title="class" class="type-c">c</sup>
+					</dd>
+					<dt>has range</dt>
+					<dd><a href="#PavementType" title="https://w3id.org/ontoim/PavementType">Pavement Type</a><sup title="class"
+							class="type-c">c</sup></dd>
+				</dl>
+			</div>
 		</div>
 		<div id="hasPerson" class="entity"><a name="https://w3id.org/ontoim/hasPerson"></a>
 			<h3>has person<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
@@ -2616,10 +2728,10 @@
 				</dl>
 			</div>
 		</div>
-		<div id="hasRoadCaetgory" class="entity"><a name="https://w3id.org/ontoim/hasRoadCaetgory"></a>
+		<div id="hasRoadCategory" class="entity"><a name="https://w3id.org/ontoim/hasRoadCategory"></a>
 			<h3>has road category<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
 						href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
-			<p><strong>IRI:</strong> https://w3id.org/ontoim/hasRoadCaetgory</p>
+			<p><strong>IRI:</strong> https://w3id.org/ontoim/hasRoadCategory</p>
 			<div class="description">
 				<dl>
 					<dt>has domain</dt>
@@ -2721,20 +2833,6 @@
 				</dl>
 			</div>
 		</div>
-		<div id="hasSpatialDelimitation" class="entity"><a name="https://w3id.org/ontoim/hasSpatialDelimitation"></a>
-			<h3>has spatial delimitation<sup title="object property" class="type-op">op</sup><span class="backlink"> back to
-					<a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
-			<p><strong>IRI:</strong> https://w3id.org/ontoim/hasSpatialDelimitation</p>
-			<div class="description">
-				<dl>
-					<dt>has domain</dt>
-					<dd><span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span><sup title="class"
-							class="type-c">c</sup></dd>
-					<dt>has range</dt>
-					<dd><span class="dotted" title="https://w3id.org/italia/onto/CLV/SpatialObject">spatial object</span></dd>
-				</dl>
-			</div>
-		</div>
 		<div id="hasStatusInTime" class="entity"><a name="https://w3id.org/ontoim/hasStatusInTime"></a>
 			<h3>has status in time<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
 						href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
@@ -2762,7 +2860,7 @@
 					<dt>has domain</dt>
 					<dd><span class="dotted" title="https://w3id.org/italia/onto/CPEV/Event">event</span> <span
 							class="logic">or</span> <a href="#Course" title="https://w3id.org/ontoim/Course">Course</a><sup
-							title="class" class="type-c">c</sup> <span class="logic">or</span> <a href="#d4e4133"
+							title="class" class="type-c">c</sup> <span class="logic">or</span> <a href="#d4e4196"
 							title="https://w3id.org/ontoim/School">School</a><sup title="class" class="type-c">c</sup></dd>
 					<dt>has range</dt>
 					<dd><a href="#Subscribers" title="https://w3id.org/ontoim/Subscribers">Subscribers</a><sup title="class"
@@ -2781,10 +2879,10 @@
 							title="object property" class="type-op">op</sup></dd>
 					<dt>has domain</dt>
 					<dd><a href="#Association" title="https://w3id.org/ontoim/Association">Association</a><sup title="class"
-							class="type-c">c</sup> <span class="logic">or</span> <a href="#d4e2436"
+							class="type-c">c</sup> <span class="logic">or</span> <a href="#d4e2448"
 							title="https://w3id.org/ontoim/Course">Course</a><sup title="class" class="type-c">c</sup> <span
 							class="logic">or</span> <a href="#Event" title="https://w3id.org/ontoim/Event">Event</a><sup
-							title="class" class="type-c">c</sup> <span class="logic">or</span> <a href="#d4e4133"
+							title="class" class="type-c">c</sup> <span class="logic">or</span> <a href="#d4e4196"
 							title="https://w3id.org/ontoim/School">School</a><sup title="class" class="type-c">c</sup></dd>
 					<dt>has range</dt>
 					<dd><a href="#Subscriber" title="https://w3id.org/ontoim/Subscriber">Subscriber</a><sup title="class"
@@ -2954,7 +3052,7 @@
 					<dt>has domain</dt>
 					<dd><span class="dotted" title="https://w3id.org/italia/onto/CPEV/Event">event</span></dd>
 					<dt>has range</dt>
-					<dd><span class="dotted" title="https://w3id.org/italia/onto/l0/Agent">agent</span></dd>
+					<dd><span class="dotted" title="https://w3id.org/italia/onto/COV/Organization">organization</span></dd>
 				</dl>
 			</div>
 		</div>
@@ -2984,19 +3082,6 @@
 					<dt>has range</dt>
 					<dd><a href="#Course" title="https://w3id.org/ontoim/Course">Course</a><sup title="class"
 							class="type-c">c</sup></dd>
-				</dl>
-			</div>
-		</div>
-		<div id="providesService" class="entity"><a name="https://w3id.org/ontoim/providesService"></a>
-			<h3>provides service<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
-						href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
-			<p><strong>IRI:</strong> https://w3id.org/ontoim/providesService</p>
-			<div class="description">
-				<dl>
-					<dt>has domain</dt>
-					<dd><span class="dotted" title="https://w3id.org/italia/onto/COV/Organization">organization</span></dd>
-					<dt>has range</dt>
-					<dd><span class="dotted" title="https://w3id.org/italia/onto/CPSV/Service">service</span></dd>
 				</dl>
 			</div>
 		</div>
@@ -3064,9 +3149,8 @@
 			<li><a href="#serviceURL" title="https://w3id.org/ontoim/serviceURL">service URL</a></li>
 			<li><a href="#sheet" title="https://w3id.org/ontoim/sheet">sheet</a></li>
 			<li><a href="#signalValue" title="https://w3id.org/ontoim/signalValue">signal value</a></li>
+			<li><a href="#species" title="https://w3id.org/ontoim/species">species</a></li>
 			<li><a href="#subordinate" title="https://w3id.org/ontoim/subordinate">subordinate</a></li>
-			<li><a href="#species" title="https://w3id.org/ontoim/species">This property indicates the scientific name of a
-					plant.</a></li>
 			<li><a href="#totalNumberOfBeds" title="https://w3id.org/ontoim/totalNumberOfBeds">total number of beds</a></li>
 		</ul>
 		<div id="artisanRegisterCode" class="entity"><a name="https://w3id.org/ontoim/artisanRegisterCode"></a>
@@ -3510,6 +3594,23 @@
 				</dl>
 			</div>
 		</div>
+		<div id="species" class="entity"><a name="https://w3id.org/ontoim/species"></a>
+			<h3>species<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+						href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+			<p><strong>IRI:</strong> https://w3id.org/ontoim/species</p>
+			<div class="comment"><span class="markdown">This property indicates the scientific name of a plant.</span></div>
+			<div class="description">
+				<dl>
+					<dt>has super-properties</dt>
+					<dd><span class="dotted" title="https://w3id.org/italia/onto/l0/name">name</span></dd>
+					<dt>has domain</dt>
+					<dd><a href="#Plant" title="https://w3id.org/ontoim/Plant">Plant</a><sup title="class"
+							class="type-c">c</sup></dd>
+					<dt>has range</dt>
+					<dd><span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span></dd>
+				</dl>
+			</div>
+		</div>
 		<div id="subordinate" class="entity"><a name="https://w3id.org/ontoim/subordinate"></a>
 			<h3>subordinate<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
 						href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
@@ -3518,23 +3619,6 @@
 				<dl>
 					<dt>has domain</dt>
 					<dd><a href="#CadastralData" title="https://w3id.org/ontoim/CadastralData">Cadastral Data</a><sup title="class"
-							class="type-c">c</sup></dd>
-					<dt>has range</dt>
-					<dd><span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span></dd>
-				</dl>
-			</div>
-		</div>
-		<div id="species" class="entity"><a name="https://w3id.org/ontoim/species"></a>
-			<h3>This property indicates the scientific name of a plant.<sup title="data property"
-					class="type-dp">dp</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a
-						href="#dataproperties">Data Property ToC</a></span></h3>
-			<p><strong>IRI:</strong> https://w3id.org/ontoim/species</p>
-			<div class="description">
-				<dl>
-					<dt>has super-properties</dt>
-					<dd><span class="dotted" title="https://w3id.org/italia/onto/l0/name">name</span></dd>
-					<dt>has domain</dt>
-					<dd><a href="#Plant" title="https://w3id.org/ontoim/Plant">Plant</a><sup title="class"
 							class="type-c">c</sup></dd>
 					<dt>has range</dt>
 					<dd><span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span></dd>
@@ -3565,11 +3649,11 @@
 			<li><a href="#Fair" title="https://w3id.org/ontoim/Fair">Fair</a></li>
 			<li><a href="#Good" title="https://w3id.org/ontoim/Good">Good</a></li>
 			<li><a href="#In" title="https://w3id.org/ontoim/In">In</a></li>
-			<li><a href="#d4e4762" title="https://orcid.org/0000-0002-6249-0899">Luca Martinelli</a></li>
+			<li><a href="#d4e4819" title="https://orcid.org/0000-0002-6249-0899">Luca Martinelli</a></li>
 			<li><a href="#Out" title="https://w3id.org/ontoim/Out">Out</a></li>
 			<li><a href="#Presence" title="https://w3id.org/ontoim/Presence">Presence</a></li>
 			<li><a href="#Stump" title="https://w3id.org/ontoim/Stump">Stump</a></li>
-			<li><a href="#d4e4743" title="https://www.dei.unipd.it">University of Padova, Department of Information
+			<li><a href="#d4e4800" title="https://www.dei.unipd.it">University of Padova, Department of Information
 					Engineering</a></li>
 		</ul>
 		<div id="Arrival" class="entity"><a name="https://w3id.org/ontoim/Arrival"></a>
@@ -3679,45 +3763,45 @@
 	<div id="annotationproperties">
 		<h2>Annotation Properties</h2>
 		<ul class="hlist">
-			<li><a href="#d4e127" title="https://schema.org/affiliation"><span>affiliation</span></a></li>
-			<li><a href="#d4e122" title="http://purl.org/dc/terms/created"><span>created</span></a></li>
-			<li><a href="#d4e131" title="https://schema.org/email"><span>email</span></a></li>
-			<li><a href="#d4e135" title="https://schema.org/identifier"><span>identifier</span></a></li>
-			<li><a href="#d4e140" title="https://schema.org/image"><span>image</span></a></li>
-			<li><a href="#d4e144" title="https://schema.org/name"><span>name</span></a></li>
-			<li><a href="#d4e148" title="https://schema.org/url"><span>url</span></a></li>
+			<li><a href="#d4e131" title="https://schema.org/affiliation"><span>affiliation</span></a></li>
+			<li><a href="#d4e126" title="http://purl.org/dc/terms/created"><span>created</span></a></li>
+			<li><a href="#d4e135" title="https://schema.org/email"><span>email</span></a></li>
+			<li><a href="#d4e139" title="https://schema.org/identifier"><span>identifier</span></a></li>
+			<li><a href="#d4e144" title="https://schema.org/image"><span>image</span></a></li>
+			<li><a href="#d4e148" title="https://schema.org/name"><span>name</span></a></li>
+			<li><a href="#d4e152" title="https://schema.org/url"><span>url</span></a></li>
 		</ul>
-		<div id="d4e127" class="entity"><a name="https://schema.org/affiliation"></a>
+		<div id="d4e131" class="entity"><a name="https://schema.org/affiliation"></a>
 			<h3>affiliation<sup title="annotation property" class="type-ap">ap</sup><span class="backlink"> back to <a
 						href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a></span></h3>
 			<p><strong>IRI:</strong> https://schema.org/affiliation</p>
 		</div>
-		<div id="d4e122" class="entity"><a name="http://purl.org/dc/terms/created"></a>
+		<div id="d4e126" class="entity"><a name="http://purl.org/dc/terms/created"></a>
 			<h3>created<sup title="annotation property" class="type-ap">ap</sup><span class="backlink"> back to <a
 						href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a></span></h3>
 			<p><strong>IRI:</strong> http://purl.org/dc/terms/created</p>
 		</div>
-		<div id="d4e131" class="entity"><a name="https://schema.org/email"></a>
+		<div id="d4e135" class="entity"><a name="https://schema.org/email"></a>
 			<h3>email<sup title="annotation property" class="type-ap">ap</sup><span class="backlink"> back to <a
 						href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a></span></h3>
 			<p><strong>IRI:</strong> https://schema.org/email</p>
 		</div>
-		<div id="d4e135" class="entity"><a name="https://schema.org/identifier"></a>
+		<div id="d4e139" class="entity"><a name="https://schema.org/identifier"></a>
 			<h3>identifier<sup title="annotation property" class="type-ap">ap</sup><span class="backlink"> back to <a
 						href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a></span></h3>
 			<p><strong>IRI:</strong> https://schema.org/identifier</p>
 		</div>
-		<div id="d4e140" class="entity"><a name="https://schema.org/image"></a>
+		<div id="d4e144" class="entity"><a name="https://schema.org/image"></a>
 			<h3>image<sup title="annotation property" class="type-ap">ap</sup><span class="backlink"> back to <a
 						href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a></span></h3>
 			<p><strong>IRI:</strong> https://schema.org/image</p>
 		</div>
-		<div id="d4e144" class="entity"><a name="https://schema.org/name"></a>
+		<div id="d4e148" class="entity"><a name="https://schema.org/name"></a>
 			<h3>name<sup title="annotation property" class="type-ap">ap</sup><span class="backlink"> back to <a
 						href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a></span></h3>
 			<p><strong>IRI:</strong> https://schema.org/name</p>
 		</div>
-		<div id="d4e148" class="entity"><a name="https://schema.org/url"></a>
+		<div id="d4e152" class="entity"><a name="https://schema.org/url"></a>
 			<h3>url<sup title="annotation property" class="type-ap">ap</sup><span class="backlink"> back to <a
 						href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a></span></h3>
 			<p><strong>IRI:</strong> https://schema.org/url</p>
@@ -3754,6 +3838,8 @@
 			<dd>https://w3id.org/italia/onto/CPV/</dd>
 			<dt>data-theme</dt>
 			<dd>http://publications.europa.eu/resource/authority/data-theme/</dd>
+			<dt>dati-beniculturali-it</dt>
+			<dd>http://dati.beniculturali.it/</dd>
 			<dt>dc</dt>
 			<dd>http://purl.org/dc/elements/1.1/</dd>
 			<dt>dcat</dt>
