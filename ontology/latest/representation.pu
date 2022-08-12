@@ -65,7 +65,7 @@ package "OntoPiA" {
     class Address <<clvapit>> #OntoPiANode
     class City <<clvapit>> #OntoPiANode
     class StreetToponym <<clvapit>> #OntoPiANode
-    class SpatialObject <<clvapit>> #OntoPiANode
+    class Feature <<clvapit>> #OntoPiANode
     class Country <<clvapit>> #OntoPiANode
     class Geometry <<clvapit>> #OntoPiANode
 
@@ -120,7 +120,7 @@ package "Demographic Observations" {
     DemographicObservation -[#OntoPiAProperty]-> Activity : rdfs:subclassOf
 
     DemographicObservation -[#OntoPiAProperty]-> TemporalEntity : tiapit:hasTemporalEntity
-    DemographicObservation -[#OntoPiAProperty]-> SpatialObject : hasSpatialDelimitation
+    DemographicObservation -[#OntoPiAProperty]-> Feature : clvapit:hasSpatialCoverage
     DemographicObservation -[#OntoPiAProperty]-> Person : hasDemographicReference
     DemographicObservation -[#OntoPiAProperty]-> Family : hasDemographicReference
 
@@ -166,7 +166,7 @@ package "Demographic Events" {
     DemographicEvent -[#OntoPiAProperty]-> EventOrSituation : rdfs:subclassOf
 
     DemographicEvent -[#OntoPiAProperty]-> Person : hasDemographicReference
-    DemographicEvent -[#OntoPiAProperty]-> SpatialObject : hasSpatialDelimitation
+    DemographicEvent -[#OntoPiAProperty]-> Feature : clvapit:hasSpatialCoverage
 
     class CivilStatusEvent #DemographicEventNode
     CivilStatusEvent -[#DemographicEventProperty]-> DemographicEvent : rdfs:subclassOf
@@ -267,7 +267,7 @@ package "Waste Production" {
 
     WasteProduction -[#OntoPiAProperty]-> Value : hasValue
     WasteProduction -[#OntoPiAProperty]-> TemporalEntity : tiapit:hasTemporalEntity
-    WasteProduction -[#OntoPiAProperty]-> SpatialObject : hasSpatialDelimitation
+    WasteProduction -[#OntoPiAProperty]-> Feature : clvapit:hasSpatialCoverage
 
     WasteProduction -[#WasteProperty]-> WasteCategory : hasWasteCategory
 

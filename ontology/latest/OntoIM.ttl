@@ -574,14 +574,6 @@ sdo:url rdf:type owl:AnnotationProperty .
                           "has school type"@en .
 
 
-###  https://w3id.org/ontoim/hasSpatialDelimitation
-:hasSpatialDelimitation rdf:type owl:ObjectProperty ;
-                        rdfs:domain owl:Thing ;
-                        rdfs:range clvapit:SpatialObject ;
-                        rdfs:label "ha delimitazione spaziale"@it ,
-                                   "has spatial delimitation"@en .
-
-
 ###  https://w3id.org/ontoim/hasStatusInTime
 :hasStatusInTime rdf:type owl:ObjectProperty ;
                  rdfs:domain :Plant ;
@@ -1325,14 +1317,14 @@ sdo:url rdf:type owl:AnnotationProperty .
 :DemographicEvent rdf:type owl:Class ;
                   rdfs:subClassOf l0:EventOrSituation ,
                                   [ rdf:type owl:Restriction ;
+                                    owl:onProperty clvapit:hasSpatialCoverage ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass clvapit:Feature
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
                                     owl:onProperty :hasDemographicReference ;
                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                     owl:onClass cpvapit:Person
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :hasSpatialDelimitation ;
-                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onClass clvapit:SpatialObject
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty tiapit:date ;
@@ -1349,6 +1341,11 @@ sdo:url rdf:type owl:AnnotationProperty .
 :DemographicObservation rdf:type owl:Class ;
                         rdfs:subClassOf l0:Activity ,
                                         [ rdf:type owl:Restriction ;
+                                          owl:onProperty clvapit:hasSpatialCoverage ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass clvapit:Feature
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
                                           owl:onProperty tiapit:hasTemporalEntity ;
                                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                           owl:onClass tiapit:TemporalEntity
@@ -1361,11 +1358,6 @@ sdo:url rdf:type owl:AnnotationProperty .
                                                                       cpvapit:Person
                                                                     )
                                                       ]
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty :hasSpatialDelimitation ;
-                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                          owl:onClass clvapit:SpatialObject
                                         ] ,
                                         [ rdf:type owl:Restriction ;
                                           owl:onProperty :observationValue ;
@@ -2233,9 +2225,9 @@ sdo:url rdf:type owl:AnnotationProperty .
                                    owl:onClass tiapit:TemporalEntity
                                  ] ,
                                  [ rdf:type owl:Restriction ;
-                                   owl:onProperty :hasSpatialDelimitation ;
+                                   owl:onProperty clvapit:hasSpatialCoverage ;
                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                   owl:onClass clvapit:SpatialObject
+                                   owl:onClass clvapit:Feature
                                  ] ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty :hasWasteCategory ;
