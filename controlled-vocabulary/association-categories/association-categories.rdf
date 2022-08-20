@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-  xmlns:ontoim="https://w3id.org/ontoim/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:dct="http://purl.org/dc/terms/"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:ontoim="https://w3id.org/ontoim/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/association-categories/1">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/association-categories/9">
     <rdf:type rdf:resource="https://w3id.org/ontoim/AssociationCategory"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</dct:identifier>
-    <rdfs:label>Ente del Terzo Settore</rdfs:label>
-    <skos:prefLabel>Ente del Terzo Settore</skos:prefLabel>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</dct:identifier>
+    <rdfs:label>Cooperativa Sociale</rdfs:label>
+    <skos:prefLabel>Cooperativa Sociale</skos:prefLabel>
     <skos:inScheme>
       <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/association-categories">
         <rdfs:label xml:lang="en">Association category</rdfs:label>
@@ -33,6 +33,41 @@
         <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/association-categories/9"/>
       </skos:ConceptScheme>
     </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/association-categories/3">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/AssociationCategory"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dct:identifier>
+    <rdfs:label>Associazione di Promozione Sociale</rdfs:label>
+    <skos:prefLabel>Associazione di Promozione Sociale</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/association-categories"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/association-categories/7">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/AssociationCategory"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</dct:identifier>
+    <rdfs:label>Associazione Musicale</rdfs:label>
+    <skos:prefLabel>Associazione Musicale</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/association-categories"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/association-categories/4">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/AssociationCategory"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</dct:identifier>
+    <rdfs:label>Associazione di Volontariato</rdfs:label>
+    <skos:prefLabel>Associazione di Volontariato</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/association-categories"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/association-categories/8">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/AssociationCategory"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</dct:identifier>
+    <rdfs:label>Associazione d'Arma</rdfs:label>
+    <skos:prefLabel>Associazione d'Arma</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/association-categories"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/association-categories/1">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/AssociationCategory"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</dct:identifier>
+    <rdfs:label>Ente del Terzo Settore</rdfs:label>
+    <skos:prefLabel>Ente del Terzo Settore</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/association-categories"/>
     <skos:narrower>
       <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/association-categories/1.1">
         <rdf:type rdf:resource="https://w3id.org/ontoim/AssociationCategory"/>
@@ -44,36 +79,22 @@
       </skos:Concept>
     </skos:narrower>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/association-categories/5">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/association-categories/2">
     <rdf:type rdf:resource="https://w3id.org/ontoim/AssociationCategory"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</dct:identifier>
-    <rdfs:label>ONLUS</rdfs:label>
-    <skos:prefLabel>ONLUS</skos:prefLabel>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dct:identifier>
+    <rdfs:label>Associazione Culturale</rdfs:label>
+    <skos:prefLabel>Associazione Culturale</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/association-categories"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/association-categories/2.1">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/AssociationCategory"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.1</dct:identifier>
-    <rdfs:label>Associazione Ricreativa</rdfs:label>
-    <skos:prefLabel>Associazione Ricreativa</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/association-categories"/>
-    <skos:broader>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/association-categories/2">
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/association-categories/2.1">
         <rdf:type rdf:resource="https://w3id.org/ontoim/AssociationCategory"/>
-        <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dct:identifier>
-        <rdfs:label>Associazione Culturale</rdfs:label>
-        <skos:prefLabel>Associazione Culturale</skos:prefLabel>
+        <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.1</dct:identifier>
+        <rdfs:label>Associazione Ricreativa</rdfs:label>
+        <skos:prefLabel>Associazione Ricreativa</skos:prefLabel>
         <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/association-categories"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/association-categories/2.1"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/association-categories/2"/>
       </skos:Concept>
-    </skos:broader>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/association-categories/3">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/AssociationCategory"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dct:identifier>
-    <rdfs:label>Associazione di Promozione Sociale</rdfs:label>
-    <skos:prefLabel>Associazione di Promozione Sociale</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/association-categories"/>
+    </skos:narrower>
   </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/association-categories/6">
     <rdf:type rdf:resource="https://w3id.org/ontoim/AssociationCategory"/>
@@ -82,32 +103,11 @@
     <skos:prefLabel>Associazione Sportiva Dilettantistica</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/association-categories"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/association-categories/4">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/association-categories/5">
     <rdf:type rdf:resource="https://w3id.org/ontoim/AssociationCategory"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</dct:identifier>
-    <rdfs:label>Associazione di Volontariato</rdfs:label>
-    <skos:prefLabel>Associazione di Volontariato</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/association-categories"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/association-categories/7">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/AssociationCategory"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</dct:identifier>
-    <rdfs:label>Associazione Musicale</rdfs:label>
-    <skos:prefLabel>Associazione Musicale</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/association-categories"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/association-categories/9">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/AssociationCategory"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</dct:identifier>
-    <rdfs:label>Cooperativa Sociale</rdfs:label>
-    <skos:prefLabel>Cooperativa Sociale</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/association-categories"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/association-categories/8">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/AssociationCategory"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</dct:identifier>
-    <rdfs:label>Associazione d'Arma</rdfs:label>
-    <skos:prefLabel>Associazione d'Arma</skos:prefLabel>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</dct:identifier>
+    <rdfs:label>ONLUS</rdfs:label>
+    <skos:prefLabel>ONLUS</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/association-categories"/>
   </skos:Concept>
 </rdf:RDF>
