@@ -1783,6 +1783,14 @@ sdo:url rdf:type owl:AnnotationProperty .
                            "Public Hospital"@en .
 
 
+###  https://w3id.org/ontoim/PublicOrganization
+:PublicOrganization rdf:type owl:Class ;
+                    rdfs:subClassOf covapit:PublicOrganization ,
+                                    :Organization ;
+                    rdfs:label "Ente Pubblico"@it ,
+                               "Public Organization"@en .
+
+
 ###  https://w3id.org/ontoim/PublicSchool
 :PublicSchool rdf:type owl:Class ;
               rdfs:subClassOf :School ;

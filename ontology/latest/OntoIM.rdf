@@ -2452,6 +2452,17 @@
     
 
 
+    <!-- https://w3id.org/ontoim/PublicOrganization -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/PublicOrganization">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/COV/PublicOrganization"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/Organization"/>
+        <rdfs:label xml:lang="it">Ente Pubblico</rdfs:label>
+        <rdfs:label xml:lang="en">Public Organization</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoim/PublicSchool -->
 
     <owl:Class rdf:about="https://w3id.org/ontoim/PublicSchool">
