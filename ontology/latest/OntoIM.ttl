@@ -1402,6 +1402,10 @@ sdo:url rdf:type owl:AnnotationProperty .
 :Facility rdf:type owl:Class ;
           rdfs:subClassOf poiapit:PointOfInterest ,
                           [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasCadastralData ;
+                            owl:someValuesFrom :CadastralData
+                          ] ,
+                          [ rdf:type owl:Restriction ;
                             owl:onProperty :concessedWithProcedure ;
                             owl:allValuesFrom pcapit:Procedure
                           ] ,
@@ -1412,11 +1416,6 @@ sdo:url rdf:type owl:AnnotationProperty .
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :ownedBy ;
                             owl:allValuesFrom covapit:Organization
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasCadastralData ;
-                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onClass :CadastralData
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty smapit:hasOnlineContactPoint ;

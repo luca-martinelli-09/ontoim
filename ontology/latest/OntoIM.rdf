@@ -1920,6 +1920,12 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/POI/PointOfInterest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasCadastralData"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/ontoim/CadastralData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoim/concessedWithProcedure"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/PublicContract/Procedure"/>
             </owl:Restriction>
@@ -1934,13 +1940,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoim/ownedBy"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasCadastralData"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/ontoim/CadastralData"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
