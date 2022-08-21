@@ -1245,7 +1245,8 @@ sdo:url rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/ontoim/ComprehensiveInstitute
 :ComprehensiveInstitute rdf:type owl:Class ;
-                        rdfs:subClassOf poiapit:MultiplePointOfInterest ,
+                        rdfs:subClassOf covapit:PublicOrganization ,
+                                        poiapit:MultiplePointOfInterest ,
                                         :School ,
                                         [ rdf:type owl:Restriction ;
                                           owl:onProperty :includesSchool ;

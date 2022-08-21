@@ -1696,6 +1696,7 @@
     <!-- https://w3id.org/ontoim/ComprehensiveInstitute -->
 
     <owl:Class rdf:about="https://w3id.org/ontoim/ComprehensiveInstitute">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/COV/PublicOrganization"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/POI/MultiplePointOfInterest"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/School"/>
         <rdfs:subClassOf>
