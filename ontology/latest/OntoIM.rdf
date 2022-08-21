@@ -157,6 +157,17 @@
     
 
 
+    <!-- https://w3id.org/ontoim/concessedTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/concessedTo">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Facility"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:label xml:lang="en">concessed to</rdfs:label>
+        <rdfs:label xml:lang="it">concesso a</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ontoim/concessedWithProcedure -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/concessedWithProcedure">
@@ -1696,7 +1707,6 @@
     <!-- https://w3id.org/ontoim/ComprehensiveInstitute -->
 
     <owl:Class rdf:about="https://w3id.org/ontoim/ComprehensiveInstitute">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/COV/PublicOrganization"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/POI/MultiplePointOfInterest"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/School"/>
         <rdfs:subClassOf>
@@ -1923,6 +1933,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasCadastralData"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/ontoim/CadastralData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/concessedTo"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>

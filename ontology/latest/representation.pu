@@ -92,8 +92,6 @@ package "OntoPiA" {
     class OSDFeature <<accoapit>> #OntoPiANode
 
     class AcademicDiscipline <<herapit>> #OntoPiANode
-
-    class PublicOrganization <<covapit>> #OntoPiANode
 }
 
 ' Added an Accessible Point of Interest, a POI with online contact point, physical contact point, an organization owner and an access condition.
@@ -105,6 +103,7 @@ Facility -[#OntoPiAProperty]-> PhysicalContactPoint : smapit:hasPhysicalContactP
 Facility -[#OntoPiAProperty]-> AccessCondition : accondition:hasAccessCondition
 Facility -[#OntoPiAProperty]-> OSDFeature : hasOfferedService
 Facility -[#OntoPiAProperty]-> Procedure : concessedWithProcedure
+Facility -[#OntoPiAProperty]-> Agent : concessedTo
 Facility -[#HeritageProperty]-> CadastralData : hasCadastralData
 
 
@@ -431,7 +430,6 @@ package "Schools" {
     class ComprehensiveInstitute #SchoolNode
     ComprehensiveInstitute -[#SchoolProperty]-> School : rdfs:subclassOf
     ComprehensiveInstitute -[#OntoPiAProperty]-> MultiplePointOfInterest : rdfs:subclassOf
-    ComprehensiveInstitute -[#OntoPiAProperty]-> PublicOrganization : rdfs:subclassOf
 
     ComprehensiveInstitute -[#SchoolProperty]-> School : includesSchool
 

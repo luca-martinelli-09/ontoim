@@ -126,6 +126,14 @@ sdo:url rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
+###  https://w3id.org/ontoim/concessedTo
+:concessedTo rdf:type owl:ObjectProperty ;
+             rdfs:domain :Facility ;
+             rdfs:range l0:Agent ;
+             rdfs:label "concessed to"@en ,
+                        "concesso a"@it .
+
+
 ###  https://w3id.org/ontoim/concessedWithProcedure
 :concessedWithProcedure rdf:type owl:ObjectProperty ;
                         rdfs:domain :Facility ;
@@ -1245,8 +1253,7 @@ sdo:url rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/ontoim/ComprehensiveInstitute
 :ComprehensiveInstitute rdf:type owl:Class ;
-                        rdfs:subClassOf covapit:PublicOrganization ,
-                                        poiapit:MultiplePointOfInterest ,
+                        rdfs:subClassOf poiapit:MultiplePointOfInterest ,
                                         :School ,
                                         [ rdf:type owl:Restriction ;
                                           owl:onProperty :includesSchool ;
@@ -1405,6 +1412,10 @@ sdo:url rdf:type owl:AnnotationProperty .
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :hasCadastralData ;
                             owl:someValuesFrom :CadastralData
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :concessedTo ;
+                            owl:allValuesFrom l0:Agent
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :concessedWithProcedure ;
