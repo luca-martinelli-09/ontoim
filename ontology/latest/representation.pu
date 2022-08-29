@@ -48,6 +48,9 @@ skinparam nodesep 50
 !define HospitalNode fff
 !define HospitalProperty 000
 
+!define TransparencyNode ffc4c4
+!define TransparencyProperty 850e35
+
 ' Imported objects from OntoPiA
 package "OntoPiA" {
     class Thing <<owl>> #OntoPiANode
@@ -92,6 +95,10 @@ package "OntoPiA" {
     class OSDFeature <<accoapit>> #OntoPiANode
 
     class AcademicDiscipline <<herapit>> #OntoPiANode
+
+    class TransparencyResource <<transapit>> #OntoPiANode
+
+    class TimeIndexedRole <<roapit>> #OntoPiANode
 }
 
 ' Added an Accessible Point of Interest, a POI with online contact point, physical contact point, an organization owner and an access condition.
@@ -102,8 +109,7 @@ Facility -[#OntoPiAProperty]-> OnlineContactPoint : smapit:hasOnlineContactPoint
 Facility -[#OntoPiAProperty]-> PhysicalContactPoint : smapit:hasPhysicalContactPoint
 Facility -[#OntoPiAProperty]-> AccessCondition : accondition:hasAccessCondition
 Facility -[#OntoPiAProperty]-> OSDFeature : hasOfferedService
-Facility -[#OntoPiAProperty]-> Procedure : concessedWithProcedure
-Facility -[#OntoPiAProperty]-> Agent : concessedTo
+Facility -[#TransparencyProperty]-> ConcessionAct : concessedWithAct
 Facility -[#HeritageProperty]-> CadastralData : hasCadastralData
 
 
@@ -162,7 +168,7 @@ package "Demographic Observations" {
 package "Demographic Events" {
     ' A demo event represents a wedding, a death, a birth, offering a non aggregated view of a demo observation
     class DemographicEvent #DemographicEventNode {
-        ti:date
+        tiapit:date
     }
     DemographicEvent -[#OntoPiAProperty]-> EventOrSituation : rdfs:subclassOf
 
@@ -179,6 +185,25 @@ package "Demographic Events" {
 
     class Booking #DemographicEventNode
     Booking -[#DemographicEventProperty]-> DemographicEvent : rdfs:subclassOf
+}
+
+package "Transparency" {
+    class ConcessionAct #TransparencyNode {
+        actTitle^^xsd:string
+        actNumber^^xsd:string
+        paymentAmount^^xsd:float
+        actDate^^xsd:date
+    }
+    ConcessionAct -[#OntoPiAProperty]-> Activity : rdfs:subclassOf
+
+    ConcessionAct -[#TransparencyProperty]-> Agent : hasBeneficiary
+    ConcessionAct -[#TransparencyProperty]-> ConcessionActType : hasConcessionActType
+    ConcessionAct -[#TransparencyProperty]-> TransparencyResource : hasTransparencyResource
+    ConcessionAct -[#TransparencyProperty]-> TimeIndexedRole : hasActReferent
+    ConcessionAct -[#TransparencyProperty]-> Organization : hasOrganization
+
+    class ConcessionActType #TransparencyNode
+    ConcessionActType -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
 }
 
 package "Organizations and Associations" {
@@ -279,7 +304,7 @@ package "Waste Production" {
 package "Roads and Traffic" {
     ' Road accidents
     class RoadAccident #RoadAccidentNode {
-        ti:date
+        tiapit:date
     }
     RoadAccident -[#OntoPiAProperty]-> EventOrSituation : rdfs:subclassOf
 
@@ -508,7 +533,7 @@ package "Green Zones" {
     PlantStatusInTime -[#OntoPiAProperty]-> Value : hasHeight
     PlantStatusInTime -[#OntoPiAProperty]-> Value : hasDiameter
     PlantStatusInTime -[#GreenZoneProperty]-> PlantHealthStatus : hasHealthStatus
-    PlantStatusInTime -[#OntoPiAProperty]-> TemporalEntity : ti:hasTemporalEntity
+    PlantStatusInTime -[#OntoPiAProperty]-> TemporalEntity : tiapit:hasTemporalEntity
 
     class PlantHealthStatus <<enumerated>> #GreenZoneNode {
         Good

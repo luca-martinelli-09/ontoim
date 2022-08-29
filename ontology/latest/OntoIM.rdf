@@ -60,6 +60,7 @@
         <owl:imports rdf:resource="https://w3id.org/italia/onto/PublicContract"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/SM"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/TI"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/Transparency"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/l0"/>
         <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-09-24</dct:created>
@@ -157,24 +158,13 @@
     
 
 
-    <!-- https://w3id.org/ontoim/concessedTo -->
+    <!-- https://w3id.org/ontoim/concessedWithAct -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/concessedTo">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/concessedWithAct">
         <rdfs:domain rdf:resource="https://w3id.org/ontoim/Facility"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
-        <rdfs:label xml:lang="en">concessed to</rdfs:label>
-        <rdfs:label xml:lang="it">concesso a</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/ontoim/concessedWithProcedure -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/concessedWithProcedure">
-        <rdfs:domain rdf:resource="https://w3id.org/ontoim/Facility"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/PublicContract/Procedure"/>
-        <rdfs:label xml:lang="en">concessed with procedure</rdfs:label>
-        <rdfs:label xml:lang="it">concesso con la procedura</rdfs:label>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/ConcessionAct"/>
+        <rdfs:label xml:lang="en">concessed with act</rdfs:label>
+        <rdfs:label xml:lang="it">concesso con l&apos;atto</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -212,6 +202,17 @@
     
 
 
+    <!-- https://w3id.org/ontoim/hasActReferent -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasActReferent">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/ConcessionAct"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/RO/TimeIndexedRole"/>
+        <rdfs:label xml:lang="it">ha responsabile atto</rdfs:label>
+        <rdfs:label xml:lang="en">has act referent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ontoim/hasAddress -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasAddress">
@@ -242,6 +243,17 @@
         <rdfs:range rdf:resource="https://w3id.org/ontoim/InvolvedPerson"/>
         <rdfs:label xml:lang="it">ha passeggero posteriore</rdfs:label>
         <rdfs:label xml:lang="en">has back passenger</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasBeneficiary -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasBeneficiary">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/ConcessionAct"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:label xml:lang="it">ha beneficiario</rdfs:label>
+        <rdfs:label xml:lang="en">has beneficiary</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -307,6 +319,17 @@
         <rdfs:range rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
         <rdfs:label xml:lang="it">ha categoria di stato civile</rdfs:label>
         <rdfs:label xml:lang="en">has civil status category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/hasConcessionActType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasConcessionActType">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/ConcessionAct"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/ConcessionActType"/>
+        <rdfs:label xml:lang="it">ha tipo di atto di concessione</rdfs:label>
+        <rdfs:label xml:lang="en">has concession act type</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -603,6 +626,17 @@
     
 
 
+    <!-- https://w3id.org/ontoim/hasOrganization -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasOrganization">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/ConcessionAct"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
+        <rdfs:label xml:lang="it">ha organizzazione</rdfs:label>
+        <rdfs:label xml:lang="en">has organization</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ontoim/hasOrganizationSection -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasOrganizationSection">
@@ -867,6 +901,17 @@
     
 
 
+    <!-- https://w3id.org/ontoim/hasTransparencyResource -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasTransparencyResource">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/ConcessionAct"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/Transparency/TransparencyResource"/>
+        <rdfs:label xml:lang="it">ha risorsa</rdfs:label>
+        <rdfs:label xml:lang="en">has transparency resource</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ontoim/hasVehicle -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasVehicle">
@@ -1016,6 +1061,40 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- https://w3id.org/ontoim/actDate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/actDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/TI/date"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/ConcessionAct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label xml:lang="en">act date</rdfs:label>
+        <rdfs:label xml:lang="it">data atto</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/actNumber -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/actNumber">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/ConcessionAct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">act number</rdfs:label>
+        <rdfs:label xml:lang="it">numero atto</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/actTitle -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/actTitle">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/ConcessionAct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">act title</rdfs:label>
+        <rdfs:label xml:lang="it">titolo atto</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -1247,6 +1326,17 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
         <rdfs:label xml:lang="en">observation value</rdfs:label>
         <rdfs:label xml:lang="it">valore dell&apos;osservazione</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontoim/paymentAmount -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoim/paymentAmount">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoim/ConcessionAct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="en">amount of the payment</rdfs:label>
+        <rdfs:label xml:lang="it">importo del pagamento</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1721,6 +1811,86 @@
     
 
 
+    <!-- https://w3id.org/ontoim/ConcessionAct -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/ConcessionAct">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasActReferent"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/RO/TimeIndexedRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasBeneficiary"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasConcessionActType"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/ontoim/ConcessionActType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasOrganization"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasTransparencyResource"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/Transparency/TransparencyResource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/actTitle"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/actDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/actNumber"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/paymentAmount"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta la parte di obblighi di trasparenza relativa agli atti di concessione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the part of transparency obligations releated to concession acts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Atto di Concessione</rdfs:label>
+        <rdfs:label xml:lang="en">Concession Act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoim/ConcessionActType -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoim/ConcessionActType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Topic"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta tipologia di atto di concessione. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/concession-act-types</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the type of the concession act. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/concession-act-types</rdfs:comment>
+        <rdfs:label xml:lang="en">Concession Act Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipologia di Atto di Concessione</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoim/Course -->
 
     <owl:Class rdf:about="https://w3id.org/ontoim/Course">
@@ -1937,14 +2107,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoim/concessedTo"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoim/concessedWithProcedure"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/PublicContract/Procedure"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoim/concessedWithAct"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/ConcessionAct"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>

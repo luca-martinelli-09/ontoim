@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:ontoim="https://w3id.org/ontoim/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/1">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/ConcessionActType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</dct:identifier>
+    <rdfs:label>Accordo di programma tra enti</rdfs:label>
+    <skos:prefLabel>Accordo di programma tra enti</skos:prefLabel>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types">
+        <rdfs:label xml:lang="en">Concession act type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo di atto di concessione</rdfs:label>
+        <dct:title xml:lang="en">Concession act type</dct:title>
+        <dct:title xml:lang="it">Tipo di atto di concessione</dct:title>
+        <rdfs:comment xml:lang="en">Classification of concession acts</rdfs:comment>
+        <rdfs:comment xml:lang="it">Classificatione degli atti di concessione</rdfs:comment>
+        <dct:description xml:lang="en">Classification of concession acts</dct:description>
+        <dct:description xml:lang="it">Classificatione degli atti di concessione</dct:description>
+        <dct:creator rdf:resource="https://w3id.org/people/lucamartinelli"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/1"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/2"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/3"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/4"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/5"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/6"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/7"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/8"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/9"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/10"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/11"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/12"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/13"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/4">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/ConcessionActType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</dct:identifier>
+    <rdfs:label>Convenzione</rdfs:label>
+    <skos:prefLabel>Convenzione</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/11">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/ConcessionActType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</dct:identifier>
+    <rdfs:label>Procedura regionale e comunale</rdfs:label>
+    <skos:prefLabel>Procedura regionale e comunale</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/8">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/ConcessionActType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</dct:identifier>
+    <rdfs:label>Trasferimento</rdfs:label>
+    <skos:prefLabel>Trasferimento</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/7">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/ConcessionActType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</dct:identifier>
+    <rdfs:label>Regolamento comunale concessione contributi</rdfs:label>
+    <skos:prefLabel>Regolamento comunale concessione contributi</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/10">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/ConcessionActType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</dct:identifier>
+    <rdfs:label>Procedura comunale</rdfs:label>
+    <skos:prefLabel>Procedura comunale</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/9">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/ConcessionActType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</dct:identifier>
+    <rdfs:label>Bando regionale</rdfs:label>
+    <skos:prefLabel>Bando regionale</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/13">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/ConcessionActType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</dct:identifier>
+    <rdfs:label>Regolamento per la gesione del patrimonio</rdfs:label>
+    <skos:prefLabel>Regolamento per la gesione del patrimonio</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/6">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/ConcessionActType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</dct:identifier>
+    <rdfs:label>Quota associativa</rdfs:label>
+    <skos:prefLabel>Quota associativa</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/12">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/ConcessionActType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</dct:identifier>
+    <rdfs:label>Regolamento del Consiglio comunale</rdfs:label>
+    <skos:prefLabel>Regolamento del Consiglio comunale</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/5">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/ConcessionActType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</dct:identifier>
+    <rdfs:label>Progetto d'intervento individualizzazione</rdfs:label>
+    <skos:prefLabel>Progetto d'intervento individualizzazione</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/3">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/ConcessionActType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dct:identifier>
+    <rdfs:label>Contributo</rdfs:label>
+    <skos:prefLabel>Contributo</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/2">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/ConcessionActType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dct:identifier>
+    <rdfs:label>Co-finanziamento realizzazione progetti</rdfs:label>
+    <skos:prefLabel>Co-finanziamento realizzazione progetti</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/concession-act-types"/>
+  </skos:Concept>
+</rdf:RDF>

@@ -60,6 +60,7 @@
                                        <https://w3id.org/italia/onto/PublicContract> ,
                                        <https://w3id.org/italia/onto/SM> ,
                                        <https://w3id.org/italia/onto/TI> ,
+                                       <https://w3id.org/italia/onto/Transparency> ,
                                        <https://w3id.org/italia/onto/l0> ;
                            dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
                            dct:created "2022-09-24"^^xsd:date ;
@@ -126,20 +127,12 @@ sdo:url rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/ontoim/concessedTo
-:concessedTo rdf:type owl:ObjectProperty ;
-             rdfs:domain :Facility ;
-             rdfs:range l0:Agent ;
-             rdfs:label "concessed to"@en ,
-                        "concesso a"@it .
-
-
-###  https://w3id.org/ontoim/concessedWithProcedure
-:concessedWithProcedure rdf:type owl:ObjectProperty ;
-                        rdfs:domain :Facility ;
-                        rdfs:range pcapit:Procedure ;
-                        rdfs:label "concessed with procedure"@en ,
-                                   "concesso con la procedura"@it .
+###  https://w3id.org/ontoim/concessedWithAct
+:concessedWithAct rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Facility ;
+                  rdfs:range :ConcessionAct ;
+                  rdfs:label "concessed with act"@en ,
+                             "concesso con l'atto"@it .
 
 
 ###  https://w3id.org/ontoim/detectedBy
@@ -166,6 +159,14 @@ sdo:url rdf:type owl:AnnotationProperty .
                             "has accident type"@en .
 
 
+###  https://w3id.org/ontoim/hasActReferent
+:hasActReferent rdf:type owl:ObjectProperty ;
+                rdfs:domain :ConcessionAct ;
+                rdfs:range roapit:TimeIndexedRole ;
+                rdfs:label "ha responsabile atto"@it ,
+                           "has act referent"@en .
+
+
 ###  https://w3id.org/ontoim/hasAddress
 :hasAddress rdf:type owl:ObjectProperty ;
             rdfs:domain owl:Thing ;
@@ -189,6 +190,14 @@ sdo:url rdf:type owl:AnnotationProperty .
                   rdfs:range :InvolvedPerson ;
                   rdfs:label "ha passeggero posteriore"@it ,
                              "has back passenger"@en .
+
+
+###  https://w3id.org/ontoim/hasBeneficiary
+:hasBeneficiary rdf:type owl:ObjectProperty ;
+                rdfs:domain :ConcessionAct ;
+                rdfs:range l0:Agent ;
+                rdfs:label "ha beneficiario"@it ,
+                           "has beneficiary"@en .
 
 
 ###  https://w3id.org/ontoim/hasBooking
@@ -236,6 +245,14 @@ sdo:url rdf:type owl:AnnotationProperty .
                         rdfs:range :CivilStatusCategory ;
                         rdfs:label "ha categoria di stato civile"@it ,
                                    "has civil status category"@en .
+
+
+###  https://w3id.org/ontoim/hasConcessionActType
+:hasConcessionActType rdf:type owl:ObjectProperty ;
+                      rdfs:domain :ConcessionAct ;
+                      rdfs:range :ConcessionActType ;
+                      rdfs:label "ha tipo di atto di concessione"@it ,
+                                 "has concession act type"@en .
 
 
 ###  https://w3id.org/ontoim/hasConducent
@@ -452,6 +469,14 @@ sdo:url rdf:type owl:AnnotationProperty .
                               "has offered service"@en .
 
 
+###  https://w3id.org/ontoim/hasOrganization
+:hasOrganization rdf:type owl:ObjectProperty ;
+                 rdfs:domain :ConcessionAct ;
+                 rdfs:range covapit:Organization ;
+                 rdfs:label "ha organizzazione"@it ,
+                            "has organization"@en .
+
+
 ###  https://w3id.org/ontoim/hasOrganizationSection
 :hasOrganizationSection rdf:type owl:ObjectProperty ;
                         rdfs:domain :PrivateOrganization ;
@@ -644,6 +669,14 @@ sdo:url rdf:type owl:AnnotationProperty .
                                     "has traffic flow direction"@en .
 
 
+###  https://w3id.org/ontoim/hasTransparencyResource
+:hasTransparencyResource rdf:type owl:ObjectProperty ;
+                         rdfs:domain :ConcessionAct ;
+                         rdfs:range trapit:TransparencyResource ;
+                         rdfs:label "ha risorsa"@it ,
+                                    "has transparency resource"@en .
+
+
 ###  https://w3id.org/ontoim/hasVehicle
 :hasVehicle rdf:type owl:ObjectProperty ;
             rdfs:domain :InvolvedVehicle ;
@@ -749,6 +782,31 @@ sdo:url rdf:type owl:AnnotationProperty .
 #################################################################
 #    Data properties
 #################################################################
+
+###  https://w3id.org/ontoim/actDate
+:actDate rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf tiapit:date ;
+         rdfs:domain :ConcessionAct ;
+         rdfs:range xsd:date ;
+         rdfs:label "act date"@en ,
+                    "data atto"@it .
+
+
+###  https://w3id.org/ontoim/actNumber
+:actNumber rdf:type owl:DatatypeProperty ;
+           rdfs:domain :ConcessionAct ;
+           rdfs:range rdfs:Literal ;
+           rdfs:label "act number"@en ,
+                      "numero atto"@it .
+
+
+###  https://w3id.org/ontoim/actTitle
+:actTitle rdf:type owl:DatatypeProperty ;
+          rdfs:domain :ConcessionAct ;
+          rdfs:range rdfs:Literal ;
+          rdfs:label "act title"@en ,
+                     "titolo atto"@it .
+
 
 ###  https://w3id.org/ontoim/artisanRegisterCode
 :artisanRegisterCode rdf:type owl:DatatypeProperty ;
@@ -923,6 +981,14 @@ sdo:url rdf:type owl:AnnotationProperty .
                   rdfs:range xsd:nonNegativeInteger ;
                   rdfs:label "observation value"@en ,
                              "valore dell'osservazione"@it .
+
+
+###  https://w3id.org/ontoim/paymentAmount
+:paymentAmount rdf:type owl:DatatypeProperty ;
+               rdfs:domain :ConcessionAct ;
+               rdfs:range xsd:float ;
+               rdfs:label "amount of the payment"@en ,
+                          "importo del pagamento"@it .
 
 
 ###  https://w3id.org/ontoim/plantCode
@@ -1263,6 +1329,62 @@ sdo:url rdf:type owl:AnnotationProperty .
                                    "Istituto Comprensivo"@it .
 
 
+###  https://w3id.org/ontoim/ConcessionAct
+:ConcessionAct rdf:type owl:Class ;
+               rdfs:subClassOf l0:Activity ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasActReferent ;
+                                 owl:someValuesFrom roapit:TimeIndexedRole
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasBeneficiary ;
+                                 owl:someValuesFrom l0:Agent
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasConcessionActType ;
+                                 owl:someValuesFrom :ConcessionActType
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasOrganization ;
+                                 owl:someValuesFrom covapit:Organization
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasTransparencyResource ;
+                                 owl:someValuesFrom trapit:TransparencyResource
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :actTitle ;
+                                 owl:someValuesFrom rdfs:Literal
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :actDate ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:date
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :actNumber ;
+                                 owl:cardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :paymentAmount ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:float
+                               ] ;
+               rdfs:comment "Questa classe rappresenta la parte di obblighi di trasparenza relativa agli atti di concessione."@it ,
+                            "This class represents the part of transparency obligations releated to concession acts."@en ;
+               rdfs:label "Atto di Concessione"@it ,
+                          "Concession Act"@en .
+
+
+###  https://w3id.org/ontoim/ConcessionActType
+:ConcessionActType rdf:type owl:Class ;
+                   rdfs:subClassOf l0:Topic ;
+                   rdfs:comment "Questa classe rappresenta tipologia di atto di concessione. Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/concession-act-types"@it ,
+                                "This class represents the type of the concession act. The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/concession-act-types"@en ;
+                   rdfs:label "Concession Act Type"@en ,
+                              "Tipologia di Atto di Concessione"@it .
+
+
 ###  https://w3id.org/ontoim/Course
 :Course rdf:type owl:Class ;
         rdfs:subClassOf l0:Activity ,
@@ -1414,12 +1536,8 @@ sdo:url rdf:type owl:AnnotationProperty .
                             owl:someValuesFrom :CadastralData
                           ] ,
                           [ rdf:type owl:Restriction ;
-                            owl:onProperty :concessedTo ;
-                            owl:allValuesFrom l0:Agent
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :concessedWithProcedure ;
-                            owl:allValuesFrom pcapit:Procedure
+                            owl:onProperty :concessedWithAct ;
+                            owl:allValuesFrom :ConcessionAct
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :hasOfferedService ;

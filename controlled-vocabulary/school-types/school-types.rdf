@@ -3,16 +3,16 @@
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:dct="http://purl.org/dc/terms/"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:ontoim="https://w3id.org/ontoim/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:ontoim="https://w3id.org/ontoim/"
 >
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/5.1">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/5.5.1">
     <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.1</dct:identifier>
-    <rdfs:label xml:lang="en">Art High School</rdfs:label>
-    <rdfs:label xml:lang="it">Liceo Artistico</rdfs:label>
-    <skos:prefLabel xml:lang="en">Art High School</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Liceo Artistico</skos:prefLabel>
+    <dct:identifier>5.5.1</dct:identifier>
+    <rdfs:label xml:lang="en">Scientific High School - applied science option</rdfs:label>
+    <rdfs:label xml:lang="it">Liceo - opzione Scienze Applicate</rdfs:label>
+    <skos:prefLabel xml:lang="en">Scientific High School - applied science option</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Liceo - opzione Scienze Applicate</skos:prefLabel>
     <skos:inScheme>
       <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types">
         <rdfs:label xml:lang="en">School type</rdfs:label>
@@ -44,6 +44,38 @@
       </skos:ConceptScheme>
     </skos:inScheme>
     <skos:broader>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/5.5">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
+        <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.5</dct:identifier>
+        <rdfs:label xml:lang="en">Scientific High School</rdfs:label>
+        <rdfs:label xml:lang="it">Liceo Scientifico</rdfs:label>
+        <skos:prefLabel xml:lang="en">Scientific High School</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Liceo Scientifico</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types/5"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types/5.5.1"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types/5.5.2"/>
+      </skos:Concept>
+    </skos:broader>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/9">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</dct:identifier>
+    <rdfs:label xml:lang="en">Institute of Higher Technical Education</rdfs:label>
+    <rdfs:label xml:lang="it">Istituto di Formazione Tecnica Superiore</rdfs:label>
+    <skos:prefLabel xml:lang="en">Institute of Higher Technical Education</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Istituto di Formazione Tecnica Superiore</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/5.1">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.1</dct:identifier>
+    <rdfs:label xml:lang="en">Art High School</rdfs:label>
+    <rdfs:label xml:lang="it">Liceo Artistico</rdfs:label>
+    <skos:prefLabel xml:lang="en">Art High School</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Liceo Artistico</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
+    <skos:broader>
       <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/5">
         <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
         <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</dct:identifier>
@@ -61,80 +93,6 @@
       </skos:Concept>
     </skos:broader>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/3">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dct:identifier>
-    <rdfs:label xml:lang="en">Elementary School</rdfs:label>
-    <rdfs:label xml:lang="it">Scuola Primaria</rdfs:label>
-    <skos:prefLabel xml:lang="en">Elementary School</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Scuola Primaria</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/11">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</dct:identifier>
-    <rdfs:label xml:lang="en">Higher Education in Art/Music/Choreography</rdfs:label>
-    <rdfs:label xml:lang="it">Alta Formazione Artistica/Musicale/Coreutica</rdfs:label>
-    <skos:prefLabel xml:lang="en">Higher Education in Art/Music/Choreography</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Alta Formazione Artistica/Musicale/Coreutica</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/5.2">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.2</dct:identifier>
-    <rdfs:label xml:lang="en">Classical High School</rdfs:label>
-    <rdfs:label xml:lang="it">Liceo Classico</rdfs:label>
-    <skos:prefLabel xml:lang="en">Classical High School</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Liceo Classico</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types/5"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/16">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</dct:identifier>
-    <rdfs:label xml:lang="en">Cultural Association's School</rdfs:label>
-    <rdfs:label xml:lang="it">Scuola di un'associazione culturale</rdfs:label>
-    <skos:prefLabel xml:lang="en">Cultural Association's School</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Scuola di un'associazione culturale</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/13">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</dct:identifier>
-    <rdfs:label xml:lang="en">Higher Technical Institute</rdfs:label>
-    <rdfs:label xml:lang="it">Istituto Tecnico Superiore</rdfs:label>
-    <skos:prefLabel xml:lang="en">Higher Technical Institute</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Istituto Tecnico Superiore</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/17">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</dct:identifier>
-    <rdfs:label xml:lang="en">Sport School</rdfs:label>
-    <rdfs:label xml:lang="it">Scuola Sportiva</rdfs:label>
-    <skos:prefLabel xml:lang="en">Sport School</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Scuola Sportiva</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/5.3">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.3</dct:identifier>
-    <rdfs:label xml:lang="en">Linguistic High School</rdfs:label>
-    <rdfs:label xml:lang="it">Liceo Linguistico</rdfs:label>
-    <skos:prefLabel xml:lang="en">Linguistic High School</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Liceo Linguistico</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types/5"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/9">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</dct:identifier>
-    <rdfs:label xml:lang="en">Institute of Higher Technical Education</rdfs:label>
-    <rdfs:label xml:lang="it">Istituto di Formazione Tecnica Superiore</rdfs:label>
-    <skos:prefLabel xml:lang="en">Institute of Higher Technical Education</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Istituto di Formazione Tecnica Superiore</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
-  </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/2">
     <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
     <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dct:identifier>
@@ -144,102 +102,13 @@
     <skos:prefLabel xml:lang="it">Scuola dell'Infanzia</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/12">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/17">
     <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</dct:identifier>
-    <rdfs:label xml:lang="en">High School for Language Mediators</rdfs:label>
-    <rdfs:label xml:lang="it">Scuola Superiore per Mediatori Linguistici</rdfs:label>
-    <skos:prefLabel xml:lang="en">High School for Language Mediators</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Scuola Superiore per Mediatori Linguistici</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/6">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</dct:identifier>
-    <rdfs:label xml:lang="en">Technical Institute</rdfs:label>
-    <rdfs:label xml:lang="it">Istituto Tecnico</rdfs:label>
-    <skos:prefLabel xml:lang="en">Technical Institute</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Istituto Tecnico</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/15">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</dct:identifier>
-    <rdfs:label xml:lang="en">Popular University</rdfs:label>
-    <rdfs:label xml:lang="it">Università Popolare</rdfs:label>
-    <skos:prefLabel xml:lang="en">Popular University</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Università Popolare</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/5.5.1">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
-    <dct:identifier>5.5.1</dct:identifier>
-    <rdfs:label xml:lang="en">Scientific High School - applied science option</rdfs:label>
-    <rdfs:label xml:lang="it">Liceo - opzione Scienze Applicate</rdfs:label>
-    <skos:prefLabel xml:lang="en">Scientific High School - applied science option</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Liceo - opzione Scienze Applicate</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
-    <skos:broader>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/5.5">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
-        <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.5</dct:identifier>
-        <rdfs:label xml:lang="en">Scientific High School</rdfs:label>
-        <rdfs:label xml:lang="it">Liceo Scientifico</rdfs:label>
-        <skos:prefLabel xml:lang="en">Scientific High School</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Liceo Scientifico</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
-        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types/5"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types/5.5.1"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types/5.5.2"/>
-      </skos:Concept>
-    </skos:broader>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/8">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</dct:identifier>
-    <rdfs:label xml:lang="en">Vocational education and training</rdfs:label>
-    <rdfs:label xml:lang="it">Istruzione e Formazione Professionale</rdfs:label>
-    <skos:prefLabel xml:lang="en">Vocational education and training</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Istruzione e Formazione Professionale</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/14.1">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#double">14.1</dct:identifier>
-    <rdfs:label xml:lang="en">Accredited Training Institution</rdfs:label>
-    <rdfs:label xml:lang="it">Ente di Formazione Accreditato</rdfs:label>
-    <skos:prefLabel xml:lang="en">Accredited Training Institution</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Ente di Formazione Accreditato</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
-    <skos:broader>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/14">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
-        <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</dct:identifier>
-        <rdfs:label xml:lang="en">Training Institution</rdfs:label>
-        <rdfs:label xml:lang="it">Ente di Formazione</rdfs:label>
-        <skos:prefLabel xml:lang="en">Training Institution</skos:prefLabel>
-        <skos:prefLabel xml:lang="it">Ente di Formazione</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types/14.1"/>
-      </skos:Concept>
-    </skos:broader>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/4">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</dct:identifier>
-    <rdfs:label xml:lang="en">Secondary School</rdfs:label>
-    <rdfs:label xml:lang="it">Scuola Secondaria di Primo Grado</rdfs:label>
-    <skos:prefLabel xml:lang="en">Secondary School</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Scuola Secondaria di Primo Grado</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/10">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</dct:identifier>
-    <rdfs:label xml:lang="en">University</rdfs:label>
-    <rdfs:label xml:lang="it">Università</rdfs:label>
-    <skos:prefLabel xml:lang="en">University</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Università</skos:prefLabel>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</dct:identifier>
+    <rdfs:label xml:lang="en">Sport School</rdfs:label>
+    <rdfs:label xml:lang="it">Scuola Sportiva</rdfs:label>
+    <skos:prefLabel xml:lang="en">Sport School</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Scuola Sportiva</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
   </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/5.9.1">
@@ -264,15 +133,63 @@
       </skos:Concept>
     </skos:broader>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/5.5.2">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/8">
     <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
-    <dct:identifier>5.5.2</dct:identifier>
-    <rdfs:label xml:lang="en">Scientific High School - sports-oriented section</rdfs:label>
-    <rdfs:label xml:lang="it">Liceo Scientifico - sezione a Indirizzo Sportivo</rdfs:label>
-    <skos:prefLabel xml:lang="en">Scientific High School - sports-oriented section</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Liceo Scientifico - sezione a Indirizzo Sportivo</skos:prefLabel>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</dct:identifier>
+    <rdfs:label xml:lang="en">Vocational education and training</rdfs:label>
+    <rdfs:label xml:lang="it">Istruzione e Formazione Professionale</rdfs:label>
+    <skos:prefLabel xml:lang="en">Vocational education and training</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Istruzione e Formazione Professionale</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types/5.5"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/3">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dct:identifier>
+    <rdfs:label xml:lang="en">Elementary School</rdfs:label>
+    <rdfs:label xml:lang="it">Scuola Primaria</rdfs:label>
+    <skos:prefLabel xml:lang="en">Elementary School</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Scuola Primaria</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/13">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</dct:identifier>
+    <rdfs:label xml:lang="en">Higher Technical Institute</rdfs:label>
+    <rdfs:label xml:lang="it">Istituto Tecnico Superiore</rdfs:label>
+    <skos:prefLabel xml:lang="en">Higher Technical Institute</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Istituto Tecnico Superiore</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/5.2">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.2</dct:identifier>
+    <rdfs:label xml:lang="en">Classical High School</rdfs:label>
+    <rdfs:label xml:lang="it">Liceo Classico</rdfs:label>
+    <skos:prefLabel xml:lang="en">Classical High School</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Liceo Classico</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types/5"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/14">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</dct:identifier>
+    <rdfs:label xml:lang="en">Training Institution</rdfs:label>
+    <rdfs:label xml:lang="it">Ente di Formazione</rdfs:label>
+    <skos:prefLabel xml:lang="en">Training Institution</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Ente di Formazione</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/14.1">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
+        <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#double">14.1</dct:identifier>
+        <rdfs:label xml:lang="en">Accredited Training Institution</rdfs:label>
+        <rdfs:label xml:lang="it">Ente di Formazione Accreditato</rdfs:label>
+        <skos:prefLabel xml:lang="en">Accredited Training Institution</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Ente di Formazione Accreditato</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types/14"/>
+      </skos:Concept>
+    </skos:narrower>
   </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/7.1">
     <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
@@ -295,6 +212,42 @@
       </skos:Concept>
     </skos:broader>
   </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/16">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</dct:identifier>
+    <rdfs:label xml:lang="en">Cultural Association's School</rdfs:label>
+    <rdfs:label xml:lang="it">Scuola di un'associazione culturale</rdfs:label>
+    <skos:prefLabel xml:lang="en">Cultural Association's School</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Scuola di un'associazione culturale</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/12">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</dct:identifier>
+    <rdfs:label xml:lang="en">High School for Language Mediators</rdfs:label>
+    <rdfs:label xml:lang="it">Scuola Superiore per Mediatori Linguistici</rdfs:label>
+    <skos:prefLabel xml:lang="en">High School for Language Mediators</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Scuola Superiore per Mediatori Linguistici</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/1">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</dct:identifier>
+    <rdfs:label xml:lang="en">Nursery</rdfs:label>
+    <rdfs:label xml:lang="it">Asilo Nido</rdfs:label>
+    <skos:prefLabel xml:lang="en">Nursery</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Asilo Nido</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/10">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</dct:identifier>
+    <rdfs:label xml:lang="en">University</rdfs:label>
+    <rdfs:label xml:lang="it">Università</rdfs:label>
+    <skos:prefLabel xml:lang="en">University</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Università</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
+  </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/5.4">
     <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
     <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.4</dct:identifier>
@@ -305,13 +258,60 @@
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types/5"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/1">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/5.5.2">
     <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</dct:identifier>
-    <rdfs:label xml:lang="en">Nursery</rdfs:label>
-    <rdfs:label xml:lang="it">Asilo Nido</rdfs:label>
-    <skos:prefLabel xml:lang="en">Nursery</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Asilo Nido</skos:prefLabel>
+    <dct:identifier>5.5.2</dct:identifier>
+    <rdfs:label xml:lang="en">Scientific High School - sports-oriented section</rdfs:label>
+    <rdfs:label xml:lang="it">Liceo Scientifico - sezione a Indirizzo Sportivo</rdfs:label>
+    <skos:prefLabel xml:lang="en">Scientific High School - sports-oriented section</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Liceo Scientifico - sezione a Indirizzo Sportivo</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types/5.5"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/6">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</dct:identifier>
+    <rdfs:label xml:lang="en">Technical Institute</rdfs:label>
+    <rdfs:label xml:lang="it">Istituto Tecnico</rdfs:label>
+    <skos:prefLabel xml:lang="en">Technical Institute</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Istituto Tecnico</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/15">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</dct:identifier>
+    <rdfs:label xml:lang="en">Popular University</rdfs:label>
+    <rdfs:label xml:lang="it">Università Popolare</rdfs:label>
+    <skos:prefLabel xml:lang="en">Popular University</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Università Popolare</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/11">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</dct:identifier>
+    <rdfs:label xml:lang="en">Higher Education in Art/Music/Choreography</rdfs:label>
+    <rdfs:label xml:lang="it">Alta Formazione Artistica/Musicale/Coreutica</rdfs:label>
+    <skos:prefLabel xml:lang="en">Higher Education in Art/Music/Choreography</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Alta Formazione Artistica/Musicale/Coreutica</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/4">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</dct:identifier>
+    <rdfs:label xml:lang="en">Secondary School</rdfs:label>
+    <rdfs:label xml:lang="it">Scuola Secondaria di Primo Grado</rdfs:label>
+    <skos:prefLabel xml:lang="en">Secondary School</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Scuola Secondaria di Primo Grado</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/school-types/5.3">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/SchoolType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.3</dct:identifier>
+    <rdfs:label xml:lang="en">Linguistic High School</rdfs:label>
+    <rdfs:label xml:lang="it">Liceo Linguistico</rdfs:label>
+    <skos:prefLabel xml:lang="en">Linguistic High School</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Liceo Linguistico</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/school-types/5"/>
   </skos:Concept>
 </rdf:RDF>

@@ -1,0 +1,121 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ontoim: <https://w3id.org/ontoim/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/1> a skos:Concept,
+        ontoim:ConcessionActType ;
+    rdfs:label "Accordo di programma tra enti" ;
+    dct:identifier 1 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types> ;
+    skos:prefLabel "Accordo di programma tra enti" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/10> a skos:Concept,
+        ontoim:ConcessionActType ;
+    rdfs:label "Procedura comunale" ;
+    dct:identifier 10 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types> ;
+    skos:prefLabel "Procedura comunale" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/11> a skos:Concept,
+        ontoim:ConcessionActType ;
+    rdfs:label "Procedura regionale e comunale" ;
+    dct:identifier 11 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types> ;
+    skos:prefLabel "Procedura regionale e comunale" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/12> a skos:Concept,
+        ontoim:ConcessionActType ;
+    rdfs:label "Regolamento del Consiglio comunale" ;
+    dct:identifier 12 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types> ;
+    skos:prefLabel "Regolamento del Consiglio comunale" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/13> a skos:Concept,
+        ontoim:ConcessionActType ;
+    rdfs:label "Regolamento per la gesione del patrimonio" ;
+    dct:identifier 13 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types> ;
+    skos:prefLabel "Regolamento per la gesione del patrimonio" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/2> a skos:Concept,
+        ontoim:ConcessionActType ;
+    rdfs:label "Co-finanziamento realizzazione progetti" ;
+    dct:identifier 2 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types> ;
+    skos:prefLabel "Co-finanziamento realizzazione progetti" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/3> a skos:Concept,
+        ontoim:ConcessionActType ;
+    rdfs:label "Contributo" ;
+    dct:identifier 3 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types> ;
+    skos:prefLabel "Contributo" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/4> a skos:Concept,
+        ontoim:ConcessionActType ;
+    rdfs:label "Convenzione" ;
+    dct:identifier 4 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types> ;
+    skos:prefLabel "Convenzione" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/5> a skos:Concept,
+        ontoim:ConcessionActType ;
+    rdfs:label "Progetto d'intervento individualizzazione" ;
+    dct:identifier 5 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types> ;
+    skos:prefLabel "Progetto d'intervento individualizzazione" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/6> a skos:Concept,
+        ontoim:ConcessionActType ;
+    rdfs:label "Quota associativa" ;
+    dct:identifier 6 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types> ;
+    skos:prefLabel "Quota associativa" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/7> a skos:Concept,
+        ontoim:ConcessionActType ;
+    rdfs:label "Regolamento comunale concessione contributi" ;
+    dct:identifier 7 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types> ;
+    skos:prefLabel "Regolamento comunale concessione contributi" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/8> a skos:Concept,
+        ontoim:ConcessionActType ;
+    rdfs:label "Trasferimento" ;
+    dct:identifier 8 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types> ;
+    skos:prefLabel "Trasferimento" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/9> a skos:Concept,
+        ontoim:ConcessionActType ;
+    rdfs:label "Bando regionale" ;
+    dct:identifier 9 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types> ;
+    skos:prefLabel "Bando regionale" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/concession-act-types> a skos:ConceptScheme ;
+    rdfs:label "Concession act type"@en,
+        "Tipo di atto di concessione"@it ;
+    dct:creator <https://w3id.org/people/lucamartinelli> ;
+    dct:description "Classification of concession acts"@en,
+        "Classificatione degli atti di concessione"@it ;
+    dct:title "Concession act type"@en,
+        "Tipo di atto di concessione"@it ;
+    rdfs:comment "Classification of concession acts"@en,
+        "Classificatione degli atti di concessione"@it ;
+    skos:hasTopConcept <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/10>,
+        <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/11>,
+        <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/12>,
+        <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/13>,
+        <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/3>,
+        <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/4>,
+        <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/5>,
+        <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/6>,
+        <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/7>,
+        <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/8>,
+        <https://w3id.org/ontoim/controlled-vocabulary/concession-act-types/9> .
+
