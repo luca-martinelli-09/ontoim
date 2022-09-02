@@ -2,7 +2,6 @@
 import pandas as pd
 from rdflib import Namespace, Literal, URIRef, Graph, DCTERMS, RDF, RDFS
 from rdflib.namespace import XSD, DC, SKOS
-import pandas as pd
 
 
 def getAttributes(row, removeLevel=True):
