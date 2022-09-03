@@ -7932,12 +7932,12 @@
     skos:prefLabel "Investimento di pedone" .
 
 <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> a skos:ConceptScheme ;
-    rdfs:label "Civil statis category"@en,
+    rdfs:label "Civil status category"@en,
         "Categoria dello stato civile"@it ;
     dct:creator <https://w3id.org/people/lucamartinelli> ;
     dct:description "Classification of civil status categories for demographic events and observations"@en,
         "Classificazione delle categorie di stato civile per eventi ed osservazioni demografiche"@it ;
-    dct:title "Civil statis category"@en,
+    dct:title "Civil status category"@en,
         "Categoria dello stato civile"@it ;
     rdfs:comment "Classification of civil status categories for demographic events and observations"@en,
         "Classificazione delle categorie di stato civile per eventi ed osservazioni demografiche"@it ;

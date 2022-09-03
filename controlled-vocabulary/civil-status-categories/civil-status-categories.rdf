@@ -15,9 +15,9 @@
     <skos:prefLabel xml:lang="it">Nascita nel comune</skos:prefLabel>
     <skos:inScheme>
       <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories">
-        <rdfs:label xml:lang="en">Civil statis category</rdfs:label>
+        <rdfs:label xml:lang="en">Civil status category</rdfs:label>
         <rdfs:label xml:lang="it">Categoria dello stato civile</rdfs:label>
-        <dct:title xml:lang="en">Civil statis category</dct:title>
+        <dct:title xml:lang="en">Civil status category</dct:title>
         <dct:title xml:lang="it">Categoria dello stato civile</dct:title>
         <rdfs:comment xml:lang="en">Classification of civil status categories for demographic events and observations</rdfs:comment>
         <rdfs:comment xml:lang="it">Classificazione delle categorie di stato civile per eventi ed osservazioni demografiche</rdfs:comment>
