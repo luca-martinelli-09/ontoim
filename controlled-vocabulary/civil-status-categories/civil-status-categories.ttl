@@ -56,12 +56,12 @@
 <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.6> a skos:Concept,
         ontoim:CivilStatusCategory ;
     rdfs:label "Birth out of marriage"@en,
-        "Fuori matrimonio"@it ;
+        "Nascita fuori dal matrimonio"@it ;
     dct:identifier "A.6" ;
     skos:broader <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A> ;
     skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories> ;
     skos:prefLabel "Birth out of marriage"@en,
-        "Fuori matrimonio"@it .
+        "Nascita fuori dal matrimonio"@it .
 
 <https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A.7> a skos:Concept,
         ontoim:CivilStatusCategory ;

@@ -192,9 +192,9 @@
     <rdf:type rdf:resource="https://w3id.org/ontoim/CivilStatusCategory"/>
     <dct:identifier>A.6</dct:identifier>
     <rdfs:label xml:lang="en">Birth out of marriage</rdfs:label>
-    <rdfs:label xml:lang="it">Fuori matrimonio</rdfs:label>
+    <rdfs:label xml:lang="it">Nascita fuori dal matrimonio</rdfs:label>
     <skos:prefLabel xml:lang="en">Birth out of marriage</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Fuori matrimonio</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Nascita fuori dal matrimonio</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/civil-status-categories/A"/>
   </skos:Concept>
