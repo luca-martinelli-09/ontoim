@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:ontoim="https://w3id.org/ontoim/"
-  xmlns:dct="http://purl.org/dc/terms/"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dct="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:ontoim="https://w3id.org/ontoim/"
 >
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/P">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/S">
     <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
-    <dct:identifier>P</dct:identifier>
-    <rdfs:label xml:lang="en">Small Entrepreneurs</rdfs:label>
-    <rdfs:label xml:lang="it">Piccoli Imprenditori</rdfs:label>
-    <skos:prefLabel xml:lang="en">Small Entrepreneurs</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Piccoli Imprenditori</skos:prefLabel>
+    <dct:identifier>S</dct:identifier>
+    <rdfs:label xml:lang="en">Simple companies</rdfs:label>
+    <rdfs:label xml:lang="it">Società semplici</rdfs:label>
+    <skos:prefLabel xml:lang="en">Simple companies</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Società semplici</skos:prefLabel>
     <skos:inScheme>
       <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections">
         <rdfs:label xml:lang="en">Organizations registry's section</rdfs:label>
@@ -41,69 +41,6 @@
       </skos:ConceptScheme>
     </skos:inScheme>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/C">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
-    <dct:identifier>C</dct:identifier>
-    <rdfs:label xml:lang="en">Direct growers</rdfs:label>
-    <rdfs:label xml:lang="it">Coltivatori diretti</rdfs:label>
-    <skos:prefLabel xml:lang="en">Direct growers</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Coltivatori diretti</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/REA">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
-    <dct:identifier>REA</dct:identifier>
-    <rdfs:label xml:lang="en">Subjects only REA</rdfs:label>
-    <rdfs:label xml:lang="it">Soggetti solo REA</rdfs:label>
-    <skos:prefLabel xml:lang="en">Subjects only REA</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Soggetti solo REA</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/M">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
-    <dct:identifier>M</dct:identifier>
-    <rdfs:label xml:lang="en">Innovative SMEs</rdfs:label>
-    <rdfs:label xml:lang="it">PMI innovative</rdfs:label>
-    <skos:prefLabel xml:lang="en">Innovative SMEs</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">PMI innovative</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/O">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
-    <dct:identifier>O</dct:identifier>
-    <rdfs:label xml:lang="en">Ordinary</rdfs:label>
-    <rdfs:label xml:lang="it">Ordinaria</rdfs:label>
-    <skos:prefLabel xml:lang="en">Ordinary</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Ordinaria</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/A">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
-    <dct:identifier>A</dct:identifier>
-    <rdfs:label xml:lang="en">Artisan</rdfs:label>
-    <rdfs:label xml:lang="it">Artigiana</rdfs:label>
-    <skos:prefLabel xml:lang="en">Artisan</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Artigiana</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/Q">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
-    <dct:identifier>Q</dct:identifier>
-    <rdfs:label xml:lang="en">Alternate school work</rdfs:label>
-    <rdfs:label xml:lang="it">Alternanza scuola lavoro</rdfs:label>
-    <skos:prefLabel xml:lang="en">Alternate school work</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Alternanza scuola lavoro</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/U">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
-    <dct:identifier>U</dct:identifier>
-    <rdfs:label xml:lang="en">Innovative start-ups</rdfs:label>
-    <rdfs:label xml:lang="it">Start up innovative</rdfs:label>
-    <skos:prefLabel xml:lang="en">Innovative start-ups</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Start up innovative</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
-  </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/B">
     <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
     <dct:identifier>B</dct:identifier>
@@ -111,24 +48,6 @@
     <rdfs:label xml:lang="it">Incubatori certificati</rdfs:label>
     <skos:prefLabel xml:lang="en">Certified incubators</skos:prefLabel>
     <skos:prefLabel xml:lang="it">Incubatori certificati</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/V">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
-    <dct:identifier>V</dct:identifier>
-    <rdfs:label xml:lang="en">Partnerships between professionals</rdfs:label>
-    <rdfs:label xml:lang="it">Società tra professionisti</rdfs:label>
-    <skos:prefLabel xml:lang="en">Partnerships between professionals</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Società tra professionisti</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/L">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
-    <dct:identifier>L</dct:identifier>
-    <rdfs:label xml:lang="en">Social enterprises</rdfs:label>
-    <rdfs:label xml:lang="it">Imprese sociali</rdfs:label>
-    <skos:prefLabel xml:lang="en">Social enterprises</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Imprese sociali</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
   </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/R">
@@ -140,6 +59,51 @@
     <skos:prefLabel xml:lang="it">Registro Ditte</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
   </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/V">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
+    <dct:identifier>V</dct:identifier>
+    <rdfs:label xml:lang="en">Partnerships between professionals</rdfs:label>
+    <rdfs:label xml:lang="it">Società tra professionisti</rdfs:label>
+    <skos:prefLabel xml:lang="en">Partnerships between professionals</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Società tra professionisti</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/C">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
+    <dct:identifier>C</dct:identifier>
+    <rdfs:label xml:lang="en">Direct growers</rdfs:label>
+    <rdfs:label xml:lang="it">Coltivatori diretti</rdfs:label>
+    <skos:prefLabel xml:lang="en">Direct growers</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Coltivatori diretti</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/M">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
+    <dct:identifier>M</dct:identifier>
+    <rdfs:label xml:lang="en">Innovative SMEs</rdfs:label>
+    <rdfs:label xml:lang="it">PMI innovative</rdfs:label>
+    <skos:prefLabel xml:lang="en">Innovative SMEs</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">PMI innovative</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/REA">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
+    <dct:identifier>REA</dct:identifier>
+    <rdfs:label xml:lang="en">Subjects only REA</rdfs:label>
+    <rdfs:label xml:lang="it">Soggetti solo REA</rdfs:label>
+    <skos:prefLabel xml:lang="en">Subjects only REA</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Soggetti solo REA</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/A">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
+    <dct:identifier>A</dct:identifier>
+    <rdfs:label xml:lang="en">Artisan</rdfs:label>
+    <rdfs:label xml:lang="it">Artigiana</rdfs:label>
+    <skos:prefLabel xml:lang="en">Artisan</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Artigiana</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
+  </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/G">
     <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
     <dct:identifier>G</dct:identifier>
@@ -149,13 +113,49 @@
     <skos:prefLabel xml:lang="it">Imprese agricole</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/S">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/P">
     <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
-    <dct:identifier>S</dct:identifier>
-    <rdfs:label xml:lang="en">Simple companies</rdfs:label>
-    <rdfs:label xml:lang="it">Società semplici</rdfs:label>
-    <skos:prefLabel xml:lang="en">Simple companies</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Società semplici</skos:prefLabel>
+    <dct:identifier>P</dct:identifier>
+    <rdfs:label xml:lang="en">Small Entrepreneurs</rdfs:label>
+    <rdfs:label xml:lang="it">Piccoli Imprenditori</rdfs:label>
+    <skos:prefLabel xml:lang="en">Small Entrepreneurs</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Piccoli Imprenditori</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/L">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
+    <dct:identifier>L</dct:identifier>
+    <rdfs:label xml:lang="en">Social enterprises</rdfs:label>
+    <rdfs:label xml:lang="it">Imprese sociali</rdfs:label>
+    <skos:prefLabel xml:lang="en">Social enterprises</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Imprese sociali</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/U">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
+    <dct:identifier>U</dct:identifier>
+    <rdfs:label xml:lang="en">Innovative start-ups</rdfs:label>
+    <rdfs:label xml:lang="it">Start up innovative</rdfs:label>
+    <skos:prefLabel xml:lang="en">Innovative start-ups</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Start up innovative</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/Q">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
+    <dct:identifier>Q</dct:identifier>
+    <rdfs:label xml:lang="en">Alternate school work</rdfs:label>
+    <rdfs:label xml:lang="it">Alternanza scuola lavoro</rdfs:label>
+    <skos:prefLabel xml:lang="en">Alternate school work</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Alternanza scuola lavoro</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/organization-sections/O">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/OrganizationSection"/>
+    <dct:identifier>O</dct:identifier>
+    <rdfs:label xml:lang="en">Ordinary</rdfs:label>
+    <rdfs:label xml:lang="it">Ordinaria</rdfs:label>
+    <skos:prefLabel xml:lang="en">Ordinary</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Ordinaria</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/organization-sections"/>
   </skos:Concept>
 </rdf:RDF>

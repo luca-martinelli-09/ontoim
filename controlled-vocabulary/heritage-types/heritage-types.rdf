@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:ontoim="https://w3id.org/ontoim/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/heritage-types/4">
     <rdf:type rdf:resource="https://w3id.org/ontoim/HeritageType"/>
@@ -31,15 +31,6 @@
       </skos:ConceptScheme>
     </skos:inScheme>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/heritage-types/2">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/HeritageType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dct:identifier>
-    <rdfs:label xml:lang="en">Available assets</rdfs:label>
-    <rdfs:label xml:lang="it">Patrimonio disponibile</rdfs:label>
-    <skos:prefLabel xml:lang="en">Available assets</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Patrimonio disponibile</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/heritage-types"/>
-  </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/heritage-types/3">
     <rdf:type rdf:resource="https://w3id.org/ontoim/HeritageType"/>
     <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dct:identifier>
@@ -47,6 +38,15 @@
     <rdfs:label xml:lang="it">Patrimonio indisponibile</rdfs:label>
     <skos:prefLabel xml:lang="en">Non-disposable assets</skos:prefLabel>
     <skos:prefLabel xml:lang="it">Patrimonio indisponibile</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/heritage-types"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/heritage-types/2">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/HeritageType"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dct:identifier>
+    <rdfs:label xml:lang="en">Available assets</rdfs:label>
+    <rdfs:label xml:lang="it">Patrimonio disponibile</rdfs:label>
+    <skos:prefLabel xml:lang="en">Available assets</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Patrimonio disponibile</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/heritage-types"/>
   </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/heritage-types/1">

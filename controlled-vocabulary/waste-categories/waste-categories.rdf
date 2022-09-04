@@ -1,151 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:ontoim="https://w3id.org/ontoim/"
-  xmlns:dct="http://purl.org/dc/terms/"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dct="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:ontoim="https://w3id.org/ontoim/"
 >
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/selective">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
-    <dct:identifier>selective</dct:identifier>
-    <rdfs:label xml:lang="it">Selective</rdfs:label>
-    <rdfs:label xml:lang="en">Selettiva</rdfs:label>
-    <skos:prefLabel xml:lang="it">Selective</skos:prefLabel>
-    <skos:prefLabel xml:lang="en">Selettiva</skos:prefLabel>
-    <skos:inScheme>
-      <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories">
-        <rdfs:label xml:lang="en">Waste category</rdfs:label>
-        <rdfs:label xml:lang="it">Categoria di rifiuto</rdfs:label>
-        <dct:title xml:lang="en">Waste category</dct:title>
-        <dct:title xml:lang="it">Categoria di rifiuto</dct:title>
-        <rdfs:comment xml:lang="en">Classification of waste categories</rdfs:comment>
-        <rdfs:comment xml:lang="it">Classificatione delle categorie di rifiuti</rdfs:comment>
-        <dct:description xml:lang="en">Classification of waste categories</dct:description>
-        <dct:description xml:lang="it">Classificatione delle categorie di rifiuti</dct:description>
-        <dct:creator rdf:resource="https://w3id.org/people/lucamartinelli"/>
-        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/bulky"/>
-        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/paper"/>
-        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/organic"/>
-        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/wood"/>
-        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/metal"/>
-        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/plastic"/>
-        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/weee"/>
-        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/selective"/>
-        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/textiles"/>
-        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/glass"/>
-        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/candd"/>
-        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/street"/>
-        <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/other"/>
-      </skos:ConceptScheme>
-    </skos:inScheme>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/textiles">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
-    <dct:identifier>textiles</dct:identifier>
-    <rdfs:label xml:lang="it">Textiles</rdfs:label>
-    <rdfs:label xml:lang="en">Tessili</rdfs:label>
-    <skos:prefLabel xml:lang="it">Textiles</skos:prefLabel>
-    <skos:prefLabel xml:lang="en">Tessili</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/glass">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
-    <dct:identifier>glass</dct:identifier>
-    <rdfs:label xml:lang="it">Glass</rdfs:label>
-    <rdfs:label xml:lang="en">Vetro</rdfs:label>
-    <skos:prefLabel xml:lang="it">Glass</skos:prefLabel>
-    <skos:prefLabel xml:lang="en">Vetro</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/wood">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
-    <dct:identifier>wood</dct:identifier>
-    <rdfs:label xml:lang="it">Wood</rdfs:label>
-    <rdfs:label xml:lang="en">Legno</rdfs:label>
-    <skos:prefLabel xml:lang="it">Wood</skos:prefLabel>
-    <skos:prefLabel xml:lang="en">Legno</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/organic">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
-    <dct:identifier>organic</dct:identifier>
-    <rdfs:label xml:lang="it">Organic Fraction</rdfs:label>
-    <rdfs:label xml:lang="en">Frazione Organica</rdfs:label>
-    <skos:prefLabel xml:lang="it">Organic Fraction</skos:prefLabel>
-    <skos:prefLabel xml:lang="en">Frazione Organica</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/paper">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
-    <dct:identifier>paper</dct:identifier>
-    <rdfs:label xml:lang="it">Paper and Cardboard</rdfs:label>
-    <rdfs:label xml:lang="en">Carta e Cartone</rdfs:label>
-    <skos:prefLabel xml:lang="it">Paper and Cardboard</skos:prefLabel>
-    <skos:prefLabel xml:lang="en">Carta e Cartone</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/bulky">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
-    <dct:identifier>bulky</dct:identifier>
-    <rdfs:label xml:lang="it">Bulky Waste</rdfs:label>
-    <rdfs:label xml:lang="en">Ingombranti</rdfs:label>
-    <skos:prefLabel xml:lang="it">Bulky Waste</skos:prefLabel>
-    <skos:prefLabel xml:lang="en">Ingombranti</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/weee">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
-    <dct:identifier>weee</dct:identifier>
-    <rdfs:label xml:lang="it">WEEE</rdfs:label>
-    <rdfs:label xml:lang="en">RAEE</rdfs:label>
-    <skos:prefLabel xml:lang="it">WEEE</skos:prefLabel>
-    <skos:prefLabel xml:lang="en">RAEE</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/street">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
-    <dct:identifier>street</dct:identifier>
-    <rdfs:label xml:lang="it">Street cleaning to recovery</rdfs:label>
-    <rdfs:label xml:lang="en">Pulizia stradale a recupero</rdfs:label>
-    <skos:prefLabel xml:lang="it">Street cleaning to recovery</skos:prefLabel>
-    <skos:prefLabel xml:lang="en">Pulizia stradale a recupero</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/metal">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
-    <dct:identifier>metal</dct:identifier>
-    <rdfs:label xml:lang="it">Metal</rdfs:label>
-    <rdfs:label xml:lang="en">Metallo</rdfs:label>
-    <skos:prefLabel xml:lang="it">Metal</skos:prefLabel>
-    <skos:prefLabel xml:lang="en">Metallo</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/plastic">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
-    <dct:identifier>plastic</dct:identifier>
-    <rdfs:label xml:lang="it">Plastic</rdfs:label>
-    <rdfs:label xml:lang="en">Plastica</rdfs:label>
-    <skos:prefLabel xml:lang="it">Plastic</skos:prefLabel>
-    <skos:prefLabel xml:lang="en">Plastica</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/other">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
-    <dct:identifier>other</dct:identifier>
-    <rdfs:label xml:lang="it">Other</rdfs:label>
-    <rdfs:label xml:lang="en">Altro</rdfs:label>
-    <skos:prefLabel xml:lang="it">Other</skos:prefLabel>
-    <skos:prefLabel xml:lang="en">Altro</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/candd">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
-    <dct:identifier>candd</dct:identifier>
-    <rdfs:label xml:lang="it">Construction and Demolition Waste</rdfs:label>
-    <rdfs:label xml:lang="en">Rifiuti da Costruzione e Demolizione</rdfs:label>
-    <skos:prefLabel xml:lang="it">Construction and Demolition Waste</skos:prefLabel>
-    <skos:prefLabel xml:lang="en">Rifiuti da Costruzione e Demolizione</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
-  </skos:Concept>
+  <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories">
+    <rdfs:label xml:lang="en">Waste category</rdfs:label>
+    <rdfs:label xml:lang="it">Categoria di rifiuto</rdfs:label>
+    <dct:title xml:lang="en">Waste category</dct:title>
+    <dct:title xml:lang="it">Categoria di rifiuto</dct:title>
+    <rdfs:comment xml:lang="en">Classification of waste categories</rdfs:comment>
+    <rdfs:comment xml:lang="it">Classificatione delle categorie di rifiuti</rdfs:comment>
+    <dct:description xml:lang="en">Classification of waste categories</dct:description>
+    <dct:description xml:lang="it">Classificatione delle categorie di rifiuti</dct:description>
+    <dct:creator rdf:resource="https://w3id.org/people/lucamartinelli"/>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/bulky">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
+        <dct:identifier>bulky</dct:identifier>
+        <rdfs:label xml:lang="en">Bulky Waste</rdfs:label>
+        <rdfs:label xml:lang="it">Ingombranti</rdfs:label>
+        <skos:prefLabel xml:lang="en">Bulky Waste</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Ingombranti</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/paper">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
+        <dct:identifier>paper</dct:identifier>
+        <rdfs:label xml:lang="en">Paper and Cardboard</rdfs:label>
+        <rdfs:label xml:lang="it">Carta e Cartone</rdfs:label>
+        <skos:prefLabel xml:lang="en">Paper and Cardboard</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Carta e Cartone</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/organic">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
+        <dct:identifier>organic</dct:identifier>
+        <rdfs:label xml:lang="en">Organic Fraction</rdfs:label>
+        <rdfs:label xml:lang="it">Frazione Organica</rdfs:label>
+        <skos:prefLabel xml:lang="en">Organic Fraction</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Frazione Organica</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/wood">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
+        <dct:identifier>wood</dct:identifier>
+        <rdfs:label xml:lang="en">Wood</rdfs:label>
+        <rdfs:label xml:lang="it">Legno</rdfs:label>
+        <skos:prefLabel xml:lang="en">Wood</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Legno</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/metal">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
+        <dct:identifier>metal</dct:identifier>
+        <rdfs:label xml:lang="en">Metal</rdfs:label>
+        <rdfs:label xml:lang="it">Metallo</rdfs:label>
+        <skos:prefLabel xml:lang="en">Metal</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Metallo</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/plastic">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
+        <dct:identifier>plastic</dct:identifier>
+        <rdfs:label xml:lang="en">Plastic</rdfs:label>
+        <rdfs:label xml:lang="it">Plastica</rdfs:label>
+        <skos:prefLabel xml:lang="en">Plastic</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Plastica</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/weee">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
+        <dct:identifier>weee</dct:identifier>
+        <rdfs:label xml:lang="en">WEEE</rdfs:label>
+        <rdfs:label xml:lang="it">RAEE</rdfs:label>
+        <skos:prefLabel xml:lang="en">WEEE</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">RAEE</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/selective">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
+        <dct:identifier>selective</dct:identifier>
+        <rdfs:label xml:lang="en">Selective</rdfs:label>
+        <rdfs:label xml:lang="it">Selettiva</rdfs:label>
+        <skos:prefLabel xml:lang="en">Selective</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Selettiva</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/textiles">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
+        <dct:identifier>textiles</dct:identifier>
+        <rdfs:label xml:lang="en">Textiles</rdfs:label>
+        <rdfs:label xml:lang="it">Tessili</rdfs:label>
+        <skos:prefLabel xml:lang="en">Textiles</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Tessili</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/glass">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
+        <dct:identifier>glass</dct:identifier>
+        <rdfs:label xml:lang="en">Glass</rdfs:label>
+        <rdfs:label xml:lang="it">Vetro</rdfs:label>
+        <skos:prefLabel xml:lang="en">Glass</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Vetro</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/candd">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
+        <dct:identifier>candd</dct:identifier>
+        <rdfs:label xml:lang="en">Construction and Demolition Waste</rdfs:label>
+        <rdfs:label xml:lang="it">Rifiuti da Costruzione e Demolizione</rdfs:label>
+        <skos:prefLabel xml:lang="en">Construction and Demolition Waste</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Rifiuti da Costruzione e Demolizione</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/street">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
+        <dct:identifier>street</dct:identifier>
+        <rdfs:label xml:lang="en">Street cleaning to recovery</rdfs:label>
+        <rdfs:label xml:lang="it">Pulizia stradale a recupero</rdfs:label>
+        <skos:prefLabel xml:lang="en">Street cleaning to recovery</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Pulizia stradale a recupero</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/waste-categories/other">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/WasteCategory"/>
+        <dct:identifier>other</dct:identifier>
+        <rdfs:label xml:lang="en">Other</rdfs:label>
+        <rdfs:label xml:lang="it">Altro</rdfs:label>
+        <skos:prefLabel xml:lang="en">Other</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Altro</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/waste-categories"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
 </rdf:RDF>
