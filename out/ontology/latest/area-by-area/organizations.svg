@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="952px" preserveAspectRatio="none" style="width:1218px;height:952px;background:#FFFFFF;" version="1.1" viewBox="0 0 1218 952" width="1218px" zoomAndPan="magnify"><defs/><g><!--MD5=[1d7f89d46fe5890de77e49145f8259d3]
+class Topic--><g id="elem_Topic"><rect codeLine="58" fill="#DFF6FF" height="61.412" id="Topic" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="42" x="588.5" y="884"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="22" x="598.5" y="901.8281">«l0»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="36" x="591.5" y="920.31">Topic</text><line style="stroke:#181818;stroke-width:0.5;" x1="589.5" x2="629.5" y1="929.412" y2="929.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="589.5" x2="629.5" y1="937.412" y2="937.412"/></g><!--MD5=[c160724f8e3bb89ca8141a12554ac2e3]
+class Collection--><g id="elem_Collection"><rect codeLine="61" fill="#DFF6FF" height="61.412" id="Collection" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="72" x="96.5" y="744"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="22" x="121.5" y="761.8281">«l0»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66" x="99.5" y="780.31">Collection</text><line style="stroke:#181818;stroke-width:0.5;" x1="97.5" x2="167.5" y1="789.412" y2="789.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="97.5" x2="167.5" y1="797.412" y2="797.412"/></g><!--MD5=[0f39e4cb6f03951afbf6d14bd2505654]
+class Address--><g id="elem_Address"><rect codeLine="64" fill="#DFF6FF" height="61.412" id="Address" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="61" x="7" y="578"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="47" x="14" y="595.8281">«clvapit»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="10" y="614.31">Address</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="67" y1="623.412" y2="623.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="67" y1="631.412" y2="631.412"/></g><!--MD5=[09ce52be0ee7de43c61b6e2d59bf108b]
+class Person--><g id="elem_Person"><rect codeLine="81" fill="#DFF6FF" height="61.412" id="Person" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="53" x="716" y="188"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="51" x="717" y="205.8281">«cpvapit»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="719.5" y="224.31">Person</text><line style="stroke:#181818;stroke-width:0.5;" x1="717" x2="768" y1="233.412" y2="233.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="717" x2="768" y1="241.412" y2="241.412"/></g><!--MD5=[86c7c362de55a38b660185a1328fe18d]
+class Organization--><g id="elem_Organization"><rect codeLine="102" fill="#FFDEDE" height="118.6158" id="Organization" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="158" x="208.5" y="354"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="51" x="262" y="371.8281">«covapit»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="243.5" y="390.31">Organization</text><line style="stroke:#181818;stroke-width:0.5;" x1="209.5" x2="365.5" y1="399.412" y2="399.412"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="144" x="214.5" y="418.378">endActivityDate: Date</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="214.5" y="437.4459">bankruptcyDate: Date</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="214.5" y="456.5138">liquidationDate: Date</text><line style="stroke:#181818;stroke-width:0.5;" x1="209.5" x2="365.5" y1="464.6158" y2="464.6158"/></g><!--MD5=[966e0916a82432c3aedcde005e08f0e0]
+class Employees--><g id="elem_Employees"><rect fill="#F1F1F1" height="45.0679" id="Employees" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="78" x="166.5" y="586"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72" x="169.5" y="605.9659">Employees</text><line style="stroke:#181818;stroke-width:0.5;" x1="167.5" x2="243.5" y1="615.0679" y2="615.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="167.5" x2="243.5" y1="623.0679" y2="623.0679"/></g><!--MD5=[237fedd9fd55a2639c56080d5fd063b0]
+class Heritage--><g id="elem_Heritage"><rect codeLine="148" fill="#FFDEDE" height="45.0679" id="Heritage" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="64" x="290.5" y="586"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="293.5" y="605.9659">Heritage</text><line style="stroke:#181818;stroke-width:0.5;" x1="291.5" x2="353.5" y1="615.0679" y2="615.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="291.5" x2="353.5" y1="623.0679" y2="623.0679"/></g><!--MD5=[8a459f61d987a90dfc89db4f220dd048]
+class PrivateOrganization--><g id="elem_PrivateOrganization"><rect codeLine="113" fill="#FFDEDE" height="61.412" id="PrivateOrganization" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="140" x="408.5" y="188"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="51" x="453" y="205.8281">«covapit»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134" x="411.5" y="224.31">PrivateOrganization</text><line style="stroke:#181818;stroke-width:0.5;" x1="409.5" x2="547.5" y1="233.412" y2="233.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="409.5" x2="547.5" y1="241.412" y2="241.412"/></g><!--MD5=[535b5ba4dbec307d4896814baf5967dc]
+class OrganizationSection--><g id="elem_OrganizationSection"><rect codeLine="119" fill="#FFDEDE" height="45.0679" id="OrganizationSection" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="143" x="424" y="503"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="427" y="522.9659">OrganizationSection</text><line style="stroke:#181818;stroke-width:0.5;" x1="425" x2="566" y1="532.0679" y2="532.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="425" x2="566" y1="540.0679" y2="540.0679"/></g><!--MD5=[98cef50fbc806a1b24437c56e8d7faab]
+class CompanyDemographicCategory--><g id="elem_CompanyDemographicCategory"><rect codeLine="122" fill="#FFDEDE" height="45.0679" id="CompanyDemographicCategory" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="220" x="609.5" y="669"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="214" x="612.5" y="688.9659">CompanyDemographicCategory</text><line style="stroke:#181818;stroke-width:0.5;" x1="610.5" x2="828.5" y1="698.0679" y2="698.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="610.5" x2="828.5" y1="706.0679" y2="706.0679"/></g><!--MD5=[fc56b019856a535dd135c9a27d88afe5]
+class ArtisanOrganization--><g id="elem_ArtisanOrganization"><rect codeLine="125" fill="#FFDEDE" height="83.2038" id="ArtisanOrganization" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="211" x="373" y="16.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="136" x="410.5" y="36.4659">ArtisanOrganization</text><line style="stroke:#181818;stroke-width:0.5;" x1="374" x2="583" y1="45.5679" y2="45.5679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="379" y="64.5339">artisanRegisterCode</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="379" y="83.6018">artisanRegistrationDate: Date</text><line style="stroke:#181818;stroke-width:0.5;" x1="374" x2="583" y1="91.7038" y2="91.7038"/></g><!--MD5=[b9be2c694e35ab9e85e666b830f85409]
+class Association--><g id="elem_Association"><rect codeLine="132" fill="#FFDEDE" height="102.2717" id="Association" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="304" x="704.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="76" x="818.5" y="26.9659">Association</text><line style="stroke:#181818;stroke-width:0.5;" x1="705.5" x2="1007.5" y1="36.0679" y2="36.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="165" x="710.5" y="55.0339">associationRegisterCode</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="227" x="710.5" y="74.1018">associationRegistrationDate: Date</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="292" x="710.5" y="93.1697">associationRemovalFromRegisterDate: Date</text><line style="stroke:#181818;stroke-width:0.5;" x1="705.5" x2="1007.5" y1="101.2717" y2="101.2717"/></g><!--MD5=[699033d57b0d80e865f1dd2e84ad9ba5]
+class AssociationCategory--><g id="elem_AssociationCategory"><rect codeLine="144" fill="#FFDEDE" height="45.0679" id="AssociationCategory" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="142" x="786.5" y="279"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="136" x="789.5" y="298.9659">AssociationCategory</text><line style="stroke:#181818;stroke-width:0.5;" x1="787.5" x2="927.5" y1="308.0679" y2="308.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="787.5" x2="927.5" y1="316.0679" y2="316.0679"/></g><!--MD5=[2e702a8480a3207eab215cc20ac86139]
+class Members--><g id="elem_Members"><rect fill="#F1F1F1" height="45.0679" id="Members" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="70" x="1007.5" y="196"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="1010.5" y="215.9659">Members</text><line style="stroke:#181818;stroke-width:0.5;" x1="1008.5" x2="1076.5" y1="225.0679" y2="225.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="1008.5" x2="1076.5" y1="233.0679" y2="233.0679"/></g><!--MD5=[4a7956b31a8e98f2c19ee52c969c2c46]
+class Subscriber--><g id="elem_Subscriber"><rect fill="#F1F1F1" height="45.0679" id="Subscriber" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="79" x="1123" y="196"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="1126" y="215.9659">Subscriber</text><line style="stroke:#181818;stroke-width:0.5;" x1="1124" x2="1201" y1="225.0679" y2="225.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="1124" x2="1201" y1="233.0679" y2="233.0679"/></g><!--MD5=[13f523b8684850bbf4c0fa5ca60629fc]
+class HeritageType--><g id="elem_HeritageType"><rect codeLine="154" fill="#FFDEDE" height="45.0679" id="HeritageType" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="96" x="233.5" y="752"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="236.5" y="771.9659">HeritageType</text><line style="stroke:#181818;stroke-width:0.5;" x1="234.5" x2="328.5" y1="781.0679" y2="781.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="234.5" x2="328.5" y1="789.0679" y2="789.0679"/></g><!--MD5=[3e49f4803b554c92c0b70fce4d7094e5]
+class Facility--><g id="elem_Facility"><rect fill="#F1F1F1" height="45.0679" id="Facility" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="52" x="382.5" y="752"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="385.5" y="771.9659">Facility</text><line style="stroke:#181818;stroke-width:0.5;" x1="383.5" x2="433.5" y1="781.0679" y2="781.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="383.5" x2="433.5" y1="789.0679" y2="789.0679"/></g><!--MD5=[0b89a3524f13ccf236198aa191de4cbe]
+link Organization to Employees--><g id="link_Organization_Employees"><path codeLine="109" d="M225.62,473.04 C218.72,482.39 212.69,492.48 208.5,503 C198.56,527.98 199.12,559.04 201.35,580.78 " fill="none" id="Organization-to-Employees" style="stroke:#D1512D;stroke-width:1.0;"/><polygon fill="#D1512D" points="201.92,585.82,204.8928,576.4305,201.3631,580.8511,196.9425,577.3215,201.92,585.82" style="stroke:#D1512D;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="86" x="209.5" y="530.897">hasEmployees</text></g><!--MD5=[ec97d39b7e7a4ec2b79aa9dbbb3f5070]
+link Organization to Address--><g id="link_Organization_Address"><path codeLine="110" d="M208.45,427.26 C160.35,439.03 101.29,461.3 64.5,503 C47.74,521.99 41.16,550.06 38.67,572.33 " fill="none" id="Organization-to-Address" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="38.15,577.56,43.0306,569.0055,38.6503,572.5851,35.0707,568.2049,38.15,577.56" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="126" x="65.5" y="530.897">hasLocalUnitAddress</text></g><!--MD5=[f1bd2f57c306d92a888453234374493f]
+link Organization to Heritage--><g id="link_Organization_Heritage"><path codeLine="111" d="M298.14,473.19 C304.66,509.11 312.67,553.32 317.69,580.97 " fill="none" id="Organization-to-Heritage" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="318.59,585.93,320.935,576.3644,317.7056,581.0088,313.0612,577.7794,318.59,585.93" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="73" x="312.5" y="530.897">hasHeritage</text></g><!--MD5=[f741dced51ff62ec8ed8b33843b946ba]
+link PrivateOrganization to Organization--><g id="link_PrivateOrganization_Organization"><path codeLine="114" d="M408.15,238.91 C385.24,248.04 361.18,261 343.5,279 C324.68,298.16 311.81,324.59 303.21,348.88 " fill="none" id="PrivateOrganization-to-Organization" style="stroke:#7A4495;stroke-width:1.0;"/><polygon fill="#7A4495" points="301.54,353.71,308.2527,346.5031,303.1682,348.9825,300.6888,343.898,301.54,353.71" style="stroke:#7A4495;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="344.5" y="306.897">rdfs:subclassOf</text></g><!--MD5=[bdf8159d4f650f8a027d30239b91bd46]
+link PrivateOrganization to OrganizationSection--><g id="link_PrivateOrganization_OrganizationSection"><path codeLine="116" d="M476.71,249.15 C476.21,258.68 475.74,269.28 475.5,279 C475,298.99 474.51,304.02 475.5,324 C478.6,386.27 487.08,459.02 491.94,497.47 " fill="none" id="PrivateOrganization-to-OrganizationSection" style="stroke:#7A4495;stroke-width:1.0;"/><polygon fill="#7A4495" points="492.63,502.89,495.4428,493.4513,491.9888,497.9313,487.5088,494.4773,492.63,502.89" style="stroke:#7A4495;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="143" x="476.5" y="306.897">hasOrganizationSection</text></g><!--MD5=[06be3ce99ee300c294fbdffa08b60820]
+link PrivateOrganization to CompanyDemographicCategory--><g id="link_PrivateOrganization_CompanyDemographicCategory"><path codeLine="117" d="M548.5,233.36 C575.82,242.13 605.16,256.28 624.5,279 C630.91,286.53 693.96,573.52 713.66,663.68 " fill="none" id="PrivateOrganization-to-CompanyDemographicCategory" style="stroke:#7A4495;stroke-width:1.0;"/><polygon fill="#7A4495" points="714.78,668.83,716.7593,659.1821,713.709,663.9461,708.945,660.8957,714.78,668.83" style="stroke:#7A4495;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="157" x="672.5" y="418.897">hasDemographicCategory</text></g><!--MD5=[88f5b69c445c710624612584332a5bc7]
+link OrganizationSection to Topic--><g id="link_OrganizationSection_Topic"><path codeLine="120" d="M492.68,548.06 C488.76,583.43 483.82,655.67 499.5,714 C516.67,777.86 558.33,843.41 585.17,881.19 " fill="none" id="OrganizationSection-to-Topic" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="588.37,885.66,586.4066,876.0088,585.4692,881.5875,579.8906,880.6501,588.37,885.66" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="500.5" y="696.897">rdfs:subclassOf</text></g><!--MD5=[67eeac923c5ac4a38bc6edfefc55e39d]
+link CompanyDemographicCategory to Topic--><g id="link_CompanyDemographicCategory_Topic"><path codeLine="123" d="M708.75,714.09 C689.62,752.52 649.53,833.08 626.58,879.18 " fill="none" id="CompanyDemographicCategory-to-Topic" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="624.28,883.8,631.8666,877.5196,626.5047,879.3222,624.7021,873.9602,624.28,883.8" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="695.5" y="779.897">rdfs:subclassOf</text></g><!--MD5=[608d1ecf3abcc5ef4e2e77f52f668d09]
+link ArtisanOrganization to PrivateOrganization--><g id="link_ArtisanOrganization_PrivateOrganization"><path codeLine="129" d="M476.24,99.94 C475.52,117.77 475.02,138.92 475.5,158 C475.7,166.05 476.06,174.7 476.46,182.85 " fill="none" id="ArtisanOrganization-to-PrivateOrganization" style="stroke:#7A4495;stroke-width:1.0;"/><polygon fill="#7A4495" points="476.71,187.85,480.2425,178.6564,476.4532,182.8566,472.253,179.0673,476.71,187.85" style="stroke:#7A4495;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="476.5" y="153.897">rdfs:subclassOf</text></g><!--MD5=[908d022f494910ff79fcb1d7d7e1e13b]
+link Association to PrivateOrganization--><g id="link_Association_PrivateOrganization"><path codeLine="137" d="M709.84,109.02 C684.51,118.47 658.59,128.64 634.5,139 C601.98,152.98 566.67,170.54 537.89,185.5 " fill="none" id="Association-to-PrivateOrganization" style="stroke:#7A4495;stroke-width:1.0;"/><polygon fill="#7A4495" points="533.33,187.88,543.1591,187.2567,537.7614,185.5642,539.4539,180.1665,533.33,187.88" style="stroke:#7A4495;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="635.5" y="153.897">rdfs:subclassOf</text></g><!--MD5=[247a83b48263dc6d6f1595e9f23e7f32]
+link Association to Person--><g id="link_Association_Person"><path codeLine="139" d="M763.12,109.13 C753.68,117.86 745.41,127.79 739.5,139 C732.53,152.21 732.07,168.49 733.83,182.79 " fill="none" id="Association-to-Person" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="734.57,187.97,737.2723,178.4991,733.8709,183.0191,729.3509,179.6177,734.57,187.97" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="72" x="740.5" y="153.897">hasReferent</text></g><!--MD5=[08ff632a49ca5c6aa79ed77a3449f81d]
+link Association to AssociationCategory--><g id="link_Association_AssociationCategory"><path codeLine="140" d="M851.42,109.31 C850.62,119.15 849.92,129.39 849.5,139 C847.43,186.32 851.57,241.43 854.62,273.49 " fill="none" id="Association-to-AssociationCategory" style="stroke:#7A4495;stroke-width:1.0;"/><polygon fill="#7A4495" points="855.14,278.82,858.2459,269.4737,854.6538,273.8437,850.2838,270.2516,855.14,278.82" style="stroke:#7A4495;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="850.5" y="153.897">hasAssociationCategory</text></g><!--MD5=[0837123e769549505e1f8d69b4e3d699]
+link Association to Members--><g id="link_Association_Members"><path codeLine="141" d="M967.05,109.21 C980.26,117.98 992.82,127.91 1003.5,139 C1017.57,153.6 1027.55,174.26 1033.9,190.72 " fill="none" id="Association-to-Members" style="stroke:#D1512D;stroke-width:1.0;"/><polygon fill="#D1512D" points="1035.75,195.69,1036.3615,185.8601,1034.0069,191.0037,1028.8634,188.6491,1035.75,195.69" style="stroke:#D1512D;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="78" x="1019.5" y="153.897">hasMembers</text></g><!--MD5=[871f090913c889de99d00aa36e3d9de9]
+link Association to Subscriber--><g id="link_Association_Subscriber"><path codeLine="142" d="M1008.72,90.63 C1042.92,102.23 1077.6,117.91 1106.5,139 C1125.04,152.53 1139.79,174.09 1149.48,191.19 " fill="none" id="Association-to-Subscriber" style="stroke:#DF7861;stroke-width:1.0;"/><polygon fill="#DF7861" points="1152.08,195.88,1151.2058,186.07,1149.6518,191.5092,1144.2126,189.9552,1152.08,195.88" style="stroke:#DF7861;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="84" x="1126.5" y="153.897">hasSubscriber</text></g><!--MD5=[bae7788c0e0028ca31c76665bf7df97b]
+link AssociationCategory to Topic--><g id="link_AssociationCategory_Topic"><path codeLine="145" d="M857.66,324.24 C857.95,364 858.5,451.08 858.5,524.5 C858.5,524.5 858.5,524.5 858.5,775.5 C858.5,876.45 699.98,904.16 635.9,911.24 " fill="none" id="AssociationCategory-to-Topic" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="630.73,911.79,640.1025,914.816,635.702,911.2614,639.2567,906.8609,630.73,911.79" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="859.5" y="613.897">rdfs:subclassOf</text></g><!--MD5=[fe520cc1a162fc6e3937c051b63897ce]
+link Heritage to Collection--><g id="link_Heritage_Collection"><path codeLine="149" d="M290.34,626.31 C281.16,630.76 271.06,635.34 261.5,639 C216.57,656.2 190.73,634.21 157.5,669 C139.89,687.44 133.96,715.97 132.25,738.57 " fill="none" id="Heritage-to-Collection" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="131.94,743.58,136.4983,734.8495,132.2546,738.5899,128.5141,734.3462,131.94,743.58" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="158.5" y="696.897">rdfs:subclassOf</text></g><!--MD5=[8c42fcf76e88113fba722a123321eb24]
+link Heritage to HeritageType--><g id="link_Heritage_HeritageType"><path codeLine="151" d="M291.45,631.13 C279.75,641.15 267.76,654.14 261.5,669 C250.83,694.32 259.31,725.5 268.29,747.18 " fill="none" id="Heritage-to-HeritageType" style="stroke:#7A4495;stroke-width:1.0;"/><polygon fill="#7A4495" points="270.33,751.92,270.4613,742.072,268.3604,747.3243,263.1081,745.2234,270.33,751.92" style="stroke:#7A4495;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="102" x="262.5" y="696.897">hasHeritageType</text></g><!--MD5=[1e7ff37cff08ea13ada08b4cb3b1f426]
+link Heritage to Facility--><g id="link_Heritage_Facility"><path codeLine="152" d="M342.34,631.21 C351.48,642 361.94,655.58 369.5,669 C383.57,693.99 394.42,725.05 401.06,746.79 " fill="none" id="Heritage-to-Facility" style="stroke:#7A4495;stroke-width:1.0;"/><polygon fill="#7A4495" points="402.57,751.82,403.8018,742.0485,401.1267,747.0328,396.1423,744.3577,402.57,751.82" style="stroke:#7A4495;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="62" x="391.5" y="696.897">hasFacility</text></g><!--MD5=[a45ecafd4db611d42f67f7b115d1522b]
+link HeritageType to Topic--><g id="link_HeritageType_Topic"><path codeLine="155" d="M307.33,797.26 C329.28,814.77 362.28,838.89 394.5,854 C458.89,884.2 541.54,901.69 583.12,909.17 " fill="none" id="HeritageType-to-Topic" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="588.22,910.07,580.0539,904.5641,583.2964,909.1994,578.661,912.4419,588.22,910.07" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="395.5" y="849.897">rdfs:subclassOf</text></g><!--MD5=[7883efb6aec76ae7989072d93ee1585d]
+@startuml organizations
+hide circle
+remove @unlinked
+
+!define OntoPiANode dff6ff
+!define OntoPiAProperty 06c
+
+!define OntoPiANodeEdited dff6ff
+
+!define DemographicObservationNode f5c7a9
+!define DemographicObservationProperty d1512d
+
+!define DemographicEventNode ffdeb4
+!define DemographicEventProperty df7861
+
+!define WasteNode eddfb3
+!define WasteProperty 61481c
+
+!define OrganizationNode ffdede
+!define OrganizationProperty 7a4495
+
+!define HeritageNode ffdede
+!define HeritageProperty 7a4495
+
+!define RoadAccidentNode f2f2f2
+!define RoadAccidentProperty 413f42
+
+!define VehicleNode f2f2f2
+!define VehicleProperty 413f42
+
+!define TrafficFlowNode f2f2f2
+!define TrafficFlowProperty 413f42
+
+!define RoadSignalNode f2f2f2
+!define RoadSignalProperty 413f42
+
+!define FacilityNode c4ddff
+!define FacilityProperty 0096ff
+
+!define SchoolNode fefecc
+!define SchoolProperty fdb827
+
+!define GreenZoneNode b8f1b0
+!define GreenZoneProperty 14c38e
+
+!define HospitalNode fff
+!define HospitalProperty 000
+
+!define TransparencyNode ffc4c4
+!define TransparencyProperty 850e35
+
+' Imported objects from OntoPiA
+class Thing <<owl>> #OntoPiANode
+
+class Entity <<l0>> #OntoPiANode
+class Activity <<l0>> #OntoPiANode
+class Location <<l0>> #OntoPiANode
+class EventOrSituation <<l0>> #OntoPiANode
+class Topic <<l0>> #OntoPiANode
+class Object <<l0>> #OntoPiANode
+class Characteristic <<l0>> #OntoPiANode
+class Collection <<l0>> #OntoPiANode
+class Agent <<l0>> #OntoPiANode
+
+class Address <<clvapit>> #OntoPiANode
+class City <<clvapit>> #OntoPiANode
+class StreetToponym <<clvapit>> #OntoPiANode
+class Feature <<clvapit>> #OntoPiANode
+class Country <<clvapit>> #OntoPiANode
+class Geometry <<clvapit>> #OntoPiANode
+
+class TimeInterval <<tiapit>> #OntoPiANode
+class TemporalEntity <<tiapit>> #OntoPiANode
+
+class Value <<muapit>> #OntoPiANode
+
+class OnlineContactPoint <<smapit>> #OntoPiANode
+class PhysicalContactPoint <<smapit>> #OntoPiANode
+
+class AccessCondition <<acapit>> #OntoPiANode
+
+class Person <<cpvapit>> #OntoPiANode
+class Family <<cpvapit>> #OntoPiANode
+
+class PriceSpecification <<potapit>> #OntoPiANode
+
+class PointOfInterest <<poiapit>> #OntoPiANode
+class MultiplePointOfInterest <<poiapit>> #OntoPiANode
+
+class Procedure <<pcapit>> #OntoPiANode
+
+class OSDFeature <<accoapit>> #OntoPiANode
+
+class AcademicDiscipline <<herapit>> #OntoPiANode
+
+class TransparencyResource <<transapit>> #OntoPiANode
+
+class TimeIndexedRole <<roapit>> #OntoPiANode
+
+' Organization, added end of activity, bankruptcy and liquidation, added number of empolyees, local units and heritage
+' Added section and demograpgic classification of organization for private companies (taken from Camera di Commercio)
+' Added an Artisan Organization with artisan Register code and date
+class Organization <<covapit>> #OrganizationNode {
+    endActivityDate: Date
+    bankruptcyDate: Date
+    liquidationDate: Date
+}
+
+' Organization - -> Payment : sentPayment (see later)
+Organization -[#DemographicObservationProperty]-> Employees : hasEmployees
+Organization -[#OntoPiAProperty]-> Address : hasLocalUnitAddress
+Organization - -> Heritage : hasHeritage
+
+class PrivateOrganization <<covapit>> #OrganizationNode
+PrivateOrganization -[#OrganizationProperty]-> Organization : rdfs:subclassOf
+
+PrivateOrganization -[#OrganizationProperty]-> OrganizationSection : hasOrganizationSection
+PrivateOrganization -[#OrganizationProperty]-> CompanyDemographicCategory : hasDemographicCategory
+
+class OrganizationSection #OrganizationNode
+OrganizationSection -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+
+class CompanyDemographicCategory #OrganizationNode
+CompanyDemographicCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+
+class ArtisanOrganization #OrganizationNode {
+    artisanRegisterCode
+    artisanRegistrationDate: Date
+}
+ArtisanOrganization -[#OrganizationProperty]-> PrivateOrganization : rdfs:subclassOf
+
+' Associations are sublclass of organizations, with referent, association category (controlled vocabulary) and members observation
+class Association #OrganizationNode {
+    associationRegisterCode
+    associationRegistrationDate: Date
+    associationRemovalFromRegisterDate: Date
+}
+Association -[#OrganizationProperty]-> PrivateOrganization : rdfs:subclassOf
+
+Association -[#OntoPiAProperty]-> Person : hasReferent
+Association -[#OrganizationProperty]-> AssociationCategory : hasAssociationCategory
+Association -[#DemographicObservationProperty]-> Members : hasMembers
+Association -[#DemographicEventProperty]-> Subscriber : hasSubscriber
+
+class AssociationCategory #OrganizationNode
+AssociationCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+
+' The heritage of an organization, a collection of buildings owned by the organization. There are different types of heritage, like state owned assets, unavailable ecc...
+class Heritage #HeritageNode
+Heritage -[#OntoPiAProperty]-> Collection : rdfs:subclassOf
+
+Heritage -[#HeritageProperty]-> HeritageType : hasHeritageType
+Heritage -[#HeritageProperty]-> Facility : hasFacility
+
+class HeritageType #HeritageNode
+HeritageType -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+@enduml
+
+@startuml organizations
+hide circle
+remove @unlinked
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Thing <<owl>> #dff6ff
+
+class Entity <<l0>> #dff6ff
+class Activity <<l0>> #dff6ff
+class Location <<l0>> #dff6ff
+class EventOrSituation <<l0>> #dff6ff
+class Topic <<l0>> #dff6ff
+class Object <<l0>> #dff6ff
+class Characteristic <<l0>> #dff6ff
+class Collection <<l0>> #dff6ff
+class Agent <<l0>> #dff6ff
+
+class Address <<clvapit>> #dff6ff
+class City <<clvapit>> #dff6ff
+class StreetToponym <<clvapit>> #dff6ff
+class Feature <<clvapit>> #dff6ff
+class Country <<clvapit>> #dff6ff
+class Geometry <<clvapit>> #dff6ff
+
+class TimeInterval <<tiapit>> #dff6ff
+class TemporalEntity <<tiapit>> #dff6ff
+
+class Value <<muapit>> #dff6ff
+
+class OnlineContactPoint <<smapit>> #dff6ff
+class PhysicalContactPoint <<smapit>> #dff6ff
+
+class AccessCondition <<acapit>> #dff6ff
+
+class Person <<cpvapit>> #dff6ff
+class Family <<cpvapit>> #dff6ff
+
+class PriceSpecification <<potapit>> #dff6ff
+
+class PointOfInterest <<poiapit>> #dff6ff
+class MultiplePointOfInterest <<poiapit>> #dff6ff
+
+class Procedure <<pcapit>> #dff6ff
+
+class OSDFeature <<accoapit>> #dff6ff
+
+class AcademicDiscipline <<herapit>> #dff6ff
+
+class TransparencyResource <<transapit>> #dff6ff
+
+class TimeIndexedRole <<roapit>> #dff6ff
+
+class Organization <<covapit>> #ffdede {
+    endActivityDate: Date
+    bankruptcyDate: Date
+    liquidationDate: Date
+}
+
+Organization -[#d1512d]-> Employees : hasEmployees
+Organization -[#06c]-> Address : hasLocalUnitAddress
+Organization - -> Heritage : hasHeritage
+
+class PrivateOrganization <<covapit>> #ffdede
+PrivateOrganization -[#7a4495]-> Organization : rdfs:subclassOf
+
+PrivateOrganization -[#7a4495]-> OrganizationSection : hasOrganizationSection
+PrivateOrganization -[#7a4495]-> CompanyDemographicCategory : hasDemographicCategory
+
+class OrganizationSection #ffdede
+OrganizationSection -[#06c]-> Topic : rdfs:subclassOf
+
+class CompanyDemographicCategory #ffdede
+CompanyDemographicCategory -[#06c]-> Topic : rdfs:subclassOf
+
+class ArtisanOrganization #ffdede {
+    artisanRegisterCode
+    artisanRegistrationDate: Date
+}
+ArtisanOrganization -[#7a4495]-> PrivateOrganization : rdfs:subclassOf
+
+class Association #ffdede {
+    associationRegisterCode
+    associationRegistrationDate: Date
+    associationRemovalFromRegisterDate: Date
+}
+Association -[#7a4495]-> PrivateOrganization : rdfs:subclassOf
+
+Association -[#06c]-> Person : hasReferent
+Association -[#7a4495]-> AssociationCategory : hasAssociationCategory
+Association -[#d1512d]-> Members : hasMembers
+Association -[#df7861]-> Subscriber : hasSubscriber
+
+class AssociationCategory #ffdede
+AssociationCategory -[#06c]-> Topic : rdfs:subclassOf
+
+class Heritage #ffdede
+Heritage -[#06c]-> Collection : rdfs:subclassOf
+
+Heritage -[#7a4495]-> HeritageType : hasHeritageType
+Heritage -[#7a4495]-> Facility : hasFacility
+
+class HeritageType #ffdede
+HeritageType -[#06c]-> Topic : rdfs:subclassOf
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: it
+Country: IT
+--></g></svg>

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:ontoim="https://w3id.org/ontoim/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:ontoim="https://w3id.org/ontoim/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-types/3">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-types/1">
     <rdf:type rdf:resource="https://w3id.org/ontoim/RoadType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dct:identifier>
-    <rdfs:label xml:lang="en">Two roadways</rdfs:label>
-    <rdfs:label xml:lang="it">Due carreggiate</rdfs:label>
-    <skos:prefLabel xml:lang="en">Two roadways</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Due carreggiate</skos:prefLabel>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</dct:identifier>
+    <rdfs:label xml:lang="en">One-way roadway</rdfs:label>
+    <rdfs:label xml:lang="it">Una carreggiata senso unico</rdfs:label>
+    <skos:prefLabel xml:lang="en">One-way roadway</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Una carreggiata senso unico</skos:prefLabel>
     <skos:inScheme>
       <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-types">
         <rdfs:label xml:lang="en">Road type</rdfs:label>
@@ -31,13 +31,13 @@
       </skos:ConceptScheme>
     </skos:inScheme>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-types/1">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-types/3">
     <rdf:type rdf:resource="https://w3id.org/ontoim/RoadType"/>
-    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</dct:identifier>
-    <rdfs:label xml:lang="en">One-way roadway</rdfs:label>
-    <rdfs:label xml:lang="it">Una carreggiata senso unico</rdfs:label>
-    <skos:prefLabel xml:lang="en">One-way roadway</skos:prefLabel>
-    <skos:prefLabel xml:lang="it">Una carreggiata senso unico</skos:prefLabel>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dct:identifier>
+    <rdfs:label xml:lang="en">Two roadways</rdfs:label>
+    <rdfs:label xml:lang="it">Due carreggiate</rdfs:label>
+    <skos:prefLabel xml:lang="en">Two roadways</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Due carreggiate</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/road-types"/>
   </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/road-types/4">

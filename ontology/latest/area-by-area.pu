@@ -1,0 +1,231 @@
+@startuml roads
+hide circle
+remove @unlinked
+
+!define OntoPiANode dff6ff
+!define OntoPiAProperty 06c
+
+!define OntoPiANodeEdited dff6ff
+
+!define DemographicObservationNode f5c7a9
+!define DemographicObservationProperty d1512d
+
+!define DemographicEventNode ffdeb4
+!define DemographicEventProperty df7861
+
+!define WasteNode eddfb3
+!define WasteProperty 61481c
+
+!define OrganizationNode ffdede
+!define OrganizationProperty 7a4495
+
+!define HeritageNode ffdede
+!define HeritageProperty 7a4495
+
+!define RoadAccidentNode f2f2f2
+!define RoadAccidentProperty 413f42
+
+!define VehicleNode f2f2f2
+!define VehicleProperty 413f42
+
+!define TrafficFlowNode f2f2f2
+!define TrafficFlowProperty 413f42
+
+!define RoadSignalNode f2f2f2
+!define RoadSignalProperty 413f42
+
+!define FacilityNode c4ddff
+!define FacilityProperty 0096ff
+
+!define SchoolNode fefecc
+!define SchoolProperty fdb827
+
+!define GreenZoneNode b8f1b0
+!define GreenZoneProperty 14c38e
+
+!define HospitalNode fff
+!define HospitalProperty 000
+
+!define TransparencyNode ffc4c4
+!define TransparencyProperty 850e35
+
+' Imported objects from OntoPiA
+class Thing <<owl>> #OntoPiANode
+
+class Entity <<l0>> #OntoPiANode
+class Activity <<l0>> #OntoPiANode
+class Location <<l0>> #OntoPiANode
+class EventOrSituation <<l0>> #OntoPiANode
+class Topic <<l0>> #OntoPiANode
+class Object <<l0>> #OntoPiANode
+class Characteristic <<l0>> #OntoPiANode
+class Collection <<l0>> #OntoPiANode
+class Agent <<l0>> #OntoPiANode
+
+class Address <<clvapit>> #OntoPiANode
+class City <<clvapit>> #OntoPiANode
+class StreetToponym <<clvapit>> #OntoPiANode
+class Feature <<clvapit>> #OntoPiANode
+class Country <<clvapit>> #OntoPiANode
+class Geometry <<clvapit>> #OntoPiANode
+
+class TimeInterval <<tiapit>> #OntoPiANode
+class TemporalEntity <<tiapit>> #OntoPiANode
+
+class Value <<muapit>> #OntoPiANode
+
+class OnlineContactPoint <<smapit>> #OntoPiANode
+class PhysicalContactPoint <<smapit>> #OntoPiANode
+
+class AccessCondition <<acapit>> #OntoPiANode
+
+class Person <<cpvapit>> #OntoPiANode
+class Family <<cpvapit>> #OntoPiANode
+
+class PriceSpecification <<potapit>> #OntoPiANode
+
+class PointOfInterest <<poiapit>> #OntoPiANode
+class MultiplePointOfInterest <<poiapit>> #OntoPiANode
+
+class Procedure <<pcapit>> #OntoPiANode
+
+class OSDFeature <<accoapit>> #OntoPiANode
+
+class AcademicDiscipline <<herapit>> #OntoPiANode
+
+class TransparencyResource <<transapit>> #OntoPiANode
+
+class TimeIndexedRole <<roapit>> #OntoPiANode
+' Road accidents
+class RoadAccident #RoadAccidentNode {
+    date: DateTime
+}
+RoadAccident -[#OntoPiAProperty]-> EventOrSituation : rdfs:subclassOf
+
+RoadAccident -[#RoadAccidentProperty]-> RelevationUnit : detectedBy
+RoadAccident -[#OntoPiAProperty]-> Geometry : clvapit:hasGeometry
+RoadAccident -[#RoadAccidentProperty]-> Road : hasRoad
+RoadAccident -[#RoadAccidentProperty]-> WeatherCondition : hasWeatherCondition
+RoadAccident -[#RoadAccidentProperty]-> AccidentType : hasAccidentType
+RoadAccident -[#RoadAccidentProperty]-> InvolvedVehicle : hasInvolvedVehicle
+RoadAccident -[#RoadAccidentProperty]-> InvolvedPerson : hasInvolvedPerson
+RoadAccident -[#RoadAccidentProperty]-> InvolvedObstacle : hasInvolvedObstacle
+
+class RelevationUnit #RoadAccidentNode
+RelevationUnit -[#OntoPiAProperty]-> Agent : rdfs:subclassOf
+
+class Road #RoadAccidentNode {
+    roadName
+}
+Road -[#OntoPiAProperty]-> Location : rdfs:subclassOf
+
+Road -[#OntoPiAProperty]-> Address : hasAddress
+Road -[#RoadAccidentProperty]-> RoadCategory : hasRoadCategory
+Road -[#RoadAccidentProperty]-> RoadType : hasRoadType
+Road -[#RoadAccidentProperty]-> PavementType : hasPavementType
+Road -[#RoadAccidentProperty]-> RoadContext : hasRoadContext
+Road -[#RoadAccidentProperty]-> RoadbedStatus : hasRoadbedStatus
+Road -[#RoadAccidentProperty]-> RoadSignalPresence : hasRoadSignalPresence
+
+class RoadCategory #RoadAccidentNode
+RoadCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+
+class RoadType #RoadAccidentNode
+RoadType -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
+
+class PavementType #RoadAccidentNode
+PavementType -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
+
+class RoadContext #RoadAccidentNode
+RoadContext -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
+
+class RoadbedStatus #RoadAccidentNode
+RoadbedStatus -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
+
+class RoadSignalPresence #RoadAccidentNode
+RoadSignalPresence -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
+
+class WeatherCondition #RoadAccidentNode
+WeatherCondition -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
+
+class AccidentType #RoadAccidentNode
+AccidentType -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
+
+class InvolvedEntity #RoadAccidentNode
+InvolvedEntity -[#OntoPiAProperty]-> Entity : rdfs:subclassOf
+
+InvolvedEntity -[#RoadAccidentProperty]-> AccidentCircumstance : hasAccidentCircumstance
+
+class AccidentCircumstance #RoadAccidentNode
+AccidentCircumstance -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
+
+class InvolvedVehicle #RoadAccidentNode
+InvolvedVehicle -[#RoadAccidentProperty]-> InvolvedEntity : rdfs:subclassOf
+InvolvedVehicle -[#VehicleProperty]-> Vehicle : rdfs:subclassOf
+
+InvolvedVehicle -[#RoadAccidentProperty]-> InvolvedPerson : hasConducent
+InvolvedVehicle -[#RoadAccidentProperty]-> InvolvedPerson : hasPassenger
+InvolvedVehicle -[#RoadAccidentProperty]-> InvolvedPerson : hasFrontPassenger
+InvolvedVehicle -[#RoadAccidentProperty]-> InvolvedPerson : hasBackPassenger
+
+class InvolvedPerson #RoadAccidentNode
+InvolvedPerson --> InvolvedEntity : rdfs:subclassOf
+InvolvedPerson -[#OntoPiAProperty]-> Person : rdfs:subclassOf
+
+InvolvedPerson -[#RoadAccidentProperty]-> InvolvedPersonStatus : hasInvolvedPersonStatus
+
+class InvolvedPersonStatus #RoadAccidentNode
+InvolvedPersonStatus -[#OntoPiAProperty]-> Characteristic : rdfs:subclassOf
+
+class InvolvedObstacle #RoadAccidentNode
+InvolvedObstacle -[#RoadAccidentProperty]-> InvolvedEntity : rdfs:subclassOf
+
+class Vehicle #VehicleNode {
+    licensePlate: String
+    registrationYear: gYear
+    brand
+    model
+    color
+}
+Vehicle -[#OntoPiAProperty]-> Object : rdfs:subclassOf
+
+Vehicle -[#VehicleProperty]-> VehicleCategory : hasVehicleCategory
+Vehicle -[#OntoPiAProperty]-> Value : hasLength
+Vehicle -[#OntoPiAProperty]-> Value : hasWidth
+Vehicle -[#OntoPiAProperty]-> Value : hasHeight
+Vehicle -[#OntoPiAProperty]-> Value : hasWeight
+Vehicle -[#OntoPiAProperty]-> Value : hasEngineDisplacement
+Vehicle -[#OntoPiAProperty]-> Country : hasRegistrationCountry
+
+class VehicleCategory #VehicleNode
+VehicleCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+
+' The road signals are point of interests with a signal value (e.g. 50 for a speed limit or the name of the destination indicated)
+class RoadSignal #RoadSignalNode {
+    signalValue
+    installationDate: Date
+    removalDate: Date
+}
+RoadSignal -[#OntoPiAProperty]-> PointOfInterest : rdfs:subclassOf
+
+RoadSignal -[#RoadSignalProperty]-> RoadSignalType : hasSignalType
+
+' The road signal type is a controlled vocabulary of all road signals, with a value, an image and a category
+class RoadSignalType #RoadSignalNode
+RoadSignalType -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+
+' Traffic Flow observation. Added street toponym to road segment and vehicle category (controlled vocabulary)
+class TrafficFlow <<iotapit>> #TrafficFlowNode
+TrafficFlow -[#OntoPiAProperty]-> RoadSegment : iotapit:hasFeatureOfInterest
+TrafficFlow -[#TrafficFlowProperty]-> VehicleCategory : hasVehicleCategory
+TrafficFlow -[#TrafficFlowProperty]-> TrafficFlowDirection : hasTrafficFlowDirection
+
+class TrafficFlowDirection <<enumerated>> #TrafficFlowNode {
+    In
+    Out
+}
+
+class RoadSegment <<iotapit>> #TrafficFlowNode
+RoadSegment -[#OntoPiAProperty]-> StreetToponym : clvapit:hasStreetToponym
+
+@enduml

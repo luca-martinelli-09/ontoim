@@ -1,0 +1,65 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ontoim: <https://w3id.org/ontoim/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ontoim/controlled-vocabulary/relevation-units/1> a skos:Concept,
+        ontoim:RelevationUnit ;
+    rdfs:label "Polizia Stradale" ;
+    dct:identifier 1 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/relevation-units> ;
+    skos:prefLabel "Polizia Stradale" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/relevation-units/2> a skos:Concept,
+        ontoim:RelevationUnit ;
+    rdfs:label "Carabinieri" ;
+    dct:identifier 2 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/relevation-units> ;
+    skos:prefLabel "Carabinieri" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/relevation-units/3> a skos:Concept,
+        ontoim:RelevationUnit ;
+    rdfs:label "Pubblica Sicurezza" ;
+    dct:identifier 3 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/relevation-units> ;
+    skos:prefLabel "Pubblica Sicurezza" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/relevation-units/4> a skos:Concept,
+        ontoim:RelevationUnit ;
+    rdfs:label "Polizia Municipale o Locale" ;
+    dct:identifier 4 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/relevation-units> ;
+    skos:prefLabel "Polizia Municipale o Locale" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/relevation-units/5> a skos:Concept,
+        ontoim:RelevationUnit ;
+    rdfs:label "Altri" ;
+    dct:identifier 5 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/relevation-units> ;
+    skos:prefLabel "Altri" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/relevation-units/6> a skos:Concept,
+        ontoim:RelevationUnit ;
+    rdfs:label "Polizia Provinciale" ;
+    dct:identifier 6 ;
+    skos:inScheme <https://w3id.org/ontoim/controlled-vocabulary/relevation-units> ;
+    skos:prefLabel "Polizia Provinciale" .
+
+<https://w3id.org/ontoim/controlled-vocabulary/relevation-units> a skos:ConceptScheme ;
+    rdfs:label "Relevation unit"@en,
+        "Unità di rilevazione"@it ;
+    dct:creator <https://w3id.org/people/lucamartinelli> ;
+    dct:description "Relevation units for road accidents"@en,
+        "Unità di rilevazione degli incidenti stradali"@it ;
+    dct:title "Relevation unit"@en,
+        "Unità di rilevazione"@it ;
+    rdfs:comment "Relevation units for road accidents"@en,
+        "Unità di rilevazione degli incidenti stradali"@it ;
+    skos:hasTopConcept <https://w3id.org/ontoim/controlled-vocabulary/relevation-units/1>,
+        <https://w3id.org/ontoim/controlled-vocabulary/relevation-units/2>,
+        <https://w3id.org/ontoim/controlled-vocabulary/relevation-units/3>,
+        <https://w3id.org/ontoim/controlled-vocabulary/relevation-units/4>,
+        <https://w3id.org/ontoim/controlled-vocabulary/relevation-units/5>,
+        <https://w3id.org/ontoim/controlled-vocabulary/relevation-units/6> .
+

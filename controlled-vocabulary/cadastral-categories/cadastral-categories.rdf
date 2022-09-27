@@ -3,15 +3,14 @@
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:ontoim="https://w3id.org/ontoim/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/C.1">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>C.1</dct:identifier>
-    <rdfs:label>Negozi e botteghe</rdfs:label>
-    <skos:prefLabel>Negozi e botteghe</skos:prefLabel>
-    <skos:definition>Locali per attività commerciale per vendita o rivendita di prodotti.</skos:definition>
+    <dct:identifier>II</dct:identifier>
+    <rdfs:label>Immobili a destinazione speciale</rdfs:label>
+    <skos:prefLabel>Immobili a destinazione speciale</skos:prefLabel>
     <skos:inScheme>
       <skos:ConceptScheme rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories">
         <rdfs:label xml:lang="en">Cadastral category</rdfs:label>
@@ -29,41 +28,7 @@
         <skos:hasTopConcept rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/IV"/>
       </skos:ConceptScheme>
     </skos:inScheme>
-    <skos:broader>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.C">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-        <dct:identifier>I.C</dct:identifier>
-        <rdfs:label>Gruppo C</rdfs:label>
-        <skos:prefLabel>Gruppo C</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/C.1"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/C.2"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/C.3"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/C.4"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/C.5"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/C.6"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/C.7"/>
-      </skos:Concept>
-    </skos:broader>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/C.4">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>C.4</dct:identifier>
-    <rdfs:label>Fabbricati e locali per esercizi sportivi (senza fine di lucro)</rdfs:label>
-    <skos:prefLabel>Fabbricati e locali per esercizi sportivi (senza fine di lucro)</skos:prefLabel>
-    <skos:definition>Strutture destinate all'esercizio delle attività sportive private.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.C"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.7">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>D.7</dct:identifier>
-    <rdfs:label>Fabbricati costruiti o adattati per le speciali esigenze di un’attività industriale e non suscettibili di destinazione diversa senza radicali trasformazioni.</rdfs:label>
-    <skos:prefLabel>Fabbricati costruiti o adattati per le speciali esigenze di un’attività industriale e non suscettibili di destinazione diversa senza radicali trasformazioni.</skos:prefLabel>
-    <skos:definition>Sono quelle strutture costruiti specificatamente per quel tipo di attività a cui sono destinati. Esempi sono i gli impianti per i rifornimenti di carburante o gli impianti industriali.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader>
+    <skos:narrower>
       <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II.D">
         <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
         <dct:identifier>II.D</dct:identifier>
@@ -82,130 +47,7 @@
         <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.9"/>
         <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.10"/>
       </skos:Concept>
-    </skos:broader>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.4">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>A.4</dct:identifier>
-    <rdfs:label>Abitazioni di tipo popolare</rdfs:label>
-    <skos:prefLabel>Abitazioni di tipo popolare</skos:prefLabel>
-    <skos:definition>Abitazioni di tipo popolare. Unità immobiliari appartenenti a fabbricati con caratteristiche costruttive e di rifiniture di modesto livello. Dotazione limitata di impianti quantunque indispensabili.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-        <dct:identifier>I.A</dct:identifier>
-        <rdfs:label>Gruppo A</rdfs:label>
-        <skos:prefLabel>Gruppo A</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.1"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.2"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.3"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.4"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.5"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.6"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.7"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.8"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.9"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.10"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.11"/>
-      </skos:Concept>
-    </skos:broader>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.4">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>D.4</dct:identifier>
-    <rdfs:label>Case di cura ed ospedali (con fine di lucro)</rdfs:label>
-    <skos:prefLabel>Case di cura ed ospedali (con fine di lucro)</skos:prefLabel>
-    <skos:definition>Ospedali, cliniche e case di cura private.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II.D"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.5">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>B.5</dct:identifier>
-    <rdfs:label>Scuole e laboratori scientifici</rdfs:label>
-    <skos:prefLabel>Scuole e laboratori scientifici</skos:prefLabel>
-    <skos:definition>Strutture costruiti e destinati all'istruzione e alla ricerca scientifica.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.B">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-        <dct:identifier>I.B</dct:identifier>
-        <rdfs:label>Gruppo B</rdfs:label>
-        <skos:prefLabel>Gruppo B</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.1"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.2"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.3"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.4"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.5"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.6"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.7"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.8"/>
-      </skos:Concept>
-    </skos:broader>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.2">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>B.2</dct:identifier>
-    <rdfs:label>Case di cura ed ospedali (senza fine di lucro)</rdfs:label>
-    <skos:prefLabel>Case di cura ed ospedali (senza fine di lucro)</skos:prefLabel>
-    <skos:definition>Strutture per l'assistenza agli ammalati che non hanno fini economici.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.B"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.6">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>F.6</dct:identifier>
-    <rdfs:label>Fabbricato in attesa di dichiarazione</rdfs:label>
-    <skos:prefLabel>Fabbricato in attesa di dichiarazione</skos:prefLabel>
-    <skos:definition>Si tratta di fabbricati in corso di accatastamento, già introdotti nelle mappe del catasto terreni ed in via di completamento della presentazione con la pratica DOCFA al catasto fabbricati. </skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader>
-      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/IV.F">
-        <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-        <dct:identifier>IV.F</dct:identifier>
-        <rdfs:label>Gruppo F</rdfs:label>
-        <skos:prefLabel>Gruppo F</skos:prefLabel>
-        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/IV"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.1"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.2"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.3"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.4"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.5"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.6"/>
-        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.7"/>
-      </skos:Concept>
-    </skos:broader>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.7">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>F.7</dct:identifier>
-    <rdfs:label>Infrastrutture di reti pubbliche di comunicazione</rdfs:label>
-    <skos:prefLabel>Infrastrutture di reti pubbliche di comunicazione</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/IV.F"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.6">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>A.6</dct:identifier>
-    <rdfs:label>Abitazioni di tipo rurale</rdfs:label>
-    <skos:prefLabel>Abitazioni di tipo rurale</skos:prefLabel>
-    <skos:definition>Abitazioni di tipo rurale.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/IV">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>IV</dct:identifier>
-    <rdfs:label>Entità urbane</rdfs:label>
-    <skos:prefLabel>Entità urbane</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/IV.F"/>
+    </skos:narrower>
   </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/E.6">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
@@ -234,165 +76,181 @@
       </skos:Concept>
     </skos:broader>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.8">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.3">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>B.8</dct:identifier>
-    <rdfs:label>Magazzini sotterranei per depositi di derrate</rdfs:label>
-    <skos:prefLabel>Magazzini sotterranei per depositi di derrate</skos:prefLabel>
-    <skos:definition>Magazzini che hanno lo scopo di deposito di scorte.</skos:definition>
+    <dct:identifier>B.3</dct:identifier>
+    <rdfs:label>Prigioni e riformatori</rdfs:label>
+    <skos:prefLabel>Prigioni e riformatori</skos:prefLabel>
+    <skos:definition>Strutture costruiti e destinate alla reclusione degli evasori della Legge.</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.B"/>
+    <skos:broader>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.B">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+        <dct:identifier>I.B</dct:identifier>
+        <rdfs:label>Gruppo B</rdfs:label>
+        <skos:prefLabel>Gruppo B</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.1"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.2"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.3"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.4"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.5"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.6"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.7"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.8"/>
+      </skos:Concept>
+    </skos:broader>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/E.5">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.C">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>E.5</dct:identifier>
-    <rdfs:label>Fabbricati costituenti fortificazioni e loro dipendenze.</rdfs:label>
-    <skos:prefLabel>Fabbricati costituenti fortificazioni e loro dipendenze.</skos:prefLabel>
-    <skos:definition>Fabbricati costituenti fortificazioni e loro dipendenze.</skos:definition>
+    <dct:identifier>I.C</dct:identifier>
+    <rdfs:label>Gruppo C</rdfs:label>
+    <skos:prefLabel>Gruppo C</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/III.E"/>
+    <skos:broader>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+        <dct:identifier>I</dct:identifier>
+        <rdfs:label>Immobili a destinazione ordinaria</rdfs:label>
+        <skos:prefLabel>Immobili a destinazione ordinaria</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.B"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.C"/>
+      </skos:Concept>
+    </skos:broader>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/C.1">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+        <dct:identifier>C.1</dct:identifier>
+        <rdfs:label>Negozi e botteghe</rdfs:label>
+        <skos:prefLabel>Negozi e botteghe</skos:prefLabel>
+        <skos:definition>Locali per attività commerciale per vendita o rivendita di prodotti.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.C"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/C.2">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+        <dct:identifier>C.2</dct:identifier>
+        <rdfs:label>Magazzini e locali di deposito</rdfs:label>
+        <skos:prefLabel>Magazzini e locali di deposito</skos:prefLabel>
+        <skos:definition>Locali utilizzati per il deposito di merci, locali di sgombero, sottotetti.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.C"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/C.3">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+        <dct:identifier>C.3</dct:identifier>
+        <rdfs:label>Laboratori per arti e mestieri</rdfs:label>
+        <skos:prefLabel>Laboratori per arti e mestieri</skos:prefLabel>
+        <skos:definition>Locali destinati all'esercizio della professione di artigiano per servizi, realizzazione o trasformazioni dei prodotti.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.C"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/C.4">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+        <dct:identifier>C.4</dct:identifier>
+        <rdfs:label>Fabbricati e locali per esercizi sportivi (senza fine di lucro)</rdfs:label>
+        <skos:prefLabel>Fabbricati e locali per esercizi sportivi (senza fine di lucro)</skos:prefLabel>
+        <skos:definition>Strutture destinate all'esercizio delle attività sportive private.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.C"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/C.5">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+        <dct:identifier>C.5</dct:identifier>
+        <rdfs:label>Stabilimenti balneari e di acque curative (senza fine di lucro)</rdfs:label>
+        <skos:prefLabel>Stabilimenti balneari e di acque curative (senza fine di lucro)</skos:prefLabel>
+        <skos:definition>Stabilimenti e strutture balneari privati.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.C"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/C.6">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+        <dct:identifier>C.6</dct:identifier>
+        <rdfs:label>Stalle, scuderie, rimesse, autorimesse (senza fine di lucro)</rdfs:label>
+        <skos:prefLabel>Stalle, scuderie, rimesse, autorimesse (senza fine di lucro)</skos:prefLabel>
+        <skos:definition>Garage, box auto o posti macchina, stalle e scuderie.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.C"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/C.7">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+        <dct:identifier>C.7</dct:identifier>
+        <rdfs:label>Tettoie chiuse od aperte</rdfs:label>
+        <skos:prefLabel>Tettoie chiuse od aperte</skos:prefLabel>
+        <skos:definition>Strutture destinate a tettoia o gazebo.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.C"/>
+      </skos:Concept>
+    </skos:narrower>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.6">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>II</dct:identifier>
-    <rdfs:label>Immobili a destinazione speciale</rdfs:label>
-    <skos:prefLabel>Immobili a destinazione speciale</skos:prefLabel>
+    <dct:identifier>A.6</dct:identifier>
+    <rdfs:label>Abitazioni di tipo rurale</rdfs:label>
+    <skos:prefLabel>Abitazioni di tipo rurale</skos:prefLabel>
+    <skos:definition>Abitazioni di tipo rurale.</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II.D"/>
+    <skos:broader>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+        <dct:identifier>I.A</dct:identifier>
+        <rdfs:label>Gruppo A</rdfs:label>
+        <skos:prefLabel>Gruppo A</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.1"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.2"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.3"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.4"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.5"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.6"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.7"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.8"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.9"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.10"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.11"/>
+      </skos:Concept>
+    </skos:broader>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.5">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.3">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>A.5</dct:identifier>
-    <rdfs:label>Abitazioni di tipo ultrapopolare</rdfs:label>
-    <skos:prefLabel>Abitazioni di tipo ultrapopolare</skos:prefLabel>
-    <skos:definition>Abitazioni di tipo ultrapopolare. Unità immobiliari appartenenti a fabbricati con caratteristiche costruttive e di rifiniture di bassissimo livello. Di norma non dotate di servizi igienico-sanitari esclusivi.</skos:definition>
+    <dct:identifier>F.3</dct:identifier>
+    <rdfs:label>Unità in corso di costruzione</rdfs:label>
+    <skos:prefLabel>Unità in corso di costruzione</skos:prefLabel>
+    <skos:definition>Unità che non sono state ancora ultimate. </skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.7">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>A.7</dct:identifier>
-    <rdfs:label>Abitazioni in villini</rdfs:label>
-    <skos:prefLabel>Abitazioni in villini</skos:prefLabel>
-    <skos:definition>Abitazioni in villini. Per villino deve intendersi un fabbricato, anche se suddiviso in unità immobiliari, avente caratteristiche costruttive, tecnologiche e di rifiniture proprie di un fabbricato di tipo civile o economico ed essere dotato, per tutte o parte delle unità immobiliari, di aree esterne ad uso esclusivo.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.1">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>B.1</dct:identifier>
-    <rdfs:label>Collegi e convitti, educandati; ricoveri; orfanotrofi; ospizi; conventi; seminari; caserme</rdfs:label>
-    <skos:prefLabel>Collegi e convitti, educandati; ricoveri; orfanotrofi; ospizi; conventi; seminari; caserme</skos:prefLabel>
-    <skos:definition>Strutture destinate all'assistenza dei disagiati, dei religiosi o caserme dello Stato.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.B"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/E.7">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>E.7</dct:identifier>
-    <rdfs:label>Fabbricati destinati all’esercizio pubblico dei culti.</rdfs:label>
-    <skos:prefLabel>Fabbricati destinati all’esercizio pubblico dei culti.</skos:prefLabel>
-    <skos:definition>Chiese, cattedrali ecc.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/III.E"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/C.3">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>C.3</dct:identifier>
-    <rdfs:label>Laboratori per arti e mestieri</rdfs:label>
-    <skos:prefLabel>Laboratori per arti e mestieri</skos:prefLabel>
-    <skos:definition>Locali destinati all'esercizio della professione di artigiano per servizi, realizzazione o trasformazioni dei prodotti.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.C"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.1">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>F.1</dct:identifier>
-    <rdfs:label>Area urbana</rdfs:label>
-    <skos:prefLabel>Area urbana</skos:prefLabel>
-    <skos:definition>Aree o corti a piano terra di fabbricati già accatastati all'urbano.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/IV.F"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/E.2">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>E.2</dct:identifier>
-    <rdfs:label>Ponti comunali e provinciali soggetti a pedaggio.</rdfs:label>
-    <skos:prefLabel>Ponti comunali e provinciali soggetti a pedaggio.</skos:prefLabel>
-    <skos:definition>Ponti pubblici con passaggio a pagamento. </skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/III.E"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.6">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>D.6</dct:identifier>
-    <rdfs:label>Fabbricati e locali per esercizi sportivi (con fine di lucro)</rdfs:label>
-    <skos:prefLabel>Fabbricati e locali per esercizi sportivi (con fine di lucro)</skos:prefLabel>
-    <skos:definition>Unità destinate ad attività sportive privati a pagamento, club sportivi, campetti, piscine ecc.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II.D"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.8">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>D.8</dct:identifier>
-    <rdfs:label>Fabbricati costruiti o adattati per le speciali esigenze di un’attività commerciale e non suscettibili di destinazione diversa senza radicali trasformazioni.</rdfs:label>
-    <skos:prefLabel>Fabbricati costruiti o adattati per le speciali esigenze di un’attività commerciale e non suscettibili di destinazione diversa senza radicali trasformazioni.</skos:prefLabel>
-    <skos:definition>Grandi negozi, centri commerciali.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II.D"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.8">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>A.8</dct:identifier>
-    <rdfs:label>Abitazioni in ville</rdfs:label>
-    <skos:prefLabel>Abitazioni in ville</skos:prefLabel>
-    <skos:definition>Abitazioni in ville. Per ville devono intendersi quegli immobili caratterizzati essenzialmente dalla presenza di parco e/o giardino, edificate in zone urbanistiche destinate a tali costruzioni o in zone di pregio con caratteristiche costruttive e di rifiniture, di livello superiore all'ordinario.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.3">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>D.3</dct:identifier>
-    <rdfs:label>Teatri, cinematografi, sale per concerti e spettacoli e simili (con fine di lucro)</rdfs:label>
-    <skos:prefLabel>Teatri, cinematografi, sale per concerti e spettacoli e simili (con fine di lucro)</skos:prefLabel>
-    <skos:definition>Lodali destinati all'esibizione artistica aventi ingresso a pagamento.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II.D"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/III">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>III</dct:identifier>
-    <rdfs:label>Immobili a destinazione particolare</rdfs:label>
-    <skos:prefLabel>Immobili a destinazione particolare</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/III.E"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.1">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>A.1</dct:identifier>
-    <rdfs:label>Abitazioni di tipo signorile</rdfs:label>
-    <skos:prefLabel>Abitazioni di tipo signorile</skos:prefLabel>
-    <skos:definition>Abitazioni di tipo signorile. Unità immobiliari appartenenti a fabbricati ubicati in zone di pregio con caratteristiche costruttive, tecnologiche e di rifiniture di livello superiore a quello dei fabbricati di tipo residenziale.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.10">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>A.10</dct:identifier>
-    <rdfs:label>Uffici e studi privati</rdfs:label>
-    <skos:prefLabel>Uffici e studi privati</skos:prefLabel>
-    <skos:definition>Uffici e studi privati. Rientrano in questa categoria quelle unità immobiliari che per tipologia, dotazione di impianti e finiture sono destinate all’attività professionale.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.3">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>A.3</dct:identifier>
-    <rdfs:label>Abitazioni di tipo economico</rdfs:label>
-    <skos:prefLabel>Abitazioni di tipo economico</skos:prefLabel>
-    <skos:definition>Abitazioni di tipo economico. Unità immobiliari appartenenti a fabbricati con caratteristiche di economia sia per i materiali impiegati che per la rifinitura, e con impianti tecnologici limitati ai soli indispensabili.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A"/>
+    <skos:broader>
+      <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/IV.F">
+        <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+        <dct:identifier>IV.F</dct:identifier>
+        <rdfs:label>Gruppo F</rdfs:label>
+        <skos:prefLabel>Gruppo F</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+        <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/IV"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.1"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.2"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.3"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.4"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.5"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.6"/>
+        <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.7"/>
+      </skos:Concept>
+    </skos:broader>
   </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.9">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
@@ -402,151 +260,6 @@
     <skos:definition>Castelli, palazzi eminenti. Rientrano in questa categoria i castelli ed i palazzi eminenti che per la loro struttura, la ripartizione degli spazi interni e dei volumi edificati non sono comparabili con le Unità tipo delle altre categorie; costituiscono ordinariamente una sola unità immobiliare. E' compatibile con l'attribuzione della categoria presenza di altre unità, funzionalmente indipendenti, censibili nelle altre categorie.</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.1">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>D.1</dct:identifier>
-    <rdfs:label>Opifici</rdfs:label>
-    <skos:prefLabel>Opifici</skos:prefLabel>
-    <skos:definition>Capannone, fabbrica, struttura dove viene lavorata e trasformata la materia prima.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II.D"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/E.8">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>E.8</dct:identifier>
-    <rdfs:label>Fabbricati e costruzioni nei cimiteri, esclusi i colombari, i sepolcri e le tombe di famiglia.</rdfs:label>
-    <skos:prefLabel>Fabbricati e costruzioni nei cimiteri, esclusi i colombari, i sepolcri e le tombe di famiglia.</skos:prefLabel>
-    <skos:definition>Fabbricati e costruzioni nei cimiteri, esclusi i colombari, i sepolcri e le tombe di famiglia.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/III.E"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.2">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>F.2</dct:identifier>
-    <rdfs:label>Unità collabenti</rdfs:label>
-    <skos:prefLabel>Unità collabenti</skos:prefLabel>
-    <skos:definition>Unità collabenti - fabbricati fatiscenti, ruderi, unità con tetto crollato e inutilizzabili.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/IV.F"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.11">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>A.11</dct:identifier>
-    <rdfs:label>Abitazioni ed alloggi tipici dei luoghi</rdfs:label>
-    <skos:prefLabel>Abitazioni ed alloggi tipici dei luoghi</skos:prefLabel>
-    <skos:definition>Abitazioni ed alloggi tipici dei luoghi Rifugi di montagna, baite, trulli, sassi, ecc…</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.5">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>F.5</dct:identifier>
-    <rdfs:label>Lastrico solare</rdfs:label>
-    <skos:prefLabel>Lastrico solare</skos:prefLabel>
-    <skos:definition>Terrazze e aree libere sopra unità immobiliari preesistenti. </skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/IV.F"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.2">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>D.2</dct:identifier>
-    <rdfs:label>Alberghi e pensioni (con fine di lucro)</rdfs:label>
-    <skos:prefLabel>Alberghi e pensioni (con fine di lucro)</skos:prefLabel>
-    <skos:definition>Strutture ricettive a pagamento.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II.D"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/E.9">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>E.9</dct:identifier>
-    <rdfs:label>Edifici a destinazione particolare non compresi nelle categorie precedenti del gruppo E.</rdfs:label>
-    <skos:prefLabel>Edifici a destinazione particolare non compresi nelle categorie precedenti del gruppo E.</skos:prefLabel>
-    <skos:definition>Tutto quello di categoria E che non è stato possibile inserire nelle categorie precedenti, può essere inserito in questa. </skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/III.E"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.10">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>D.10</dct:identifier>
-    <rdfs:label>Fabbricati per funzioni produttive connesse alle attività agricole.</rdfs:label>
-    <skos:prefLabel>Fabbricati per funzioni produttive connesse alle attività agricole.</skos:prefLabel>
-    <skos:definition>Sarebbero la categoria a cui devono accatastarsi i vecchi fabbricati rurali.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II.D"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/C.6">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>C.6</dct:identifier>
-    <rdfs:label>Stalle, scuderie, rimesse, autorimesse (senza fine di lucro)</rdfs:label>
-    <skos:prefLabel>Stalle, scuderie, rimesse, autorimesse (senza fine di lucro)</skos:prefLabel>
-    <skos:definition>Garage, box auto o posti macchina, stalle e scuderie.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.C"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.9">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>D.9</dct:identifier>
-    <rdfs:label>Edifici galleggianti o sospesi assicurati a punti fissi del suolo, ponti privati soggetti a pedaggio.</rdfs:label>
-    <skos:prefLabel>Edifici galleggianti o sospesi assicurati a punti fissi del suolo, ponti privati soggetti a pedaggio.</skos:prefLabel>
-    <skos:definition>Edifici che non hanno un suolo proprio.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II.D"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.3">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>B.3</dct:identifier>
-    <rdfs:label>Prigioni e riformatori</rdfs:label>
-    <skos:prefLabel>Prigioni e riformatori</skos:prefLabel>
-    <skos:definition>Strutture costruiti e destinate alla reclusione degli evasori della Legge.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.B"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>I</dct:identifier>
-    <rdfs:label>Immobili a destinazione ordinaria</rdfs:label>
-    <skos:prefLabel>Immobili a destinazione ordinaria</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A"/>
-    <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.B"/>
-    <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.C"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/C.5">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>C.5</dct:identifier>
-    <rdfs:label>Stabilimenti balneari e di acque curative (senza fine di lucro)</rdfs:label>
-    <skos:prefLabel>Stabilimenti balneari e di acque curative (senza fine di lucro)</skos:prefLabel>
-    <skos:definition>Stabilimenti e strutture balneari privati.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.C"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.5">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>D.5</dct:identifier>
-    <rdfs:label>Istituto di credito, cambio e assicurazione (con fine di lucro)</rdfs:label>
-    <skos:prefLabel>Istituto di credito, cambio e assicurazione (con fine di lucro)</skos:prefLabel>
-    <skos:definition>Banche, assicurazioni e istituti di credito privati.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II.D"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/E.3">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>E.3</dct:identifier>
-    <rdfs:label>Costruzioni e fabbricati per speciali esigenze pubbliche</rdfs:label>
-    <skos:prefLabel>Costruzioni e fabbricati per speciali esigenze pubbliche</skos:prefLabel>
-    <skos:definition>Costruzioni e fabbricati per speciali esigenze pubbliche. Un esempio sono le Caserme dei Carabinieri.  </skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/III.E"/>
-  </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/E.4">
-    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>E.4</dct:identifier>
-    <rdfs:label>Recinti chiusi per speciali esigenze pubbliche.</rdfs:label>
-    <skos:prefLabel>Recinti chiusi per speciali esigenze pubbliche.</skos:prefLabel>
-    <skos:definition>Recinti chiusi per speciali esigenze pubbliche - Per mercati, per posteggio bestiame, ecc.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/III.E"/>
   </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.7">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
@@ -566,14 +279,94 @@
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.B"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/C.7">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.11">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>C.7</dct:identifier>
-    <rdfs:label>Tettoie chiuse od aperte</rdfs:label>
-    <skos:prefLabel>Tettoie chiuse od aperte</skos:prefLabel>
-    <skos:definition>Strutture destinate a tettoia o gazebo.</skos:definition>
+    <dct:identifier>A.11</dct:identifier>
+    <rdfs:label>Abitazioni ed alloggi tipici dei luoghi</rdfs:label>
+    <skos:prefLabel>Abitazioni ed alloggi tipici dei luoghi</skos:prefLabel>
+    <skos:definition>Abitazioni ed alloggi tipici dei luoghi Rifugi di montagna, baite, trulli, sassi, ecc…</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.C"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.5">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>D.5</dct:identifier>
+    <rdfs:label>Istituto di credito, cambio e assicurazione (con fine di lucro)</rdfs:label>
+    <skos:prefLabel>Istituto di credito, cambio e assicurazione (con fine di lucro)</skos:prefLabel>
+    <skos:definition>Banche, assicurazioni e istituti di credito privati.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II.D"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.8">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>B.8</dct:identifier>
+    <rdfs:label>Magazzini sotterranei per depositi di derrate</rdfs:label>
+    <skos:prefLabel>Magazzini sotterranei per depositi di derrate</skos:prefLabel>
+    <skos:definition>Magazzini che hanno lo scopo di deposito di scorte.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.B"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/E.7">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>E.7</dct:identifier>
+    <rdfs:label>Fabbricati destinati all’esercizio pubblico dei culti.</rdfs:label>
+    <skos:prefLabel>Fabbricati destinati all’esercizio pubblico dei culti.</skos:prefLabel>
+    <skos:definition>Chiese, cattedrali ecc.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/III.E"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.7">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>A.7</dct:identifier>
+    <rdfs:label>Abitazioni in villini</rdfs:label>
+    <skos:prefLabel>Abitazioni in villini</skos:prefLabel>
+    <skos:definition>Abitazioni in villini. Per villino deve intendersi un fabbricato, anche se suddiviso in unità immobiliari, avente caratteristiche costruttive, tecnologiche e di rifiniture proprie di un fabbricato di tipo civile o economico ed essere dotato, per tutte o parte delle unità immobiliari, di aree esterne ad uso esclusivo.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/IV">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>IV</dct:identifier>
+    <rdfs:label>Entità urbane</rdfs:label>
+    <skos:prefLabel>Entità urbane</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/IV.F"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.5">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>F.5</dct:identifier>
+    <rdfs:label>Lastrico solare</rdfs:label>
+    <skos:prefLabel>Lastrico solare</skos:prefLabel>
+    <skos:definition>Terrazze e aree libere sopra unità immobiliari preesistenti. </skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/IV.F"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.10">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>D.10</dct:identifier>
+    <rdfs:label>Fabbricati per funzioni produttive connesse alle attività agricole.</rdfs:label>
+    <skos:prefLabel>Fabbricati per funzioni produttive connesse alle attività agricole.</skos:prefLabel>
+    <skos:definition>Sarebbero la categoria a cui devono accatastarsi i vecchi fabbricati rurali.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II.D"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.1">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>A.1</dct:identifier>
+    <rdfs:label>Abitazioni di tipo signorile</rdfs:label>
+    <skos:prefLabel>Abitazioni di tipo signorile</skos:prefLabel>
+    <skos:definition>Abitazioni di tipo signorile. Unità immobiliari appartenenti a fabbricati ubicati in zone di pregio con caratteristiche costruttive, tecnologiche e di rifiniture di livello superiore a quello dei fabbricati di tipo residenziale.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.5">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>B.5</dct:identifier>
+    <rdfs:label>Scuole e laboratori scientifici</rdfs:label>
+    <skos:prefLabel>Scuole e laboratori scientifici</skos:prefLabel>
+    <skos:definition>Strutture costruiti e destinati all'istruzione e alla ricerca scientifica.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.B"/>
   </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.6">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
@@ -584,12 +377,173 @@
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.B"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.3">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/E.8">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>F.3</dct:identifier>
-    <rdfs:label>Unità in corso di costruzione</rdfs:label>
-    <skos:prefLabel>Unità in corso di costruzione</skos:prefLabel>
-    <skos:definition>Unità che non sono state ancora ultimate. </skos:definition>
+    <dct:identifier>E.8</dct:identifier>
+    <rdfs:label>Fabbricati e costruzioni nei cimiteri, esclusi i colombari, i sepolcri e le tombe di famiglia.</rdfs:label>
+    <skos:prefLabel>Fabbricati e costruzioni nei cimiteri, esclusi i colombari, i sepolcri e le tombe di famiglia.</skos:prefLabel>
+    <skos:definition>Fabbricati e costruzioni nei cimiteri, esclusi i colombari, i sepolcri e le tombe di famiglia.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/III.E"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.6">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>F.6</dct:identifier>
+    <rdfs:label>Fabbricato in attesa di dichiarazione</rdfs:label>
+    <skos:prefLabel>Fabbricato in attesa di dichiarazione</skos:prefLabel>
+    <skos:definition>Si tratta di fabbricati in corso di accatastamento, già introdotti nelle mappe del catasto terreni ed in via di completamento della presentazione con la pratica DOCFA al catasto fabbricati. </skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/IV.F"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.7">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>D.7</dct:identifier>
+    <rdfs:label>Fabbricati costruiti o adattati per le speciali esigenze di un’attività industriale e non suscettibili di destinazione diversa senza radicali trasformazioni.</rdfs:label>
+    <skos:prefLabel>Fabbricati costruiti o adattati per le speciali esigenze di un’attività industriale e non suscettibili di destinazione diversa senza radicali trasformazioni.</skos:prefLabel>
+    <skos:definition>Sono quelle strutture costruiti specificatamente per quel tipo di attività a cui sono destinati. Esempi sono i gli impianti per i rifornimenti di carburante o gli impianti industriali.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II.D"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/E.2">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>E.2</dct:identifier>
+    <rdfs:label>Ponti comunali e provinciali soggetti a pedaggio.</rdfs:label>
+    <skos:prefLabel>Ponti comunali e provinciali soggetti a pedaggio.</skos:prefLabel>
+    <skos:definition>Ponti pubblici con passaggio a pagamento. </skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/III.E"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/E.4">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>E.4</dct:identifier>
+    <rdfs:label>Recinti chiusi per speciali esigenze pubbliche.</rdfs:label>
+    <skos:prefLabel>Recinti chiusi per speciali esigenze pubbliche.</skos:prefLabel>
+    <skos:definition>Recinti chiusi per speciali esigenze pubbliche - Per mercati, per posteggio bestiame, ecc.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/III.E"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/E.3">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>E.3</dct:identifier>
+    <rdfs:label>Costruzioni e fabbricati per speciali esigenze pubbliche</rdfs:label>
+    <skos:prefLabel>Costruzioni e fabbricati per speciali esigenze pubbliche</skos:prefLabel>
+    <skos:definition>Costruzioni e fabbricati per speciali esigenze pubbliche. Un esempio sono le Caserme dei Carabinieri.  </skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/III.E"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.2">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>B.2</dct:identifier>
+    <rdfs:label>Case di cura ed ospedali (senza fine di lucro)</rdfs:label>
+    <skos:prefLabel>Case di cura ed ospedali (senza fine di lucro)</skos:prefLabel>
+    <skos:definition>Strutture per l'assistenza agli ammalati che non hanno fini economici.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.B"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.10">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>A.10</dct:identifier>
+    <rdfs:label>Uffici e studi privati</rdfs:label>
+    <skos:prefLabel>Uffici e studi privati</skos:prefLabel>
+    <skos:definition>Uffici e studi privati. Rientrano in questa categoria quelle unità immobiliari che per tipologia, dotazione di impianti e finiture sono destinate all’attività professionale.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.1">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>D.1</dct:identifier>
+    <rdfs:label>Opifici</rdfs:label>
+    <skos:prefLabel>Opifici</skos:prefLabel>
+    <skos:definition>Capannone, fabbrica, struttura dove viene lavorata e trasformata la materia prima.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II.D"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/III">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>III</dct:identifier>
+    <rdfs:label>Immobili a destinazione particolare</rdfs:label>
+    <skos:prefLabel>Immobili a destinazione particolare</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:narrower rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/III.E"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/E.5">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>E.5</dct:identifier>
+    <rdfs:label>Fabbricati costituenti fortificazioni e loro dipendenze.</rdfs:label>
+    <skos:prefLabel>Fabbricati costituenti fortificazioni e loro dipendenze.</skos:prefLabel>
+    <skos:definition>Fabbricati costituenti fortificazioni e loro dipendenze.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/III.E"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.3">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>D.3</dct:identifier>
+    <rdfs:label>Teatri, cinematografi, sale per concerti e spettacoli e simili (con fine di lucro)</rdfs:label>
+    <skos:prefLabel>Teatri, cinematografi, sale per concerti e spettacoli e simili (con fine di lucro)</skos:prefLabel>
+    <skos:definition>Lodali destinati all'esibizione artistica aventi ingresso a pagamento.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II.D"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/B.1">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>B.1</dct:identifier>
+    <rdfs:label>Collegi e convitti, educandati; ricoveri; orfanotrofi; ospizi; conventi; seminari; caserme</rdfs:label>
+    <skos:prefLabel>Collegi e convitti, educandati; ricoveri; orfanotrofi; ospizi; conventi; seminari; caserme</skos:prefLabel>
+    <skos:definition>Strutture destinate all'assistenza dei disagiati, dei religiosi o caserme dello Stato.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.B"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.6">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>D.6</dct:identifier>
+    <rdfs:label>Fabbricati e locali per esercizi sportivi (con fine di lucro)</rdfs:label>
+    <skos:prefLabel>Fabbricati e locali per esercizi sportivi (con fine di lucro)</skos:prefLabel>
+    <skos:definition>Unità destinate ad attività sportive privati a pagamento, club sportivi, campetti, piscine ecc.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II.D"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/E.9">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>E.9</dct:identifier>
+    <rdfs:label>Edifici a destinazione particolare non compresi nelle categorie precedenti del gruppo E.</rdfs:label>
+    <skos:prefLabel>Edifici a destinazione particolare non compresi nelle categorie precedenti del gruppo E.</skos:prefLabel>
+    <skos:definition>Tutto quello di categoria E che non è stato possibile inserire nelle categorie precedenti, può essere inserito in questa. </skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/III.E"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.8">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>D.8</dct:identifier>
+    <rdfs:label>Fabbricati costruiti o adattati per le speciali esigenze di un’attività commerciale e non suscettibili di destinazione diversa senza radicali trasformazioni.</rdfs:label>
+    <skos:prefLabel>Fabbricati costruiti o adattati per le speciali esigenze di un’attività commerciale e non suscettibili di destinazione diversa senza radicali trasformazioni.</skos:prefLabel>
+    <skos:definition>Grandi negozi, centri commerciali.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II.D"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.3">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>A.3</dct:identifier>
+    <rdfs:label>Abitazioni di tipo economico</rdfs:label>
+    <skos:prefLabel>Abitazioni di tipo economico</skos:prefLabel>
+    <skos:definition>Abitazioni di tipo economico. Unità immobiliari appartenenti a fabbricati con caratteristiche di economia sia per i materiali impiegati che per la rifinitura, e con impianti tecnologici limitati ai soli indispensabili.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.1">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>F.1</dct:identifier>
+    <rdfs:label>Area urbana</rdfs:label>
+    <skos:prefLabel>Area urbana</skos:prefLabel>
+    <skos:definition>Aree o corti a piano terra di fabbricati già accatastati all'urbano.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/IV.F"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.2">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>F.2</dct:identifier>
+    <rdfs:label>Unità collabenti</rdfs:label>
+    <skos:prefLabel>Unità collabenti</skos:prefLabel>
+    <skos:definition>Unità collabenti - fabbricati fatiscenti, ruderi, unità con tetto crollato e inutilizzabili.</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/IV.F"/>
   </skos:Concept>
@@ -602,14 +556,58 @@
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/IV.F"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/E.1">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.4">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>E.1</dct:identifier>
-    <rdfs:label>Stazioni per servizi di trasporto, terrestri, marittimi ed aerei.</rdfs:label>
-    <skos:prefLabel>Stazioni per servizi di trasporto, terrestri, marittimi ed aerei.</skos:prefLabel>
-    <skos:definition>Stazioni ferroviarie, porti, aeroporti. </skos:definition>
+    <dct:identifier>A.4</dct:identifier>
+    <rdfs:label>Abitazioni di tipo popolare</rdfs:label>
+    <skos:prefLabel>Abitazioni di tipo popolare</skos:prefLabel>
+    <skos:definition>Abitazioni di tipo popolare. Unità immobiliari appartenenti a fabbricati con caratteristiche costruttive e di rifiniture di modesto livello. Dotazione limitata di impianti quantunque indispensabili.</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/III.E"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.8">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>A.8</dct:identifier>
+    <rdfs:label>Abitazioni in ville</rdfs:label>
+    <skos:prefLabel>Abitazioni in ville</skos:prefLabel>
+    <skos:definition>Abitazioni in ville. Per ville devono intendersi quegli immobili caratterizzati essenzialmente dalla presenza di parco e/o giardino, edificate in zone urbanistiche destinate a tali costruzioni o in zone di pregio con caratteristiche costruttive e di rifiniture, di livello superiore all'ordinario.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.9">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>D.9</dct:identifier>
+    <rdfs:label>Edifici galleggianti o sospesi assicurati a punti fissi del suolo, ponti privati soggetti a pedaggio.</rdfs:label>
+    <skos:prefLabel>Edifici galleggianti o sospesi assicurati a punti fissi del suolo, ponti privati soggetti a pedaggio.</skos:prefLabel>
+    <skos:definition>Edifici che non hanno un suolo proprio.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II.D"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.4">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>D.4</dct:identifier>
+    <rdfs:label>Case di cura ed ospedali (con fine di lucro)</rdfs:label>
+    <skos:prefLabel>Case di cura ed ospedali (con fine di lucro)</skos:prefLabel>
+    <skos:definition>Ospedali, cliniche e case di cura private.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II.D"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/D.2">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>D.2</dct:identifier>
+    <rdfs:label>Alberghi e pensioni (con fine di lucro)</rdfs:label>
+    <skos:prefLabel>Alberghi e pensioni (con fine di lucro)</skos:prefLabel>
+    <skos:definition>Strutture ricettive a pagamento.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/II.D"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/F.7">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>F.7</dct:identifier>
+    <rdfs:label>Infrastrutture di reti pubbliche di comunicazione</rdfs:label>
+    <skos:prefLabel>Infrastrutture di reti pubbliche di comunicazione</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/IV.F"/>
   </skos:Concept>
   <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.2">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
@@ -620,13 +618,22 @@
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
     <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A"/>
   </skos:Concept>
-  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/C.2">
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/E.1">
     <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
-    <dct:identifier>C.2</dct:identifier>
-    <rdfs:label>Magazzini e locali di deposito</rdfs:label>
-    <skos:prefLabel>Magazzini e locali di deposito</skos:prefLabel>
-    <skos:definition>Locali utilizzati per il deposito di merci, locali di sgombero, sottotetti.</skos:definition>
+    <dct:identifier>E.1</dct:identifier>
+    <rdfs:label>Stazioni per servizi di trasporto, terrestri, marittimi ed aerei.</rdfs:label>
+    <skos:prefLabel>Stazioni per servizi di trasporto, terrestri, marittimi ed aerei.</skos:prefLabel>
+    <skos:definition>Stazioni ferroviarie, porti, aeroporti. </skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
-    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.C"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/III.E"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/A.5">
+    <rdf:type rdf:resource="https://w3id.org/ontoim/CadastralCategory"/>
+    <dct:identifier>A.5</dct:identifier>
+    <rdfs:label>Abitazioni di tipo ultrapopolare</rdfs:label>
+    <skos:prefLabel>Abitazioni di tipo ultrapopolare</skos:prefLabel>
+    <skos:definition>Abitazioni di tipo ultrapopolare. Unità immobiliari appartenenti a fabbricati con caratteristiche costruttive e di rifiniture di bassissimo livello. Di norma non dotate di servizi igienico-sanitari esclusivi.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories"/>
+    <skos:broader rdf:resource="https://w3id.org/ontoim/controlled-vocabulary/cadastral-categories/I.A"/>
   </skos:Concept>
 </rdf:RDF>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="415px" preserveAspectRatio="none" style="width:872px;height:415px;background:#FFFFFF;" version="1.1" viewBox="0 0 872 415" width="872px" zoomAndPan="magnify"><defs/><g><!--MD5=[c881b25adf3665c6568c9693d41a70f3]
+class Activity--><g id="elem_Activity"><rect codeLine="55" fill="#DFF6FF" height="61.412" id="Activity" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="54" x="7" y="207"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="22" x="23" y="224.8281">«l0»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="10" y="243.31">Activity</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="60" y1="252.412" y2="252.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="60" y1="260.412" y2="260.412"/></g><!--MD5=[1d7f89d46fe5890de77e49145f8259d3]
+class Topic--><g id="elem_Topic"><rect codeLine="58" fill="#DFF6FF" height="61.412" id="Topic" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="42" x="640" y="347"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="22" x="650" y="364.8281">«l0»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="36" x="643" y="383.31">Topic</text><line style="stroke:#181818;stroke-width:0.5;" x1="641" x2="681" y1="392.412" y2="392.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="641" x2="681" y1="400.412" y2="400.412"/></g><!--MD5=[9d44916250b776386006c440668bcfbb]
+class Agent--><g id="elem_Agent"><rect codeLine="62" fill="#DFF6FF" height="61.412" id="Agent" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="46" x="140" y="207"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="22" x="152" y="224.8281">«l0»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="143" y="243.31">Agent</text><line style="stroke:#181818;stroke-width:0.5;" x1="141" x2="185" y1="252.412" y2="252.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="141" x2="185" y1="260.412" y2="260.412"/></g><!--MD5=[380e7911c0180c459fda10474b6fccd4]
+class TransparencyResource--><g id="elem_TransparencyResource"><rect codeLine="95" fill="#DFF6FF" height="61.412" id="TransparencyResource" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="160" x="221" y="207"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="61" x="270.5" y="224.8281">«transapit»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="154" x="224" y="243.31">TransparencyResource</text><line style="stroke:#181818;stroke-width:0.5;" x1="222" x2="380" y1="252.412" y2="252.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="222" x2="380" y1="260.412" y2="260.412"/></g><!--MD5=[b3d4da6efed9a939f605a8cb80f9578b]
+class TimeIndexedRole--><g id="elem_TimeIndexedRole"><rect codeLine="97" fill="#DFF6FF" height="61.412" id="TimeIndexedRole" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="123" x="435.5" y="207"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="45" x="474.5" y="224.8281">«roapit»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="438.5" y="243.31">TimeIndexedRole</text><line style="stroke:#181818;stroke-width:0.5;" x1="436.5" x2="557.5" y1="252.412" y2="252.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="436.5" x2="557.5" y1="260.412" y2="260.412"/></g><!--MD5=[77a362942ed212667108958f33645582]
+class ConcessionAct--><g id="elem_ConcessionAct"><rect codeLine="99" fill="#FFC4C4" height="121.3396" id="ConcessionAct" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="164" x="316" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="349.5" y="26.9659">ConcessionAct</text><line style="stroke:#181818;stroke-width:0.5;" x1="317" x2="479" y1="36.0679" y2="36.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="322" y="55.0339">actTitle: String</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="125" x="322" y="74.1018">actNumber: String</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="152" x="322" y="93.1697">paymentAmount: Float</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="322" y="112.2376">actDate: Date</text><line style="stroke:#181818;stroke-width:0.5;" x1="317" x2="479" y1="120.3396" y2="120.3396"/></g><!--MD5=[5e03c9b84487a1f86b6f2fd777d6ad84]
+class ConcessionActType--><g id="elem_ConcessionActType"><rect codeLine="113" fill="#FFC4C4" height="45.0679" id="ConcessionActType" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="135" x="593.5" y="215"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="596.5" y="234.9659">ConcessionActType</text><line style="stroke:#181818;stroke-width:0.5;" x1="594.5" x2="727.5" y1="244.0679" y2="244.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="594.5" x2="727.5" y1="252.0679" y2="252.0679"/></g><!--MD5=[86c7c362de55a38b660185a1328fe18d]
+class Organization--><g id="elem_Organization"><rect fill="#F1F1F1" height="45.0679" id="Organization" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="94" x="764" y="215"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="767" y="234.9659">Organization</text><line style="stroke:#181818;stroke-width:0.5;" x1="765" x2="857" y1="244.0679" y2="244.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="765" x2="857" y1="252.0679" y2="252.0679"/></g><!--MD5=[c60b2f06539bde8ac49ff36a66528eb2]
+link ConcessionAct to Activity--><g id="link_ConcessionAct_Activity"><path codeLine="105" d="M315.76,75.46 C247.59,84.83 151.16,106.74 83,158 C67.99,169.29 56.47,186.64 48.38,202.16 " fill="none" id="ConcessionAct-to-Activity" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="45.98,206.91,53.6146,200.688,48.2389,202.4494,46.4775,197.0737,45.98,206.91" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="84" y="172.897">rdfs:subclassOf</text></g><!--MD5=[c0e03f5349868acd1c9aea1e803d94d3]
+link ConcessionAct to Agent--><g id="link_ConcessionAct_Agent"><path codeLine="107" d="M315.84,89.28 C275.41,103.06 228.5,124.87 196,158 C184.19,170.04 176.35,186.94 171.29,201.98 " fill="none" id="ConcessionAct-to-Agent" style="stroke:#850E35;stroke-width:1.0;"/><polygon fill="#850E35" points="169.68,207,176.2415,199.6551,171.2096,202.2397,168.625,197.2078,169.68,207" style="stroke:#850E35;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="86" x="197" y="172.897">hasBeneficiary</text></g><!--MD5=[87093f13c93beac040c310a1e67c8dd9]
+link ConcessionAct to ConcessionActType--><g id="link_ConcessionAct_ConcessionActType"><path codeLine="108" d="M480.41,106.07 C509.88,120.81 542.76,138.79 571,158 C594.27,173.83 618.16,194.94 635.48,211.28 " fill="none" id="ConcessionAct-to-ConcessionActType" style="stroke:#850E35;stroke-width:1.0;"/><polygon fill="#850E35" points="639.29,214.91,635.5144,205.8136,635.6629,211.4685,630.008,211.617,639.29,214.91" style="stroke:#850E35;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="137" x="596" y="172.897">hasConcessionActType</text></g><!--MD5=[c0c680abaabf2ec25ab41021f4f6a6f8]
+link ConcessionAct to TransparencyResource--><g id="link_ConcessionAct_TransparencyResource"><path codeLine="109" d="M315.83,127.98 C307.85,137.12 300.91,147.16 296,158 C289.88,171.52 289.85,187.7 291.85,201.85 " fill="none" id="ConcessionAct-to-TransparencyResource" style="stroke:#850E35;stroke-width:1.0;"/><polygon fill="#850E35" points="292.67,206.97,295.1807,197.4465,291.8711,202.0342,287.2834,198.7247,292.67,206.97" style="stroke:#850E35;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="157" x="297" y="172.897">hasTransparencyResource</text></g><!--MD5=[6ffa3fafffe9f5799211befa207272f8]
+link ConcessionAct to TimeIndexedRole--><g id="link_ConcessionAct_TimeIndexedRole"><path codeLine="110" d="M440.58,128.38 C447,138.13 453.35,148.23 459,158 C467.18,172.13 475.2,188.28 481.76,202.24 " fill="none" id="ConcessionAct-to-TimeIndexedRole" style="stroke:#850E35;stroke-width:1.0;"/><polygon fill="#850E35" points="483.93,206.89,483.7471,197.0428,481.8148,202.3594,476.4982,200.4272,483.93,206.89" style="stroke:#850E35;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="91" x="471" y="172.897">hasActReferent</text></g><!--MD5=[aca2a226a42960ed5068dca810bff875]
+link ConcessionAct to Organization--><g id="link_ConcessionAct_Organization"><path codeLine="111" d="M480.14,76.11 C553.39,85.96 661.22,108.24 742,158 C763.51,171.25 782.02,193.3 794.45,210.66 " fill="none" id="ConcessionAct-to-Organization" style="stroke:#850E35;stroke-width:1.0;"/><polygon fill="#850E35" points="797.47,214.97,795.5676,205.3066,794.595,210.8792,789.0224,209.9066,797.47,214.97" style="stroke:#850E35;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="99" x="765" y="172.897">hasOrganization</text></g><!--MD5=[0f9fc4499eede428bbfad31de57b7bf5]
+link ConcessionActType to Topic--><g id="link_ConcessionActType_Topic"><path codeLine="114" d="M661,260.06 C661,281.95 661,316.18 661,341.88 " fill="none" id="ConcessionActType-to-Topic" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="661,346.9,665,337.9,661,341.9,657,337.9,661,346.9" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="662" y="312.897">rdfs:subclassOf</text></g><!--MD5=[507c5fa899581351b44979484759ca2b]
+@startuml transparency
+hide circle
+remove @unlinked
+
+!define OntoPiANode dff6ff
+!define OntoPiAProperty 06c
+
+!define OntoPiANodeEdited dff6ff
+
+!define DemographicObservationNode f5c7a9
+!define DemographicObservationProperty d1512d
+
+!define DemographicEventNode ffdeb4
+!define DemographicEventProperty df7861
+
+!define WasteNode eddfb3
+!define WasteProperty 61481c
+
+!define OrganizationNode ffdede
+!define OrganizationProperty 7a4495
+
+!define HeritageNode ffdede
+!define HeritageProperty 7a4495
+
+!define RoadAccidentNode f2f2f2
+!define RoadAccidentProperty 413f42
+
+!define VehicleNode f2f2f2
+!define VehicleProperty 413f42
+
+!define TrafficFlowNode f2f2f2
+!define TrafficFlowProperty 413f42
+
+!define RoadSignalNode f2f2f2
+!define RoadSignalProperty 413f42
+
+!define FacilityNode c4ddff
+!define FacilityProperty 0096ff
+
+!define SchoolNode fefecc
+!define SchoolProperty fdb827
+
+!define GreenZoneNode b8f1b0
+!define GreenZoneProperty 14c38e
+
+!define HospitalNode fff
+!define HospitalProperty 000
+
+!define TransparencyNode ffc4c4
+!define TransparencyProperty 850e35
+
+' Imported objects from OntoPiA
+class Thing <<owl>> #OntoPiANode
+
+class Entity <<l0>> #OntoPiANode
+class Activity <<l0>> #OntoPiANode
+class Location <<l0>> #OntoPiANode
+class EventOrSituation <<l0>> #OntoPiANode
+class Topic <<l0>> #OntoPiANode
+class Object <<l0>> #OntoPiANode
+class Characteristic <<l0>> #OntoPiANode
+class Collection <<l0>> #OntoPiANode
+class Agent <<l0>> #OntoPiANode
+
+class Address <<clvapit>> #OntoPiANode
+class City <<clvapit>> #OntoPiANode
+class StreetToponym <<clvapit>> #OntoPiANode
+class Feature <<clvapit>> #OntoPiANode
+class Country <<clvapit>> #OntoPiANode
+class Geometry <<clvapit>> #OntoPiANode
+
+class TimeInterval <<tiapit>> #OntoPiANode
+class TemporalEntity <<tiapit>> #OntoPiANode
+
+class Value <<muapit>> #OntoPiANode
+
+class OnlineContactPoint <<smapit>> #OntoPiANode
+class PhysicalContactPoint <<smapit>> #OntoPiANode
+
+class AccessCondition <<acapit>> #OntoPiANode
+
+class Person <<cpvapit>> #OntoPiANode
+class Family <<cpvapit>> #OntoPiANode
+
+class PriceSpecification <<potapit>> #OntoPiANode
+
+class PointOfInterest <<poiapit>> #OntoPiANode
+class MultiplePointOfInterest <<poiapit>> #OntoPiANode
+
+class Procedure <<pcapit>> #OntoPiANode
+
+class OSDFeature <<accoapit>> #OntoPiANode
+
+class AcademicDiscipline <<herapit>> #OntoPiANode
+
+class TransparencyResource <<transapit>> #OntoPiANode
+
+class TimeIndexedRole <<roapit>> #OntoPiANode
+
+class ConcessionAct #TransparencyNode {
+    actTitle: String
+    actNumber: String
+    paymentAmount: Float
+    actDate: Date
+}
+ConcessionAct -[#OntoPiAProperty]-> Activity : rdfs:subclassOf
+
+ConcessionAct -[#TransparencyProperty]-> Agent : hasBeneficiary
+ConcessionAct -[#TransparencyProperty]-> ConcessionActType : hasConcessionActType
+ConcessionAct -[#TransparencyProperty]-> TransparencyResource : hasTransparencyResource
+ConcessionAct -[#TransparencyProperty]-> TimeIndexedRole : hasActReferent
+ConcessionAct -[#TransparencyProperty]-> Organization : hasOrganization
+
+class ConcessionActType #TransparencyNode
+ConcessionActType -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+@enduml
+
+@startuml transparency
+hide circle
+remove @unlinked
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Thing <<owl>> #dff6ff
+
+class Entity <<l0>> #dff6ff
+class Activity <<l0>> #dff6ff
+class Location <<l0>> #dff6ff
+class EventOrSituation <<l0>> #dff6ff
+class Topic <<l0>> #dff6ff
+class Object <<l0>> #dff6ff
+class Characteristic <<l0>> #dff6ff
+class Collection <<l0>> #dff6ff
+class Agent <<l0>> #dff6ff
+
+class Address <<clvapit>> #dff6ff
+class City <<clvapit>> #dff6ff
+class StreetToponym <<clvapit>> #dff6ff
+class Feature <<clvapit>> #dff6ff
+class Country <<clvapit>> #dff6ff
+class Geometry <<clvapit>> #dff6ff
+
+class TimeInterval <<tiapit>> #dff6ff
+class TemporalEntity <<tiapit>> #dff6ff
+
+class Value <<muapit>> #dff6ff
+
+class OnlineContactPoint <<smapit>> #dff6ff
+class PhysicalContactPoint <<smapit>> #dff6ff
+
+class AccessCondition <<acapit>> #dff6ff
+
+class Person <<cpvapit>> #dff6ff
+class Family <<cpvapit>> #dff6ff
+
+class PriceSpecification <<potapit>> #dff6ff
+
+class PointOfInterest <<poiapit>> #dff6ff
+class MultiplePointOfInterest <<poiapit>> #dff6ff
+
+class Procedure <<pcapit>> #dff6ff
+
+class OSDFeature <<accoapit>> #dff6ff
+
+class AcademicDiscipline <<herapit>> #dff6ff
+
+class TransparencyResource <<transapit>> #dff6ff
+
+class TimeIndexedRole <<roapit>> #dff6ff
+
+class ConcessionAct #ffc4c4 {
+    actTitle: String
+    actNumber: String
+    paymentAmount: Float
+    actDate: Date
+}
+ConcessionAct -[#06c]-> Activity : rdfs:subclassOf
+
+ConcessionAct -[#850e35]-> Agent : hasBeneficiary
+ConcessionAct -[#850e35]-> ConcessionActType : hasConcessionActType
+ConcessionAct -[#850e35]-> TransparencyResource : hasTransparencyResource
+ConcessionAct -[#850e35]-> TimeIndexedRole : hasActReferent
+ConcessionAct -[#850e35]-> Organization : hasOrganization
+
+class ConcessionActType #ffc4c4
+ConcessionActType -[#06c]-> Topic : rdfs:subclassOf
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: it
+Country: IT
+--></g></svg>

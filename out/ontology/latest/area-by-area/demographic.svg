@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="378px" preserveAspectRatio="none" style="width:1770px;height:378px;background:#FFFFFF;" version="1.1" viewBox="0 0 1770 378" width="1770px" zoomAndPan="magnify"><defs/><g><!--MD5=[c881b25adf3665c6568c9693d41a70f3]
+class Activity--><g id="elem_Activity"><rect codeLine="54" fill="#DFF6FF" height="61.412" id="Activity" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="54" x="1292.84" y="310"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="22" x="1308.84" y="327.8281">«l0»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="1295.84" y="346.31">Activity</text><line style="stroke:#181818;stroke-width:0.5;" x1="1293.84" x2="1345.84" y1="355.412" y2="355.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="1293.84" x2="1345.84" y1="363.412" y2="363.412"/></g><!--MD5=[83e12bfc2b5a2565b891a4c8eef95e06]
+class EventOrSituation--><g id="elem_EventOrSituation"><rect codeLine="56" fill="#DFF6FF" height="61.412" id="EventOrSituation" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="120" x="317.84" y="310"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="22" x="366.84" y="327.8281">«l0»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="320.84" y="346.31">EventOrSituation</text><line style="stroke:#181818;stroke-width:0.5;" x1="318.84" x2="436.84" y1="355.412" y2="355.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="318.84" x2="436.84" y1="363.412" y2="363.412"/></g><!--MD5=[1d7f89d46fe5890de77e49145f8259d3]
+class Topic--><g id="elem_Topic"><rect codeLine="57" fill="#DFF6FF" height="61.412" id="Topic" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="42" x="110.84" y="310"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="22" x="120.84" y="327.8281">«l0»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="36" x="113.84" y="346.31">Topic</text><line style="stroke:#181818;stroke-width:0.5;" x1="111.84" x2="151.84" y1="355.412" y2="355.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="111.84" x2="151.84" y1="363.412" y2="363.412"/></g><!--MD5=[82c53a10f238a1092cf5f0b044477708]
+class Feature--><g id="elem_Feature"><rect codeLine="66" fill="#DFF6FF" height="61.412" id="Feature" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="57" x="537.34" y="310"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="47" x="542.34" y="327.8281">«clvapit»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="540.34" y="346.31">Feature</text><line style="stroke:#181818;stroke-width:0.5;" x1="538.34" x2="593.34" y1="355.412" y2="355.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="538.34" x2="593.34" y1="363.412" y2="363.412"/></g><!--MD5=[050774a5699cb74a93d9c9917fcad8a2]
+class TemporalEntity--><g id="elem_TemporalEntity"><rect codeLine="71" fill="#DFF6FF" height="61.412" id="TemporalEntity" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="108" x="1397.84" y="310"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="1431.84" y="327.8281">«tiapit»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="1400.84" y="346.31">TemporalEntity</text><line style="stroke:#181818;stroke-width:0.5;" x1="1398.84" x2="1504.84" y1="355.412" y2="355.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="1398.84" x2="1504.84" y1="363.412" y2="363.412"/></g><!--MD5=[09ce52be0ee7de43c61b6e2d59bf108b]
+class Person--><g id="elem_Person"><rect codeLine="80" fill="#DFF6FF" height="61.412" id="Person" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="53" x="887.34" y="310"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="51" x="888.34" y="327.8281">«cpvapit»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="890.84" y="346.31">Person</text><line style="stroke:#181818;stroke-width:0.5;" x1="888.34" x2="939.34" y1="355.412" y2="355.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="888.34" x2="939.34" y1="363.412" y2="363.412"/></g><!--MD5=[f3d1356aba08e5323d0044b15abb886b]
+class Family--><g id="elem_Family"><rect codeLine="81" fill="#DFF6FF" height="61.412" id="Family" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="53" x="1614.34" y="310"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="51" x="1615.34" y="327.8281">«cpvapit»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="1619.34" y="346.31">Family</text><line style="stroke:#181818;stroke-width:0.5;" x1="1615.34" x2="1666.34" y1="355.412" y2="355.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="1615.34" x2="1666.34" y1="363.412" y2="363.412"/></g><!--MD5=[4997b67969a5b03d052194d09546e8f2]
+class DemographicObservation--><g id="elem_DemographicObservation"><rect codeLine="105" fill="#F5C7A9" height="64.1358" id="DemographicObservation" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="186" x="1225.84" y="149"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="173" x="1232.34" y="168.9659">DemographicObservation</text><line style="stroke:#181818;stroke-width:0.5;" x1="1226.84" x2="1410.84" y1="178.0679" y2="178.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="174" x="1231.84" y="197.0339">observationValue: Integer</text><line style="stroke:#181818;stroke-width:0.5;" x1="1226.84" x2="1410.84" y1="205.1358" y2="205.1358"/></g><!--MD5=[777dd17f8ea587a4588387431b7ca193]
+class Citizens--><g id="elem_Citizens"><rect codeLine="115" fill="#F5C7A9" height="45.0679" id="Citizens" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="59" x="1553.34" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="1556.34" y="26.9659">Citizens</text><line style="stroke:#181818;stroke-width:0.5;" x1="1554.34" x2="1611.34" y1="36.0679" y2="36.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="1554.34" x2="1611.34" y1="44.0679" y2="44.0679"/></g><!--MD5=[45ff8516fc7e1a0027190d763b89df52]
+class CivilStatus--><g id="elem_CivilStatus"><rect codeLine="118" fill="#F5C7A9" height="45.0679" id="CivilStatus" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="76" x="327.84" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="330.84" y="26.9659">CivilStatus</text><line style="stroke:#181818;stroke-width:0.5;" x1="328.84" x2="402.84" y1="36.0679" y2="36.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="328.84" x2="402.84" y1="44.0679" y2="44.0679"/></g><!--MD5=[824cad87992831ac3f659cf488d48426]
+class CivilStatusCategory--><g id="elem_CivilStatusCategory"><rect codeLine="123" fill="#F5C7A9" height="45.0679" id="CivilStatusCategory" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="136" x="63.84" y="158.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="66.84" y="178.4659">CivilStatusCategory</text><line style="stroke:#181818;stroke-width:0.5;" x1="64.84" x2="198.84" y1="187.5679" y2="187.5679"/><line style="stroke:#181818;stroke-width:0.5;" x1="64.84" x2="198.84" y1="195.5679" y2="195.5679"/></g><!--MD5=[ccd8f51a8dcff51f6ad92f1918cc29a4]
+class Tourists--><g id="elem_Tourists"><rect codeLine="126" fill="#F5C7A9" height="45.0679" id="Tourists" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="60" x="957.84" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="960.84" y="26.9659">Tourists</text><line style="stroke:#181818;stroke-width:0.5;" x1="958.84" x2="1016.84" y1="36.0679" y2="36.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="958.84" x2="1016.84" y1="44.0679" y2="44.0679"/></g><!--MD5=[5c02b89aaf6ae5a1ad6d0bc7183061a1]
+class TouristType--><g id="elem_TouristType"><rect codeLine="131" fill="#F5C7A9" height="99.5479" id="TouristType" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="85" x="878.34" y="131"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="78" x="881.84" y="148.8281">«enumerated»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="881.34" y="167.31">TouristType</text><line style="stroke:#181818;stroke-width:0.5;" x1="879.34" x2="962.34" y1="176.412" y2="176.412"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44" x="884.34" y="195.378">Arrival</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="884.34" y="214.4459">Presence</text><line style="stroke:#181818;stroke-width:0.5;" x1="879.34" x2="962.34" y1="222.5479" y2="222.5479"/></g><!--MD5=[48c2f3700cd227fd5dcdef9a574b43c4]
+class Bookings--><g id="elem_Bookings"><rect codeLine="136" fill="#F5C7A9" height="45.0679" id="Bookings" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="67" x="1681.34" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="1684.34" y="26.9659">Bookings</text><line style="stroke:#181818;stroke-width:0.5;" x1="1682.34" x2="1747.34" y1="36.0679" y2="36.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="1682.34" x2="1747.34" y1="44.0679" y2="44.0679"/></g><!--MD5=[0c5e0719270992162baa3626dff571d7]
+class Subscribers--><g id="elem_Subscribers"><rect codeLine="139" fill="#F5C7A9" height="45.0679" id="Subscribers" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="86" x="1143.84" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="1146.84" y="26.9659">Subscribers</text><line style="stroke:#181818;stroke-width:0.5;" x1="1144.84" x2="1228.84" y1="36.0679" y2="36.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="1144.84" x2="1228.84" y1="44.0679" y2="44.0679"/></g><!--MD5=[966e0916a82432c3aedcde005e08f0e0]
+class Employees--><g id="elem_Employees"><rect codeLine="142" fill="#F5C7A9" height="45.0679" id="Employees" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="78" x="1279.84" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72" x="1282.84" y="26.9659">Employees</text><line style="stroke:#181818;stroke-width:0.5;" x1="1280.84" x2="1356.84" y1="36.0679" y2="36.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="1280.84" x2="1356.84" y1="44.0679" y2="44.0679"/></g><!--MD5=[2e702a8480a3207eab215cc20ac86139]
+class Members--><g id="elem_Members"><rect codeLine="145" fill="#F5C7A9" height="45.0679" id="Members" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="70" x="1415.84" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="1418.84" y="26.9659">Members</text><line style="stroke:#181818;stroke-width:0.5;" x1="1416.84" x2="1484.84" y1="36.0679" y2="36.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="1416.84" x2="1484.84" y1="44.0679" y2="44.0679"/></g><!--MD5=[b384a5ce0604ffbe720f6f306d5bdf68]
+class DemographicEvent--><g id="elem_DemographicEvent"><rect codeLine="149" fill="#FFDEB4" height="64.1358" id="DemographicEvent" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="134" x="443.84" y="149"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="446.84" y="168.9659">DemographicEvent</text><line style="stroke:#181818;stroke-width:0.5;" x1="444.84" x2="576.84" y1="178.0679" y2="178.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="449.84" y="197.0339">date: Date</text><line style="stroke:#181818;stroke-width:0.5;" x1="444.84" x2="576.84" y1="205.1358" y2="205.1358"/></g><!--MD5=[d0c1bce26b96f59f2fe87b9868d8f0f4]
+class CivilStatusEvent--><g id="elem_CivilStatusEvent"><rect codeLine="157" fill="#FFDEB4" height="45.0679" id="CivilStatusEvent" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="113" x="54.34" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="57.34" y="26.9659">CivilStatusEvent</text><line style="stroke:#181818;stroke-width:0.5;" x1="55.34" x2="166.34" y1="36.0679" y2="36.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="55.34" x2="166.34" y1="44.0679" y2="44.0679"/></g><!--MD5=[4a7956b31a8e98f2c19ee52c969c2c46]
+class Subscriber--><g id="elem_Subscriber"><rect codeLine="162" fill="#FFDEB4" height="45.0679" id="Subscriber" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="79" x="473.34" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="476.34" y="26.9659">Subscriber</text><line style="stroke:#181818;stroke-width:0.5;" x1="474.34" x2="551.34" y1="36.0679" y2="36.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="474.34" x2="551.34" y1="44.0679" y2="44.0679"/></g><!--MD5=[c6c2aa411a70f0170997fbec83374a43]
+class Booking--><g id="elem_Booking"><rect codeLine="165" fill="#FFDEB4" height="45.0679" id="Booking" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="60" x="614.84" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="617.84" y="26.9659">Booking</text><line style="stroke:#181818;stroke-width:0.5;" x1="615.84" x2="673.84" y1="36.0679" y2="36.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="615.84" x2="673.84" y1="44.0679" y2="44.0679"/></g><!--MD5=[dd8d9d245bbd5dd202e2c3cb158971fb]
+link DemographicObservation to Activity--><g id="link_DemographicObservation_Activity"><path codeLine="108" d="M1317.48,213.34 C1316.82,232.57 1316.28,257.71 1316.84,280 C1317.05,288.05 1317.4,296.7 1317.8,304.85 " fill="none" id="DemographicObservation-to-Activity" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="1318.06,309.85,1321.5911,300.6559,1317.8025,304.8566,1313.6017,301.068,1318.06,309.85" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="1317.84" y="275.897">rdfs:subclassOf</text></g><!--MD5=[6d834efde986d9b981e14fe0e22c3923]
+link DemographicObservation to TemporalEntity--><g id="link_DemographicObservation_TemporalEntity"><path codeLine="110" d="M1363.45,213.29 C1380.36,226.64 1398.87,243.24 1412.84,261 C1423.24,274.22 1431.93,290.65 1438.45,305.06 " fill="none" id="DemographicObservation-to-TemporalEntity" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="1440.57,309.86,1440.5757,300.0111,1438.542,305.2898,1433.2633,303.256,1440.57,309.86" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="147" x="1425.84" y="275.897">tiapit:hasTemporalEntity</text></g><!--MD5=[fd8cb2f97dc8d7483d60cf677d27e2cc]
+link DemographicObservation to Feature--><g id="link_DemographicObservation_Feature"><path codeLine="111" d="M1225.75,190.62 C1140.77,200.63 1012.8,221.15 907.84,261 C892.38,266.87 891.31,274.13 875.84,280 C779.61,316.52 657.71,331.48 599.61,336.86 " fill="none" id="DemographicObservation-to-Feature" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="594.53,337.32,603.8494,340.5057,599.5103,336.8764,603.1396,332.5372,594.53,337.32" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="160" x="908.84" y="275.897">clvapit:hasSpatialCoverage</text></g><!--MD5=[9d7ae1c56e057963cff5481e568d344d]
+link DemographicObservation to Person--><g id="link_DemographicObservation_Person"><path codeLine="112" d="M1244.5,213.09 C1197.01,232.73 1134.02,258.4 1077.84,280 C1031.9,297.67 978.2,316.88 945.11,328.56 " fill="none" id="DemographicObservation-to-Person" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="940.38,330.23,950.1972,331.019,945.0971,328.5719,947.5442,323.4717,940.38,330.23" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="161" x="1125.84" y="275.897">hasDemographicReference</text></g><!--MD5=[ea9d0bcde16307b3e2649154048544b7]
+link DemographicObservation to Family--><g id="link_DemographicObservation_Family"><path codeLine="113" d="M1411.87,195.12 C1465.27,206.11 1531.5,225.88 1581.84,261 C1598.33,272.5 1612.15,290.06 1622.26,305.66 " fill="none" id="DemographicObservation-to-Family" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="1625.01,310,1623.5848,300.2548,1622.3395,305.7729,1616.8214,304.5276,1625.01,310" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="161" x="1601.84" y="275.897">hasDemographicReference</text></g><!--MD5=[e1d41e05bf973ff9c6c0b658843857eb]
+link Citizens to DemographicObservation--><g id="link_Citizens_DemographicObservation"><path codeLine="116" d="M1569.13,52.15 C1558.42,67.57 1542.28,87.82 1523.84,101 C1491.93,123.83 1452.56,141.07 1416.88,153.52 " fill="none" id="Citizens-to-DemographicObservation" style="stroke:#D1512D;stroke-width:1.0;"/><polygon fill="#D1512D" points="1412.09,155.17,1421.902,156.0212,1416.8175,153.5418,1419.2969,148.4573,1412.09,155.17" style="stroke:#D1512D;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="1544.84" y="96.897">rdfs:subclassOf</text></g><!--MD5=[c85f9976e5abc29b560611b0c2d18b26]
+link CivilStatus to DemographicObservation--><g id="link_CivilStatus_DemographicObservation"><path codeLine="119" d="M404.17,40.74 C420.07,44.7 438.76,49 455.84,52 C571.71,72.37 602.64,63.66 718.84,82 C760.95,88.64 770.89,93.49 812.84,101 C954.21,126.31 1118.62,151.13 1220.72,166 " fill="none" id="CivilStatus-to-DemographicObservation" style="stroke:#D1512D;stroke-width:1.0;"/><polygon fill="#D1512D" points="1225.84,166.75,1217.5195,161.4803,1220.8934,166.0209,1216.3529,169.3948,1225.84,166.75" style="stroke:#D1512D;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="813.84" y="96.897">rdfs:subclassOf</text></g><!--MD5=[436c7c28c8495798e646ab412c728995]
+link CivilStatus to CivilStatusCategory--><g id="link_CivilStatus_CivilStatusCategory"><path codeLine="121" d="M347.22,52.11 C333.52,67.12 313.86,86.88 293.84,101 C262.16,123.35 223.2,142.57 191.42,156.46 " fill="none" id="CivilStatus-to-CivilStatusCategory" style="stroke:#D1512D;stroke-width:1.0;"/><polygon fill="#D1512D" points="186.79,158.47,196.6384,158.5643,191.3783,156.4832,193.4595,151.2231,186.79,158.47" style="stroke:#D1512D;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="138" x="316.84" y="96.897">hasCivilStatusCategory</text></g><!--MD5=[a68f523d35667694a1ff8f4719cce9b8]
+link CivilStatusCategory to Topic--><g id="link_CivilStatusCategory_Topic"><path codeLine="124" d="M131.84,203.57 C131.84,229.61 131.84,273.76 131.84,304.65 " fill="none" id="CivilStatusCategory-to-Topic" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="131.84,309.87,135.84,300.87,131.84,304.87,127.84,300.87,131.84,309.87" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="132.84" y="275.897">rdfs:subclassOf</text></g><!--MD5=[9fdf3cc0303e8ab0aa71d8a43b8f6a6d]
+link Tourists to DemographicObservation--><g id="link_Tourists_DemographicObservation"><path codeLine="127" d="M1017.95,51.03 C1040.85,66.09 1073.49,86.37 1103.84,101 C1141.04,118.93 1183.44,135.31 1220.69,148.45 " fill="none" id="Tourists-to-DemographicObservation" style="stroke:#D1512D;stroke-width:1.0;"/><polygon fill="#D1512D" points="1225.68,150.2,1218.5094,143.4485,1220.9614,148.5463,1215.8636,150.9983,1225.68,150.2" style="stroke:#D1512D;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="1104.84" y="96.897">rdfs:subclassOf</text></g><!--MD5=[4be2fae78453f717ac3fcec1071c1872]
+link Tourists to TouristType--><g id="link_Tourists_TouristType"><path codeLine="129" d="M957.58,44.35 C942.71,52.9 926.22,65.44 917.84,82 C911.12,95.31 909.34,110.98 909.92,125.84 " fill="none" id="Tourists-to-TouristType" style="stroke:#D1512D;stroke-width:1.0;"/><polygon fill="#D1512D" points="910.2,130.85,913.6785,121.6359,909.9139,125.8582,905.6916,122.0936,910.2,130.85" style="stroke:#D1512D;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="92" x="918.84" y="96.897">hasTouristType</text></g><!--MD5=[6f6c91e4a241a22b3f6d09b8b67b9dd4]
+link Bookings to DemographicObservation--><g id="link_Bookings_DemographicObservation"><path codeLine="137" d="M1698.5,52.16 C1685.41,68.01 1665.67,88.79 1643.84,101 C1573.72,140.24 1484.43,160.14 1417.19,170.15 " fill="none" id="Bookings-to-DemographicObservation" style="stroke:#D1512D;stroke-width:1.0;"/><polygon fill="#D1512D" points="1411.98,170.91,1421.4585,173.5855,1416.9289,170.1969,1420.3175,165.6673,1411.98,170.91" style="stroke:#D1512D;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="1668.84" y="96.897">rdfs:subclassOf</text></g><!--MD5=[758058cfd9e9601cab546ca1ed7a300c]
+link Subscribers to DemographicObservation--><g id="link_Subscribers_DemographicObservation"><path codeLine="140" d="M1192.11,52.08 C1196.47,66.89 1203.77,86.42 1214.84,101 C1227.8,118.06 1245.37,133.29 1262.37,145.72 " fill="none" id="Subscribers-to-DemographicObservation" style="stroke:#D1512D;stroke-width:1.0;"/><polygon fill="#D1512D" points="1266.67,148.81,1261.6995,140.3074,1262.611,145.8904,1257.028,146.8019,1266.67,148.81" style="stroke:#D1512D;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="1215.84" y="96.897">rdfs:subclassOf</text></g><!--MD5=[2921b8b8e804ae44d5a537587e1b5947]
+link Employees to DemographicObservation--><g id="link_Employees_DemographicObservation"><path codeLine="143" d="M1317.31,52.04 C1316.73,61.26 1316.13,72.15 1315.84,82 C1315.25,102.37 1315.87,125.13 1316.7,143.58 " fill="none" id="Employees-to-DemographicObservation" style="stroke:#D1512D;stroke-width:1.0;"/><polygon fill="#D1512D" points="1316.93,148.66,1320.5148,139.4867,1316.7017,143.6652,1312.5232,139.8521,1316.93,148.66" style="stroke:#D1512D;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="1316.84" y="96.897">rdfs:subclassOf</text></g><!--MD5=[fed04300ffd65da95ea06e72b4486b7f]
+link Members to DemographicObservation--><g id="link_Members_DemographicObservation"><path codeLine="146" d="M1441.42,52.11 C1434.45,66.74 1424.07,86.06 1411.84,101 C1398.61,117.17 1381.76,132.61 1366.06,145.48 " fill="none" id="Members-to-DemographicObservation" style="stroke:#D1512D;stroke-width:1.0;"/><polygon fill="#D1512D" points="1362.09,148.69,1371.6031,146.1402,1365.9776,145.5457,1366.5721,139.9201,1362.09,148.69" style="stroke:#D1512D;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="1424.84" y="96.897">rdfs:subclassOf</text></g><!--MD5=[ce1dbfea07c2dab3d6c25303185688c4]
+link DemographicEvent to EventOrSituation--><g id="link_DemographicEvent_EventOrSituation"><path codeLine="152" d="M454.8,213.06 C436.06,225.8 416.48,242.05 402.84,261 C393.62,273.82 387.7,290.19 383.95,304.66 " fill="none" id="DemographicEvent-to-EventOrSituation" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="382.67,309.89,388.6903,302.0954,383.8558,305.0326,380.9185,300.1981,382.67,309.89" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="403.84" y="275.897">rdfs:subclassOf</text></g><!--MD5=[2ea1971c1658a5f7f250620666abbab4]
+link DemographicEvent to Person--><g id="link_DemographicEvent_Person"><path codeLine="154" d="M575.72,213.05 C605.43,227.42 641.04,244.86 672.84,261 C688.98,269.19 692.07,273.22 708.84,280 C768.2,303.99 840.79,322.69 881.73,332.32 " fill="none" id="DemographicEvent-to-Person" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="887.05,333.57,879.1888,327.6369,882.1797,332.4384,877.3782,335.4293,887.05,333.57" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="161" x="709.84" y="275.897">hasDemographicReference</text></g><!--MD5=[fe3779d7ec2091e753be133e1b5bac16]
+link DemographicEvent to Feature--><g id="link_DemographicEvent_Feature"><path codeLine="155" d="M503.07,213.18 C499.66,233.04 498.16,258.9 506.84,280 C512.42,293.54 522.73,305.63 533.19,315.31 " fill="none" id="DemographicEvent-to-Feature" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="537.04,318.77,533.0091,309.7838,533.3172,315.4323,527.6687,315.7404,537.04,318.77" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="160" x="507.84" y="275.897">clvapit:hasSpatialCoverage</text></g><!--MD5=[49f64862278d857d3eda898ed82c2cf2]
+link CivilStatusEvent to DemographicEvent--><g id="link_CivilStatusEvent_DemographicEvent"><path codeLine="158" d="M130.7,52.04 C146.39,67.82 169.62,88.57 193.84,101 C272.16,141.2 372.04,161.69 438.54,171.6 " fill="none" id="CivilStatusEvent-to-DemographicEvent" style="stroke:#DF7861;stroke-width:1.0;"/><polygon fill="#DF7861" points="443.67,172.35,435.3473,167.0838,438.7231,171.6229,434.184,174.9988,443.67,172.35" style="stroke:#DF7861;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="194.84" y="96.897">rdfs:subclassOf</text></g><!--MD5=[33968eea83ad33fb2ffdeb1f8b32f692]
+link CivilStatusEvent to CivilStatusCategory--><g id="link_CivilStatusEvent_CivilStatusCategory"><path codeLine="160" d="M54.09,49.08 C28.35,60.95 6,78.38 17.84,101 C30.41,125 53.95,143.16 76.39,155.98 " fill="none" id="CivilStatusEvent-to-CivilStatusCategory" style="stroke:#D1512D;stroke-width:1.0;"/><polygon fill="#D1512D" points="80.86,158.47,74.9352,150.6026,76.4892,156.0418,71.05,157.5958,80.86,158.47" style="stroke:#D1512D;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="138" x="18.84" y="96.897">hasCivilStatusCategory</text></g><!--MD5=[54699c2704fe84e64c65817b2032c11d]
+link Subscriber to DemographicEvent--><g id="link_Subscriber_DemographicEvent"><path codeLine="163" d="M511.31,52.04 C510.73,61.26 510.13,72.15 509.84,82 C509.25,102.37 509.43,125.12 509.79,143.57 " fill="none" id="Subscriber-to-DemographicEvent" style="stroke:#DF7861;stroke-width:1.0;"/><polygon fill="#DF7861" points="509.9,148.66,513.6933,139.5709,509.7857,143.6613,505.6954,139.7538,509.9,148.66" style="stroke:#DF7861;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="510.84" y="96.897">rdfs:subclassOf</text></g><!--MD5=[1c2f2819b0ac3b62ca1ac78092142a07]
+link Booking to DemographicEvent--><g id="link_Booking_DemographicEvent"><path codeLine="166" d="M635.47,52.15 C628.52,66.8 618.15,86.13 605.84,101 C592.36,117.3 575.16,132.77 559.11,145.63 " fill="none" id="Booking-to-DemographicEvent" style="stroke:#DF7861;stroke-width:1.0;"/><polygon fill="#DF7861" points="555.06,148.84,564.5933,146.3667,558.9727,145.727,559.6124,140.1064,555.06,148.84" style="stroke:#DF7861;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="619.84" y="96.897">rdfs:subclassOf</text></g><!--MD5=[4eea9caa1af1cb3fe65952ffde988be8]
+@startuml OntoIM
+hide circle
+remove @unlinked
+
+!define OntoPiANode dff6ff
+!define OntoPiAProperty 06c
+
+!define OntoPiANodeEdited dff6ff
+
+!define DemographicObservationNode f5c7a9
+!define DemographicObservationProperty d1512d
+
+!define DemographicEventNode ffdeb4
+!define DemographicEventProperty df7861
+
+!define WasteNode eddfb3
+!define WasteProperty 61481c
+
+!define OrganizationNode ffdede
+!define OrganizationProperty 7a4495
+
+!define HeritageNode ffdede
+!define HeritageProperty 7a4495
+
+!define RoadAccidentNode f2f2f2
+!define RoadAccidentProperty 413f42
+
+!define VehicleNode f2f2f2
+!define VehicleProperty 413f42
+
+!define TrafficFlowNode f2f2f2
+!define TrafficFlowProperty 413f42
+
+!define RoadSignalNode f2f2f2
+!define RoadSignalProperty 413f42
+
+!define FacilityNode c4ddff
+!define FacilityProperty 0096ff
+
+!define SchoolNode fefecc
+!define SchoolProperty fdb827
+
+!define GreenZoneNode b8f1b0
+!define GreenZoneProperty 14c38e
+
+!define HospitalNode fff
+!define HospitalProperty 000
+
+!define TransparencyNode ffc4c4
+!define TransparencyProperty 850e35
+
+class Thing <<owl>> #OntoPiANode
+
+class Entity <<l0>> #OntoPiANode
+class Activity <<l0>> #OntoPiANode
+class Location <<l0>> #OntoPiANode
+class EventOrSituation <<l0>> #OntoPiANode
+class Topic <<l0>> #OntoPiANode
+class Object <<l0>> #OntoPiANode
+class Characteristic <<l0>> #OntoPiANode
+class Collection <<l0>> #OntoPiANode
+class Agent <<l0>> #OntoPiANode
+
+class Address <<clvapit>> #OntoPiANode
+class City <<clvapit>> #OntoPiANode
+class StreetToponym <<clvapit>> #OntoPiANode
+class Feature <<clvapit>> #OntoPiANode
+class Country <<clvapit>> #OntoPiANode
+class Geometry <<clvapit>> #OntoPiANode
+
+class TimeInterval <<tiapit>> #OntoPiANode
+class TemporalEntity <<tiapit>> #OntoPiANode
+
+class Value <<muapit>> #OntoPiANode
+
+class OnlineContactPoint <<smapit>> #OntoPiANode
+class PhysicalContactPoint <<smapit>> #OntoPiANode
+
+class AccessCondition <<acapit>> #OntoPiANode
+
+class Person <<cpvapit>> #OntoPiANode
+class Family <<cpvapit>> #OntoPiANode
+
+class PriceSpecification <<potapit>> #OntoPiANode
+
+class PointOfInterest <<poiapit>> #OntoPiANode
+class MultiplePointOfInterest <<poiapit>> #OntoPiANode
+
+class Procedure <<pcapit>> #OntoPiANode
+
+class OSDFeature <<accoapit>> #OntoPiANode
+
+class AcademicDiscipline <<herapit>> #OntoPiANode
+
+class TransparencyResource <<transapit>> #OntoPiANode
+
+class TimeIndexedRole <<roapit>> #OntoPiANode
+
+' Demographic Observation
+' A demographic observation can describe the demographic composition of an entity during time
+' An example can be the number of subscribers to an event, emoployees of an organization, members of an association
+' For a country it can be the number of citizens, weddings, deaths etc...
+' A demo observation comes with its value and a demo prototype, which describes the type of person o family counted
+' A demo observation can also be releated to a spatial object, which describes the spatial delimitation of the observation
+' For example, we can count the number of males in a specific area, that can be a city, a borough, a street, etc...
+class DemographicObservation #DemographicObservationNode {
+    observationValue: Integer
+}
+DemographicObservation -[#OntoPiAProperty]-> Activity : rdfs:subclassOf
+
+DemographicObservation -[#OntoPiAProperty]-> TemporalEntity : tiapit:hasTemporalEntity
+DemographicObservation -[#OntoPiAProperty]-> Feature : clvapit:hasSpatialCoverage
+DemographicObservation -[#OntoPiAProperty]-> Person : hasDemographicReference
+DemographicObservation -[#OntoPiAProperty]-> Family : hasDemographicReference
+
+class Citizens #DemographicObservationNode
+Citizens -[#DemographicObservationProperty]-> DemographicObservation : rdfs:subclassOf
+
+class CivilStatus #DemographicObservationNode
+CivilStatus -[#DemographicObservationProperty]-> DemographicObservation : rdfs:subclassOf
+
+CivilStatus -[#DemographicObservationProperty]-> CivilStatusCategory : hasCivilStatusCategory
+
+class CivilStatusCategory #DemographicObservationNode
+CivilStatusCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+
+class Tourists #DemographicObservationNode
+Tourists -[#DemographicObservationProperty]-> DemographicObservation : rdfs:subclassOf
+
+Tourists -[#DemographicObservationProperty]-> TouristType : hasTouristType
+
+class TouristType <<enumerated>> #DemographicObservationNode {
+    Arrival
+    Presence
+}
+
+class Bookings #DemographicObservationNode
+Bookings -[#DemographicObservationProperty]-> DemographicObservation : rdfs:subclassOf
+
+class Subscribers #DemographicObservationNode
+Subscribers -[#DemographicObservationProperty]-> DemographicObservation : rdfs:subclassOf
+
+class Employees #DemographicObservationNode
+Employees -[#DemographicObservationProperty]-> DemographicObservation : rdfs:subclassOf
+
+class Members #DemographicObservationNode
+Members -[#DemographicObservationProperty]-> DemographicObservation : rdfs:subclassOf
+
+' A demo event represents a wedding, a death, a birth, offering a non aggregated view of a demo observation
+class DemographicEvent #DemographicEventNode {
+    date: Date
+}
+DemographicEvent -[#OntoPiAProperty]-> EventOrSituation : rdfs:subclassOf
+
+DemographicEvent -[#OntoPiAProperty]-> Person : hasDemographicReference
+DemographicEvent -[#OntoPiAProperty]-> Feature : clvapit:hasSpatialCoverage
+
+class CivilStatusEvent #DemographicEventNode
+CivilStatusEvent -[#DemographicEventProperty]-> DemographicEvent : rdfs:subclassOf
+
+CivilStatusEvent -[#DemographicObservationProperty]-> CivilStatusCategory : hasCivilStatusCategory
+
+class Subscriber #DemographicEventNode
+Subscriber -[#DemographicEventProperty]-> DemographicEvent : rdfs:subclassOf
+
+class Booking #DemographicEventNode
+Booking -[#DemographicEventProperty]-> DemographicEvent : rdfs:subclassOf
+@end
+
+@startuml OntoIM
+hide circle
+remove @unlinked
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Thing <<owl>> #dff6ff
+
+class Entity <<l0>> #dff6ff
+class Activity <<l0>> #dff6ff
+class Location <<l0>> #dff6ff
+class EventOrSituation <<l0>> #dff6ff
+class Topic <<l0>> #dff6ff
+class Object <<l0>> #dff6ff
+class Characteristic <<l0>> #dff6ff
+class Collection <<l0>> #dff6ff
+class Agent <<l0>> #dff6ff
+
+class Address <<clvapit>> #dff6ff
+class City <<clvapit>> #dff6ff
+class StreetToponym <<clvapit>> #dff6ff
+class Feature <<clvapit>> #dff6ff
+class Country <<clvapit>> #dff6ff
+class Geometry <<clvapit>> #dff6ff
+
+class TimeInterval <<tiapit>> #dff6ff
+class TemporalEntity <<tiapit>> #dff6ff
+
+class Value <<muapit>> #dff6ff
+
+class OnlineContactPoint <<smapit>> #dff6ff
+class PhysicalContactPoint <<smapit>> #dff6ff
+
+class AccessCondition <<acapit>> #dff6ff
+
+class Person <<cpvapit>> #dff6ff
+class Family <<cpvapit>> #dff6ff
+
+class PriceSpecification <<potapit>> #dff6ff
+
+class PointOfInterest <<poiapit>> #dff6ff
+class MultiplePointOfInterest <<poiapit>> #dff6ff
+
+class Procedure <<pcapit>> #dff6ff
+
+class OSDFeature <<accoapit>> #dff6ff
+
+class AcademicDiscipline <<herapit>> #dff6ff
+
+class TransparencyResource <<transapit>> #dff6ff
+
+class TimeIndexedRole <<roapit>> #dff6ff
+
+class DemographicObservation #f5c7a9 {
+    observationValue: Integer
+}
+DemographicObservation -[#06c]-> Activity : rdfs:subclassOf
+
+DemographicObservation -[#06c]-> TemporalEntity : tiapit:hasTemporalEntity
+DemographicObservation -[#06c]-> Feature : clvapit:hasSpatialCoverage
+DemographicObservation -[#06c]-> Person : hasDemographicReference
+DemographicObservation -[#06c]-> Family : hasDemographicReference
+
+class Citizens #f5c7a9
+Citizens -[#d1512d]-> DemographicObservation : rdfs:subclassOf
+
+class CivilStatus #f5c7a9
+CivilStatus -[#d1512d]-> DemographicObservation : rdfs:subclassOf
+
+CivilStatus -[#d1512d]-> CivilStatusCategory : hasCivilStatusCategory
+
+class CivilStatusCategory #f5c7a9
+CivilStatusCategory -[#06c]-> Topic : rdfs:subclassOf
+
+class Tourists #f5c7a9
+Tourists -[#d1512d]-> DemographicObservation : rdfs:subclassOf
+
+Tourists -[#d1512d]-> TouristType : hasTouristType
+
+class TouristType <<enumerated>> #f5c7a9 {
+    Arrival
+    Presence
+}
+
+class Bookings #f5c7a9
+Bookings -[#d1512d]-> DemographicObservation : rdfs:subclassOf
+
+class Subscribers #f5c7a9
+Subscribers -[#d1512d]-> DemographicObservation : rdfs:subclassOf
+
+class Employees #f5c7a9
+Employees -[#d1512d]-> DemographicObservation : rdfs:subclassOf
+
+class Members #f5c7a9
+Members -[#d1512d]-> DemographicObservation : rdfs:subclassOf
+
+class DemographicEvent #ffdeb4 {
+    date: Date
+}
+DemographicEvent -[#06c]-> EventOrSituation : rdfs:subclassOf
+
+DemographicEvent -[#06c]-> Person : hasDemographicReference
+DemographicEvent -[#06c]-> Feature : clvapit:hasSpatialCoverage
+
+class CivilStatusEvent #ffdeb4
+CivilStatusEvent -[#df7861]-> DemographicEvent : rdfs:subclassOf
+
+CivilStatusEvent -[#d1512d]-> CivilStatusCategory : hasCivilStatusCategory
+
+class Subscriber #ffdeb4
+Subscriber -[#df7861]-> DemographicEvent : rdfs:subclassOf
+
+class Booking #ffdeb4
+Booking -[#df7861]-> DemographicEvent : rdfs:subclassOf
+@end
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: it
+Country: IT
+--></g></svg>

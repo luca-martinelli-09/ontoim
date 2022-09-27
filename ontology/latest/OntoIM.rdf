@@ -173,7 +173,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/detectedBy">
         <rdfs:domain rdf:resource="https://w3id.org/ontoim/RoadAccident"/>
-        <rdfs:range rdf:resource="https://w3id.org/ontoim/RevelationUnit"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoim/RelevationUnit"/>
         <rdfs:label xml:lang="en">detected by</rdfs:label>
         <rdfs:label xml:lang="it">rilevato da</rdfs:label>
     </owl:ObjectProperty>
@@ -908,17 +908,6 @@
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/Transparency/TransparencyResource"/>
         <rdfs:label xml:lang="it">ha risorsa</rdfs:label>
         <rdfs:label xml:lang="en">has transparency resource</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/ontoim/hasVehicle -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/ontoim/hasVehicle">
-        <rdfs:domain rdf:resource="https://w3id.org/ontoim/InvolvedVehicle"/>
-        <rdfs:range rdf:resource="https://w3id.org/ontoim/Vehicle"/>
-        <rdfs:label xml:lang="it">ha veicolo</rdfs:label>
-        <rdfs:label xml:lang="en">has vehicle</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2314,6 +2303,7 @@
 
     <owl:Class rdf:about="https://w3id.org/ontoim/InvolvedVehicle">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/InvolvedEntity"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoim/Vehicle"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasBackPassenger"/>
@@ -2337,13 +2327,6 @@
                 <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasConducent"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="https://w3id.org/ontoim/InvolvedPerson"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoim/hasVehicle"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/ontoim/Vehicle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Questa classe rappresenta il veicolo coinvolto in un incidente stradale.</rdfs:comment>
@@ -2653,14 +2636,14 @@
     
 
 
-    <!-- https://w3id.org/ontoim/RevelationUnit -->
+    <!-- https://w3id.org/ontoim/RelevationUnit -->
 
-    <owl:Class rdf:about="https://w3id.org/ontoim/RevelationUnit">
+    <owl:Class rdf:about="https://w3id.org/ontoim/RelevationUnit">
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
-        <rdfs:comment xml:lang="it">Questa classe rappresenta l&apos;unità che ha rilevato l&apos;incidente (polizia, carabinieri, ecc...). Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/revelation-units</rdfs:comment>
-        <rdfs:comment xml:lang="en">This class represents the unit that detected the incident (police, carabinieri, etc...). The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/revelation-units</rdfs:comment>
-        <rdfs:label xml:lang="en">Revelation Unit</rdfs:label>
-        <rdfs:label xml:lang="it">Unità di Rivelazione</rdfs:label>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta l&apos;unità che ha rilevato l&apos;incidente (polizia, carabinieri, ecc...). Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/relevation-units</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the unit that detected the incident (police, carabinieri, etc...). The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/relevation-units</rdfs:comment>
+        <rdfs:label xml:lang="en">Relevation Unit</rdfs:label>
+        <rdfs:label xml:lang="it">Unità di Rilevazione</rdfs:label>
     </owl:Class>
     
 
@@ -2739,7 +2722,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoim/detectedBy"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/RevelationUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoim/RelevationUnit"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>

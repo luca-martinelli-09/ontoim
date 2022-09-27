@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="704px" preserveAspectRatio="none" style="width:2199px;height:704px;background:#FFFFFF;" version="1.1" viewBox="0 0 2199 704" width="2199px" zoomAndPan="magnify"><defs/><g><!--MD5=[c881b25adf3665c6568c9693d41a70f3]
+class Activity--><g id="elem_Activity"><rect codeLine="55" fill="#DFF6FF" height="61.412" id="Activity" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="54" x="1087.5" y="485"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="22" x="1103.5" y="502.8281">«l0»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="1090.5" y="521.31">Activity</text><line style="stroke:#181818;stroke-width:0.5;" x1="1088.5" x2="1140.5" y1="530.412" y2="530.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="1088.5" x2="1140.5" y1="538.412" y2="538.412"/></g><!--MD5=[4f1f3706c1a355a8488e154afcaed5df]
+class Location--><g id="elem_Location"><rect codeLine="56" fill="#DFF6FF" height="61.412" id="Location" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="62" x="1568.5" y="636"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="22" x="1588.5" y="653.8281">«l0»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="1571.5" y="672.31">Location</text><line style="stroke:#181818;stroke-width:0.5;" x1="1569.5" x2="1629.5" y1="681.412" y2="681.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="1569.5" x2="1629.5" y1="689.412" y2="689.412"/></g><!--MD5=[1d7f89d46fe5890de77e49145f8259d3]
+class Topic--><g id="elem_Topic"><rect codeLine="58" fill="#DFF6FF" height="61.412" id="Topic" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="42" x="282.5" y="485"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="22" x="292.5" y="502.8281">«l0»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="36" x="285.5" y="521.31">Topic</text><line style="stroke:#181818;stroke-width:0.5;" x1="283.5" x2="323.5" y1="530.412" y2="530.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="283.5" x2="323.5" y1="538.412" y2="538.412"/></g><!--MD5=[aa7f586532e18719e6cefa70fc650583]
+class Object--><g id="elem_Object"><rect codeLine="59" fill="#DFF6FF" height="61.412" id="Object" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="50" x="1991.5" y="636"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="22" x="2005.5" y="653.8281">«l0»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44" x="1994.5" y="672.31">Object</text><line style="stroke:#181818;stroke-width:0.5;" x1="1992.5" x2="2040.5" y1="681.412" y2="681.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="1992.5" x2="2040.5" y1="689.412" y2="689.412"/></g><!--MD5=[0f39e4cb6f03951afbf6d14bd2505654]
+class Address--><g id="elem_Address"><rect codeLine="64" fill="#DFF6FF" height="61.412" id="Address" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="61" x="1701" y="485"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="47" x="1708" y="502.8281">«clvapit»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="1704" y="521.31">Address</text><line style="stroke:#181818;stroke-width:0.5;" x1="1702" x2="1761" y1="530.412" y2="530.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="1702" x2="1761" y1="538.412" y2="538.412"/></g><!--MD5=[4bec8ac568776347aae0f1471b21fd4f]
+class TimeInterval--><g id="elem_TimeInterval"><rect codeLine="71" fill="#DFF6FF" height="61.412" id="TimeInterval" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="91" x="537" y="485"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="562.5" y="502.8281">«tiapit»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="540" y="521.31">TimeInterval</text><line style="stroke:#181818;stroke-width:0.5;" x1="538" x2="627" y1="530.412" y2="530.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="538" x2="627" y1="538.412" y2="538.412"/></g><!--MD5=[1e49942cf8c53e243c23473821ed8fcd]
+class PriceSpecification--><g id="elem_PriceSpecification"><rect codeLine="84" fill="#DFF6FF" height="61.412" id="PriceSpecification" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="125" x="663" y="485"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="51" x="700" y="502.8281">«potapit»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="666" y="521.31">PriceSpecification</text><line style="stroke:#181818;stroke-width:0.5;" x1="664" x2="787" y1="530.412" y2="530.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="664" x2="787" y1="538.412" y2="538.412"/></g><!--MD5=[c544f594de6a1d582b9673514b95f201]
+class MultiplePointOfInterest--><g id="elem_MultiplePointOfInterest"><rect codeLine="87" fill="#DFF6FF" height="61.412" id="MultiplePointOfInterest" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="165" x="7" y="132.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="50" x="64.5" y="150.3281">«poiapit»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="10" y="168.81">MultiplePointOfInterest</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="171" y1="177.912" y2="177.912"/><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="171" y1="185.912" y2="185.912"/></g><!--MD5=[aa28dc560569f6b6773046325271f244]
+class AcademicDiscipline--><g id="elem_AcademicDiscipline"><rect codeLine="93" fill="#DFF6FF" height="61.412" id="AcademicDiscipline" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="137" x="824" y="485"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="51" x="867" y="502.8281">«herapit»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="827" y="521.31">AcademicDiscipline</text><line style="stroke:#181818;stroke-width:0.5;" x1="825" x2="960" y1="530.412" y2="530.412"/><line style="stroke:#181818;stroke-width:0.5;" x1="825" x2="960" y1="538.412" y2="538.412"/></g><!--MD5=[10a9fff9df9a76a22f65fd5d58adb785]
+class School--><g id="elem_School"><rect codeLine="99" fill="#FEFECC" height="64.1358" id="School" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="89" x="374" y="131"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44" x="396.5" y="150.9659">School</text><line style="stroke:#181818;stroke-width:0.5;" x1="375" x2="462" y1="160.0679" y2="160.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="380" y="179.0339">schoolCode</text><line style="stroke:#181818;stroke-width:0.5;" x1="375" x2="462" y1="187.1358" y2="187.1358"/></g><!--MD5=[3e49f4803b554c92c0b70fce4d7094e5]
+class Facility--><g id="elem_Facility"><rect fill="#F1F1F1" height="45.0679" id="Facility" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="52" x="145.5" y="312"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="148.5" y="331.9659">Facility</text><line style="stroke:#181818;stroke-width:0.5;" x1="146.5" x2="196.5" y1="341.0679" y2="341.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="146.5" x2="196.5" y1="349.0679" y2="349.0679"/></g><!--MD5=[1f8433caeefcec49a598c794021ac803]
+class SchoolType--><g id="elem_SchoolType"><rect codeLine="116" fill="#FEFECC" height="45.0679" id="SchoolType" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="262.5" y="312"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="76" x="265.5" y="331.9659">SchoolType</text><line style="stroke:#181818;stroke-width:0.5;" x1="263.5" x2="343.5" y1="341.0679" y2="341.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="263.5" x2="343.5" y1="349.0679" y2="349.0679"/></g><!--MD5=[4066b0363c5a91ff3b6e03e0428953a9]
+class Course--><g id="elem_Course"><rect codeLine="126" fill="#FEFECC" height="121.3396" id="Course" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="168" x="724.5" y="274"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="785" y="293.9659">Course</text><line style="stroke:#181818;stroke-width:0.5;" x1="725.5" x2="891.5" y1="303.0679" y2="303.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="730.5" y="322.0339">courseCode</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="730.5" y="341.1018">name</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="76" x="730.5" y="360.1697">description</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="156" x="730.5" y="379.2376">durationHours: Integer</text><line style="stroke:#181818;stroke-width:0.5;" x1="725.5" x2="891.5" y1="387.3396" y2="387.3396"/></g><!--MD5=[0c5e0719270992162baa3626dff571d7]
+class Subscribers--><g id="elem_Subscribers"><rect fill="#F1F1F1" height="45.0679" id="Subscribers" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="86" x="395.5" y="493"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="398.5" y="512.9659">Subscribers</text><line style="stroke:#181818;stroke-width:0.5;" x1="396.5" x2="480.5" y1="522.0679" y2="522.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="396.5" x2="480.5" y1="530.0679" y2="530.0679"/></g><!--MD5=[4a7956b31a8e98f2c19ee52c969c2c46]
+class Subscriber--><g id="elem_Subscriber"><rect fill="#F1F1F1" height="45.0679" id="Subscriber" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="79" x="1327" y="493"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="1330" y="512.9659">Subscriber</text><line style="stroke:#181818;stroke-width:0.5;" x1="1328" x2="1405" y1="522.0679" y2="522.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="1328" x2="1405" y1="530.0679" y2="530.0679"/></g><!--MD5=[acfc8d10ec8a0f1cd252890e6e8890cc]
+class ComprehensiveInstitute--><g id="elem_ComprehensiveInstitute"><rect codeLine="109" fill="#FEFECC" height="45.0679" id="ComprehensiveInstitute" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="168" x="137.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="140.5" y="26.9659">ComprehensiveInstitute</text><line style="stroke:#181818;stroke-width:0.5;" x1="138.5" x2="304.5" y1="36.0679" y2="36.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="138.5" x2="304.5" y1="44.0679" y2="44.0679"/></g><!--MD5=[64bf1ac43fb03c2143ba35ecf6fc656b]
+class PublicSchool--><g id="elem_PublicSchool"><rect codeLine="119" fill="#FEFECC" height="45.0679" id="PublicSchool" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="91" x="439" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="442" y="26.9659">PublicSchool</text><line style="stroke:#181818;stroke-width:0.5;" x1="440" x2="529" y1="36.0679" y2="36.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="440" x2="529" y1="44.0679" y2="44.0679"/></g><!--MD5=[63ceec7ca2a3ebd7705b7e880e8f4c52]
+class PrivateSchool--><g id="elem_PrivateSchool"><rect codeLine="122" fill="#FEFECC" height="45.0679" id="PrivateSchool" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="96" x="568.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="571.5" y="26.9659">PrivateSchool</text><line style="stroke:#181818;stroke-width:0.5;" x1="569.5" x2="663.5" y1="36.0679" y2="36.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="569.5" x2="663.5" y1="44.0679" y2="44.0679"/></g><!--MD5=[07c7e514efcb6880c7462dff01bcaca6]
+class Classroom--><g id="elem_Classroom"><rect codeLine="142" fill="#FEFECC" height="64.1358" id="Classroom" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="76" x="1561.5" y="483.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="1564.5" y="503.4659">Classroom</text><line style="stroke:#181818;stroke-width:0.5;" x1="1562.5" x2="1636.5" y1="512.5679" y2="512.5679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="1567.5" y="531.5339">name</text><line style="stroke:#181818;stroke-width:0.5;" x1="1562.5" x2="1636.5" y1="539.6358" y2="539.6358"/></g><!--MD5=[a8f19c383472573ae1152bd465aa6803]
+class PhysicalClassroom--><g id="elem_PhysicalClassroom"><rect codeLine="147" fill="#FEFECC" height="45.0679" id="PhysicalClassroom" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="130" x="1666.5" y="312"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124" x="1669.5" y="331.9659">PhysicalClassroom</text><line style="stroke:#181818;stroke-width:0.5;" x1="1667.5" x2="1795.5" y1="341.0679" y2="341.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="1667.5" x2="1795.5" y1="349.0679" y2="349.0679"/></g><!--MD5=[67f9eb6aff42df207fbfebaf52fd9dab]
+class VirtualClassroom--><g id="elem_VirtualClassroom"><rect codeLine="152" fill="#FEFECC" height="45.0679" id="VirtualClassroom" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="120" x="1893.5" y="312"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="1896.5" y="331.9659">VirtualClassroom</text><line style="stroke:#181818;stroke-width:0.5;" x1="1894.5" x2="2012.5" y1="341.0679" y2="341.0679"/><line style="stroke:#181818;stroke-width:0.5;" x1="1894.5" x2="2012.5" y1="349.0679" y2="349.0679"/></g><!--MD5=[be106960b2d3a9623f9892abd15decb3]
+class VideoCommunicationService--><g id="elem_VideoCommunicationService"><rect codeLine="157" fill="#FEFECC" height="83.2038" id="VideoCommunicationService" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="197" x="1918" y="474"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="191" x="1921" y="493.9659">VideoCommunicationService</text><line style="stroke:#181818;stroke-width:0.5;" x1="1919" x2="2114" y1="503.0679" y2="503.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="1924" y="522.0339">name</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="1924" y="541.1018">serviceURL: URI</text><line style="stroke:#181818;stroke-width:0.5;" x1="1919" x2="2114" y1="549.2038" y2="549.2038"/></g><!--MD5=[bf0e8f2dcc986a593d6cf103918b7e57]
+link School to Facility--><g id="link_School_Facility"><path codeLine="102" d="M373.95,170.46 C315.62,179.82 217.93,198.94 193.5,225 C173.01,246.86 169.32,282.34 169.56,306.74 " fill="none" id="School-to-Facility" style="stroke:#0096FF;stroke-width:1.0;"/><polygon fill="#0096FF" points="169.67,311.77,173.4633,302.6809,169.5557,306.7713,165.4654,302.8638,169.67,311.77" style="stroke:#0096FF;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="194.5" y="239.897">rdfs:subclassOf</text></g><!--MD5=[fb36a4aa834b3bac4d4aa040e3580c1b]
+link School to SchoolType--><g id="link_School_SchoolType"><path codeLine="104" d="M373.7,174.67 C347.44,183.48 316.39,198.9 300.5,225 C285.56,249.54 289.48,283.34 295.09,306.66 " fill="none" id="School-to-SchoolType" style="stroke:#FDB827;stroke-width:1.0;"/><polygon fill="#FDB827" points="296.39,311.76,298.0341,302.0493,295.1505,306.9161,290.2838,304.0325,296.39,311.76" style="stroke:#FDB827;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="301.5" y="239.897">hasSchoolType</text></g><!--MD5=[a59b95e406da0cc8de8f7212fd99531a]
+link School to Course--><g id="link_School_Course"><path codeLine="105" d="M463.24,183.44 C525.52,210.51 639.7,260.14 719.65,294.88 " fill="none" id="School-to-Course" style="stroke:#FDB827;stroke-width:1.0;"/><polygon fill="#FDB827" points="724.38,296.94,717.7105,289.6931,719.7917,294.9532,714.5316,297.0343,724.38,296.94" style="stroke:#FDB827;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="94" x="603.5" y="239.897">providesCourse</text></g><!--MD5=[6c36c380ec0ae2f5870c328bee4cd6a2]
+link School to Subscribers--><g id="link_School_Subscribers"><path codeLine="106" d="M420.27,195.1 C424.15,263.06 433.32,423.79 436.97,487.66 " fill="none" id="School-to-Subscribers" style="stroke:#D1512D;stroke-width:1.0;"/><polygon fill="#D1512D" points="437.26,492.81,440.7385,483.5959,436.9739,487.8182,432.7516,484.0536,437.26,492.81" style="stroke:#D1512D;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="432.5" y="339.897">hasSubscribers</text></g><!--MD5=[3a8868977a4e9f0b0821498f147b9a80]
+link School to Subscriber--><g id="link_School_Subscriber"><path codeLine="107" d="M463.21,167.47 C651.72,183.13 1378.07,253.97 1511.5,425 C1543.14,465.56 1464.9,492.31 1411.45,505.3 " fill="none" id="School-to-Subscriber" style="stroke:#DF7861;stroke-width:1.0;"/><polygon fill="#DF7861" points="1406.36,506.52,1416.0458,508.3049,1411.2214,505.351,1414.1753,500.5266,1406.36,506.52" style="stroke:#DF7861;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="96" x="1480.5" y="339.897">hasSubscription</text></g><!--MD5=[4e79a9c566b4df4c582bef4378644325]
+link ComprehensiveInstitute to School--><g id="link_ComprehensiveInstitute_School"><path codeLine="110" d="M262.99,52.11 C279.07,60.9 297.43,71.46 313.5,82 C334.7,95.91 357.18,112.74 375.89,127.36 " fill="none" id="ComprehensiveInstitute-to-School" style="stroke:#FDB827;stroke-width:1.0;"/><polygon fill="#FDB827" points="380.06,130.64,375.453,121.9351,376.1279,127.5515,370.5115,128.2264,380.06,130.64" style="stroke:#FDB827;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="341.5" y="96.897">rdfs:subclassOf</text></g><!--MD5=[4e79a9c566b4df4c582bef4378644325]
+link ComprehensiveInstitute to School--><g id="link_ComprehensiveInstitute_School"><path codeLine="113" d="M212.16,52.3 C207.27,67.4 204.21,87.19 214.5,101 C232.95,125.77 314.24,144.2 368.47,154 " fill="none" id="ComprehensiveInstitute-to-School-1" style="stroke:#FDB827;stroke-width:1.0;"/><polygon fill="#FDB827" points="373.63,154.93,365.4639,149.4241,368.7064,154.0594,364.071,157.3019,373.63,154.93" style="stroke:#FDB827;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="89" x="215.5" y="96.897">includesSchool</text></g><!--MD5=[a571986a5494030bbf4087fb86eb8a8d]
+link ComprehensiveInstitute to MultiplePointOfInterest--><g id="link_ComprehensiveInstitute_MultiplePointOfInterest"><path codeLine="111" d="M137.46,45.23 C117.54,52.86 98.6,64.44 86.5,82 C77.57,94.96 77.13,112.1 79.41,127.19 " fill="none" id="ComprehensiveInstitute-to-MultiplePointOfInterest" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="80.28,132.22,82.6788,122.6677,79.4233,127.2939,74.7971,124.0385,80.28,132.22" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="87.5" y="96.897">rdfs:subclassOf</text></g><!--MD5=[c994fc451ab48c0c0429af8c0a26e1e4]
+link SchoolType to Topic--><g id="link_SchoolType_Topic"><path codeLine="117" d="M302.28,357.11 C301.19,379.01 299.86,413.86 300.5,444 C300.75,455.58 301.22,468.22 301.72,479.56 " fill="none" id="SchoolType-to-Topic" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="301.95,484.66,305.5336,475.4863,301.721,479.6652,297.542,475.8526,301.95,484.66" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="301.5" y="439.897">rdfs:subclassOf</text></g><!--MD5=[912515db221ccb117f1240a606ea0f5e]
+link PublicSchool to School--><g id="link_PublicSchool_School"><path codeLine="120" d="M473.6,52.21 C463.51,72.32 448.32,102.6 436.44,126.26 " fill="none" id="PublicSchool-to-School" style="stroke:#FDB827;stroke-width:1.0;"/><polygon fill="#FDB827" points="434.11,130.9,441.7286,124.6585,436.3575,126.4336,434.5824,121.0625,434.11,130.9" style="stroke:#FDB827;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="458.5" y="96.897">rdfs:subclassOf</text></g><!--MD5=[fe07263b88b450fa594444d94b3bd0ea]
+link PrivateSchool to School--><g id="link_PrivateSchool_School"><path codeLine="123" d="M602.38,52.22 C591.57,67.48 575.5,87.49 557.5,101 C530.6,121.19 495.98,136.41 468.02,146.59 " fill="none" id="PrivateSchool-to-School" style="stroke:#FDB827;stroke-width:1.0;"/><polygon fill="#FDB827" points="463.23,148.31,473.0513,149.0462,467.9381,146.6265,470.3577,141.5133,463.23,148.31" style="stroke:#FDB827;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="579.5" y="96.897">rdfs:subclassOf</text></g><!--MD5=[722ca1d769ab5649a0533f5830af67d2]
+link Course to Activity--><g id="link_Course_Activity"><path codeLine="132" d="M892.61,353.09 C942.5,366.61 1004.89,389.18 1051.5,425 C1070.53,439.62 1086.12,461.6 1097.03,480.12 " fill="none" id="Course-to-Activity" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="1099.7,484.74,1098.6626,474.9459,1097.1993,480.4103,1091.735,478.947,1099.7,484.74" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="1072.5" y="439.897">rdfs:subclassOf</text></g><!--MD5=[282113f692c4e8c171aa50e39e81c776]
+link Course to TimeInterval--><g id="link_Course_TimeInterval"><path codeLine="134" d="M724.26,366.55 C693.17,380.92 659.28,400.36 633.5,425 C617.55,440.25 605.12,461.59 596.53,479.61 " fill="none" id="Course-to-TimeInterval" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="594.21,484.6,601.625,478.1179,596.3135,480.064,594.3674,474.7524,594.21,484.6" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="75" x="634.5" y="439.897">tiapit:atTime</text></g><!--MD5=[c10388849261ad8f295eec24410c8563]
+link Course to Classroom--><g id="link_Course_Classroom"><path codeLine="135" d="M892.77,346.54 C995.03,360.78 1172.29,388.15 1321.5,425 C1406.08,445.88 1502.35,479.05 1556.52,498.61 " fill="none" id="Course-to-Classroom" style="stroke:#FDB827;stroke-width:1.0;"/><polygon fill="#FDB827" points="1561.31,500.34,1554.2072,493.5173,1556.6081,498.6393,1551.4861,501.0403,1561.31,500.34" style="stroke:#FDB827;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="124" x="1392.5" y="439.897">situatedInClassroom</text></g><!--MD5=[b9103431ca1154bbd97bc45c1d5938b3]
+link Course to PriceSpecification--><g id="link_Course_PriceSpecification"><path codeLine="136" d="M740.08,395.09 C732.95,404.36 726.77,414.41 722.5,425 C715.61,442.12 715.75,462.61 717.89,479.66 " fill="none" id="Course-to-PriceSpecification" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="718.61,484.84,721.3085,475.368,717.9089,479.8894,713.3875,476.4898,718.61,484.84" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="125" x="723.5" y="439.897">hasPriceSpecification</text></g><!--MD5=[69c34e0b8557143d82991ada77c5f3f4]
+link Course to Subscribers--><g id="link_Course_Subscribers"><path codeLine="137" d="M724.38,349.21 C663.85,361.9 582.16,385.03 519.5,425 C493.6,441.52 470.81,468.46 456.05,488.48 " fill="none" id="Course-to-Subscribers" style="stroke:#D1512D;stroke-width:1.0;"/><polygon fill="#D1512D" points="453.03,492.64,461.5606,487.7176,455.9726,488.5976,455.0926,483.0096,453.03,492.64" style="stroke:#D1512D;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="520.5" y="439.897">hasSubscribers</text></g><!--MD5=[055120a633226fc1af25fbf67f6dbb5a]
+link Course to Subscriber--><g id="link_Course_Subscriber"><path codeLine="138" d="M892.7,351.55 C967.12,366.85 1078.05,392.36 1171.5,425 C1224.72,443.59 1283.17,471.48 1322.06,491.18 " fill="none" id="Course-to-Subscriber" style="stroke:#DF7861;stroke-width:1.0;"/><polygon fill="#DF7861" points="1326.71,493.54,1320.488,485.9054,1322.2494,491.2811,1316.8737,493.0425,1326.71,493.54" style="stroke:#DF7861;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="96" x="1216.5" y="439.897">hasSubscription</text></g><!--MD5=[5ad1a1d9d28cee87b0e26c6afb61f958]
+link Course to AcademicDiscipline--><g id="link_Course_AcademicDiscipline"><path codeLine="139" d="M839.21,395.46 C844.08,405.28 849,415.39 853.5,425 C861.98,443.1 870.93,463.51 878.11,480.27 " fill="none" id="Course-to-AcademicDiscipline" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="880.08,484.89,880.2372,475.0424,878.1225,480.2891,872.8758,478.1744,880.08,484.89" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="180" x="862.5" y="439.897">herapit:hasAcademicDiscipline</text></g><!--MD5=[dc60c293d4334bb43b6b1edc886a14dd]
+link Classroom to Location--><g id="link_Classroom_Location"><path codeLine="145" d="M1599.5,547.74 C1599.5,571.95 1599.5,605.51 1599.5,630.61 " fill="none" id="Classroom-to-Location" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="1599.5,635.83,1603.5,626.83,1599.5,630.83,1595.5,626.83,1599.5,635.83" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="1600.5" y="601.897">rdfs:subclassOf</text></g><!--MD5=[57fd6f1a404f5793998f0714c03f8c45]
+link PhysicalClassroom to Classroom--><g id="link_PhysicalClassroom_Classroom"><path codeLine="148" d="M1698.01,357.29 C1675.47,373.51 1646.67,397.54 1628.5,425 C1617.97,440.93 1611,460.97 1606.55,478.05 " fill="none" id="PhysicalClassroom-to-Classroom" style="stroke:#FDB827;stroke-width:1.0;"/><polygon fill="#FDB827" points="1605.25,483.25,1611.3403,475.5099,1606.4795,478.4035,1603.5859,473.5427,1605.25,483.25" style="stroke:#FDB827;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="1629.5" y="439.897">rdfs:subclassOf</text></g><!--MD5=[952d7977cb8e117c72d22a04a8dceb57]
+link PhysicalClassroom to Address--><g id="link_PhysicalClassroom_Address"><path codeLine="150" d="M1730.28,357.11 C1729.19,379.01 1727.86,413.86 1728.5,444 C1728.75,455.58 1729.22,468.22 1729.72,479.56 " fill="none" id="PhysicalClassroom-to-Address" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="1729.95,484.66,1733.5336,475.4863,1729.721,479.6652,1725.542,475.8526,1729.95,484.66" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="1729.5" y="439.897">clvapit:hasAddress</text></g><!--MD5=[cd081a7271a835a9fa91ea34423109fd]
+link VirtualClassroom to Classroom--><g id="link_VirtualClassroom_Classroom"><path codeLine="153" d="M1938.32,357.31 C1919.57,382.47 1885.23,423.04 1845.5,444 C1780.73,478.16 1753.09,451.23 1683.5,474 C1669.66,478.53 1655.17,484.87 1642.21,491.2 " fill="none" id="VirtualClassroom-to-Classroom" style="stroke:#FDB827;stroke-width:1.0;"/><polygon fill="#FDB827" points="1637.5,493.53,1647.3409,493.1331,1641.9835,491.3168,1643.7997,485.9595,1637.5,493.53" style="stroke:#FDB827;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="1874.5" y="439.897">rdfs:subclassOf</text></g><!--MD5=[819277e0b25774b151bff434e368ad21]
+link VirtualClassroom to VideoCommunicationService--><g id="link_VirtualClassroom_VideoCommunicationService"><path codeLine="155" d="M1961.1,357.09 C1970.81,384.68 1987.87,433.15 2000.5,469.03 " fill="none" id="VirtualClassroom-to-VideoCommunicationService" style="stroke:#FDB827;stroke-width:1.0;"/><polygon fill="#FDB827" points="2002.17,473.79,2002.959,463.9728,2000.5119,469.0729,1995.4117,466.6258,2002.17,473.79" style="stroke:#FDB827;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="199" x="1992.5" y="439.897">usesVideoCommunicationService</text></g><!--MD5=[42d9538ab79019d80e3cae31c19a6f2e]
+link VideoCommunicationService to Object--><g id="link_VideoCommunicationService_Object"><path codeLine="161" d="M2016.5,557.21 C2016.5,580.19 2016.5,608.6 2016.5,630.56 " fill="none" id="VideoCommunicationService-to-Object" style="stroke:#0066CC;stroke-width:1.0;"/><polygon fill="#0066CC" points="2016.5,635.71,2020.5,626.71,2016.5,630.71,2012.5,626.71,2016.5,635.71" style="stroke:#0066CC;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="2017.5" y="601.897">rdfs:subclassOf</text></g><!--MD5=[dc0146c68468c603b2ae0ccfc62c7852]
+@startuml schools
+hide circle
+remove @unlinked
+
+!define OntoPiANode dff6ff
+!define OntoPiAProperty 06c
+
+!define OntoPiANodeEdited dff6ff
+
+!define DemographicObservationNode f5c7a9
+!define DemographicObservationProperty d1512d
+
+!define DemographicEventNode ffdeb4
+!define DemographicEventProperty df7861
+
+!define WasteNode eddfb3
+!define WasteProperty 61481c
+
+!define OrganizationNode ffdede
+!define OrganizationProperty 7a4495
+
+!define HeritageNode ffdede
+!define HeritageProperty 7a4495
+
+!define RoadAccidentNode f2f2f2
+!define RoadAccidentProperty 413f42
+
+!define VehicleNode f2f2f2
+!define VehicleProperty 413f42
+
+!define TrafficFlowNode f2f2f2
+!define TrafficFlowProperty 413f42
+
+!define RoadSignalNode f2f2f2
+!define RoadSignalProperty 413f42
+
+!define FacilityNode c4ddff
+!define FacilityProperty 0096ff
+
+!define SchoolNode fefecc
+!define SchoolProperty fdb827
+
+!define GreenZoneNode b8f1b0
+!define GreenZoneProperty 14c38e
+
+!define HospitalNode fff
+!define HospitalProperty 000
+
+!define TransparencyNode ffc4c4
+!define TransparencyProperty 850e35
+
+' Imported objects from OntoPiA
+class Thing <<owl>> #OntoPiANode
+
+class Entity <<l0>> #OntoPiANode
+class Activity <<l0>> #OntoPiANode
+class Location <<l0>> #OntoPiANode
+class EventOrSituation <<l0>> #OntoPiANode
+class Topic <<l0>> #OntoPiANode
+class Object <<l0>> #OntoPiANode
+class Characteristic <<l0>> #OntoPiANode
+class Collection <<l0>> #OntoPiANode
+class Agent <<l0>> #OntoPiANode
+
+class Address <<clvapit>> #OntoPiANode
+class City <<clvapit>> #OntoPiANode
+class StreetToponym <<clvapit>> #OntoPiANode
+class Feature <<clvapit>> #OntoPiANode
+class Country <<clvapit>> #OntoPiANode
+class Geometry <<clvapit>> #OntoPiANode
+
+class TimeInterval <<tiapit>> #OntoPiANode
+class TemporalEntity <<tiapit>> #OntoPiANode
+
+class Value <<muapit>> #OntoPiANode
+
+class OnlineContactPoint <<smapit>> #OntoPiANode
+class PhysicalContactPoint <<smapit>> #OntoPiANode
+
+class AccessCondition <<acapit>> #OntoPiANode
+
+class Person <<cpvapit>> #OntoPiANode
+class Family <<cpvapit>> #OntoPiANode
+
+class PriceSpecification <<potapit>> #OntoPiANode
+
+class PointOfInterest <<poiapit>> #OntoPiANode
+class MultiplePointOfInterest <<poiapit>> #OntoPiANode
+
+class Procedure <<pcapit>> #OntoPiANode
+
+class OSDFeature <<accoapit>> #OntoPiANode
+
+class AcademicDiscipline <<herapit>> #OntoPiANode
+
+class TransparencyResource <<transapit>> #OntoPiANode
+
+class TimeIndexedRole <<roapit>> #OntoPiANode
+' A school can be public or private is an accessible point of interest, with services, subscribers and courses that can be offer
+class School #SchoolNode {
+    schoolCode
+}
+School -[#FacilityProperty]-> Facility : rdfs:subclassOf
+
+School -[#SchoolProperty]-> SchoolType : hasSchoolType
+School -[#SchoolProperty]-> Course : providesCourse
+School -[#DemographicObservationProperty]-> Subscribers : hasSubscribers
+School -[#DemographicEventProperty]-> Subscriber : hasSubscription
+
+class ComprehensiveInstitute #SchoolNode
+ComprehensiveInstitute -[#SchoolProperty]-> School : rdfs:subclassOf
+ComprehensiveInstitute -[#OntoPiAProperty]-> MultiplePointOfInterest : rdfs:subclassOf
+
+ComprehensiveInstitute -[#SchoolProperty]-> School : includesSchool
+
+' controlled vocabulary
+class SchoolType #SchoolNode
+SchoolType -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
+
+class PublicSchool #SchoolNode
+PublicSchool -[#SchoolProperty]-> School : rdfs:subclassOf
+
+class PrivateSchool #SchoolNode
+PrivateSchool -[#SchoolProperty]-> School : rdfs:subclassOf
+
+' A course organized by a school or an organization is an activity located in a classroom (phisical or online), with a price and subscribers
+class Course #SchoolNode {
+    courseCode
+    name
+    description
+    durationHours: Integer
+}
+Course -[#OntoPiAProperty]-> Activity : rdfs:subclassOf
+
+Course -[#OntoPiAProperty]-> TimeInterval : tiapit:atTime
+Course -[#SchoolProperty]-> Classroom : situatedInClassroom
+Course -[#OntoPiAProperty]-> PriceSpecification : hasPriceSpecification
+Course -[#DemographicObservationProperty]-> Subscribers : hasSubscribers
+Course -[#DemographicEventProperty]-> Subscriber : hasSubscription
+Course -[#OntoPiAProperty]-> AcademicDiscipline : herapit:hasAcademicDiscipline
+
+' A classroom is a space where a course take place. A physical classroom has an address, a virtual classroom is associated with the service used.
+class Classroom #SchoolNode {
+    name
+}
+Classroom -[#OntoPiAProperty]-> Location : rdfs:subclassOf
+
+class PhysicalClassroom #SchoolNode
+PhysicalClassroom -[#SchoolProperty]-> Classroom : rdfs:subclassOf
+
+PhysicalClassroom -[#OntoPiAProperty]-> Address : clvapit:hasAddress
+
+class VirtualClassroom #SchoolNode
+VirtualClassroom -[#SchoolProperty]-> Classroom : rdfs:subclassOf
+
+VirtualClassroom -[#SchoolProperty]-> VideoCommunicationService : usesVideoCommunicationService
+
+class VideoCommunicationService #SchoolNode {
+    name
+    serviceURL: URI
+}
+VideoCommunicationService -[#OntoPiAProperty]-> Object : rdfs:subclassOf
+@enduml
+
+@startuml schools
+hide circle
+remove @unlinked
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Thing <<owl>> #dff6ff
+
+class Entity <<l0>> #dff6ff
+class Activity <<l0>> #dff6ff
+class Location <<l0>> #dff6ff
+class EventOrSituation <<l0>> #dff6ff
+class Topic <<l0>> #dff6ff
+class Object <<l0>> #dff6ff
+class Characteristic <<l0>> #dff6ff
+class Collection <<l0>> #dff6ff
+class Agent <<l0>> #dff6ff
+
+class Address <<clvapit>> #dff6ff
+class City <<clvapit>> #dff6ff
+class StreetToponym <<clvapit>> #dff6ff
+class Feature <<clvapit>> #dff6ff
+class Country <<clvapit>> #dff6ff
+class Geometry <<clvapit>> #dff6ff
+
+class TimeInterval <<tiapit>> #dff6ff
+class TemporalEntity <<tiapit>> #dff6ff
+
+class Value <<muapit>> #dff6ff
+
+class OnlineContactPoint <<smapit>> #dff6ff
+class PhysicalContactPoint <<smapit>> #dff6ff
+
+class AccessCondition <<acapit>> #dff6ff
+
+class Person <<cpvapit>> #dff6ff
+class Family <<cpvapit>> #dff6ff
+
+class PriceSpecification <<potapit>> #dff6ff
+
+class PointOfInterest <<poiapit>> #dff6ff
+class MultiplePointOfInterest <<poiapit>> #dff6ff
+
+class Procedure <<pcapit>> #dff6ff
+
+class OSDFeature <<accoapit>> #dff6ff
+
+class AcademicDiscipline <<herapit>> #dff6ff
+
+class TransparencyResource <<transapit>> #dff6ff
+
+class TimeIndexedRole <<roapit>> #dff6ff
+class School #fefecc {
+    schoolCode
+}
+School -[#0096ff]-> Facility : rdfs:subclassOf
+
+School -[#fdb827]-> SchoolType : hasSchoolType
+School -[#fdb827]-> Course : providesCourse
+School -[#d1512d]-> Subscribers : hasSubscribers
+School -[#df7861]-> Subscriber : hasSubscription
+
+class ComprehensiveInstitute #fefecc
+ComprehensiveInstitute -[#fdb827]-> School : rdfs:subclassOf
+ComprehensiveInstitute -[#06c]-> MultiplePointOfInterest : rdfs:subclassOf
+
+ComprehensiveInstitute -[#fdb827]-> School : includesSchool
+
+class SchoolType #fefecc
+SchoolType -[#06c]-> Topic : rdfs:subclassOf
+
+class PublicSchool #fefecc
+PublicSchool -[#fdb827]-> School : rdfs:subclassOf
+
+class PrivateSchool #fefecc
+PrivateSchool -[#fdb827]-> School : rdfs:subclassOf
+
+class Course #fefecc {
+    courseCode
+    name
+    description
+    durationHours: Integer
+}
+Course -[#06c]-> Activity : rdfs:subclassOf
+
+Course -[#06c]-> TimeInterval : tiapit:atTime
+Course -[#fdb827]-> Classroom : situatedInClassroom
+Course -[#06c]-> PriceSpecification : hasPriceSpecification
+Course -[#d1512d]-> Subscribers : hasSubscribers
+Course -[#df7861]-> Subscriber : hasSubscription
+Course -[#06c]-> AcademicDiscipline : herapit:hasAcademicDiscipline
+
+class Classroom #fefecc {
+    name
+}
+Classroom -[#06c]-> Location : rdfs:subclassOf
+
+class PhysicalClassroom #fefecc
+PhysicalClassroom -[#fdb827]-> Classroom : rdfs:subclassOf
+
+PhysicalClassroom -[#06c]-> Address : clvapit:hasAddress
+
+class VirtualClassroom #fefecc
+VirtualClassroom -[#fdb827]-> Classroom : rdfs:subclassOf
+
+VirtualClassroom -[#fdb827]-> VideoCommunicationService : usesVideoCommunicationService
+
+class VideoCommunicationService #fefecc {
+    name
+    serviceURL: URI
+}
+VideoCommunicationService -[#06c]-> Object : rdfs:subclassOf
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: it
+Country: IT
+--></g></svg>

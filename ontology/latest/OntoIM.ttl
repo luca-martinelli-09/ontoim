@@ -138,7 +138,7 @@ sdo:url rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/ontoim/detectedBy
 :detectedBy rdf:type owl:ObjectProperty ;
             rdfs:domain :RoadAccident ;
-            rdfs:range :RevelationUnit ;
+            rdfs:range :RelevationUnit ;
             rdfs:label "detected by"@en ,
                        "rilevato da"@it .
 
@@ -675,14 +675,6 @@ sdo:url rdf:type owl:AnnotationProperty .
                          rdfs:range trapit:TransparencyResource ;
                          rdfs:label "ha risorsa"@it ,
                                     "has transparency resource"@en .
-
-
-###  https://w3id.org/ontoim/hasVehicle
-:hasVehicle rdf:type owl:ObjectProperty ;
-            rdfs:domain :InvolvedVehicle ;
-            rdfs:range :Vehicle ;
-            rdfs:label "ha veicolo"@it ,
-                       "has vehicle"@en .
 
 
 ###  https://w3id.org/ontoim/hasVehicleCategory
@@ -1686,6 +1678,7 @@ sdo:url rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/ontoim/InvolvedVehicle
 :InvolvedVehicle rdf:type owl:Class ;
                  rdfs:subClassOf :InvolvedEntity ,
+                                 :Vehicle ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty :hasBackPassenger ;
                                    owl:allValuesFrom :InvolvedPerson
@@ -1702,11 +1695,6 @@ sdo:url rdf:type owl:AnnotationProperty .
                                    owl:onProperty :hasConducent ;
                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                    owl:onClass :InvolvedPerson
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty :hasVehicle ;
-                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                   owl:onClass :Vehicle
                                  ] ;
                  rdfs:comment "Questa classe rappresenta il veicolo coinvolto in un incidente stradale."@it ,
                               "This class represents a vehicle involved in a road accident."@en ;
@@ -1927,13 +1915,13 @@ sdo:url rdf:type owl:AnnotationProperty .
                          "Scuola Pubblica"@it .
 
 
-###  https://w3id.org/ontoim/RevelationUnit
-:RevelationUnit rdf:type owl:Class ;
+###  https://w3id.org/ontoim/RelevationUnit
+:RelevationUnit rdf:type owl:Class ;
                 rdfs:subClassOf l0:Agent ;
-                rdfs:comment "Questa classe rappresenta l'unità che ha rilevato l'incidente (polizia, carabinieri, ecc...). Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/revelation-units"@it ,
-                             "This class represents the unit that detected the incident (police, carabinieri, etc...). The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/revelation-units"@en ;
-                rdfs:label "Revelation Unit"@en ,
-                           "Unità di Rivelazione"@it .
+                rdfs:comment "Questa classe rappresenta l'unità che ha rilevato l'incidente (polizia, carabinieri, ecc...). Gli elementi di questa classe sono di tipo skos:Concept e devono essere definiti secondo il vocabolario controllato disponibile a https://w3id.org/ontoim/controlled-vocabulary/relevation-units"@it ,
+                             "This class represents the unit that detected the incident (police, carabinieri, etc...). The elements of this class are skos:Concept and must be defined according to the controlled vocabulary available at https://w3id.org/ontoim/controlled-vocabulary/relevation-units"@en ;
+                rdfs:label "Relevation Unit"@en ,
+                           "Unità di Rilevazione"@it .
 
 
 ###  https://w3id.org/ontoim/Road
@@ -1989,7 +1977,7 @@ sdo:url rdf:type owl:AnnotationProperty .
               rdfs:subClassOf l0:EventOrSituation ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty :detectedBy ;
-                                owl:allValuesFrom :RevelationUnit
+                                owl:allValuesFrom :RelevationUnit
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty :hasInvolvedEntity ;

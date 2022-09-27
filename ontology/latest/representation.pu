@@ -1,5 +1,6 @@
 @startuml OntoIM
 hide circle
+hide unlinked
 skinparam linetype ortho
 skinparam ranksep 300
 skinparam nodesep 50
@@ -107,7 +108,7 @@ Facility -[#OntoPiAProperty]-> PointOfInterest : rdfs:subclassOf
 
 Facility -[#OntoPiAProperty]-> OnlineContactPoint : smapit:hasOnlineContactPoint
 Facility -[#OntoPiAProperty]-> PhysicalContactPoint : smapit:hasPhysicalContactPoint
-Facility -[#OntoPiAProperty]-> AccessCondition : accondition:hasAccessCondition
+Facility -[#OntoPiAProperty]-> AccessCondition : acapit:hasAccessCondition
 Facility -[#OntoPiAProperty]-> OSDFeature : hasOfferedService
 Facility -[#TransparencyProperty]-> ConcessionAct : concessedWithAct
 Facility -[#HeritageProperty]-> CadastralData : hasCadastralData
@@ -122,7 +123,7 @@ package "Demographic Observations" {
     ' A demo observation can also be releated to a spatial object, which describes the spatial delimitation of the observation
     ' For example, we can count the number of males in a specific area, that can be a city, a borough, a street, etc...
     class DemographicObservation #DemographicObservationNode {
-        observationValue^^xsd:nonNegativeInteger
+        observationValue: Integer
     }
     DemographicObservation -[#OntoPiAProperty]-> Activity : rdfs:subclassOf
 
@@ -168,7 +169,7 @@ package "Demographic Observations" {
 package "Demographic Events" {
     ' A demo event represents a wedding, a death, a birth, offering a non aggregated view of a demo observation
     class DemographicEvent #DemographicEventNode {
-        tiapit:date
+        date
     }
     DemographicEvent -[#OntoPiAProperty]-> EventOrSituation : rdfs:subclassOf
 
@@ -189,10 +190,10 @@ package "Demographic Events" {
 
 package "Transparency" {
     class ConcessionAct #TransparencyNode {
-        actTitle^^xsd:string
-        actNumber^^xsd:string
-        paymentAmount^^xsd:float
-        actDate^^xsd:date
+        actTitle: String
+        actNumber: String
+        paymentAmount: Float
+        actDate: Date
     }
     ConcessionAct -[#OntoPiAProperty]-> Activity : rdfs:subclassOf
 
@@ -211,9 +212,9 @@ package "Organizations and Associations" {
     ' Added section and demograpgic classification of organization for private companies (taken from Camera di Commercio)
     ' Added an Artisan Organization with artisan Register code and date
     class Organization <<covapit>> #OrganizationNode {
-        endActivityDate^^xsd:date
-        bankruptcyDate^^xsd:date
-        liquidationDate^^xsd:date
+        endActivityDate: Date
+        bankruptcyDate: Date
+        liquidationDate: Date
     }
 
     ' Organization --> Payment : sentPayment (see later)
@@ -236,16 +237,16 @@ package "Organizations and Associations" {
     CompanyDemographicCategory -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
 
     class ArtisanOrganization #OrganizationNode {
-        artisanRegisterCode^^l0:identifier
-        artisanRegistrationDate^^xsd:date
+        artisanRegisterCode
+        artisanRegistrationDate: Date
     }
     ArtisanOrganization -[#OrganizationProperty]-> PrivateOrganization : rdfs:subclassOf
 
     ' Associations are sublclass of organizations, with referent, association category (controlled vocabulary) and members observation
     class Association #OrganizationNode {
-        associationRegisterCode^^l0:identifier
-        associationRegistrationDate^^xsd:date
-        associationRemovalFromRegisterDate^^xsd:date
+        associationRegisterCode
+        associationRegistrationDate: Date
+        associationRemovalFromRegisterDate: Date
     }
     Association -[#OrganizationProperty]-> PrivateOrganization : rdfs:subclassOf
 
@@ -268,9 +269,9 @@ package "Organizations and Associations" {
     HeritageType -[#OntoPiAProperty]-> Topic : rdfs:subclassOf
 
     class CadastralData #HeritageNode {
-        sheet^^rdfs:literal
-        map^^rdfs:literal
-        subordinate^^rdfs:literal
+        sheet
+        map
+        subordinate
     }
     CadastralData -[#OntoPiAProperty]-> Object : rdfs:subclassOf
 
@@ -304,11 +305,11 @@ package "Waste Production" {
 package "Roads and Traffic" {
     ' Road accidents
     class RoadAccident #RoadAccidentNode {
-        tiapit:date
+        date: DateTime
     }
     RoadAccident -[#OntoPiAProperty]-> EventOrSituation : rdfs:subclassOf
 
-    RoadAccident -[#RoadAccidentProperty]-> RevelationUnit : detectedBy
+    RoadAccident -[#RoadAccidentProperty]-> RelevationUnit : detectedBy
     RoadAccident -[#OntoPiAProperty]-> Geometry : clvapit:hasGeometry
     RoadAccident -[#RoadAccidentProperty]-> Road : hasRoad
     RoadAccident -[#RoadAccidentProperty]-> WeatherCondition : hasWeatherCondition
@@ -317,11 +318,11 @@ package "Roads and Traffic" {
     RoadAccident -[#RoadAccidentProperty]-> InvolvedPerson : hasInvolvedPerson
     RoadAccident -[#RoadAccidentProperty]-> InvolvedObstacle : hasInvolvedObstacle
 
-    class RevelationUnit #RoadAccidentNode
-    RevelationUnit -[#OntoPiAProperty]-> Agent : rdfs:subclassOf
+    class RelevationUnit #RoadAccidentNode
+    RelevationUnit -[#OntoPiAProperty]-> Agent : rdfs:subclassOf
 
     class Road #RoadAccidentNode {
-        roadName^^l0:name
+        roadName
     }
     Road -[#OntoPiAProperty]-> Location : rdfs:subclassOf
 
@@ -367,8 +368,8 @@ package "Roads and Traffic" {
 
     class InvolvedVehicle #RoadAccidentNode
     InvolvedVehicle -[#RoadAccidentProperty]-> InvolvedEntity : rdfs:subclassOf
+    InvolvedVehicle -[#VehicleProperty]-> Vehicle : rdfs:subclassOf
 
-    InvolvedVehicle -[#VehicleProperty]-> Vehicle : hasVehicle
     InvolvedVehicle -[#RoadAccidentProperty]-> InvolvedPerson : hasConducent
     InvolvedVehicle -[#RoadAccidentProperty]-> InvolvedPerson : hasPassenger
     InvolvedVehicle -[#RoadAccidentProperty]-> InvolvedPerson : hasFrontPassenger
@@ -387,11 +388,11 @@ package "Roads and Traffic" {
     InvolvedObstacle -[#RoadAccidentProperty]-> InvolvedEntity : rdfs:subclassOf
 
     class Vehicle #VehicleNode {
-        licensePlate^^l0:identifier
-        registrationYear^^xsd:gYear
-        brand^^rdfs:literal
-        model^^rdfs:literal
-        color^^rdfs:literal
+        licensePlate
+        registrationYear: gYear
+        brand
+        model
+        color
     }
     Vehicle -[#OntoPiAProperty]-> Object : rdfs:subclassOf
 
@@ -408,9 +409,9 @@ package "Roads and Traffic" {
 
     ' The road signals are point of interests with a signal value (e.g. 50 for a speed limit or the name of the destination indicated)
     class RoadSignal #RoadSignalNode {
-        signalValue^^rdfs:literal
-        installationDate^^xsd:date
-        removalDate^^xsd:date
+        signalValue
+        installationDate: Date
+        removalDate: Date
     }
     RoadSignal -[#OntoPiAProperty]-> PointOfInterest : rdfs:subclassOf
 
@@ -443,7 +444,7 @@ Accommodation -[#DemographicEventProperty]-> Booking : hasBooking
 package "Schools" {
     ' A school can be public or private is an accessible point of interest, with services, subscribers and courses that can be offer
     class School #SchoolNode {
-        schoolCode^^l0:identifier
+        schoolCode
     }
     School -[#FacilityProperty]-> Facility : rdfs:subclassOf
 
@@ -470,10 +471,10 @@ package "Schools" {
 
     ' A course organized by a school or an organization is an activity located in a classroom (phisical or online), with a price and subscribers
     class Course #SchoolNode {
-        courseCode^^l0:identifier
-        l0:name
-        l0:description
-        durationHours^^xsd:positiveInteger
+        courseCode
+        name
+        description
+        durationHours: Integer
     }
     Course -[#OntoPiAProperty]-> Activity : rdfs:subclassOf
 
@@ -486,7 +487,7 @@ package "Schools" {
 
     ' A classroom is a space where a course take place. A physical classroom has an address, a virtual classroom is associated with the service used.
     class Classroom #SchoolNode {
-        l0:name
+        name
     }
     Classroom -[#OntoPiAProperty]-> Location : rdfs:subclassOf
 
@@ -501,8 +502,8 @@ package "Schools" {
     VirtualClassroom -[#SchoolProperty]-> VideoCommunicationService : usesVideoCommunicationService
 
     class VideoCommunicationService #SchoolNode {
-        l0:name
-        serviceURL^^xsd:anyuri
+        name
+        serviceURL: URI
     }
     VideoCommunicationService -[#OntoPiAProperty]-> Object : rdfs:subclassOf
 }
@@ -517,11 +518,11 @@ package "Green Zones" {
 
     ' A plant, with the species, the common name, the born year, planted date and its status in time. The status is described as the plant health, the height and the circumference
     class Plant #GreenZoneNode {
-        plantCode^^l0:identifier
-        commonName^^l0:name
-        species^^l0:name
-        plantingDate^^xsd:datetime
-        birthYear^^xsd:gYear
+        plantCode
+        commonName
+        species
+        plantingDate: DateTime
+        birthYear: gYear
     }
     Plant -[#OntoPiAProperty]-> PointOfInterest : rdfs:subclassOf
 
@@ -547,7 +548,7 @@ package "Green Zones" {
 package "Hospitals" {
     ' An hospial is an accessible point of interest with hospital departments, services, total number of beds and departments which are also described as hospitals
     class Hospital #HospitalNode {
-        totalNumberOfBeds^^xsd:positiveInteger
+        totalNumberOfBeds: Integer
     }
     Hospital -[#FacilityProperty]-> Facility : rdfs:subclassOf
 
